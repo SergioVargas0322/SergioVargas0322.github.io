@@ -173,11 +173,14 @@ function vidaEnemigo(){
 }
 
 function mensajeResultadoFinal(){
-    if(vidaRestanteEnemigo == 0 || vidaRestanteJugador == 0){
-        // let sectionMensajes = document.getElementById('resultado')
-        // let parrafo = document.createElement('p')
-        // parrafo.innerHTML = "¡Batalla Terminada!"
-        // sectionMensajes.appendChild(parrafo)
+    if(vidaRestanteEnemigo == 0) {
+        let sectionMensajes = document.getElementById('resultado')
+        sectionMensajes.innerHTML = "¡Victoria!"
+        desabilitarBotonesAtaques()
+        mostrarSection('boton-reiniciar')
+    }else if(vidaRestanteJugador == 0){
+        let sectionMensajes = document.getElementById('resultado')
+        sectionMensajes.innerHTML = "Derrota..."
         desabilitarBotonesAtaques()
         mostrarSection('boton-reiniciar')
     }
