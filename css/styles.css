@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Shadows+Into+Light&display=swap');
+
+body { 
+    font-family: 'Press Start 2P', cursive;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: black;
+    font-size: 200px;
+    margin: 40px 20px 0px 20px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.subtitulo {
+    color: black;
+    font-size: 28px;
+    margin: 20px 0px 40px 0px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta-de-mokepon {
+    width: 160px;
+    height: 200px;
+    background: #11468F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon:hover {
+    cursor: pointer;
+}
+
+.tarjeta-de-mokepon img {
+    width: 120px;
+}
+
+#boton-mascota {
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    margin-top: 30px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.tarjetas input {
+    display: none;
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botones-ataques {
+    cursor: pointer;
+    width: 160px;
+    height: 60px;
+    background: #11468F;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: transparent;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#resultado-emoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    width: 290px;
+    height: 35px;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+}
+
+#section-vidas-ataques {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-bottom: 30px;
+}
+
+#section-vidas-ataques img {
+    width: 120px;
+}
+
+.parrafos-vidas-mascotas {
+    width: 126px;
+    gap: 10px;
+}
+
+/* #parrafo-vida-mascota-jugador {
+    display: flex;
+    justify-content: flex-start;
+} */
+
+#vida-e-imagen-mascota-jugador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ataques {
+    display: flex;
+    justify-content: space-around;
+    height: 172px;
+    width: 280px;
+    background-position: center center;
+    background-size: cover;
+    overflow-y: hidden;
+    border: 0;
+    border-right: 2px;
+    border-left: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+#ataques p {
+    margin: 15px;
+    display: flex;
+    width: 110px;
+    justify-content: center;
+}
+
+#vida-e-imagen-mascota-enemigo {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+#parrafo-vida-mascota-enemigo {
+    display: flex;
+    justify-content: center;
+}
+
+#boton-reiniciar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 144px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    margin-top: 30px;
+    font-family: 'Press Start 2P', cursive;
+}

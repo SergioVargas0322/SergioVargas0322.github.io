@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Mokepon</title>
+        <script src="./js/mokepon.js"></script>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body background="./assets/background_mokepon.png">
+        <section id="seleccionar-mascota">
+            <h1 class="titulo">Mokepon!</h1>
+
+            <h2 class="subtitulo">Elige tu mascota:</h2>
+
+            <div class="tarjetas">
+                <label class="tarjeta-de-mokepon" for="hipodoge">
+                    <p>Hipodoge</p>
+                    <img src="./assets/mokepons_mokepon_hipodoge_attack.png" alt="Hipodoge">
+                </label>
+                <input type="radio" name="mascota" id="hipodoge" />
+                
+                <label class="tarjeta-de-mokepon" for="capipepo">
+                    <p>Capipepo</p>
+                    <img src="./assets/mokepons_mokepon_capipepo_attack.png" alt="Capipepo">
+                </label>
+                <input type="radio" name="mascota" id="capipepo" />
+                
+                <label class="tarjeta-de-mokepon" for="ratigueya">
+                    <p>Ratigueya</p>
+                    <img src="./assets/mokepons_mokepon_ratigueya_attack.png" alt="Ratigueya">
+                </label>
+                <input type="radio" name="mascota" id="ratigueya" />
+            </div>
+            
+            <button id="boton-mascota">Seleccionar</button>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h1 class="titulo">Mokepon!</h1>
+
+            <h2 class="subtitulo">Elige tu ataque:</h2>
+
+            <div id="botones-ataques">
+                <button id="boton-fuego" class="botones-ataques">Fuego 🔥</button>
+                <button id="boton-agua" class="botones-ataques">Agua 💧</button>
+                <button id="boton-tierra" class="botones-ataques">Tierra 🌱</button>
+            </div>
+
+            <section id="resultado-emoji">
+                <p id="resultado">¡Suerte!</p>
+                <p id="emoji"></p>
+            </section>
+
+            <section id="section-vidas-ataques">
+                <div id="vida-e-imagen-mascota-jugador">
+                   <p id ="parrafo-vida-mascota-jugador" class="parrafos-vidas-mascotas"><span id="vida-mascota-jugador">3</span> vidas</p> 
+                </div>
+                
+
+                <div>
+                    <section id="ataques">
+                        <div id="ataques-del-jugador">
+
+                        </div>
+                        <div id="ataques-del-enemigo">
+
+                        </div>
+                    </section>
+                </div>
+
+                <div id="vida-e-imagen-mascota-enemigo">
+                    <p id ="parrafo-vida-mascota-enemigo" class="parrafos-vidas-mascotas"><span id="vida-mascota-enemigo">3</span> vidas</p>
+                </div>
+                
+            </section>
+            
+
+
+            <section id="reiniciar">
+                <button id="boton-reiniciar">Reiniciar</button>
+            </section>
+            
+        </section>
+    </body>
+</html>
