@@ -1,48 +1,51 @@
+const inputHipodoge = document.getElementById('hipodoge')
+const inputCapipepo = document.getElementById('capipepo')
+const inputRatigueya = document.getElementById('ratigueya')
+const botonMascotaJugador = document.getElementById('boton-mascota')
+
+const botones = document.getElementById('seleccionar-ataque').getElementsByClassName('botones-ataques')
+const botonFuego = document.getElementById('boton-fuego')
+const botonAgua = document.getElementById('boton-agua')
+const botonTierra = document.getElementById('boton-tierra')
+
+const parrafoEmoji = document.getElementById('emoji')
+
+const sectionMensajes = document.getElementById('resultado')
+const spanVidaJugador = document.getElementById('vida-mascota-jugador')
+const spanVidaEnemigo = document.getElementById('vida-mascota-enemigo')
+const ataquesDelJugador = document.getElementById('ataques-del-jugador')
+const ataquesDelEnemigo = document.getElementById('ataques-del-enemigo')
+const scrollBar = document.getElementById("ataques")
+
+const botonReiniciar = document.getElementById('boton-reiniciar')
+
+
+
 let ataqueJugador
 let ataqueEnemigo
 let vidaRestanteJugador = 3
 let vidaRestanteEnemigo = 3
 
 function iniciarJuego(){
-    ocultarSection('seleccionar-ataque')
-    ocultarSection('boton-reiniciar')
+    mostrarOcultarSection('seleccionar-ataque','none')
+    mostrarOcultarSection('boton-reiniciar','none')
 
-    let botonMascotaJugador = document.getElementById('boton-mascota')
     botonMascotaJugador.addEventListener('click',seleccionarMascotaJugador)
-
-    let botonFuego = document.getElementById('boton-fuego')
     botonFuego.addEventListener('click',ataqueFuego)
-    let botonAgua = document.getElementById('boton-agua')
     botonAgua.addEventListener('click',ataqueAgua)
-    let botonTierra = document.getElementById('boton-tierra')
     botonTierra.addEventListener('click',ataqueTierra)
-
-    let botonReiniciar = document.getElementById('boton-reiniciar')
     botonReiniciar.addEventListener('click',reiniciarJuego)
 }
 
-function deshabilitarBotonesAtaques(){
-    let botones = document.getElementById('seleccionar-ataque').getElementsByClassName('botones-ataques')
+function habilitarDeshabilitarBotonesAtaques(logic){
     for (var boton of botones){
-        boton.disabled = true
+        boton.disabled = logic
     }
 }
 
-function habilitarBotonesAtaques(){
-    let botones = document.getElementById('seleccionar-ataque').getElementsByClassName('botones-ataques')
-    for (var boton of botones){
-        boton.disabled = false
-    }
-}
-
-function ocultarSection(ID){
+function mostrarOcultarSection(ID,logic){
     let sectionSeleccionarAtaque = document.getElementById(ID)
-    sectionSeleccionarAtaque.style.display = 'none'
-}
-
-function mostrarSection(ID){
-    let sectionSeleccionarAtaque = document.getElementById(ID)
-    sectionSeleccionarAtaque.style.display = 'flex'
+    sectionSeleccionarAtaque.style.display = logic
 }
 
 function agregarImagenMascota(SRC,identificador_id){
@@ -58,26 +61,25 @@ function aleatorio(min,max){
 
 function seleccionarMascotaJugador(){
     let buttonChecked = true
-    if(document.getElementById('hipodoge').checked) {
+    if(inputHipodoge.checked) {
         agregarImagenMascota('./assets/mokepons_mokepon_hipodoge_attack.png','vida-e-imagen-mascota-jugador')
-    }else if(document.getElementById('capipepo').checked) {
+    }else if(inputCapipepo.checked) {
         agregarImagenMascota('./assets/mokepons_mokepon_capipepo_attack.png','vida-e-imagen-mascota-jugador')
-    }else if(document.getElementById('ratigueya').checked) {
+    }else if(inputRatigueya.checked) {
         agregarImagenMascota('./assets/mokepons_mokepon_ratigueya_attack.png','vida-e-imagen-mascota-jugador')
     }else{
         buttonChecked = false
         alert('Selecciona una mascota')
     }
     if(buttonChecked == true){
-        mostrarSection('seleccionar-ataque')
-        ocultarSection('seleccionar-mascota')
+        mostrarOcultarSection('seleccionar-ataque','flex')
+        mostrarOcultarSection('seleccionar-mascota','none')
         seleccionarMascotaEnemigo()
     }
 }
 
 function seleccionarMascotaEnemigo(){
     let mascotaAleatorio = aleatorio(1,3)
-    let spanMascotaEnemigo = document.getElementById('mascota-enemigo')
 
     if(mascotaAleatorio==1){
         agregarImagenMascota('./assets/mokepons_mokepon_hipodoge_attack.png','vida-e-imagen-mascota-enemigo')
@@ -135,11 +137,6 @@ function combate(){
 }
 
 function crearMensaje(resultadoBatalla,emoji){
-    let sectionMensajes = document.getElementById('resultado')
-    let parrafoEmoji = document.getElementById('emoji')
-    let ataquesDelJugador = document.getElementById('ataques-del-jugador')
-    let ataquesDelEnemigo = document.getElementById('ataques-del-enemigo')
-
     let nuevoAtaqueDelJugador = document.createElement('p')
     let nuevoAtaqueDelEnemigo = document.createElement('p')
 
@@ -151,33 +148,28 @@ function crearMensaje(resultadoBatalla,emoji){
     ataquesDelJugador.appendChild(nuevoAtaqueDelJugador)
     ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo)
     vidaJugador()
-    var element = document.getElementById("ataques")
-    element.scrollTop = element.scrollHeight
+    scrollBar.scrollTop = scrollBar.scrollHeight
 }
 
 function vidaJugador(){
-    let spanVidaJugador = document.getElementById('vida-mascota-jugador')
     spanVidaJugador.innerHTML = vidaRestanteJugador
     vidaEnemigo()
 }
 
 function vidaEnemigo(){
-    let spanVidaEnemigo = document.getElementById('vida-mascota-enemigo')
     spanVidaEnemigo.innerHTML = vidaRestanteEnemigo
     mensajeResultadoFinal()
 }
 
 function mensajeResultadoFinal(){
     if(vidaRestanteEnemigo == 0) {
-        let sectionMensajes = document.getElementById('resultado')
         sectionMensajes.innerHTML = "¡Victoria!"
-        deshabilitarBotonesAtaques()
-        mostrarSection('boton-reiniciar')
+        habilitarDeshabilitarBotonesAtaques('false')
+        mostrarOcultarSection('boton-reiniciar','flex')
     }else if(vidaRestanteJugador == 0){
-        let sectionMensajes = document.getElementById('resultado')
         sectionMensajes.innerHTML = "Derrota..."
-        deshabilitarBotonesAtaques()
-        mostrarSection('boton-reiniciar')
+        habilitarDeshabilitarBotonesAtaques('false')
+        mostrarOcultarSection('boton-reiniciar','flex')
     }
 }
 
