@@ -204,12 +204,6 @@ body {
 }
 
 @media (max-width: 650px) {
-    /* .tarjetas, .div-botones-ataques {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    } */
-
     .titulo {
         color: black;
         font-size: 148px;
@@ -218,11 +212,19 @@ body {
     }
 }
 
-@media (max-width: 530px) {
-    .tarjetas, .div-botones-ataques {
+/* @media (max-width: 530px) {
+    .tarjetas {
         display: flex;
         flex-direction: column;
         gap: 15px;
+        height: 528px;
+    }
+
+    .div-botones-ataques {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        height: 162px;
     }
 
     .subtitulo {
@@ -231,4 +233,4 @@ body {
         width: 228px;
         margin: 20px 0px 40px 0px;
     }
-}
+} */
