@@ -4,10 +4,6 @@ let vidaRestanteJugador = 3
 let vidaRestanteEnemigo = 3
 
 function iniciarJuego(){
-    //desabilitarBotonesAtaques()
-
-    
-
     ocultarSection('seleccionar-ataque')
     ocultarSection('boton-reiniciar')
 
@@ -25,7 +21,7 @@ function iniciarJuego(){
     botonReiniciar.addEventListener('click',reiniciarJuego)
 }
 
-function desabilitarBotonesAtaques(){
+function deshabilitarBotonesAtaques(){
     let botones = document.getElementById('seleccionar-ataque').getElementsByClassName('botones-ataques')
     for (var boton of botones){
         boton.disabled = true
@@ -73,7 +69,6 @@ function seleccionarMascotaJugador(){
         alert('Selecciona una mascota')
     }
     if(buttonChecked == true){
-        //habilitarBotonesAtaques()
         mostrarSection('seleccionar-ataque')
         ocultarSection('seleccionar-mascota')
         seleccionarMascotaEnemigo()
@@ -176,12 +171,12 @@ function mensajeResultadoFinal(){
     if(vidaRestanteEnemigo == 0) {
         let sectionMensajes = document.getElementById('resultado')
         sectionMensajes.innerHTML = "¡Victoria!"
-        desabilitarBotonesAtaques()
+        deshabilitarBotonesAtaques()
         mostrarSection('boton-reiniciar')
     }else if(vidaRestanteJugador == 0){
         let sectionMensajes = document.getElementById('resultado')
         sectionMensajes.innerHTML = "Derrota..."
-        desabilitarBotonesAtaques()
+        deshabilitarBotonesAtaques()
         mostrarSection('boton-reiniciar')
     }
 }

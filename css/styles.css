@@ -30,6 +30,8 @@ body {
 
 .tarjetas {
     display: flex;
+    align-items: center;
+    height: 240px;
     gap: 20px;
 }
 
@@ -47,10 +49,18 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    transition: 1s;
 }
 
 .tarjeta-de-mokepon:hover {
     cursor: pointer;
+    width: 200px;
+    height: 240px;
+}
+
+.tarjetas input:checked + label {
+    width: 200px;
+    height: 240px;
 }
 
 .tarjeta-de-mokepon img {
@@ -79,6 +89,13 @@ body {
     align-items: center;
 }
 
+.div-botones-ataques {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    gap: 20px;
+}
+
 .botones-ataques {
     cursor: pointer;
     width: 160px;
@@ -92,6 +109,12 @@ body {
     color: white;
     font-size: 15px;
     font-family: 'Press Start 2P', cursive;
+    transition: 0.5s;
+}
+
+.botones-ataques:active {
+    width: 170px;
+    height: 70px;
 }
 
 #resultado-emoji {
@@ -124,11 +147,6 @@ body {
     width: 126px;
     gap: 10px;
 }
-
-/* #parrafo-vida-mascota-jugador {
-    display: flex;
-    justify-content: flex-start;
-} */
 
 #vida-e-imagen-mascota-jugador {
     display: flex;
@@ -185,10 +203,32 @@ body {
     font-family: 'Press Start 2P', cursive;
 }
 
-@media (max-width: 360px) {
-    .tarjetas {
+@media (max-width: 650px) {
+    /* .tarjetas, .div-botones-ataques {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+    } */
+
+    .titulo {
+        color: black;
+        font-size: 148px;
+        margin: 40px 20px 0px 20px;
+        font-family: 'Shadows Into Light', cursive;
+    }
+}
+
+@media (max-width: 530px) {
+    .tarjetas, .div-botones-ataques {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .subtitulo {
+        color: black;
+        font-size: 28px;
+        width: 228px;
+        margin: 20px 0px 40px 0px;
     }
 }
