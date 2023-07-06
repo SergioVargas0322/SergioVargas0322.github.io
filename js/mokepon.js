@@ -29,6 +29,7 @@ let botones = []
 let botonFuego
 let botonAgua
 let botonTierra
+let contador = 4
 let ataqueJugador
 let ataqueEnemigo
 let vidaRestanteJugador = 3
@@ -174,9 +175,17 @@ function mostrarAtaques(ataques) {
 
     botones.forEach(boton => {
         boton.addEventListener('click', (e) => {
+            console.log(e)
             if (e.target.textContent == '🔥') {
-                console.log(e)
+                ataqueFuego()
+            }else if (e.target.textContent == '💧') {
+                ataqueAgua()
+            }else if (e.target.textContent == '🌱') {
+                ataqueTierra()
             }
+            boton.disabled = true
+            e.target.style.background = '#3C5E8E';
+            contador -= 1
         })
     })
     
@@ -269,6 +278,21 @@ function mensajeResultadoFinal(){
         sectionMensajes.innerHTML = "Derrota..."
         habilitarDeshabilitarBotonesAtaques('false')
         mostrarOcultarSection('boton-reiniciar','flex')
+    }else if(contador == 0){
+        console.log(contador)
+        if(vidaRestanteEnemigo == vidaRestanteJugador){
+            sectionMensajes.innerHTML = "¡Empate!"
+            habilitarDeshabilitarBotonesAtaques('false')
+            mostrarOcultarSection('boton-reiniciar','flex')
+        }else if(vidaRestanteEnemigo < vidaRestanteJugador){
+            sectionMensajes.innerHTML = "¡Victoria!"
+            habilitarDeshabilitarBotonesAtaques('false')
+            mostrarOcultarSection('boton-reiniciar','flex')
+        }else if(vidaRestanteEnemigo > vidaRestanteJugador){
+            sectionMensajes.innerHTML = "¡Derrota!"
+            habilitarDeshabilitarBotonesAtaques('false')
+            mostrarOcultarSection('boton-reiniciar','flex')
+        }
     }
 }
 
