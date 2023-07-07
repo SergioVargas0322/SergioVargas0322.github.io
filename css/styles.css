@@ -156,8 +156,8 @@ body {
 
 #ataques {
     display: flex;
-    justify-content: space-around;
-    height: 172px;
+    justify-content: center;
+    height: 220px;
     width: 280px;
     background-position: center center;
     background-size: cover;
@@ -172,8 +172,9 @@ body {
 #ataques p {
     margin: 15px;
     display: flex;
-    width: 110px;
+    width: 80px;
     justify-content: center;
+    font-size: 25px;
 }
 
 #vida-e-imagen-mascota-enemigo {

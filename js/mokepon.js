@@ -31,6 +31,7 @@ let botonAgua
 let botonTierra
 let contador = 4
 let ataqueJugador
+let ataquesEnemigo = []
 let ataqueEnemigo
 let vidaRestanteJugador = 3
 let vidaRestanteEnemigo = 3
@@ -147,7 +148,7 @@ function seleccionarMascotaJugador(){
 
 function seleccionarMascotaEnemigo(){
     let mascotaAleatorio = aleatorio(0,mokepones.length-1)
-
+    ataquesEnemigo = mokepones[mascotaAleatorio].ataques
     agregarImagenMascota(mokepones[mascotaAleatorio].foto,'vida-e-imagen-mascota-enemigo')
 }
 
@@ -177,11 +178,14 @@ function mostrarAtaques(ataques) {
         boton.addEventListener('click', (e) => {
             console.log(e)
             if (e.target.textContent == '🔥') {
-                ataqueFuego()
+                ataqueJugador = '🔥'
+                ataqueAleatorioEnemigo()
             }else if (e.target.textContent == '💧') {
-                ataqueAgua()
+                ataqueJugador = '💧'
+                ataqueAleatorioEnemigo()
             }else if (e.target.textContent == '🌱') {
-                ataqueTierra()
+                ataqueJugador = '🌱'
+                ataqueAleatorioEnemigo()
             }
             boton.disabled = true
             e.target.style.background = '#3C5E8E';
@@ -189,16 +193,13 @@ function mostrarAtaques(ataques) {
         })
     })
     
+    
     /* botonFuego.addEventListener('click',ataqueFuego)
     botonAgua.addEventListener('click',ataqueAgua)
     botonTierra.addEventListener('click',ataqueTierra) */
 }
 
-function secuenciaAtaque (){
-
-}
-
-function ataqueFuego(){
+/* function ataqueFuego(){
     ataqueJugador = 'FUEGO'
     ataqueAleatorioEnemigo()
 }
@@ -211,31 +212,38 @@ function ataqueAgua(){
 function ataqueTierra(){
     ataqueJugador = 'TIERRA'
     ataqueAleatorioEnemigo()
-}
+} */
 
 function ataqueAleatorioEnemigo(){
-    let ataqueAleatorio = aleatorio(1,3)
+    if (contador == 4) {
+        ataquesEnemigo.sort(function() { return Math.random() - 0.5 })
+    }
+    ataqueEnemigo = ataquesEnemigo[0].nombre
+    ataquesEnemigo.shift()
 
-    if(ataqueAleatorio==1){
+    /* if(ataqueAleatorio==1){
         ataqueEnemigo = 'FUEGO'
     }else if(ataqueAleatorio==2){
         ataqueEnemigo = 'AGUA'
     }else if(ataqueAleatorio==3){
         ataqueEnemigo = 'TIERRA'
-    }
+    } */
+    
     combate()
 }
 
 function combate(){
+    console.log(ataqueJugador)
+    console.log(ataqueEnemigo)
     if(ataqueEnemigo == ataqueJugador){
         crearMensaje('EMPATE','🥊')
-    }else if(ataqueJugador == 'FUEGO' && ataqueEnemigo == 'TIERRA'){
+    }else if(ataqueJugador == '🔥' && ataqueEnemigo == '🌱'){
         vidaRestanteEnemigo--
         crearMensaje('GANASTE','🎉')
-    }else if(ataqueJugador == 'AGUA' && ataqueEnemigo == 'FUEGO'){
+    }else if(ataqueJugador == '💧' && ataqueEnemigo == '🔥'){
         vidaRestanteEnemigo--
         crearMensaje('GANASTE','🎉')
-    }else if(ataqueJugador == 'TIERRA' && ataqueEnemigo == 'AGUA'){
+    }else if(ataqueJugador == '🌱' && ataqueEnemigo == '💧'){
         vidaRestanteEnemigo--
         crearMensaje('GANASTE','🎉')
     }else {
