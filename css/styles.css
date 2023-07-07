@@ -92,6 +92,7 @@ body {
     width: 120px;
     height: 120px;
     padding: 0px 20px 0px 20px;
+    transition: 1s;
 }
 
 /* .tarjeta-de-mokepon img:hover{
