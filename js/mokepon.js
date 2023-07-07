@@ -23,6 +23,9 @@ let opcionDeMokepones
 let inputHipodoge
 let inputCapipepo
 let inputRatigueya
+let inputLangostelvis
+let inputPydos
+let inputTucapalma
 let mascotaJugador 
 let opcionDeAtaques
 let botones = []
@@ -50,6 +53,9 @@ class Mokepon {
 let hipodoge = new Mokepon('Hipodoge','./assets/mokepons_mokepon_hipodoge_attack.png',3)
 let capipepo = new Mokepon('Capipepo','./assets/mokepons_mokepon_capipepo_attack.png',3)
 let ratigueya = new Mokepon('Ratigueya','./assets/mokepons_mokepon_ratigueya_attack.png',3)
+let langostelvis = new Mokepon('Langostelvis','./assets/mokepons_mokepon_langostelvis_attack.png',3)
+let pydos = new Mokepon('Pydos','./assets/mokepons_mokepon_pydos_attack.png',3)
+let tucapalma = new Mokepon('Tucapalma','./assets/mokepons_mokepon_tucapalma_attack.png',3)
 
 hipodoge.ataques.push(
     { nombre: '🔥', id: 'boton-fuego', clase: 'boton-fuego'},
@@ -72,8 +78,29 @@ ratigueya.ataques.push(
     { nombre: '💧', id: 'boton-agua', clase: 'boton-agua'},
     { nombre: '🌱', id: 'boton-tierra', clase: 'boton-tierra'},
 )
+langostelvis.ataques.push(
+    { nombre: '🔥', id: 'boton-fuego', clase: 'boton-fuego'},
+    { nombre: '🔥', id: 'boton-fuego', clase: 'boton-fuego'},
+    { nombre: '💧', id: 'boton-agua', clase: 'boton-agua'},
+    { nombre: '🌱', id: 'boton-tierra', clase: 'boton-tierra'},
+    { nombre: '🌱', id: 'boton-tierra', clase: 'boton-tierra'},
+)
+pydos.ataques.push(
+    { nombre: '🔥', id: 'boton-fuego', clase: 'boton-fuego'},
+    { nombre: '💧', id: 'boton-agua', clase: 'boton-agua'},
+    { nombre: '💧', id: 'boton-agua', clase: 'boton-agua'},
+    { nombre: '🌱', id: 'boton-tierra', clase: 'boton-tierra'},
+    { nombre: '🌱', id: 'boton-tierra', clase: 'boton-tierra'},
+)
+tucapalma.ataques.push(
+    { nombre: '🔥', id: 'boton-fuego', clase: 'boton-fuego'},
+    { nombre: '🔥', id: 'boton-fuego', clase: 'boton-fuego'},
+    { nombre: '💧', id: 'boton-agua', clase: 'boton-agua'},
+    { nombre: '💧', id: 'boton-agua', clase: 'boton-agua'},
+    { nombre: '🌱', id: 'boton-tierra', clase: 'boton-tierra'},
+)
 
-mokepones.push(hipodoge,capipepo,ratigueya)
+mokepones.push(hipodoge,capipepo,ratigueya,langostelvis,pydos,tucapalma)
 
 mokepones.forEach(mokepon => {
     opcionDeMokepones = `
@@ -88,6 +115,9 @@ mokepones.forEach(mokepon => {
     inputHipodoge = document.getElementById('Hipodoge')
     inputCapipepo = document.getElementById('Capipepo')
     inputRatigueya = document.getElementById('Ratigueya')
+    inputLangostelvis = document.getElementById('Langostelvis')
+    inputPydos = document.getElementById('Pydos')
+    inputTucapalma = document.getElementById('Tucapalma')
 });
 
 //Funciones
@@ -134,6 +164,15 @@ function seleccionarMascotaJugador(){
     }else if(inputRatigueya.checked) {
         agregarImagenMascota(ratigueya.foto,'vida-e-imagen-mascota-jugador')
         mascotaJugador = ratigueya.nombre
+    }else if(inputLangostelvis.checked) {
+        agregarImagenMascota(langostelvis.foto,'vida-e-imagen-mascota-jugador')
+        mascotaJugador = langostelvis.nombre
+    }else if(inputPydos.checked) {
+        agregarImagenMascota(pydos.foto,'vida-e-imagen-mascota-jugador')
+        mascotaJugador = pydos.nombre
+    }else if(inputTucapalma.checked) {
+        agregarImagenMascota(tucapalma.foto,'vida-e-imagen-mascota-jugador')
+        mascotaJugador = tucapalma.nombre
     }else{
         buttonChecked = false
         alert('Selecciona una mascota')
@@ -172,11 +211,9 @@ function mostrarAtaques(ataques) {
     botonAgua = document.getElementById('boton-agua')
     botonTierra = document.getElementById('boton-tierra')
     botones = document.querySelectorAll('.BAtaques')
-    console.log(botones)
 
     botones.forEach(boton => {
         boton.addEventListener('click', (e) => {
-            console.log(e)
             if (e.target.textContent == '🔥') {
                 ataqueJugador = '🔥'
                 ataqueAleatorioEnemigo()
@@ -228,13 +265,11 @@ function ataqueAleatorioEnemigo(){
     }else if(ataqueAleatorio==3){
         ataqueEnemigo = 'TIERRA'
     } */
-    
+
     combate()
 }
 
 function combate(){
-    console.log(ataqueJugador)
-    console.log(ataqueEnemigo)
     if(ataqueEnemigo == ataqueJugador){
         crearMensaje('EMPATE','🥊')
     }else if(ataqueJugador == '🔥' && ataqueEnemigo == '🌱'){
@@ -287,7 +322,6 @@ function mensajeResultadoFinal(){
         habilitarDeshabilitarBotonesAtaques('false')
         mostrarOcultarSection('boton-reiniciar','flex')
     }else if(contador == 0){
-        console.log(contador)
         if(vidaRestanteEnemigo == vidaRestanteJugador){
             sectionMensajes.innerHTML = "¡Empate!"
             habilitarDeshabilitarBotonesAtaques('false')

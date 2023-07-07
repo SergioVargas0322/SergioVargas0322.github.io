@@ -20,6 +20,7 @@ body {
     font-size: 200px;
     margin: 0px 20px 0px 20px;
     font-family: 'Shadows Into Light', cursive;
+    transition: 1s;
 }
 
 .subtitulo {
@@ -31,8 +32,10 @@ body {
 .tarjetas {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 240px;
     gap: 20px;
+    transition: 1s;
 }
 
 .tarjeta-de-mokepon {
@@ -66,7 +69,7 @@ body {
 }
 
 .tarjeta-de-mokepon:hover > p {
-    font-size: 18px;
+    font-size: 15px;
     padding-top: 20px;
     transition: 1s;
 }
@@ -83,12 +86,13 @@ body {
     transition: 1s;
 }
 .tarjetas input:checked + label > p {
-    font-size: 18px;
+    font-size: 15px;
     padding-top: 20px;
     transition: 1s;
 }
 
 .tarjeta-de-mokepon p {
+    font-size: 12px;
     transition: 1s;
 }
 
@@ -241,14 +245,29 @@ body {
     border: 2px solid black;
     color: black;
     font-family: 'Press Start 2P', cursive;
+    transition: 1s;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1200px) {
+    .tarjetas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 480px;
+        width: 600px;
+        gap: 20px;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 700px) {
     .titulo {
         color: black;
         font-size: 148px;
         margin: 0px 20px 0px 20px;
         font-family: 'Shadows Into Light', cursive;
+        transition: 1s;
     }
 }
 
