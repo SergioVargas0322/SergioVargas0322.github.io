@@ -18,7 +18,7 @@ body {
 .titulo {
     color: black;
     font-size: 200px;
-    margin: 40px 20px 0px 20px;
+    margin: 0px 20px 0px 20px;
     font-family: 'Shadows Into Light', cursive;
 }
 
@@ -39,7 +39,6 @@ body {
     width: 160px;
     height: 200px;
     background: #11468F;
-    padding: 10px;
     box-sizing: border-box;
     border-radius: 20px;
     display: flex;
@@ -56,16 +55,52 @@ body {
     cursor: pointer;
     width: 200px;
     height: 240px;
+    gap: 0px;
+    transition: 1s;
+}
+
+.tarjeta-de-mokepon:hover > img {
+    width: 180px;
+    height: 180px;
+    transition: 1s;
+}
+
+.tarjeta-de-mokepon:hover > p {
+    font-size: 18px;
+    padding-top: 20px;
+    transition: 1s;
 }
 
 .tarjetas input:checked + label {
     width: 200px;
     height: 240px;
+    transition: 1s;
+}
+
+.tarjetas input:checked + label > img {
+    width: 180px;
+    height: 180px;
+    transition: 1s;
+}
+.tarjetas input:checked + label > p {
+    font-size: 18px;
+    padding-top: 20px;
+    transition: 1s;
 }
 
 .tarjeta-de-mokepon img {
     width: 120px;
+    height: 120px;
+    padding: 0px 20px 0px 20px;
 }
+
+/* .tarjeta-de-mokepon img:hover{
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+} */
 
 #boton-mascota {
     cursor: pointer;
@@ -200,7 +235,6 @@ body {
     background-color: transparent;
     border: 2px solid black;
     color: black;
-    margin-top: 30px;
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -208,7 +242,7 @@ body {
     .titulo {
         color: black;
         font-size: 148px;
-        margin: 40px 20px 0px 20px;
+        margin: 0px 20px 0px 20px;
         font-family: 'Shadows Into Light', cursive;
     }
 }
