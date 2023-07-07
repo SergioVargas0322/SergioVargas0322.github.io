@@ -88,6 +88,10 @@ body {
     transition: 1s;
 }
 
+.tarjeta-de-mokepon p {
+    transition: 1s;
+}
+
 .tarjeta-de-mokepon img {
     width: 120px;
     height: 120px;
