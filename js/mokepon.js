@@ -3,6 +3,9 @@
 const contenedorTarjetas = document.getElementById('contenedor-tarjetas')
 const botonMascotaJugador = document.getElementById('boton-mascota')
 
+const sectionVerMapa = document.getElementById("ver-mapa")
+const mapa = document.getElementById("mapa")
+
 const contenedorAtaques = document.getElementById('contenedor-ataques')
 
 const parrafoEmoji = document.getElementById('emoji')
@@ -27,6 +30,11 @@ let inputLangostelvis
 let inputPydos
 let inputTucapalma
 let mascotaJugador 
+let imagenMascotaSeleccionada
+let posicionEnX
+let posicionEnY
+let ancho
+let alto
 let opcionDeAtaques
 let botones = []
 let botonFuego
@@ -38,6 +46,7 @@ let ataquesEnemigo = []
 let ataqueEnemigo
 let vidaRestanteJugador = 3
 let vidaRestanteEnemigo = 3
+let lienzo = mapa.getContext("2d")
 
 //Clases
 
@@ -47,6 +56,10 @@ class Mokepon {
         this.foto = foto
         this.vida = vida
         this.ataques = []
+        this.x = 20
+        this.y = 30
+        this.ancho = 80
+        this.alto = 80
     }
 }
 
@@ -123,6 +136,7 @@ mokepones.forEach(mokepon => {
 //Funciones
 
 function iniciarJuego(){
+    mostrarOcultarSection('ver-mapa','none')
     mostrarOcultarSection('seleccionar-ataque','none')
     mostrarOcultarSection('boton-reiniciar','none')
 
@@ -181,7 +195,9 @@ function seleccionarMascotaJugador(){
         seleccionarMascotaEnemigo()
         extraerAtaques(mascotaJugador)
         mostrarOcultarSection('seleccionar-mascota','none')
-        mostrarOcultarSection('seleccionar-ataque','flex')
+        mostrarOcultarSection('ver-mapa','flex')
+        extraerImagenPosicionTamaño(mascotaJugador)
+        //mostrarOcultarSection('seleccionar-ataque','flex')
     }
 }
 
@@ -198,6 +214,37 @@ function extraerAtaques(mascotaJugador) {
         }
     });
     mostrarAtaques(ataques)
+}
+
+function extraerImagenPosicionTamaño(mascotaJugador) {
+    mokepones.forEach(mokepon => {
+        if (mokepon.nombre == mascotaJugador) {
+            imagenMascotaSeleccionada = mokepon.foto
+            posicionEnX = mokepon.x
+            posicionEnY = mokepon.y
+            ancho = mokepon.ancho
+            alto = mokepon.alto
+        }
+    });
+    mostrarAtaques(ataques)
+}
+
+function pintarPersonaje() {
+    lienzo.clearRect(0, 0, mapa.width, mapa.height)
+    let imagen = new Image()
+    imagen.src = imagenMascotaSeleccionada
+    lienzo.drawImage(
+        imagen,
+        posicionEnX,
+        posicionEnY,
+        ancho,
+        alto
+    )
+}
+
+function moverMascota() {
+    posicionEnX = posicionEnX + 5
+    pintarPersonaje()
 }
 
 function mostrarAtaques(ataques) {
