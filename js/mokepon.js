@@ -447,7 +447,7 @@ function revisarColision() {
             mascotaEnemigoColisionada = mascotaEnemigoObjeto[i]
             extraerAtaques()
             agregarImagenMascota(mascotaEnemigoColisionada.foto,'imagen-mascota-enemigo')
-            /* mostrarOcultarSection('ver-mapa','none') */
+            mostrarOcultarSection('ver-mapa','none')
             mostrarOcultarSection('seleccionar-ataque','flex')
             break
         }
