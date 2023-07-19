@@ -288,7 +288,9 @@ function seleccionarMascotaJugador(){
         alert('Selecciona una mascota')
     }
     if(buttonChecked == true){
+        mascotaJugadorObjeto = obtenerObjetoMascota(mascotaJugador)
         seleccionarMascotaEnemigo()
+        intervalo = setInterval(pintarCanvas,50)
         iniciarMapa()
         mostrarOcultarSection('seleccionar-mascota','none')
         mostrarOcultarSection('ver-mapa','flex')
@@ -324,10 +326,7 @@ function obtenerObjetoMascota(mascota) {
 function iniciarMapa() {
     mapa.width = 600
     mapa.height = 400
-    mascotaJugadorObjeto = obtenerObjetoMascota(mascotaJugador)
-    
-    /* mascotaEnemigoObjeto = obtenerObjetoMascota(mokepones[mascotaEnemigo].nombre) */
-    intervalo = setInterval(pintarCanvas,50)
+
     window.addEventListener('keydown',moverMascotaConTeclado)
     window.addEventListener('keyup',detenerMovimientoTeclado)
 }
@@ -357,19 +356,19 @@ function pintarCanvas() {
 }
 
 function moverArriba() {
-    mascotaJugadorObjeto.velocidadY = -velocidad
+    mascotaJugadorObjeto.velocidadY = -5
 }
 
 function moverIzquierda() {
-    mascotaJugadorObjeto.velocidadX = -velocidad
+    mascotaJugadorObjeto.velocidadX = -5
 }
 
 function moverAbajo() {
-    mascotaJugadorObjeto.velocidadY = velocidad
+    mascotaJugadorObjeto.velocidadY = 5
 }
 
 function moverDerecha() {
-    mascotaJugadorObjeto.velocidadX = velocidad
+    mascotaJugadorObjeto.velocidadX = 5
 }
 
 function moverMascotaConTeclado(event) {
@@ -442,13 +441,13 @@ function revisarColision() {
             izquierdaMascota > derechaEnemigo
             ){
         }else{
-            detenerMovimiento()
-            mascotaEnemigoColisionada = mascotaEnemigoObjeto[i]
             window.removeEventListener('keydown',moverMascotaConTeclado)
             window.removeEventListener('keyup',detenerMovimientoTeclado)
+            detenerMovimiento()
+            mascotaEnemigoColisionada = mascotaEnemigoObjeto[i]
             extraerAtaques()
             agregarImagenMascota(mascotaEnemigoColisionada.foto,'imagen-mascota-enemigo')
-            mostrarOcultarSection('ver-mapa','none')
+            /* mostrarOcultarSection('ver-mapa','none') */
             mostrarOcultarSection('seleccionar-ataque','flex')
             break
         }
