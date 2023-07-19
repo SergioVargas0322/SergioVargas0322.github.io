@@ -12,12 +12,16 @@ const contenedorAtaques = document.getElementById('contenedor-ataques')
 const parrafoEmoji = document.getElementById('emoji')
 
 const sectionMensajes = document.getElementById('resultado')
+const vidasMascotas = document.getElementsByClassName('parrafos-vidas-mascotas')
 const spanVidaJugador = document.getElementById('vida-mascota-jugador')
 const spanVidaEnemigo = document.getElementById('vida-mascota-enemigo')
+const ataquesMascotas = document.getElementsByClassName('ataques-mascotas')
 const ataquesDelJugador = document.getElementById('ataques-del-jugador')
 const ataquesDelEnemigo = document.getElementById('ataques-del-enemigo')
+const imagenMascotaEnemigo = document.getElementById('imagen-mascota-enemigo')
 const scrollBar = document.getElementById("ataques")
 
+const botonVolverMapa = document.getElementById('boton-volver-mapa')
 const botonReiniciar = document.getElementById('boton-reiniciar')
 
 //Variables
@@ -37,9 +41,8 @@ let mascotaEnemigo = []
 let mascotaEnemigoObjeto
 let mascotaEnemigoColisionada
 let imagenMascotaSeleccionada
-let velocidad = 5
+let velocidad
 let intervalo
-let colision = false
 let ataques
 let opcionDeAtaques
 let botones = []
@@ -229,9 +232,11 @@ mokepones.forEach(mokepon => {
 function iniciarJuego(){
     mostrarOcultarSection('ver-mapa','none')
     mostrarOcultarSection('seleccionar-ataque','none')
+    mostrarOcultarSection('boton-volver-mapa','none')
     mostrarOcultarSection('boton-reiniciar','none')
 
     botonMascotaJugador.addEventListener('click',seleccionarMascotaJugador)
+    botonVolverMapa.addEventListener('click',volverMapa)
     botonReiniciar.addEventListener('click',reiniciarJuego)
 }
 
@@ -298,6 +303,7 @@ function seleccionarMascotaEnemigo(){
         /* ataquesEnemigo[i] = mokeponesEnemigosDesordenados[i].ataques */
         /* agregarImagenMascota(mokeponesEnemigos[mascotaEnemigo].foto,'vida-e-imagen-mascota-enemigo') */
     }
+    mascotaEnemigoObjeto = mascotaEnemigo
 }
 
 function extraerAtaques() {
@@ -319,7 +325,7 @@ function iniciarMapa() {
     mapa.width = 600
     mapa.height = 400
     mascotaJugadorObjeto = obtenerObjetoMascota(mascotaJugador)
-    mascotaEnemigoObjeto = mascotaEnemigo
+    
     /* mascotaEnemigoObjeto = obtenerObjetoMascota(mokepones[mascotaEnemigo].nombre) */
     intervalo = setInterval(pintarCanvas,50)
     window.addEventListener('keydown',moverMascotaConTeclado)
@@ -327,6 +333,7 @@ function iniciarMapa() {
 }
 
 function pintarCanvas() {
+    velocidad = 5
     mascotaJugadorObjeto.posicionX = mascotaJugadorObjeto.posicionX + mascotaJugadorObjeto.velocidadX
     mascotaJugadorObjeto.posicionY = mascotaJugadorObjeto.posicionY + mascotaJugadorObjeto.velocidadY
     //Se limpia el canvas
@@ -343,7 +350,6 @@ function pintarCanvas() {
     mascotaJugadorObjeto.pintarMokepon()
     for (let i = 0; i <= mascotaEnemigoObjeto.length-1; i++) {
         mascotaEnemigoObjeto[i].pintarMokepon()
-        
     }
     if (mascotaJugadorObjeto.velocidadX != 0 || mascotaJugadorObjeto.velocidadY != 0) {
         revisarColision()
@@ -437,14 +443,14 @@ function revisarColision() {
             ){
         }else{
             detenerMovimiento()
-            colision = true
             mascotaEnemigoColisionada = mascotaEnemigoObjeto[i]
             window.removeEventListener('keydown',moverMascotaConTeclado)
             window.removeEventListener('keyup',detenerMovimientoTeclado)
             extraerAtaques()
-            agregarImagenMascota(mascotaEnemigoColisionada.foto,'vida-e-imagen-mascota-enemigo')
+            agregarImagenMascota(mascotaEnemigoColisionada.foto,'imagen-mascota-enemigo')
             mostrarOcultarSection('ver-mapa','none')
             mostrarOcultarSection('seleccionar-ataque','flex')
+            break
         }
     }
 }
@@ -508,14 +514,6 @@ function ataqueAleatorioEnemigo(){
     ataqueEnemigo = ataquesEnemigo[0].nombre
     ataquesEnemigo.shift()
 
-    /* if(ataqueAleatorio==1){
-        ataqueEnemigo = 'FUEGO'
-    }else if(ataqueAleatorio==2){
-        ataqueEnemigo = 'AGUA'
-    }else if(ataqueAleatorio==3){
-        ataqueEnemigo = 'TIERRA'
-    } */
-
     combate()
 }
 
@@ -565,8 +563,9 @@ function vidaEnemigo(){
 function mensajeResultadoFinal(){
     if(vidaRestanteEnemigo == 0) {
         sectionMensajes.innerHTML = "¡Victoria!"
+        eliminarMokeponEnemigo()
         habilitarDeshabilitarBotonesAtaques('false')
-        mostrarOcultarSection('boton-reiniciar','flex')
+        mostrarOcultarSection('boton-volver-mapa','flex')
     }else if(vidaRestanteJugador == 0){
         sectionMensajes.innerHTML = "Derrota..."
         habilitarDeshabilitarBotonesAtaques('false')
@@ -574,12 +573,14 @@ function mensajeResultadoFinal(){
     }else if(contador == 0){
         if(vidaRestanteEnemigo == vidaRestanteJugador){
             sectionMensajes.innerHTML = "¡Empate!"
+            eliminarMokeponEnemigo()
             habilitarDeshabilitarBotonesAtaques('false')
-            mostrarOcultarSection('boton-reiniciar','flex')
+            mostrarOcultarSection('boton-volver-mapa','flex')
         }else if(vidaRestanteEnemigo < vidaRestanteJugador){
             sectionMensajes.innerHTML = "¡Victoria!"
+            eliminarMokeponEnemigo()
             habilitarDeshabilitarBotonesAtaques('false')
-            mostrarOcultarSection('boton-reiniciar','flex')
+            mostrarOcultarSection('boton-volver-mapa','flex')
         }else if(vidaRestanteEnemigo > vidaRestanteJugador){
             sectionMensajes.innerHTML = "¡Derrota!"
             habilitarDeshabilitarBotonesAtaques('false')
@@ -588,13 +589,36 @@ function mensajeResultadoFinal(){
     }
 }
 
-function reiniciarJuego(){
-    location.reload()
-    /* colision = false
+function eliminarMokeponEnemigo() {
+    for (let i = 0; i <= mascotaEnemigoObjeto.length-1; i++) {
+        if (mascotaEnemigoObjeto[i].nombre == mascotaEnemigoColisionada.nombre) {
+            mascotaEnemigoObjeto.splice(i,1)
+        }
+    }
+}
+
+function volverMapa(){
+    mostrarOcultarSection('boton-volver-mapa','none')
     mostrarOcultarSection('boton-reiniciar','none')
     mostrarOcultarSection('seleccionar-ataque','none')
     mostrarOcultarSection('ver-mapa','flex')
-    iniciarMapa() */
+    contador = 4
+    contenedorAtaques.innerHTML = ''
+    ataquesMascotas.innerHTML = ''
+    vidasMascotas.innerHTML = ''
+    imagenMascotaEnemigo.innerHTML = ''
+    document.getElementById('ataques-del-jugador').innerHTML = ''
+    document.getElementById('ataques-del-enemigo').innerHTML = ''
+    vidaRestanteJugador = 3
+    vidaRestanteEnemigo = 3
+    document.getElementById('vida-mascota-jugador').innerHTML = vidaRestanteJugador
+    document.getElementById('vida-mascota-enemigo').innerHTML = vidaRestanteEnemigo
+    document.getElementById('resultado').innerHTML = '¡Suerte!'
+    iniciarMapa()
+}
+
+function reiniciarJuego(){
+    location.reload()
 }
 
 window.addEventListener('load', iniciarJuego)
