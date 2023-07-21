@@ -22,10 +22,12 @@
             <h2 class="subtitulo">Recorre el mapa con tu Mokepón</h2>
             <canvas id="mapa"></canvas>
             <div id="mover-mascota">
-                <button onmousedown="moverIzquierda()" onmouseup="detenerMovimientoHorizontal()">Izquierda</button>
-                <button onmousedown="moverArriba()" onmouseup="detenerMovimientoVertical()">Arriba</button>
-                <button onmousedown="moverAbajo()" onmouseup="detenerMovimientoVertical()">Abajo</button>
-                <button onmousedown="moverDerecha()" onmouseup="detenerMovimientoHorizontal()">Derecha</button>
+                <button onmousedown="moverArriba()" onmouseup="detenerMovimientoVertical()" onmouseout="detenerMovimientoVertical()">⬆️</button>
+                <div>
+                    <button onmousedown="moverIzquierda()" onmouseup="detenerMovimientoHorizontal()" onmouseout="detenerMovimientoHorizontal()">⬅️</button>
+                    <button onmousedown="moverAbajo()" onmouseup="detenerMovimientoVertical()" onmouseout="detenerMovimientoVertical()">⬇️</button>
+                    <button onmousedown="moverDerecha()" onmouseup="detenerMovimientoHorizontal()" onmouseout="detenerMovimientoHorizontal()">➡️</button>
+                </div>
             </div>
         </section>
 

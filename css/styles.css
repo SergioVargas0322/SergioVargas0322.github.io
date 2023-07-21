@@ -24,6 +24,7 @@ body {
 }
 
 .subtitulo {
+    text-align: center;
     color: black;
     font-size: 28px;
     margin: 20px 0px 40px 0px;
@@ -131,6 +132,39 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#mover-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+#mover-mascota button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    font-size: 60px;
+    background-color: transparent;
+    border: 0px;
+    color: black;
+    margin-top: 5px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#mover-mascota button:active {
+    font-size: 70px;
+    transition: 0.2s;
+}
+
+#mover-mascota div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 
 #mapa {

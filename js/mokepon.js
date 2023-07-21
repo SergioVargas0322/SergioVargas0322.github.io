@@ -58,19 +58,29 @@ let vidaRestanteEnemigo = 3
 let lienzo = mapa.getContext("2d")
 let mapaBackground = new Image()
 let imagenMascota = new Image()
+let anchoDelMapa = window.innerWidth - 20
+let alturaDelMapa = anchoDelMapa * 400 / 600
+
+if (window.innerWidth > 400) {
+    mapa.width = 600
+    mapa.height = 400
+}else{
+    mapa.width = anchoDelMapa
+    mapa.height = alturaDelMapa        
+}
 
 //Clases
 
 class Mokepon {
-    constructor(nombre,foto,vida,posicionX = aleatorio(0,520),posicionY = aleatorio(0,320)) {
+    constructor(nombre,foto,vida) {
         this.nombre = nombre
         this.foto = foto
         this.vida = vida
         this.ataques = []
-        this.posicionX = posicionX
-        this.posicionY = posicionY
-        this.ancho = 60
-        this.alto = 60
+        this.ancho = 70 * mapa.width / 600
+        this.alto = 70 * mapa.width / 600
+        this.posicionX = aleatorio(0,mapa.width-this.ancho)
+        this.posicionY = aleatorio(0,mapa.height-this.alto)
         this.velocidadX = 0
         this.velocidadY = 0
     }
@@ -87,15 +97,15 @@ class Mokepon {
 }
 
 class MokeponEnemigo {
-    constructor(nombre,foto,vida,posicionX = aleatorio(0,520),posicionY = aleatorio(0,320)) {
+    constructor(nombre,foto,vida) {
         this.nombre = nombre
         this.foto = foto
         this.vida = vida
         this.ataques = []
-        this.posicionX = posicionX
-        this.posicionY = posicionY
-        this.ancho = 60
-        this.alto = 60
+        this.ancho = 70 * mapa.width / 600
+        this.alto = 70 * mapa.width / 600
+        this.posicionX = aleatorio(0,mapa.width-this.ancho)
+        this.posicionY = aleatorio(0,mapa.height-this.alto)
         this.velocidadX = 0
         this.velocidadY = 0
     }
@@ -324,17 +334,25 @@ function obtenerObjetoMascota(mascota) {
 }
 
 function iniciarMapa() {
-    mapa.width = 600
-    mapa.height = 400
-
     window.addEventListener('keydown',moverMascotaConTeclado)
     window.addEventListener('keyup',detenerMovimientoTeclado)
 }
 
 function pintarCanvas() {
-    velocidad = 5
-    mascotaJugadorObjeto.posicionX = mascotaJugadorObjeto.posicionX + mascotaJugadorObjeto.velocidadX
-    mascotaJugadorObjeto.posicionY = mascotaJugadorObjeto.posicionY + mascotaJugadorObjeto.velocidadY
+    velocidad = 5 * mapa.width / 600
+    if (mascotaJugadorObjeto.posicionX > (mapa.width - mascotaJugadorObjeto.ancho)){
+        mascotaJugadorObjeto.posicionX = mascotaJugadorObjeto.posicionX - 1
+    }else if(mascotaJugadorObjeto.posicionX < 0){
+        mascotaJugadorObjeto.posicionX = mascotaJugadorObjeto.posicionX + 1
+    }else if(mascotaJugadorObjeto.posicionY > (mapa.height - mascotaJugadorObjeto.alto)){
+        mascotaJugadorObjeto.posicionY = mascotaJugadorObjeto.posicionY - 1
+    }else if(mascotaJugadorObjeto.posicionY < 0){
+        mascotaJugadorObjeto.posicionY = mascotaJugadorObjeto.posicionY + 1
+    }else{
+        mascotaJugadorObjeto.posicionX = mascotaJugadorObjeto.posicionX + mascotaJugadorObjeto.velocidadX
+        mascotaJugadorObjeto.posicionY = mascotaJugadorObjeto.posicionY + mascotaJugadorObjeto.velocidadY
+    }
+
     //Se limpia el canvas
     lienzo.clearRect(0, 0, mapa.width, mapa.height)
     //Imagen de fondo en el Canvas
@@ -356,19 +374,19 @@ function pintarCanvas() {
 }
 
 function moverArriba() {
-    mascotaJugadorObjeto.velocidadY = -5
+    mascotaJugadorObjeto.velocidadY = -velocidad
 }
 
 function moverIzquierda() {
-    mascotaJugadorObjeto.velocidadX = -5
+    mascotaJugadorObjeto.velocidadX = -velocidad
 }
 
 function moverAbajo() {
-    mascotaJugadorObjeto.velocidadY = 5
+    mascotaJugadorObjeto.velocidadY = velocidad
 }
 
 function moverDerecha() {
-    mascotaJugadorObjeto.velocidadX = 5
+    mascotaJugadorObjeto.velocidadX = velocidad
 }
 
 function moverMascotaConTeclado(event) {
