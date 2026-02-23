@@ -419,7 +419,7 @@
         estimatedHours: 40,
         summary:
           "Fundamentos de sistemas operativos con enfoque en Windows, Linux, conectividad móvil y seguridad.",
-        tags: ["sistemas operativos", "windows", "linux", "m\\u00f3vil", "seguridad"],
+        tags: ["sistemas operativos", "windows", "linux", "móvil", "seguridad"],
         modules: [
           {
             key: "M1",
@@ -812,7 +812,7 @@
           },
           {
             key: "M2",
-            title: "Linux: shell y operaci\\u00f3n de servicios",
+            title: "Linux: shell y operación de servicios",
             topics: [
               {
                 code: "2.1",
@@ -1446,69 +1446,69 @@
           },
           {
             key: "M4",
-            title: "Sistemas m\u00f3viles y seguridad",
+            title: "Sistemas móviles y seguridad",
             topics: [
               {
                 code: "4.1",
                 title: "Android versus iOS",
                 summary:
-                  "Diferencias entre Android e iOS en modelo de c\u00f3digo, ecosistema de aplicaciones y control de contenido.",
+                  "Diferencias entre Android e iOS en modelo de código, ecosistema de aplicaciones y control de contenido.",
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/C2_4.1_android_vs_ios.svg",
-                    alt: "Comparativa visual entre Android de c\u00f3digo abierto e iOS de c\u00f3digo cerrado."
+                    alt: "Comparativa visual entre Android de código abierto e iOS de código cerrado."
                   }
                 ],
                 sections: [
                   {
-                    title: "4.1.1 C\u00f3digo abierto versus c\u00f3digo cerrado",
+                    title: "4.1.1 Código abierto versus código cerrado",
                     items: [
-                      "Android es un sistema operativo m\u00f3vil basado en Linux y de enfoque abierto; iOS es propietario y de c\u00f3digo cerrado.",
-                      "El c\u00f3digo fuente abierto facilita auditor\u00eda y personalizaci\u00f3n; el c\u00f3digo cerrado prioriza control del fabricante sobre plataforma y distribuci\u00f3n.",
-                      "Adem\u00e1s de Android e iOS, Microsoft desarroll\u00f3 ediciones m\u00f3viles como Windows Phone y Windows 10 Mobile."
+                      "Android es un sistema operativo móvil basado en Linux y de enfoque abierto; iOS es propietario y de código cerrado.",
+                      "El código fuente abierto facilita auditoría y personalización; el código cerrado prioriza control del fabricante sobre plataforma y distribución.",
+                      "Además de Android e iOS, Microsoft desarrolló ediciones móviles como Windows Phone y Windows 10 Mobile."
                     ]
                   },
                   {
                     title: "4.1.2 Fuentes de aplicaciones y contenido",
                     items: [
                       "Las apps sustituyen a los programas tradicionales de escritorio y se descargan desde tiendas o fuentes autorizadas.",
-                      "En iOS, Apple usa un modelo de revisi\u00f3n centralizada (walled garden) en App Store para filtrar contenido malicioso.",
-                      "En Android, adem\u00e1s de Google Play, se permite instalaci\u00f3n desde terceros mediante archivos APK (sideloading), lo que exige mayor criterio de seguridad."
+                      "En iOS, Apple usa un modelo de revisión centralizada (walled garden) en App Store para filtrar contenido malicioso.",
+                      "En Android, además de Google Play, se permite instalación desde terceros mediante archivos APK (sideloading), lo que exige mayor criterio de seguridad."
                     ]
                   },
                   {
-                    title: "Desarrollo y distribuci\u00f3n de apps",
+                    title: "Desarrollo y distribución de apps",
                     items: [
                       "iOS usa Xcode y Swift dentro del ecosistema Apple.",
-                      "Android usa Android Studio y un modelo de permisos por aplicaci\u00f3n (sandbox + autorizaciones).",
+                      "Android usa Android Studio y un modelo de permisos por aplicación (sandbox + autorizaciones).",
                       "La procedencia de la app impacta directamente el riesgo operativo del dispositivo."
                     ]
                   },
                   {
-                    title: "Integraci\u00f3n con veh\u00edculos",
+                    title: "Integración con vehículos",
                     items: [
-                      "Android Auto y Apple CarPlay extienden funciones del m\u00f3vil al sistema del autom\u00f3vil.",
-                      "Casos t\u00edpicos: navegaci\u00f3n, m\u00fasica, llamadas manos libres, asistentes digitales y calendario.",
-                      "El enlace suele realizarse por USB o Bluetooth, por lo que tambi\u00e9n requiere controles de seguridad y privacidad."
+                      "Android Auto y Apple CarPlay extienden funciones del móvil al sistema del automóvil.",
+                      "Casos típicos: navegación, música, llamadas manos libres, asistentes digitales y calendario.",
+                      "El enlace suele realizarse por USB o Bluetooth, por lo que también requiere controles de seguridad y privacidad."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Comparar Android e iOS con criterio t\u00e9cnico para elegir plataforma, fuente de apps y controles de seguridad adecuados al entorno."
+                      "Comparar Android e iOS con criterio técnico para elegir plataforma, fuente de apps y controles de seguridad adecuados al entorno."
                     ]
                   }
                 ]
               },
               {
                 code: "4.2",
-                title: "Interfaz t\u00e1ctil m\u00f3vil",
+                title: "Interfaz táctil móvil",
                 summary:
-                  "Componentes de interfaz en Android e iOS: navegaci\u00f3n, notificaciones, centro de control y b\u00fasqueda del sistema.",
+                  "Componentes de interfaz en Android e iOS: navegación, notificaciones, centro de control y búsqueda del sistema.",
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/C2_4.2_touch_interface.svg",
-                    alt: "Elementos de la interfaz t\u00e1ctil en m\u00f3viles: barra superior, \u00e1rea de apps, navegaci\u00f3n y notificaciones."
+                    alt: "Elementos de la interfaz táctil en móviles: barra superior, área de apps, navegación y notificaciones."
                   }
                 ],
                 sections: [
@@ -1516,45 +1516,45 @@
                     title: "4.2.1 Android Home Screen Items",
                     items: [
                       "Android organiza apps y widgets en varias pantallas con una pantalla principal (home).",
-                      "El indicador de pantalla muestra qu\u00e9 escritorio est\u00e1 activo y permite navegaci\u00f3n horizontal por deslizamiento.",
-                      "La barra del sistema se mantiene visible para navegaci\u00f3n y acciones globales del dispositivo."
+                      "El indicador de pantalla muestra qué escritorio está activo y permite navegación horizontal por deslizamiento.",
+                      "La barra del sistema se mantiene visible para navegación y acciones globales del dispositivo."
                     ]
                   },
                   {
-                    title: "Iconos de navegaci\u00f3n y \u00e1rea de notificaciones",
+                    title: "Iconos de navegación y área de notificaciones",
                     items: [
-                      "Los iconos de navegaci\u00f3n permiten volver, ir al inicio y gestionar aplicaciones recientes.",
-                      "El \u00e1rea de estado incluye reloj, bater\u00eda, red Wi-Fi, datos m\u00f3viles y alertas de apps.",
-                      "Al deslizar desde la parte superior se abre el panel de notificaciones para responder, descartar o ajustar configuraciones r\u00e1pidas."
+                      "Los iconos de navegación permiten volver, ir al inicio y gestionar aplicaciones recientes.",
+                      "El área de estado incluye reloj, batería, red Wi-Fi, datos móviles y alertas de apps.",
+                      "Al deslizar desde la parte superior se abre el panel de notificaciones para responder, descartar o ajustar configuraciones rápidas."
                     ]
                   },
                   {
                     title: "4.2.3 iOS Home Screen Items",
                     items: [
-                      "iOS tambi\u00e9n organiza apps por pantallas t\u00e1ctiles, pero con diferencias clave frente a Android.",
-                      "No usa el mismo esquema de iconos de navegaci\u00f3n y, seg\u00fan el modelo, privilegia bot\u00f3n f\u00edsico o gestos.",
+                      "iOS también organiza apps por pantallas táctiles, pero con diferencias clave frente a Android.",
+                      "No usa el mismo esquema de iconos de navegación y, según el modelo, privilegia botón físico o gestos.",
                       "En iOS cada icono representa la app real; no se maneja el mismo enfoque de widgets y atajos que Android."
                     ]
                   },
                   {
-                    title: "Bot\u00f3n Home, centro de control y notificaciones",
+                    title: "Botón Home, centro de control y notificaciones",
                     items: [
-                      "En iPhone con bot\u00f3n Home, este concentra acciones como desbloquear, volver a inicio y activar Siri.",
-                      "En modelos sin bot\u00f3n Home, esas funciones migran a gestos t\u00e1ctiles y bot\u00f3n lateral.",
+                      "En iPhone con botón Home, este concentra acciones como desbloquear, volver a inicio y activar Siri.",
+                      "En modelos sin botón Home, esas funciones migran a gestos táctiles y botón lateral.",
                       "El Notification Center y el Control Center centralizan alertas y ajustes frecuentes incluso con el equipo bloqueado."
                     ]
                   },
                   {
-                    title: "B\u00fasqueda Spotlight",
+                    title: "Búsqueda Spotlight",
                     items: [
                       "Spotlight permite buscar apps, ajustes, contenido local y resultados web desde cualquier pantalla.",
-                      "La b\u00fasqueda se actualiza en tiempo real y acelera acceso a funciones sin navegar por m\u00faltiples men\u00fas."
+                      "La búsqueda se actualiza en tiempo real y acelera acceso a funciones sin navegar por múltiples menús."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Identificar y usar correctamente los componentes t\u00e1ctiles principales de Android e iOS para una operaci\u00f3n m\u00f3vil m\u00e1s r\u00e1pida y segura."
+                      "Identificar y usar correctamente los componentes táctiles principales de Android e iOS para una operación móvil más rápida y segura."
                     ]
                   }
                 ]
