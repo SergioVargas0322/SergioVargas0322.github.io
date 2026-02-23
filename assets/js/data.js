@@ -490,6 +490,90 @@
                     ]
                   }
                 ]
+              },
+              {
+                code: "1.4",
+                title: "Sistemas de archivos NTFS y Alternate Data Streams",
+                summary:
+                  "Estructuras de partición y archivos en NTFS, uso de timestamps forenses y riesgos de ocultamiento con ADS.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-windows.svg",
+                    alt: "Sistema de archivos NTFS con enfoque en seguridad y forensia."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Puntos importantes",
+                    items: [
+                      "NTFS soporta permisos, ownership y control detallado de acceso.",
+                      "Los timestamps MACE ayudan al análisis de incidentes.",
+                      "Los ADS pueden ocultar datos y código malicioso si no se monitorean."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Interpretar correctamente actividad de archivos y detectar señales de abuso en almacenamiento."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.5",
+                title: "Boot con BIOS/UEFI y ciclo de apagado seguro",
+                summary:
+                  "Diferencias entre BIOS y UEFI, secuencia Bootmgr/BCD/Winload y buenas prácticas para apagado controlado.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-windows.svg",
+                    alt: "Proceso de arranque y apagado seguro de sistemas Windows."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Checklist técnico",
+                    items: [
+                      "Verificar firmware, orden de arranque y estado del BCD.",
+                      "Distinguir cold start de salida de hibernación durante el diagnóstico.",
+                      "Evitar apagados forzados para prevenir corrupción de datos y servicios."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Reducir incidencias de inicio y pérdida de integridad por ciclos de encendido/apagado incorrectos."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.6",
+                title: "Administración con cuentas, CLI y PowerShell",
+                summary:
+                  "Gestión de usuarios locales/dominio y uso de comandos para soporte, red y tareas de administración en Windows.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-windows.svg",
+                    alt: "Administración de Windows mediante consola y PowerShell."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Puntos importantes",
+                    items: [
+                      "Run as Administrator eleva permisos para tareas del sistema.",
+                      "Los comandos net y PowerShell permiten automatizar operaciones frecuentes.",
+                      "La separación de cuentas mejora trazabilidad y control de cambios."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Ejecutar tareas administrativas con criterios de seguridad y menor dependencia de la interfaz gráfica."
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -557,6 +641,78 @@
                     title: "Resultado esperado",
                     items: [
                       "Validar exposición de servicios, aplicar mínimo privilegio y mantener el host actualizado."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "2.4",
+                title: "Administración de servicios y revisión de logs",
+                summary:
+                  "Configuración de servicios en Linux, seguimiento de registros y acciones de hardening para operación estable.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-linux.svg",
+                    alt: "Administración de servicios y logs en servidores Linux."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Checklist operativo",
+                    items: [
+                      "Identificar archivos de configuración clave por servicio.",
+                      "Monitorear logs para detectar errores y eventos de seguridad.",
+                      "Deshabilitar servicios no requeridos para reducir superficie de ataque."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Mantener servicios críticos con disponibilidad y trazabilidad adecuadas."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "2.5",
+                title: "Sistema de archivos Linux, roles y enlaces",
+                summary:
+                  "Uso de permisos rwx, ownership, enlaces duros/simbólicos y organización segura del sistema de archivos.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-linux.svg",
+                    alt: "Permisos y estructura del sistema de archivos Linux."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Puntos importantes",
+                    items: [
+                      "Permisos y grupos determinan el control de acceso en Linux.",
+                      "Hard links y symbolic links tienen implicaciones distintas en administración.",
+                      "Aplicar mínimo privilegio evita accesos y cambios no autorizados."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "2.6",
+                title: "Host Linux: actualizaciones, procesos y detección de rootkits",
+                summary:
+                  "Mantenimiento del host con parches, control de procesos, verificación anti-rootkit y uso de piping en análisis.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-linux.svg",
+                    alt: "Mantenimiento de host Linux y defensa contra amenazas."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Checklist de seguridad",
+                    items: [
+                      "Aplicar actualizaciones periódicas del sistema y paquetes.",
+                      "Revisar procesos anómalos y consumo de recursos.",
+                      "Usar herramientas de detección y comandos encadenados para investigación rápida."
                     ]
                   }
                 ]
@@ -630,6 +786,56 @@
                     ]
                   }
                 ]
+              },
+              {
+                code: "3.4",
+                title: "Configuración de correo en Android e iOS",
+                summary:
+                  "Alta de cuentas de correo, validación de parámetros y sincronización de datos para uso académico y productivo.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-connectivity.svg",
+                    alt: "Configuración de correo electrónico en plataformas móviles."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Checklist operativo",
+                    items: [
+                      "Configurar protocolos y puertos correctos para envío/recepción.",
+                      "Verificar autenticación y cifrado de la cuenta.",
+                      "Comprobar entrega, recepción y sincronización de bandejas."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "3.5",
+                title: "Sincronización móvil y tipos de conexión",
+                summary:
+                  "Tipos de datos a sincronizar y elección del medio (USB, Wi-Fi, nube) según disponibilidad y seguridad.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-connectivity.svg",
+                    alt: "Sincronización de datos entre dispositivos y servicios."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Puntos importantes",
+                    items: [
+                      "Sincronizar contactos, calendario y archivos evita pérdida operativa.",
+                      "Elegir el tipo de conexión según velocidad y riesgo de exposición.",
+                      "Mantener consistencia de datos requiere validar conflictos y versiones."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Sostener información actualizada en múltiples dispositivos sin afectar integridad."
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -697,6 +903,78 @@
                     title: "Resultado esperado",
                     items: [
                       "Sostener dispositivos móviles actualizados y con menor superficie de ataque."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.4",
+                title: "Interfaz táctil y funciones comunes del dispositivo",
+                summary:
+                  "Elementos de pantalla en Android/iOS, calibración, orientación y ajustes de uso diario en movilidad.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-security.svg",
+                    alt: "Interfaz táctil y ajustes comunes en dispositivos móviles."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Puntos importantes",
+                    items: [
+                      "La calibración y orientación correctas mejoran experiencia de usuario.",
+                      "El brillo y el uso de sensores impactan directamente la batería.",
+                      "La personalización debe equilibrar usabilidad y seguridad."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.5",
+                title: "Passcodes, intentos fallidos y borrado automático",
+                summary:
+                  "Controles de acceso local y respuesta de seguridad ante múltiples intentos de autenticación fallidos.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-security.svg",
+                    alt: "Políticas de bloqueo y protección de datos ante intentos fallidos."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Checklist de protección",
+                    items: [
+                      "Configurar bloqueo por PIN, contraseña o biometría.",
+                      "Definir umbral de intentos fallidos según política de seguridad.",
+                      "Validar que existan respaldos antes de habilitar borrado automático."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Minimizar acceso no autorizado y proteger datos ante pérdida o robo del dispositivo."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.6",
+                title: "Servicios en la nube, localización y bloqueo remoto",
+                summary:
+                  "Respaldo remoto, localización de equipos y acciones de lock/wipe para respuesta a incidentes móviles.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-security.svg",
+                    alt: "Servicios cloud para respaldo y control remoto de dispositivos."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Checklist operativo",
+                    items: [
+                      "Activar backup automático con verificación periódica de restauración.",
+                      "Configurar herramientas de localización antes de incidentes.",
+                      "Aplicar bloqueo o borrado remoto cuando la recuperación no sea posible."
                     ]
                   }
                 ]
