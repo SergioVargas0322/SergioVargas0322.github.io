@@ -818,20 +818,69 @@
                 code: "2.1",
                 title: "Fundamentos de Linux y valor en SOC",
                 summary:
-                  "Conceptos base de Linux, su relevancia en servidores e infraestructura de seguridad.",
+                  "Base conceptual de Linux, su arquitectura abierta y su valor operativo para analistas y administradores en un SOC.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-linux.svg",
-                    alt: "Linux en entornos de administración y seguridad."
+                    src: "./assets/images/operating-systems-basics/C2_2.1.png",
+                    alt: "Logotipo de Linux y mascota Tux."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.1_soc.png",
+                    alt: "Consola Sguil de Security Onion para análisis de eventos de seguridad."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.1_kali.png",
+                    alt: "Menú de categorías de herramientas de Kali Linux para pruebas de penetración."
                   }
                 ],
                 sections: [
                   {
-                    title: "Puntos importantes",
+                    title: "2.1.1 Qué es Linux",
                     items: [
-                      "Linux es clave en servidores y operaciones de ciberseguridad.",
-                      "Permite control granular y automatización mediante CLI.",
-                      "Su adopción masiva lo vuelve esencial en perfiles técnicos."
+                      "Linux es un sistema operativo creado en 1991, de código abierto, ligero y altamente configurable.",
+                      "Está diseñado para operar en red, lo que facilita el desarrollo y uso de aplicaciones orientadas a servicios.",
+                      "Al ser open source, el kernel puede inspeccionarse, modificarse y recompilarse según necesidades técnicas.",
+                      "Las distribuciones (distros) empaquetan kernel + herramientas; ejemplos: Debian, Red Hat, Ubuntu, CentOS y SUSE."
+                    ]
+                  },
+                  {
+                    title: "2.1.2 Valor de Linux en ciberseguridad",
+                    items: [
+                      "La flexibilidad del código abierto permite construir entornos específicos para análisis de seguridad.",
+                      "La CLI de Linux es potente para tareas locales y remotas, con menor consumo de recursos que un entorno gráfico completo.",
+                      "El usuario root tiene control total del sistema, útil para funciones de bajo nivel como la pila de red.",
+                      "Ese control detallado favorece la creación y ajuste de herramientas de monitoreo e investigación."
+                    ]
+                  },
+                  {
+                    title: "2.1.3 Linux en el SOC",
+                    items: [
+                      "En un Security Operations Center, Linux permite montar plataformas ligeras con solo los paquetes necesarios.",
+                      "Las herramientas pueden integrarse en flujos de trabajo coordinados para detección, análisis y respuesta.",
+                      "Security Onion es un ejemplo de suite Linux orientada al análisis de seguridad de red, con consola Sguil."
+                    ]
+                  },
+                  {
+                    title: "Herramientas SOC comunes en Linux",
+                    items: [
+                      "Captura de paquetes (ej. Wireshark) para observar transacciones y protocolos en detalle.",
+                      "Análisis de malware en entornos controlados para estudiar comportamiento sin comprometer el host.",
+                      "Sistemas IDS para inspección de tráfico en tiempo real y activación de reglas de alerta.",
+                      "Firewalls, gestores de logs, plataformas SIEM y sistemas de ticketing para operación continua del SOC."
+                    ]
+                  },
+                  {
+                    title: "2.1.4 Linux Tools y PenTesting",
+                    items: [
+                      "El penetration testing busca vulnerabilidades atacando de forma controlada un sistema o red.",
+                      "Linux concentra múltiples herramientas técnicas: generadores de paquetes, escáneres de puertos y exploits de prueba.",
+                      "Kali Linux agrupa una amplia colección de utilidades de pentesting en una sola distribución."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Explicar por qué Linux es una plataforma estratégica para monitoreo, análisis y defensa en ciberseguridad."
                     ]
                   }
                 ]
