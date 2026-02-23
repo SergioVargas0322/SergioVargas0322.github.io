@@ -1230,44 +1230,108 @@
             topics: [
               {
                 code: "3.1",
-                title: "Wi-Fi, datos celulares y Bluetooth",
+                title: "Wireless and Cellular Data Network",
                 summary:
-                  "Conectividad inalámbrica y celular, configuración de redes y emparejamiento seguro de periféricos.",
+                  "Conectividad móvil por Wi-Fi y red celular, con enfoque en seguridad de configuración, estándares de comunicación y uso de hotspot.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-connectivity.svg",
-                    alt: "Conectividad móvil con Wi-Fi, datos y Bluetooth."
+                    src: "./assets/images/operating-systems-basics/C2_3.1_airplane_cellular.png",
+                    alt: "Pantallas de iOS para modo avión y opciones de datos celulares."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_3.1_hotspot.png",
+                    alt: "Configuración de Personal Hotspot en iOS para compartir internet."
                   }
                 ],
                 sections: [
                   {
-                    title: "Puntos importantes",
+                    title: "3.1.1 Wireless Data Networks",
                     items: [
-                      "La calidad de red depende de cobertura, interferencia y configuración.",
-                      "Bluetooth debe usarse con visibilidad controlada y dispositivos confiables.",
-                      "Modo avión y hotspot son funciones clave para escenarios específicos."
+                      "Los dispositivos móviles se conectan a internet principalmente por Wi-Fi o por red celular.",
+                      "Wi-Fi suele preferirse por costo y consumo de batería, mientras que celular depende del plan del operador.",
+                      "IMEI identifica el dispositivo e IMSI identifica al abonado (normalmente asociado a la SIM).",
+                      "La cobertura celular se construye con torres y satélites, habilitando conectividad en movilidad."
+                    ]
+                  },
+                  {
+                    title: "3.1.2 Wi-Fi Manual Configuration",
+                    items: [
+                      "Buenas prácticas: usar seguridad robusta (WPA2 o superior), evitar texto claro para credenciales y preferir VPN.",
+                      "Configuración manual requiere SSID, tipo de seguridad y contraseña en Android o iOS.",
+                      "La conexión puede ser automática o manual según la política y el entorno de red."
+                    ]
+                  },
+                  {
+                    title: "3.1.4 Cellular Communications Standards",
+                    items: [
+                      "Evolución de estándares: 1G analógico, 2G digital, 3G con internet móvil, 4G/LTE de alta velocidad y 5G de muy alta capacidad.",
+                      "No todos los estándares se adoptan igual en todos los países; esto puede afectar compatibilidad internacional.",
+                      "Muchos equipos soportan múltiples generaciones y cambian automáticamente entre ellas según cobertura."
+                    ]
+                  },
+                  {
+                    title: "3.1.5 Airplane Mode",
+                    items: [
+                      "Airplane Mode desactiva radios celulares, Wi-Fi y Bluetooth para cumplir restricciones operativas.",
+                      "Tras activarlo, pueden habilitarse selectivamente algunas interfaces (como Wi-Fi o Bluetooth) si la política lo permite.",
+                      "También sirve para ahorrar energía o evitar consumo de datos en escenarios con cargos elevados."
+                    ]
+                  },
+                  {
+                    title: "3.1.6 Hotspot",
+                    items: [
+                      "Un hotspot (tethering) permite compartir internet celular con otros dispositivos por Wi-Fi, Bluetooth o USB.",
+                      "Es útil cuando no existe red fija o Wi-Fi disponible para el equipo que necesita conectividad.",
+                      "Herramientas como analizadores Wi-Fi o de celdas ayudan a diagnosticar problemas de radio en movilidad."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Configurar conectividad móvil segura y entender el impacto técnico de estándares celulares, modo avión y hotspot."
                     ]
                   }
                 ]
               },
               {
                 code: "3.2",
-                title: "Configuración de correo y sincronización",
+                title: "Bluetooth",
                 summary:
-                  "Parámetros de email en Android/iOS y sincronización de datos personales o corporativos.",
+                  "Uso de Bluetooth en dispositivos móviles, tipos de periféricos compatibles y proceso de emparejamiento seguro en Android e iOS.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-connectivity.svg",
-                    alt: "Configuración de correo y sincronización de datos móviles."
+                    src: "./assets/images/operating-systems-basics/C2_3.2_bluetooth_settings.png",
+                    alt: "Pantalla de configuración móvil con opción Bluetooth activa."
                   }
                 ],
                 sections: [
                   {
-                    title: "Checklist operativo",
+                    title: "3.2.1 Bluetooth for Mobile Devices",
                     items: [
-                      "Configurar servidor entrante/saliente y métodos de autenticación.",
-                      "Validar sincronización de correo, contactos y calendario.",
-                      "Elegir tipo de sincronización según el riesgo de la información."
+                      "Bluetooth permite conectar parlantes, audífonos, teclados, mouse y controles de juego.",
+                      "Estos periféricos mejoran productividad y experiencia multimedia sin cableado adicional."
+                    ]
+                  },
+                  {
+                    title: "3.2.2 Bluetooth Pairing",
+                    items: [
+                      "El emparejamiento Bluetooth es el proceso por el cual dos dispositivos acuerdan parámetros de comunicación y autenticación.",
+                      "Uno de los equipos debe estar en modo discoverable/visible para ser detectado.",
+                      "Durante el pairing puede solicitarse PIN o passkey, que luego queda almacenado para futuras conexiones."
+                    ]
+                  },
+                  {
+                    title: "Procedimiento operativo (Android e iOS)",
+                    items: [
+                      "Activar Bluetooth en ajustes del sistema y seleccionar el dispositivo detectado.",
+                      "Ingresar el PIN si es requerido por el periférico.",
+                      "Verificar que el dispositivo quede enlazado y disponible dentro del rango de cobertura."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Emparejar periféricos Bluetooth de forma estable y segura, minimizando errores de visibilidad o autenticación."
                     ]
                   }
                 ]
