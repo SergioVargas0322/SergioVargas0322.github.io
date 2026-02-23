@@ -22,7 +22,7 @@
 
   const state = {
     query: "",
-    activeCourseId: data.courses[0] ? data.courses[0].id : null,
+    activeCourseId: null,
     pendingJump: null,
     highlightTimer: null
   };
@@ -112,8 +112,8 @@
 
   function render() {
     const filtered = getFilteredCourses();
-    if (!filtered.some((course) => course.id === state.activeCourseId)) {
-      state.activeCourseId = filtered[0] ? filtered[0].id : null;
+    if (state.activeCourseId && !filtered.some((course) => course.id === state.activeCourseId)) {
+      state.activeCourseId = null;
     }
 
     renderCourseCards(filtered);
