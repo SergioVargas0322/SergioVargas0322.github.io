@@ -1980,6 +1980,223 @@
             ]
           }
         ]
+      },
+      {
+        id: "packet-tracer-network-exploration",
+        title: "Exploración de redes con Cisco Packet Tracer",
+        provider: "Cisco Networking Academy",
+        level: "Inicial",
+        status: "En curso",
+        estimatedHours: 10,
+        summary:
+          "Curso práctico para configurar una red de oficina pequeña, simular tráfico, documentar topologías y monitorear cambios con un controlador de red.",
+        tags: ["packet tracer", "topologías", "simulación", "controlador de red"],
+        modules: [
+          {
+            key: "M1",
+            title: "Configure su Red de Oficina Pequeña",
+            topics: [
+              {
+                code: "1.0",
+                title: "Introducción y preparación del entorno",
+                summary:
+                  "Contexto del curso, objetivos y alcance de la red de oficina pequeña que se construirá en Packet Tracer.",
+                images: [
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_1.1.png",
+                    alt: "Vista general de topología de oficina pequeña en Packet Tracer."
+                  },
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_1.2.png",
+                    alt: "Espacio físico de oficina con infraestructura de red."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Puntos importantes",
+                    items: [
+                      "El curso amplía las bases de Introducción a Packet Tracer hacia escenarios de oficina pequeña.",
+                      "Se trabaja con vistas lógica y física para entender red, ubicación de equipos y conectividad.",
+                      "El enfoque combina instalación, configuración, monitoreo y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Qué aprenderás en este módulo",
+                    items: [
+                      "Navegar por ubicaciones como hogar, oficina, biblioteca e ISP dentro de la topología.",
+                      "Interpretar la organización de una LAN empresarial con armario de cableado y rack.",
+                      "Preparar el entorno para prácticas de cableado estructurado y configuración."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Comprender la topología base de la oficina pequeña y su relación con el entorno físico."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.1",
+                title: "Conectar dispositivos por tecnologías cableadas e inalámbricas",
+                summary:
+                  "Uso de cableado estructurado, conexión de equipos y verificación inicial de configuración por GUI y CLI.",
+                images: [
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_1.4.png",
+                    alt: "Consola CLI en Packet Tracer para revisar configuración del dispositivo."
+                  },
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_1.5.png",
+                    alt: "Consola CLI mostrando guardado de configuración en dispositivo Cisco."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Cableado estructurado",
+                    items: [
+                      "Packet Tracer permite usar paneles de parcheo y rosetas para simular cableado realista.",
+                      "El etiquetado por colores y puntos de curvatura mejora organización y mantenimiento.",
+                      "La gestión de cables en rack facilita trazabilidad entre puertos de switch y panel."
+                    ]
+                  },
+                  {
+                    title: "Conexiones y tecnologías",
+                    items: [
+                      "Aplicar conexiones cableadas e inalámbricas según tipo de dispositivo y objetivo de red.",
+                      "Configurar Wi-Fi y parámetros básicos para hosts móviles en escenarios de oficina.",
+                      "Usar consola para acceder a CLI, cambiar hostname y guardar running-config en startup-config."
+                    ]
+                  },
+                  {
+                    title: "Checklist operativo",
+                    items: [
+                      "Verificar que los enlaces estén activos y en puertos correctos.",
+                      "Comprobar direccionamiento en hosts antes de validar conectividad.",
+                      "Guardar configuración del equipo para evitar pérdida tras reinicio."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Conectar y dejar operativa una red básica de oficina con buenas prácticas de cableado y CLI."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M2",
+            title: "Administre y Supervise su Red de Sucursal",
+            topics: [
+              {
+                code: "2.0",
+                title: "Simulación, clústeres y anotación de topologías",
+                summary:
+                  "Control del tráfico en modo simulación, organización lógica por clústeres y documentación visual de la red.",
+                images: [
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_2.1.png",
+                    alt: "Panel de simulación de Packet Tracer con eventos ICMP."
+                  },
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_2.2.png",
+                    alt: "Panel de simulación para reproducción y captura de eventos."
+                  },
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_2.3.png",
+                    alt: "Topología con clústeres para organizar secciones de red."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Modo de simulación",
+                    items: [
+                      "Permite pausar, filtrar y analizar PDUs para validar conectividad, seguridad y servicios.",
+                      "Las pestañas del modelo OSI y detalles de PDU ayudan a estudiar encapsulación y tránsito.",
+                      "Es clave para diagnosticar fallas antes de desplegar cambios en entornos reales."
+                    ]
+                  },
+                  {
+                    title: "Clústeres y organización",
+                    items: [
+                      "Los clústeres simplifican topologías grandes agrupando dispositivos en una nube lógica.",
+                      "Se pueden crear, renombrar, desagrupar o eliminar según necesidad del diseño.",
+                      "Las conexiones entre clúster y exterior se realizan eligiendo dispositivo e interfaz explícitos."
+                    ]
+                  },
+                  {
+                    title: "Edición y anotación",
+                    items: [
+                      "Agregar notas, formas y fondos mejora documentación y comunicación del diseño.",
+                      "Las anotaciones facilitan ubicar edificios, enlaces críticos y alcance de cambios.",
+                      "La descripción de red centraliza contexto técnico de una actualización."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Validar tráfico y mantener topologías claras, organizadas y documentadas para operación."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "2.1",
+                title: "Controlador de red y monitoreo de cambios",
+                summary:
+                  "Uso del controlador de red en Packet Tracer para descubrir dispositivos, supervisar estado y administrar la sucursal.",
+                images: [
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_2.4.png",
+                    alt: "Topología corporativa que integra sucursal, ISP y centro de datos."
+                  },
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_2.5.png",
+                    alt: "Panel principal del controlador de red en Packet Tracer."
+                  },
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_2.6.png",
+                    alt: "Vista de descubrimiento de dispositivos en controlador de red."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Qué aporta un controlador de red",
+                    items: [
+                      "Centraliza inventario, estado y operaciones de múltiples dispositivos de red.",
+                      "Facilita automatización, análisis de rendimiento y detección de incidentes.",
+                      "Expone funciones por GUI y API para integración con otros procesos."
+                    ]
+                  },
+                  {
+                    title: "Flujo de trabajo básico",
+                    items: [
+                      "Conectar el controlador a la red, validar conectividad IP y acceder por navegador web.",
+                      "Configurar credenciales de administración para permitir descubrimiento y gestión.",
+                      "Ejecutar procesos de discovery para incorporar nuevos dispositivos conectados."
+                    ]
+                  },
+                  {
+                    title: "Monitoreo y operación",
+                    items: [
+                      "Revisar dashboard para salud de red, accesibilidad y estado de administración.",
+                      "Usar vistas de Assurance y mapas para análisis de topología y rutas (Path Trace).",
+                      "Repetir descubrimiento tras cambios físicos para actualizar inventario y estado."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Supervisar cambios de red de forma centralizada y mantener visibilidad operativa de la sucursal."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   };
