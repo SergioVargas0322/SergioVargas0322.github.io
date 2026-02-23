@@ -722,28 +722,88 @@
                 code: "1.4",
                 title: "Windows Security",
                 summary:
-                  "Controles esenciales de seguridad en Windows para detección, prevención y mantenimiento del endpoint.",
+                  "Controles de seguridad en Windows para detectar actividad sospechosa, mantener el sistema actualizado y reforzar políticas locales del endpoint.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/C2_1.4.png",
-                    alt: "Herramientas de seguridad de Windows para monitoreo y protección."
+                    src: "./assets/images/operating-systems-basics/C2_4.1.png",
+                    alt: "Salida de netstat -abno con conexiones activas y PID en Windows."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_4.2.png",
+                    alt: "Visor de eventos de Windows con vista de eventos administrativos."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_4.3.png",
+                    alt: "Panel de Windows Update para revisar estado e historial de actualizaciones."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_4.4.png",
+                    alt: "Consola de Local Security Policy en Windows."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_4.5.png",
+                    alt: "Windows Defender Security Center con estado general de protección."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_4.6.png",
+                    alt: "Windows Defender Firewall con perfiles de red y reglas activas."
                   }
                 ],
                 sections: [
                   {
-                    title: "Herramientas clave",
+                    title: "1.4.1 The netstat Command",
                     items: [
-                      "netstat para revisar conexiones y puertos activos.",
-                      "Event Viewer para auditoría de eventos críticos del sistema.",
-                      "Windows Defender y Firewall para defensa base del endpoint."
+                      "El comando netstat ayuda a detectar conexiones entrantes/salientes no autorizadas.",
+                      "Con netstat -abno puedes ver puertos, estado, proceso asociado y PID para correlación con Task Manager.",
+                      "Para usar opciones avanzadas se requiere consola con privilegios de administrador.",
+                      "Si hay procesos sospechosos, se valida su legitimidad y se procede a contención y limpieza."
                     ]
                   },
                   {
-                    title: "Checklist de hardening",
+                    title: "1.4.2 Event Viewer",
                     items: [
-                      "Aplicar Windows Update Management de forma periódica.",
-                      "Configurar Local Security Policy con principio de mínimo privilegio.",
-                      "Revisar reglas de firewall y estado de antivirus en cada equipo."
+                      "Event Viewer registra eventos de aplicaciones, seguridad y sistema para diagnóstico y auditoría.",
+                      "Cada evento incluye nivel (información, advertencia, error, crítico), origen, fecha/hora e ID.",
+                      "La vista Administrative Events centraliza eventos críticos y suele ser el mejor punto de partida."
+                    ]
+                  },
+                  {
+                    title: "1.4.3 Windows Update Management",
+                    items: [
+                      "Mantener Windows actualizado reduce exposición a vulnerabilidades y zero-day exploits.",
+                      "Los parches corrigen fallas específicas y los service packs agrupan mejoras y correcciones.",
+                      "Windows Update permite revisar historial, ejecutar búsqueda manual y definir horas activas/reinicio."
+                    ]
+                  },
+                  {
+                    title: "1.4.4 Local Security Policy",
+                    items: [
+                      "La política local aplica en equipos fuera de dominio y define reglas de cuenta y seguridad del host.",
+                      "Password Policy y Account Lockout Policy ayudan a mitigar intentos de fuerza bruta.",
+                      "Se recomienda bloqueo de sesión automático, mínimo privilegio y uso de AppLocker cuando aplique.",
+                      "Las políticas pueden exportarse para replicar configuraciones entre equipos stand-alone."
+                    ]
+                  },
+                  {
+                    title: "1.4.5 Windows Defender",
+                    items: [
+                      "Windows Defender ofrece protección en tiempo real contra virus, spyware y otras formas de malware.",
+                      "Permite escaneos manuales, actualización de definiciones y revisión de historial de detecciones.",
+                      "La higiene operativa recomienda usar una sola solución antimalware activa a la vez."
+                    ]
+                  },
+                  {
+                    title: "1.4.6 Windows Defender Firewall",
+                    items: [
+                      "Un firewall implementa control de tráfico mediante reglas de entrada y salida por puertos/aplicaciones.",
+                      "Una postura restrictiva (permitir solo lo necesario) reduce la superficie de ataque.",
+                      "En Advanced settings se pueden crear, importar/exportar y monitorear reglas específicas."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Aplicar controles de monitoreo, actualización y hardening para fortalecer la seguridad de endpoints Windows."
                     ]
                   }
                 ]
@@ -752,7 +812,7 @@
           },
           {
             key: "M2",
-            title: "Linux: shell y operación de servicios",
+            title: "Linux: shell y operacion de servicios",
             topics: [
               {
                 code: "2.1",
