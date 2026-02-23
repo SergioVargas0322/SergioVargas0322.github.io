@@ -423,154 +423,232 @@
         modules: [
           {
             key: "M1",
-            title: "Windows: arquitectura y administración",
+            title: "The Windows Operating System",
             topics: [
               {
                 code: "1.1",
-                title: "Historia, GUI y vulnerabilidades en Windows",
+                title: "Historia de Windows, versiones y entorno gráfico",
                 summary:
-                  "Evolución de DOS a Windows moderno, uso de GUI y riesgos asociados a vulnerabilidades del sistema.",
+                  "Evolución desde MS-DOS hacia Windows moderno, con énfasis en Desktop, Taskbar, menú Inicio y productividad en GUI.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-windows.svg",
-                    alt: "Panorama de Windows, interfaz y operación básica."
+                    src: "./assets/images/operating-systems-basics/C2_1.1.png",
+                    alt: "Interfaz gráfica de Windows y elementos clave del escritorio."
                   }
                 ],
                 sections: [
                   {
                     title: "Puntos importantes",
                     items: [
-                      "Windows evolucionó desde DOS hacia un entorno gráfico completo.",
-                      "La GUI mejora productividad con Desktop, Taskbar y menús contextuales.",
-                      "Todo sistema con mucho código puede contener vulnerabilidades explotables."
+                      "DOS introdujo gestión de archivos por comandos; Windows la llevó a una experiencia visual completa.",
+                      "El escritorio centraliza accesos, archivos y utilidades para el trabajo diario.",
+                      "Los menús contextuales aceleran operaciones de copia, administración y soporte."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Operar con fluidez el entorno Windows y ubicar rápidamente funciones esenciales."
                     ]
                   }
                 ]
               },
               {
                 code: "1.2",
-                title: "HAL, kernel, modos de CPU y sistemas de archivos",
+                title: "Arquitectura de Windows: HAL, kernel mode y user mode",
                 summary:
-                  "Relación entre hardware y kernel, diferencia entre user mode/kernel mode, y uso de NTFS en Windows.",
+                  "Relación entre hardware, HAL y kernel; diferencias operativas entre modo usuario y modo kernel para estabilidad del sistema.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-windows.svg",
-                    alt: "Arquitectura de Windows con HAL, kernel y capas de ejecución."
+                    src: "./assets/images/operating-systems-basics/C2_1.2.png",
+                    alt: "Arquitectura de Windows con interacción entre hardware, HAL y kernel."
                   }
                 ],
                 sections: [
                   {
                     title: "Factores técnicos",
                     items: [
-                      "HAL abstrae hardware para facilitar compatibilidad.",
-                      "Kernel mode tiene control total; user mode limita impacto de fallas.",
-                      "NTFS destaca por seguridad, permisos y trazabilidad de archivos."
+                      "HAL reduce dependencia directa del hardware y mejora portabilidad del sistema.",
+                      "Kernel mode tiene acceso total a memoria y dispositivos; errores allí pueden tumbar el sistema completo.",
+                      "User mode aísla fallas de aplicaciones para evitar impacto global."
+                    ]
+                  },
+                  {
+                    title: "Checklist de análisis",
+                    items: [
+                      "Diferenciar si una falla viene de aplicación, driver o núcleo.",
+                      "Validar firma y compatibilidad de controladores antes de su despliegue.",
+                      "Priorizar diagnóstico por capas para reducir tiempo de resolución."
                     ]
                   }
                 ]
               },
               {
                 code: "1.3",
-                title: "Arranque, servicios, registro y herramientas de seguridad",
+                title: "Sistemas de archivos en Windows: NTFS y ADS",
                 summary:
-                  "Secuencia de boot, gestión de procesos/servicios y uso de netstat, Event Viewer, Defender y Firewall.",
+                  "Uso de NTFS, estructura de particiones y riesgos asociados a Alternate Data Streams (ADS) para seguridad y forensia.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-windows.svg",
-                    alt: "Arranque de Windows y herramientas de administración y seguridad."
+                    src: "./assets/images/operating-systems-basics/C2_1.3.png",
+                    alt: "Sistema de archivos NTFS y almacenamiento de metadatos en Windows."
                   }
                 ],
                 sections: [
                   {
-                    title: "Checklist operativo",
+                    title: "Puntos importantes",
                     items: [
-                      "Identificar etapas de inicio BIOS/UEFI, Bootmgr y Winload.",
-                      "Supervisar procesos y servicios críticos con herramientas del sistema.",
-                      "Aplicar monitoreo de eventos, actualizaciones y firewall activo."
+                      "NTFS permite permisos granulares, ownership y auditoría de actividad.",
+                      "Los timestamps MACE apoyan investigaciones y línea de tiempo de incidentes.",
+                      "ADS puede usarse para ocultar información o código malicioso."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Aplicar criterios de seguridad y análisis forense básico sobre archivos en Windows."
                     ]
                   }
                 ]
               },
               {
                 code: "1.4",
-                title: "Sistemas de archivos NTFS y Alternate Data Streams",
+                title: "Arranque y apagado seguro en Windows",
                 summary:
-                  "Estructuras de partición y archivos en NTFS, uso de timestamps forenses y riesgos de ocultamiento con ADS.",
+                  "Proceso de inicio con BIOS/UEFI, Bootmgr y BCD; además de prácticas de apagado seguro para proteger integridad.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-windows.svg",
-                    alt: "Sistema de archivos NTFS con enfoque en seguridad y forensia."
-                  }
-                ],
-                sections: [
-                  {
-                    title: "Puntos importantes",
-                    items: [
-                      "NTFS soporta permisos, ownership y control detallado de acceso.",
-                      "Los timestamps MACE ayudan al análisis de incidentes.",
-                      "Los ADS pueden ocultar datos y código malicioso si no se monitorean."
-                    ]
-                  },
-                  {
-                    title: "Resultado esperado",
-                    items: [
-                      "Interpretar correctamente actividad de archivos y detectar señales de abuso en almacenamiento."
-                    ]
-                  }
-                ]
-              },
-              {
-                code: "1.5",
-                title: "Boot con BIOS/UEFI y ciclo de apagado seguro",
-                summary:
-                  "Diferencias entre BIOS y UEFI, secuencia Bootmgr/BCD/Winload y buenas prácticas para apagado controlado.",
-                images: [
-                  {
-                    src: "./assets/images/operating-systems-basics/osb-windows.svg",
-                    alt: "Proceso de arranque y apagado seguro de sistemas Windows."
+                    src: "./assets/images/operating-systems-basics/C2_1.4.png",
+                    alt: "Secuencia de arranque y ciclo de apagado en el sistema operativo Windows."
                   }
                 ],
                 sections: [
                   {
                     title: "Checklist técnico",
                     items: [
-                      "Verificar firmware, orden de arranque y estado del BCD.",
-                      "Distinguir cold start de salida de hibernación durante el diagnóstico.",
-                      "Evitar apagados forzados para prevenir corrupción de datos y servicios."
+                      "Verificar firmware y configuración de arranque al diagnosticar fallas de inicio.",
+                      "Revisar BCD y estado de controladores críticos en problemas de boot.",
+                      "Evitar apagados forzados para prevenir corrupción de archivos y servicios."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Reducir incidencias de inicio y pérdida de integridad por ciclos de encendido/apagado incorrectos."
+                      "Reducir incidentes de inicio/apagado y preservar estabilidad del sistema."
                     ]
                   }
                 ]
               },
               {
-                code: "1.6",
-                title: "Administración con cuentas, CLI y PowerShell",
+                code: "1.5",
+                title: "Procesos, hilos, servicios y uso del registro",
                 summary:
-                  "Gestión de usuarios locales/dominio y uso de comandos para soporte, red y tareas de administración en Windows.",
+                  "Gestión de ejecución en Windows con procesos, threads y servicios; impacto de claves de inicio en el registro.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-windows.svg",
-                    alt: "Administración de Windows mediante consola y PowerShell."
+                    src: "./assets/images/operating-systems-basics/C2_1.3.png",
+                    alt: "Administración de procesos y servicios de Windows para monitoreo operativo."
                   }
                 ],
                 sections: [
                   {
                     title: "Puntos importantes",
                     items: [
-                      "Run as Administrator eleva permisos para tareas del sistema.",
-                      "Los comandos net y PowerShell permiten automatizar operaciones frecuentes.",
-                      "La separación de cuentas mejora trazabilidad y control de cambios."
+                      "Cada proceso ejecuta uno o más hilos con aislamiento de memoria.",
+                      "Servicios sostienen funciones persistentes del sistema y aplicaciones.",
+                      "Claves Run/RunOnce y configuraciones de startup afectan rendimiento y seguridad."
+                    ]
+                  },
+                  {
+                    title: "Checklist operativo",
+                    items: [
+                      "Analizar consumo de recursos en Task Manager y Resource Monitor.",
+                      "Verificar dependencias antes de deshabilitar servicios.",
+                      "Documentar cambios en inicio para facilitar rollback."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.6",
+                title: "Configuración, monitoreo y seguridad del endpoint Windows",
+                summary:
+                  "Administración con cuentas locales/dominio, CLI/PowerShell y controles de seguridad con netstat, Event Viewer, Defender y Firewall.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_1.4.png",
+                    alt: "Herramientas de seguridad y monitoreo para endpoints Windows."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Checklist de hardening",
+                    items: [
+                      "Usar principio de mínimo privilegio y cuentas separadas para administración.",
+                      "Auditar puertos/conexiones con netstat y eventos con Event Viewer.",
+                      "Mantener Windows Update, Defender y Firewall correctamente configurados."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Ejecutar tareas administrativas con criterios de seguridad y menor dependencia de la interfaz gráfica."
+                      "Establecer una línea base de seguridad operativa para equipos Windows."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.7",
+                title: "Línea de comandos y recursos de red en Windows",
+                summary:
+                  "Uso práctico de comandos net, recursos compartidos y resolución básica de problemas de conectividad y acceso.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_1.2.png",
+                    alt: "Administración de recursos de red en Windows desde CLI."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Puntos importantes",
+                    items: [
+                      "CLI y PowerShell permiten soporte más rápido y repetible.",
+                      "El comando net facilita administración de usuarios, sesiones y recursos.",
+                      "La validación de permisos evita errores de acceso en recursos compartidos."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Resolver incidencias de acceso y red con procedimientos técnicos consistentes."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.8",
+                title: "Políticas locales y defensa en capas",
+                summary:
+                  "Aplicación de políticas de seguridad local y defensa del host mediante controles preventivos y de monitoreo.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_1.4.png",
+                    alt: "Políticas de seguridad, antivirus y firewall en Windows."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Factores",
+                    items: [
+                      "Local Security Policy define parámetros críticos de autenticación y control.",
+                      "Windows Defender protege contra amenazas conocidas y sospechosas.",
+                      "Firewall segmenta tráfico y reduce exposición a conexiones no autorizadas."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Fortalecer la postura de seguridad del endpoint con controles coordinados."
                     ]
                   }
                 ]
