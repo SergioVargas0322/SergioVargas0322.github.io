@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="description" content="Catalogo personal de cursos Cisco para repaso por modulos y temas."/>
-<title>Cursos Cisco - Catalogo</title>
+<meta name="description" content="Catálogo personal de cursos Cisco para repaso por módulos y temas."/>
+<title>Cursos Cisco - Catálogo</title>
 <link rel="stylesheet" href="./assets/css/styles.css"/>
 </head>
 <body>
@@ -13,13 +13,16 @@
   <header class="site-header">
     <div class="header-copy">
       <p class="eyebrow">Sergio Vargas - U00114112</p>
-      <h1 id="catalogTitle">Catalogo de Cursos Cisco</h1>
-      <p id="catalogSubtitle">Repositorio de consulta rapida para reforzar temas vistos en clase.</p>
+      <h1 id="catalogTitle">Catálogo de Cursos Cisco</h1>
+      <p id="catalogSubtitle">Repositorio de consulta rápida para reforzar temas vistos en clase.</p>
     </div>
 
     <div class="header-tools">
-      <label class="sr-only" for="searchInput">Buscar cursos o temas</label>
-      <input id="searchInput" type="search" autocomplete="off" placeholder="Buscar curso, modulo, tema o palabra clave..."/>
+      <div class="search-wrap">
+        <label class="sr-only" for="searchInput">Buscar cursos o temas</label>
+        <input id="searchInput" type="search" autocomplete="off" placeholder="Buscar curso, módulo, tema o palabra clave..."/>
+        <div id="searchSuggestions" class="search-suggestions" hidden></div>
+      </div>
       <button id="clearSearch" type="button">Limpiar</button>
     </div>
   </header>
