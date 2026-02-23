@@ -1812,22 +1812,46 @@
             topics: [
               {
                 code: "1.0",
-                title: "Instale Cisco Packet Tracer",
+                title: "Instalación y puesta en marcha de Cisco Packet Tracer",
                 summary:
-                  "Primer contacto con la herramienta: descarga, propósito del curso y capacidades principales del entorno de simulación.",
+                  "Introducción al curso, descarga oficial, alcance formativo y preparación inicial del entorno para comenzar prácticas.",
                 images: [
                   {
                     src: "./assets/images/packet-tracer-basics/C3_1.0.png",
-                    alt: "Pantalla de introducción del curso Cisco Packet Tracer."
+                    alt: "Portada del módulo de introducción a Cisco Packet Tracer."
                   }
                 ],
                 sections: [
                   {
-                    title: "Puntos importantes",
+                    title: "Qué es y para qué sirve",
                     items: [
                       "Packet Tracer permite practicar redes, IoT y ciberseguridad sin hardware físico.",
-                      "El software es gratuito para estudiantes y se descarga desde NetAcad (skillsforall.com / netacad.com).",
-                      "Este módulo prepara el entorno para trabajar en actividades guiadas y laboratorios."
+                      "Es un entorno de simulación para construir, configurar y analizar topologías desde una computadora personal.",
+                      "Su objetivo en este curso es preparar al estudiante para laboratorios y actividades de evaluación."
+                    ]
+                  },
+                  {
+                    title: "Primera vez en el curso",
+                    items: [
+                      "Está dirigido a usuarios nuevos o con experiencia inicial que necesiten familiarizarse con la herramienta.",
+                      "Se recomienda contar con cuenta activa en Cisco Networking Academy para acceder a recursos y laboratorios.",
+                      "El curso es autoguiado y establece la base para módulos posteriores de creación y análisis de redes."
+                    ]
+                  },
+                  {
+                    title: "Descarga e instalación",
+                    items: [
+                      "La descarga oficial se realiza desde: https://www.netacad.com/resources/lab-downloads",
+                      "Packet Tracer está disponible para Windows, macOS y Linux.",
+                      "Tras instalar, se debe iniciar sesión y verificar que la aplicación abra sin errores."
+                    ]
+                  },
+                  {
+                    title: "Ruta de aprendizaje",
+                    items: [
+                      "Módulo 1: familiarización con instalación, interfaz y navegación.",
+                      "Módulo 2: creación de red en Packet Tracer y manejo de tipos de archivo.",
+                      "Esta secuencia permite pasar de reconocimiento de herramienta a práctica aplicada."
                     ]
                   },
                   {
@@ -1848,9 +1872,9 @@
               },
               {
                 code: "1.1",
-                title: "La interfaz de Cisco Packet Tracer",
+                title: "Interfaz y flujo de trabajo inicial en Packet Tracer",
                 summary:
-                  "Reconocimiento de menús, modos de trabajo, paneles y pestañas de configuración para administrar dispositivos.",
+                  "Uso de interfaz, despliegue de dispositivos, configuración GUI/CLI y trabajo guiado en actividades PTTA con vistas lógica y física.",
                 images: [
                   {
                     src: "./assets/images/packet-tracer-basics/C3_1.1.png",
@@ -1863,29 +1887,46 @@
                     items: [
                       "Barra de menús y barras de herramientas para crear, guardar, editar y explorar topologías.",
                       "Panel de dispositivos para agregar routers, switches, hosts y conexiones.",
-                      "Zona de escenario y controles de simulación para observar el flujo de paquetes."
+                      "Zona de escenario y controles de simulación para observar el flujo de paquetes.",
+                      "La barra del espacio de trabajo permite alternar entre vista lógica y vista física."
                     ]
                   },
                   {
-                    title: "Vistas lógica y física",
+                    title: "Implementación de dispositivos y conexiones",
                     items: [
-                      "La vista lógica muestra conectividad y comportamiento del tráfico.",
-                      "La vista física representa rack, cableado y ubicación realista de equipos.",
-                      "Ambas vistas se complementan para entender diseño y operación de red."
+                      "Se pueden arrastrar equipos al espacio de trabajo y eliminarlos/recuperarlos con herramientas de edición.",
+                      "La conexión automática selecciona cable y puerto adecuados según el tipo de dispositivo.",
+                      "También es posible elegir manualmente cables directos, cruzados o consola según la práctica."
                     ]
                   },
                   {
                     title: "Pestañas de configuración del dispositivo",
                     items: [
-                      "Physical: encendido/apagado e instalación de módulos.",
-                      "Config: configuración rápida en GUI con comandos IOS equivalentes.",
-                      "CLI/Desktop/Services: administración por línea de comandos, utilidades de host y servicios de servidor."
+                      "Física (Physical): encendido/apagado e instalación de módulos.",
+                      "Configuración (Config): ajustes por GUI con comandos IOS equivalentes.",
+                      "CLI, Escritorio (Desktop) y Servicios (Services): terminal, utilidades del host y roles de servidor."
+                    ]
+                  },
+                  {
+                    title: "Actividades PTTA y niveles de pistas",
+                    items: [
+                      "Las actividades PTTA guían paso a paso con lista de tareas y porcentaje de avance.",
+                      "Los niveles de sugerencias (todas, más, críticas o ninguna) ajustan el soporte durante la práctica.",
+                      "Al finalizar, incluyen resumen y reflexión para reforzar el aprendizaje."
+                    ]
+                  },
+                  {
+                    title: "Modo lógico/físico e inspección",
+                    items: [
+                      "La vista lógica facilita analizar conectividad y ruta de paquetes.",
+                      "La vista física permite inspeccionar frente/parte trasera de equipos y ubicar puertos con precisión.",
+                      "Estas funciones mejoran la calidad de cableado y reducen errores en laboratorios."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Navegar con fluidez por la interfaz y configurar dispositivos básicos en GUI o CLI."
+                      "Navegar con fluidez por Packet Tracer e iniciar configuraciones básicas de dispositivos en GUI y CLI."
                     ]
                   }
                 ]
