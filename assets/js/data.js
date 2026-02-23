@@ -1563,7 +1563,7 @@
                 code: "4.3",
                 title: "Antivirus, rooteo/jailbreak y actualizaciones",
                 summary:
-                  "Medidas de defensa en móviles, riesgos de elevar privilegios y necesidad de mantener parches al día.",
+                  "Defensas de software en móviles: antimalware, control de permisos, riesgo de rooteo/jailbreak y gestión de parches.",
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/osb-security.svg",
@@ -1572,9 +1572,49 @@
                 ],
                 sections: [
                   {
+                    title: "4.3.1 Protección antimalware y sandbox",
+                    items: [
+                      "Los dispositivos móviles también son objetivos de malware: spyware, troyanos, adware y robo de credenciales.",
+                      "Android e iOS aíslan aplicaciones con sandbox para limitar accesos no autorizados entre apps.",
+                      "Las soluciones antimalware deben complementar, no sustituir, el control de permisos y la higiene de uso."
+                    ]
+                  },
+                  {
+                    title: "4.3.2 Fuentes confiables y permisos de aplicaciones",
+                    items: [
+                      "Instalar aplicaciones solo desde fuentes confiables reduce el riesgo de código manipulado o malicioso.",
+                      "Cada permiso solicitado debe revisarse con criterio: acceso a cámara, micrófono, ubicación, contactos y archivos.",
+                      "Una app con permisos excesivos incrementa superficie de ataque y exposición de datos personales o corporativos."
+                    ]
+                  },
+                  {
+                    title: "4.3.3 Riesgos de rooteo y jailbreak",
+                    items: [
+                      "El rooteo (Android) y jailbreak (iOS) eliminan restricciones del fabricante para obtener privilegios elevados.",
+                      "Este cambio debilita controles nativos de seguridad, rompe garantías y facilita persistencia de malware.",
+                      "En entornos académicos o empresariales, se recomienda evitar dispositivos modificados para uso operativo."
+                    ]
+                  },
+                  {
+                    title: "4.3.4 Gestión de actualizaciones y parches",
+                    items: [
+                      "Mantener sistema operativo y aplicaciones actualizadas corrige vulnerabilidades conocidas y fallos críticos.",
+                      "No todos los equipos reciben parches al mismo ritmo; revisar versión, soporte del fabricante y fin de vida útil.",
+                      "Aplicar actualizaciones en ventanas controladas reduce interrupciones y mejora continuidad operativa."
+                    ]
+                  },
+                  {
+                    title: "Checklist de seguridad de software",
+                    items: [
+                      "Activar protección antimalware y escaneo periódico según la política del dispositivo.",
+                      "Revisar permisos sensibles en cada app instalada y desinstalar aplicaciones sin uso.",
+                      "Verificar estado de actualización del SO y de aplicaciones al menos una vez por semana."
+                    ]
+                  },
+                  {
                     title: "Resultado esperado",
                     items: [
-                      "Sostener dispositivos móviles actualizados y con menor superficie de ataque."
+                      "Sostener dispositivos móviles actualizados y con menor superficie de ataque mediante controles de software consistentes."
                     ]
                   }
                 ]
@@ -1583,20 +1623,58 @@
                 code: "4.4",
                 title: "Interfaz táctil y funciones comunes del dispositivo",
                 summary:
-                  "Elementos de pantalla en Android/iOS, calibración, orientación y ajustes de uso diario en movilidad.",
+                  "Elementos comunes en Android e iOS: orientación, calibración, ubicación, conectividad avanzada y asistentes virtuales.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-security.svg",
-                    alt: "Interfaz táctil y ajustes comunes en dispositivos móviles."
+                    src: "./assets/images/operating-systems-basics/C2_4.2_touch_interface.svg",
+                    alt: "Interfaz táctil y componentes comunes en dispositivos móviles."
                   }
                 ],
                 sections: [
                   {
-                    title: "Puntos importantes",
+                    title: "4.4.1 Orientación y sensores",
                     items: [
-                      "La calibración y orientación correctas mejoran experiencia de usuario.",
-                      "El brillo y el uso de sensores impactan directamente la batería.",
-                      "La personalización debe equilibrar usabilidad y seguridad."
+                      "La orientación automática usa acelerómetro y giroscopio para adaptar la pantalla a modo vertical u horizontal.",
+                      "Una configuración adecuada mejora legibilidad, escritura y experiencia en apps multimedia.",
+                      "Cuando el contexto lo requiera, bloquear orientación evita cambios no deseados durante el uso."
+                    ]
+                  },
+                  {
+                    title: "4.4.2 Calibración y brillo",
+                    items: [
+                      "El brillo de pantalla impacta directamente batería, fatiga visual y visibilidad en exteriores.",
+                      "El brillo adaptativo usa sensores de luz ambiente para ajustar nivel de forma automática.",
+                      "Calibrar correctamente la pantalla mejora precisión táctil y accesibilidad para distintos usuarios."
+                    ]
+                  },
+                  {
+                    title: "4.4.3 Ubicación, GPS y servicios contextuales",
+                    items: [
+                      "Los servicios de ubicación combinan GPS, Wi-Fi y red celular para estimar posición del dispositivo.",
+                      "Aplicaciones de mapas, transporte y seguridad dependen de esta función para operar correctamente.",
+                      "Se recomienda otorgar ubicación solo a apps necesarias y preferir el permiso 'Mientras se usa'."
+                    ]
+                  },
+                  {
+                    title: "4.4.4 Funciones comunes de conectividad",
+                    items: [
+                      "Wi-Fi Calling permite cursar llamadas sobre redes Wi-Fi cuando la señal celular es débil.",
+                      "VPN protege tráfico en redes públicas y es clave cuando se accede a recursos institucionales.",
+                      "Pagos móviles y servicios NFC deben usarse con bloqueo de pantalla y verificación biométrica activa."
+                    ]
+                  },
+                  {
+                    title: "4.4.5 Asistentes virtuales y automatización",
+                    items: [
+                      "Asistentes como Siri o Google Assistant ejecutan tareas por voz y aumentan productividad diaria.",
+                      "Su uso implica tratamiento de datos de voz y contexto, por lo que requiere revisar privacidad.",
+                      "Desactivar activación por voz en entornos sensibles reduce riesgo de acciones no autorizadas."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Configurar funciones comunes del dispositivo equilibrando usabilidad, autonomía y seguridad operativa."
                     ]
                   }
                 ]
@@ -1605,7 +1683,7 @@
                 code: "4.5",
                 title: "Códigos de acceso, intentos fallidos y borrado automático",
                 summary:
-                  "Controles de acceso local y respuesta de seguridad ante múltiples intentos de autenticación fallidos.",
+                  "Controles de autenticación local para prevenir acceso no autorizado y proteger datos ante pérdida o robo del equipo.",
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/osb-security.svg",
@@ -1614,11 +1692,35 @@
                 ],
                 sections: [
                   {
+                    title: "4.5.1 Tipos de bloqueo de pantalla",
+                    items: [
+                      "Métodos comunes: PIN, contraseña, patrón, huella y reconocimiento facial según plataforma.",
+                      "La biometría mejora usabilidad, pero debe combinarse con código de respaldo robusto.",
+                      "Evitar códigos triviales (1234, fechas personales) reduce ataques por adivinación."
+                    ]
+                  },
+                  {
+                    title: "4.5.2 Restricciones por intentos fallidos",
+                    items: [
+                      "Tras múltiples intentos erróneos, el sistema aplica retardo progresivo o bloqueo temporal.",
+                      "Estas políticas mitigan fuerza bruta y reducen riesgo de acceso por prueba masiva.",
+                      "El umbral debe definirse según perfil de riesgo y política institucional."
+                    ]
+                  },
+                  {
+                    title: "4.5.3 Borrado automático y recuperación",
+                    items: [
+                      "Algunos dispositivos permiten borrar datos tras un número de intentos fallidos configurable.",
+                      "Antes de habilitar esta opción, validar respaldo reciente y probado para evitar pérdida irreversible.",
+                      "El plan de recuperación debe contemplar restauración de cuentas, apps y datos críticos."
+                    ]
+                  },
+                  {
                     title: "Checklist de protección",
                     items: [
-                      "Configurar bloqueo por PIN, contraseña o biometría.",
-                      "Definir umbral de intentos fallidos según política de seguridad.",
-                      "Validar que existan respaldos antes de habilitar borrado automático."
+                      "Configurar bloqueo por PIN/contraseña robusta y habilitar biometría como segundo factor local.",
+                      "Definir umbral de intentos fallidos y comportamiento posterior (retardo o borrado).",
+                      "Comprobar que exista respaldo actualizado antes de activar borrado automático."
                     ]
                   },
                   {
@@ -1633,7 +1735,7 @@
                 code: "4.6",
                 title: "Servicios en la nube, localización y bloqueo remoto",
                 summary:
-                  "Respaldo remoto, localización de equipos y acciones de bloqueo/borrado remoto (lock/wipe) para respuesta a incidentes móviles.",
+                  "Uso de servicios cloud para respaldo, localización de dispositivos y respuesta remota ante incidentes de seguridad móvil.",
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/osb-security.svg",
@@ -1642,15 +1744,53 @@
                 ],
                 sections: [
                   {
+                    title: "4.6.1 Respaldo en la nube",
+                    items: [
+                      "Servicios como iCloud o Google permiten respaldar datos, ajustes y aplicaciones de forma automática.",
+                      "La estrategia de respaldo debe definir frecuencia, cifrado y verificación de restauración.",
+                      "Un respaldo no validado no garantiza continuidad; probar restauración es parte del control."
+                    ]
+                  },
+                  {
+                    title: "4.6.2 Localización de dispositivos",
+                    items: [
+                      "Herramientas tipo Find My Device/Find My iPhone permiten ubicar equipos extraviados en mapa.",
+                      "La localización requiere configuración previa, cuenta activa y conectividad del dispositivo.",
+                      "En escenarios corporativos, la geolocalización debe alinearse con políticas de privacidad."
+                    ]
+                  },
+                  {
+                    title: "4.6.3 Bloqueo remoto y modo perdido",
+                    items: [
+                      "El bloqueo remoto impide acceso local y permite mostrar mensajes de contacto al recuperar el equipo.",
+                      "El modo perdido reduce exposición de datos mientras se gestiona la recuperación del dispositivo.",
+                      "Estas acciones deben ejecutarse tan pronto se confirme pérdida o robo."
+                    ]
+                  },
+                  {
+                    title: "4.6.4 Borrado remoto",
+                    items: [
+                      "Si no es posible recuperar el equipo, el borrado remoto elimina datos y reduce riesgo de fuga de información.",
+                      "Tras el borrado, el procedimiento incluye alta de nuevo dispositivo y restauración segura desde respaldo.",
+                      "La decisión de borrar debe seguir un protocolo definido por criticidad de la información."
+                    ]
+                  },
+                  {
                     title: "Checklist operativo",
                     items: [
-                      "Activar backup automático con verificación periódica de restauración.",
-                      "Configurar herramientas de localización antes de incidentes.",
-                      "Aplicar bloqueo o borrado remoto cuando la recuperación no sea posible."
+                      "Activar respaldo automático y verificar restauración periódicamente.",
+                      "Configurar localización y bloqueo remoto antes de cualquier incidente.",
+                      "Aplicar bloqueo o borrado remoto cuando la recuperación no sea viable."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Responder incidentes de pérdida/robo con controles remotos efectivos y continuidad de la información."
                     ]
                   }
                 ]
-              }
+              },
             ]
           }
         ]
