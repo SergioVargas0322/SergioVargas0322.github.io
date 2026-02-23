@@ -22,7 +22,7 @@
                 code: "1.1",
                 title: "Seguridad general y contra incendios",
                 summary:
-                  "Norm?s de seguridad para prevenir lesiones, daños eléctricos y respuesta inicial ante incendios.",
+                  "Normas de seguridad para prevenir lesiones, daños eléctricos y respuesta inicial ante incendios.",
                 images: [
                   {
                     src: "./assets/images/hardware-basics/C1_1.1.png",
@@ -238,7 +238,7 @@
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Equipo estable, limpio y listo para pruebas de funci?namiento."
+                      "Equipo estable, limpio y listo para pruebas de funcionamiento."
                     ]
                   }
                 ]
@@ -357,7 +357,7 @@
                     title: "Puntos importantes",
                     items: [
                       "Movilidad depende de conectividad celular o redes de datos disponibles.",
-                      "Sistem?s operativos móviles con aplicaciones de tiendas específicas.",
+                      "Sistemas operativos móviles con aplicaciones de tiendas específicas.",
                       "Servicios de ubicación, GPS y uso compartido de red."
                     ]
                   },
@@ -401,7 +401,7 @@
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Dispositivo funci?nal, protegido y con menor riesgo de pérdida de información."
+                      "Dispositivo funcional, protegido y con menor riesgo de pérdida de información."
                     ]
                   }
                 ]
@@ -418,8 +418,8 @@
         status: "En curso",
         estimatedHours: 40,
         summary:
-          "Fundamentos de sistem?s operativos con enfoque en Windows, Linux, conectividad móvil y seguridad.",
-        tags: ["sistem?s operativos", "windows", "linux", "movil", "seguridad"],
+          "Fundamentos de sistemas operativos con enfoque en Windows, Linux, conectividad móvil y seguridad.",
+        tags: ["sistemas operativos", "windows", "linux", "m\\u00f3vil", "seguridad"],
         modules: [
           {
             key: "M1",
@@ -452,9 +452,9 @@
                   {
                     title: "1.1.1 Disk Operating System (DOS)",
                     items: [
-                      "Los primeros sistem?s usaban tarjetas perforadas, cinta de papel y cinta magnética antes de los discos modernos.",
+                      "Los primeros sistemas usaban tarjetas perforadas, cinta de papel y cinta magnética antes de los discos modernos.",
                       "DOS habilitó lectura/escritura en discos y organización de archivos por sistema de archivos.",
-                      "MS-DOS operaba por línea de comandos para crear program?s y manipular datos."
+                      "MS-DOS operaba por línea de comandos para crear programas y manipular datos."
                     ]
                   },
                   {
@@ -478,7 +478,7 @@
                     items: [
                       "El Desktop es personalizable por usuario e incluye accesos, archivos y papelera de reciclaje.",
                       "La Task Bar integra menú Inicio/búsqueda, accesos rápidos y área de notificaciones.",
-                      "El Context Menu y File Explorer facilitan operaci?nes frecuentes de administración."
+                      "El Context Menu y File Explorer facilitan operaciones frecuentes de administración."
                     ]
                   },
                   {
@@ -501,7 +501,7 @@
                 code: "1.2",
                 title: "Windows Architecture and Operations",
                 summary:
-                  "Funcionamiento interno de Windows: HAL, modos de ejecución, sistem?s de archivos, arranque, procesos, memoria y registro.",
+                  "Funcionamiento interno de Windows: HAL, modos de ejecución, sistemas de archivos, arranque, procesos, memoria y registro.",
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/C2_2.1.png",
@@ -513,7 +513,7 @@
                   },
                   {
                     src: "./assets/images/operating-systems-basics/C2_2.3.png",
-                    alt: "Panel de servicios de Windows para administración de procesos en seg?ndo plano."
+                    alt: "Panel de servicios de Windows para administración de procesos en segundo plano."
                   },
                   {
                     src: "./assets/images/operating-systems-basics/C2_2.4.png",
@@ -528,7 +528,7 @@
                   {
                     title: "1.2.1 Hardware Abstraction Layers (HAL)",
                     items: [
-                      "La HAL intermedia entre hardware y kernel para aislar diferencias entre plataform?s físicas.",
+                      "La HAL intermedia entre hardware y kernel para aislar diferencias entre plataformas físicas.",
                       "El kernel mantiene control global de E/S, memoria y periféricos conectados.",
                       "Aunque HAL abstrae, existen funciones donde el kernel aún interactúa de forma directa con hardware."
                     ]
@@ -664,7 +664,7 @@
                   {
                     title: "1.3.4 Windows Management Instrumentation (WMI)",
                     items: [
-                      "WMI permite inventario, monitoreo y administración remota de sistem?s Windows.",
+                      "WMI permite inventario, monitoreo y administración remota de sistemas Windows.",
                       "La consola WMI Control expone opciones de resumen, respaldo, seguridad y configuración avanzada.",
                       "WMI también puede ser abusado por atacantes para ejecutar acciones remotas con baja visibilidad.",
                       "Se recomienda restringir acceso WMI y monitorear su uso."
@@ -787,7 +787,7 @@
                   {
                     title: "1.4.5 Windows Defender",
                     items: [
-                      "Windows Defender ofrece protección en tiempo real contra virus, spyware y otras form?s de malware.",
+                      "Windows Defender ofrece protección en tiempo real contra virus, spyware y otras formas de malware.",
                       "Permite escaneos manuales, actualización de definiciones y revisión de historial de detecciones.",
                       "La higiene operativa recomienda usar una sola solución antimalware activa a la vez."
                     ]
@@ -812,7 +812,7 @@
           },
           {
             key: "M2",
-            title: "Linux: shell y operaci?n de servicios",
+            title: "Linux: shell y operaci\\u00f3n de servicios",
             topics: [
               {
                 code: "2.1",
@@ -822,7 +822,7 @@
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/C2_2.1.png",
-                    alt: "Logotipo de Linux y m?scota Tux."
+                    alt: "Logotipo de Linux y mascota Tux."
                   },
                   {
                     src: "./assets/images/operating-systems-basics/C2_2.1_soc.png",
@@ -855,7 +855,7 @@
                   {
                     title: "2.1.3 Linux en el SOC",
                     items: [
-                      "En un Security Operations Center, Linux permite montar plataform?s ligeras con solo los paquetes necesarios.",
+                      "En un Security Operations Center, Linux permite montar plataformas ligeras con solo los paquetes necesarios.",
                       "Las herramientas pueden integrarse en flujos de trabajo coordinados para detección, análisis y respuesta.",
                       "Security Onion es un ejemplo de suite Linux orientada al análisis de seguridad de red, con consola Sguil."
                     ]
@@ -865,8 +865,8 @@
                     items: [
                       "Captura de paquetes (ej. Wireshark) para observar transacciones y protocolos en detalle.",
                       "Análisis de malware en entornos controlados para estudiar comportamiento sin comprometer el host.",
-                      "Sistem?s IDS para inspección de tráfico en tiempo real y activación de reglas de alerta.",
-                      "Firewalls, gestores de logs, plataform?s SIEM y sistem?s de ticketing para operación continua del SOC."
+                      "Sistemas IDS para inspección de tráfico en tiempo real y activación de reglas de alerta.",
+                      "Firewalls, gestores de logs, plataformas SIEM y sistemas de ticketing para operación continua del SOC."
                     ]
                   },
                   {
