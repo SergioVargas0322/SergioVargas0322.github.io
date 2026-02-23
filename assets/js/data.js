@@ -1338,70 +1338,106 @@
               },
               {
                 code: "3.3",
-                title: "Funciones avanzadas de conectividad",
+                title: "Email Configuration",
                 summary:
-                  "Uso de Wi-Fi Calling, GPS y conexiones seguras para continuidad de comunicación.",
+                  "Configuración de correo en Android e iOS, protocolos de correo y diferencias entre servicios locales e internet email.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-connectivity.svg",
-                    alt: "Funciones avanzadas de conectividad en sistem?s móviles."
+                    src: "./assets/images/operating-systems-basics/C2_3.3_email_setup.png",
+                    alt: "Tabla de información requerida para configurar una cuenta de correo."
                   }
                 ],
                 sections: [
                   {
+                    title: "3.3.1 Introduction to Email",
+                    items: [
+                      "El correo electrónico se basa en la interacción entre servidores de email y clientes de correo.",
+                      "Los servidores reenvían y almacenan mensajes; los clientes permiten redactar, leer y administrar el buzón.",
+                      "Los clientes pueden ser web o aplicaciones instaladas, y dependen de protocolos estándar para comunicarse."
+                    ]
+                  },
+                  {
+                    title: "Protocolos y estándares de correo",
+                    items: [
+                      "POP3 (TCP 110): descarga correos del servidor y normalmente no mantiene copia remota.",
+                      "IMAP4 (TCP 143): sincroniza carpetas entre cliente y servidor, con mayor uso de recursos.",
+                      "SMTP (TCP 25): se usa para el envío entre cliente-servidor y servidor-servidor.",
+                      "MIME extiende SMTP para adjuntos y formatos no ASCII; SSL/TLS aporta cifrado en tránsito."
+                    ]
+                  },
+                  {
+                    title: "3.3.3 Android Email Configuration",
+                    items: [
+                      "Android integra servicios de Google y sincroniza correo, contactos y ajustes al iniciar sesión.",
+                      "Para agregar cuenta: abrir Gmail/Email, elegir tipo de cuenta, ingresar credenciales y guardar configuración.",
+                      "Si se requiere restaurar configuración desde backup, el acceso a la cuenta debe hacerse durante el setup inicial."
+                    ]
+                  },
+                  {
+                    title: "3.3.4 iOS Email Configuration",
+                    items: [
+                      "iOS incluye Mail y soporta iCloud, Exchange, Google, Yahoo, AOL y Outlook.",
+                      "El Apple ID habilita App Store, iTunes e iCloud, incluyendo correo y almacenamiento remoto de respaldo.",
+                      "Para agregar cuenta: Settings > Passwords & Accounts > Add Account, seleccionar proveedor e ingresar datos."
+                    ]
+                  },
+                  {
+                    title: "3.3.5 Internet Email",
+                    items: [
+                      "Un usuario puede operar correo local (gestionado por TI interno) o internet email (gestionado por proveedor externo).",
+                      "El acceso puede hacerse desde app nativa del SO, cliente web o app dedicada (por ejemplo Gmail).",
+                      "Las apps de correo suelen ofrecer mejor experiencia de uso que la interfaz web para operación diaria."
+                    ]
+                  },
+                  {
                     title: "Resultado esperado",
                     items: [
-                      "Mantener comunicación y acceso a red con configuraciones adecuadas según el contexto."
+                      "Configurar cuentas de correo en Android e iOS entendiendo protocolos, seguridad y tipo de servicio utilizado."
                     ]
                   }
                 ]
               },
               {
                 code: "3.4",
-                title: "Configuración de correo en Android e iOS",
+                title: "Mobile Device Synchronization",
                 summary:
-                  "Alta de cuentas de correo, validación de parámetros y sincronización de datos para uso académico y productivo.",
+                  "Sincronización de datos entre dispositivos, diferencias entre Android e iOS, y tipos de conexión para respaldos y consistencia de información.",
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/osb-connectivity.svg",
-                    alt: "Configuración de correo electrónico en plataform?s móviles."
+                    alt: "Sincronización de datos entre dispositivos móviles y servicios en la nube."
                   }
                 ],
                 sections: [
                   {
-                    title: "Checklist operativo",
+                    title: "3.4.1 Types of Data to Synchronize",
                     items: [
-                      "Configurar protocolos y puertos correctos para envío/recepción.",
-                      "Verificar autenticación y cifrado de la cuenta.",
-                      "Comprobar entrega, recepción y sincronización de bandejas."
+                      "La sincronización mantiene información consistente entre múltiples equipos (móvil, tablet, laptop, desktop).",
+                      "Datos comunes: contactos, apps, correo, fotos, música, videos, calendario, documentos, marcadores, contraseñas y más.",
+                      "Métodos habituales: nube, sincronización con equipo local y escenarios integrados (como automóvil)."
                     ]
-                  }
-                ]
-              },
-              {
-                code: "3.5",
-                title: "Sincronización móvil y tipos de conexión",
-                summary:
-                  "Tipos de datos a sincronizar y elección del medio (USB, Wi-Fi, nube) según disponibilidad y seguridad.",
-                images: [
+                  },
                   {
-                    src: "./assets/images/operating-systems-basics/osb-connectivity.svg",
-                    alt: "Sincronización de datos entre dispositivos y servicios."
-                  }
-                ],
-                sections: [
-                  {
-                    title: "Puntos importantes",
+                    title: "3.4.2 Enabling Synchronization",
                     items: [
-                      "Sincronizar contactos, calendario y archivos evita pérdida operativa.",
-                      "Elegir el tipo de conexión según velocidad y riesgo de exposición.",
-                      "Mantener consistencia de datos requiere validar conflictos y versiones."
+                      "En Android, Sync y Auto Sync permiten elegir qué datos sincronizar y si se hace de forma automática.",
+                      "En iOS hay dos conceptos: Backup (copia integral) y Sync (sincronización de contenido definido).",
+                      "Buenas prácticas en iOS: realizar Backup antes de Sync y definir ubicación de respaldo (local o iCloud)."
+                    ]
+                  },
+                  {
+                    title: "3.4.3 Synchronization Connection Types",
+                    items: [
+                      "La sincronización puede realizarse por USB o Wi-Fi, según plataforma y configuración del entorno.",
+                      "Android suele apoyarse en servicios cloud de Google para continuidad de datos entre dispositivos.",
+                      "iOS permite Wi-Fi Sync con iTunes tras una primera conexión por cable y configuración previa.",
+                      "Servicios como OneDrive también permiten sincronizar información entre móviles y PCs."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Sostener información actualizada en múltiples dispositivos sin afectar integridad."
+                      "Mantener datos coherentes entre dispositivos aplicando el método de sincronización adecuado para cada plataforma."
                     ]
                   }
                 ]
