@@ -2056,88 +2056,120 @@
             topics: [
               {
                 code: "1.0",
-                title: "Introducción y preparación del entorno",
+                title: "Introducción al curso y alcance de trabajo",
                 summary:
-                  "Contexto del curso, objetivos y alcance de la red de oficina pequeña que se construirá en Packet Tracer.",
+                  "Panorama del curso, perfil recomendado, recursos de apoyo y metas de aprendizaje para trabajar redes de oficina pequeña en Packet Tracer.",
                 images: [
                   {
                     src: "./assets/images/packet-tracer-network-exploration/C4_1.1.png",
-                    alt: "Vista general de topología de oficina pequeña en Packet Tracer."
-                  },
-                  {
-                    src: "./assets/images/packet-tracer-network-exploration/C4_1.2.png",
-                    alt: "Espacio físico de oficina con infraestructura de red."
+                    alt: "Escenario de oficina pequeña en vista física de Packet Tracer."
                   }
                 ],
                 sections: [
                   {
-                    title: "Puntos importantes",
+                    title: "1.0.1 Bienvenida y contexto",
                     items: [
-                      "El curso amplía las bases de Introducción a Packet Tracer hacia escenarios de oficina pequeña.",
-                      "Se trabaja con vistas lógica y física para entender red, ubicación de equipos y conectividad.",
-                      "El enfoque combina instalación, configuración, monitoreo y solución de problemas."
+                      "Las redes forman parte de entornos cotidianos y empresariales; este curso aterriza esos conceptos en un caso de oficina pequeña.",
+                      "Se usa Cisco Packet Tracer para configurar, administrar y monitorear dispositivos de red sin depender de hardware físico.",
+                      "El objetivo es avanzar desde prácticas básicas hacia una visión operativa de sucursal."
                     ]
                   },
                   {
-                    title: "Qué aprenderás en este módulo",
+                    title: "1.0.2 Perfil de entrada",
                     items: [
-                      "Navegar por ubicaciones como hogar, oficina, biblioteca e ISP dentro de la topología.",
-                      "Interpretar la organización de una LAN empresarial con armario de cableado y rack.",
-                      "Preparar el entorno para prácticas de cableado estructurado y configuración."
+                      "Está dirigido a estudiantes que completaron Introducción a Cisco Packet Tracer o que tienen bases equivalentes.",
+                      "También resulta útil para quienes inician en redes y desean desarrollar habilidades prácticas progresivas.",
+                      "El curso fortalece competencias de conectividad, administración y resolución de problemas."
+                    ]
+                  },
+                  {
+                    title: "1.0.3 Recursos disponibles",
+                    items: [
+                      "Soporte general y preguntas frecuentes: https://www.netacad.com/help",
+                      "Descarga y recursos de Packet Tracer: https://www.netacad.com/resources/lab-downloads",
+                      "Asistente virtual Morgan para dudas sobre plataforma, insignias y uso del entorno."
+                    ]
+                  },
+                  {
+                    title: "Estructura de aprendizaje",
+                    items: [
+                      "Módulo 1: configuración inicial de red de oficina pequeña (videos + actividades guiadas).",
+                      "Módulo 2: administración y monitoreo con simulación, anotación de topologías y controlador de red.",
+                      "La secuencia combina teoría breve, práctica supervisada y verificación de resultados."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Comprender la topología base de la oficina pequeña y su relación con el entorno físico."
+                      "Comprender el alcance del curso y preparar un entorno de trabajo adecuado para las prácticas de la sucursal."
                     ]
                   }
                 ]
               },
               {
                 code: "1.1",
-                title: "Conectar dispositivos por tecnologías cableadas e inalámbricas",
+                title: "Topología, cableado estructurado y configuración inicial",
                 summary:
-                  "Uso de cableado estructurado, conexión de equipos y verificación inicial de configuración por GUI y CLI.",
+                  "Exploración de la topología física/lógica, organización de cableado, conexión de dispositivos y configuración básica por consola CLI.",
                 images: [
                   {
-                    src: "./assets/images/packet-tracer-network-exploration/C4_1.4.png",
-                    alt: "Consola CLI en Packet Tracer para revisar configuración del dispositivo."
+                    src: "./assets/images/packet-tracer-network-exploration/C4_1.1.png",
+                    alt: "Vista física de la oficina con puntos de red y dispositivos finales."
                   },
                   {
-                    src: "./assets/images/packet-tracer-network-exploration/C4_1.5.png",
-                    alt: "Consola CLI mostrando guardado de configuración en dispositivo Cisco."
+                    src: "./assets/images/packet-tracer-network-exploration/C4_1.2.png",
+                    alt: "Rack de comunicaciones con paneles de parcheo y gestión de cables en Packet Tracer."
+                  },
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_1.4.png",
+                    alt: "Consola CLI con ejemplo de guardado de running-config a startup-config."
                   }
                 ],
                 sections: [
                   {
-                    title: "Cableado estructurado",
+                    title: "1.1.1 Descripción general de la topología",
                     items: [
-                      "Packet Tracer permite usar paneles de parcheo y rosetas para simular cableado realista.",
-                      "El etiquetado por colores y puntos de curvatura mejora organización y mantenimiento.",
-                      "La gestión de cables en rack facilita trazabilidad entre puertos de switch y panel."
+                      "La topología del curso se organiza en ubicaciones como hogar, oficina, biblioteca e ISP.",
+                      "En vista física se observa la distribución realista de equipos; en vista lógica, conectividad y flujo de datos.",
+                      "Navegar entre niveles permite entender relación entre ubicación física y diseño de red."
                     ]
                   },
                   {
-                    title: "Conexiones y tecnologías",
+                    title: "1.1.2-1.1.3 Cableado estructurado en oficina",
                     items: [
-                      "Aplicar conexiones cableadas e inalámbricas según tipo de dispositivo y objetivo de red.",
-                      "Configurar Wi-Fi y parámetros básicos para hosts móviles en escenarios de oficina.",
-                      "Usar consola para acceder a CLI, cambiar hostname y guardar running-config en startup-config."
+                      "Packet Tracer permite modelar paneles de parcheo, soportes de pared y cableado de cobre/fibra.",
+                      "Los cables pueden ordenarse por color, trayecto y puntos de curvatura para simular instalaciones reales.",
+                      "La gestión del rack mejora trazabilidad entre puerto de switch, panel de conexión y punto de red."
+                    ]
+                  },
+                  {
+                    title: "1.1.5 Conexiones cableadas e inalámbricas",
+                    items: [
+                      "Se combinan enlaces Ethernet y conectividad inalámbrica según el rol de cada dispositivo.",
+                      "La práctica incluye preparación de red Wi-Fi y nociones de tecnologías inalámbricas como Bluetooth y datos móviles.",
+                      "Elegir correctamente medio y puerto reduce errores de capa física en el despliegue."
+                    ]
+                  },
+                  {
+                    title: "1.1.7 Configuración por GUI y CLI",
+                    items: [
+                      "Las pestañas Física, Configuración, CLI, Escritorio y Servicios cambian según el tipo de equipo.",
+                      "La pestaña Config facilita ajustes básicos y muestra comandos IOS equivalentes como apoyo didáctico.",
+                      "Desde CLI se aplican tareas clave como cambio de hostname y guardado con copy running-config startup-config."
                     ]
                   },
                   {
                     title: "Checklist operativo",
                     items: [
-                      "Verificar que los enlaces estén activos y en puertos correctos.",
-                      "Comprobar direccionamiento en hosts antes de validar conectividad.",
-                      "Guardar configuración del equipo para evitar pérdida tras reinicio."
+                      "Confirmar puertos y tipo de cable antes de validar conectividad.",
+                      "Comprobar organización del cableado en rack y puntos de red del área de trabajo.",
+                      "Guardar configuración de dispositivos para evitar pérdida de cambios tras reinicio."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Conectar y dejar operativa una red básica de oficina con buenas prácticas de cableado y CLI."
+                      "Integrar topología, cableado y configuración inicial para dejar una red de oficina pequeña lista para pruebas."
                     ]
                   }
                 ]
