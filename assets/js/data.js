@@ -423,11 +423,11 @@
         modules: [
           {
             key: "M1",
-            title: "The Windows Operating System",
+            title: "Sistema operativo Windows",
             topics: [
               {
                 code: "1.1",
-                title: "Windows History",
+                title: "Historia de Windows",
                 summary:
                   "Evolución desde MS-DOS hacia Windows moderno, incluyendo versiones, entorno gráfico y vulnerabilidades del sistema operativo.",
                 images: [
@@ -466,7 +466,7 @@
                     ]
                   },
                   {
-                    title: "1.1.2 Windows Versions",
+                    title: "1.1.2 Versiones de Windows",
                     items: [
                       "Desde 1993, las versiones de Windows se basan en la arquitectura NT.",
                       "Con Windows XP se consolidó la adopción de 64 bits en equipos de usuario.",
@@ -474,15 +474,15 @@
                     ]
                   },
                   {
-                    title: "1.1.3 Windows GUI",
+                    title: "1.1.3 Interfaz gráfica de Windows",
                     items: [
-                      "El Desktop es personalizable por usuario e incluye accesos, archivos y papelera de reciclaje.",
-                      "La Task Bar integra menú Inicio/búsqueda, accesos rápidos y área de notificaciones.",
-                      "El Context Menu y File Explorer facilitan operaciones frecuentes de administración."
+                      "El escritorio (Desktop) es personalizable por usuario e incluye accesos, archivos y papelera de reciclaje.",
+                      "La barra de tareas (Taskbar) integra menú Inicio/búsqueda, accesos rápidos y área de notificaciones.",
+                      "El menú contextual (Context Menu) y el Explorador de archivos (File Explorer) facilitan operaciones frecuentes de administración."
                     ]
                   },
                   {
-                    title: "1.1.4 Operating System Vulnerabilities",
+                    title: "1.1.4 Vulnerabilidades del sistema operativo",
                     items: [
                       "Millones de líneas de código en SO y aplicaciones incrementan la superficie de falla.",
                       "Una vulnerabilidad puede explotarse para escalar privilegios, alterar permisos o robar información.",
@@ -492,14 +492,14 @@
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Entender la transición de DOS a Windows moderno y relacionarla con riesgos de seguridad en el endpoint."
+                      "Entender la transición de DOS a Windows moderno y relacionarla con riesgos de seguridad en el equipo final (endpoint)."
                     ]
                   }
                 ]
               },
               {
                 code: "1.2",
-                title: "Windows Architecture and Operations",
+                title: "Arquitectura y operación de Windows",
                 summary:
                   "Funcionamiento interno de Windows: HAL, modos de ejecución, sistemas de archivos, arranque, procesos, memoria y registro.",
                 images: [
@@ -534,7 +534,7 @@
                     ]
                   },
                   {
-                    title: "1.2.2 User Mode y Kernel Mode",
+                    title: "1.2.2 Modo usuario y modo kernel",
                     items: [
                       "Aplicaciones de usuario corren en user mode con restricciones de hardware y memoria.",
                       "Código en kernel mode tiene acceso total; errores de drivers en este modo pueden detener todo el sistema.",
@@ -542,17 +542,17 @@
                     ]
                   },
                   {
-                    title: "1.2.3 Windows File Systems",
+                    title: "1.2.3 Sistemas de archivos en Windows",
                     items: [
                       "exFAT y FAT son simples y compatibles, pero FAT presenta límites de tamaño y particiones.",
                       "HFS+ (macOS) y EXT (Linux) pueden leerse en Windows con software adicional.",
                       "NTFS es el estándar en Windows por confiabilidad, permisos, cifrado y soporte forense (MACE).",
                       "Estructuras clave de NTFS: Partition Boot Sector, MFT, System Files y File Area.",
-                      "Formatear no siempre elimina datos: para reutilización segura se recomienda secure wipe."
+                      "Formatear no siempre elimina datos: para reutilización segura se recomienda un borrado seguro (secure wipe)."
                     ]
                   },
                   {
-                    title: "1.2.4 Alternate Data Streams (ADS)",
+                    title: "1.2.4 Flujos de datos alternos (ADS)",
                     items: [
                       "NTFS permite asociar flujos alternos de datos a un archivo (ej.: Testfile.txt:ADS).",
                       "ADS puede ocultar información o código malicioso sin ser visible en un dir estándar.",
@@ -560,7 +560,7 @@
                     ]
                   },
                   {
-                    title: "1.2.5 y 1.2.6 - Boot Process y Startup",
+                    title: "1.2.5 y 1.2.6 - Proceso de arranque e inicio",
                     items: [
                       "BIOS inicia con POST/MBR; UEFI utiliza archivos .efi en la EFI System Partition.",
                       "Bootmgr.exe carga BCD y decide ruta de hibernación (Winresume.exe) o arranque frío (Winload.exe).",
@@ -569,7 +569,7 @@
                     ]
                   },
                   {
-                    title: "1.2.7 y 1.2.8 - Shutdown, Procesos, Hilos y Servicios",
+                    title: "1.2.7 y 1.2.8 - Apagado, procesos, hilos y servicios",
                     items: [
                       "Un apagado correcto cierra apps/servicios en orden y reduce riesgo de corrupción.",
                       "Opciones de apagado: Shutdown, Restart e Hibernate según necesidad operativa.",
@@ -578,7 +578,7 @@
                     ]
                   },
                   {
-                    title: "1.2.9 Memory Allocation and Handles",
+                    title: "1.2.9 Asignación de memoria y handles",
                     items: [
                       "Windows usa direcciones virtuales traducidas a direcciones físicas mediante tablas de páginas.",
                       "Procesos de 32 bits direccionan hasta 4 GB; en 64 bits el espacio virtual se amplía drásticamente.",
@@ -587,7 +587,7 @@
                     ]
                   },
                   {
-                    title: "1.2.10 Windows Registry",
+                    title: "1.2.10 Registro de Windows",
                     items: [
                       "El registro almacena configuración de hardware, software, usuarios y comportamiento del sistema.",
                       "Hives clave: HKCU, HKU, HKCR, HKLM y HKCC.",
@@ -598,14 +598,14 @@
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Comprender la operación interna de Windows para diagnosticar fallas, endurecer configuración y mejorar la seguridad del endpoint."
+                      "Comprender la operación interna de Windows para diagnosticar fallas, endurecer la configuración y mejorar la seguridad del equipo final (endpoint)."
                     ]
                   }
                 ]
               },
               {
                 code: "1.3",
-                title: "Windows Configuration and Monitoring",
+                title: "Configuración y monitoreo de Windows",
                 summary:
                   "Configuración y monitoreo operativo de Windows con enfoque en privilegios, administración de usuarios, red y diagnóstico de rendimiento.",
                 images: [
@@ -631,12 +631,12 @@
                   },
                   {
                     src: "./assets/images/operating-systems-basics/C2_3.1.jpg",
-                    alt: "Remote Desktop Connection para acceso remoto por RDP."
+                    alt: "Conexión a Escritorio remoto (Remote Desktop Connection) para acceso remoto por RDP."
                   }
                 ],
                 sections: [
                   {
-                    title: "1.3.1 Run as Administrator",
+                    title: "1.3.1 Ejecutar como administrador",
                     items: [
                       "No se recomienda trabajar siempre con cuenta Administrador por riesgo de heredar privilegios a software malicioso.",
                       "Para tareas puntuales, usar Run as Administrator sobre ejecutable o consola específica.",
@@ -644,7 +644,7 @@
                     ]
                   },
                   {
-                    title: "1.3.2 Local Users and Domains",
+                    title: "1.3.2 Usuarios locales y dominios",
                     items: [
                       "Las cuentas locales almacenan configuración y permisos específicos del equipo.",
                       "Cuentas Guest/Administrator vienen deshabilitadas por seguridad y no deben activarse sin justificación.",
@@ -653,7 +653,7 @@
                     ]
                   },
                   {
-                    title: "1.3.3 CLI and PowerShell",
+                    title: "1.3.3 CLI y PowerShell",
                     items: [
                       "CLI (cmd) permite navegación, ejecución de comandos y scripts batch.",
                       "PowerShell amplía automatización con cmdlets, scripts .ps1 y funciones reutilizables.",
@@ -671,7 +671,7 @@
                     ]
                   },
                   {
-                    title: "1.3.5 The net Command",
+                    title: "1.3.5 Comando net",
                     items: [
                       "El comando net centraliza administración de cuentas, sesiones, recursos compartidos y servicios.",
                       "Subcomandos clave: net accounts, net session, net share, net start/stop, net use, net view.",
@@ -679,7 +679,7 @@
                     ]
                   },
                   {
-                    title: "1.3.6 Task Manager and Resource Monitor",
+                    title: "1.3.6 Administrador de tareas y Monitor de recursos",
                     items: [
                       "Task Manager ofrece visibilidad por pestañas: Processes, Performance, Startup, Users, Details y Services.",
                       "Resource Monitor profundiza análisis de CPU, memoria, disco y red por proceso.",
@@ -687,7 +687,7 @@
                     ]
                   },
                   {
-                    title: "1.3.7 Networking",
+                    title: "1.3.7 Redes",
                     items: [
                       "Network and Sharing Center permite crear conexiones y ajustar propiedades del adaptador.",
                       "Configurar IPv4/IPv6 por DHCP o manual según diseño de red.",
@@ -695,7 +695,7 @@
                     ]
                   },
                   {
-                    title: "1.3.8 Accessing Network Resources",
+                    title: "1.3.8 Acceso a recursos de red",
                     items: [
                       "SMB usa formato UNC (\\\\servidor\\recurso\\archivo) para acceso a recursos remotos.",
                       "Los administrative shares (C$, admin$, print$) requieren privilegios elevados.",
@@ -720,9 +720,9 @@
               },
               {
                 code: "1.4",
-                title: "Windows Security",
+                title: "Seguridad en Windows",
                 summary:
-                  "Controles de seguridad en Windows para detectar actividad sospechosa, mantener el sistema actualizado y reforzar políticas locales del endpoint.",
+                  "Controles de seguridad en Windows para detectar actividad sospechosa, mantener el sistema actualizado y reforzar políticas locales del equipo final (endpoint).",
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/C2_4.1.png",
@@ -751,7 +751,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.4.1 The netstat Command",
+                    title: "1.4.1 Comando netstat",
                     items: [
                       "El comando netstat ayuda a detectar conexiones entrantes/salientes no autorizadas.",
                       "Con netstat -abno puedes ver puertos, estado, proceso asociado y PID para correlación con Task Manager.",
@@ -760,7 +760,7 @@
                     ]
                   },
                   {
-                    title: "1.4.2 Event Viewer",
+                    title: "1.4.2 Visor de eventos",
                     items: [
                       "Event Viewer registra eventos de aplicaciones, seguridad y sistema para diagnóstico y auditoría.",
                       "Cada evento incluye nivel (información, advertencia, error, crítico), origen, fecha/hora e ID.",
@@ -768,7 +768,7 @@
                     ]
                   },
                   {
-                    title: "1.4.3 Windows Update Management",
+                    title: "1.4.3 Gestión de Windows Update",
                     items: [
                       "Mantener Windows actualizado reduce exposición a vulnerabilidades y zero-day exploits.",
                       "Los parches corrigen fallas específicas y los service packs agrupan mejoras y correcciones.",
@@ -776,7 +776,7 @@
                     ]
                   },
                   {
-                    title: "1.4.4 Local Security Policy",
+                    title: "1.4.4 Política de seguridad local",
                     items: [
                       "La política local aplica en equipos fuera de dominio y define reglas de cuenta y seguridad del host.",
                       "Password Policy y Account Lockout Policy ayudan a mitigar intentos de fuerza bruta.",
@@ -793,7 +793,7 @@
                     ]
                   },
                   {
-                    title: "1.4.6 Windows Defender Firewall",
+                    title: "1.4.6 Firewall de Windows Defender",
                     items: [
                       "Un firewall implementa control de tráfico mediante reglas de entrada y salida por puertos/aplicaciones.",
                       "Una postura restrictiva (permitir solo lo necesario) reduce la superficie de ataque.",
@@ -803,7 +803,7 @@
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Aplicar controles de monitoreo, actualización y hardening para fortalecer la seguridad de endpoints Windows."
+                      "Aplicar controles de monitoreo, actualización y endurecimiento (hardening) para fortalecer la seguridad de equipos Windows."
                     ]
                   }
                 ]
@@ -812,7 +812,7 @@
           },
           {
             key: "M2",
-            title: "Linux: shell y operación de servicios",
+            title: "Linux: Shell y operación de servicios",
             topics: [
               {
                 code: "2.1",
@@ -870,7 +870,7 @@
                     ]
                   },
                   {
-                    title: "2.1.4 Linux Tools y PenTesting",
+                    title: "2.1.4 Herramientas Linux y pentesting",
                     items: [
                       "El penetration testing busca vulnerabilidades atacando de forma controlada un sistema o red.",
                       "Linux concentra múltiples herramientas técnicas: generadores de paquetes, escáneres de puertos y exploits de prueba.",
@@ -887,7 +887,7 @@
               },
               {
                 code: "2.2",
-                title: "Trabajo en la shell de Linux",
+                title: "Trabajo en la Shell de Linux",
                 summary:
                   "Uso práctico de la CLI en Linux: terminales, comandos base, manejo de archivos y edición de texto para administración local y remota.",
                 images: [
@@ -918,7 +918,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.2.1 The Linux Shell",
+                    title: "2.2.1 La shell de Linux",
                     items: [
                       "En Linux, la interacción con el sistema puede hacerse por GUI o por CLI; la CLI se accede con emuladores de terminal.",
                       "Terminales comunes: Terminator, eterm, xterm, konsole y gnome-terminal.",
@@ -927,7 +927,7 @@
                     ]
                   },
                   {
-                    title: "2.2.2 Basic Commands",
+                    title: "2.2.2 Comandos básicos",
                     items: [
                       "Comandos fundamentales: pwd, ps, su, sudo, passwd, shutdown y man para documentación.",
                       "Comandos de red y gestión: ifconfig, iwconfig y apt-get para configuración o mantenimiento.",
@@ -936,7 +936,7 @@
                     ]
                   },
                   {
-                    title: "2.2.3 File and Directory Commands",
+                    title: "2.2.3 Comandos de archivos y directorios",
                     items: [
                       "Comandos clave para sistema de archivos: ls, cd, mkdir, cp, mv, rm, grep y cat.",
                       "Parámetros y switches permiten ajustar el comportamiento de cada comando según la tarea.",
@@ -944,7 +944,7 @@
                     ]
                   },
                   {
-                    title: "2.2.4 Working with Text Files",
+                    title: "2.2.4 Trabajo con archivos de texto",
                     items: [
                       "Linux ofrece editores gráficos y de línea de comandos; ambos cumplen roles distintos en operación diaria.",
                       "En administración remota (ej. por SSH), los editores CLI son esenciales porque no siempre hay interfaz gráfica.",
@@ -952,7 +952,7 @@
                     ]
                   },
                   {
-                    title: "2.2.5 The Importance of Text Files in Linux",
+                    title: "2.2.5 Importancia de los archivos de texto en Linux",
                     items: [
                       "En Linux, casi todo se representa como archivo, incluyendo gran parte de la configuración del sistema.",
                       "Los servicios y aplicaciones leen archivos de configuración para definir su comportamiento al iniciar.",
@@ -1033,7 +1033,7 @@
                 code: "2.4",
                 title: "Administración básica de servidores",
                 summary:
-                  "Gestión de archivos de configuración, hardening del host y monitoreo de logs para mantener servicios Linux seguros y estables.",
+                  "Gestión de archivos de configuración, endurecimiento (hardening) del host y monitoreo de logs para mantener servicios Linux seguros y estables.",
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/C2_2.4_logs_intro.png",
@@ -1046,7 +1046,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.4.1 Service Configuration Files",
+                    title: "2.4.1 Archivos de configuración de servicios",
                     items: [
                       "En Linux, los servicios cargan parámetros desde archivos de configuración al iniciar.",
                       "Campos comunes: puerto, ubicación de recursos y criterios de autorización de clientes.",
@@ -1064,16 +1064,16 @@
                     ]
                   },
                   {
-                    title: "2.4.2 Hardening Devices",
+                    title: "2.4.2 Endurecimiento de dispositivos",
                     items: [
-                      "El hardening reduce riesgo con controles sobre acceso administrativo, servicios y superficie expuesta.",
+                      "El endurecimiento (hardening) reduce riesgo con controles sobre acceso administrativo, servicios y superficie expuesta.",
                       "Prácticas clave: minimizar paquetes instalados y deshabilitar servicios innecesarios al arranque.",
                       "Usar SSH para administración remota y evitar login directo de root sobre SSH.",
                       "Mantener sistema actualizado con parches disminuye probabilidad de compromiso por vulnerabilidades conocidas."
                     ]
                   },
                   {
-                    title: "Checklist de hardening",
+                    title: "Checklist de endurecimiento",
                     items: [
                       "Asegurar control físico del equipo y puertos de acceso.",
                       "Enforzar contraseñas fuertes, cambios periódicos y no reutilización de claves.",
@@ -1082,7 +1082,7 @@
                     ]
                   },
                   {
-                    title: "2.4.3 Monitoring Service Logs",
+                    title: "2.4.3 Monitoreo de logs de servicios",
                     items: [
                       "Los logs registran eventos de kernel, servicios y aplicaciones para diagnóstico y auditoría.",
                       "Revisar periódicamente archivos como /var/log/messages permite detectar anomalías tempranas.",
@@ -1101,7 +1101,7 @@
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Administrar servicios Linux con configuración controlada, hardening aplicado y monitoreo de logs orientado a seguridad."
+                      "Administrar servicios Linux con configuración controlada, endurecimiento aplicado y monitoreo de logs orientado a seguridad."
                     ]
                   }
                 ]
@@ -1123,7 +1123,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.5.1 The File System Types in Linux",
+                    title: "2.5.1 Tipos de sistemas de archivos en Linux",
                     items: [
                       "Linux soporta múltiples sistemas de archivos; el administrador elige según rendimiento, flexibilidad, tamaño y seguridad.",
                       "Familia ext: ext2 (sin journal), ext3 (con journaling) y ext4 (mejoras de rendimiento y escalabilidad).",
@@ -1132,7 +1132,7 @@
                     ]
                   },
                   {
-                    title: "2.5.2 Linux Roles and File Permissions",
+                    title: "2.5.2 Roles de Linux y permisos de archivos",
                     items: [
                       "Los permisos se aplican por archivo en el orden usuario, grupo y otros con derechos r, w y x.",
                       "El comando ls -l muestra permisos, enlaces, propietario, grupo, tamaño, fecha y nombre del archivo.",
@@ -1141,7 +1141,7 @@
                     ]
                   },
                   {
-                    title: "2.5.3 Hard Links and Symbolic Links",
+                    title: "2.5.3 Enlaces duros y enlaces simbólicos",
                     items: [
                       "Un hard link apunta al mismo inode que el archivo original; cambios en uno se reflejan en ambos.",
                       "Un symbolic link apunta por ruta; si el archivo origen desaparece, el enlace queda roto.",
@@ -1182,7 +1182,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.6.1 X Window System",
+                    title: "2.6.1 Sistema X Window",
                     items: [
                       "X Window System (X11) provee el framework base para dibujar ventanas y gestionar interacción con teclado y mouse.",
                       "X permite ejecutar aplicaciones de forma remota y mostrar su interfaz gráfica en otro equipo conectado por red.",
@@ -1198,7 +1198,7 @@
                     ]
                   },
                   {
-                    title: "2.6.2 The Linux GUI",
+                    title: "2.6.2 Interfaz gráfica de Linux",
                     items: [
                       "La GUI no es obligatoria para que Linux funcione, pero mejora usabilidad para perfiles no avanzados en CLI.",
                       "Ubuntu usa GNOME 3 como interfaz por defecto con enfoque en simplicidad y experiencia de usuario.",
@@ -1226,11 +1226,11 @@
           },
           {
             key: "M3",
-            title: "Conectividad en dispositivos moviles",
+            title: "Conectividad en dispositivos móviles",
             topics: [
               {
                 code: "3.1",
-                title: "Wireless and Cellular Data Network",
+                title: "Red inalámbrica y datos celulares",
                 summary:
                   "Conectividad móvil por Wi-Fi y red celular, con enfoque en seguridad de configuración, estándares de comunicación y uso de hotspot.",
                 images: [
@@ -1245,7 +1245,7 @@
                 ],
                 sections: [
                   {
-                    title: "3.1.1 Wireless Data Networks",
+                    title: "3.1.1 Redes de datos inalámbricas",
                     items: [
                       "Los dispositivos móviles se conectan a internet principalmente por Wi-Fi o por red celular.",
                       "Wi-Fi suele preferirse por costo y consumo de batería, mientras que celular depende del plan del operador.",
@@ -1254,7 +1254,7 @@
                     ]
                   },
                   {
-                    title: "3.1.2 Wi-Fi Manual Configuration",
+                    title: "3.1.2 Configuración manual de Wi-Fi",
                     items: [
                       "Buenas prácticas: usar seguridad robusta (WPA2 o superior), evitar texto claro para credenciales y preferir VPN.",
                       "Configuración manual requiere SSID, tipo de seguridad y contraseña en Android o iOS.",
@@ -1262,7 +1262,7 @@
                     ]
                   },
                   {
-                    title: "3.1.4 Cellular Communications Standards",
+                    title: "3.1.4 Estándares de comunicación celular",
                     items: [
                       "Evolución de estándares: 1G analógico, 2G digital, 3G con internet móvil, 4G/LTE de alta velocidad y 5G de muy alta capacidad.",
                       "No todos los estándares se adoptan igual en todos los países; esto puede afectar compatibilidad internacional.",
@@ -1270,7 +1270,7 @@
                     ]
                   },
                   {
-                    title: "3.1.5 Airplane Mode",
+                    title: "3.1.5 Modo avión",
                     items: [
                       "Airplane Mode desactiva radios celulares, Wi-Fi y Bluetooth para cumplir restricciones operativas.",
                       "Tras activarlo, pueden habilitarse selectivamente algunas interfaces (como Wi-Fi o Bluetooth) si la política lo permite.",
@@ -1278,7 +1278,7 @@
                     ]
                   },
                   {
-                    title: "3.1.6 Hotspot",
+                    title: "3.1.6 Punto de acceso (hotspot)",
                     items: [
                       "Un hotspot (tethering) permite compartir internet celular con otros dispositivos por Wi-Fi, Bluetooth o USB.",
                       "Es útil cuando no existe red fija o Wi-Fi disponible para el equipo que necesita conectividad.",
@@ -1306,14 +1306,14 @@
                 ],
                 sections: [
                   {
-                    title: "3.2.1 Bluetooth for Mobile Devices",
+                    title: "3.2.1 Bluetooth en dispositivos móviles",
                     items: [
                       "Bluetooth permite conectar parlantes, audífonos, teclados, mouse y controles de juego.",
                       "Estos periféricos mejoran productividad y experiencia multimedia sin cableado adicional."
                     ]
                   },
                   {
-                    title: "3.2.2 Bluetooth Pairing",
+                    title: "3.2.2 Emparejamiento Bluetooth",
                     items: [
                       "El emparejamiento Bluetooth es el proceso por el cual dos dispositivos acuerdan parámetros de comunicación y autenticación.",
                       "Uno de los equipos debe estar en modo discoverable/visible para ser detectado.",
@@ -1338,7 +1338,7 @@
               },
               {
                 code: "3.3",
-                title: "Email Configuration",
+                title: "Configuración de correo electrónico",
                 summary:
                   "Configuración de correo en Android e iOS, protocolos de correo y diferencias entre servicios locales e internet email.",
                 images: [
@@ -1349,7 +1349,7 @@
                 ],
                 sections: [
                   {
-                    title: "3.3.1 Introduction to Email",
+                    title: "3.3.1 Introducción al correo electrónico",
                     items: [
                       "El correo electrónico se basa en la interacción entre servidores de email y clientes de correo.",
                       "Los servidores reenvían y almacenan mensajes; los clientes permiten redactar, leer y administrar el buzón.",
@@ -1366,7 +1366,7 @@
                     ]
                   },
                   {
-                    title: "3.3.3 Android Email Configuration",
+                    title: "3.3.3 Configuración de correo en Android",
                     items: [
                       "Android integra servicios de Google y sincroniza correo, contactos y ajustes al iniciar sesión.",
                       "Para agregar cuenta: abrir Gmail/Email, elegir tipo de cuenta, ingresar credenciales y guardar configuración.",
@@ -1374,7 +1374,7 @@
                     ]
                   },
                   {
-                    title: "3.3.4 iOS Email Configuration",
+                    title: "3.3.4 Configuración de correo en iOS",
                     items: [
                       "iOS incluye Mail y soporta iCloud, Exchange, Google, Yahoo, AOL y Outlook.",
                       "El Apple ID habilita App Store, iTunes e iCloud, incluyendo correo y almacenamiento remoto de respaldo.",
@@ -1382,7 +1382,7 @@
                     ]
                   },
                   {
-                    title: "3.3.5 Internet Email",
+                    title: "3.3.5 Correo en internet",
                     items: [
                       "Un usuario puede operar correo local (gestionado por TI interno) o internet email (gestionado por proveedor externo).",
                       "El acceso puede hacerse desde app nativa del SO, cliente web o app dedicada (por ejemplo Gmail).",
@@ -1399,7 +1399,7 @@
               },
               {
                 code: "3.4",
-                title: "Mobile Device Synchronization",
+                title: "Sincronización de dispositivos móviles",
                 summary:
                   "Sincronización de datos entre dispositivos, diferencias entre Android e iOS, y tipos de conexión para respaldos y consistencia de información.",
                 images: [
@@ -1410,7 +1410,7 @@
                 ],
                 sections: [
                   {
-                    title: "3.4.1 Types of Data to Synchronize",
+                    title: "3.4.1 Tipos de datos para sincronizar",
                     items: [
                       "La sincronización mantiene información consistente entre múltiples equipos (móvil, tablet, laptop, desktop).",
                       "Datos comunes: contactos, apps, correo, fotos, música, videos, calendario, documentos, marcadores, contraseñas y más.",
@@ -1418,7 +1418,7 @@
                     ]
                   },
                   {
-                    title: "3.4.2 Enabling Synchronization",
+                    title: "3.4.2 Habilitar sincronización",
                     items: [
                       "En Android, Sync y Auto Sync permiten elegir qué datos sincronizar y si se hace de forma automática.",
                       "En iOS hay dos conceptos: Backup (copia integral) y Sync (sincronización de contenido definido).",
@@ -1426,10 +1426,10 @@
                     ]
                   },
                   {
-                    title: "3.4.3 Synchronization Connection Types",
+                    title: "3.4.3 Tipos de conexión para sincronización",
                     items: [
                       "La sincronización puede realizarse por USB o Wi-Fi, según plataforma y configuración del entorno.",
-                      "Android suele apoyarse en servicios cloud de Google para continuidad de datos entre dispositivos.",
+                      "Android suele apoyarse en servicios en la nube de Google para continuidad de datos entre dispositivos.",
                       "iOS permite Wi-Fi Sync con iTunes tras una primera conexión por cable y configuración previa.",
                       "Servicios como OneDrive también permiten sincronizar información entre móviles y PCs."
                     ]
@@ -1472,7 +1472,7 @@
                     title: "4.1.2 Fuentes de aplicaciones y contenido",
                     items: [
                       "Las apps sustituyen a los programas tradicionales de escritorio y se descargan desde tiendas o fuentes autorizadas.",
-                      "En iOS, Apple usa un modelo de revisión centralizada (walled garden) en App Store para filtrar contenido malicioso.",
+                      "En iOS, Apple usa un modelo de revisión centralizada y ecosistema cerrado (walled garden) en App Store para filtrar contenido malicioso.",
                       "En Android, además de Google Play, se permite instalación desde terceros mediante archivos APK (sideloading), lo que exige mayor criterio de seguridad."
                     ]
                   },
@@ -1513,9 +1513,9 @@
                 ],
                 sections: [
                   {
-                    title: "4.2.1 Android Home Screen Items",
+                    title: "4.2.1 Elementos de la pantalla de inicio en Android",
                     items: [
-                      "Android organiza apps y widgets en varias pantallas con una pantalla principal (home).",
+                      "Android organiza apps y widgets en varias pantallas con una pantalla principal (inicio).",
                       "El indicador de pantalla muestra qué escritorio está activo y permite navegación horizontal por deslizamiento.",
                       "La barra del sistema se mantiene visible para navegación y acciones globales del dispositivo."
                     ]
@@ -1529,7 +1529,7 @@
                     ]
                   },
                   {
-                    title: "4.2.3 iOS Home Screen Items",
+                    title: "4.2.3 Elementos de la pantalla de inicio en iOS",
                     items: [
                       "iOS también organiza apps por pantallas táctiles, pero con diferencias clave frente a Android.",
                       "No usa el mismo esquema de iconos de navegación y, según el modelo, privilegia botón físico o gestos.",
@@ -1537,15 +1537,15 @@
                     ]
                   },
                   {
-                    title: "Botón Home, centro de control y notificaciones",
+                    title: "Botón de inicio (Home), centro de control y notificaciones",
                     items: [
                       "En iPhone con botón Home, este concentra acciones como desbloquear, volver a inicio y activar Siri.",
                       "En modelos sin botón Home, esas funciones migran a gestos táctiles y botón lateral.",
-                      "El Notification Center y el Control Center centralizan alertas y ajustes frecuentes incluso con el equipo bloqueado."
+                      "El Centro de notificaciones (Notification Center) y el Centro de control (Control Center) centralizan alertas y ajustes frecuentes incluso con el equipo bloqueado."
                     ]
                   },
                   {
-                    title: "Búsqueda Spotlight",
+                    title: "Búsqueda con Spotlight",
                     items: [
                       "Spotlight permite buscar apps, ajustes, contenido local y resultados web desde cualquier pantalla.",
                       "La búsqueda se actualiza en tiempo real y acelera acceso a funciones sin navegar por múltiples menús."
@@ -1561,7 +1561,7 @@
               },
               {
                 code: "4.3",
-                title: "Antivirus, rooting/jailbreaking y actualizaciones",
+                title: "Antivirus, rooteo/jailbreak y actualizaciones",
                 summary:
                   "Medidas de defensa en móviles, riesgos de elevar privilegios y necesidad de mantener parches al día.",
                 images: [
@@ -1603,7 +1603,7 @@
               },
               {
                 code: "4.5",
-                title: "Passcodes, intentos fallidos y borrado automático",
+                title: "Códigos de acceso, intentos fallidos y borrado automático",
                 summary:
                   "Controles de acceso local y respuesta de seguridad ante múltiples intentos de autenticación fallidos.",
                 images: [
@@ -1633,11 +1633,11 @@
                 code: "4.6",
                 title: "Servicios en la nube, localización y bloqueo remoto",
                 summary:
-                  "Respaldo remoto, localización de equipos y acciones de lock/wipe para respuesta a incidentes móviles.",
+                  "Respaldo remoto, localización de equipos y acciones de bloqueo/borrado remoto (lock/wipe) para respuesta a incidentes móviles.",
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/osb-security.svg",
-                    alt: "Servicios cloud para respaldo y control remoto de dispositivos."
+                    alt: "Servicios en la nube para respaldo y control remoto de dispositivos."
                   }
                 ],
                 sections: [
