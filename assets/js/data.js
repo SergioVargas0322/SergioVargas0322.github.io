@@ -1939,37 +1939,46 @@
             topics: [
               {
                 code: "2.0",
-                title: "Tipos de archivos de Packet Tracer",
+                title: "Tipos de archivo y evaluaciones en Packet Tracer",
                 summary:
-                  "Diferencias entre archivos de actividad y topología para practicar, evaluar y distribuir laboratorios.",
+                  "Uso correcto de formatos .pka, .pkt, .pksz y .pkz, junto con su relación con evaluaciones PTMO y PTSA.",
                 images: [
                   {
                     src: "./assets/images/packet-tracer-basics/C3_2.0.png",
-                    alt: "Tipos de archivo en Cisco Packet Tracer: pka, pkt, pksz y pkz."
+                    alt: "Listado de tipos de archivo de Cisco Packet Tracer: .pka, .pkt, .pksz y .pkz."
                   }
                 ],
                 sections: [
                   {
-                    title: "Tipos de archivo",
+                    title: "2.0.1 Tipos de archivo de Packet Tracer",
                     items: [
-                      ".pka: actividad evaluable con instrucciones, puntuación y red de respuesta.",
-                      ".pkt: topología guardada sin puntuación ni ventana de instrucciones.",
-                      ".pksz: paquete para actividades PTTA con recursos multimedia y sistema de pistas.",
-                      ".pkz: formato legado para recursos incrustados (uso actual limitado)."
+                      ".pka: archivo de actividad evaluable con ventana de instrucciones, puntuación y función de comprobación de resultados.",
+                      "Un .pka incluye red inicial (visible al estudiante) y red de respuesta (ejecutada en segundo plano para validar).",
+                      ".pkt: topología guardada para práctica libre; no incorpora puntuación ni instrucciones de actividad.",
+                      ".pksz: formato de actividades PTTA que integra un .pka más recursos multimedia y scripts de pistas.",
+                      ".pkz: formato heredado; actualmente su uso es limitado frente a los formatos modernos."
                     ]
                   },
                   {
-                    title: "Evaluaciones con Packet Tracer",
+                    title: "2.0.2 Evaluaciones con Packet Tracer",
                     items: [
-                      "PTMO: ítems dentro de evaluaciones que abren un .pkt o .pka.",
-                      "PTSA: evaluación sumativa independiente de habilidades prácticas.",
-                      "La retroalimentación varía según configuración del curso."
+                      "PTMO (Packet Tracer Media Object): pregunta dentro de un examen/cuestionario que abre un .pkt o .pka.",
+                      "PTSA (Packet Tracer Skills Assessment): evaluación práctica sumativa e independiente para demostrar competencias.",
+                      "En PTSA, los resultados pueden incluir retroalimentación por componente según la configuración del curso."
+                    ]
+                  },
+                  {
+                    title: "Guía rápida de uso",
+                    items: [
+                      "Usa .pkt cuando quieras construir, probar o compartir una topología sin calificación.",
+                      "Usa .pka cuando necesites actividad guiada, criterios de cumplimiento y puntuación.",
+                      "Usa .pksz cuando el laboratorio requiera tutoría contextual con sistema de sugerencias PTTA."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Seleccionar el tipo de archivo correcto según práctica, actividad guiada o evaluación."
+                      "Seleccionar y abrir el tipo de archivo correcto según el objetivo: práctica, actividad guiada o evaluación."
                     ]
                   }
                 ]
@@ -1978,42 +1987,50 @@
                 code: "2.1",
                 title: "Construye una red doméstica",
                 summary:
-                  "Implementación de una topología básica, cableado, direccionamiento IP y uso de funciones de simulación.",
+                  "Construcción de una topología doméstica con direccionamiento IP, conexiones cableadas/inalámbricas y ajustes de productividad visual.",
                 images: [
                   {
                     src: "./assets/images/packet-tracer-basics/C3_2.1.png",
-                    alt: "Topología de red doméstica en Cisco Packet Tracer."
+                    alt: "Topología de red doméstica en Packet Tracer con enlaces cableados e inalámbricos."
                   }
                 ],
                 sections: [
                   {
-                    title: "Implementación y cableado",
+                    title: "2.1.1 Direccionamiento IP en hosts",
                     items: [
-                      "Agregar dispositivos (router, switches, PC, laptop y elementos IoT).",
-                      "Seleccionar conexión automática o cables específicos (directo, cruzado, consola).",
-                      "Verificar estado de enlaces y ajustar puertos cuando sea necesario."
+                      "La IP se puede verificar por dos rutas: pestaña Configuración del host y pestaña Escritorio con comando ipconfig.",
+                      "En PCs con direccionamiento estático, se validan IP, máscara y gateway configurados manualmente.",
+                      "En laptops con DHCP, la IP y gateway aparecen asignados automáticamente por el servidor."
                     ]
                   },
                   {
-                    title: "Configuración y verificación",
+                    title: "2.1.2 Conexiones de dispositivos",
                     items: [
-                      "Comprobar direccionamiento en pestaña Config o en Desktop con ipconfig.",
-                      "Distinguir direcciones estáticas y asignadas por DHCP.",
-                      "Usar modo simulación para observar eventos y recorrido de paquetes."
+                      "Packet Tracer permite conexión automática o selección manual de cable (directo, cruzado y consola).",
+                      "Se pueden administrar enlaces entre PC-switch, switch-switch, switch-router y consola RS-232 para administración.",
+                      "Las luces de enlace guían el diagnóstico: verde operativo, naranja en convergencia y rojo cuando la interfaz requiere habilitación."
                     ]
                   },
                   {
-                    title: "Productividad en prácticas",
+                    title: "2.1.3 Funciones avanzadas para prácticas",
                     items: [
-                      "Aplicar inspección frontal/trasera en modo físico para identificar puertos.",
-                      "Utilizar opciones de fondo e iconos personalizados para documentar topologías.",
-                      "Reiniciar escenarios y repetir prácticas para reforzar procedimientos."
+                      "Es posible personalizar fondos para representar edificios, campus o ciudad y contextualizar la topología.",
+                      "También se pueden personalizar iconos de dispositivos para mejorar documentación y lectura visual.",
+                      "Estas mejoras no cambian la lógica de red, pero facilitan análisis, presentación y mantenimiento del laboratorio."
+                    ]
+                  },
+                  {
+                    title: "Checklist de verificación",
+                    items: [
+                      "Confirmar direccionamiento de cada host (IP, máscara y gateway) antes de pruebas de conectividad.",
+                      "Revisar puertos y tipo de cable en cada enlace para evitar errores de capa física.",
+                      "Guardar el progreso de la topología para repetir pruebas y comparar cambios."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Crear, cablear y validar una red doméstica funcional con buenas prácticas de trabajo en Packet Tracer."
+                      "Implementar y validar una red doméstica funcional con criterios técnicos de direccionamiento y cableado."
                     ]
                   }
                 ]
