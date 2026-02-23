@@ -887,22 +887,83 @@
               },
               {
                 code: "2.2",
-                title: "Comandos de shell, archivos y texto",
+                title: "Trabajo en la shell de Linux",
                 summary:
-                  "Uso de comandos básicos, navegación de directorios, edición de texto y piping para análisis.",
+                  "Uso práctico de la CLI en Linux: terminales, comandos base, manejo de archivos y edición de texto para administración local y remota.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-linux.svg",
-                    alt: "Terminal Linux para comandos, texto y flujo con pipes."
+                    src: "./assets/images/operating-systems-basics/C2_2.2_shell.png",
+                    alt: "Terminal Linux con ejecución de uname y comandos ls/grep."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.2_commands.png",
+                    alt: "Tabla de comandos básicos de Linux y su descripción."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.2_path.png",
+                    alt: "Explicación del comando man y del concepto de path en Linux."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.2_files.png",
+                    alt: "Comandos de archivos y directorios en Linux (ls, cd, mkdir, cp, mv, rm)."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.2_nano_firewall.png",
+                    alt: "Editor nano modificando reglas de firewall en Linux."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.2_nano_hosts.png",
+                    alt: "Editor nano modificando el archivo /etc/hosts en Linux."
                   }
                 ],
                 sections: [
                   {
-                    title: "Checklist técnico",
+                    title: "2.2.1 The Linux Shell",
                     items: [
-                      "Dominar navegación con cd, pwd, ls y permisos básicos.",
-                      "Inspeccionar archivos de configuración y logs de forma segura.",
-                      "Combinar comandos con pipes para filtrar información útil."
+                      "En Linux, la interacción con el sistema puede hacerse por GUI o por CLI; la CLI se accede con emuladores de terminal.",
+                      "Terminales comunes: Terminator, eterm, xterm, konsole y gnome-terminal.",
+                      "La shell permite ejecutar comandos locales y remotos de forma eficiente, especialmente en administración por SSH.",
+                      "Términos como shell, consola, CLI terminal y terminal window suelen usarse de forma equivalente."
+                    ]
+                  },
+                  {
+                    title: "2.2.2 Basic Commands",
+                    items: [
+                      "Comandos fundamentales: pwd, ps, su, sudo, passwd, shutdown y man para documentación.",
+                      "Comandos de red y gestión: ifconfig, iwconfig y apt-get para configuración o mantenimiento.",
+                      "Comandos de procesamiento y búsqueda: cat, grep, mv, chmod, chown y dd.",
+                      "La ejecución depende de permisos del usuario; sin privilegios adecuados algunos comandos no se pueden aplicar."
+                    ]
+                  },
+                  {
+                    title: "2.2.3 File and Directory Commands",
+                    items: [
+                      "Comandos clave para sistema de archivos: ls, cd, mkdir, cp, mv, rm, grep y cat.",
+                      "Parámetros y switches permiten ajustar el comportamiento de cada comando según la tarea.",
+                      "El uso correcto de estas utilidades acelera diagnóstico, organización y mantenimiento del host Linux."
+                    ]
+                  },
+                  {
+                    title: "2.2.4 Working with Text Files",
+                    items: [
+                      "Linux ofrece editores gráficos y de línea de comandos; ambos cumplen roles distintos en operación diaria.",
+                      "En administración remota (ej. por SSH), los editores CLI son esenciales porque no siempre hay interfaz gráfica.",
+                      "nano es una opción común: CTRL+O guarda, CTRL+W busca y CTRL+G abre ayuda."
+                    ]
+                  },
+                  {
+                    title: "2.2.5 The Importance of Text Files in Linux",
+                    items: [
+                      "En Linux, casi todo se representa como archivo, incluyendo gran parte de la configuración del sistema.",
+                      "Los servicios y aplicaciones leen archivos de configuración para definir su comportamiento al iniciar.",
+                      "Con permisos adecuados, el administrador puede editar archivos críticos como /etc/hosts.",
+                      "El comando sudo eleva privilegios para tareas administrativas, por ejemplo: sudo nano /etc/hosts."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Operar con soltura la shell de Linux para administrar archivos, editar configuraciones y ejecutar tareas técnicas de soporte y seguridad."
                     ]
                   }
                 ]
