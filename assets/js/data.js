@@ -409,6 +409,301 @@
             ]
           }
         ]
+      },
+      {
+        id: "operating-systems-basics",
+        title: "Operating Systems Basics",
+        provider: "Cisco Networking Academy",
+        level: "Fundamentos",
+        status: "En curso",
+        estimatedHours: 40,
+        summary:
+          "Fundamentos de sistemas operativos con enfoque en Windows, Linux, conectividad móvil y seguridad.",
+        tags: ["sistemas operativos", "windows", "linux", "movil", "seguridad"],
+        modules: [
+          {
+            key: "M1",
+            title: "Windows: arquitectura y administración",
+            topics: [
+              {
+                code: "1.1",
+                title: "Historia, GUI y vulnerabilidades en Windows",
+                summary:
+                  "Evolución de DOS a Windows moderno, uso de GUI y riesgos asociados a vulnerabilidades del sistema.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-windows.svg",
+                    alt: "Panorama de Windows, interfaz y operación básica."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Puntos importantes",
+                    items: [
+                      "Windows evolucionó desde DOS hacia un entorno gráfico completo.",
+                      "La GUI mejora productividad con Desktop, Taskbar y menús contextuales.",
+                      "Todo sistema con mucho código puede contener vulnerabilidades explotables."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.2",
+                title: "HAL, kernel, modos de CPU y sistemas de archivos",
+                summary:
+                  "Relación entre hardware y kernel, diferencia entre user mode/kernel mode, y uso de NTFS en Windows.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-windows.svg",
+                    alt: "Arquitectura de Windows con HAL, kernel y capas de ejecución."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Factores técnicos",
+                    items: [
+                      "HAL abstrae hardware para facilitar compatibilidad.",
+                      "Kernel mode tiene control total; user mode limita impacto de fallas.",
+                      "NTFS destaca por seguridad, permisos y trazabilidad de archivos."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.3",
+                title: "Arranque, servicios, registro y herramientas de seguridad",
+                summary:
+                  "Secuencia de boot, gestión de procesos/servicios y uso de netstat, Event Viewer, Defender y Firewall.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-windows.svg",
+                    alt: "Arranque de Windows y herramientas de administración y seguridad."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Checklist operativo",
+                    items: [
+                      "Identificar etapas de inicio BIOS/UEFI, Bootmgr y Winload.",
+                      "Supervisar procesos y servicios críticos con herramientas del sistema.",
+                      "Aplicar monitoreo de eventos, actualizaciones y firewall activo."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M2",
+            title: "Linux: shell y operación de servicios",
+            topics: [
+              {
+                code: "2.1",
+                title: "Fundamentos de Linux y valor en SOC",
+                summary:
+                  "Conceptos base de Linux, su relevancia en servidores e infraestructura de seguridad.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-linux.svg",
+                    alt: "Linux en entornos de administración y seguridad."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Puntos importantes",
+                    items: [
+                      "Linux es clave en servidores y operaciones de ciberseguridad.",
+                      "Permite control granular y automatización mediante CLI.",
+                      "Su adopción masiva lo vuelve esencial en perfiles técnicos."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "2.2",
+                title: "Comandos de shell, archivos y texto",
+                summary:
+                  "Uso de comandos básicos, navegación de directorios, edición de texto y piping para análisis.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-linux.svg",
+                    alt: "Terminal Linux para comandos, texto y flujo con pipes."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Checklist técnico",
+                    items: [
+                      "Dominar navegación con cd, pwd, ls y permisos básicos.",
+                      "Inspeccionar archivos de configuración y logs de forma segura.",
+                      "Combinar comandos con pipes para filtrar información útil."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "2.3",
+                title: "Servicios, puertos, permisos y hardening",
+                summary:
+                  "Modelo cliente-servidor, puertos de servicios, control de permisos y prácticas de endurecimiento.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-linux.svg",
+                    alt: "Servicios Linux, puertos y controles de seguridad."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Validar exposición de servicios, aplicar mínimo privilegio y mantener el host actualizado."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M3",
+            title: "Conectividad en dispositivos móviles",
+            topics: [
+              {
+                code: "3.1",
+                title: "Wi-Fi, datos celulares y Bluetooth",
+                summary:
+                  "Conectividad inalámbrica y celular, configuración de redes y emparejamiento seguro de periféricos.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-connectivity.svg",
+                    alt: "Conectividad móvil con Wi-Fi, datos y Bluetooth."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Puntos importantes",
+                    items: [
+                      "La calidad de red depende de cobertura, interferencia y configuración.",
+                      "Bluetooth debe usarse con visibilidad controlada y dispositivos confiables.",
+                      "Modo avión y hotspot son funciones clave para escenarios específicos."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "3.2",
+                title: "Configuración de correo y sincronización",
+                summary:
+                  "Parámetros de email en Android/iOS y sincronización de datos personales o corporativos.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-connectivity.svg",
+                    alt: "Configuración de correo y sincronización de datos móviles."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Checklist operativo",
+                    items: [
+                      "Configurar servidor entrante/saliente y métodos de autenticación.",
+                      "Validar sincronización de correo, contactos y calendario.",
+                      "Elegir tipo de sincronización según el riesgo de la información."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "3.3",
+                title: "Funciones avanzadas de conectividad",
+                summary:
+                  "Uso de Wi-Fi Calling, GPS y conexiones seguras para continuidad de comunicación.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-connectivity.svg",
+                    alt: "Funciones avanzadas de conectividad en sistemas móviles."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Mantener comunicación y acceso a red con configuraciones adecuadas según el contexto."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M4",
+            title: "Sistemas móviles y seguridad",
+            topics: [
+              {
+                code: "4.1",
+                title: "Android vs iOS y controles de acceso",
+                summary:
+                  "Comparación de plataformas, orígenes de aplicaciones y seguridad de acceso mediante passcode.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-security.svg",
+                    alt: "Comparativa de plataformas móviles y controles de acceso."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Puntos importantes",
+                    items: [
+                      "La fuente de apps impacta directamente el riesgo de malware.",
+                      "Passcodes y políticas de intentos fallidos reducen accesos no autorizados.",
+                      "La experiencia de seguridad depende de configuración y disciplina de uso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.2",
+                title: "Backup, localización y borrado remoto",
+                summary:
+                  "Estrategias para proteger información mediante respaldo en nube, localizador, bloqueo y wipe remoto.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-security.svg",
+                    alt: "Protección de datos móviles con respaldo y control remoto."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Checklist de respuesta",
+                    items: [
+                      "Activar respaldos automáticos y verificar su restauración.",
+                      "Configurar localización remota antes de incidentes.",
+                      "Aplicar lock o wipe remoto cuando el dispositivo se comprometa."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.3",
+                title: "Antivirus, rooting/jailbreaking y actualizaciones",
+                summary:
+                  "Medidas de defensa en móviles, riesgos de elevar privilegios y necesidad de mantener parches al día.",
+                images: [
+                  {
+                    src: "./assets/images/operating-systems-basics/osb-security.svg",
+                    alt: "Seguridad móvil con antivirus, parches y control de privilegios."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Sostener dispositivos móviles actualizados y con menor superficie de ataque."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   };
