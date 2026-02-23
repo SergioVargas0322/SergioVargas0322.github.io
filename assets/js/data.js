@@ -2182,52 +2182,56 @@
             topics: [
               {
                 code: "2.0",
-                title: "Simulación, clústeres y anotación de topologías",
+                title: "Modo simulación, clústeres y anotación de topologías",
                 summary:
-                  "Control del tráfico en modo simulación, organización lógica por clústeres y documentación visual de la red.",
+                  "Uso del modo Simulación para inspeccionar PDUs, creación de clústeres para escalar escenarios y técnicas de anotación para documentar topologías.",
                 images: [
                   {
                     src: "./assets/images/packet-tracer-network-exploration/C4_2.1.png",
-                    alt: "Panel de simulación de Packet Tracer con eventos ICMP."
-                  },
-                  {
-                    src: "./assets/images/packet-tracer-network-exploration/C4_2.2.png",
-                    alt: "Panel de simulación para reproducción y captura de eventos."
+                    alt: "Panel de Simulación de Packet Tracer con lista de eventos ICMP y controles de reproducción."
                   },
                   {
                     src: "./assets/images/packet-tracer-network-exploration/C4_2.3.png",
-                    alt: "Topología con clústeres para organizar secciones de red."
+                    alt: "Topología de sucursal organizada por clústeres para segmentar áreas de red."
                   }
                 ],
                 sections: [
                   {
-                    title: "Modo de simulación",
+                    title: "2.0.1 Modo de simulación de Packet Tracer",
                     items: [
-                      "Permite pausar, filtrar y analizar PDUs para validar conectividad, seguridad y servicios.",
-                      "Las pestañas del modelo OSI y detalles de PDU ayudan a estudiar encapsulación y tránsito.",
-                      "Es clave para diagnosticar fallas antes de desplegar cambios en entornos reales."
+                      "Cambiar de Realtime a Simulation permite detener el tiempo de la red y observar cada evento de extremo a extremo.",
+                      "Event List, Edit Filters y el control de velocidad ayudan a aislar protocolos (por ejemplo ICMP, ARP o DNS) durante el diagnóstico.",
+                      "Las vistas de PDU y modelo OSI facilitan identificar en qué capa se produce una falla de conectividad."
                     ]
                   },
                   {
-                    title: "Clústeres y organización",
+                    title: "2.0.4 Clústeres para organizar redes complejas",
                     items: [
-                      "Los clústeres simplifican topologías grandes agrupando dispositivos en una nube lógica.",
-                      "Se pueden crear, renombrar, desagrupar o eliminar según necesidad del diseño.",
-                      "Las conexiones entre clúster y exterior se realizan eligiendo dispositivo e interfaz explícitos."
+                      "Un clúster agrupa equipos en una sola entidad visual, útil para representar edificios, pisos o áreas funcionales.",
+                      "Desde la vista física se pueden crear, renombrar, desagrupar y eliminar clústeres sin perder la lógica de conectividad.",
+                      "Al conectar un clúster con otros segmentos, conviene registrar interfaz origen/destino para mantener trazabilidad del cableado."
                     ]
                   },
                   {
-                    title: "Edición y anotación",
+                    title: "2.0.5 Edición y anotación de topología",
                     items: [
-                      "Agregar notas, formas y fondos mejora documentación y comunicación del diseño.",
-                      "Las anotaciones facilitan ubicar edificios, enlaces críticos y alcance de cambios.",
-                      "La descripción de red centraliza contexto técnico de una actualización."
+                      "Las herramientas de notas, formas, texto y fondos convierten la topología en un diagrama operativo listo para soporte o auditoría.",
+                      "Etiquetar enlaces críticos, puertas de enlace y equipos de borde reduce errores al aplicar cambios.",
+                      "La descripción general de la red debe incluir propósito del laboratorio, supuestos y fecha de última actualización."
+                    ]
+                  },
+                  {
+                    title: "Checklist de verificación",
+                    items: [
+                      "Filtrar solo los protocolos relevantes antes de capturar tráfico para evitar ruido analítico.",
+                      "Comprobar que cada clúster tenga nombre semántico y límites claros.",
+                      "Guardar el archivo .pkt después de cada ronda de anotación y pruebas."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Validar tráfico y mantener topologías claras, organizadas y documentadas para operación."
+                      "Diagnosticar tráfico con evidencia, mantener topologías legibles y dejar documentación reutilizable para la operación."
                     ]
                   }
                 ]
@@ -2236,50 +2240,58 @@
                 code: "2.1",
                 title: "Controlador de red y monitoreo de cambios",
                 summary:
-                  "Uso del controlador de red en Packet Tracer para descubrir dispositivos, supervisar estado y administrar la sucursal.",
+                  "Aplicación del Network Controller de Packet Tracer para descubrir equipos, consolidar inventario y validar cambios en una sucursal.",
                 images: [
                   {
                     src: "./assets/images/packet-tracer-network-exploration/C4_2.4.png",
-                    alt: "Topología corporativa que integra sucursal, ISP y centro de datos."
+                    alt: "Topología corporativa que integra sucursal, ISP y centro de datos para análisis de cambios."
                   },
                   {
                     src: "./assets/images/packet-tracer-network-exploration/C4_2.5.png",
-                    alt: "Panel principal del controlador de red en Packet Tracer."
+                    alt: "Panel principal del Network Controller con indicadores de estado de red."
                   },
                   {
                     src: "./assets/images/packet-tracer-network-exploration/C4_2.6.png",
-                    alt: "Vista de descubrimiento de dispositivos en controlador de red."
+                    alt: "Vista de Discovery del controlador con resultados de dispositivos y alcanzabilidad."
                   }
                 ],
                 sections: [
                   {
-                    title: "Qué aporta un controlador de red",
+                    title: "2.1.1 El controlador de red en Packet Tracer",
                     items: [
-                      "Centraliza inventario, estado y operaciones de múltiples dispositivos de red.",
-                      "Facilita automatización, análisis de rendimiento y detección de incidentes.",
-                      "Expone funciones por GUI y API para integración con otros procesos."
+                      "Actúa como plano central de gestión para inventario, provisión, monitoreo y políticas de dispositivos.",
+                      "Desde el dashboard se visualizan métricas de salud, disponibilidad y estado de administración.",
+                      "Su utilidad principal es reducir operación manual y acelerar la detección de desviaciones en la red."
                     ]
                   },
                   {
-                    title: "Flujo de trabajo básico",
+                    title: "Descubrimiento e inventario",
                     items: [
-                      "Conectar el controlador a la red, validar conectividad IP y acceder por navegador web.",
-                      "Configurar credenciales de administración para permitir descubrimiento y gestión.",
-                      "Ejecutar procesos de discovery para incorporar nuevos dispositivos conectados."
+                      "En la pestaña Discovery se define alcance IP, método de descubrimiento y credenciales para incorporar equipos automáticamente.",
+                      "El inventario resultante muestra hostname, tipo, IP y estado de alcanzabilidad para priorizar incidencias.",
+                      "Cada redescubrimiento actualiza el inventario después de altas, bajas o cambios físicos en la sucursal."
                     ]
                   },
                   {
-                    title: "Monitoreo y operación",
+                    title: "2.1.4 Monitoreo de cambios con el controlador",
                     items: [
-                      "Revisar dashboard para salud de red, accesibilidad y estado de administración.",
-                      "Usar vistas de Assurance y mapas para análisis de topología y rutas (Path Trace).",
-                      "Repetir descubrimiento tras cambios físicos para actualizar inventario y estado."
+                      "Después de modificar topología o servicios, se ejecuta Discovery y se validan variaciones en estado, rutas y visibilidad.",
+                      "Las vistas de Assurance y Path Trace ayudan a correlacionar fallas con segmentos específicos de la red.",
+                      "Comparar resultados antes y después del cambio reduce riesgo de regresiones y acelera la remediación."
+                    ]
+                  },
+                  {
+                    title: "Buenas prácticas operativas",
+                    items: [
+                      "Restringir credenciales administrativas por rol y registrar quién ejecuta descubrimientos o cambios.",
+                      "Mantener nomenclatura consistente de sitios y dispositivos para facilitar búsquedas y reportes.",
+                      "Revisar el dashboard al inicio y al cierre de cada ventana de mantenimiento."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Supervisar cambios de red de forma centralizada y mantener visibilidad operativa de la sucursal."
+                      "Gestionar la sucursal desde una consola central, con inventario actualizado y validación objetiva de cada cambio."
                     ]
                   }
                 ]
