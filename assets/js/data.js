@@ -607,28 +607,113 @@
                 code: "1.3",
                 title: "Windows Configuration and Monitoring",
                 summary:
-                  "Herramientas y prácticas para configurar, monitorear y administrar endpoints Windows en entornos técnicos.",
+                  "Configuración y monitoreo operativo de Windows con enfoque en privilegios, administración de usuarios, red y diagnóstico de rendimiento.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/C2_1.3.png",
-                    alt: "Administración y monitoreo del sistema Windows."
+                    src: "./assets/images/operating-systems-basics/C2_2.7.png",
+                    alt: "Administración de usuarios y grupos locales en Windows."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.6.png",
+                    alt: "Consola de Windows Management Instrumentation (WMI)."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_3.4.jpg",
+                    alt: "Task Manager para monitoreo de procesos y rendimiento."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_3.3.jpg",
+                    alt: "Resource Monitor para análisis detallado de recursos."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_3.2.png",
+                    alt: "Network and Sharing Center para configuración de red en Windows."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_3.1.jpg",
+                    alt: "Remote Desktop Connection para acceso remoto por RDP."
                   }
                 ],
                 sections: [
                   {
-                    title: "Puntos importantes",
+                    title: "1.3.1 Run as Administrator",
                     items: [
-                      "Run as Administrator y gestión de usuarios/local domain controlan privilegios operativos.",
-                      "CLI y PowerShell permiten ejecutar tareas repetibles y automatizadas.",
-                      "Task Manager y Resource Monitor facilitan análisis de CPU, RAM, disco y red."
+                      "No se recomienda trabajar siempre con cuenta Administrador por riesgo de heredar privilegios a software malicioso.",
+                      "Para tareas puntuales, usar Run as Administrator sobre ejecutable o consola específica.",
+                      "El uso controlado de elevación reduce superficie de ataque y errores críticos."
                     ]
                   },
                   {
-                    title: "Checklist operativo",
+                    title: "1.3.2 Local Users and Domains",
                     items: [
-                      "Usar comando net para cuentas, sesiones y recursos compartidos.",
-                      "Validar conectividad y acceso a recursos de red con criterios técnicos.",
-                      "Documentar cambios de configuración para facilitar soporte y trazabilidad."
+                      "Las cuentas locales almacenan configuración y permisos específicos del equipo.",
+                      "Cuentas Guest/Administrator vienen deshabilitadas por seguridad y no deben activarse sin justificación.",
+                      "Los grupos simplifican permisos; la denegación explícita prevalece sobre permisos heredados.",
+                      "En dominio, el Domain Controller define autenticación y políticas de sesión para usuarios/equipos."
+                    ]
+                  },
+                  {
+                    title: "1.3.3 CLI and PowerShell",
+                    items: [
+                      "CLI (cmd) permite navegación, ejecución de comandos y scripts batch.",
+                      "PowerShell amplía automatización con cmdlets, scripts .ps1 y funciones reutilizables.",
+                      "Ejecutar consola con privilegios administrativos solo cuando sea necesario.",
+                      "Comandos de ayuda (help, Get-Help, Update-Help) son esenciales para operación segura."
+                    ]
+                  },
+                  {
+                    title: "1.3.4 Windows Management Instrumentation (WMI)",
+                    items: [
+                      "WMI permite inventario, monitoreo y administración remota de sistemas Windows.",
+                      "La consola WMI Control expone opciones de resumen, respaldo, seguridad y configuración avanzada.",
+                      "WMI también puede ser abusado por atacantes para ejecutar acciones remotas con baja visibilidad.",
+                      "Se recomienda restringir acceso WMI y monitorear su uso."
+                    ]
+                  },
+                  {
+                    title: "1.3.5 The net Command",
+                    items: [
+                      "El comando net centraliza administración de cuentas, sesiones, recursos compartidos y servicios.",
+                      "Subcomandos clave: net accounts, net session, net share, net start/stop, net use, net view.",
+                      "net help y net help <subcomando> facilitan administración guiada por sintaxis oficial."
+                    ]
+                  },
+                  {
+                    title: "1.3.6 Task Manager and Resource Monitor",
+                    items: [
+                      "Task Manager ofrece visibilidad por pestañas: Processes, Performance, Startup, Users, Details y Services.",
+                      "Resource Monitor profundiza análisis de CPU, memoria, disco y red por proceso.",
+                      "Ambas herramientas ayudan a identificar cuellos de botella, servicios atascados y actividad sospechosa."
+                    ]
+                  },
+                  {
+                    title: "1.3.7 Networking",
+                    items: [
+                      "Network and Sharing Center permite crear conexiones y ajustar propiedades del adaptador.",
+                      "Configurar IPv4/IPv6 por DHCP o manual según diseño de red.",
+                      "nslookup valida DNS y netstat permite revisar conexiones y estado de puertos."
+                    ]
+                  },
+                  {
+                    title: "1.3.8 Accessing Network Resources",
+                    items: [
+                      "SMB usa formato UNC (\\\\servidor\\recurso\\archivo) para acceso a recursos remotos.",
+                      "Los administrative shares (C$, admin$, print$) requieren privilegios elevados.",
+                      "RDP permite administración remota, pero debe limitarse y protegerse con políticas de acceso robustas."
+                    ]
+                  },
+                  {
+                    title: "1.3.9 Windows Server",
+                    items: [
+                      "Windows Server orienta su uso a centros de datos y roles empresariales.",
+                      "Servicios comunes: DNS, DHCP, AD DS, SMB/NFS/DFS, HTTP/HTTPS/FTP y virtualización (Hyper-V).",
+                      "Su administración requiere controles de seguridad y segmentación acorde al rol del servidor."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Configurar y monitorear Windows de forma segura, aplicando herramientas nativas para administración, red y diagnóstico."
                     ]
                   }
                 ]
