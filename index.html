@@ -12,7 +12,7 @@
 
   <header class="site-header">
     <div class="header-copy">
-      <p class="eyebrow">Proyecto nuevo - CursosCISCO</p>
+      <p class="eyebrow">Sergio Vargas - U00114112</p>
       <h1 id="catalogTitle">Catalogo de Cursos Cisco</h1>
       <p id="catalogSubtitle">Repositorio de consulta rapida para reforzar temas vistos en clase.</p>
     </div>
@@ -25,22 +25,25 @@
   </header>
 
   <main id="mainContent" class="layout">
-    <section class="panel catalog-panel" aria-label="Listado de cursos">
-      <div class="panel-head">
-        <h2>Cursos</h2>
-        <p id="resultMeta" aria-live="polite"></p>
-      </div>
-      <div id="courseGrid" class="course-grid"></div>
-    </section>
-
     <section class="panel details-panel" aria-label="Detalle del curso seleccionado">
+      <details id="coursePicker" class="course-picker">
+        <summary>
+          <span>Cursos disponibles</span>
+          <span id="resultMeta" aria-live="polite"></span>
+        </summary>
+        <div id="courseGrid" class="course-grid"></div>
+      </details>
       <div id="courseDetail" class="course-detail"></div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>Base inicial creada con el documento del primer curso. Preparado para agregar hasta 14 cursos.</p>
-  </footer>
+  <div id="imageModal" class="image-modal" hidden>
+    <div class="image-modal-content" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen">
+      <button id="imageModalClose" class="image-modal-close" type="button" aria-label="Cerrar imagen ampliada">Cerrar</button>
+      <img id="imageModalImg" src="" alt=""/>
+      <p id="imageModalCaption" class="image-modal-caption"></p>
+    </div>
+  </div>
 
   <script src="./assets/js/data.js" defer></script>
   <script src="./assets/js/app.js" defer></script>

@@ -9,9 +9,14 @@
     catalogSubtitle: byId("catalogSubtitle"),
     searchInput: byId("searchInput"),
     clearSearch: byId("clearSearch"),
+    coursePicker: byId("coursePicker"),
     resultMeta: byId("resultMeta"),
     courseGrid: byId("courseGrid"),
-    courseDetail: byId("courseDetail")
+    courseDetail: byId("courseDetail"),
+    imageModal: byId("imageModal"),
+    imageModalImg: byId("imageModalImg"),
+    imageModalCaption: byId("imageModalCaption"),
+    imageModalClose: byId("imageModalClose")
   };
 
   const state = {
@@ -19,30 +24,59 @@
     activeCourseId: data.courses[0] ? data.courses[0].id : null
   };
 
-  refs.catalogTitle.textContent = data.title || "Catalogo de Cursos";
-  refs.catalogSubtitle.textContent = data.subtitle || "";
+  if (refs.catalogTitle) refs.catalogTitle.textContent = data.title || "Catalogo de Cursos";
+  if (refs.catalogSubtitle) refs.catalogSubtitle.textContent = data.subtitle || "";
 
   bindEvents();
   render();
 
   function bindEvents() {
-    refs.searchInput.addEventListener("input", (event) => {
-      state.query = event.target.value.trim();
-      render();
-    });
+    if (refs.searchInput) {
+      refs.searchInput.addEventListener("input", (event) => {
+        state.query = event.target.value.trim();
+        render();
+      });
+    }
 
-    refs.clearSearch.addEventListener("click", () => {
-      state.query = "";
-      refs.searchInput.value = "";
-      render();
-      refs.searchInput.focus();
-    });
+    if (refs.clearSearch) {
+      refs.clearSearch.addEventListener("click", () => {
+        state.query = "";
+        if (refs.searchInput) refs.searchInput.value = "";
+        render();
+        if (refs.searchInput) refs.searchInput.focus();
+      });
+    }
 
-    refs.courseGrid.addEventListener("click", (event) => {
-      const button = event.target.closest("button[data-course-id]");
-      if (!button) return;
-      state.activeCourseId = button.dataset.courseId || state.activeCourseId;
-      renderCourseDetail();
+    if (refs.courseGrid) {
+      refs.courseGrid.addEventListener("click", (event) => {
+        const button = event.target.closest("button[data-course-id]");
+        if (!button) return;
+        state.activeCourseId = button.dataset.courseId || state.activeCourseId;
+        renderCourseDetail();
+        if (refs.coursePicker) refs.coursePicker.open = false;
+      });
+    }
+
+    if (refs.courseDetail) {
+      refs.courseDetail.addEventListener("click", (event) => {
+        const imageButton = event.target.closest("button[data-image-src]");
+        if (!imageButton) return;
+        openImageModal(imageButton.dataset.imageSrc, imageButton.dataset.imageAlt);
+      });
+    }
+
+    if (refs.imageModalClose) {
+      refs.imageModalClose.addEventListener("click", closeImageModal);
+    }
+
+    if (refs.imageModal) {
+      refs.imageModal.addEventListener("click", (event) => {
+        if (event.target === refs.imageModal) closeImageModal();
+      });
+    }
+
+    window.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeImageModal();
     });
   }
 
@@ -54,7 +88,7 @@
 
     renderCourseCards(filtered);
     renderCourseDetail();
-    refs.resultMeta.textContent = `${filtered.length} curso(s) visible(s)`;
+    if (refs.resultMeta) refs.resultMeta.textContent = `${filtered.length} curso(s)`;
   }
 
   function getFilteredCourses() {
@@ -80,6 +114,8 @@
   }
 
   function renderCourseCards(courses) {
+    if (!refs.courseGrid) return;
+
     if (!courses.length) {
       refs.courseGrid.innerHTML = `<p class="empty">No hay cursos que coincidan con la busqueda.</p>`;
       return;
@@ -91,10 +127,11 @@
         const totalTopics = countTopics(course);
         const activeClass = course.id === state.activeCourseId ? " active" : "";
         const tags = (course.tags || []).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
+
         return `
         <button class="course-card${activeClass}" type="button" data-course-id="${escapeAttr(course.id)}">
           <h3>${escapeHtml(course.title)}</h3>
-          <p class="course-meta">${escapeHtml(course.provider)} · ${escapeHtml(course.level)} · ${totalModules} modulos · ${totalTopics} temas</p>
+          <p class="course-meta">${escapeHtml(course.provider)} - ${escapeHtml(course.level)} - ${totalModules} modulos - ${totalTopics} temas</p>
           <div class="course-tags">${tags}</div>
         </button>`;
       })
@@ -102,6 +139,8 @@
   }
 
   function renderCourseDetail() {
+    if (!refs.courseDetail) return;
+
     const course = data.courses.find((item) => item.id === state.activeCourseId);
     if (!course) {
       refs.courseDetail.innerHTML = `<p class="empty">Selecciona un curso para ver su contenido.</p>`;
@@ -121,29 +160,23 @@
     refs.courseDetail.innerHTML = `
       <h2>${escapeHtml(course.title)}</h2>
       <p class="detail-summary">${escapeHtml(course.summary)}</p>
-      <div class="detail-kpis">
-        <article class="kpi"><p class="k-label">Proveedor</p><p class="k-value">${escapeHtml(course.provider)}</p></article>
-        <article class="kpi"><p class="k-label">Nivel</p><p class="k-value">${escapeHtml(course.level)}</p></article>
-        <article class="kpi"><p class="k-label">Duracion est.</p><p class="k-value">${escapeHtml(String(course.estimatedHours || 0))}h</p></article>
-        <article class="kpi"><p class="k-label">Estado</p><p class="k-value">${escapeHtml(course.status)}</p></article>
-      </div>
       <div class="module-list">
         ${
           visibleModules.length
-            ? visibleModules
-                .map((module, idx) => renderModule(module, idx === 0 && !q))
-                .join("")
+            ? visibleModules.map((module) => renderModule(module, false)).join("")
             : `<p class="empty">No hay modulos/temas que coincidan con la busqueda actual.</p>`
         }
       </div>
       <p class="course-meta">Mostrando ${visibleTopics} de ${totalTopics} temas del curso.</p>`;
+
+    syncModuleAccordion();
   }
 
   function renderModule(module, isOpen) {
     return `
     <details class="module-item" ${isOpen ? "open" : ""}>
       <summary>
-        <span>${escapeHtml(module.key)} · ${escapeHtml(module.title)}</span>
+        <span>${escapeHtml(module.key)} - ${escapeHtml(module.title)}</span>
         <span>${module.topics.length} tema(s)</span>
       </summary>
       <div class="module-topics">
@@ -165,28 +198,88 @@
       )
       .join("");
 
-    const gallery = (topic.images || [])
-      .map(
-        (image, index) => `
-        <figure>
-          <img loading="lazy" src="${escapeAttr(image.src)}" alt="${escapeAttr(image.alt || topic.title)}"/>
-          <figcaption>Imagen ${index + 1}</figcaption>
-        </figure>`
-      )
-      .join("");
-
     return `
     <article class="topic-card">
       <span class="topic-code">${escapeHtml(topic.code)}</span>
       <h4>${escapeHtml(topic.title)}</h4>
       <p class="topic-summary">${escapeHtml(topic.summary || "")}</p>
-      ${sections}
-      <div class="topic-gallery">${gallery}</div>
+      <div class="topic-layout">
+        <div class="topic-sections">
+          ${sections}
+        </div>
+        <aside class="topic-media">
+          ${renderTopicMedia(topic)}
+        </aside>
+      </div>
     </article>`;
+  }
+
+  function renderTopicMedia(topic) {
+    const images = topic.images || [];
+    if (!images.length) return `<p class="topic-image-hint">Sin imagen disponible.</p>`;
+
+    const primary = images[0];
+    const thumbnails = images.slice(1);
+
+    return `
+      <button class="topic-image-button" type="button" data-image-src="${escapeAttr(primary.src)}" data-image-alt="${escapeAttr(primary.alt || topic.title)}">
+        <img loading="lazy" src="${escapeAttr(primary.src)}" alt="${escapeAttr(primary.alt || topic.title)}"/>
+      </button>
+      ${
+        thumbnails.length
+          ? `<div class="topic-thumbs">
+              ${thumbnails
+                .map(
+                  (image) => `
+                <button class="topic-thumb-button" type="button" data-image-src="${escapeAttr(image.src)}" data-image-alt="${escapeAttr(image.alt || topic.title)}">
+                  <img loading="lazy" src="${escapeAttr(image.src)}" alt="${escapeAttr(image.alt || topic.title)}"/>
+                </button>`
+                )
+                .join("")}
+            </div>`
+          : ""
+      }
+      <p class="topic-image-hint">Haz clic en la imagen para ampliar.</p>`;
+  }
+
+  function syncModuleAccordion() {
+    const moduleItems = refs.courseDetail.querySelectorAll("details.module-item");
+    moduleItems.forEach((moduleItem) => {
+      moduleItem.addEventListener("toggle", () => {
+        if (!moduleItem.open) return;
+
+        moduleItems.forEach((otherItem) => {
+          if (otherItem !== moduleItem) otherItem.open = false;
+        });
+
+        requestAnimationFrame(() => {
+          moduleItem.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+    });
+  }
+
+  function openImageModal(src, alt) {
+    if (!refs.imageModal || !refs.imageModalImg || !src) return;
+
+    refs.imageModalImg.src = src;
+    refs.imageModalImg.alt = alt || "Imagen del tema";
+    if (refs.imageModalCaption) refs.imageModalCaption.textContent = alt || "";
+    refs.imageModal.hidden = false;
+    document.body.classList.add("modal-open");
+    if (refs.imageModalClose) refs.imageModalClose.focus();
+  }
+
+  function closeImageModal() {
+    if (!refs.imageModal || refs.imageModal.hidden) return;
+    refs.imageModal.hidden = true;
+    document.body.classList.remove("modal-open");
+    if (refs.imageModalImg) refs.imageModalImg.src = "";
   }
 
   function matchesTopic(topic, module, q) {
     if (!q) return true;
+
     const bag = [];
     bag.push(module.key, module.title, topic.code, topic.title, topic.summary);
     for (const section of topic.sections || []) {
