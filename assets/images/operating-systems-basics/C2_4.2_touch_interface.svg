@@ -1,0 +1,41 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Interfaz tactil movil">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <text x="600" y="84" text-anchor="middle" fill="#f8fafc" font-size="50" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Interfaz tactil movil</text>
+  <text x="600" y="120" text-anchor="middle" fill="#d1fae5" font-size="24" font-family="Segoe UI, Arial, sans-serif">Elementos clave en Android e iOS</text>
+
+  <rect x="180" y="170" width="360" height="560" rx="44" fill="url(#phone)"/>
+  <rect x="660" y="170" width="360" height="560" rx="44" fill="url(#phone)"/>
+
+  <rect x="220" y="206" width="280" height="60" rx="14" fill="#0ea5e9"/>
+  <text x="360" y="246" text-anchor="middle" fill="#f8fafc" font-size="24" font-family="Segoe UI, Arial, sans-serif">Barra superior</text>
+  <rect x="220" y="286" width="280" height="300" rx="18" fill="#93c5fd"/>
+  <text x="360" y="444" text-anchor="middle" fill="#0f172a" font-size="30" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Apps y Widgets</text>
+  <rect x="220" y="608" width="280" height="86" rx="16" fill="#2563eb"/>
+  <text x="360" y="662" text-anchor="middle" fill="#f8fafc" font-size="24" font-family="Segoe UI, Arial, sans-serif">Navegacion</text>
+
+  <rect x="700" y="206" width="280" height="60" rx="14" fill="#14b8a6"/>
+  <text x="840" y="246" text-anchor="middle" fill="#f8fafc" font-size="24" font-family="Segoe UI, Arial, sans-serif">Status y hora</text>
+  <rect x="700" y="286" width="280" height="300" rx="18" fill="#99f6e4"/>
+  <text x="840" y="444" text-anchor="middle" fill="#0f172a" font-size="30" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Pantallas de apps</text>
+  <rect x="700" y="608" width="280" height="86" rx="16" fill="#0f766e"/>
+  <text x="840" y="662" text-anchor="middle" fill="#f8fafc" font-size="24" font-family="Segoe UI, Arial, sans-serif">Gestos / Home</text>
+
+  <line x1="535" y1="230" x2="655" y2="230" stroke="#e2e8f0" stroke-width="4"/>
+  <line x1="535" y1="440" x2="655" y2="440" stroke="#e2e8f0" stroke-width="4"/>
+  <line x1="535" y1="650" x2="655" y2="650" stroke="#e2e8f0" stroke-width="4"/>
+
+  <text x="600" y="224" text-anchor="middle" fill="#e2e8f0" font-size="20" font-family="Segoe UI, Arial, sans-serif">Notificaciones y ajustes rapidos</text>
+  <text x="600" y="434" text-anchor="middle" fill="#e2e8f0" font-size="20" font-family="Segoe UI, Arial, sans-serif">Organizacion tactil del contenido</text>
+  <text x="600" y="644" text-anchor="middle" fill="#e2e8f0" font-size="20" font-family="Segoe UI, Arial, sans-serif">Navegacion por botones o gestos</text>
+</svg>

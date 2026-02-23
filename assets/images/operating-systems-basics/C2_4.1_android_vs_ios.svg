@@ -1,0 +1,42 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Android versus iOS">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="leftCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f9d55"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="rightCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+
+  <text x="600" y="88" text-anchor="middle" fill="#e2e8f0" font-size="50" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Android vs iOS</text>
+  <text x="600" y="126" text-anchor="middle" fill="#cbd5e1" font-size="24" font-family="Segoe UI, Arial, sans-serif">Modelo abierto frente a ecosistema cerrado</text>
+
+  <rect x="96" y="182" width="468" height="498" rx="26" fill="url(#leftCard)"/>
+  <rect x="636" y="182" width="468" height="498" rx="26" fill="url(#rightCard)"/>
+
+  <text x="330" y="250" text-anchor="middle" fill="#ecfeff" font-size="44" font-family="Segoe UI, Arial, sans-serif" font-weight="700">ANDROID</text>
+  <text x="870" y="250" text-anchor="middle" fill="#f8fafc" font-size="44" font-family="Segoe UI, Arial, sans-serif" font-weight="700">iOS</text>
+
+  <text x="146" y="308" fill="#ecfeff" font-size="27" font-family="Segoe UI, Arial, sans-serif">- Open source (AOSP)</text>
+  <text x="146" y="356" fill="#ecfeff" font-size="27" font-family="Segoe UI, Arial, sans-serif">- Alta personalizacion</text>
+  <text x="146" y="404" fill="#ecfeff" font-size="27" font-family="Segoe UI, Arial, sans-serif">- APK y sideloading</text>
+  <text x="146" y="452" fill="#ecfeff" font-size="27" font-family="Segoe UI, Arial, sans-serif">- Permisos por app</text>
+  <text x="146" y="500" fill="#ecfeff" font-size="27" font-family="Segoe UI, Arial, sans-serif">- Tiendas oficiales y terceros</text>
+
+  <text x="686" y="308" fill="#f8fafc" font-size="27" font-family="Segoe UI, Arial, sans-serif">- Codigo cerrado</text>
+  <text x="686" y="356" fill="#f8fafc" font-size="27" font-family="Segoe UI, Arial, sans-serif">- Ecosistema controlado</text>
+  <text x="686" y="404" fill="#f8fafc" font-size="27" font-family="Segoe UI, Arial, sans-serif">- App Store con revision</text>
+  <text x="686" y="452" fill="#f8fafc" font-size="27" font-family="Segoe UI, Arial, sans-serif">- Integracion uniforme</text>
+  <text x="686" y="500" fill="#f8fafc" font-size="27" font-family="Segoe UI, Arial, sans-serif">- Menor superficie de origen externo</text>
+
+  <rect x="228" y="560" width="734" height="88" rx="16" fill="#0b1220" opacity="0.45"/>
+  <text x="595" y="603" text-anchor="middle" fill="#dbeafe" font-size="24" font-family="Segoe UI, Arial, sans-serif">Ambas plataformas ofrecen seguridad robusta si se configuran y actualizan correctamente</text>
+</svg>
