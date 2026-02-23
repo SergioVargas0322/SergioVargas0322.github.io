@@ -1110,42 +1110,114 @@
                 code: "2.5",
                 title: "Sistema de archivos Linux, roles y enlaces",
                 summary:
-                  "Uso de permisos rwx, ownership, enlaces duros/simbólicos y organización segura del sistema de archivos.",
+                  "Tipos de file system en Linux, permisos por rol y diferencias entre hard links y symbolic links para administración segura.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-linux.svg",
-                    alt: "Permisos y estructura del sistema de archivos Linux."
+                    src: "./assets/images/operating-systems-basics/C2_2.5_permissions.png",
+                    alt: "Desglose de permisos de archivo en Linux para usuario, grupo y otros."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.5_octal.png",
+                    alt: "Tabla de equivalencias octales de permisos en Linux."
                   }
                 ],
                 sections: [
                   {
-                    title: "Puntos importantes",
+                    title: "2.5.1 The File System Types in Linux",
                     items: [
-                      "Permisos y grupos determinan el control de acceso en Linux.",
-                      "Hard links y symbolic links tienen implicaciones distintas en administración.",
-                      "Aplicar mínimo privilegio evita accesos y cambios no autorizados."
+                      "Linux soporta múltiples sistemas de archivos; el administrador elige según rendimiento, flexibilidad, tamaño y seguridad.",
+                      "Familia ext: ext2 (sin journal), ext3 (con journaling) y ext4 (mejoras de rendimiento y escalabilidad).",
+                      "Otros tipos relevantes: NFS para acceso por red, CDFS para medios ópticos, swap para apoyo de memoria, HFS+ y APFS para compatibilidad con entornos Apple.",
+                      "MBR y proceso de montaje (mount) son claves para que una partición quede accesible en un punto de montaje dentro del árbol Linux."
+                    ]
+                  },
+                  {
+                    title: "2.5.2 Linux Roles and File Permissions",
+                    items: [
+                      "Los permisos se aplican por archivo en el orden usuario, grupo y otros con derechos r, w y x.",
+                      "El comando ls -l muestra permisos, enlaces, propietario, grupo, tamaño, fecha y nombre del archivo.",
+                      "El usuario root puede sobreescribir restricciones y por eso sus credenciales deben protegerse con máxima rigurosidad.",
+                      "La notación octal (0-7) simplifica la asignación de permisos y facilita administración masiva."
+                    ]
+                  },
+                  {
+                    title: "2.5.3 Hard Links and Symbolic Links",
+                    items: [
+                      "Un hard link apunta al mismo inode que el archivo original; cambios en uno se reflejan en ambos.",
+                      "Un symbolic link apunta por ruta; si el archivo origen desaparece, el enlace queda roto.",
+                      "Hard links no cruzan file systems ni se usan para directorios; symbolic links sí permiten esos escenarios.",
+                      "Para creación: ln archivo_origen hardlink y ln -s archivo_origen symlink."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Administrar almacenamiento Linux con criterio técnico, aplicando permisos correctos y enlaces adecuados para cada caso."
                     ]
                   }
                 ]
               },
               {
                 code: "2.6",
-                title: "Host Linux: actualizaciones, procesos y detección de rootkits",
+                title: "Trabajo con la GUI de Linux",
                 summary:
-                  "Mantenimiento del host con parches, control de procesos, verificación anti-rootkit y uso de piping en análisis.",
+                  "Arquitectura gráfica basada en X Window System, gestores de ventanas y componentes clave de la interfaz de Ubuntu/GNOME.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-linux.svg",
-                    alt: "Mantenimiento de host Linux y defensa contra amenazas."
+                    src: "./assets/images/operating-systems-basics/C2_2.6_gnome.png",
+                    alt: "Ejemplo de entorno gráfico GNOME en Linux."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.6_kde.jpg",
+                    alt: "Ejemplo de entorno gráfico KDE en Linux."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.6_ubuntu_ui.png",
+                    alt: "Componentes de interfaz de Ubuntu con GNOME 3."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.6_ui_table.png",
+                    alt: "Tabla de componentes principales de la UI en Ubuntu GNOME."
                   }
                 ],
                 sections: [
                   {
-                    title: "Checklist de seguridad",
+                    title: "2.6.1 X Window System",
                     items: [
-                      "Aplicar actualizaciones periódicas del sistema y paquetes.",
-                      "Revisar procesos anómalos y consumo de recursos.",
-                      "Usar herramientas de detección y comandos encadenados para investigación rápida."
+                      "X Window System (X11) provee el framework base para dibujar ventanas y gestionar interacción con teclado y mouse.",
+                      "X permite ejecutar aplicaciones de forma remota y mostrar su interfaz gráfica en otro equipo conectado por red.",
+                      "La capa X no define por sí sola el look and feel final, lo que habilita gran personalización del entorno."
+                    ]
+                  },
+                  {
+                    title: "Gestores de ventanas: GNOME y KDE",
+                    items: [
+                      "Window managers como GNOME y KDE definen iconos, menús, fuentes, bordes y estilo visual del escritorio.",
+                      "Aunque cambie la apariencia entre distribuciones, los componentes funcionales principales se mantienen.",
+                      "Esa separación entre motor gráfico y presentación aporta flexibilidad operativa en Linux."
+                    ]
+                  },
+                  {
+                    title: "2.6.2 The Linux GUI",
+                    items: [
+                      "La GUI no es obligatoria para que Linux funcione, pero mejora usabilidad para perfiles no avanzados en CLI.",
+                      "Ubuntu usa GNOME 3 como interfaz por defecto con enfoque en simplicidad y experiencia de usuario.",
+                      "El entorno gráfico puede reemplazarse según necesidades, políticas de soporte o recursos del equipo."
+                    ]
+                  },
+                  {
+                    title: "Componentes clave de la interfaz Ubuntu",
+                    items: [
+                      "Apps Menu para lanzar aplicaciones y acceder a búsqueda del sistema.",
+                      "Ubuntu Dock para acceso rápido y cambio entre aplicaciones activas.",
+                      "Top Bar y bandeja de fecha/mensajes para estado del sistema y agenda.",
+                      "Status Menu para red, usuario, energía, bloqueo y apagado del equipo."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Navegar y administrar Linux desde GUI entendiendo su arquitectura y su relación con la operación por terminal."
                     ]
                   }
                 ]
@@ -1154,7 +1226,7 @@
           },
           {
             key: "M3",
-            title: "Conectividad en dispositivos móviles",
+            title: "Conectividad en dispositivos moviles",
             topics: [
               {
                 code: "3.1",
