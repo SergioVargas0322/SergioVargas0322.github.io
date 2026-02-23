@@ -22,7 +22,7 @@
                 code: "1.1",
                 title: "Seguridad general y contra incendios",
                 summary:
-                  "Normas de seguridad para prevenir lesiones, daños eléctricos y respuesta inicial ante incendios.",
+                  "Norm?s de seguridad para prevenir lesiones, daños eléctricos y respuesta inicial ante incendios.",
                 images: [
                   {
                     src: "./assets/images/hardware-basics/C1_1.1.png",
@@ -238,7 +238,7 @@
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Equipo estable, limpio y listo para pruebas de funcionamiento."
+                      "Equipo estable, limpio y listo para pruebas de funci?namiento."
                     ]
                   }
                 ]
@@ -357,7 +357,7 @@
                     title: "Puntos importantes",
                     items: [
                       "Movilidad depende de conectividad celular o redes de datos disponibles.",
-                      "Sistemas operativos móviles con aplicaciones de tiendas específicas.",
+                      "Sistem?s operativos móviles con aplicaciones de tiendas específicas.",
                       "Servicios de ubicación, GPS y uso compartido de red."
                     ]
                   },
@@ -401,7 +401,7 @@
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Dispositivo funcional, protegido y con menor riesgo de pérdida de información."
+                      "Dispositivo funci?nal, protegido y con menor riesgo de pérdida de información."
                     ]
                   }
                 ]
@@ -418,8 +418,8 @@
         status: "En curso",
         estimatedHours: 40,
         summary:
-          "Fundamentos de sistemas operativos con enfoque en Windows, Linux, conectividad móvil y seguridad.",
-        tags: ["sistemas operativos", "windows", "linux", "movil", "seguridad"],
+          "Fundamentos de sistem?s operativos con enfoque en Windows, Linux, conectividad móvil y seguridad.",
+        tags: ["sistem?s operativos", "windows", "linux", "movil", "seguridad"],
         modules: [
           {
             key: "M1",
@@ -452,9 +452,9 @@
                   {
                     title: "1.1.1 Disk Operating System (DOS)",
                     items: [
-                      "Los primeros sistemas usaban tarjetas perforadas, cinta de papel y cinta magnética antes de los discos modernos.",
+                      "Los primeros sistem?s usaban tarjetas perforadas, cinta de papel y cinta magnética antes de los discos modernos.",
                       "DOS habilitó lectura/escritura en discos y organización de archivos por sistema de archivos.",
-                      "MS-DOS operaba por línea de comandos para crear programas y manipular datos."
+                      "MS-DOS operaba por línea de comandos para crear program?s y manipular datos."
                     ]
                   },
                   {
@@ -478,7 +478,7 @@
                     items: [
                       "El Desktop es personalizable por usuario e incluye accesos, archivos y papelera de reciclaje.",
                       "La Task Bar integra menú Inicio/búsqueda, accesos rápidos y área de notificaciones.",
-                      "El Context Menu y File Explorer facilitan operaciones frecuentes de administración."
+                      "El Context Menu y File Explorer facilitan operaci?nes frecuentes de administración."
                     ]
                   },
                   {
@@ -501,7 +501,7 @@
                 code: "1.2",
                 title: "Windows Architecture and Operations",
                 summary:
-                  "Funcionamiento interno de Windows: HAL, modos de ejecución, sistemas de archivos, arranque, procesos, memoria y registro.",
+                  "Funcionamiento interno de Windows: HAL, modos de ejecución, sistem?s de archivos, arranque, procesos, memoria y registro.",
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/C2_2.1.png",
@@ -513,7 +513,7 @@
                   },
                   {
                     src: "./assets/images/operating-systems-basics/C2_2.3.png",
-                    alt: "Panel de servicios de Windows para administración de procesos en segundo plano."
+                    alt: "Panel de servicios de Windows para administración de procesos en seg?ndo plano."
                   },
                   {
                     src: "./assets/images/operating-systems-basics/C2_2.4.png",
@@ -528,7 +528,7 @@
                   {
                     title: "1.2.1 Hardware Abstraction Layers (HAL)",
                     items: [
-                      "La HAL intermedia entre hardware y kernel para aislar diferencias entre plataformas físicas.",
+                      "La HAL intermedia entre hardware y kernel para aislar diferencias entre plataform?s físicas.",
                       "El kernel mantiene control global de E/S, memoria y periféricos conectados.",
                       "Aunque HAL abstrae, existen funciones donde el kernel aún interactúa de forma directa con hardware."
                     ]
@@ -664,7 +664,7 @@
                   {
                     title: "1.3.4 Windows Management Instrumentation (WMI)",
                     items: [
-                      "WMI permite inventario, monitoreo y administración remota de sistemas Windows.",
+                      "WMI permite inventario, monitoreo y administración remota de sistem?s Windows.",
                       "La consola WMI Control expone opciones de resumen, respaldo, seguridad y configuración avanzada.",
                       "WMI también puede ser abusado por atacantes para ejecutar acciones remotas con baja visibilidad.",
                       "Se recomienda restringir acceso WMI y monitorear su uso."
@@ -787,7 +787,7 @@
                   {
                     title: "1.4.5 Windows Defender",
                     items: [
-                      "Windows Defender ofrece protección en tiempo real contra virus, spyware y otras formas de malware.",
+                      "Windows Defender ofrece protección en tiempo real contra virus, spyware y otras form?s de malware.",
                       "Permite escaneos manuales, actualización de definiciones y revisión de historial de detecciones.",
                       "La higiene operativa recomienda usar una sola solución antimalware activa a la vez."
                     ]
@@ -812,7 +812,7 @@
           },
           {
             key: "M2",
-            title: "Linux: shell y operacion de servicios",
+            title: "Linux: shell y operaci?n de servicios",
             topics: [
               {
                 code: "2.1",
@@ -822,7 +822,7 @@
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/C2_2.1.png",
-                    alt: "Logotipo de Linux y mascota Tux."
+                    alt: "Logotipo de Linux y m?scota Tux."
                   },
                   {
                     src: "./assets/images/operating-systems-basics/C2_2.1_soc.png",
@@ -855,7 +855,7 @@
                   {
                     title: "2.1.3 Linux en el SOC",
                     items: [
-                      "En un Security Operations Center, Linux permite montar plataformas ligeras con solo los paquetes necesarios.",
+                      "En un Security Operations Center, Linux permite montar plataform?s ligeras con solo los paquetes necesarios.",
                       "Las herramientas pueden integrarse en flujos de trabajo coordinados para detección, análisis y respuesta.",
                       "Security Onion es un ejemplo de suite Linux orientada al análisis de seguridad de red, con consola Sguil."
                     ]
@@ -865,8 +865,8 @@
                     items: [
                       "Captura de paquetes (ej. Wireshark) para observar transacciones y protocolos en detalle.",
                       "Análisis de malware en entornos controlados para estudiar comportamiento sin comprometer el host.",
-                      "Sistemas IDS para inspección de tráfico en tiempo real y activación de reglas de alerta.",
-                      "Firewalls, gestores de logs, plataformas SIEM y sistemas de ticketing para operación continua del SOC."
+                      "Sistem?s IDS para inspección de tráfico en tiempo real y activación de reglas de alerta.",
+                      "Firewalls, gestores de logs, plataform?s SIEM y sistem?s de ticketing para operación continua del SOC."
                     ]
                   },
                   {
@@ -970,48 +970,138 @@
               },
               {
                 code: "2.3",
-                title: "Servicios, puertos, permisos y hardening",
+                title: "Servidores y clientes en Linux",
                 summary:
-                  "Modelo cliente-servidor, puertos de servicios, control de permisos y prácticas de endurecimiento.",
+                  "Modelo cliente-servidor, puertos de servicio y uso de Nmap para identificar exposición y riesgo operativo en un host.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-linux.svg",
-                    alt: "Servicios Linux, puertos y controles de seguridad."
+                    src: "./assets/images/operating-systems-basics/C2_2.3_download.png",
+                    alt: "Flujo de descarga de archivos desde servidor hacia cliente en una red."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.3_ports.png",
+                    alt: "Tabla de puertos comunes y servicios asociados en Linux."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.3_upload.png",
+                    alt: "Flujo de carga de archivos desde cliente hacia servidor en una red."
                   }
                 ],
                 sections: [
                   {
+                    title: "2.3.1 Introducción a la comunicación cliente-servidor",
+                    items: [
+                      "Un servidor es un equipo con software que ofrece recursos o funciones a clientes a través de la red.",
+                      "Existen servicios de negocio (archivos, correo, web) y servicios de mantenimiento (logs, memoria, disco).",
+                      "Cada servicio requiere software específico y puede coexistir con otros en el mismo servidor."
+                    ]
+                  },
+                  {
+                    title: "2.3.2 Servidores, servicios y puertos",
+                    items: [
+                      "Un puerto es un recurso de red asociado a un servicio; cuando está activo se dice que el servicio está listening.",
+                      "Aunque el administrador puede cambiar puertos, muchos clientes usan puertos por defecto para interoperabilidad.",
+                      "Puertos comunes: 20/21 FTP, 22 SSH, 23 Telnet, 25 SMTP, 53 DNS, 67/68 DHCP, 69 TFTP, 80 HTTP, 110 POP3, 123 NTP, 143 IMAP, 161/162 SNMP y 443 HTTPS."
+                    ]
+                  },
+                  {
+                    title: "2.3.3 Clientes",
+                    items: [
+                      "Un cliente es una aplicación que habla un protocolo específico con un servidor.",
+                      "Ejemplos: navegador web con HTTP para servidores web y cliente FTP para transferencia de archivos.",
+                      "En operación diaria, los clientes realizan acciones de descarga y carga según permisos y servicio disponible."
+                    ]
+                  },
+                  {
+                    title: "2.3.4 Detección de puertos con Nmap (lab)",
+                    items: [
+                      "Nmap permite discovery y auditoría para identificar hosts, servicios, puertos abiertos y posibles vectores de ataque.",
+                      "Comandos útiles: nmap localhost, sudo nmap -sU localhost, nmap -sV localhost y nmap -A localhost.",
+                      "El análisis de puertos abiertos ayuda a detectar superficies de ataque como accesos remotos inseguros o servicios no gestionados.",
+                      "La documentación de opciones se consulta con man nmap para profundizar en escaneos y evidencias."
+                    ]
+                  },
+                  {
                     title: "Resultado esperado",
                     items: [
-                      "Validar exposición de servicios, aplicar mínimo privilegio y mantener el host actualizado."
+                      "Relacionar servicios y puertos con riesgo real, y usar Nmap para validar exposición técnica en Linux."
                     ]
                   }
                 ]
               },
               {
                 code: "2.4",
-                title: "Administración de servicios y revisión de logs",
+                title: "Administración básica de servidores",
                 summary:
-                  "Configuración de servicios en Linux, seguimiento de registros y acciones de hardening para operación estable.",
+                  "Gestión de archivos de configuración, hardening del host y monitoreo de logs para mantener servicios Linux seguros y estables.",
                 images: [
                   {
-                    src: "./assets/images/operating-systems-basics/osb-linux.svg",
-                    alt: "Administración de servicios y logs en servidores Linux."
+                    src: "./assets/images/operating-systems-basics/C2_2.4_logs_intro.png",
+                    alt: "Descripción de categorías de logs en Linux y su valor operativo."
+                  },
+                  {
+                    src: "./assets/images/operating-systems-basics/C2_2.4_logs_table.png",
+                    alt: "Tabla de archivos de log comunes en Linux y su función."
                   }
                 ],
                 sections: [
                   {
-                    title: "Checklist operativo",
+                    title: "2.4.1 Service Configuration Files",
                     items: [
-                      "Identificar archivos de configuración clave por servicio.",
-                      "Monitorear logs para detectar errores y eventos de seguridad.",
-                      "Deshabilitar servicios no requeridos para reducir superficie de ataque."
+                      "En Linux, los servicios cargan parámetros desde archivos de configuración al iniciar.",
+                      "Campos comunes: puerto, ubicación de recursos y criterios de autorización de clientes.",
+                      "Cambios en configuración suelen requerir reinicio del servicio para aplicar ajustes.",
+                      "Por seguridad, estos archivos suelen requerir privilegios de superusuario para edición."
+                    ]
+                  },
+                  {
+                    title: "Ejemplos de configuración en Linux",
+                    items: [
+                      "Nginx usa nginx.conf para definir comportamiento del servicio web.",
+                      "NTP usa ntp.conf para sincronización de tiempo y reglas de restricción.",
+                      "Snort usa snort.conf para variables de red, reglas y parámetros IDS.",
+                      "Un patrón frecuente es option = value; el símbolo # se utiliza para comentarios."
+                    ]
+                  },
+                  {
+                    title: "2.4.2 Hardening Devices",
+                    items: [
+                      "El hardening reduce riesgo con controles sobre acceso administrativo, servicios y superficie expuesta.",
+                      "Prácticas clave: minimizar paquetes instalados y deshabilitar servicios innecesarios al arranque.",
+                      "Usar SSH para administración remota y evitar login directo de root sobre SSH.",
+                      "Mantener sistema actualizado con parches disminuye probabilidad de compromiso por vulnerabilidades conocidas."
+                    ]
+                  },
+                  {
+                    title: "Checklist de hardening",
+                    items: [
+                      "Asegurar control físico del equipo y puertos de acceso.",
+                      "Enforzar contraseñas fuertes, cambios periódicos y no reutilización de claves.",
+                      "Desactivar auto-detección USB cuando la política lo requiera.",
+                      "Definir roles administrativos con privilegios diferenciados según función."
+                    ]
+                  },
+                  {
+                    title: "2.4.3 Monitoring Service Logs",
+                    items: [
+                      "Los logs registran eventos de kernel, servicios y aplicaciones para diagnóstico y auditoría.",
+                      "Revisar periódicamente archivos como /var/log/messages permite detectar anomalías tempranas.",
+                      "El timestamp en cada línea ayuda a reconstruir secuencias de eventos durante investigación técnica."
+                    ]
+                  },
+                  {
+                    title: "Archivos de log comunes",
+                    items: [
+                      "/var/log/messages o /var/log/syslog para actividad general del sistema.",
+                      "/var/log/auth.log o /var/log/secure para autenticación, sudo y accesos SSH.",
+                      "/var/log/boot.log, /var/log/dmesg y /var/log/kern.log para arranque y eventos del kernel.",
+                      "/var/log/cron y logs de aplicaciones (ej. MySQL) para tareas programadas y servicios específicos."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Mantener servicios críticos con disponibilidad y trazabilidad adecuadas."
+                      "Administrar servicios Linux con configuración controlada, hardening aplicado y monitoreo de logs orientado a seguridad."
                     ]
                   }
                 ]
@@ -1118,7 +1208,7 @@
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/osb-connectivity.svg",
-                    alt: "Funciones avanzadas de conectividad en sistemas móviles."
+                    alt: "Funciones avanzadas de conectividad en sistem?s móviles."
                   }
                 ],
                 sections: [
@@ -1138,7 +1228,7 @@
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/osb-connectivity.svg",
-                    alt: "Configuración de correo electrónico en plataformas móviles."
+                    alt: "Configuración de correo electrónico en plataform?s móviles."
                   }
                 ],
                 sections: [
@@ -1184,17 +1274,17 @@
           },
           {
             key: "M4",
-            title: "Sistemas móviles y seguridad",
+            title: "Sistem?s móviles y seguridad",
             topics: [
               {
                 code: "4.1",
                 title: "Android vs iOS y controles de acceso",
                 summary:
-                  "Comparación de plataformas, orígenes de aplicaciones y seguridad de acceso mediante passcode.",
+                  "Comparación de plataform?s, orígenes de aplicaciones y seguridad de acceso mediante passcode.",
                 images: [
                   {
                     src: "./assets/images/operating-systems-basics/osb-security.svg",
-                    alt: "Comparativa de plataformas móviles y controles de acceso."
+                    alt: "Comparativa de plataform?s móviles y controles de acceso."
                   }
                 ],
                 sections: [
