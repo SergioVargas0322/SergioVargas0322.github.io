@@ -1794,6 +1794,192 @@
             ]
           }
         ]
+      },
+      {
+        id: "packet-tracer-intro",
+        title: "Introducción a Cisco Packet Tracer",
+        provider: "Cisco Networking Academy",
+        level: "Inicial",
+        status: "En curso",
+        estimatedHours: 8,
+        summary:
+          "Curso introductorio para aprender la interfaz, los tipos de archivo y el flujo de trabajo básico para crear y probar topologías en Cisco Packet Tracer.",
+        tags: ["packet tracer", "simulación", "redes", "cisco"],
+        modules: [
+          {
+            key: "M1",
+            title: "Descargue y use Cisco Packet Tracer",
+            topics: [
+              {
+                code: "1.0",
+                title: "Instale Cisco Packet Tracer",
+                summary:
+                  "Primer contacto con la herramienta: descarga, propósito del curso y capacidades principales del entorno de simulación.",
+                images: [
+                  {
+                    src: "./assets/images/packet-tracer-basics/C3_1.0.png",
+                    alt: "Pantalla de introducción del curso Cisco Packet Tracer."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Puntos importantes",
+                    items: [
+                      "Packet Tracer permite practicar redes, IoT y ciberseguridad sin hardware físico.",
+                      "El software es gratuito para estudiantes y se descarga desde NetAcad (skillsforall.com / netacad.com).",
+                      "Este módulo prepara el entorno para trabajar en actividades guiadas y laboratorios."
+                    ]
+                  },
+                  {
+                    title: "Checklist inicial",
+                    items: [
+                      "Crear o verificar cuenta activa en Cisco Networking Academy.",
+                      "Descargar e instalar la versión compatible con el sistema operativo.",
+                      "Abrir la aplicación y validar que inicia correctamente."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Disponer de Packet Tracer instalado y listo para comenzar prácticas de topologías."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.1",
+                title: "La interfaz de Cisco Packet Tracer",
+                summary:
+                  "Reconocimiento de menús, modos de trabajo, paneles y pestañas de configuración para administrar dispositivos.",
+                images: [
+                  {
+                    src: "./assets/images/packet-tracer-basics/C3_1.1.png",
+                    alt: "Interfaz principal de Cisco Packet Tracer en vista lógica."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Componentes de la interfaz",
+                    items: [
+                      "Barra de menús y barras de herramientas para crear, guardar, editar y explorar topologías.",
+                      "Panel de dispositivos para agregar routers, switches, hosts y conexiones.",
+                      "Zona de escenario y controles de simulación para observar el flujo de paquetes."
+                    ]
+                  },
+                  {
+                    title: "Vistas lógica y física",
+                    items: [
+                      "La vista lógica muestra conectividad y comportamiento del tráfico.",
+                      "La vista física representa rack, cableado y ubicación realista de equipos.",
+                      "Ambas vistas se complementan para entender diseño y operación de red."
+                    ]
+                  },
+                  {
+                    title: "Pestañas de configuración del dispositivo",
+                    items: [
+                      "Physical: encendido/apagado e instalación de módulos.",
+                      "Config: configuración rápida en GUI con comandos IOS equivalentes.",
+                      "CLI/Desktop/Services: administración por línea de comandos, utilidades de host y servicios de servidor."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Navegar con fluidez por la interfaz y configurar dispositivos básicos en GUI o CLI."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M2",
+            title: "Creación de una red Cisco Packet Tracer",
+            topics: [
+              {
+                code: "2.0",
+                title: "Tipos de archivos de Packet Tracer",
+                summary:
+                  "Diferencias entre archivos de actividad y topología para practicar, evaluar y distribuir laboratorios.",
+                images: [
+                  {
+                    src: "./assets/images/packet-tracer-basics/C3_2.0.png",
+                    alt: "Tipos de archivo en Cisco Packet Tracer: pka, pkt, pksz y pkz."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Tipos de archivo",
+                    items: [
+                      ".pka: actividad evaluable con instrucciones, puntuación y red de respuesta.",
+                      ".pkt: topología guardada sin puntuación ni ventana de instrucciones.",
+                      ".pksz: paquete para actividades PTTA con recursos multimedia y sistema de pistas.",
+                      ".pkz: formato legado para recursos incrustados (uso actual limitado)."
+                    ]
+                  },
+                  {
+                    title: "Evaluaciones con Packet Tracer",
+                    items: [
+                      "PTMO: ítems dentro de evaluaciones que abren un .pkt o .pka.",
+                      "PTSA: evaluación sumativa independiente de habilidades prácticas.",
+                      "La retroalimentación varía según configuración del curso."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Seleccionar el tipo de archivo correcto según práctica, actividad guiada o evaluación."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "2.1",
+                title: "Construye una red doméstica",
+                summary:
+                  "Implementación de una topología básica, cableado, direccionamiento IP y uso de funciones de simulación.",
+                images: [
+                  {
+                    src: "./assets/images/packet-tracer-basics/C3_2.1.png",
+                    alt: "Topología de red doméstica en Cisco Packet Tracer."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Implementación y cableado",
+                    items: [
+                      "Agregar dispositivos (router, switches, PC, laptop y elementos IoT).",
+                      "Seleccionar conexión automática o cables específicos (directo, cruzado, consola).",
+                      "Verificar estado de enlaces y ajustar puertos cuando sea necesario."
+                    ]
+                  },
+                  {
+                    title: "Configuración y verificación",
+                    items: [
+                      "Comprobar direccionamiento en pestaña Config o en Desktop con ipconfig.",
+                      "Distinguir direcciones estáticas y asignadas por DHCP.",
+                      "Usar modo simulación para observar eventos y recorrido de paquetes."
+                    ]
+                  },
+                  {
+                    title: "Productividad en prácticas",
+                    items: [
+                      "Aplicar inspección frontal/trasera en modo físico para identificar puertos.",
+                      "Utilizar opciones de fondo e iconos personalizados para documentar topologías.",
+                      "Reiniciar escenarios y repetir prácticas para reforzar procedimientos."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Crear, cablear y validar una red doméstica funcional con buenas prácticas de trabajo en Packet Tracer."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   };
