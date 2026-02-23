@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Catalogo personal de cursos Cisco para repaso por modulos y temas."/>
+<title>Cursos Cisco - Catalogo</title>
+<link rel="stylesheet" href="./assets/css/styles.css"/>
+</head>
+<body>
+  <a class="skip-link" href="#mainContent">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-copy">
+      <p class="eyebrow">Proyecto nuevo - CursosCISCO</p>
+      <h1 id="catalogTitle">Catalogo de Cursos Cisco</h1>
+      <p id="catalogSubtitle">Repositorio de consulta rapida para reforzar temas vistos en clase.</p>
+    </div>
+
+    <div class="header-tools">
+      <label class="sr-only" for="searchInput">Buscar cursos o temas</label>
+      <input id="searchInput" type="search" autocomplete="off" placeholder="Buscar curso, modulo, tema o palabra clave..."/>
+      <button id="clearSearch" type="button">Limpiar</button>
+    </div>
+  </header>
+
+  <main id="mainContent" class="layout">
+    <section class="panel catalog-panel" aria-label="Listado de cursos">
+      <div class="panel-head">
+        <h2>Cursos</h2>
+        <p id="resultMeta" aria-live="polite"></p>
+      </div>
+      <div id="courseGrid" class="course-grid"></div>
+    </section>
+
+    <section class="panel details-panel" aria-label="Detalle del curso seleccionado">
+      <div id="courseDetail" class="course-detail"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Base inicial creada con el documento del primer curso. Preparado para agregar hasta 14 cursos.</p>
+  </footer>
+
+  <script src="./assets/js/data.js" defer></script>
+  <script src="./assets/js/app.js" defer></script>
+</body>
+</html>
