@@ -4671,28 +4671,123 @@
             topics: [
               {
                 code: "1.1",
-                title: "Redes Confiables",
-                summary: "Base inicial del tema 1.1: Redes Confiables.",
+                title: "Redes confiables",
+                summary:
+                  "Una red confiable combina tolerancia a fallas, escalabilidad, calidad de servicio y seguridad para sostener la operacion del negocio.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_1.1.png",
+                    alt: "Topologia con rutas redundantes entre segmentos LAN y salida a Internet."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "1.1.1 Arquitectura de red",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "La arquitectura de red define como se integran infraestructura fisica, servicios y protocolos para conectar usuarios, dispositivos y aplicaciones.",
+                      "Disenar con arquitectura estandar facilita interoperabilidad entre fabricantes, crecimiento ordenado y operacion mantenible.",
+                      "Una red moderna debe soportar trafico convergente (datos, voz y video) sin perder estabilidad."
+                    ]
+                  },
+                  {
+                    title: "1.1.2-1.1.3 Tolerancia a fallas y redundancia",
+                    items: [
+                      "La tolerancia a fallas busca que la red siga operando aunque falle un enlace o un equipo.",
+                      "La redundancia agrega rutas alternativas; si un camino cae, el trafico puede reenrutarse por otro sin interrumpir el servicio.",
+                      "La conmutacion de paquetes permite que diferentes paquetes del mismo flujo tomen rutas distintas segun el estado de la red."
+                    ]
+                  },
+                  {
+                    title: "1.1.4-1.1.5 Escalabilidad y calidad de servicio (QoS)",
+                    items: [
+                      "Escalabilidad significa crecer en usuarios, sedes y aplicaciones sin degradar de forma critica el rendimiento existente.",
+                      "QoS prioriza trafico sensible al retardo, como voz y video en tiempo real, frente a trafico menos urgente.",
+                      "Cuando hay congestion, las politicas de QoS reducen impacto en experiencia de usuario y continuidad operativa."
+                    ]
+                  },
+                  {
+                    title: "1.1.6 Seguridad como requisito de confiabilidad",
+                    items: [
+                      "Una red confiable tambien debe ser segura: sin seguridad, la disponibilidad y el rendimiento pueden colapsar por incidentes.",
+                      "La triada CIA orienta controles basicos: confidencialidad, integridad y disponibilidad de la informacion.",
+                      "Controles minimos esperados: gestion de acceso administrativo, segmentacion, actualizaciones, monitoreo y respaldos de configuracion."
+                    ]
+                  },
+                  {
+                    title: "Checklist de diseno confiable",
+                    items: [
+                      "Definir enlaces o equipos redundantes en puntos criticos.",
+                      "Separar trafico por prioridad y aplicar politicas de QoS.",
+                      "Planificar crecimiento de usuarios, sedes y aplicaciones.",
+                      "Establecer controles de seguridad en infraestructura y datos.",
+                      "Documentar topologia, riesgos y procedimientos de recuperacion."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar los cuatro pilares de una red confiable y justificar su impacto en disponibilidad, rendimiento y seguridad."
                     ]
                   }
                 ]
               },
               {
                 code: "1.2",
-                title: "Diseno de Redes Jerarquico",
-                summary: "Base inicial del tema 1.2: Diseno de Redes Jerarquico.",
+                title: "Diseno de redes jerarquico",
+                summary:
+                  "El diseno jerarquico organiza la red en capas para mejorar rendimiento, escalabilidad, administracion y control del trafico.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_1.2.png",
+                    alt: "Dos redes IP conectadas por un router para ilustrar porcion de red y porcion de host en direccionamiento."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "1.2.1 Direcciones fisicas y logicas",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "La direccion MAC identifica de forma unica la interfaz de red del host y se mantiene estable en el adaptador.",
+                      "La direccion IP es logica y depende de la red donde esta conectado el host; puede cambiar entre ubicaciones.",
+                      "Para comunicar correctamente en redes jerarquicas se usan ambas: MAC para entrega local e IP para encaminamiento entre redes."
+                    ]
+                  },
+                  {
+                    title: "1.2.2 Inspeccion de parametros de red en el host",
+                    items: [
+                      "En equipos de usuario se debe validar estado del adaptador, direccion IP, mascara, gateway y DNS antes de escalar incidentes.",
+                      "Comandos como ipconfig o ipconfig /all permiten corroborar rapidamente configuracion, DHCP y direccion fisica.",
+                      "Distinguir asignacion estatica y dinamica evita errores de configuracion y facilita soporte."
+                    ]
+                  },
+                  {
+                    title: "1.2.4 Por que segmentar con diseno jerarquico",
+                    items: [
+                      "Las redes grandes en un solo dominio de difusion degradan rendimiento y dificultan localizar fallas.",
+                      "Segmentar reduce trafico innecesario, mejora control operativo y limita el alcance de incidentes.",
+                      "Un diseno jerarquico bien planificado facilita crecimiento ordenado y cambios sin interrupciones extensas."
+                    ]
+                  },
+                  {
+                    title: "1.2.5-1.2.6 Capas acceso, distribucion y nucleo",
+                    items: [
+                      "Acceso: conecta dispositivos finales mediante switches y puntos de acceso.",
+                      "Distribucion: agrega redes de acceso, aplica politicas y enruta trafico entre segmentos.",
+                      "Nucleo: troncal de alta velocidad con alta disponibilidad para transportar grandes volumenes de datos."
+                    ]
+                  },
+                  {
+                    title: "Buenas practicas de diseno jerarquico",
+                    items: [
+                      "Mantener trafico local en la capa de acceso cuando sea posible.",
+                      "Aplicar segmentacion por funcion, area o criticidad del servicio.",
+                      "Evitar crecimiento organico sin plan de direccionamiento y topologia.",
+                      "Definir redundancia en enlaces de distribucion y nucleo."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Relacionar direcciones MAC/IP con el modelo jerarquico y justificar como las capas de acceso, distribucion y nucleo mejoran la red."
                     ]
                   }
                 ]
