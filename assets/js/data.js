@@ -5040,13 +5040,51 @@
               {
                 code: "4.1",
                 title: "Ethernet",
-                summary: "Base inicial del tema 4.1: Ethernet.",
+                summary:
+                  "Ethernet se consolidó como estándar de facto para LAN cableadas por su interoperabilidad, evolución sostenida y modelo de direccionamiento en capa 2.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_4.2.png",
+                    alt: "Ejemplo de entrega de trama Ethernet basada en dirección MAC de destino dentro de una LAN."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "4.1.1 El auge de Ethernet",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Al inicio de las redes, cada fabricante implementaba métodos y protocolos propios, dificultando la interconexión.",
+                      "Los estándares permitieron compatibilidad entre equipos de distintos proveedores, mejor diseño y mayor competencia.",
+                      "Ethernet se volvió estándar de facto para redes locales cableadas al definir reglas claras de formato y transmisión."
+                    ]
+                  },
+                  {
+                    title: "4.1.2 Evolución e IEEE 802.3",
+                    items: [
+                      "El IEEE mantiene los estándares de red; para Ethernet, la familia clave es IEEE 802.3.",
+                      "La notación 100BASE-T indica velocidad, tipo de señal y medio (100 Mbps, banda base, par trenzado).",
+                      "Ethernet evolucionó desde 10 Mbps hasta velocidades de 10 Gbps y superiores."
+                    ]
+                  },
+                  {
+                    title: "4.1.3 Direccionamiento Ethernet",
+                    items: [
+                      "Las tramas incluyen MAC de origen y MAC de destino para entrega dentro de la misma LAN.",
+                      "Si un switch no conoce el destino, puede inundar la trama por varios puertos; solo el host con MAC coincidente la procesa.",
+                      "La NIC de cada host descarta automáticamente tramas cuyo destino no coincide con su dirección física."
+                    ]
+                  },
+                  {
+                    title: "Checklist de comprensión",
+                    items: [
+                      "Explicar por qué los estándares son críticos para interoperabilidad.",
+                      "Interpretar correctamente la notación de un estándar Ethernet.",
+                      "Distinguir comportamiento de switch y NIC durante la entrega de una trama."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Relacionar estandarización, evolución tecnológica y direccionamiento MAC para entender por qué Ethernet domina las LAN cableadas."
                     ]
                   }
                 ]
@@ -5054,13 +5092,51 @@
               {
                 code: "4.2",
                 title: "Tramas de Ethernet",
-                summary: "Base inicial del tema 4.2: Tramas de Ethernet.",
+                summary:
+                  "La trama Ethernet y las subcapas LLC/MAC definen cómo se encapsulan datos, se accede al medio y se valida integridad en la capa de enlace.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_4.1.png",
+                    alt: "Campos de una trama Ethernet con tamaños típicos: preámbulo, MAC destino, MAC origen, tipo/longitud, datos y FCS."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "4.2.1 Encapsulación Ethernet",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Ethernet opera en capa física y capa de enlace de datos del modelo OSI.",
+                      "Enlace de datos define estructura de trama y direccionamiento local; física define señal y medio.",
+                      "Ethernet soporta múltiples anchos de banda, desde 10 Mbps hasta 100 Gbps y más."
+                    ]
+                  },
+                  {
+                    title: "4.2.2 Subcapas LLC y MAC",
+                    items: [
+                      "LLC (IEEE 802.2) identifica el protocolo de capa 3 usado por la trama, como IPv4 o IPv6.",
+                      "MAC (IEEE 802.3) se enfoca en encapsulación, direccionamiento de capa 2 y control de acceso al medio.",
+                      "Esta separación permite reutilizar la misma infraestructura con distintos protocolos de red."
+                    ]
+                  },
+                  {
+                    title: "4.2.3 Funciones de la subcapa MAC",
+                    items: [
+                      "Define formato de trama, MAC origen/destino y campo FCS para detección de errores.",
+                      "En medios compartidos y semidúplex se empleó CSMA/CD para resolver colisiones.",
+                      "En Ethernet conmutada en dúplex completo, CSMA/CD ya no es necesario."
+                    ]
+                  },
+                  {
+                    title: "4.2.4 Campos y tamaño de trama",
+                    items: [
+                      "Tamaño mínimo de trama Ethernet: 64 bytes; máximo estándar: 1518 bytes (sin considerar etiquetas adicionales).",
+                      "Tramas menores al mínimo se descartan como inválidas; tramas mayores pueden considerarse jumbo según entorno.",
+                      "El FCS ayuda a detectar corrupción de datos durante la transmisión."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Interpretar la estructura de una trama Ethernet y explicar cómo LLC/MAC colaboran para transportar datos con control básico de integridad."
                     ]
                   }
                 ]
