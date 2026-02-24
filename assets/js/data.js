@@ -6580,6 +6580,997 @@
             ]
           }
         ]
+      },
+      {
+        id: "network-addressing-troubleshooting-basics",
+        title: "Direccionamiento de red y solución de problemas básicos",
+        provider: "Cisco Networking Academy",
+        level: "Intermedio",
+        status: "En curso",
+        estimatedHours: 42,
+        summary:
+          "Curso centrado en medios, topologías, direccionamiento IPv6, operación de dispositivos Cisco y diagnóstico básico de conectividad.",
+        tags: ["direccionamiento", "ipv6", "ios", "troubleshooting", "cisco"],
+        modules: [
+          {
+            key: "M1",
+            title: "Fundamentos de la capa física y medios",
+            topics: [
+              {
+                code: "1.1",
+                title: "Propósito de la capa física",
+                summary:
+                  "Desarrollo del tema 1.1: Propósito de la capa física. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_1.1.jpeg",
+                    alt: "Referencia visual del tema 1.1: Propósito de la capa física."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "1.1.1 La conexión física",
+                      "1.1.2 La capa física"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de propósito de la capa física.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en propósito de la capa física dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.2",
+                title: "Características de la capa física",
+                summary:
+                  "Desarrollo del tema 1.2: Características de la capa física. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_1.2.png",
+                    alt: "Referencia visual del tema 1.2: Características de la capa física."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "1.2.1 Estándares de la capa física",
+                      "1.2.2 Componentes físicos",
+                      "1.2.3 Codificación",
+                      "1.2.4 Señalización",
+                      "1.2.5 Vídeo - Ancho de banda",
+                      "1.2.6 Ancho de banda",
+                      "1.2.7 Terminología del ancho de banda"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de características de la capa física.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en características de la capa física dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.3",
+                title: "Cableado de cobre",
+                summary:
+                  "Desarrollo del tema 1.3: Cableado de cobre. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_1.3.png",
+                    alt: "Referencia visual del tema 1.3: Cableado de cobre."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "1.3.1 Características del cableado de cobre",
+                      "1.3.2 Tipos de cableado de cobre",
+                      "1.3.3 Par trenzado sin blindaje (UTP)",
+                      "1.3.4 Par trenzado blindado (STP)",
+                      "1.3.5 Cable Coaxial"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de cableado de cobre.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en cableado de cobre dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.4",
+                title: "Cableado UTP",
+                summary:
+                  "Desarrollo del tema 1.4: Cableado UTP. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_1.4.jpeg",
+                    alt: "Referencia visual del tema 1.4: Cableado UTP."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "1.4.1 Propiedades del cableado UTP",
+                      "1.4.2 Conectores y estándares de cableado UTP",
+                      "1.4.3 Cables UTP directos y cruzados"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de cableado utp.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en cableado utp dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.5",
+                title: "Cableado de fibra óptica",
+                summary:
+                  "Desarrollo del tema 1.5: Cableado de fibra óptica. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_1.5.png",
+                    alt: "Referencia visual del tema 1.5: Cableado de fibra óptica."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "1.5.1 Propiedades del cableado de fibra óptica",
+                      "1.5.2 Tipos de medios de fibra óptica",
+                      "1.5.3 Uso de cableado de fibra óptica",
+                      "1.5.4 Conectores de fibra óptica",
+                      "1.5.5 Cables de conexión de fibra",
+                      "1.5.6 Comparación entre fibra óptica y cobre"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de cableado de fibra óptica.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en cableado de fibra óptica dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M2",
+            title: "Topologías y acceso al medio",
+            topics: [
+              {
+                code: "2.1",
+                title: "Topologías",
+                summary:
+                  "Desarrollo del tema 2.1: Topologías. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_2.1.png",
+                    alt: "Referencia visual del tema 2.1: Topologías."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "2.1.1 Topologías física y lógica",
+                      "2.1.2 Vídeo - La topología lógica",
+                      "2.1.3 Topologías de WAN",
+                      "2.1.4 Topología WAN de punto a punto",
+                      "2.1.5 Topologías de LAN"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de topologías.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en topologías dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "2.2",
+                title: "Métodos de control de acceso al medio",
+                summary:
+                  "Desarrollo del tema 2.2: Métodos de control de acceso al medio. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_2.2.png",
+                    alt: "Referencia visual del tema 2.2: Métodos de control de acceso al medio."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "2.2.1 Comunicación dúplex completo y semidúplex",
+                      "2.2.2 Métodos de control de acceso",
+                      "2.2.3 Acceso basado en contención - CSMA/CD",
+                      "2.2.4 Acceso basado en contención - CSMA/CA"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de métodos de control de acceso al medio.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en métodos de control de acceso al medio dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M3",
+            title: "Enrutamiento básico",
+            topics: [
+              {
+                code: "3.1",
+                title: "Cómo enruta un host",
+                summary:
+                  "Desarrollo del tema 3.1: Cómo enruta un host. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_3.1.png",
+                    alt: "Referencia visual del tema 3.1: Cómo enruta un host."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "3.1.1 Decisión de reenvío de host",
+                      "3.1.2 Puerta de enlace predeterminada",
+                      "3.1.3 Un host enruta a la puerta de enlace predeterminada",
+                      "3.1.4 Visualización de tablas de enrutamiento de host"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de cómo enruta un host.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en cómo enruta un host dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "3.2",
+                title: "Tablas de enrutamiento",
+                summary:
+                  "Desarrollo del tema 3.2: Tablas de enrutamiento. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_3.2.png",
+                    alt: "Referencia visual del tema 3.2: Tablas de enrutamiento."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "3.2.1 Decisión de envío de paquetes del enrutador",
+                      "3.2.2 Tabla de enrutamiento IP del enrutador",
+                      "3.2.3 Enrutamiento estático",
+                      "3.2.4 Enrutamiento dinámico",
+                      "3.2.5 Video - Tablas de enrutamiento de un enrutador IPv4",
+                      "3.2.6 Introducción a una tabla de enrutamiento IPv4"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de tablas de enrutamiento.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en tablas de enrutamiento dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M4",
+            title: "Direccionamiento IPv6",
+            topics: [
+              {
+                code: "4.1",
+                title: "Tipos de direcciones IPv6",
+                summary:
+                  "Desarrollo del tema 4.1: Tipos de direcciones IPv6. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_4.1.png",
+                    alt: "Referencia visual del tema 4.1: Tipos de direcciones IPv6."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "4.1.1 Unidifusión, Multidifusión, Cualquier Difusión",
+                      "4.1.2 Longitud de prefijo IPv6",
+                      "4.1.3 Tipos de direcciones de unidifusión IPv6",
+                      "4.1.4 Una nota sobre la dirección local única",
+                      "4.1.5 GUA IPv6",
+                      "4.1.6 Estructura IPv6 GUA",
+                      "4.1.7 IPv6 LLA"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de tipos de direcciones ipv6.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en tipos de direcciones ipv6 dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.2",
+                title: "Configuración estática GUA y LLA",
+                summary:
+                  "Desarrollo del tema 4.2: Configuración estática GUA y LLA. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_4.2.png",
+                    alt: "Referencia visual del tema 4.2: Configuración estática GUA y LLA."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "4.2.1 Configuración de GUA estática en un enrutador",
+                      "4.2.2 Configuración de GUA estática en un host de Windows",
+                      "4.2.3 Configuración estática de una dirección de unidifusión local de enlace"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de configuración estática gua y lla.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en configuración estática gua y lla dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.3",
+                title: "Direccionamiento dinámico para GUA IPv6",
+                summary:
+                  "Desarrollo del tema 4.3: Direccionamiento dinámico para GUA IPv6. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_4.3.png",
+                    alt: "Referencia visual del tema 4.3: Direccionamiento dinámico para GUA IPv6."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "4.3.1 Video - Mensajes RS y RA",
+                      "4.3.2 Mensajes RS y RA",
+                      "4.3.3 Método 1: SLAAC",
+                      "4.3.4 Método 2: SLAAC y DHCPv6 sin estado",
+                      "4.3.5 Método 3: DHCPv6 con estado",
+                      "4.3.6 Proceso EUI-64 versus generado aleatoriamente",
+                      "4.3.7 Proceso EUI-64",
+                      "4.3.8 ID de interfaz generadas aleatoriamente"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de direccionamiento dinámico para gua ipv6.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en direccionamiento dinámico para gua ipv6 dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.4",
+                title: "Direccionamiento dinámico para LLA de IPv6",
+                summary:
+                  "Desarrollo del tema 4.4: Direccionamiento dinámico para LLA de IPv6. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_4.4.png",
+                    alt: "Referencia visual del tema 4.4: Direccionamiento dinámico para LLA de IPv6."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "4.4.1 LLA dinámicos",
+                      "4.4.2 LLA dinámicos en Windows",
+                      "4.4.3 LLA dinámicos en enrutadores Cisco",
+                      "4.4.4 Verificar la configuración de la dirección IPv6"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de direccionamiento dinámico para lla de ipv6.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en direccionamiento dinámico para lla de ipv6 dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.5",
+                title: "Direcciones Multicast de IPv6",
+                summary:
+                  "Desarrollo del tema 4.5: Direcciones Multicast de IPv6. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_4.5.png",
+                    alt: "Referencia visual del tema 4.5: Direcciones Multicast de IPv6."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "4.5.1 Direcciones IPv6 de multidifusión asignadas",
+                      "4.5.2 Direcciones de multidifusión IPv6 bien conocidas",
+                      "4.5.3 Direcciones IPv6 de multidifusión de nodo solicitado"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de direcciones multicast de ipv6.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en direcciones multicast de ipv6 dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M5",
+            title: "Descubrimiento de vecinos IPv6",
+            topics: [
+              {
+                code: "5.1",
+                title: "Operación de descubrimiento de vecinos",
+                summary:
+                  "Desarrollo del tema 5.1: Operación de descubrimiento de vecinos. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_5.1.png",
+                    alt: "Referencia visual del tema 5.1: Operación de descubrimiento de vecinos."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "5.1.1 Video - Detección de vecinos IPv6",
+                      "5.1.2 Mensajes de descubrimiento de vecinos IPv6",
+                      "5.1.3 Descubrimiento de vecinos IPv6 - Resolución de direcciones"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de operación de descubrimiento de vecinos.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en operación de descubrimiento de vecinos dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M6",
+            title: "Conmutadores y enrutadores Cisco",
+            topics: [
+              {
+                code: "6.1",
+                title: "Conmutadores Cisco",
+                summary:
+                  "Desarrollo del tema 6.1: Conmutadores Cisco. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_6.1.png",
+                    alt: "Referencia visual del tema 6.1: Conmutadores Cisco."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "6.1.1 Conectar más dispositivos",
+                      "6.1.2 Conmutadores LAN de Cisco",
+                      "6.1.3 Vídeo - Componentes de un Conmutador LAN - Parte 1",
+                      "6.1.4 Vídeo - Componentes de un Conmutador LAN - Parte 2",
+                      "6.1.5 Componentes del Conmutador LAN"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de conmutadores cisco.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en conmutadores cisco dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "6.2",
+                title: "Velocidades del conmutador y métodos de reenvío",
+                summary:
+                  "Desarrollo del tema 6.2: Velocidades del conmutador y métodos de reenvío. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_6.2.png",
+                    alt: "Referencia visual del tema 6.2: Velocidades del conmutador y métodos de reenvío."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "6.2.1 Métodos de reenvío de tramas en switches Cisco",
+                      "6.2.2 Conmutación a través de corte",
+                      "6.2.3 Almacenamiento en búfer de memoria en los conmutadores",
+                      "6.2.4 Configuración de dúplex y velocidad",
+                      "6.2.5 Auto-MDIX"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de velocidades del conmutador y métodos de reenvío.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en velocidades del conmutador y métodos de reenvío dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "6.3",
+                title: "Proceso de Arranque del Conmutador",
+                summary:
+                  "Desarrollo del tema 6.3: Proceso de Arranque del Conmutador. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_6.3.png",
+                    alt: "Referencia visual del tema 6.3: Proceso de Arranque del Conmutador."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "6.3.1 Encendido del conmutador",
+                      "6.3.2 Vídeo - Administración de Dispositivos Dentro de Banda y Fuera de Banda",
+                      "6.3.3 Archivos de Inicio del IOS"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de proceso de arranque del conmutador.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en proceso de arranque del conmutador dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "6.4",
+                title: "Enrutadores Cisco",
+                summary:
+                  "Desarrollo del tema 6.4: Enrutadores Cisco. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_6.4.png",
+                    alt: "Referencia visual del tema 6.4: Enrutadores Cisco."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "6.4.1 Vídeo - Componentes del Enrutador Cisco",
+                      "6.4.2 Componentes del Enrutador",
+                      "6.4.3 Puertos de Interfaz de un Enrutador"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de enrutadores cisco.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en enrutadores cisco dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "6.5",
+                title: "Proceso de Arranque del Enrutador",
+                summary:
+                  "Desarrollo del tema 6.5: Proceso de Arranque del Enrutador. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_6.5.png",
+                    alt: "Referencia visual del tema 6.5: Proceso de Arranque del Enrutador."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "6.5.1 Encendido del enrutador",
+                      "6.5.2 Puertos de administración",
+                      "6.5.3 Video - El Proceso de Arranque del Enrutador Cisco"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de proceso de arranque del enrutador.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en proceso de arranque del enrutador dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M7",
+            title: "Solución de problemas básicos",
+            topics: [
+              {
+                code: "7.1",
+                title: "El Proceso para Solucionar Problemas",
+                summary:
+                  "Desarrollo del tema 7.1: El Proceso para Solucionar Problemas. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_7.1.png",
+                    alt: "Referencia visual del tema 7.1: El Proceso para Solucionar Problemas."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "7.1.1 Vídeo - Solución de problemas de red",
+                      "7.1.2 Descripción General de la Solución de Problemas",
+                      "7.1.3 Recopilar información",
+                      "7.1.4 Métodos Estructurados de Solución de Problemas",
+                      "7.1.5 Pautas para Seleccionar un Método de Solución de Problemas"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de el proceso para solucionar problemas.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en el proceso para solucionar problemas dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "7.2",
+                title: "Problema de Capa Física",
+                summary:
+                  "Desarrollo del tema 7.2: Problema de Capa Física. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_7.2.png",
+                    alt: "Referencia visual del tema 7.2: Problema de Capa Física."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "7.2.1 Problemas comunes de la Capa 1",
+                      "7.2.2 Indicadores LED del Enrutador Inalámbrico",
+                      "7.2.3 Problemas de Cableado"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de problema de capa física.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en problema de capa física dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "7.3",
+                title: "Solución de Problemas de Conexión Inalámbrica",
+                summary:
+                  "Desarrollo del tema 7.3: Solución de Problemas de Conexión Inalámbrica. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_7.3.png",
+                    alt: "Referencia visual del tema 7.3: Solución de Problemas de Conexión Inalámbrica."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "7.3.1 Causas de problemas inalámbricos",
+                      "7.3.2 Errores de Autenticación y Asociación"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de solución de problemas de conexión inalámbrica.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en solución de problemas de conexión inalámbrica dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "7.4",
+                title: "Problemas Comunes de Conectividad a Internet",
+                summary:
+                  "Desarrollo del tema 7.4: Problemas Comunes de Conectividad a Internet. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_7.4.png",
+                    alt: "Referencia visual del tema 7.4: Problemas Comunes de Conectividad a Internet."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "7.4.1 Errores de Configuración del Servidor DHCP",
+                      "7.4.2 Comprobar la Configuración de Internet",
+                      "7.4.3 Verificar la Configuración del Cortafuegos",
+                      "7.4.5 Divide y Vencerás con ping",
+                      "7.4.6 El Comando tracert",
+                      "7.4.7 El Comando netstat",
+                      "7.4.8 El Comando nslookup"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de problemas comunes de conectividad a internet.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en problemas comunes de conectividad a internet dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "7.5",
+                title: "Asistencia al cliente",
+                summary:
+                  "Desarrollo del tema 7.5: Asistencia al cliente. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                images: [
+                  {
+                    src: "./assets/images/network-addressing-troubleshooting-basics/C7_7.5.jpeg",
+                    alt: "Referencia visual del tema 7.5: Asistencia al cliente."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Subtemas del tema",
+                    items: [
+                      "7.5.1 Fuentes de ayuda",
+                      "7.5.2 Cuándo llamar para pedir ayuda",
+                      "7.5.3 Interacción con el Servicio de Soporte",
+                      "7.5.4 Resolución del Problema",
+                      "7.5.5 Casos del Servicio de Soporte y Órdenes de Trabajo"
+                    ]
+                  },
+                  {
+                    title: "Enfoque práctico",
+                    items: [
+                      "Identificar y aplicar los conceptos clave de asistencia al cliente.",
+                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
+                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Consolidar competencias operativas en asistencia al cliente dentro del contexto del curso."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   };
