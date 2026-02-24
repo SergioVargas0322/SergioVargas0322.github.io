@@ -5144,13 +5144,67 @@
               {
                 code: "4.3",
                 title: "Dirección MAC de Ethernet",
-                summary: "Base inicial del tema 4.3: Dirección MAC de Ethernet.",
+                summary:
+                  "La dirección MAC identifica de forma única cada interfaz Ethernet en una LAN y permite que switches y NIC tomen decisiones de entrega en capa 2.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_4.3_1.png",
+                    alt: "Representación de una dirección MAC en formato hexadecimal y su equivalencia binaria."
+                  },
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_4.3_2.png",
+                    alt: "Ejemplo de trama Ethernet con direcciones MAC de origen y destino."
+                  },
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_4.3_3.png",
+                    alt: "Comparación de tráfico unicast, multicast y broadcast en una red local."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "4.3.1 Identificación de dispositivos en capa 2",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Una MAC (Media Access Control) pertenece a la interfaz de red, no al equipo completo.",
+                      "Su longitud estándar es de 48 bits (6 bytes), representados en hexadecimal.",
+                      "En Ethernet, el switch reenvía tramas con base en la MAC de destino."
+                    ]
+                  },
+                  {
+                    title: "4.3.2 Estructura hexadecimal y fabricante (OUI)",
+                    items: [
+                      "Los primeros 24 bits suelen identificar al fabricante (OUI: Organizationally Unique Identifier).",
+                      "Los últimos 24 bits identifican de forma específica la interfaz dentro de ese fabricante.",
+                      "Ejemplo de formato común: 00:1C:42:7E:91:AF."
+                    ]
+                  },
+                  {
+                    title: "4.3.3 Tipos de dirección MAC de destino",
+                    items: [
+                      "Unicast: trama dirigida a una sola NIC específica.",
+                      "Broadcast: trama enviada a todos los hosts del mismo dominio de broadcast (FF:FF:FF:FF:FF:FF).",
+                      "Multicast: trama enviada a un grupo específico de receptores."
+                    ]
+                  },
+                  {
+                    title: "4.3.4 Relación MAC e IP en la LAN",
+                    items: [
+                      "IP define el destino lógico extremo a extremo; MAC define la entrega local salto a salto.",
+                      "Para enviar a un host local, el emisor necesita conocer su MAC y suele obtenerla con ARP (en IPv4).",
+                      "Si el destino está en otra red, la trama Ethernet se envía a la MAC de la puerta de enlace."
+                    ]
+                  },
+                  {
+                    title: "Checklist de comprensión",
+                    items: [
+                      "Diferenciar dirección MAC de dirección IP y su función en la comunicación.",
+                      "Reconocer formato hexadecimal de 48 bits y el concepto OUI.",
+                      "Identificar cuándo se usa unicast, multicast o broadcast."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Interpretar direcciones MAC en tramas Ethernet y explicar su papel en la entrega de datos dentro de una LAN."
                     ]
                   }
                 ]
@@ -5158,13 +5212,51 @@
               {
                 code: "4.4",
                 title: "La Tabla de Direcciones MAC",
-                summary: "Base inicial del tema 4.4: La Tabla de Direcciones MAC.",
+                summary:
+                  "Los switches construyen y mantienen una tabla MAC para decidir por qué puerto reenviar tramas, optimizando rendimiento y reduciendo tráfico innecesario.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_4.4.png",
+                    alt: "Switch con puertos y proceso de aprendizaje de direcciones MAC para conmutación."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "4.4.1 Aprendizaje dinámico en el switch",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Cuando una trama entra por un puerto, el switch registra la MAC de origen y la asocia a ese puerto.",
+                      "Esa asociación se guarda en la tabla de direcciones MAC (también llamada tabla CAM).",
+                      "El proceso se repite continuamente mientras circula tráfico por la red."
+                    ]
+                  },
+                  {
+                    title: "4.4.2 Reenvío, filtrado e inundación",
+                    items: [
+                      "Si conoce la MAC de destino, reenvía solo por el puerto asociado (forwarding).",
+                      "Si destino y origen están en el mismo puerto, descarta la trama (filtering).",
+                      "Si desconoce la MAC de destino, inunda por todos los puertos de la VLAN excepto el de entrada (flooding)."
+                    ]
+                  },
+                  {
+                    title: "4.4.3 Temporización y actualización",
+                    items: [
+                      "Las entradas dinámicas caducan tras un tiempo de inactividad (aging) para evitar información obsoleta.",
+                      "Cuando un host cambia de puerto, el switch actualiza la tabla con la nueva ubicación.",
+                      "Una tabla bien actualizada mejora latencia y evita tráfico innecesario."
+                    ]
+                  },
+                  {
+                    title: "4.4.4 Operación y seguridad básica",
+                    items: [
+                      "Comandos de verificación en Cisco IOS: show mac address-table, show interface status.",
+                      "Amenazas comunes: MAC spoofing y MAC flooding para forzar inundación de tráfico.",
+                      "Controles recomendados: port-security, límites de MAC por puerto y segmentación por VLAN."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar cómo el switch aprende direcciones MAC y usa su tabla para conmutar tráfico de manera eficiente y segura."
                     ]
                   }
                 ]
