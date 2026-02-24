@@ -5942,13 +5942,59 @@
               {
                 code: "9.6",
                 title: "Confiabilidad y control de flujo",
-                summary: "Base inicial del tema 9.6: Confiabilidad y control de flujo.",
+                summary:
+                  "La confiabilidad en TCP se sostiene con números de secuencia, acuses de recibo, retransmisión y control de flujo/congestión para adaptar el envío al estado real de la red.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_9.6.png",
+                    alt: "Mecanismos TCP de confirmación, ventana deslizante y ajuste de envío para control de flujo."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "9.6.1 Confirmación y orden de datos",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "TCP asigna números de secuencia a cada byte transmitido para preservar orden lógico.",
+                      "El receptor confirma con ACK el último byte recibido correctamente.",
+                      "Si llegan segmentos fuera de orden, el receptor puede almacenarlos y reordenarlos antes de entregarlos a la aplicación."
+                    ]
+                  },
+                  {
+                    title: "9.6.2 Retransmisión ante pérdida",
+                    items: [
+                      "Cuando no llega un ACK esperado, el emisor asume pérdida y retransmite.",
+                      "Los temporizadores (RTO) ajustan cuándo reenviar según latencia observada.",
+                      "Este mecanismo compensa errores de medio o congestión sin intervención de la aplicación."
+                    ]
+                  },
+                  {
+                    title: "9.6.3 Ventana deslizante y control de flujo",
+                    items: [
+                      "El campo de ventana anuncia cuántos bytes puede recibir el host destino sin saturar su búfer.",
+                      "El emisor limita el volumen de datos en tránsito según esa ventana anunciada.",
+                      "Así se evita desbordamiento del receptor y se estabiliza la sesión en equipos con capacidades distintas."
+                    ]
+                  },
+                  {
+                    title: "9.6.4 Control de congestión en red",
+                    items: [
+                      "TCP reduce su ritmo al detectar señales de congestión (pérdidas o ACK duplicados).",
+                      "Luego incrementa gradualmente la tasa de envío cuando la ruta vuelve a estabilizarse.",
+                      "Esto protege enlaces compartidos y mejora el comportamiento global de múltiples sesiones simultáneas."
+                    ]
+                  },
+                  {
+                    title: "9.6.5 Diagnóstico operativo",
+                    items: [
+                      "Síntomas típicos: baja velocidad sostenida, muchas retransmisiones y latencia variable.",
+                      "Herramientas de apoyo: capturas de tráfico, contadores de interfaz y pruebas con iperf/ping.",
+                      "Ajustar MTU/MSS, QoS y capacidad de enlace puede mejorar confiabilidad y rendimiento."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar cómo TCP asegura entrega confiable y cómo control de flujo/congestión impacta el rendimiento extremo a extremo."
                     ]
                   }
                 ]
@@ -5956,13 +6002,59 @@
               {
                 code: "9.7",
                 title: "Comunicación UDP",
-                summary: "Base inicial del tema 9.7: Comunicación UDP.",
+                summary:
+                  "UDP entrega datagramas con mínima sobrecarga y sin estado de sesión, ideal para servicios de infraestructura y aplicaciones en tiempo real que toleran pérdidas parciales.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_9.7.png",
+                    alt: "Flujo de comunicación UDP entre cliente y servidor con envío de datagramas sin conexión previa."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "9.7.1 Flujo de comunicación sin conexión",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "El emisor puede transmitir datagramas UDP sin handshake previo.",
+                      "Cada datagrama se procesa de forma independiente, sin mantenimiento de estado en el transporte.",
+                      "La aplicación receptora decide cómo tratar pérdida, duplicación o desorden."
+                    ]
+                  },
+                  {
+                    title: "9.7.2 Encabezado UDP y puertos",
+                    items: [
+                      "Campos básicos: puerto origen, puerto destino, longitud y checksum.",
+                      "El checksum ayuda a detectar corrupción de datos en tránsito.",
+                      "La multiplexación por puertos mantiene separadas sesiones de distintos servicios en el mismo host."
+                    ]
+                  },
+                  {
+                    title: "9.7.3 Aplicaciones típicas sobre UDP",
+                    items: [
+                      "Servicios como DNS y DHCP priorizan rapidez de respuesta con mensajes breves.",
+                      "Voz y video en tiempo real usan UDP para minimizar retardo y jitter percibido.",
+                      "Protocolos de streaming y juegos suelen agregar sus propios mecanismos de recuperación parcial."
+                    ]
+                  },
+                  {
+                    title: "9.7.4 Consideraciones de red y seguridad",
+                    items: [
+                      "En enlaces inestables pueden aparecer pérdidas; QoS ayuda a priorizar tráfico sensible.",
+                      "Es importante filtrar puertos UDP expuestos y limitar servicios innecesarios en borde.",
+                      "Monitorear tasa de datagramas y errores facilita detectar congestión o abuso."
+                    ]
+                  },
+                  {
+                    title: "Checklist de comprensión",
+                    items: [
+                      "Describir por qué UDP no requiere establecimiento de sesión.",
+                      "Identificar campos principales del encabezado UDP.",
+                      "Relacionar tipos de aplicación con ventajas y límites de UDP."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Aplicar criterios técnicos para decidir cuándo usar UDP y cómo operar ese tráfico de forma eficiente y segura."
                     ]
                   }
                 ]
