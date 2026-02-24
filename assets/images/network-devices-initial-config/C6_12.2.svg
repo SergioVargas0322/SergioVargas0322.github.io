@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#f4f7fb"/>
+  <text x="600" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="44" fill="#0f172a" font-weight="700">
+    Ping y Traceroute
+  </text>
+  <text x="600" y="110" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#334155">
+    Herramientas basicas para comprobar conectividad y ruta
+  </text>
+
+  <rect x="80" y="250" width="180" height="90" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+  <text x="170" y="305" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#1e3a8a" font-weight="600">PC-A</text>
+
+  <rect x="320" y="250" width="180" height="90" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="4"/>
+  <text x="410" y="305" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#166534" font-weight="600">R1</text>
+
+  <rect x="560" y="250" width="180" height="90" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="4"/>
+  <text x="650" y="305" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#92400e" font-weight="600">R2</text>
+
+  <rect x="800" y="250" width="180" height="90" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="4"/>
+  <text x="890" y="305" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#991b1b" font-weight="600">R3</text>
+
+  <rect x="1040" y="250" width="120" height="90" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="4"/>
+  <text x="1100" y="305" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#5b21b6" font-weight="600">Srv</text>
+
+  <line x1="260" y1="295" x2="320" y2="295" stroke="#475569" stroke-width="6"/>
+  <line x1="500" y1="295" x2="560" y2="295" stroke="#475569" stroke-width="6"/>
+  <line x1="740" y1="295" x2="800" y2="295" stroke="#475569" stroke-width="6"/>
+  <line x1="980" y1="295" x2="1040" y2="295" stroke="#475569" stroke-width="6"/>
+
+  <text x="150" y="390" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#0f172a" font-weight="600">Ping:</text>
+  <text x="220" y="390" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#334155">valida alcance y tiempo de respuesta (RTT) con Echo Request/Reply.</text>
+
+  <text x="150" y="435" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#0f172a" font-weight="600">Traceroute:</text>
+  <text x="285" y="435" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#334155">muestra cada salto incrementando TTL y leyendo Time Exceeded.</text>
+
+  <rect x="140" y="490" width="920" height="135" rx="14" fill="#ffffff" stroke="#94a3b8" stroke-width="3"/>
+  <text x="170" y="535" font-family="Segoe UI, Arial, sans-serif" font-size="25" fill="#0f172a" font-weight="600">Secuencia recomendada de diagnostico:</text>
+  <text x="170" y="570" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#334155">1) Ping al gateway local  2) Ping a destino remoto  3) Traceroute para ubicar donde se corta.</text>
+  <text x="170" y="602" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#334155">4) Correlacionar con tablas de ruteo, ACL y estado de interfaces.</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#f8fafc"/>
+  <text x="600" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="44" fill="#0f172a" font-weight="700">
+    Mensajes ICMP en Operacion de Red
+  </text>
+  <text x="600" y="110" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#334155">
+    Control, diagnostico y notificacion de errores en IP
+  </text>
+
+  <rect x="90" y="180" width="320" height="140" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+  <text x="250" y="235" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" fill="#1e3a8a" font-weight="600">Echo Request</text>
+  <text x="250" y="270" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#1f2937">ping solicita respuesta</text>
+  <text x="250" y="300" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#1f2937">Type 8 Code 0</text>
+
+  <rect x="440" y="180" width="320" height="140" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="4"/>
+  <text x="600" y="235" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" fill="#166534" font-weight="600">Echo Reply</text>
+  <text x="600" y="270" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#1f2937">respuesta del destino</text>
+  <text x="600" y="300" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#1f2937">Type 0 Code 0</text>
+
+  <rect x="790" y="180" width="320" height="140" rx="16" fill="#fee2e2" stroke="#dc2626" stroke-width="4"/>
+  <text x="950" y="235" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" fill="#991b1b" font-weight="600">Destination Unreachable</text>
+  <text x="950" y="270" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#1f2937">red o puerto inaccesible</text>
+  <text x="950" y="300" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#1f2937">Type 3</text>
+
+  <rect x="190" y="400" width="360" height="150" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="4"/>
+  <text x="370" y="455" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" fill="#92400e" font-weight="600">Time Exceeded</text>
+  <text x="370" y="490" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#1f2937">TTL llega a cero</text>
+  <text x="370" y="520" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#1f2937">Type 11</text>
+
+  <rect x="640" y="400" width="370" height="150" rx="16" fill="#ede9fe" stroke="#7c3aed" stroke-width="4"/>
+  <text x="825" y="455" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" fill="#5b21b6" font-weight="600">Funciones clave</text>
+  <text x="825" y="490" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#1f2937">deteccion de fallas</text>
+  <text x="825" y="520" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#1f2937">diagnostico de ruta</text>
+
+  <line x1="410" y1="250" x2="440" y2="250" stroke="#475569" stroke-width="5"/>
+  <polygon points="440,250 426,241 426,259" fill="#475569"/>
+  <line x1="760" y1="250" x2="790" y2="250" stroke="#475569" stroke-width="5"/>
+  <polygon points="790,250 776,241 776,259" fill="#475569"/>
+  <line x1="950" y1="320" x2="825" y2="400" stroke="#475569" stroke-width="4"/>
+  <line x1="370" y1="320" x2="370" y2="400" stroke="#475569" stroke-width="4"/>
+
+  <text x="80" y="630" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#334155">
+    Nota: ICMP no transporta datos de aplicacion, pero es esencial para observabilidad y troubleshooting.
+  </text>
+</svg>

@@ -6468,13 +6468,51 @@
               {
                 code: "12.1",
                 title: "Mensajes ICMP",
-                summary: "Base inicial del tema 12.1: Mensajes ICMP.",
+                summary:
+                  "ICMP es un protocolo de control usado por IP para notificar errores y estado de conectividad, clave en tareas de diagnóstico y operación de red.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_12.1.svg",
+                    alt: "Tipos comunes de mensajes ICMP y su función en monitoreo y resolución de problemas."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "12.1.1 Función de ICMP en redes IP",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "ICMP complementa a IPv4/IPv6 al reportar condiciones de red, no transporta datos de aplicación.",
+                      "Se usa para notificar fallas, verificar alcance y apoyar descubrimiento de ruta.",
+                      "Sin ICMP, el diagnóstico de conectividad sería mucho más limitado."
+                    ]
+                  },
+                  {
+                    title: "12.1.2 Mensajes ICMP más relevantes",
+                    items: [
+                      "Echo Request/Echo Reply: base de la herramienta ping para validar respuesta extremo a extremo.",
+                      "Destination Unreachable: informa que no se puede llegar a red, host o puerto destino.",
+                      "Time Exceeded: indica agotamiento de TTL y habilita funcionamiento de traceroute."
+                    ]
+                  },
+                  {
+                    title: "12.1.3 Interpretación operativa",
+                    items: [
+                      "Unreachable suele apuntar a rutas ausentes, ACL restrictivas o errores de direccionamiento.",
+                      "Time Exceeded frecuente puede reflejar bucles de ruteo o rutas ineficientes.",
+                      "Respuestas inconsistentes pueden indicar congestión, pérdida intermitente o filtrado selectivo."
+                    ]
+                  },
+                  {
+                    title: "12.1.4 Consideraciones de seguridad",
+                    items: [
+                      "Bloquear ICMP de forma total puede dificultar diagnóstico legítimo y operación diaria.",
+                      "Se recomienda filtrar de forma granular según política, no deshabilitar ciegamente.",
+                      "Monitorear tasas ICMP ayuda a detectar escaneos o abuso de tráfico de control."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar tipos de mensajes ICMP y usar su interpretación para identificar causas probables de fallas de red."
                     ]
                   }
                 ]
@@ -6482,13 +6520,59 @@
               {
                 code: "12.2",
                 title: "Pruebas de Ping y Traceroute",
-                summary: "Base inicial del tema 12.2: Pruebas de Ping y Traceroute.",
+                summary:
+                  "Ping y traceroute permiten validar conectividad, medir latencia y localizar el salto donde se produce una interrupción de servicio.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_12.2.svg",
+                    alt: "Topología de ejemplo para ejecución secuencial de ping y traceroute en diagnóstico de red."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "12.2.1 Ping: alcance y latencia",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Envía Echo Request al destino y espera Echo Reply para confirmar conectividad.",
+                      "Métricas útiles: paquetes enviados/recibidos, pérdida y RTT promedio/máximo.",
+                      "Debe probarse primero al gateway local y luego a destinos remotos."
+                    ]
+                  },
+                  {
+                    title: "12.2.2 Traceroute: visibilidad de ruta",
+                    items: [
+                      "Incrementa TTL progresivamente para descubrir cada salto hacia el destino.",
+                      "Cada router intermedio responde con ICMP Time Exceeded, revelando la secuencia de hops.",
+                      "Permite ubicar dónde aparece latencia elevada o pérdida de conectividad."
+                    ]
+                  },
+                  {
+                    title: "12.2.3 Metodología de diagnóstico",
+                    items: [
+                      "Paso 1: validar configuración IP local (IP, máscara, gateway, DNS).",
+                      "Paso 2: ping local y remoto para delimitar el alcance de la falla.",
+                      "Paso 3: traceroute para aislar el tramo problemático y correlacionar con rutas/ACL."
+                    ]
+                  },
+                  {
+                    title: "12.2.4 Limitaciones y buenas prácticas",
+                    items: [
+                      "Algunos equipos filtran ICMP; ausencia de respuesta no siempre implica caída total.",
+                      "Comparar resultados desde varios puntos de la red mejora precisión del análisis.",
+                      "Registrar hora, destino y salida de comandos facilita escalamiento y seguimiento."
+                    ]
+                  },
+                  {
+                    title: "Checklist de comprensión",
+                    items: [
+                      "Distinguir claramente qué valida ping y qué aporta traceroute.",
+                      "Interpretar pérdida y variación de RTT como indicios operativos.",
+                      "Aplicar secuencia de pruebas desde local hacia remoto para aislar fallas."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Ejecutar ping y traceroute de manera estructurada para diagnosticar conectividad y ubicar fallos con mayor rapidez."
                     ]
                   }
                 ]
