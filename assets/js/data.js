@@ -3959,6 +3959,168 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M14",
+            title: "Necesidad del enrutamiento",
+            topics: [
+              {
+                code: "14.1",
+                title: "La necesidad del enrutamiento",
+                summary:
+                  "Por que una red grande se divide en segmentos y como el router permite comunicar redes distintas de forma controlada.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_14.1_routing_need.png",
+                    alt: "Diagrama de segmentacion de red por seguridad, difusion y crecimiento con un router entre subredes."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "14.1.1 Division de la red local",
+                    items: [
+                      "Dividir una red reduce el trafico de difusion y evita que todos los hosts procesen mensajes irrelevantes.",
+                      "La segmentacion mejora seguridad al limitar acceso entre departamentos, equipos y servicios sensibles.",
+                      "Tambien responde a necesidades fisicas: sedes, pisos o edificios con alcances de red diferentes."
+                    ]
+                  },
+                  {
+                    title: "14.1.2 Cuando se necesita enrutamiento",
+                    items: [
+                      "Si la red de origen y la red de destino no coinciden, el host debe usar un router para llegar al destino remoto.",
+                      "El switch reenvia por direccion MAC (capa 2), mientras el router decide por direccion IP (capa 3).",
+                      "Cada interfaz del router define una red independiente y separa dominios de difusion."
+                    ]
+                  },
+                  {
+                    title: "Encapsulacion y reenvio",
+                    items: [
+                      "El host encapsula el paquete IP en una trama de enlace y lo entrega al gateway predeterminado.",
+                      "El router desencapsula, consulta destino IP, selecciona interfaz de salida y reencapsula para el siguiente salto.",
+                      "Este proceso se repite hasta alcanzar la red donde esta el host final."
+                    ]
+                  },
+                  {
+                    title: "Criterios de diseno",
+                    items: [
+                      "Separar redes por funcion, criticidad y volumen de trafico para simplificar operacion y crecimiento.",
+                      "Contener difusion y aplicar politicas de acceso reduce riesgo y mejora rendimiento.",
+                      "Planificar direccionamiento por segmentos facilita enrutamiento y troubleshooting."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Justificar tecnicamente por que segmentar y como el enrutamiento habilita comunicacion segura entre redes."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "14.2",
+                title: "La tabla de enrutamiento",
+                summary:
+                  "Como el router usa su tabla para reenviar paquetes a redes conocidas, descartar trafico invalido y usar ruta predeterminada cuando aplica.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_14.2_routing_table_forwarding.png",
+                    alt: "Proceso de decision del router con tabla de enrutamiento, ruta especifica y ruta por defecto."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "14.2.1 Reenvio de paquetes del router",
+                    items: [
+                      "El host envia al gateway cuando detecta que la IP destino esta fuera de su subred local.",
+                      "El router busca la red destino en su tabla y reenvia por la interfaz asociada a esa ruta.",
+                      "Las difusiones de capa 2 no se reenvian entre redes, por lo que quedan contenidas en su segmento."
+                    ]
+                  },
+                  {
+                    title: "14.2.2-14.2.3 Mensajes dentro y entre redes",
+                    items: [
+                      "Dentro de la misma red, el host usa ARP para resolver MAC del destino y envia directo por switch.",
+                      "Entre redes, el host resuelve la MAC del gateway; el router cambia trama por salto y conserva el destino IP final.",
+                      "La tabla ARP y la tabla de enrutamiento cooperan para entrega correcta en LAN y entre LANs."
+                    ]
+                  },
+                  {
+                    title: "14.2.4 Entradas de la tabla de enrutamiento",
+                    items: [
+                      "Cada entrada representa una red destino, su tipo de ruta y la interfaz o siguiente salto.",
+                      "Las rutas pueden ser conectadas, estaticas o aprendidas dinamicamente desde otros routers.",
+                      "Si no existe coincidencia y tampoco ruta predeterminada, el paquete se descarta."
+                    ]
+                  },
+                  {
+                    title: "14.2.5 Puerta de enlace predeterminada",
+                    items: [
+                      "Cada host debe tener configurada la IP del gateway local para salir a redes remotas.",
+                      "Un gateway ausente o incorrecto impide acceso fuera de la LAN aunque exista conectividad local.",
+                      "El host usa ARP sobre la IP del gateway para obtener la MAC que ira en la trama de salida."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Interpretar la logica de forwarding del router y validar rutas para resolver fallas de conectividad entre redes."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "14.3",
+                title: "Crear una LAN",
+                summary:
+                  "Diseno basico de LAN: una sola red local frente a segmentos multiples, con sus ventajas, riesgos y criterio de uso.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_14.3_lan_design_segments.png",
+                    alt: "Comparacion de diseno LAN en un solo segmento frente a segmentacion por redes locales y remotas."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "14.3.1 Redes de area local",
+                    items: [
+                      "Una LAN es una red local o conjunto de redes locales bajo el mismo control administrativo.",
+                      "Las LAN modernas pueden abarcar multiples edificios y cientos de hosts interconectados.",
+                      "Una intranet es una LAN privada de organizacion con acceso restringido a usuarios autorizados."
+                    ]
+                  },
+                  {
+                    title: "14.3.2 Segmentos locales y remotos",
+                    items: [
+                      "Un solo segmento simplifica la operacion inicial, pero incrementa dominio de difusion al crecer.",
+                      "Separar hosts en redes distintas reduce broadcast y puede mejorar rendimiento por segmento.",
+                      "La segmentacion exige enrutamiento, mas planificacion y mayor costo de implementacion."
+                    ]
+                  },
+                  {
+                    title: "Comparacion de enfoques",
+                    items: [
+                      "Segmento unico: menos complejidad y menor costo, adecuado para redes pequenas.",
+                      "Segmentado: mayor control, mejor seguridad y organizacion para redes medianas o grandes.",
+                      "La decision depende de escala, politicas de acceso, criticidad de servicios y presupuesto."
+                    ]
+                  },
+                  {
+                    title: "Checklist de diseno LAN",
+                    items: [
+                      "Definir que hosts deben comunicarse directamente y cuales deben aislarse por seguridad.",
+                      "Estimar crecimiento de dispositivos, trafico esperado y necesidad de QoS.",
+                      "Alinear direccionamiento IP, gateways y politicas de enrutamiento con el diseno elegido."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Elegir entre LAN plana o segmentada con criterios tecnicos de rendimiento, seguridad y escalabilidad."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
