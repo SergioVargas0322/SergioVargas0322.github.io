@@ -4585,6 +4585,72 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M17",
+            title: "Utilidades de prueba de red",
+            topics: [
+              {
+                code: "17.1",
+                title: "Comandos de solucion de problemas",
+                summary:
+                  "Uso practico de utilidades CLI para aislar fallas de conectividad: ipconfig, ping, netstat, tracert y nslookup.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_17.1_troubleshooting_commands_flow.png",
+                    alt: "Flujo de diagnostico de red con ipconfig y ping para identificar problemas locales, DNS o de ruta."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "17.1.1 Panorama de utilidades",
+                    items: [
+                      "ipconfig muestra configuracion IP local del host y estado del adaptador.",
+                      "ping verifica alcance a hosts IP y mide tiempo de respuesta extremo a extremo.",
+                      "netstat, tracert y nslookup amplian el diagnostico para sesiones, rutas y resolucion DNS."
+                    ]
+                  },
+                  {
+                    title: "17.1.2 Comando ipconfig",
+                    items: [
+                      "Con ipconfig se validan IPv4, mascara de subred y gateway predeterminado de forma rapida.",
+                      "ipconfig /all incluye datos extendidos: MAC, DNS, DHCP, lease y detalles de interfaz.",
+                      "Si hay direccionamiento desactualizado o invalido, usar ipconfig /release y luego ipconfig /renew."
+                    ]
+                  },
+                  {
+                    title: "17.1.4 Comando ping",
+                    items: [
+                      "El host envia solicitud de eco ICMP y espera respuesta para confirmar conectividad.",
+                      "Secuencia recomendada: ping al gateway local, luego a IP externa y finalmente a nombre de dominio.",
+                      "Si ping a IP funciona pero a nombre falla, el problema suele estar en DNS."
+                    ]
+                  },
+                  {
+                    title: "17.1.5 Interpretacion de resultados",
+                    items: [
+                      "Sin respuesta al gateway: posible falla local (NIC, cable, Wi-Fi, VLAN o configuracion IP).",
+                      "Gateway responde pero destino externo no: revisar ruta WAN, ISP o politicas de filtrado.",
+                      "Ping exitoso y aplicacion falla: investigar servicio especifico en host destino."
+                    ]
+                  },
+                  {
+                    title: "Checklist de troubleshooting",
+                    items: [
+                      "Confirmar capa fisica y estado de interfaz antes de concluir falla de capa 3 o superior.",
+                      "Documentar cada prueba (comando, destino, resultado) para acotar causas sistematicamente.",
+                      "Escalar con evidencia: salida de ipconfig /all, pruebas de ping y sintomas observados."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Aplicar una metodologia de diagnostico reproducible para localizar fallas de conectividad en menos tiempo."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
