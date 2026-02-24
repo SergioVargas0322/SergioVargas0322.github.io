@@ -4121,6 +4121,116 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M15",
+            title: "TCP y UDP",
+            topics: [
+              {
+                code: "15.1",
+                title: "TCP y UDP en la capa de transporte",
+                summary:
+                  "Comparacion de comportamiento entre TCP y UDP para seleccionar el protocolo adecuado segun tipo de aplicacion y criticidad de datos.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_15.1_tcp_udp_comparison.png",
+                    alt: "Comparacion visual entre TCP y UDP con caracteristicas de confiabilidad, latencia y casos de uso."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "15.1.1 Operacion de UDP",
+                    items: [
+                      "UDP envia segmentos con baja sobrecarga y sin confirmaciones, por lo que reduce latencia.",
+                      "No garantiza entrega ni orden; algunos segmentos pueden perderse o llegar fuera de secuencia.",
+                      "Es adecuado para voz, video en tiempo real y aplicaciones donde prima continuidad sobre precision absoluta."
+                    ]
+                  },
+                  {
+                    title: "Operacion de TCP",
+                    items: [
+                      "TCP utiliza numeros de secuencia y acuses de recibo (ACK) para entrega confiable y ordenada.",
+                      "Si detecta perdida de segmentos, retransmite automaticamente para completar la conversacion.",
+                      "Agrega mayor control y sobrecarga, por lo que suele introducir mas latencia que UDP."
+                    ]
+                  },
+                  {
+                    title: "Criterio de seleccion",
+                    items: [
+                      "Usar UDP cuando la aplicacion tolera perdida ocasional y requiere respuesta inmediata.",
+                      "Usar TCP cuando la integridad de los datos es critica, por ejemplo web, banca o transferencia de archivos.",
+                      "La eleccion depende de equilibrio entre velocidad, confiabilidad y experiencia de usuario."
+                    ]
+                  },
+                  {
+                    title: "Checklist de diagnostico",
+                    items: [
+                      "Verificar si la aplicacion espera entrega confiable o solo entrega de mejor esfuerzo.",
+                      "Correlacionar sintomas (cortes, retrasos, retransmisiones) con el protocolo de transporte usado.",
+                      "Evitar comparar rendimiento TCP y UDP sin considerar tipo de trafico y condiciones del enlace."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Distinguir el funcionamiento de TCP y UDP para justificar la seleccion del protocolo en cada servicio."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "15.2",
+                title: "Numeros de puerto, sockets y netstat",
+                summary:
+                  "Uso de puertos TCP/UDP para identificar servicios y conversaciones, interpretacion de pares de sockets y verificacion de conexiones activas con netstat.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_15.2_ports_sockets_netstat.png",
+                    alt: "Resumen de rangos de puertos, par de sockets cliente-servidor y uso operativo del comando netstat."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "15.2.1 Numeros de puerto en capa de transporte",
+                    items: [
+                      "Cada segmento TCP/UDP incluye puerto de origen y puerto de destino para identificar la conversacion.",
+                      "Puertos bien conocidos (0-1023) representan servicios estandar como HTTP 80, HTTPS 443, FTP 21 y DNS 53.",
+                      "En clientes, el puerto de origen suele asignarse de forma dinamica (efimero) para cada sesion."
+                    ]
+                  },
+                  {
+                    title: "15.2.2 Multiplexacion de aplicaciones",
+                    items: [
+                      "Un mismo host puede mantener varias sesiones simultaneas gracias a combinaciones IP:puerto distintas.",
+                      "El servidor responde invirtiendo origen/destino para retornar datos al proceso correcto del cliente.",
+                      "Este mecanismo evita confusiones cuando conviven navegador, correo, FTP y otros servicios a la vez."
+                    ]
+                  },
+                  {
+                    title: "15.2.3 Pares de sockets",
+                    items: [
+                      "Un socket combina direccion IP con numero de puerto, por ejemplo 192.168.1.5:5305.",
+                      "La sesion completa se identifica con el par cliente-servidor, por ejemplo 192.168.1.5:5305 <-> 192.168.1.7:80.",
+                      "Los pares de sockets permiten diferenciar conexiones concurrentes hacia el mismo servicio."
+                    ]
+                  },
+                  {
+                    title: "15.2.4 Comando netstat",
+                    items: [
+                      "Netstat muestra conexiones activas, puertos en escucha y estado de sesiones TCP en el host.",
+                      "La opcion -n evita resolucion de nombres y facilita analisis rapido con IP:puerto numericos.",
+                      "Conexiones no identificadas o inesperadas pueden indicar procesos anomalos y deben investigarse."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Interpretar puertos y sockets para analizar trafico y usar netstat como control basico de seguridad operativa."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
