@@ -5270,13 +5270,51 @@
               {
                 code: "5.1",
                 title: "Características de la Capa de Red",
-                summary: "Base inicial del tema 5.1: Características de la Capa de Red.",
+                summary:
+                  "La capa de red proporciona direccionamiento lógico y enrutamiento entre redes, permitiendo que paquetes viajen de un host origen a un host destino a través de múltiples saltos.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_5.1.png",
+                    alt: "Representación de hosts y routers que encaminan paquetes entre diferentes redes."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "5.1.1 Función principal de la capa 3",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Define direcciones lógicas (IPv4/IPv6) para identificar origen y destino extremo a extremo.",
+                      "Permite la comunicación entre redes distintas, no solo dentro de una misma LAN.",
+                      "Entrega paquetes con modelo de mejor esfuerzo: no garantiza entrega, orden ni latencia fija."
+                    ]
+                  },
+                  {
+                    title: "5.1.2 Encapsulación y unidad de datos",
+                    items: [
+                      "La capa de red agrega un encabezado IP al segmento de capa de transporte y forma un paquete.",
+                      "El paquete viaja por diferentes medios y tecnologías de enlace sin cambiar su dirección IP de destino final.",
+                      "En cada salto cambia la trama de capa 2, pero se mantiene el paquete de capa 3."
+                    ]
+                  },
+                  {
+                    title: "5.1.3 Enrutamiento y selección de ruta",
+                    items: [
+                      "Los routers examinan la IP de destino y consultan su tabla de enrutamiento para decidir el siguiente salto.",
+                      "La ruta elegida depende de prefijo, métrica y protocolos de enrutamiento configurados.",
+                      "Si no existe ruta válida, el paquete se descarta y puede generarse un mensaje de error ICMP."
+                    ]
+                  },
+                  {
+                    title: "5.1.4 Escalabilidad y segmentación de red",
+                    items: [
+                      "Dividir la red en subredes reduce dominios de broadcast y mejora rendimiento.",
+                      "El direccionamiento jerárquico facilita crecimiento ordenado y políticas de seguridad.",
+                      "Diseñar correctamente la capa 3 mejora disponibilidad y operación en redes empresariales."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar cómo la capa de red direcciona y enruta paquetes entre redes, y por qué es clave para la escalabilidad de la infraestructura."
                     ]
                   }
                 ]
@@ -5284,13 +5322,51 @@
               {
                 code: "5.2",
                 title: "Paquete IPv4",
-                summary: "Base inicial del tema 5.2: Paquete IPv4.",
+                summary:
+                  "IPv4 utiliza un encabezado con campos de control para direccionamiento, vida útil del paquete, fragmentación y entrega al protocolo de capa superior correspondiente.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_5.2.png",
+                    alt: "Campos principales de un encabezado IPv4 y su función durante el enrutamiento."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "5.2.1 Estructura del encabezado IPv4",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Campos clave: versión, longitud de encabezado (IHL), longitud total, TTL, protocolo e IP origen/destino.",
+                      "El campo Protocolo identifica la carga útil: por ejemplo, TCP (6), UDP (17) o ICMP (1).",
+                      "El checksum de encabezado valida integridad del header en cada salto."
+                    ]
+                  },
+                  {
+                    title: "5.2.2 Fragmentación y MTU",
+                    items: [
+                      "Si un paquete supera la MTU del enlace de salida, IPv4 puede fragmentarlo (según banderas de fragmentación).",
+                      "Los fragmentos se reensamblan en el host destino, usando identificación y offset.",
+                      "La fragmentación excesiva afecta rendimiento; por eso se recomienda ajustar MTU/MSS cuando aplica."
+                    ]
+                  },
+                  {
+                    title: "5.2.3 TTL y control de bucles",
+                    items: [
+                      "TTL (Time To Live) se decrementa en cada router para evitar bucles infinitos.",
+                      "Al llegar a cero, el router descarta el paquete y normalmente responde con ICMP Time Exceeded.",
+                      "Herramientas como traceroute aprovechan este comportamiento para mapear saltos."
+                    ]
+                  },
+                  {
+                    title: "5.2.4 Buenas prácticas operativas",
+                    items: [
+                      "Verificar direccionamiento, máscara y gateway antes de diagnosticar fallas de capa superior.",
+                      "Usar ping y traceroute para validar alcance y ruta efectiva.",
+                      "Mantener un plan de direccionamiento documentado simplifica soporte y crecimiento."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Interpretar los campos más relevantes del paquete IPv4 y relacionarlos con decisiones de enrutamiento y diagnóstico."
                     ]
                   }
                 ]
@@ -5298,13 +5374,51 @@
               {
                 code: "5.3",
                 title: "Paquete IPv6",
-                summary: "Base inicial del tema 5.3: Paquete IPv6.",
+                summary:
+                  "IPv6 simplifica el encabezado base, amplía el espacio de direccionamiento y usa encabezados de extensión para funcionalidades adicionales, mejorando eficiencia y escalabilidad.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_5.3.png",
+                    alt: "Estructura del encabezado IPv6 con campos base y referencia a encabezados de extensión."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "5.3.1 Encabezado base IPv6",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Campos principales: versión, clase de tráfico, etiqueta de flujo, longitud de carga útil, siguiente encabezado y límite de saltos.",
+                      "Dirección de origen y destino son de 128 bits, lo que amplía significativamente el espacio de direcciones.",
+                      "El encabezado base tiene tamaño fijo, lo que simplifica procesamiento en routers."
+                    ]
+                  },
+                  {
+                    title: "5.3.2 Encabezados de extensión",
+                    items: [
+                      "Opciones como fragmentación, seguridad o ruteo especial se manejan en encabezados de extensión.",
+                      "Esto evita sobrecargar el encabezado base y mejora eficiencia para tráfico común.",
+                      "El campo Siguiente encabezado encadena el tipo de cabecera siguiente (otra extensión o capa 4)."
+                    ]
+                  },
+                  {
+                    title: "5.3.3 Diferencias operativas frente a IPv4",
+                    items: [
+                      "En IPv6, los routers intermedios no fragmentan paquetes; la fragmentación la realiza el host origen.",
+                      "No existe broadcast como en IPv4; se usan multicast y anycast para comunicaciones grupales o selectivas.",
+                      "IPv6 favorece autoconfiguración y diseño jerárquico más limpio en redes modernas."
+                    ]
+                  },
+                  {
+                    title: "Checklist de comprensión",
+                    items: [
+                      "Reconocer campos del encabezado base IPv6 y su función.",
+                      "Explicar por qué IPv6 separa opciones avanzadas mediante encabezados de extensión.",
+                      "Distinguir al menos tres diferencias operativas entre IPv4 e IPv6."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Relacionar la estructura del paquete IPv6 con sus ventajas de escalabilidad, eficiencia y operación en redes actuales."
                     ]
                   }
                 ]
