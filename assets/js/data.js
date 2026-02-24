@@ -4653,6 +4653,553 @@
             ]
           }
         ]
+      },
+      {
+        id: "network-devices-initial-config",
+        title: "Dispositivos de Red y Configuracion Inicial",
+        provider: "Cisco Networking Academy",
+        level: "Intermedio",
+        status: "En curso",
+        estimatedHours: 70,
+        summary:
+          "Curso de transicion a configuracion de dispositivos Cisco: diseno de red, direccionamiento, transporte, IOS y pruebas de conectividad.",
+        tags: ["redes", "switching", "routing", "ios", "troubleshooting"],
+        modules: [
+          {
+            key: "M1",
+            title: "Diseno de redes",
+            topics: [
+              {
+                code: "1.1",
+                title: "Redes Confiables",
+                summary: "Base inicial del tema 1.1: Redes Confiables.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.2",
+                title: "Diseno de Redes Jerarquico",
+                summary: "Base inicial del tema 1.2: Diseno de Redes Jerarquico.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M2",
+            title: "La Nube y Virtualizacion",
+            topics: [
+              {
+                code: "2.1",
+                title: "La Nube y Servicios en la Nube",
+                summary: "Base inicial del tema 2.1: La Nube y Servicios en la Nube.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "2.2",
+                title: "Virtualizacion",
+                summary: "Base inicial del tema 2.2: Virtualizacion.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M3",
+            title: "Sistemas de Numeracion",
+            topics: [
+              {
+                code: "3.1",
+                title: "Sistema Numerico Binario",
+                summary: "Base inicial del tema 3.1: Sistema Numerico Binario.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "3.2",
+                title: "Sistema Numerico Hexadecimal",
+                summary: "Base inicial del tema 3.2: Sistema Numerico Hexadecimal.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M4",
+            title: "Comunicacion Ethernet",
+            topics: [
+              {
+                code: "4.1",
+                title: "Ethernet",
+                summary: "Base inicial del tema 4.1: Ethernet.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.2",
+                title: "Tramas de Ethernet",
+                summary: "Base inicial del tema 4.2: Tramas de Ethernet.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.3",
+                title: "Direccion MAC de Ethernet",
+                summary: "Base inicial del tema 4.3: Direccion MAC de Ethernet.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.4",
+                title: "La Tabla de Direcciones MAC",
+                summary: "Base inicial del tema 4.4: La Tabla de Direcciones MAC.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M5",
+            title: "La Capa de Red",
+            topics: [
+              {
+                code: "5.1",
+                title: "Caracteristicas de la Capa de Red",
+                summary: "Base inicial del tema 5.1: Caracteristicas de la Capa de Red.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "5.2",
+                title: "Paquete IPv4",
+                summary: "Base inicial del tema 5.2: Paquete IPv4.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "5.3",
+                title: "Paquete IPv6",
+                summary: "Base inicial del tema 5.3: Paquete IPv6.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M6",
+            title: "Estructura de la direccion IPv4",
+            topics: [
+              {
+                code: "6.1",
+                title: "Estructura de la direccion IPv4",
+                summary: "Base inicial del tema 6.1: Estructura de la direccion IPv4.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M7",
+            title: "Resolucion de direccion",
+            topics: [
+              {
+                code: "7.1",
+                title: "ARP",
+                summary: "Base inicial del tema 7.1: ARP.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M8",
+            title: "Servicios de Direccionamiento IP",
+            topics: [
+              {
+                code: "8.1",
+                title: "Servicios de DNS",
+                summary: "Base inicial del tema 8.1: Servicios de DNS.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "8.2",
+                title: "Servicios de DHCP",
+                summary: "Base inicial del tema 8.2: Servicios de DHCP.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M9",
+            title: "La Capa de Transporte",
+            topics: [
+              {
+                code: "9.1",
+                title: "Transporte de Datos",
+                summary: "Base inicial del tema 9.1: Transporte de Datos.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "9.2",
+                title: "Descripcion General de TCP",
+                summary: "Base inicial del tema 9.2: Descripcion General de TCP.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "9.3",
+                title: "Descripcion General de UDP",
+                summary: "Base inicial del tema 9.3: Descripcion General de UDP.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "9.4",
+                title: "Numeros de Puerto",
+                summary: "Base inicial del tema 9.4: Numeros de Puerto.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "9.5",
+                title: "Proceso de Comunicacion TCP",
+                summary: "Base inicial del tema 9.5: Proceso de Comunicacion TCP.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "9.6",
+                title: "Confiabilidad y control de flujo",
+                summary: "Base inicial del tema 9.6: Confiabilidad y control de flujo.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "9.7",
+                title: "Comunicacion UDP",
+                summary: "Base inicial del tema 9.7: Comunicacion UDP.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M10",
+            title: "La Linea de Comandos del IOS de Cisco",
+            topics: [
+              {
+                code: "10.1",
+                title: "Navegacion del IOS",
+                summary: "Base inicial del tema 10.1: Navegacion del IOS.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "10.2",
+                title: "La Estructura de Comandos",
+                summary: "Base inicial del tema 10.2: La Estructura de Comandos.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "10.3",
+                title: "Ver la Informacion del Dispositivo",
+                summary: "Base inicial del tema 10.3: Ver la Informacion del Dispositivo.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M11",
+            title: "Crear una Pequena Red de Cisco",
+            topics: [
+              {
+                code: "11.1",
+                title: "Configuracion Basica del Conmutador",
+                summary: "Base inicial del tema 11.1: Configuracion Basica del Conmutador.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "11.2",
+                title: "Configurar los Ajustes Iniciales del Enrutador",
+                summary: "Base inicial del tema 11.2: Configurar los Ajustes Iniciales del Enrutador.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "11.3",
+                title: "Asegurar los Dispositivos",
+                summary: "Base inicial del tema 11.3: Asegurar los Dispositivos.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "11.4",
+                title: "Configuracion de la Puerta de Enlace Predeterminada",
+                summary: "Base inicial del tema 11.4: Configuracion de la Puerta de Enlace Predeterminada.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M12",
+            title: "ICMP",
+            topics: [
+              {
+                code: "12.1",
+                title: "Mensajes ICMP",
+                summary: "Base inicial del tema 12.1: Mensajes ICMP.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "12.2",
+                title: "Pruebas de Ping y Traceroute",
+                summary: "Base inicial del tema 12.2: Pruebas de Ping y Traceroute.",
+                sections: [
+                  {
+                    title: "Puntos clave iniciales",
+                    items: [
+                      "Estructura base cargada desde el documento oficial del curso.",
+                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   };
