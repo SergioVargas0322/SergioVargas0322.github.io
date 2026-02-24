@@ -3511,6 +3511,124 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M10",
+            title: "Formatos y reglas de direccionamiento IPv6",
+            topics: [
+              {
+                code: "10.1",
+                title: "Problemas con IPv4 y necesidad de IPv6",
+                summary:
+                  "Motivos t\u00e9cnicos y operativos para migrar a IPv6: agotamiento IPv4, l\u00edmites de NAT y estrategias de coexistencia.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_10.1_ipv6_need_transition.png",
+                    alt: "Infograf\u00eda sobre agotamiento IPv4, l\u00edmites de NAT y t\u00e9cnicas de transici\u00f3n hacia IPv6."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "10.1.1 Necesidad de IPv6",
+                    items: [
+                      "IPv4 se agota frente al crecimiento de usuarios, servicios y dispositivos conectados.",
+                      "IPv6 usa 128 bits y provee un espacio de direcciones muy superior para escalabilidad global.",
+                      "La migraci\u00f3n tambi\u00e9n permite superar limitaciones funcionales heredadas del uso intensivo de NAT."
+                    ]
+                  },
+                  {
+                    title: "Presi\u00f3n de crecimiento e IoT",
+                    items: [
+                      "La masificaci\u00f3n de dispositivos m\u00f3viles y del Internet de las cosas incrementa demanda de direccionamiento \u00fanico.",
+                      "El modelo de Internet actual va m\u00e1s all\u00e1 de web/correo: sensores, salud, industria y hogares conectados.",
+                      "IPv6 reduce dependencia de soluciones paliativas y mejora sostenibilidad a largo plazo."
+                    ]
+                  },
+                  {
+                    title: "10.1.2 Coexistencia IPv4/IPv6",
+                    items: [
+                      "Doble pila (dual-stack): IPv4 e IPv6 operan en paralelo en equipos y enlaces.",
+                      "Tunelizaci\u00f3n: encapsula tr\u00e1fico IPv6 sobre infraestructura IPv4 existente.",
+                      "Traducci\u00f3n (NAT64): habilita interacci\u00f3n entre nodos solo IPv6 y recursos IPv4."
+                    ]
+                  },
+                  {
+                    title: "Criterio de transici\u00f3n",
+                    items: [
+                      "T\u00faneles y traducci\u00f3n son mecanismos temporales de migraci\u00f3n, no el estado objetivo final.",
+                      "La meta recomendada es conectividad IPv6 nativa extremo a extremo donde sea posible.",
+                      "Un plan por fases evita interrupciones y permite validar compatibilidad de aplicaciones."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Justificar por qu\u00e9 IPv6 es necesario y seleccionar una estrategia de coexistencia adecuada."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "10.2",
+                title: "Direccionamiento IPv6: formato y compresi\u00f3n",
+                summary:
+                  "Representaci\u00f3n hexadecimal de direcciones IPv6 y aplicaci\u00f3n correcta de reglas de compresi\u00f3n para lectura y configuraci\u00f3n.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_10.2_ipv6_format_rules.png",
+                    alt: "Reglas de formato IPv6: hextetos, omisi\u00f3n de ceros iniciales y uso de doble dos puntos."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "10.2.1 Sistema hexadecimal",
+                    items: [
+                      "IPv6 se expresa en hexadecimal (0-9 y A-F) para representar direcciones largas de forma legible.",
+                      "Cada d\u00edgito hexadecimal equivale a 4 bits.",
+                      "La notaci\u00f3n es insensible a may\u00fasculas/min\u00fasculas."
+                    ]
+                  },
+                  {
+                    title: "10.2.2 Formato de direcci\u00f3n IPv6",
+                    items: [
+                      "Una direcci\u00f3n IPv6 tiene 128 bits y se escribe como 8 hextetos separados por dos puntos.",
+                      "Cada hexteto representa 16 bits (4 d\u00edgitos hexadecimales).",
+                      "El formato preferido usa los 32 d\u00edgitos hexadecimales completos."
+                    ]
+                  },
+                  {
+                    title: "10.2.4 Regla 1: omitir ceros iniciales",
+                    items: [
+                      "Se pueden omitir solo los ceros a la izquierda dentro de un hexteto.",
+                      "No se deben omitir ceros finales porque la direcci\u00f3n se vuelve ambigua.",
+                      "Ejemplo: 00ab -> ab, 01ab -> 1ab."
+                    ]
+                  },
+                  {
+                    title: "10.2.5 Regla 2: doble dos puntos (::)",
+                    items: [
+                      ":: reemplaza una sola secuencia contigua de hextetos en cero.",
+                      "Solo puede usarse una vez por direcci\u00f3n IPv6.",
+                      "Si existen varias secuencias de ceros, se recomienda comprimir la m\u00e1s larga."
+                    ]
+                  },
+                  {
+                    title: "Checklist de validaci\u00f3n",
+                    items: [
+                      "Verificar que una direcci\u00f3n comprimida con :: pueda expandirse de forma \u00fanica.",
+                      "Confirmar que no se eliminaron ceros finales por error.",
+                      "Estandarizar estilo de escritura para evitar confusiones en operaciones."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Escribir y leer direcciones IPv6 en formato preferido y comprimido sin ambig\u00fcedad."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
