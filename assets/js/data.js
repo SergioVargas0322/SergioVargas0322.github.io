@@ -3849,6 +3849,116 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M13",
+            title: "El proceso ARP",
+            topics: [
+              {
+                code: "13.1",
+                title: "MAC e IP en comunicaciones locales y remotas",
+                summary:
+                  "Relacion entre direccion logica (IP) y direccion fisica (MAC), y como cambia la encapsulacion en cada salto.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_13.1_mac_ip_local_remote.png",
+                    alt: "Comparacion de direccionamiento MAC e IP para destino local y destino en red remota."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "13.1.1 Destino en la misma red",
+                    items: [
+                      "En una LAN, la trama Ethernet usa como MAC destino la del host final dentro del mismo segmento.",
+                      "La IP identifica origen y destino logicos; la MAC permite entrega NIC a NIC en el enlace local.",
+                      "Ejemplo local: IP destino 192.168.10.11 y MAC destino 55-55-55."
+                    ]
+                  },
+                  {
+                    title: "13.1.2 Destino en red remota",
+                    items: [
+                      "Si la IP destino esta fuera de la subred, la MAC destino inicial es la del gateway predeterminado.",
+                      "El router desencapsula Capa 2, evalua IP destino y reencapsula para el siguiente salto.",
+                      "En cada enlace cambian MAC origen/destino, pero la IP destino final se mantiene."
+                    ]
+                  },
+                  {
+                    title: "Encapsulacion por salto",
+                    items: [
+                      "Cada medio de enlace exige una nueva trama de Capa 2 apropiada para esa interfaz.",
+                      "La decision de forwarding depende de capa 3; la entrega fisica se realiza en capa 2.",
+                      "Este desacople permite atravesar multiples redes con tecnologias de enlace distintas."
+                    ]
+                  },
+                  {
+                    title: "Relacion practica MAC-IP",
+                    items: [
+                      "IP responde al 'donde va' en la red logica; MAC responde al 'a quien entrego' en el enlace actual.",
+                      "Sin resolucion MAC correcta, el paquete IP no puede salir como trama valida.",
+                      "Comprender esta relacion acelera troubleshooting de conectividad local y de primer salto."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Diferenciar claramente el rol de IP y MAC al enviar trafico dentro de la LAN o hacia redes remotas."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "13.2",
+                title: "Contencion de difusiones y funcionamiento de ARP",
+                summary:
+                  "Impacto del broadcast en dominios Ethernet y uso de ARP para resolver direcciones MAC a partir de IPv4.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_13.2_broadcast_arp.png",
+                    alt: "Difusion Ethernet, dominio de broadcast y flujo ARP de solicitud/respuesta."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "13.2.1 Difusion Ethernet",
+                    items: [
+                      "Una trama broadcast usa MAC destino FF-FF-FF-FF-FF-FF y alcanza todos los hosts del dominio local.",
+                      "El switch hace flooding por todos los puertos excepto el de entrada.",
+                      "Los routers reciben broadcast local pero no lo reenvian a otras redes."
+                    ]
+                  },
+                  {
+                    title: "13.2.2 Dominios de difusion",
+                    items: [
+                      "Una LAN con switches forma un dominio de broadcast donde todos procesan difusiones.",
+                      "Al crecer el numero de hosts, aumenta trafico broadcast y puede degradar rendimiento.",
+                      "Dividir la red con routers reduce alcance de difusion y mejora escalabilidad."
+                    ]
+                  },
+                  {
+                    title: "13.2.3-13.2.5 ARP",
+                    items: [
+                      "ARP resuelve la MAC cuando el host conoce la IPv4 destino en su red local.",
+                      "Proceso: solicitud ARP en broadcast, respuesta del host correcto, almacenamiento en tabla ARP.",
+                      "Con la entrada ARP aprendida, los siguientes envios pueden ser unicast sin nueva solicitud inmediata."
+                    ]
+                  },
+                  {
+                    title: "Contencion operativa",
+                    items: [
+                      "ARP y otros broadcast deben mantenerse controlados para evitar consumo excesivo en acceso.",
+                      "Segmentacion adecuada y disenio de subredes limitan impacto de difusion masiva.",
+                      "Revisar tablas ARP y comportamiento de flooding ayuda a detectar anomalias de red."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar como ARP funciona dentro del dominio de broadcast y por que la segmentacion lo contiene."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
