@@ -4383,6 +4383,102 @@
                     ]
                   }
                 ]
+              },
+              {
+                code: "16.4",
+                title: "Clientes y servidores web",
+                summary:
+                  "Funcionamiento de HTTP y HTML en la publicacion de contenido web, y transicion a HTTPS para proteger datos durante la navegacion.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_16.4_http_html_https_flow.png",
+                    alt: "Flujo web con DNS, solicitud HTTP/HTTPS, entrega de HTML y comparacion de seguridad entre HTTP y HTTPS."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "16.4.1 HTTP y HTML en la experiencia web",
+                    items: [
+                      "HTTP define reglas de intercambio entre cliente y servidor para solicitar y entregar recursos web.",
+                      "HTML es el lenguaje de marcado que estructura texto, imagenes, enlaces y elementos de interfaz.",
+                      "El navegador interpreta el HTML recibido para construir la pagina visible al usuario."
+                    ]
+                  },
+                  {
+                    title: "16.4.2 Flujo operativo de una solicitud web",
+                    items: [
+                      "El cliente resuelve primero el nombre de dominio a una direccion IP usando DNS.",
+                      "Con la IP obtenida, envia solicitud al servicio web en puerto 80 (HTTP) o 443 (HTTPS).",
+                      "El servidor responde con contenido HTML y recursos asociados para renderizado completo."
+                    ]
+                  },
+                  {
+                    title: "Seguridad y estandares",
+                    items: [
+                      "HTTP sin cifrado puede ser interceptado por terceros durante el transito de datos.",
+                      "HTTPS agrega cifrado TLS para proteger confidencialidad e integridad de la comunicacion.",
+                      "Los estandares HTTP/HTML permiten interoperabilidad entre clientes y servidores de distintos fabricantes."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar como colaboran HTTP y HTML, y por que HTTPS es requisito para navegacion segura."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "16.5",
+                title: "Clientes y servidores FTP",
+                summary:
+                  "Uso de FTP para transferir y administrar archivos remotos, diferenciando canal de control y canal de datos entre cliente y servidor.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_16.5_ftp_clients_servers.png",
+                    alt: "Arquitectura FTP con cliente-servidor, canal de control TCP 21 y canal de datos TCP 20 para transferencia de archivos."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "16.5.1 Protocolo de transferencia de archivos",
+                    items: [
+                      "FTP permite subir y descargar archivos entre hosts a traves de una sesion cliente-servidor.",
+                      "El canal de control usa TCP 21 para autenticacion y comandos de gestion de archivos.",
+                      "El canal de datos suele usar TCP 20 para transportar contenido solicitado o cargado."
+                    ]
+                  },
+                  {
+                    title: "Gestion remota por comandos",
+                    items: [
+                      "Ademas de transferir, FTP permite listar, renombrar y eliminar archivos segun permisos.",
+                      "Esta capacidad facilita mantenimiento remoto de repositorios y sitios web basicos.",
+                      "Una mala configuracion de permisos puede exponer informacion sensible."
+                    ]
+                  },
+                  {
+                    title: "16.5.2 Software cliente FTP",
+                    items: [
+                      "Clientes GUI como FileZilla muestran panel local y remoto para transferencias por arrastre.",
+                      "En servidores publicos puede usarse usuario anonymous; entornos privados exigen credenciales.",
+                      "Antes de operar en produccion conviene validar destino, permisos y trazabilidad de cambios."
+                    ]
+                  },
+                  {
+                    title: "Consideracion de seguridad",
+                    items: [
+                      "FTP tradicional transmite credenciales en texto plano y no cifra el canal por defecto.",
+                      "Para mayor seguridad en entornos reales se recomienda FTPS o SFTP segun politica organizacional.",
+                      "Aplicar cifrado y control de acceso reduce riesgo de fuga o manipulacion de archivos."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Aplicar FTP con criterio tecnico, entendiendo su funcionamiento y limites de seguridad."
+                    ]
+                  }
+                ]
               }
             ]
           }
