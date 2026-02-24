@@ -5432,13 +5432,59 @@
               {
                 code: "6.1",
                 title: "Estructura de la dirección IPv4",
-                summary: "Base inicial del tema 6.1: Estructura de la dirección IPv4.",
+                summary:
+                  "Una dirección IPv4 tiene 32 bits divididos en cuatro octetos. Su interpretación junto con la máscara o prefijo define qué parte identifica la red y qué parte identifica al host.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_6.1.png",
+                    alt: "Representación de una dirección IPv4 dividida en cuatro octetos y su conversión entre decimal y binario."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "6.1.1 Formato de una dirección IPv4",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "IPv4 usa 32 bits agrupados en 4 octetos de 8 bits, escritos en decimal punteado (ejemplo: 192.168.10.10).",
+                      "Cada octeto puede tomar valores entre 0 y 255.",
+                      "El sistema procesa esas direcciones en binario, aunque se administren en decimal."
+                    ]
+                  },
+                  {
+                    title: "6.1.2 Red y host: máscara y prefijo",
+                    items: [
+                      "La máscara de subred o longitud de prefijo (/24, /26, etc.) separa la porción de red de la porción de host.",
+                      "Con /24, los primeros 24 bits identifican la red y los últimos 8 bits al host.",
+                      "Conocer esta división permite determinar si dos equipos pertenecen a la misma red lógica."
+                    ]
+                  },
+                  {
+                    title: "6.1.3 Cálculos básicos de direccionamiento",
+                    items: [
+                      "Dirección de red: bits de host en 0.",
+                      "Dirección de broadcast: bits de host en 1.",
+                      "Hosts válidos: direcciones entre red y broadcast (excepto ambos extremos)."
+                    ]
+                  },
+                  {
+                    title: "6.1.4 Errores comunes y validación",
+                    items: [
+                      "Asignar la misma IP a dos hosts genera conflicto de direccionamiento.",
+                      "Usar máscara incorrecta produce fallas de alcance aunque la IP parezca válida.",
+                      "Validar configuración con ipconfig/ifconfig y pruebas de conectividad (ping) reduce tiempo de diagnóstico."
+                    ]
+                  },
+                  {
+                    title: "Checklist de comprensión",
+                    items: [
+                      "Convertir un octeto IPv4 entre decimal y binario.",
+                      "Identificar red, broadcast y rango de hosts para un prefijo dado.",
+                      "Detectar errores de IP/máscara que impiden comunicación."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Interpretar y calcular correctamente la estructura de una dirección IPv4 para diseñar y solucionar redes básicas."
                     ]
                   }
                 ]
