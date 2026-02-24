@@ -3629,6 +3629,116 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M11",
+            title: "Direccionamiento dinamico con DHCP",
+            topics: [
+              {
+                code: "11.1",
+                title: "Direccionamiento estatico y dinamico",
+                summary:
+                  "Comparacion entre configuracion manual y asignacion automatica de IPv4 para optimizar control operativo y escalabilidad.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_11.1_static_vs_dhcpv4.png",
+                    alt: "Comparativa de direccionamiento IPv4 estatico frente a direccionamiento dinamico con DHCP."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "11.1.1 Asignacion estatica de IPv4",
+                    items: [
+                      "En modo estatico, el administrador configura manualmente IP, mascara y gateway en cada host.",
+                      "Es apropiado para servidores, impresoras y dispositivos que deben mantener direccion estable.",
+                      "Aporta control fino, pero incrementa tiempo operativo y riesgo de errores de captura."
+                    ]
+                  },
+                  {
+                    title: "11.1.2 Asignacion dinamica con DHCP",
+                    items: [
+                      "DHCP entrega automaticamente parametros de red: IPv4, mascara, gateway y opciones adicionales.",
+                      "Reduce trabajo manual del soporte y disminuye conflictos por direccion duplicada.",
+                      "Las direcciones se asignan por arrendamiento (lease) y regresan al pool cuando expiran."
+                    ]
+                  },
+                  {
+                    title: "11.1.3 Roles de servidor DHCP",
+                    items: [
+                      "Puede ejecutarse en servidor dedicado, router empresarial o router domestico.",
+                      "En redes domesticas, el router suele actuar como cliente DHCP hacia ISP y servidor para LAN interna.",
+                      "El servicio DHCP debe dimensionarse segun cantidad de clientes y politicas de renovacion."
+                    ]
+                  },
+                  {
+                    title: "Criterio de implementacion",
+                    items: [
+                      "Usar estatico para infraestructura critica y dinamico para estaciones de usuario.",
+                      "Mantener inventario de reservas y excluir rangos para evitar solapamientos.",
+                      "Documentar pools, tiempos de lease y parametros entregados por segmento."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Elegir correctamente entre direccionamiento estatico y DHCP segun tipo de dispositivo y contexto operativo."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "11.2",
+                title: "Configuracion y operacion de DHCPv4",
+                summary:
+                  "Funcionamiento del intercambio DORA, parametros distribuidos por DHCP y validacion basica de conectividad en clientes.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_11.2_dhcpv4_dora_flow.png",
+                    alt: "Flujo DHCPv4 DORA entre cliente y servidor con parametros de configuracion entregados."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "11.2.1 Operacion DHCPv4 (DORA)",
+                    items: [
+                      "Discover: el cliente emite broadcast para localizar servidores DHCP.",
+                      "Offer: el servidor propone direccion y parametros de configuracion.",
+                      "Request: el cliente solicita formalmente la oferta seleccionada; ACK: el servidor confirma y registra lease."
+                    ]
+                  },
+                  {
+                    title: "11.2.2 Configuracion del servicio",
+                    items: [
+                      "Definir rango de direcciones (pool), mascara, gateway y DNS para la red objetivo.",
+                      "Verificar que el rango no incluya IP reservadas para infraestructura o servicios estaticos.",
+                      "En routers domesticos/SMB, DHCP suele venir habilitado por defecto y debe ajustarse al plan de direccionamiento."
+                    ]
+                  },
+                  {
+                    title: "Validacion posterior",
+                    items: [
+                      "Confirmar que cada cliente reciba IP unica dentro del rango esperado.",
+                      "Probar conectividad local y hacia gateway con ping una vez asignada la configuracion.",
+                      "Revisar tabla de leases para asociacion correcta entre MAC y direccion entregada."
+                    ]
+                  },
+                  {
+                    title: "Errores frecuentes",
+                    items: [
+                      "Pool agotado por lease demasiado largo o falta de capacidad planificada.",
+                      "Gateway/DNS mal configurados en servidor DHCP, aun con IP valida en clientes.",
+                      "Solapamiento entre direccionamiento estatico y dinamico en la misma subred."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Implementar y verificar DHCPv4 para entregar configuracion consistente y reducir incidencias en usuarios finales."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
