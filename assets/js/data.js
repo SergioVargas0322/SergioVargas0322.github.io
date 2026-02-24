@@ -4656,71 +4656,71 @@
       },
       {
         id: "network-devices-initial-config",
-        title: "Dispositivos de Red y Configuracion Inicial",
+        title: "Dispositivos de Red y Configuración Inicial",
         provider: "Cisco Networking Academy",
         level: "Intermedio",
         status: "En curso",
         estimatedHours: 70,
         summary:
-          "Curso de transicion a configuracion de dispositivos Cisco: diseno de red, direccionamiento, transporte, IOS y pruebas de conectividad.",
+          "Curso de transición a configuración de dispositivos Cisco: diseño de red, direccionamiento, transporte, IOS y pruebas de conectividad.",
         tags: ["redes", "switching", "routing", "ios", "troubleshooting"],
         modules: [
           {
             key: "M1",
-            title: "Diseno de redes",
+            title: "Diseño de redes",
             topics: [
               {
                 code: "1.1",
                 title: "Redes confiables",
                 summary:
-                  "Una red confiable combina tolerancia a fallas, escalabilidad, calidad de servicio y seguridad para sostener la operacion del negocio.",
+                  "Una red confiable combina tolerancia a fallas, escalabilidad, calidad de servicio y seguridad para sostener la operación del negocio.",
                 images: [
                   {
                     src: "./assets/images/network-devices-initial-config/C6_1.1.png",
-                    alt: "Topologia con rutas redundantes entre segmentos LAN y salida a Internet."
+                    alt: "Topología con rutas redundantes entre segmentos LAN y salida a Internet."
                   }
                 ],
                 sections: [
                   {
                     title: "1.1.1 Arquitectura de red",
                     items: [
-                      "La arquitectura de red define como se integran infraestructura fisica, servicios y protocolos para conectar usuarios, dispositivos y aplicaciones.",
-                      "Disenar con arquitectura estandar facilita interoperabilidad entre fabricantes, crecimiento ordenado y operacion mantenible.",
-                      "Una red moderna debe soportar trafico convergente (datos, voz y video) sin perder estabilidad."
+                      "La arquitectura de red define cómo se integran infraestructura física, servicios y protocolos para conectar usuarios, dispositivos y aplicaciones.",
+                      "Diseñar con arquitectura estándar facilita interoperabilidad entre fabricantes, crecimiento ordenado y operación mantenible.",
+                      "Una red moderna debe soportar tráfico convergente (datos, voz y video) sin perder estabilidad."
                     ]
                   },
                   {
                     title: "1.1.2-1.1.3 Tolerancia a fallas y redundancia",
                     items: [
                       "La tolerancia a fallas busca que la red siga operando aunque falle un enlace o un equipo.",
-                      "La redundancia agrega rutas alternativas; si un camino cae, el trafico puede reenrutarse por otro sin interrumpir el servicio.",
-                      "La conmutacion de paquetes permite que diferentes paquetes del mismo flujo tomen rutas distintas segun el estado de la red."
+                      "La redundancia agrega rutas alternativas; si un camino cae, el tráfico puede reenrutarse por otro sin interrumpir el servicio.",
+                      "La conmutación de paquetes permite que diferentes paquetes del mismo flujo tomen rutas distintas según el estado de la red."
                     ]
                   },
                   {
                     title: "1.1.4-1.1.5 Escalabilidad y calidad de servicio (QoS)",
                     items: [
-                      "Escalabilidad significa crecer en usuarios, sedes y aplicaciones sin degradar de forma critica el rendimiento existente.",
-                      "QoS prioriza trafico sensible al retardo, como voz y video en tiempo real, frente a trafico menos urgente.",
-                      "Cuando hay congestion, las politicas de QoS reducen impacto en experiencia de usuario y continuidad operativa."
+                      "Escalabilidad significa crecer en usuarios, sedes y aplicaciones sin degradar de forma crítica el rendimiento existente.",
+                      "QoS prioriza tráfico sensible al retardo, como voz y video en tiempo real, frente a tráfico menos urgente.",
+                      "Cuando hay congestión, las políticas de QoS reducen impacto en experiencia de usuario y continuidad operativa."
                     ]
                   },
                   {
                     title: "1.1.6 Seguridad como requisito de confiabilidad",
                     items: [
-                      "Una red confiable tambien debe ser segura: sin seguridad, la disponibilidad y el rendimiento pueden colapsar por incidentes.",
-                      "La triada CIA orienta controles basicos: confidencialidad, integridad y disponibilidad de la informacion.",
-                      "Controles minimos esperados: gestion de acceso administrativo, segmentacion, actualizaciones, monitoreo y respaldos de configuracion."
+                      "Una red confiable también debe ser segura: sin seguridad, la disponibilidad y el rendimiento pueden colapsar por incidentes.",
+                      "La tríada CIA orienta controles básicos: confidencialidad, integridad y disponibilidad de la información.",
+                      "Controles mínimos esperados: gestión de acceso administrativo, segmentación, actualizaciones, monitoreo y respaldos de configuración."
                     ]
                   },
                   {
-                    title: "Checklist de diseno confiable",
+                    title: "Checklist de diseño confiable",
                     items: [
-                      "Definir enlaces o equipos redundantes en puntos criticos.",
-                      "Separar trafico por prioridad y aplicar politicas de QoS.",
+                      "Definir enlaces o equipos redundantes en puntos críticos.",
+                      "Separar tráfico por prioridad y aplicar políticas de QoS.",
                       "Planificar crecimiento de usuarios, sedes y aplicaciones.",
                       "Establecer controles de seguridad en infraestructura y datos.",
-                      "Documentar topologia, riesgos y procedimientos de recuperacion."
+                      "Documentar topología, riesgos y procedimientos de recuperación."
                     ]
                   },
                   {
@@ -4733,61 +4733,61 @@
               },
               {
                 code: "1.2",
-                title: "Diseno de redes jerarquico",
+                title: "Diseño de redes jerárquico",
                 summary:
-                  "El diseno jerarquico organiza la red en capas para mejorar rendimiento, escalabilidad, administracion y control del trafico.",
+                  "El diseño jerárquico organiza la red en capas para mejorar rendimiento, escalabilidad, administración y control del tráfico.",
                 images: [
                   {
                     src: "./assets/images/network-devices-initial-config/C6_1.2.png",
-                    alt: "Dos redes IP conectadas por un router para ilustrar porcion de red y porcion de host en direccionamiento."
+                    alt: "Dos redes IP conectadas por un router para ilustrar porción de red y porción de host en direccionamiento."
                   }
                 ],
                 sections: [
                   {
-                    title: "1.2.1 Direcciones fisicas y logicas",
+                    title: "1.2.1 Direcciones físicas y lógicas",
                     items: [
-                      "La direccion MAC identifica de forma unica la interfaz de red del host y se mantiene estable en el adaptador.",
-                      "La direccion IP es logica y depende de la red donde esta conectado el host; puede cambiar entre ubicaciones.",
-                      "Para comunicar correctamente en redes jerarquicas se usan ambas: MAC para entrega local e IP para encaminamiento entre redes."
+                      "La dirección MAC identifica de forma única la interfaz de red del host y se mantiene estable en el adaptador.",
+                      "La dirección IP es lógica y depende de la red donde está conectado el host; puede cambiar entre ubicaciones.",
+                      "Para comunicar correctamente en redes jerárquicas se usan ambas: MAC para entrega local e IP para encaminamiento entre redes."
                     ]
                   },
                   {
-                    title: "1.2.2 Inspeccion de parametros de red en el host",
+                    title: "1.2.2 Inspección de parámetros de red en el host",
                     items: [
-                      "En equipos de usuario se debe validar estado del adaptador, direccion IP, mascara, gateway y DNS antes de escalar incidentes.",
-                      "Comandos como ipconfig o ipconfig /all permiten corroborar rapidamente configuracion, DHCP y direccion fisica.",
-                      "Distinguir asignacion estatica y dinamica evita errores de configuracion y facilita soporte."
+                      "En equipos de usuario se debe validar estado del adaptador, dirección IP, máscara, gateway y DNS antes de escalar incidentes.",
+                      "Comandos como ipconfig o ipconfig /all permiten corroborar rápidamente configuración, DHCP y dirección física.",
+                      "Distinguir asignación estática y dinámica evita errores de configuración y facilita soporte."
                     ]
                   },
                   {
-                    title: "1.2.4 Por que segmentar con diseno jerarquico",
+                    title: "1.2.4 Por qué segmentar con diseño jerárquico",
                     items: [
-                      "Las redes grandes en un solo dominio de difusion degradan rendimiento y dificultan localizar fallas.",
-                      "Segmentar reduce trafico innecesario, mejora control operativo y limita el alcance de incidentes.",
-                      "Un diseno jerarquico bien planificado facilita crecimiento ordenado y cambios sin interrupciones extensas."
+                      "Las redes grandes en un solo dominio de difusión degradan rendimiento y dificultan localizar fallas.",
+                      "Segmentar reduce tráfico innecesario, mejora control operativo y limita el alcance de incidentes.",
+                      "Un diseño jerárquico bien planificado facilita crecimiento ordenado y cambios sin interrupciones extensas."
                     ]
                   },
                   {
-                    title: "1.2.5-1.2.6 Capas acceso, distribucion y nucleo",
+                    title: "1.2.5-1.2.6 Capas acceso, distribución y núcleo",
                     items: [
                       "Acceso: conecta dispositivos finales mediante switches y puntos de acceso.",
-                      "Distribucion: agrega redes de acceso, aplica politicas y enruta trafico entre segmentos.",
-                      "Nucleo: troncal de alta velocidad con alta disponibilidad para transportar grandes volumenes de datos."
+                      "Distribución: agrega redes de acceso, aplica políticas y enruta tráfico entre segmentos.",
+                      "Núcleo: troncal de alta velocidad con alta disponibilidad para transportar grandes volúmenes de datos."
                     ]
                   },
                   {
-                    title: "Buenas practicas de diseno jerarquico",
+                    title: "Buenas prácticas de diseño jerárquico",
                     items: [
-                      "Mantener trafico local en la capa de acceso cuando sea posible.",
-                      "Aplicar segmentacion por funcion, area o criticidad del servicio.",
-                      "Evitar crecimiento organico sin plan de direccionamiento y topologia.",
-                      "Definir redundancia en enlaces de distribucion y nucleo."
+                      "Mantener tráfico local en la capa de acceso cuando sea posible.",
+                      "Aplicar segmentación por función, área o criticidad del servicio.",
+                      "Evitar crecimiento orgánico sin plan de direccionamiento y topología.",
+                      "Definir redundancia en enlaces de distribución y núcleo."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Relacionar direcciones MAC/IP con el modelo jerarquico y justificar como las capas de acceso, distribucion y nucleo mejoran la red."
+                      "Relacionar direcciones MAC/IP con el modelo jerárquico y justificar cómo las capas de acceso, distribución y núcleo mejoran la red."
                     ]
                   }
                 ]
@@ -4912,32 +4912,32 @@
           },
           {
             key: "M3",
-            title: "Sistemas de Numeracion",
+            title: "Sistemas de Numeración",
             topics: [
               {
                 code: "3.1",
-                title: "Sistema Numerico Binario",
-                summary: "Base inicial del tema 3.1: Sistema Numerico Binario.",
+                title: "Sistema Numérico Binario",
+                summary: "Base inicial del tema 3.1: Sistema Numérico Binario.",
                 sections: [
                   {
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
               },
               {
                 code: "3.2",
-                title: "Sistema Numerico Hexadecimal",
-                summary: "Base inicial del tema 3.2: Sistema Numerico Hexadecimal.",
+                title: "Sistema Numérico Hexadecimal",
+                summary: "Base inicial del tema 3.2: Sistema Numérico Hexadecimal.",
                 sections: [
                   {
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -4946,7 +4946,7 @@
           },
           {
             key: "M4",
-            title: "Comunicacion Ethernet",
+            title: "Comunicación Ethernet",
             topics: [
               {
                 code: "4.1",
@@ -4957,7 +4957,7 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -4971,21 +4971,21 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
               },
               {
                 code: "4.3",
-                title: "Direccion MAC de Ethernet",
-                summary: "Base inicial del tema 4.3: Direccion MAC de Ethernet.",
+                title: "Dirección MAC de Ethernet",
+                summary: "Base inicial del tema 4.3: Dirección MAC de Ethernet.",
                 sections: [
                   {
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -4999,7 +4999,7 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5012,14 +5012,14 @@
             topics: [
               {
                 code: "5.1",
-                title: "Caracteristicas de la Capa de Red",
-                summary: "Base inicial del tema 5.1: Caracteristicas de la Capa de Red.",
+                title: "Características de la Capa de Red",
+                summary: "Base inicial del tema 5.1: Características de la Capa de Red.",
                 sections: [
                   {
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5033,7 +5033,7 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5047,7 +5047,7 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5056,18 +5056,18 @@
           },
           {
             key: "M6",
-            title: "Estructura de la direccion IPv4",
+            title: "Estructura de la dirección IPv4",
             topics: [
               {
                 code: "6.1",
-                title: "Estructura de la direccion IPv4",
-                summary: "Base inicial del tema 6.1: Estructura de la direccion IPv4.",
+                title: "Estructura de la dirección IPv4",
+                summary: "Base inicial del tema 6.1: Estructura de la dirección IPv4.",
                 sections: [
                   {
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5076,7 +5076,7 @@
           },
           {
             key: "M7",
-            title: "Resolucion de direccion",
+            title: "Resolución de dirección",
             topics: [
               {
                 code: "7.1",
@@ -5087,7 +5087,7 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5107,7 +5107,7 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5121,7 +5121,7 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5141,63 +5141,63 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
               },
               {
                 code: "9.2",
-                title: "Descripcion General de TCP",
-                summary: "Base inicial del tema 9.2: Descripcion General de TCP.",
+                title: "Descripción General de TCP",
+                summary: "Base inicial del tema 9.2: Descripción General de TCP.",
                 sections: [
                   {
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
               },
               {
                 code: "9.3",
-                title: "Descripcion General de UDP",
-                summary: "Base inicial del tema 9.3: Descripcion General de UDP.",
+                title: "Descripción General de UDP",
+                summary: "Base inicial del tema 9.3: Descripción General de UDP.",
                 sections: [
                   {
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
               },
               {
                 code: "9.4",
-                title: "Numeros de Puerto",
-                summary: "Base inicial del tema 9.4: Numeros de Puerto.",
+                title: "Números de Puerto",
+                summary: "Base inicial del tema 9.4: Números de Puerto.",
                 sections: [
                   {
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
               },
               {
                 code: "9.5",
-                title: "Proceso de Comunicacion TCP",
-                summary: "Base inicial del tema 9.5: Proceso de Comunicacion TCP.",
+                title: "Proceso de Comunicación TCP",
+                summary: "Base inicial del tema 9.5: Proceso de Comunicación TCP.",
                 sections: [
                   {
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5211,21 +5211,21 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
               },
               {
                 code: "9.7",
-                title: "Comunicacion UDP",
-                summary: "Base inicial del tema 9.7: Comunicacion UDP.",
+                title: "Comunicación UDP",
+                summary: "Base inicial del tema 9.7: Comunicación UDP.",
                 sections: [
                   {
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5234,18 +5234,18 @@
           },
           {
             key: "M10",
-            title: "La Linea de Comandos del IOS de Cisco",
+            title: "La Línea de Comandos del IOS de Cisco",
             topics: [
               {
                 code: "10.1",
-                title: "Navegacion del IOS",
-                summary: "Base inicial del tema 10.1: Navegacion del IOS.",
+                title: "Navegación del IOS",
+                summary: "Base inicial del tema 10.1: Navegación del IOS.",
                 sections: [
                   {
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5259,21 +5259,21 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
               },
               {
                 code: "10.3",
-                title: "Ver la Informacion del Dispositivo",
-                summary: "Base inicial del tema 10.3: Ver la Informacion del Dispositivo.",
+                title: "Ver la Información del Dispositivo",
+                summary: "Base inicial del tema 10.3: Ver la Información del Dispositivo.",
                 sections: [
                   {
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5282,18 +5282,18 @@
           },
           {
             key: "M11",
-            title: "Crear una Pequena Red de Cisco",
+            title: "Crear una Pequeña Red de Cisco",
             topics: [
               {
                 code: "11.1",
-                title: "Configuracion Basica del Conmutador",
-                summary: "Base inicial del tema 11.1: Configuracion Basica del Conmutador.",
+                title: "Configuración Básica del Conmutador",
+                summary: "Base inicial del tema 11.1: Configuración Básica del Conmutador.",
                 sections: [
                   {
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5307,7 +5307,7 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5321,21 +5321,21 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
               },
               {
                 code: "11.4",
-                title: "Configuracion de la Puerta de Enlace Predeterminada",
-                summary: "Base inicial del tema 11.4: Configuracion de la Puerta de Enlace Predeterminada.",
+                title: "Configuración de la Puerta de Enlace Predeterminada",
+                summary: "Base inicial del tema 11.4: Configuración de la Puerta de Enlace Predeterminada.",
                 sections: [
                   {
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5355,7 +5355,7 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
@@ -5369,7 +5369,7 @@
                     title: "Puntos clave iniciales",
                     items: [
                       "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
                     ]
                   }
                 ]
