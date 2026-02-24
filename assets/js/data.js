@@ -4231,6 +4231,160 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M16",
+            title: "Servicios de la capa de aplicacion",
+            topics: [
+              {
+                code: "16.1",
+                title: "Relacion cliente-servidor",
+                summary:
+                  "Como clientes y servidores cooperan para entregar servicios web, incluyendo resolucion DNS, sockets y solicitud/respuesta HTTP.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_16.1_client_server_flow.png",
+                    alt: "Flujo cliente-servidor con pasos URL, consulta DNS, conexion TCP y respuesta del servidor web."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "16.1.1 Interaccion de cliente y servidor",
+                    items: [
+                      "Un servidor es un host que ejecuta software para ofrecer informacion o servicios a otros hosts de la red.",
+                      "Las aplicaciones comunes (web, correo, redes sociales, banca, descargas) dependen de interacciones cliente-servidor.",
+                      "Estas interacciones funcionan porque cliente y servidor comparten estandares y protocolos definidos."
+                    ]
+                  },
+                  {
+                    title: "16.1.2 Flujo IP en servicio web",
+                    items: [
+                      "El usuario escribe una URL y primero ocurre resolucion DNS para obtener la direccion IP del servidor.",
+                      "Luego se establece una sesion TCP usando IP origen/destino y puertos origen/destino (socket).",
+                      "El servidor recibe solicitud HTTP en su puerto de servicio y responde invirtiendo origen y destino."
+                    ]
+                  },
+                  {
+                    title: "16.1.3 URI, URN y URL",
+                    items: [
+                      "URI es el identificador general de recursos en red.",
+                      "URN nombra el recurso dentro de un espacio de nombres sin indicar su ubicacion.",
+                      "URL define ubicacion y acceso al recurso (esquema, host, ruta y otros componentes)."
+                    ]
+                  },
+                  {
+                    title: "16.1.4 Trafico web en Packet Tracer",
+                    items: [
+                      "En simulacion se observa encapsulacion de HTTP sobre TCP y direccionamiento IP extremo a extremo.",
+                      "La solicitud viaja desde el cliente hasta el servidor; la respuesta retorna con direcciones invertidas.",
+                      "El intercambio continua hasta completar transferencia de HTML y recursos asociados."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar con claridad la secuencia completa cliente-servidor en un acceso web real."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "16.2",
+                title: "Servicios de aplicaciones de red comunes",
+                summary:
+                  "Panorama de servicios frecuentes de Internet y su dependencia de protocolos TCP/IP para comunicacion confiable entre clientes y servidores.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_16.2_common_app_services.png",
+                    alt: "Resumen de servicios de aplicacion comunes y protocolos/puertos asociados."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "16.2.1 Servicios mas usados",
+                    items: [
+                      "Busqueda web, correo, streaming, mensajeria y comercio electronico son servicios consumidos diariamente.",
+                      "Cada servicio se implementa con software de aplicacion en servidores especializados o plataformas distribuidas.",
+                      "La entrega depende de la pila TCP/IP y de la coordinacion entre protocolos de aplicacion, transporte y red."
+                    ]
+                  },
+                  {
+                    title: "Mapa servicio-protocolo",
+                    items: [
+                      "Web: HTTP/HTTPS en puertos 80/443.",
+                      "Resolucion de nombres: DNS en puerto 53 (UDP/TCP segun contexto).",
+                      "Correo: SMTP, IMAP y POP3 para envio y recuperacion de mensajes."
+                    ]
+                  },
+                  {
+                    title: "Criterios operativos",
+                    items: [
+                      "Identificar servicios activos y puertos expuestos es parte de la higiene basica de red.",
+                      "No todos los servicios deben estar publicados; aplicar principio de minimo privilegio.",
+                      "Documentar dependencias entre aplicaciones evita interrupciones al cambiar infraestructura."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Relacionar servicios de aplicacion con sus protocolos para diagnostico y administracion eficiente."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "16.3",
+                title: "Sistema de nombres de dominio (DNS)",
+                summary:
+                  "Funcionamiento de DNS para traducir nombres a IP y uso de herramientas de validacion como nslookup en escenarios reales y simulados.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_16.3_dns_resolution_flow.png",
+                    alt: "Diagrama de resolucion DNS y ejemplo de validacion con comando nslookup."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "16.3.1 Funcion del servidor DNS",
+                    items: [
+                      "DNS asocia nombres de dominio legibles por humanos con direcciones IP utilizables por la red.",
+                      "Sin DNS, el usuario tendria que recordar y escribir direcciones numericas para cada servicio.",
+                      "El flujo habitual es consulta, busqueda en base de datos y respuesta con el registro correspondiente."
+                    ]
+                  },
+                  {
+                    title: "16.3.2 Entorno de practica y simuladores",
+                    items: [
+                      "El verificador de sintaxis exige comandos exactos para avanzar en practicas guiadas.",
+                      "Herramientas como Packet Tracer permiten mas flexibilidad, incluyendo abreviaciones de comandos.",
+                      "Practicar en simulacion reduce riesgo antes de aplicar cambios en equipos de produccion."
+                    ]
+                  },
+                  {
+                    title: "16.3.3 Comando nslookup",
+                    items: [
+                      "nslookup permite consultar manualmente registros DNS y confirmar resolucion de un dominio.",
+                      "Si no hay resolucion, se debe revisar direccion DNS configurada en host/router y conectividad.",
+                      "En redes domesticas, el router suele distribuir DNS via DHCP a clientes de la LAN."
+                    ]
+                  },
+                  {
+                    title: "Checklist de verificacion DNS",
+                    items: [
+                      "Validar que el cliente tenga DNS configurado correctamente (manual o por DHCP).",
+                      "Probar resolucion con nslookup antes de diagnosticar navegacion o aplicaciones.",
+                      "Confirmar que dominio, servidor DNS y ruta IP hacia el resolvedor sean alcanzables."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Comprobar y explicar el proceso DNS completo para resolver fallas de acceso por nombre."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
