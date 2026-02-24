@@ -3062,6 +3062,73 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M6",
+            title: "Tipos de medios de red",
+            topics: [
+              {
+                code: "6.1",
+                title: "Medios de red: cobre, coaxial y fibra \u00f3ptica",
+                summary:
+                  "Comparaci\u00f3n t\u00e9cnica de los medios f\u00edsicos de transmisi\u00f3n para elegir correctamente seg\u00fan distancia, entorno y rendimiento.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_6.1_media_types.png",
+                    alt: "Comparativa visual de medios de red: par trenzado, cable coaxial y fibra \u00f3ptica."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "6.1.1 Importancia del medio f\u00edsico",
+                    items: [
+                      "El medio condiciona alcance, velocidad efectiva, estabilidad y susceptibilidad al ruido.",
+                      "Una elecci\u00f3n incorrecta del cable puede degradar enlaces aunque los equipos sean de buena capacidad.",
+                      "En dise\u00f1o de red, el medio se define junto con topolog\u00eda, puertos y requerimientos de tr\u00e1fico."
+                    ]
+                  },
+                  {
+                    title: "6.1.2 Criterios de selecci\u00f3n",
+                    items: [
+                      "Distancia m\u00e1xima: cada tecnolog\u00eda tiene l\u00edmites f\u00edsicos antes de requerir repetici\u00f3n o cambio de medio.",
+                      "Entorno de instalaci\u00f3n: interferencia electromagn\u00e9tica, temperatura, humedad y riesgos mec\u00e1nicos.",
+                      "Capacidad requerida: volumen de datos, latencia esperada y crecimiento del tr\u00e1fico en el tiempo.",
+                      "Costo total: precio del cable, conectores, obra civil, mantenimiento y ciclo de vida."
+                    ]
+                  },
+                  {
+                    title: "6.1.3 Par trenzado (UTP/STP)",
+                    items: [
+                      "Es el medio m\u00e1s com\u00fan en LAN de usuario final por costo moderado y facilidad de instalaci\u00f3n.",
+                      "Usa conectores RJ-45 y categor\u00edas de cableado (p. ej., Cat5e/Cat6/Cat6a) con distintas prestaciones.",
+                      "Es sensible a ruido y distancia; requiere buenas pr\u00e1cticas de canalizaci\u00f3n y certificaci\u00f3n."
+                    ]
+                  },
+                  {
+                    title: "Coaxial y fibra \u00f3ptica",
+                    items: [
+                      "El coaxial ofrece buen blindaje y fue clave en redes y acceso de ISP; hoy es com\u00fan en escenarios espec\u00edficos.",
+                      "La fibra \u00f3ptica transmite por luz, permite mayor ancho de banda y largas distancias con baja atenuaci\u00f3n.",
+                      "La fibra es inmune a interferencias electromagn\u00e9ticas y recomendable para troncales y enlaces cr\u00edticos."
+                    ]
+                  },
+                  {
+                    title: "Decisi\u00f3n r\u00e1pida por escenario",
+                    items: [
+                      "LAN de oficina: UTP/FTP bien instalado suele equilibrar costo y desempe\u00f1o.",
+                      "Backbone entre cuartos o edificios: priorizar fibra por distancia, capacidad y confiabilidad.",
+                      "Entornos con ruido el\u00e9ctrico o alta exigencia: usar medio blindado o fibra seg\u00fan el caso."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Seleccionar el medio de red adecuado con criterios t\u00e9cnicos y de costo, evitando cuellos de botella y retrabajos."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
