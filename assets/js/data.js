@@ -3349,6 +3349,168 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M9",
+            title: "IPv4 y segmentaci\u00f3n de redes",
+            topics: [
+              {
+                code: "9.1",
+                title: "Unidifusi\u00f3n, difusi\u00f3n y multidifusi\u00f3n IPv4",
+                summary:
+                  "Diferencias entre tr\u00e1fico uno a uno, uno a todos y uno a grupo, y su impacto sobre recursos de la LAN.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_9.1_unicast_broadcast_multicast.png",
+                    alt: "Comparaci\u00f3n visual de unidifusi\u00f3n, difusi\u00f3n y multidifusi\u00f3n en IPv4."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "9.1.2 Unidifusi\u00f3n",
+                    items: [
+                      "En unidifusi\u00f3n, un host env\u00eda un paquete a un \u00fanico destino (comunicaci\u00f3n uno a uno).",
+                      "La direcci\u00f3n IP de origen siempre es unicast porque el paquete solo puede salir de un emisor.",
+                      "Es el patr\u00f3n m\u00e1s com\u00fan en tr\u00e1fico de aplicaciones entre cliente y servidor."
+                    ]
+                  },
+                  {
+                    title: "9.1.4 Difusi\u00f3n",
+                    items: [
+                      "La difusi\u00f3n IPv4 env\u00eda un paquete a todos los hosts del dominio de broadcast local.",
+                      "Puede ser limitada (255.255.255.255) o dirigida (por ejemplo, 172.16.4.255 en /24).",
+                      "Los routers no reenv\u00edan broadcast de forma predeterminada, por lo que su alcance se limita al segmento."
+                    ]
+                  },
+                  {
+                    title: "9.1.6 Multidifusi\u00f3n",
+                    items: [
+                      "La multidifusi\u00f3n permite que un origen env\u00ede a un grupo suscrito de receptores.",
+                      "IPv4 reserva 224.0.0.0 a 239.255.255.255 para direcciones multicast.",
+                      "Reduce tr\u00e1fico comparado con m\u00faltiples unicast cuando varios receptores consumen el mismo flujo."
+                    ]
+                  },
+                  {
+                    title: "Impacto operativo en la LAN",
+                    items: [
+                      "Exceso de broadcast consume CPU en hosts y recursos de switching, aunque el contenido no sea relevante para todos.",
+                      "Multicast bien dise\u00f1ado optimiza distribuci\u00f3n a grupos espec\u00edficos.",
+                      "Segmentar dominios de broadcast mejora rendimiento general y estabilidad."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Distinguir cu\u00e1ndo usar unicast, broadcast o multicast y evaluar su impacto en red."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "9.2",
+                title: "Tipos de direcciones IPv4",
+                summary:
+                  "Clasificaci\u00f3n de direcciones IPv4 (p\u00fablicas, privadas y especiales), uso de NAT y asignaci\u00f3n por organismos globales.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_9.2_ipv4_types_nat.png",
+                    alt: "Resumen de direcciones IPv4 p\u00fablicas/privadas, NAT y bloques especiales."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "9.2.1 Direcciones p\u00fablicas y privadas",
+                    items: [
+                      "Las direcciones p\u00fablicas son enrutables globalmente entre ISP y deben ser \u00fanicas en Internet.",
+                      "Las privadas (RFC 1918) se usan en redes internas y no se enrutan directamente en Internet.",
+                      "Rangos privados frecuentes: 10.0.0.0/8, 172.16.0.0/12 y 192.168.0.0/16."
+                    ]
+                  },
+                  {
+                    title: "9.2.2 NAT para salida a Internet",
+                    items: [
+                      "NAT traduce direcciones privadas de origen a direcciones p\u00fablicas antes de salir al ISP.",
+                      "Se implementa normalmente en el router de borde entre intranet e Internet.",
+                      "Permite conservar espacio IPv4 p\u00fablico y mantener direccionamiento interno reutilizable."
+                    ]
+                  },
+                  {
+                    title: "9.2.4 Direcciones IPv4 de uso especial",
+                    items: [
+                      "Loopback: 127.0.0.0/8 (com\u00fanmente 127.0.0.1) para pruebas locales de pila TCP/IP.",
+                      "Link-local/APIPA: 169.254.0.0/16 cuando un host no obtiene direcci\u00f3n por DHCP.",
+                      "Direcci\u00f3n de red y direcci\u00f3n de broadcast no se asignan a hosts finales."
+                    ]
+                  },
+                  {
+                    title: "9.2.5-9.2.6 Contexto y asignaci\u00f3n",
+                    items: [
+                      "El direccionamiento con clase (A/B/C) fue reemplazado por enfoque sin clase para usar mejor el espacio IPv4.",
+                      "IANA administra bloques globales y delega a RIR como ARIN, LACNIC, RIPE NCC, APNIC y AfriNIC.",
+                      "La asignaci\u00f3n jer\u00e1rquica facilita gobernanza de recursos y crecimiento ordenado de Internet."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Seleccionar tipo de direcci\u00f3n IPv4 seg\u00fan contexto y explicar por qu\u00e9 NAT es necesario en redes privadas."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "9.3",
+                title: "Segmentaci\u00f3n de red y dominios de difusi\u00f3n",
+                summary:
+                  "Uso de routers y subredes para limitar broadcast, mejorar desempe\u00f1o y aplicar pol\u00edticas de seguridad por segmentos.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_9.3_network_segmentation.png",
+                    alt: "Diagrama de reducci\u00f3n de dominio de difusi\u00f3n mediante segmentaci\u00f3n de red."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "9.3.1-9.3.2 Dominios de difusi\u00f3n",
+                    items: [
+                      "En LAN Ethernet, protocolos como ARP y DHCP usan broadcast para descubrir informaci\u00f3n local.",
+                      "Los switches propagan broadcast por sus puertos (excepto entrada).",
+                      "Los routers separan dominios de broadcast al no reenviar estas tramas entre interfaces."
+                    ]
+                  },
+                  {
+                    title: "9.3.3 Problemas en dominios grandes",
+                    items: [
+                      "Un dominio con demasiados hosts puede generar tr\u00e1fico de difusi\u00f3n excesivo.",
+                      "Esto provoca operaciones lentas en red y mayor carga de procesamiento en los dispositivos finales.",
+                      "La soluci\u00f3n es dividir en subredes m\u00e1s peque\u00f1as y controlables."
+                    ]
+                  },
+                  {
+                    title: "9.3.4 Razones para segmentar",
+                    items: [
+                      "Mejorar rendimiento reduciendo tr\u00e1fico irrelevante para cada segmento.",
+                      "Aplicar seguridad por pol\u00edticas entre subredes (qu\u00e9 se comunica y qu\u00e9 no).",
+                      "Limitar impacto de incidentes, fallas o configuraciones err\u00f3neas."
+                    ]
+                  },
+                  {
+                    title: "Criterios pr\u00e1cticos de segmentaci\u00f3n",
+                    items: [
+                      "Por ubicaci\u00f3n (sedes, pisos, edificios).",
+                      "Por funci\u00f3n o grupo (administraci\u00f3n, operaciones, invitados).",
+                      "Por tipo de dispositivo (usuarios, IoT, servidores, infraestructura)."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Justificar una estrategia de subredes para optimizar rendimiento, control y seguridad operativa."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
