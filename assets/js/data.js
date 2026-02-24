@@ -5682,13 +5682,43 @@
               {
                 code: "9.1",
                 title: "Transporte de Datos",
-                summary: "Base inicial del tema 9.1: Transporte de Datos.",
+                summary:
+                  "La capa de transporte segmenta datos, identifica aplicaciones mediante puertos y habilita comunicación extremo a extremo entre procesos en hosts distintos.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_9.1.png",
+                    alt: "Flujo de datos entre aplicaciones usando capa de transporte y puertos de origen y destino."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "9.1.1 Rol de la capa de transporte",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Recibe datos de aplicaciones, los divide en segmentos o datagramas y los entrega a la capa de red.",
+                      "En el destino, reensambla información y la entrega al proceso correcto.",
+                      "Opera de forma lógica extremo a extremo, independiente del medio físico intermedio."
+                    ]
+                  },
+                  {
+                    title: "9.1.2 Multiplexación y puertos",
+                    items: [
+                      "Los números de puerto permiten que múltiples aplicaciones compartan simultáneamente la red.",
+                      "Cada flujo se identifica por IP origen/destino, puerto origen/destino y protocolo (TCP/UDP).",
+                      "Esto evita mezclar sesiones entre servicios como web, correo, DNS o videollamadas."
+                    ]
+                  },
+                  {
+                    title: "9.1.3 Requisitos de las aplicaciones",
+                    items: [
+                      "Algunas aplicaciones priorizan confiabilidad (por ejemplo, transferencia de archivos).",
+                      "Otras priorizan baja latencia y continuidad (por ejemplo, voz y video en tiempo real).",
+                      "Por eso la capa de transporte ofrece dos enfoques: TCP orientado a conexión y UDP no orientado a conexión."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar cómo la capa de transporte conecta procesos de aplicación y por qué puertos y segmentación son esenciales para comunicación concurrente."
                     ]
                   }
                 ]
@@ -5696,13 +5726,51 @@
               {
                 code: "9.2",
                 title: "Descripción General de TCP",
-                summary: "Base inicial del tema 9.2: Descripción General de TCP.",
+                summary:
+                  "TCP ofrece transporte confiable orientado a conexión con control de secuencia, acuses de recibo, retransmisión y mecanismos de control de flujo/congestión.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_9.2.png",
+                    alt: "Comunicación TCP con establecimiento de sesión y confirmación de segmentos mediante ACK."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "9.2.1 Características de TCP",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Es orientado a conexión: antes de transferir datos se establece una sesión lógica entre extremos.",
+                      "Garantiza entrega ordenada mediante números de secuencia y acuses de recibo (ACK).",
+                      "Si hay pérdida, retransmite segmentos para mantener integridad de la información."
+                    ]
+                  },
+                  {
+                    title: "9.2.2 Control de flujo y congestión",
+                    items: [
+                      "Usa ventana deslizante para ajustar cuántos datos se envían sin confirmación.",
+                      "Reduce velocidad ante congestión detectada para proteger la red y estabilizar la comunicación.",
+                      "Este comportamiento favorece precisión y confiabilidad sobre velocidad bruta."
+                    ]
+                  },
+                  {
+                    title: "9.2.3 Casos de uso típicos",
+                    items: [
+                      "HTTP/HTTPS, SSH, FTP, SMTP/IMAP y otras aplicaciones donde la pérdida de datos no es aceptable.",
+                      "Transacciones críticas (banca, gestión empresarial, autenticación) dependen de su confiabilidad.",
+                      "La sobrecarga adicional de TCP es un costo justificado cuando se requiere exactitud."
+                    ]
+                  },
+                  {
+                    title: "Checklist de comprensión",
+                    items: [
+                      "Describir por qué TCP se considera orientado a conexión.",
+                      "Explicar función de secuencia, ACK y retransmisión.",
+                      "Distinguir cuándo TCP es preferible frente a UDP."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Relacionar los mecanismos de TCP con la entrega confiable de datos en aplicaciones sensibles a errores."
                     ]
                   }
                 ]
@@ -5710,13 +5778,51 @@
               {
                 code: "9.3",
                 title: "Descripción General de UDP",
-                summary: "Base inicial del tema 9.3: Descripción General de UDP.",
+                summary:
+                  "UDP es un protocolo de transporte no orientado a conexión y de baja sobrecarga, adecuado para aplicaciones que priorizan rapidez y continuidad sobre retransmisión estricta.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_9.3.png",
+                    alt: "Comparación de flujo UDP sin establecimiento de sesión y con menor sobrecarga de control."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "9.3.1 Características de UDP",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "No establece conexión previa ni mantiene estado de sesión entre extremos.",
+                      "No confirma recepción ni retransmite automáticamente segmentos perdidos.",
+                      "Su encabezado es pequeño, lo que reduce latencia y consumo de recursos."
+                    ]
+                  },
+                  {
+                    title: "9.3.2 Ventajas operativas",
+                    items: [
+                      "Menor sobrecarga implica mayor eficiencia para tráfico sensible al retardo.",
+                      "Permite a la aplicación decidir cómo manejar pérdida, jitter o corrección de errores.",
+                      "Es ideal para comunicaciones donde un dato tardío vale menos que un dato oportuno."
+                    ]
+                  },
+                  {
+                    title: "9.3.3 Casos de uso frecuentes",
+                    items: [
+                      "DNS, DHCP, streaming en tiempo real, voz sobre IP y videojuegos en línea.",
+                      "En estos escenarios se tolera cierta pérdida para mantener continuidad y baja latencia.",
+                      "Cuando se necesita confiabilidad adicional, la aplicación puede implementarla a nivel superior."
+                    ]
+                  },
+                  {
+                    title: "Comparación rápida TCP vs UDP",
+                    items: [
+                      "TCP: confiable, orientado a conexión, más control y mayor sobrecarga.",
+                      "UDP: rápido, sin conexión, menor control y menor sobrecarga.",
+                      "La elección depende de los requisitos funcionales de la aplicación."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Evaluar cuándo UDP es la mejor opción de transporte según latencia, tolerancia a pérdida y naturaleza de la aplicación."
                     ]
                   }
                 ]
