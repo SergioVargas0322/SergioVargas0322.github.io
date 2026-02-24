@@ -2034,6 +2034,118 @@
                     ]
                   }
                 ]
+              },
+              {
+                code: "4.3",
+                title: "Estándares inalámbricos Wi-Fi",
+                summary:
+                  "Fundamentos de los estándares IEEE 802.11, elección de banda/canal y parámetros clave para configurar una WLAN compatible, estable y segura.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_4.2_1.png",
+                    alt: "Frecuencias y bandas de operación inalámbrica usadas en redes de hogar."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_4.3_wifi_standards.png",
+                    alt: "Resumen comparativo de estándares Wi-Fi y buenas prácticas de configuración."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "4.3.1 Redes Wi-Fi e IEEE 802.11",
+                    items: [
+                      "IEEE define las especificaciones técnicas que permiten que equipos de distintos fabricantes se comuniquen en una WLAN.",
+                      "Las familias 802.11 evolucionan para mejorar velocidad, eficiencia y capacidad en escenarios con más dispositivos simultáneos.",
+                      "La certificación de la Wi-Fi Alliance valida interoperabilidad práctica entre productos comerciales."
+                    ]
+                  },
+                  {
+                    title: "Bandas, canales y desempeño real",
+                    items: [
+                      "2.4 GHz ofrece más alcance, pero suele tener más interferencia por alta ocupación del espectro.",
+                      "5 GHz y 6 GHz ofrecen mayor capacidad y menos congestión, con menor alcance relativo según obstáculos y potencia.",
+                      "Seleccionar canal y ancho de canal de forma correcta mejora estabilidad y reduce retransmisiones."
+                    ]
+                  },
+                  {
+                    title: "4.3.2 Parámetros de configuración WLAN",
+                    items: [
+                      "Modo de red: define qué estándares se permiten (por ejemplo, mixto o solo estándares recientes).",
+                      "SSID: identifica la red; debe ser claro para administración, sin exponer marca/modelo del equipo.",
+                      "Canal y difusión de SSID: conviene ajustar según entorno para facilitar conexión legítima sin sacrificar seguridad."
+                    ]
+                  },
+                  {
+                    title: "Compatibilidad y seguridad",
+                    items: [
+                      "Si existen equipos antiguos, el modo mixto facilita conexión; en redes modernas, limitar estándares puede optimizar rendimiento.",
+                      "Desactivar solo la difusión del SSID no protege por sí mismo la red inalámbrica.",
+                      "La medida crítica es usar cifrado robusto (WPA2/WPA3), clave fuerte y segmentación por perfiles de uso."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Configurar una WLAN doméstica equilibrando compatibilidad, rendimiento y seguridad de acceso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.4",
+                title: "Configurar un enrutador doméstico",
+                summary:
+                  "Procedimiento práctico para configurar un router residencial: conexión inicial, ajustes LAN/WAN, seguridad mínima y validación operativa.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_4.1_2.png",
+                    alt: "Panel trasero de un router doméstico con puertos LAN y puerto WAN/Internet."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_4.4_router_setup_flow.png",
+                    alt: "Flujo recomendado de configuración segura para un enrutador doméstico."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "4.4.1 Configuración inicial",
+                    items: [
+                      "Para la puesta en marcha, conecta temporalmente una PC por cable a un puerto LAN del router, no al puerto WAN.",
+                      "Luego conecta la interfaz WAN/Internet hacia el módem o medio del ISP y verifica estado de enlace.",
+                      "La PC debe recibir IP por DHCP del router; si no ocurre, revisar cableado, NIC y alcance DHCP."
+                    ]
+                  },
+                  {
+                    title: "Acceso administrativo y parámetros base",
+                    items: [
+                      "Ingresa al panel web de administración (habitualmente mediante la puerta de enlace local).",
+                      "Cambia credenciales predeterminadas en la primera sesión y documenta los cambios en un registro seguro.",
+                      "Define direccionamiento LAN, rango DHCP, DNS y ajustes WAN según los requisitos del proveedor."
+                    ]
+                  },
+                  {
+                    title: "4.4.2 Consideraciones de diseño",
+                    items: [
+                      "El nombre de red (SSID) debe evitar datos que revelen fabricante o modelo del equipo.",
+                      "Verifica compatibilidad de los clientes inalámbricos para decidir si usar modo mixto o estándar específico.",
+                      "Si habrá usuarios externos, habilita red de invitados aislada para limitar acceso a recursos internos."
+                    ]
+                  },
+                  {
+                    title: "Seguridad y validación operativa",
+                    items: [
+                      "Habilita WPA2/WPA3, desactiva funciones inseguras que no uses y actualiza firmware a una versión estable.",
+                      "Valida navegación, resolución DNS, conectividad entre equipos y estabilidad en distintos puntos del hogar.",
+                      "Guarda respaldo de la configuración y programa revisiones periódicas para mantener la red protegida."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Desplegar un router doméstico funcional, seguro y preparado para crecimiento de dispositivos."
+                    ]
+                  }
+                ]
               }
             ]
           }
