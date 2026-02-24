@@ -3129,6 +3129,116 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M7",
+            title: "La capa de acceso",
+            topics: [
+              {
+                code: "7.1",
+                title: "Encapsulaci\u00f3n y trama de Ethernet",
+                summary:
+                  "C\u00f3mo se encapsulan los datos en tramas Ethernet y qu\u00e9 funci\u00f3n cumple cada campo para transportar informaci\u00f3n en una LAN.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_7.1_ethernet_frame.png",
+                    alt: "Infograf\u00eda de encapsulaci\u00f3n y campos principales de una trama Ethernet."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "7.1.1 Campos de la trama Ethernet",
+                    items: [
+                      "La trama Ethernet incluye pre\u00e1mbulo, delimitador de inicio (SFD), MAC de destino, MAC de origen, tipo/longitud, datos y FCS.",
+                      "Las direcciones MAC identifican el emisor y receptor en la red local para decidir el reenv\u00edo de tramas.",
+                      "El campo FCS permite detectar errores de transmisi\u00f3n antes de procesar el contenido."
+                    ]
+                  },
+                  {
+                    title: "7.1.2 Encapsulaci\u00f3n y desencapsulaci\u00f3n",
+                    items: [
+                      "El host de origen toma datos de capas superiores y los encapsula en una trama Ethernet para enviarlos por el medio.",
+                      "El host receptor valida integridad, elimina la envoltura Ethernet y entrega el payload a la capa correspondiente.",
+                      "Si el formato de la trama no es v\u00e1lido o hay errores detectados, la informaci\u00f3n se descarta."
+                    ]
+                  },
+                  {
+                    title: "Analog\u00eda de la carta y el sobre",
+                    items: [
+                      "Como en una carta, el contenido viaja dentro de una envoltura con direcciones de origen y destino.",
+                      "El sobre equivale a la trama; el mensaje interno equivale a los datos encapsulados.",
+                      "El direccionamiento correcto y el formato adecuado son imprescindibles para una entrega exitosa."
+                    ]
+                  },
+                  {
+                    title: "Punto clave para troubleshooting",
+                    items: [
+                      "Cuando falla la comunicaci\u00f3n local, conviene revisar primero Capa 2: formato de trama, direcciones MAC y estado de enlace.",
+                      "Diferenciar errores de encapsulaci\u00f3n frente a problemas de Capa 3 acelera el diagn\u00f3stico.",
+                      "Una base s\u00f3lida de Ethernet evita interpretar como 'problema IP' lo que en realidad es falla de acceso."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Interpretar una trama Ethernet y explicar el proceso completo de encapsulaci\u00f3n/desencapsulaci\u00f3n en LAN."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "7.2",
+                title: "La capa de acceso y conmutaci\u00f3n Ethernet",
+                summary:
+                  "Funcionamiento de switches de Capa 2, uso de tablas MAC y diferencia entre inundaci\u00f3n y reenv\u00edo selectivo.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_7.2_switch_mac_learning.png",
+                    alt: "Diagrama del aprendizaje de tabla MAC y reenv\u00edo de tramas en un switch Ethernet."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "7.2.1 Conmutadores Ethernet",
+                    items: [
+                      "Un switch opera en Capa 2 y toma decisiones de reenv\u00edo analizando la cabecera Ethernet.",
+                      "En enlaces locales, el switch no enruta por IP; reenv\u00eda seg\u00fan la MAC de destino de cada trama.",
+                      "Esto reduce tr\u00e1fico innecesario y mejora el rendimiento de la red LAN."
+                    ]
+                  },
+                  {
+                    title: "7.2.2 Aprendizaje de direcciones MAC",
+                    items: [
+                      "Cada vez que recibe una trama, el switch aprende la MAC de origen y la asocia al puerto de entrada.",
+                      "Si la MAC de destino no est\u00e1 en la tabla, realiza flooding por todos los puertos excepto el de origen.",
+                      "Cuando la tabla ya conoce destino y puerto, el reenv\u00edo se vuelve unicast selectivo."
+                    ]
+                  },
+                  {
+                    title: "Comportamiento operativo",
+                    items: [
+                      "Las entradas de tabla MAC envejecen con el tiempo y se eliminan si no hay tr\u00e1fico asociado.",
+                      "Un aprendizaje correcto permite que tramas posteriores se entreguen solo al puerto requerido.",
+                      "Este mecanismo hace la conmutaci\u00f3n m\u00e1s eficiente que una difusi\u00f3n permanente."
+                    ]
+                  },
+                  {
+                    title: "Implicaciones de seguridad b\u00e1sica",
+                    items: [
+                      "Controlar acceso f\u00edsico y puertos reduce riesgos de inserci\u00f3n de dispositivos no autorizados.",
+                      "Monitorear cambios an\u00f3malos en tablas MAC puede ayudar a detectar comportamientos sospechosos.",
+                      "Una capa de acceso bien administrada mejora disponibilidad y confianza de la LAN."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar c\u00f3mo un switch aprende MAC y c\u00f3mo decide entre flooding o reenv\u00edo dirigido."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
