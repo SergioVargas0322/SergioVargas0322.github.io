@@ -3239,6 +3239,116 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M8",
+            title: "Protocolo de Internet (IPv4)",
+            topics: [
+              {
+                code: "8.1",
+                title: "Prop\u00f3sito de una direcci\u00f3n IPv4",
+                summary:
+                  "Funci\u00f3n de la direcci\u00f3n IPv4 para identificar hosts, permitir comunicaci\u00f3n local/remota y soportar respuesta de extremo a extremo.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_8.1_ipv4_purpose.png",
+                    alt: "Diagrama del prop\u00f3sito de IPv4 con flujo de paquetes entre red local e Internet."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "8.1.1 La direcci\u00f3n IPv4 en la red",
+                    items: [
+                      "Cada host necesita una direcci\u00f3n IPv4 para participar en la mayor\u00eda de LAN e Internet.",
+                      "La direcci\u00f3n IPv4 identifica l\u00f3gicamente al dispositivo en su red y en comunicaciones remotas.",
+                      "En cada paquete viajan direcciones de origen y destino para permitir ida y retorno de la informaci\u00f3n."
+                    ]
+                  },
+                  {
+                    title: "Asignaci\u00f3n en interfaces",
+                    items: [
+                      "La direcci\u00f3n se configura en la interfaz de red (NIC) del host o del enrutador.",
+                      "Un servidor con varias NIC puede tener varias direcciones IPv4, una por interfaz activa.",
+                      "Sin direccionamiento correcto, el equipo no puede enviar tr\u00e1fico a su red ni recibir respuestas."
+                    ]
+                  },
+                  {
+                    title: "8.1.2 Octetos y notaci\u00f3n decimal con puntos",
+                    items: [
+                      "IPv4 tiene 32 bits, agrupados en 4 octetos de 8 bits cada uno.",
+                      "Para facilitar lectura y configuraci\u00f3n, se usa notaci\u00f3n decimal con puntos (ej.: 209.165.200.1).",
+                      "Este formato simplifica operaci\u00f3n diaria sin trabajar directamente con 32 bits binarios."
+                    ]
+                  },
+                  {
+                    title: "Errores comunes a evitar",
+                    items: [
+                      "Duplicar direcciones en la misma LAN provoca conflictos y p\u00e9rdida intermitente de conectividad.",
+                      "Configurar red, m\u00e1scara o gateway incorrectos impide llegar a redes remotas.",
+                      "No documentar direccionamiento dificulta troubleshooting y escalamiento."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar por qu\u00e9 IPv4 es esencial para identificar hosts y transportar paquetes entre redes."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "8.2",
+                title: "Estructura de la direcci\u00f3n IPv4",
+                summary:
+                  "Composici\u00f3n jer\u00e1rquica de IPv4 en porci\u00f3n de red y host, y su impacto en comunicaci\u00f3n dentro y fuera de la LAN.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_8.2_network_host_structure.png",
+                    alt: "Infograf\u00eda de estructura IPv4 con separaci\u00f3n de red y host usando m\u00e1scara de subred."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "8.2.1 Componente de red y componente de host",
+                    items: [
+                      "Toda direcci\u00f3n IPv4 combina una parte de red y una parte de host.",
+                      "La m\u00e1scara de subred define qu\u00e9 bits pertenecen a red y cu\u00e1les identifican al host.",
+                      "Ejemplo /24: los primeros 3 octetos representan la red y el \u00faltimo octeto al host."
+                    ]
+                  },
+                  {
+                    title: "8.2.2 Direccionamiento jer\u00e1rquico",
+                    items: [
+                      "Los hosts de una misma LAN deben compartir porci\u00f3n de red y tener host \u00fanico.",
+                      "Si cambia la porci\u00f3n de red (p. ej., 192.168.5.x a 192.168.8.x), ya es otra red l\u00f3gica.",
+                      "Para comunicar redes l\u00f3gicas diferentes se requiere enrutamiento."
+                    ]
+                  },
+                  {
+                    title: "Implicaciones de dise\u00f1o",
+                    items: [
+                      "Una estructura IP clara facilita segmentaci\u00f3n, seguridad y crecimiento de la infraestructura.",
+                      "La jerarqu\u00eda reduce carga operativa porque los routers encaminan por red, no por host individual.",
+                      "Planificar subredes evita solapamientos y simplifica cambios de sede o departamentos."
+                    ]
+                  },
+                  {
+                    title: "Checklist de validaci\u00f3n",
+                    items: [
+                      "Verificar que el host est\u00e9 en el rango correcto de su subred.",
+                      "Confirmar que no exista otra interfaz con la misma IPv4 en la LAN.",
+                      "Comprobar que gateway y m\u00e1scara sean coherentes con la red asignada."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Interpretar una direcci\u00f3n IPv4 y distinguir correctamente su parte de red y host."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
