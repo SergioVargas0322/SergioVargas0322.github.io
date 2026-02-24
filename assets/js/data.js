@@ -3739,6 +3739,116 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M12",
+            title: "Puertas de enlace a otras redes",
+            topics: [
+              {
+                code: "12.1",
+                title: "Limites de red y puerta de enlace predeterminada",
+                summary:
+                  "Como un host decide si enviar trafico localmente o reenviarlo al gateway para alcanzar redes remotas.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_12.1_default_gateway_limits.png",
+                    alt: "Diagrama de decision del host para trafico local y remoto usando puerta de enlace predeterminada."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "12.1.1 Puerta de enlace a otras redes",
+                    items: [
+                      "La puerta de enlace predeterminada es la salida del host hacia destinos fuera de su subred local.",
+                      "El host compara red local y red destino usando IP + mascara; si no coinciden, envia al gateway.",
+                      "Si gateway o mascara estan mal configurados, no habra conectividad hacia redes remotas."
+                    ]
+                  },
+                  {
+                    title: "12.1.2 Enrutadores como gateways",
+                    items: [
+                      "Cada interfaz del router conecta una red distinta y puede ser gateway de los hosts de ese segmento.",
+                      "La IP del gateway puede configurarse de forma estatica o recibirse dinamicamente por DHCP.",
+                      "En redes domesticas, el router inalambrico suele entregar su IP LAN como gateway predeterminado."
+                    ]
+                  },
+                  {
+                    title: "12.1.3 Router como limite entre redes",
+                    items: [
+                      "El router separa red interna (privada) y red externa (ISP/Internet).",
+                      "Hacia adentro puede actuar como servidor DHCP; hacia afuera suele actuar como cliente DHCP del ISP.",
+                      "Este limite mejora control de trafico y evita exposicion directa de hosts internos."
+                    ]
+                  },
+                  {
+                    title: "Checklist de host",
+                    items: [
+                      "IP y gateway deben pertenecer a la misma subred local del host.",
+                      "Verificar mascara correcta antes de diagnosticar problemas de salida a Internet.",
+                      "Validar primero alcance al gateway (ping) y luego a destino remoto."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Configurar correctamente el gateway predeterminado para habilitar comunicacion fuera de la LAN."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "12.2",
+                title: "Traduccion de direcciones de red (NAT)",
+                summary:
+                  "Principio de operacion de NAT para permitir que redes privadas accedan a Internet mediante direcciones publicas.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_12.2_nat_intro_flow.png",
+                    alt: "Flujo de traduccion NAT entre host privado, router de borde e Internet publica."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "12.2.1 Introduccion a NAT",
+                    items: [
+                      "Las redes privadas RFC1918 funcionan internamente pero no son enrutable globalmente en Internet.",
+                      "NAT traduce direcciones privadas a publicas en el router de borde para permitir salida externa.",
+                      "Sin esta traduccion, un host privado no podria comunicarse con servicios publicos en Internet."
+                    ]
+                  },
+                  {
+                    title: "Flujo basico de traduccion",
+                    items: [
+                      "Salida: el router reemplaza IP origen privada por una IP publica registrada y guarda el mapeo.",
+                      "Retorno: la respuesta llega a IP publica; el router consulta tabla NAT y restaura destino privado.",
+                      "El proceso permite sesiones bidireccionales sin exponer direccionamiento interno real."
+                    ]
+                  },
+                  {
+                    title: "Rangos privados usados con NAT",
+                    items: [
+                      "10.0.0.0/8 para despliegues amplios empresariales.",
+                      "172.16.0.0/12 para segmentacion intermedia.",
+                      "192.168.0.0/16 frecuente en entornos domesticos y pymes."
+                    ]
+                  },
+                  {
+                    title: "Consideraciones operativas",
+                    items: [
+                      "NAT simplifica consumo de IP publicas, pero agrega estado y complejidad en troubleshooting.",
+                      "Documentar politicas de traduccion es clave para auditoria y soporte.",
+                      "Una mala configuracion de NAT puede bloquear servicios o romper conectividad de aplicaciones."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar como NAT habilita acceso a Internet desde direccionamiento privado y su impacto operativo."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
