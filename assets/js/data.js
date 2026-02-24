@@ -6600,7 +6600,7 @@
                 code: "1.1",
                 title: "Propósito de la capa física",
                 summary:
-                  "Desarrollo del tema 1.1: Propósito de la capa física. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "La capa física define cómo se representan y transportan bits por el medio. Establece conectores, señales, temporización y condiciones de transmisión para lograr enlaces estables.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_1.1.jpeg",
@@ -6609,24 +6609,41 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "1.1.1 La conexión física",
                     items: [
-                      "1.1.1 La conexión física",
-                      "1.1.2 La capa física"
+                      "Antes de transmitir datos, dos dispositivos deben compartir un medio compatible: cobre, fibra o inalámbrico.",
+                      "La conexión física incluye NIC, puertos, conectores, patch cords y un estándar común de enlace.",
+                      "Si hay incompatibilidad de medio o de velocidad/dúplex, el enlace falla o degrada su rendimiento."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "1.1.2 Función de la capa física",
                     items: [
-                      "Identificar y aplicar los conceptos clave de propósito de la capa física.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Convierte bits en señales eléctricas, luminosas o de radio, y realiza el proceso inverso en recepción.",
+                      "Define sincronización, codificación básica y parámetros de transmisión para que el receptor interprete correctamente.",
+                      "Opera junto a la capa de enlace: física transporta señales; enlace organiza tramas y direcciones MAC."
+                    ]
+                  },
+                  {
+                    title: "Buenas prácticas de instalación",
+                    items: [
+                      "Verificar integridad del cableado, distancia máxima por estándar y estado de conectores.",
+                      "Evitar interferencia electromagnética, dobleces excesivos y tendidos sin etiquetado.",
+                      "Confirmar indicadores de enlace/actividad en interfaces antes de iniciar troubleshooting lógico."
+                    ]
+                  },
+                  {
+                    title: "Checklist rápido",
+                    items: [
+                      "Identificar el medio adecuado para cada tramo del enlace.",
+                      "Explicar la diferencia entre bit, señal y trama.",
+                      "Diagnosticar por qué un enlace puede estar down aunque el equipo esté encendido."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en propósito de la capa física dentro del contexto del curso."
+                      "Interpretar el propósito de la capa física y su impacto directo en la disponibilidad y calidad de la conectividad."
                     ]
                   }
                 ]
@@ -6635,7 +6652,7 @@
                 code: "1.2",
                 title: "Características de la capa física",
                 summary:
-                  "Desarrollo del tema 1.2: Características de la capa física. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "Las características de la capa física determinan capacidad, alcance y confiabilidad del enlace mediante estándares, componentes, codificación, señalización y métricas de ancho de banda.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_1.2.png",
@@ -6644,29 +6661,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "1.2.1 Estándares de la capa física",
                     items: [
-                      "1.2.1 Estándares de la capa física",
-                      "1.2.2 Componentes físicos",
-                      "1.2.3 Codificación",
-                      "1.2.4 Señalización",
-                      "1.2.5 Vídeo - Ancho de banda",
-                      "1.2.6 Ancho de banda",
-                      "1.2.7 Terminología del ancho de banda"
+                      "Los estándares (por ejemplo, IEEE 802.x) aseguran interoperabilidad entre equipos de distintos fabricantes.",
+                      "Especifican medio, conectores, distancias máximas, velocidad y parámetros eléctricos u ópticos.",
+                      "Trabajar fuera de estándar incrementa errores, pérdidas y problemas intermitentes."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "1.2.2 Componentes físicos",
                     items: [
-                      "Identificar y aplicar los conceptos clave de características de la capa física.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Un enlace típico combina NIC, cableado o radio, conectores, patch panel y puertos de switch/router.",
+                      "Cada componente agrega límites físicos: atenuación, ruido, pérdida de potencia o latencia.",
+                      "La calidad del canal depende del eslabón más débil de la cadena física."
+                    ]
+                  },
+                  {
+                    title: "1.2.3 Codificación y 1.2.4 señalización",
+                    items: [
+                      "La codificación convierte bits en patrones aptos para transmisión y recuperación de reloj.",
+                      "La señalización define cómo se propagan esos patrones por el medio (voltaje, luz o modulación de radio).",
+                      "Una mala relación señal-ruido incrementa retransmisiones y reduce el rendimiento efectivo."
+                    ]
+                  },
+                  {
+                    title: "1.2.5 a 1.2.7 Ancho de banda y terminología",
+                    items: [
+                      "El ancho de banda es la capacidad máxima teórica del medio; se expresa en bit/s (kbps, Mbps, Gbps).",
+                      "Throughput y goodput representan rendimiento real observado, usualmente menor que el ancho de banda nominal.",
+                      "Latencia, jitter y pérdida de paquetes afectan la experiencia final aunque exista buen ancho de banda."
+                    ]
+                  },
+                  {
+                    title: "Aplicación operativa",
+                    items: [
+                      "Seleccionar medio y estándar según distancia, ambiente y requerimiento de velocidad.",
+                      "Medir el enlace para diferenciar límite físico de congestión lógica.",
+                      "Documentar nomenclatura y capacidades para facilitar escalabilidad y soporte."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en características de la capa física dentro del contexto del curso."
+                      "Evaluar un enlace físico con criterios técnicos y justificar decisiones de diseño basadas en capacidad, estabilidad y costo."
                     ]
                   }
                 ]
