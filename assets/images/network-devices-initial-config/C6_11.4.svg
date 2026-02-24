@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#f4f7fb"/>
+  <text x="600" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="44" fill="#0f172a" font-weight="700">
+    Puerta de Enlace Predeterminada
+  </text>
+  <text x="600" y="110" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#334155">
+    Como un host sale de su red local hacia otras redes
+  </text>
+
+  <rect x="80" y="220" width="280" height="160" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+  <text x="220" y="290" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="33" fill="#1e3a8a" font-weight="600">PC</text>
+  <text x="220" y="330" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#1f2937">192.168.10.25/24</text>
+  <text x="220" y="360" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#1f2937">GW 192.168.10.1</text>
+
+  <rect x="460" y="220" width="280" height="160" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="4"/>
+  <text x="600" y="290" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="33" fill="#166534" font-weight="600">Router</text>
+  <text x="600" y="330" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#1f2937">G0/0: 192.168.10.1</text>
+  <text x="600" y="360" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#1f2937">Rutas a otras redes</text>
+
+  <rect x="840" y="220" width="280" height="160" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="4"/>
+  <text x="980" y="290" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="33" fill="#92400e" font-weight="600">Destino remoto</text>
+  <text x="980" y="330" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#1f2937">172.16.50.0/24</text>
+  <text x="980" y="360" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#1f2937">otra subred</text>
+
+  <line x1="360" y1="300" x2="460" y2="300" stroke="#0f766e" stroke-width="6"/>
+  <polygon points="460,300 444,290 444,310" fill="#0f766e"/>
+  <line x1="740" y1="300" x2="840" y2="300" stroke="#0f766e" stroke-width="6"/>
+  <polygon points="840,300 824,290 824,310" fill="#0f766e"/>
+
+  <rect x="130" y="470" width="940" height="140" rx="16" fill="#ffffff" stroke="#94a3b8" stroke-width="3"/>
+  <text x="160" y="520" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#0f172a" font-weight="600">
+    Secuencia:
+  </text>
+  <text x="160" y="555" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#334155">
+    1) El host detecta que el destino no esta en su red local.
+  </text>
+  <text x="160" y="585" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#334155">
+    2) Envia el trafico a su gateway predeterminado.
+  </text>
+  <text x="160" y="615" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#334155">
+    3) El router reencamina el paquete hacia la red destino.
+  </text>
+</svg>

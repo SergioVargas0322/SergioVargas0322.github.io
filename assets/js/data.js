@@ -6350,13 +6350,59 @@
               {
                 code: "11.3",
                 title: "Asegurar los Dispositivos",
-                summary: "Base inicial del tema 11.3: Asegurar los Dispositivos.",
+                summary:
+                  "Asegurar switches y routers desde la configuración inicial reduce superficie de ataque y protege la administración del equipo frente a accesos no autorizados.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_11.3.svg",
+                    alt: "Controles básicos de seguridad para hardening inicial de dispositivos Cisco."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "11.3.1 Control de acceso administrativo",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Definir `enable secret` robusto y credenciales locales con privilegios mínimos necesarios.",
+                      "Preferir SSH sobre Telnet para cifrar autenticación y sesión remota.",
+                      "Restringir acceso VTY con ACL y límites de tiempo de inactividad."
+                    ]
+                  },
+                  {
+                    title: "11.3.2 Endurecimiento de servicios",
+                    items: [
+                      "Deshabilitar servicios que no se usan (por ejemplo, HTTP inseguro o protocolos heredados).",
+                      "Usar banners de advertencia para notificar uso autorizado y trazabilidad legal.",
+                      "Aplicar `service password-encryption` como medida base para ocultar contraseñas en texto claro."
+                    ]
+                  },
+                  {
+                    title: "11.3.3 Protección de puertos y plano de control",
+                    items: [
+                      "Colocar puertos no utilizados en estado `shutdown` y, si aplica, en una VLAN aislada.",
+                      "Implementar controles de capa 2 según entorno: port-security, BPDU Guard y DHCP Snooping.",
+                      "Monitorear intentos de acceso fallidos y cambios de configuración en logs."
+                    ]
+                  },
+                  {
+                    title: "11.3.4 Operación segura continua",
+                    items: [
+                      "Guardar respaldo de configuraciones y mantener inventario de versiones de IOS.",
+                      "Aplicar parches y actualizaciones de seguridad de forma planificada.",
+                      "Validar periódicamente postura de seguridad con revisiones técnicas y pruebas de acceso."
+                    ]
+                  },
+                  {
+                    title: "Checklist de comprensión",
+                    items: [
+                      "Configurar acceso remoto seguro con SSH y autenticación.",
+                      "Eliminar o desactivar servicios no requeridos.",
+                      "Aplicar controles de puerto y registrar eventos relevantes."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Implementar una línea base de seguridad en dispositivos Cisco para operar con menor riesgo y mayor control administrativo."
                     ]
                   }
                 ]
@@ -6364,13 +6410,51 @@
               {
                 code: "11.4",
                 title: "Configuración de la Puerta de Enlace Predeterminada",
-                summary: "Base inicial del tema 11.4: Configuración de la Puerta de Enlace Predeterminada.",
+                summary:
+                  "La puerta de enlace predeterminada permite que un host o dispositivo de capa 2 envíe tráfico hacia redes remotas cuando el destino no pertenece a su subred local.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_11.4.svg",
+                    alt: "Flujo de tráfico desde un host local hacia red remota a través del gateway predeterminado."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "11.4.1 Función del gateway predeterminado",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Si el destino está fuera de la red local, el host envía el paquete al gateway configurado.",
+                      "El gateway suele ser una interfaz de router o firewall conectada al mismo segmento LAN.",
+                      "Sin gateway correcto, solo hay comunicación dentro de la subred local."
+                    ]
+                  },
+                  {
+                    title: "11.4.2 Configuración en hosts y switches",
+                    items: [
+                      "En hosts, se configura junto con IP y máscara mediante DHCP o parámetros estáticos.",
+                      "En switches de capa 2, el `ip default-gateway` habilita administración remota fuera de la VLAN local.",
+                      "La dirección configurada debe pertenecer a la misma red que la interfaz de gestión del dispositivo."
+                    ]
+                  },
+                  {
+                    title: "11.4.3 Verificación y solución de fallas",
+                    items: [
+                      "Validar con `ping` al gateway local como primera prueba de conectividad.",
+                      "Si hay respuesta local pero no remota, revisar rutas en el router y políticas de filtrado.",
+                      "Usar `show ip route` en router y `ipconfig`/`show ip interface brief` para confirmar parámetros."
+                    ]
+                  },
+                  {
+                    title: "11.4.4 Errores comunes",
+                    items: [
+                      "Gateway en subred incorrecta respecto al host o SVI de gestión.",
+                      "Interfaces del router en estado down o con IP mal configurada.",
+                      "Confundir gateway del host final con ruta por defecto del router."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Configurar y validar correctamente la puerta de enlace predeterminada para asegurar conectividad entre redes locales y remotas."
                     ]
                   }
                 ]
