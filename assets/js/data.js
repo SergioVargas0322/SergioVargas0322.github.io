@@ -2722,6 +2722,110 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M4",
+            title: "Crear una red doméstica",
+            topics: [
+              {
+                code: "4.1",
+                title: "Conceptos básicos de redes domésticas",
+                summary:
+                  "Estructura típica de una red del hogar: relación ISP-módem-router, dispositivos conectados y función de puertos LAN/WAN.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_4.1_1.png",
+                    alt: "Diagrama de red doméstica con router, ISP y dispositivos conectados en distintas áreas del hogar."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_4.1_2.png",
+                    alt: "Router doméstico con identificación de puertos Ethernet LAN y puerto de Internet WAN."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "4.1.1 Arquitectura típica del hogar",
+                    items: [
+                      "Una red doméstica suele separar dos ámbitos: la red local interna y la red externa del proveedor de Internet.",
+                      "El módem traduce la señal del operador (por ejemplo cable o DSL) para entregarla al router del hogar.",
+                      "El router integra funciones de conmutación LAN, punto de acceso inalámbrico y salida hacia Internet."
+                    ]
+                  },
+                  {
+                    title: "4.1.2 Componentes de la red doméstica",
+                    items: [
+                      "Además de PCs y móviles, hoy se conectan TVs, consolas, cámaras, impresoras y sensores del hogar.",
+                      "A mayor cantidad de dispositivos, más importante es planificar cobertura Wi-Fi y capacidad de la LAN.",
+                      "La red del hogar pasa de ser solo acceso a Internet a ser plataforma de servicios y automatización."
+                    ]
+                  },
+                  {
+                    title: "4.1.3 Puertos y segmentación básica",
+                    items: [
+                      "Los puertos LAN conectan equipos internos dentro de la misma red local.",
+                      "El puerto WAN/Internet enlaza con una red distinta: el proveedor de servicios.",
+                      "La separación LAN-WAN permite aplicar control de tráfico y funciones de seguridad de borde."
+                    ]
+                  },
+                  {
+                    title: "Práctica recomendada",
+                    items: [
+                      "Cambiar credenciales predeterminadas del router y documentar configuración inicial.",
+                      "Etiquetar dispositivos críticos para facilitar soporte y troubleshooting.",
+                      "Priorizar enlaces cableados para equipos fijos de alto consumo de ancho de banda."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.2",
+                title: "Tecnologías de red en el hogar",
+                summary:
+                  "Comparación entre tecnologías inalámbricas (2.4/5 GHz, Wi-Fi, Bluetooth) y tecnologías cableadas (UTP, coaxial y fibra óptica) en redes residenciales.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_4.2_1.png",
+                    alt: "Espectro y frecuencias inalámbricas usadas en redes domésticas, incluyendo bandas de 2.4 GHz y 5 GHz."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_4.2_wired_media.png",
+                    alt: "Comparación de tecnologías cableadas para LAN doméstica: UTP, coaxial y fibra óptica."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "4.2.1 Frecuencias inalámbricas LAN",
+                    items: [
+                      "En el hogar predominan bandas de 2.4 GHz y 5 GHz para conectividad Wi-Fi.",
+                      "Bluetooth opera en 2.4 GHz, con menor alcance y consumo, ideal para periféricos y audio.",
+                      "Wi-Fi (familia IEEE 802.11) entrega mayor cobertura y rendimiento para acceso de red general."
+                    ]
+                  },
+                  {
+                    title: "4.2.2 Tecnologías cableadas",
+                    items: [
+                      "Ethernet sobre par trenzado (Cat5e/Cat6) es la opción más común para conexiones fijas en LAN.",
+                      "El cable coaxial se usa ampliamente en acceso del ISP y ciertos escenarios de distribución.",
+                      "Fibra óptica ofrece mayor capacidad y distancia, con mayor costo inicial de despliegue."
+                    ]
+                  },
+                  {
+                    title: "Cuándo usar cada medio",
+                    items: [
+                      "Wi-Fi: movilidad y facilidad de instalación en áreas con múltiples dispositivos móviles.",
+                      "Ethernet: baja latencia y estabilidad para streaming 4K, trabajo remoto y gaming competitivo.",
+                      "Fibra en tramos críticos: backbone interno o enlace hacia equipos que demandan alto throughput sostenido."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Seleccionar tecnologías inalámbricas y cableadas según rendimiento requerido, alcance, costo y seguridad."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
