@@ -4917,13 +4917,64 @@
               {
                 code: "3.1",
                 title: "Sistema Numérico Binario",
-                summary: "Base inicial del tema 3.1: Sistema Numérico Binario.",
+                summary:
+                  "El sistema binario es la base del direccionamiento IPv4: permite representar direcciones de 32 bits y convertirlas entre binario y decimal punteado.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_3.1_1.png",
+                    alt: "Topología con hosts y redes IPv4 expresadas en notación binaria."
+                  },
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_3.1_2.png",
+                    alt: "Ejemplo de equivalencia entre octetos decimales y octetos binarios en una dirección IPv4."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "3.1.1 Direcciones binarias e IPv4",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "IPv4 se representa internamente en binario: 32 bits divididos en 4 octetos de 8 bits.",
+                      "Cada octeto binario se convierte a decimal para facilitar lectura humana en notación decimal punteada.",
+                      "Comprender binario evita errores al interpretar red, host y puerta de enlace predeterminada."
+                    ]
+                  },
+                  {
+                    title: "3.1.2 Conversión binario a decimal",
+                    items: [
+                      "La conversión usa notación posicional en base 2: 128, 64, 32, 16, 8, 4, 2, 1.",
+                      "Para pasar un octeto binario a decimal, se suman solo los valores donde el bit es 1.",
+                      "Ejemplo: 10101000 = 128 + 32 + 8 = 168."
+                    ]
+                  },
+                  {
+                    title: "3.1.5 y 3.1.6 Conversión decimal a binario",
+                    items: [
+                      "Para cada octeto decimal, se determina qué potencias de 2 lo componen y se marca 1 en esas posiciones.",
+                      "Ejemplo: 10 decimal = 00001010 binario; 11 decimal = 00001011 binario.",
+                      "Dirección 192.168.10.11 en binario: 11000000.10101000.00001010.00001011."
+                    ]
+                  },
+                  {
+                    title: "3.1.9 Lectura práctica de una IPv4",
+                    items: [
+                      "Una dirección IPv4 en decimal punteado (por ejemplo 192.168.10.10) es la forma operativa para configuración.",
+                      "El dispositivo trabaja realmente con el flujo binario de 32 bits equivalente.",
+                      "Dominar ambas representaciones mejora análisis de subredes, ACL y troubleshooting."
+                    ]
+                  },
+                  {
+                    title: "Checklist rápido de conversión",
+                    items: [
+                      "Separar siempre la dirección en octetos antes de convertir.",
+                      "Usar la tabla 128-64-32-16-8-4-2-1 para evitar omisiones.",
+                      "Verificar que cada octeto decimal quede entre 0 y 255.",
+                      "Confirmar resultado final en formato x.x.x.x."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Convertir direcciones IPv4 entre binario y decimal punteado con precisión para interpretar correctamente el direccionamiento de red."
                     ]
                   }
                 ]
@@ -4931,13 +4982,51 @@
               {
                 code: "3.2",
                 title: "Sistema Numérico Hexadecimal",
-                summary: "Base inicial del tema 3.2: Sistema Numérico Hexadecimal.",
+                summary:
+                  "El sistema hexadecimal simplifica la representación binaria y es esencial para trabajar con direcciones IPv6 y direcciones MAC.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_3.2.png",
+                    alt: "Relación entre hextetos IPv6, dígitos hexadecimales y grupos binarios de 4 bits."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "3.2.1 Hexadecimal e IPv6",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Hexadecimal es base 16 y usa símbolos 0-9 y A-F.",
+                      "Cada dígito hexadecimal representa exactamente 4 bits binarios (un nibble).",
+                      "IPv6 tiene 128 bits y se escribe como 8 bloques (hextetos) de 16 bits."
+                    ]
+                  },
+                  {
+                    title: "Relación binario-hexadecimal",
+                    items: [
+                      "Dos dígitos hexadecimales equivalen a un byte (8 bits).",
+                      "Esta equivalencia reduce complejidad visual frente a cadenas binarias largas.",
+                      "También se utiliza en redes para direcciones MAC Ethernet."
+                    ]
+                  },
+                  {
+                    title: "3.2.2 Conversión entre hexadecimal y decimal",
+                    items: [
+                      "Para hex a decimal se aplica notación posicional en base 16.",
+                      "Ejemplo: 2A(hex) = 2x16 + 10 = 42(dec).",
+                      "Ejemplo: C5(hex) = 12x16 + 5 = 197(dec)."
+                    ]
+                  },
+                  {
+                    title: "Uso operativo en redes",
+                    items: [
+                      "IPv6 puede escribirse en mayúsculas o minúsculas sin cambiar su significado.",
+                      "En configuración de red, leer correctamente hextetos evita errores de enrutamiento y de asignación.",
+                      "La conversión rápida hex-bin facilita interpretar prefijos y estructuras IPv6."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Convertir valores entre hexadecimal, binario y decimal, y aplicar esa habilidad en direccionamiento IPv6 y análisis de red."
                     ]
                   }
                 ]
