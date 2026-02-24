@@ -7098,7 +7098,7 @@
                 code: "4.1",
                 title: "Tipos de direcciones IPv6",
                 summary:
-                  "Desarrollo del tema 4.1: Tipos de direcciones IPv6. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "IPv6 define distintos tipos de direcciones para resolver alcance, enrutamiento y servicios. Distinguir unidifusión, multidifusión, anycast, GUA y LLA es clave para configurar y diagnosticar redes modernas.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_4.1.png",
@@ -7107,29 +7107,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "4.1.1 Unidifusión, multidifusión y anycast",
                     items: [
-                      "4.1.1 Unidifusión, Multidifusión, Cualquier Difusión",
-                      "4.1.2 Longitud de prefijo IPv6",
-                      "4.1.3 Tipos de direcciones de unidifusión IPv6",
-                      "4.1.4 Una nota sobre la dirección local única",
-                      "4.1.5 GUA IPv6",
-                      "4.1.6 Estructura IPv6 GUA",
-                      "4.1.7 IPv6 LLA"
+                      "Unidifusión identifica una única interfaz destino; es el caso más común en tráfico host a host.",
+                      "Multidifusión entrega tráfico a un grupo de interfaces suscritas y reemplaza funciones históricas de broadcast en IPv4.",
+                      "Anycast permite que varias interfaces compartan la misma dirección y el tráfico llegue al nodo más cercano según enrutamiento."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "4.1.2 Longitud de prefijo IPv6",
                     items: [
-                      "Identificar y aplicar los conceptos clave de tipos de direcciones ipv6.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "IPv6 usa prefijos, por ejemplo /64, para separar porción de red e identificador de interfaz.",
+                      "La práctica recomendada en LAN es /64 para compatibilidad con SLAAC y descubrimiento de vecinos.",
+                      "Prefijos mal definidos generan rutas incorrectas o falta de conectividad entre segmentos."
+                    ]
+                  },
+                  {
+                    title: "4.1.3 y 4.1.4 Unidifusión IPv6 y ULA",
+                    items: [
+                      "GUA (Global Unicast Address) es enrutable globalmente y se usa para comunicación entre redes.",
+                      "ULA (Unique Local Address) se usa internamente; no está destinada a enrutamiento público en Internet.",
+                      "LLA (Link-Local Address) es obligatoria en IPv6 y válida solo dentro del enlace local."
+                    ]
+                  },
+                  {
+                    title: "4.1.5 a 4.1.7 Estructura GUA y papel de LLA",
+                    items: [
+                      "Una GUA incluye prefijo global, subred e identificador de interfaz.",
+                      "Las LLA (normalmente fe80::/10) se usan para control local: NDP, RA y vecindad en el mismo segmento.",
+                      "Los routers y hosts dependen de LLA para operaciones básicas, incluso cuando también tienen GUA."
+                    ]
+                  },
+                  {
+                    title: "Aplicación y verificación",
+                    items: [
+                      "Identificar el tipo de dirección IPv6 de una interfaz antes de diagnosticar conectividad.",
+                      "Verificar prefijos y alcance con comandos de inspección en host y router.",
+                      "Diferenciar problemas de enrutamiento global (GUA) de problemas de enlace local (LLA)."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en tipos de direcciones ipv6 dentro del contexto del curso."
+                      "Clasificar direcciones IPv6 por tipo y alcance para tomar decisiones correctas de diseño, configuración y troubleshooting."
                     ]
                   }
                 ]
@@ -7138,7 +7158,7 @@
                 code: "4.2",
                 title: "Configuración estática GUA y LLA",
                 summary:
-                  "Desarrollo del tema 4.2: Configuración estática GUA y LLA. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "La configuración estática IPv6 permite control preciso del direccionamiento en routers y hosts. Aplicar correctamente GUA y LLA reduce errores de vecindad, enrutamiento y administración.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_4.2.png",
@@ -7147,25 +7167,57 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "4.2.1 GUA estática en un enrutador",
                     items: [
-                      "4.2.1 Configuración de GUA estática en un enrutador",
-                      "4.2.2 Configuración de GUA estática en un host de Windows",
-                      "4.2.3 Configuración estática de una dirección de unidifusión local de enlace"
+                      "Habilitar enrutamiento IPv6 y asignar la GUA por interfaz con su prefijo correcto.",
+                      "Confirmar estado administrativo y operativo de la interfaz para evitar falsos positivos de configuración.",
+                      "Documentar la asignación por enlace para mantener consistencia entre equipos y subredes."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "4.2.2 GUA estática en un host Windows",
                     items: [
-                      "Identificar y aplicar los conceptos clave de configuración estática gua y lla.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Configurar dirección IPv6, longitud de prefijo y gateway predeterminado acordes al segmento.",
+                      "Verificar que DNS IPv6 y gateway correspondan a la misma arquitectura de direccionamiento.",
+                      "Evitar mezcla incoherente de parámetros manuales y automáticos en una misma interfaz."
+                    ]
+                  },
+                  {
+                    title: "4.2.3 LLA estática",
+                    items: [
+                      "La LLA puede configurarse manualmente para facilitar administración y troubleshooting en enlaces críticos.",
+                      "Su alcance es local al enlace, por lo que no se enruta entre redes.",
+                      "Una LLA consistente simplifica protocolos de control y lectura de tablas de vecinos."
+                    ]
+                  },
+                  {
+                    title: "Validación de configuración",
+                    items: [
+                      "Comprobar direcciones y estado con comandos de verificación en host y router.",
+                      "Probar conectividad local (LLA) y remota (GUA) con ping/traceroute IPv6.",
+                      "Revisar tabla de vecinos cuando exista conectividad parcial o intermitente."
+                    ]
+                  },
+                  {
+                    title: "Errores comunes",
+                    items: [
+                      "Prefijo incorrecto o gateway fuera del segmento.",
+                      "Interfaz sin habilitar o con parámetros incompletos.",
+                      "Confundir alcance de LLA con direccionamiento enrutable global."
+                    ]
+                  },
+                  {
+                    title: "Comandos sugeridos",
+                    items: [
+                      "Router Cisco: `show ipv6 interface brief`, `show ipv6 route`, `show ipv6 neighbors`.",
+                      "Host Windows: `ipconfig /all` y `ping -6` para validar resolución y conectividad.",
+                      "Pruebas por salto: `tracert -6` o `traceroute -6` para ubicar dónde se corta el tráfico."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en configuración estática gua y lla dentro del contexto del curso."
+                      "Configurar y verificar direcciones IPv6 estáticas (GUA y LLA) con criterios operativos que permitan resolver fallas de conectividad rápidamente."
                     ]
                   }
                 ]
