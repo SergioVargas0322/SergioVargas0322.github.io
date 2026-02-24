@@ -2622,6 +2622,106 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M3",
+            title: "Redes inalámbricas y móviles",
+            topics: [
+              {
+                code: "3.1",
+                title: "Redes inalámbricas en dispositivos móviles",
+                summary:
+                  "Cómo un teléfono integra tecnologías celulares, Wi-Fi, Bluetooth, NFC y GPS para soportar voz, datos, ubicación y pagos.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_3.1_wireless_types.png",
+                    alt: "Resumen de tecnologías inalámbricas que conviven en un smartphone: 4G/5G, Wi-Fi, Bluetooth, NFC y GPS."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_3.1.png",
+                    alt: "Tabla de objetivos del módulo de redes inalámbricas y móviles."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "3.1.1-3.1.2 Un teléfono, múltiples redes",
+                    items: [
+                      "Un smartphone moderno combina varias radios y protocolos en paralelo para cubrir distintos servicios.",
+                      "Las llamadas y datos móviles usan red celular; la navegación en casa u oficina suele usar Wi-Fi.",
+                      "Pagos de proximidad, audio inalámbrico y ubicación satelital operan sobre tecnologías distintas pero coordinadas."
+                    ]
+                  },
+                  {
+                    title: "3.1.3 Tecnologías inalámbricas clave",
+                    items: [
+                      "4G/5G: conectividad de amplia cobertura para acceso a Internet y servicios móviles del operador.",
+                      "Wi-Fi: acceso local de alta velocidad mediante punto de acceso, ideal para reducir consumo de datos móviles.",
+                      "Bluetooth: enlace de corto alcance y bajo consumo para periféricos y accesorios.",
+                      "NFC: intercambio de datos a centímetros, útil para pagos y emparejamientos rápidos.",
+                      "GPS: posicionamiento por satélite para navegación y servicios basados en ubicación."
+                    ]
+                  },
+                  {
+                    title: "Criterio técnico de uso",
+                    items: [
+                      "Elegir tecnología según alcance, consumo de batería, latencia, seguridad y costo del enlace.",
+                      "Entender estas diferencias mejora diseño de políticas móviles y resolución de incidencias.",
+                      "En operación real, varias tecnologías pueden estar activas simultáneamente sin intervención del usuario."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "3.2",
+                title: "Conectividad de dispositivos móviles",
+                summary:
+                  "Configuración práctica de Wi-Fi, datos celulares y Bluetooth, con enfoque en seguridad, continuidad de servicio y diagnóstico de fallos comunes.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_3.2.png",
+                    alt: "Escenario de fallo por clave Wi-Fi incorrecta durante el intento de conexión móvil."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_3.2_bluetooth_flow.png",
+                    alt: "Flujo recomendado para emparejar dispositivos Bluetooth de forma segura."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "3.2.1 Wi-Fi en movilidad: valor y seguridad",
+                    items: [
+                      "Conectarse por Wi-Fi cuando está disponible reduce consumo del plan celular y ahorro de batería.",
+                      "No se debe enviar información sensible por canales sin cifrado; para datos críticos conviene usar VPN.",
+                      "En red doméstica, aplicar WPA2 o superior y contraseña robusta para minimizar riesgos de intrusión."
+                    ]
+                  },
+                  {
+                    title: "3.2.2-3.2.4 Configuración de Wi-Fi y datos móviles",
+                    items: [
+                      "Si la red no aparece, revisar difusión SSID, conexión automática y coincidencia exacta de frase de contraseña.",
+                      "Cuando no hay Wi-Fi, el dispositivo cambia a datos móviles; este cambio suele ser transparente para el usuario.",
+                      "Conviene gestionar activación de datos móviles según cobertura, plan contratado y prioridad de tráfico."
+                    ]
+                  },
+                  {
+                    title: "3.2.6-3.2.7 Bluetooth y emparejamiento",
+                    items: [
+                      "Bluetooth permite conectar hasta varios accesorios con bajo consumo (audio, teclado, control y tethering).",
+                      "El emparejamiento exige modo detectable, selección del dispositivo correcto y validación por PIN cuando aplica.",
+                      "Como práctica de seguridad, desactivar modo visible al finalizar y eliminar dispositivos no confiables."
+                    ]
+                  },
+                  {
+                    title: "3.2.8 Escenario integrado de uso",
+                    items: [
+                      "Un móvil puede usar Bluetooth para audio, Wi-Fi para Internet y red celular para mensajería en paralelo.",
+                      "Comprender esta coexistencia facilita diagnosticar fallos de conectividad intermitente.",
+                      "Ante error de conexión, verificar primero credenciales, cobertura, perfil guardado y compatibilidad de protocolo."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
