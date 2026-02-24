@@ -2034,118 +2034,6 @@
                     ]
                   }
                 ]
-              },
-              {
-                code: "4.3",
-                title: "Estándares inalámbricos Wi-Fi",
-                summary:
-                  "Fundamentos de los estándares IEEE 802.11, elección de banda/canal y parámetros clave para configurar una WLAN compatible, estable y segura.",
-                images: [
-                  {
-                    src: "./assets/images/network-basics/C5_4.2_1.png",
-                    alt: "Frecuencias y bandas de operación inalámbrica usadas en redes de hogar."
-                  },
-                  {
-                    src: "./assets/images/network-basics/C5_4.3_wifi_standards.png",
-                    alt: "Resumen comparativo de estándares Wi-Fi y buenas prácticas de configuración."
-                  }
-                ],
-                sections: [
-                  {
-                    title: "4.3.1 Redes Wi-Fi e IEEE 802.11",
-                    items: [
-                      "IEEE define las especificaciones técnicas que permiten que equipos de distintos fabricantes se comuniquen en una WLAN.",
-                      "Las familias 802.11 evolucionan para mejorar velocidad, eficiencia y capacidad en escenarios con más dispositivos simultáneos.",
-                      "La certificación de la Wi-Fi Alliance valida interoperabilidad práctica entre productos comerciales."
-                    ]
-                  },
-                  {
-                    title: "Bandas, canales y desempeño real",
-                    items: [
-                      "2.4 GHz ofrece más alcance, pero suele tener más interferencia por alta ocupación del espectro.",
-                      "5 GHz y 6 GHz ofrecen mayor capacidad y menos congestión, con menor alcance relativo según obstáculos y potencia.",
-                      "Seleccionar canal y ancho de canal de forma correcta mejora estabilidad y reduce retransmisiones."
-                    ]
-                  },
-                  {
-                    title: "4.3.2 Parámetros de configuración WLAN",
-                    items: [
-                      "Modo de red: define qué estándares se permiten (por ejemplo, mixto o solo estándares recientes).",
-                      "SSID: identifica la red; debe ser claro para administración, sin exponer marca/modelo del equipo.",
-                      "Canal y difusión de SSID: conviene ajustar según entorno para facilitar conexión legítima sin sacrificar seguridad."
-                    ]
-                  },
-                  {
-                    title: "Compatibilidad y seguridad",
-                    items: [
-                      "Si existen equipos antiguos, el modo mixto facilita conexión; en redes modernas, limitar estándares puede optimizar rendimiento.",
-                      "Desactivar solo la difusión del SSID no protege por sí mismo la red inalámbrica.",
-                      "La medida crítica es usar cifrado robusto (WPA2/WPA3), clave fuerte y segmentación por perfiles de uso."
-                    ]
-                  },
-                  {
-                    title: "Resultado del tema",
-                    items: [
-                      "Configurar una WLAN doméstica equilibrando compatibilidad, rendimiento y seguridad de acceso."
-                    ]
-                  }
-                ]
-              },
-              {
-                code: "4.4",
-                title: "Configurar un enrutador doméstico",
-                summary:
-                  "Procedimiento práctico para configurar un router residencial: conexión inicial, ajustes LAN/WAN, seguridad mínima y validación operativa.",
-                images: [
-                  {
-                    src: "./assets/images/network-basics/C5_4.1_2.png",
-                    alt: "Panel trasero de un router doméstico con puertos LAN y puerto WAN/Internet."
-                  },
-                  {
-                    src: "./assets/images/network-basics/C5_4.4_router_setup_flow.png",
-                    alt: "Flujo recomendado de configuración segura para un enrutador doméstico."
-                  }
-                ],
-                sections: [
-                  {
-                    title: "4.4.1 Configuración inicial",
-                    items: [
-                      "Para la puesta en marcha, conecta temporalmente una PC por cable a un puerto LAN del router, no al puerto WAN.",
-                      "Luego conecta la interfaz WAN/Internet hacia el módem o medio del ISP y verifica estado de enlace.",
-                      "La PC debe recibir IP por DHCP del router; si no ocurre, revisar cableado, NIC y alcance DHCP."
-                    ]
-                  },
-                  {
-                    title: "Acceso administrativo y parámetros base",
-                    items: [
-                      "Ingresa al panel web de administración (habitualmente mediante la puerta de enlace local).",
-                      "Cambia credenciales predeterminadas en la primera sesión y documenta los cambios en un registro seguro.",
-                      "Define direccionamiento LAN, rango DHCP, DNS y ajustes WAN según los requisitos del proveedor."
-                    ]
-                  },
-                  {
-                    title: "4.4.2 Consideraciones de diseño",
-                    items: [
-                      "El nombre de red (SSID) debe evitar datos que revelen fabricante o modelo del equipo.",
-                      "Verifica compatibilidad de los clientes inalámbricos para decidir si usar modo mixto o estándar específico.",
-                      "Si habrá usuarios externos, habilita red de invitados aislada para limitar acceso a recursos internos."
-                    ]
-                  },
-                  {
-                    title: "Seguridad y validación operativa",
-                    items: [
-                      "Habilita WPA2/WPA3, desactiva funciones inseguras que no uses y actualiza firmware a una versión estable.",
-                      "Valida navegación, resolución DNS, conectividad entre equipos y estabilidad en distintos puntos del hogar.",
-                      "Guarda respaldo de la configuración y programa revisiones periódicas para mantener la red protegida."
-                    ]
-                  },
-                  {
-                    title: "Resultado del tema",
-                    items: [
-                      "Desplegar un router doméstico funcional, seguro y preparado para crecimiento de dispositivos."
-                    ]
-                  }
-                ]
               }
             ]
           }
@@ -2933,6 +2821,242 @@
                     title: "Resultado del tema",
                     items: [
                       "Seleccionar tecnologías inalámbricas y cableadas según rendimiento requerido, alcance, costo y seguridad."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.3",
+                title: "Estándares inalámbricos Wi-Fi",
+                summary:
+                  "Fundamentos de los estándares IEEE 802.11, elección de banda/canal y parámetros clave para configurar una WLAN compatible, estable y segura.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_4.2_1.png",
+                    alt: "Frecuencias y bandas de operación inalámbrica usadas en redes de hogar."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_4.3_wifi_standards.png",
+                    alt: "Resumen comparativo de estándares Wi-Fi y buenas prácticas de configuración."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "4.3.1 Redes Wi-Fi e IEEE 802.11",
+                    items: [
+                      "IEEE define las especificaciones técnicas que permiten que equipos de distintos fabricantes se comuniquen en una WLAN.",
+                      "Las familias 802.11 evolucionan para mejorar velocidad, eficiencia y capacidad en escenarios con más dispositivos simultáneos.",
+                      "La certificación de la Wi-Fi Alliance valida interoperabilidad práctica entre productos comerciales."
+                    ]
+                  },
+                  {
+                    title: "Bandas, canales y desempeño real",
+                    items: [
+                      "2.4 GHz ofrece más alcance, pero suele tener más interferencia por alta ocupación del espectro.",
+                      "5 GHz y 6 GHz ofrecen mayor capacidad y menos congestión, con menor alcance relativo según obstáculos y potencia.",
+                      "Seleccionar canal y ancho de canal de forma correcta mejora estabilidad y reduce retransmisiones."
+                    ]
+                  },
+                  {
+                    title: "4.3.2 Parámetros de configuración WLAN",
+                    items: [
+                      "Modo de red: define qué estándares se permiten (por ejemplo, mixto o solo estándares recientes).",
+                      "SSID: identifica la red; debe ser claro para administración, sin exponer marca/modelo del equipo.",
+                      "Canal y difusión de SSID: conviene ajustar según entorno para facilitar conexión legítima sin sacrificar seguridad."
+                    ]
+                  },
+                  {
+                    title: "Compatibilidad y seguridad",
+                    items: [
+                      "Si existen equipos antiguos, el modo mixto facilita conexión; en redes modernas, limitar estándares puede optimizar rendimiento.",
+                      "Desactivar solo la difusión del SSID no protege por sí mismo la red inalámbrica.",
+                      "La medida crítica es usar cifrado robusto (WPA2/WPA3), clave fuerte y segmentación por perfiles de uso."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Configurar una WLAN doméstica equilibrando compatibilidad, rendimiento y seguridad de acceso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.4",
+                title: "Configurar un enrutador doméstico",
+                summary:
+                  "Procedimiento práctico para configurar un router residencial: conexión inicial, ajustes LAN/WAN, seguridad mínima y validación operativa.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_4.1_2.png",
+                    alt: "Panel trasero de un router doméstico con puertos LAN y puerto WAN/Internet."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_4.4_router_setup_flow.png",
+                    alt: "Flujo recomendado de configuración segura para un enrutador doméstico."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "4.4.1 Configuración inicial",
+                    items: [
+                      "Para la puesta en marcha, conecta temporalmente una PC por cable a un puerto LAN del router, no al puerto WAN.",
+                      "Luego conecta la interfaz WAN/Internet hacia el módem o medio del ISP y verifica estado de enlace.",
+                      "La PC debe recibir IP por DHCP del router; si no ocurre, revisar cableado, NIC y alcance DHCP."
+                    ]
+                  },
+                  {
+                    title: "Acceso administrativo y parámetros base",
+                    items: [
+                      "Ingresa al panel web de administración (habitualmente mediante la puerta de enlace local).",
+                      "Cambia credenciales predeterminadas en la primera sesión y documenta los cambios en un registro seguro.",
+                      "Define direccionamiento LAN, rango DHCP, DNS y ajustes WAN según los requisitos del proveedor."
+                    ]
+                  },
+                  {
+                    title: "4.4.2 Consideraciones de diseño",
+                    items: [
+                      "El nombre de red (SSID) debe evitar datos que revelen fabricante o modelo del equipo.",
+                      "Verifica compatibilidad de los clientes inalámbricos para decidir si usar modo mixto o estándar específico.",
+                      "Si habrá usuarios externos, habilita red de invitados aislada para limitar acceso a recursos internos."
+                    ]
+                  },
+                  {
+                    title: "Seguridad y validación operativa",
+                    items: [
+                      "Habilita WPA2/WPA3, desactiva funciones inseguras que no uses y actualiza firmware a una versión estable.",
+                      "Valida navegación, resolución DNS, conectividad entre equipos y estabilidad en distintos puntos del hogar.",
+                      "Guarda respaldo de la configuración y programa revisiones periódicas para mantener la red protegida."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Desplegar un router doméstico funcional, seguro y preparado para crecimiento de dispositivos."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M5",
+            title: "Principios de comunicaci\u00f3n",
+            topics: [
+              {
+                code: "5.1",
+                title: "Protocolos de comunicaci\u00f3n",
+                summary:
+                  "Reglas de intercambio de datos en red: formato de mensaje, temporizaci\u00f3n, confirmaci\u00f3n y confiabilidad.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_5.1.png",
+                    alt: "Elementos principales de un protocolo de comunicaci\u00f3n en red."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "5.1.1 Reglas para comunicarse",
+                    items: [
+                      "En redes, igual que en la comunicaci\u00f3n humana, se requiere un conjunto de reglas compartidas.",
+                      "Sin protocolo com\u00fan, los equipos no pueden interpretar correctamente lo que reciben.",
+                      "Un protocolo define c\u00f3mo iniciar, mantener y finalizar una comunicaci\u00f3n."
+                    ]
+                  },
+                  {
+                    title: "Elementos que define un protocolo",
+                    items: [
+                      "Formato y tama\u00f1o del mensaje para que el receptor pueda procesarlo.",
+                      "Temporizaci\u00f3n y secuencia para evitar p\u00e9rdida o desorden de datos.",
+                      "Mecanismos de encapsulaci\u00f3n, control y verificaci\u00f3n para entrega confiable."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar por qu\u00e9 los protocolos son la base de toda comunicaci\u00f3n de red."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "5.2",
+                title: "Est\u00e1ndares de comunicaci\u00f3n",
+                summary:
+                  "Rol de los est\u00e1ndares de Internet para asegurar interoperabilidad entre equipos, aplicaciones y servicios.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_5.2_1.png",
+                    alt: "Vista de protocolos y dispositivos colaborando bajo reglas comunes de comunicaci\u00f3n."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_5.2_2.png",
+                    alt: "Organizaciones y documentos t\u00e9cnicos usados para estandarizaci\u00f3n en redes."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "5.2.2 Internet y est\u00e1ndares",
+                    items: [
+                      "Un est\u00e1ndar define c\u00f3mo se implementa una tecnolog\u00eda para que sea compatible con otras.",
+                      "Permite que dispositivos de diferentes fabricantes intercambien datos sin conflictos.",
+                      "Gracias a esto, servicios globales como web y correo operan de forma consistente."
+                    ]
+                  },
+                  {
+                    title: "5.2.3 Organizaciones de est\u00e1ndares",
+                    items: [
+                      "La IETF publica RFC que documentan protocolos y mejores pr\u00e1cticas de Internet.",
+                      "IEEE, ISO y otros organismos aportan normas t\u00e9cnicas para distintas capas de red.",
+                      "La estandarizaci\u00f3n reduce riesgos de incompatibilidad y facilita evoluci\u00f3n tecnol\u00f3gica."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Justificar por qu\u00e9 los est\u00e1ndares son esenciales para la estabilidad y crecimiento de Internet."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "5.3",
+                title: "Modelos de comunicaci\u00f3n de red",
+                summary:
+                  "Aplicaci\u00f3n de modelos por capas (TCP/IP y OSI) para comprender protocolos y mejorar el troubleshooting.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_5.3_1.png",
+                    alt: "Representaci\u00f3n de funciones de red organizadas por capas."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_5.3_2.png",
+                    alt: "Comparaci\u00f3n conceptual entre el modelo TCP/IP y el modelo OSI."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "5.3.1-5.3.2 Pila de protocolos",
+                    items: [
+                      "Una comunicaci\u00f3n real usa varios protocolos al mismo tiempo, cada uno en su capa.",
+                      "Ejemplo t\u00edpico: Ethernet, IP, TCP y HTTP trabajando de forma coordinada.",
+                      "Este enfoque modular simplifica dise\u00f1o, operaci\u00f3n y mantenimiento."
+                    ]
+                  },
+                  {
+                    title: "5.3.3 Modelo TCP/IP",
+                    items: [
+                      "Organiza funciones en capas de acceso, Internet, transporte y aplicaci\u00f3n.",
+                      "Describe el funcionamiento pr\u00e1ctico de la suite de protocolos usada en Internet.",
+                      "Permite mapear de forma directa servicios reales y flujo de datos."
+                    ]
+                  },
+                  {
+                    title: "5.3.4-5.3.5 Modelo OSI y comparaci\u00f3n",
+                    items: [
+                      "OSI es un modelo de referencia para entender funciones generales de comunicaci\u00f3n.",
+                      "TCP/IP es un modelo aplicado, enfocado en protocolos en uso real.",
+                      "Usar ambos modelos mejora an\u00e1lisis t\u00e9cnico y diagn\u00f3stico por capas."
                     ]
                   }
                 ]
