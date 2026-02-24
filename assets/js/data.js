@@ -6238,13 +6238,51 @@
               {
                 code: "11.1",
                 title: "Configuración Básica del Conmutador",
-                summary: "Base inicial del tema 11.1: Configuración Básica del Conmutador.",
+                summary:
+                  "La configuración básica de un switch establece identidad, acceso administrativo y parámetros mínimos para operar y administrar la red local de forma ordenada.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_11.1.svg",
+                    alt: "Secuencia recomendada para configuración inicial de un switch Cisco."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "11.1.1 Preparación inicial",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Conectar por consola y entrar al modo privilegiado con `enable`.",
+                      "Pasar a configuración global con `configure terminal`.",
+                      "Asignar `hostname` para identificar el equipo en topología y registros."
+                    ]
+                  },
+                  {
+                    title: "11.1.2 Seguridad mínima de administración",
+                    items: [
+                      "Configurar `enable secret` para proteger acceso privilegiado.",
+                      "Establecer contraseña de consola (`line console 0`) y líneas VTY para acceso remoto controlado.",
+                      "Aplicar cifrado básico de contraseñas y banner de aviso (`service password-encryption`, `banner motd`)."
+                    ]
+                  },
+                  {
+                    title: "11.1.3 Gestión y verificación",
+                    items: [
+                      "Configurar una interfaz VLAN de gestión (SVI) con dirección IP para administración remota.",
+                      "Verificar estado con `show ip interface brief` y revisar configuración con `show running-config`.",
+                      "Guardar cambios con `copy running-config startup-config` para persistencia tras reinicio."
+                    ]
+                  },
+                  {
+                    title: "11.1.4 Errores comunes",
+                    items: [
+                      "Olvidar `no shutdown` en la SVI o en puertos requeridos.",
+                      "No guardar configuración y perder cambios al reiniciar.",
+                      "Usar contraseñas débiles o repetidas entre dispositivos."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Aplicar una configuración base de switch segura y verificable para iniciar una red Cisco pequeña."
                     ]
                   }
                 ]
@@ -6252,13 +6290,59 @@
               {
                 code: "11.2",
                 title: "Configurar los Ajustes Iniciales del Enrutador",
-                summary: "Base inicial del tema 11.2: Configurar los Ajustes Iniciales del Enrutador.",
+                summary:
+                  "El ajuste inicial de un router define parámetros de identidad, seguridad y direccionamiento de interfaces para habilitar conectividad entre redes.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_11.2.svg",
+                    alt: "Checklist de pasos para configuración inicial de un router Cisco."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "11.2.1 Configuración base del router",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Asignar `hostname` y desactivar búsquedas DNS accidentales (`no ip domain-lookup`).",
+                      "Configurar `enable secret` y parámetros de acceso local según política.",
+                      "Definir banner legal para acceso administrativo."
+                    ]
+                  },
+                  {
+                    title: "11.2.2 Direccionamiento de interfaces",
+                    items: [
+                      "Entrar a cada interfaz requerida (`interface g0/0/x`) y asignar IP/máscara.",
+                      "Activar la interfaz con `no shutdown` y documentar con `description`.",
+                      "Verificar estado operativo (`up/up`) en `show ip interface brief`."
+                    ]
+                  },
+                  {
+                    title: "11.2.3 Validación de conectividad",
+                    items: [
+                      "Probar conectividad local con `ping` hacia dispositivos conectados al mismo segmento.",
+                      "Comprobar rutas y alcance interred una vez configurados gateway y rutas necesarias.",
+                      "Registrar salidas clave de verificación para auditoría técnica."
+                    ]
+                  },
+                  {
+                    title: "11.2.4 Persistencia y control de cambios",
+                    items: [
+                      "Guardar configuración en NVRAM (`copy running-config startup-config`).",
+                      "Comparar `running-config` y `startup-config` para evitar inconsistencias al reinicio.",
+                      "Aplicar cambios de forma incremental para aislar fallos rápidamente."
+                    ]
+                  },
+                  {
+                    title: "Checklist de comprensión",
+                    items: [
+                      "Configurar interfaz con IP y estado operativo correcto.",
+                      "Validar acceso y seguridad básica del router.",
+                      "Guardar y verificar configuración antes de cerrar sesión."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Implementar ajustes iniciales de router con enfoque práctico, seguro y orientado a verificación."
                     ]
                   }
                 ]
