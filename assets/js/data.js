@@ -4796,32 +4796,114 @@
           },
           {
             key: "M2",
-            title: "La Nube y Virtualizacion",
+            title: "La Nube y Virtualizaci\u00f3n",
             topics: [
               {
                 code: "2.1",
-                title: "La Nube y Servicios en la Nube",
-                summary: "Base inicial del tema 2.1: La Nube y Servicios en la Nube.",
+                title: "La nube y servicios en la nube",
+                summary:
+                  "La computaci\u00f3n en la nube entrega recursos de TI bajo demanda y permite escalar servicios sin depender de infraestructura local dedicada.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_2.1.png",
+                    alt: "Proveedores de servicios en la nube como AWS, Azure, Cisco, Google Cloud e IBM Cloud."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "2.1.1 Fundamentos de nube",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "La nube combina centros de datos, virtualizaci\u00f3n y servicios remotos para ofrecer capacidad de c\u00f3mputo, almacenamiento y red.",
+                      "En lugar de comprar todo el hardware por adelantado, una organizaci\u00f3n puede consumir recursos seg\u00fan demanda.",
+                      "Este modelo mejora tiempo de despliegue y continuidad operativa cuando hay crecimiento o variaci\u00f3n de carga."
+                    ]
+                  },
+                  {
+                    title: "2.1.2 Modelos de despliegue",
+                    items: [
+                      "Nube p\u00fablica: servicios accesibles por Internet para m\u00faltiples clientes, normalmente con pago por uso.",
+                      "Nube privada: recursos dedicados a una sola organizaci\u00f3n con mayor control sobre pol\u00edticas y cumplimiento.",
+                      "Nube h\u00edbrida: combina entornos p\u00fablicos y privados para balancear costo, seguridad y flexibilidad.",
+                      "Nube comunitaria: compartida por organizaciones con requisitos similares, por ejemplo salud o sector p\u00fablico."
+                    ]
+                  },
+                  {
+                    title: "2.1.3 Modelos de servicio",
+                    items: [
+                      "SaaS: aplicaciones listas para usar (correo, colaboraci\u00f3n, ofim\u00e1tica).",
+                      "PaaS: plataforma para desarrollar y desplegar aplicaciones sin administrar la base de infraestructura.",
+                      "IaaS: servidores, red y almacenamiento virtualizados para construir soluciones personalizadas."
+                    ]
+                  },
+                  {
+                    title: "Criterios para elegir servicios en la nube",
+                    items: [
+                      "Definir requisitos de seguridad, soberan\u00eda y clasificaci\u00f3n de datos.",
+                      "Evaluar latencia, disponibilidad y ubicaci\u00f3n geogr\u00e1fica de las regiones del proveedor.",
+                      "Revisar costos operativos: c\u00f3mputo, almacenamiento, transferencia y soporte.",
+                      "Verificar integraci\u00f3n con la red local y estrategia de respaldo/recuperaci\u00f3n."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Comparar modelos de nube y seleccionar el enfoque m\u00e1s adecuado seg\u00fan necesidades t\u00e9cnicas y de negocio."
                     ]
                   }
                 ]
               },
               {
                 code: "2.2",
-                title: "Virtualizacion",
-                summary: "Base inicial del tema 2.2: Virtualizacion.",
+                title: "Virtualizaci\u00f3n",
+                summary:
+                  "La virtualizaci\u00f3n desacopla software y hardware para ejecutar m\u00faltiples sistemas o funciones en la misma plataforma f\u00edsica, con mejor aprovechamiento de recursos.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_2.2_1.png",
+                    alt: "Esquema de hipervisor tipo 1 con m\u00faltiples sistemas operativos invitados sobre hardware del servidor."
+                  },
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_2.2_2.png",
+                    alt: "Esquema de hipervisor tipo 2 ejecut\u00e1ndose sobre un sistema operativo host."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "2.2.1 Qu\u00e9 es virtualizaci\u00f3n",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliara con contenido detallado, imagenes y practicas en las siguientes iteraciones."
+                      "Consiste en crear recursos l\u00f3gicos (m\u00e1quinas, redes o almacenamiento) sobre una base f\u00edsica compartida.",
+                      "Permite consolidar servidores y reducir la proliferaci\u00f3n de equipos dedicados subutilizados.",
+                      "Es una base tecnol\u00f3gica clave para operar servicios de nube de forma eficiente."
+                    ]
+                  },
+                  {
+                    title: "2.2.2 Hipervisores tipo 1 y tipo 2",
+                    items: [
+                      "Tipo 1 (bare-metal): se instala directamente sobre hardware; ofrece mejor rendimiento y aislamiento para producci\u00f3n.",
+                      "Tipo 2 (hosted): corre sobre un sistema operativo anfitri\u00f3n; es pr\u00e1ctico para laboratorio, pruebas y aprendizaje.",
+                      "La elecci\u00f3n depende de criticidad del servicio, capacidad del hardware y objetivos del entorno."
+                    ]
+                  },
+                  {
+                    title: "2.2.3 Ventajas y riesgos operativos",
+                    items: [
+                      "Ventajas: menor costo total, mejor uso de CPU/RAM, aprovisionamiento r\u00e1pido y mayor flexibilidad.",
+                      "Riesgos: dependencia del host f\u00edsico, sobreasignaci\u00f3n de recursos y complejidad de administraci\u00f3n.",
+                      "Buenas pr\u00e1cticas: monitoreo continuo, plantillas est\u00e1ndar, segmentaci\u00f3n y copias de seguridad de VMs."
+                    ]
+                  },
+                  {
+                    title: "2.2.4 Virtualizaci\u00f3n de red",
+                    items: [
+                      "No solo se virtualizan servidores; tambi\u00e9n es posible virtualizar switching, routing y funciones de seguridad.",
+                      "Esto facilita laboratorios, automatizaci\u00f3n y despliegues consistentes entre entornos de desarrollo y producci\u00f3n.",
+                      "La conectividad virtual debe dise\u00f1arse con el mismo rigor que la red f\u00edsica: direccionamiento, segmentaci\u00f3n y control de acceso."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Diferenciar hipervisores, justificar casos de uso y reconocer implicaciones de rendimiento, seguridad y continuidad."
                     ]
                   }
                 ]
