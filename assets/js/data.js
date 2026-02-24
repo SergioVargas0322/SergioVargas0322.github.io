@@ -5498,13 +5498,59 @@
               {
                 code: "7.1",
                 title: "ARP",
-                summary: "Base inicial del tema 7.1: ARP.",
+                summary:
+                  "ARP (Address Resolution Protocol) permite encontrar la dirección MAC asociada a una dirección IPv4 dentro de la misma red local para que las tramas Ethernet puedan entregarse correctamente.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_7.1.png",
+                    alt: "Flujo de solicitud y respuesta ARP para resolver una dirección MAC a partir de una dirección IPv4 en LAN."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "7.1.1 Propósito de ARP en redes IPv4",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Un host puede conocer la IP de destino, pero para enviar en Ethernet necesita la MAC de destino local.",
+                      "ARP resuelve la relación IPv4-MAC en la LAN y alimenta la tabla ARP del host.",
+                      "Este proceso ocurre antes de encapsular y enviar datos a nivel de capa 2."
+                    ]
+                  },
+                  {
+                    title: "7.1.2 Flujo básico de resolución",
+                    items: [
+                      "Si no existe entrada en caché, el host emite una ARP Request en broadcast (FF:FF:FF:FF:FF:FF).",
+                      "Solo el dispositivo con la IP consultada responde con ARP Reply en unicast, indicando su MAC.",
+                      "Con la respuesta, el emisor actualiza la caché ARP y ya puede transmitir tramas de datos."
+                    ]
+                  },
+                  {
+                    title: "7.1.3 ARP y puerta de enlace predeterminada",
+                    items: [
+                      "Si el destino está fuera de la subred local, no se resuelve la MAC del destino final sino la MAC del gateway.",
+                      "El host envía las tramas al router local, que luego reencamina el paquete a otras redes.",
+                      "Por eso, una configuración correcta de gateway es crítica para alcance interred."
+                    ]
+                  },
+                  {
+                    title: "7.1.4 Caché ARP y operación diaria",
+                    items: [
+                      "Las entradas ARP se guardan temporalmente para evitar solicitudes repetitivas y reducir broadcast.",
+                      "Cuando expiran o cambian dispositivos, las entradas se vuelven a aprender dinámicamente.",
+                      "Comandos útiles: arp -a (Windows) o ip neigh / arp -n (Linux)."
+                    ]
+                  },
+                  {
+                    title: "7.1.5 Riesgos y controles básicos",
+                    items: [
+                      "ARP no tiene autenticación nativa, por lo que puede ser objetivo de suplantación (ARP spoofing).",
+                      "Medidas defensivas en red empresarial: DHCP Snooping, Dynamic ARP Inspection y segmentación por VLAN.",
+                      "Monitorear tablas ARP y cambios anómalos ayuda a detectar ataques de envenenamiento ARP."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar cómo ARP habilita la comunicación IPv4 sobre Ethernet y cómo su operación impacta conectividad y seguridad en la LAN."
                     ]
                   }
                 ]
