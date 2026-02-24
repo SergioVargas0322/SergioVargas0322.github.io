@@ -5564,13 +5564,51 @@
               {
                 code: "8.1",
                 title: "Servicios de DNS",
-                summary: "Base inicial del tema 8.1: Servicios de DNS.",
+                summary:
+                  "DNS traduce nombres de dominio a direcciones IP para que usuarios y aplicaciones accedan a servicios sin memorizar direcciones numéricas.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_8.1.png",
+                    alt: "Proceso de resolución DNS desde el cliente hacia servidor recursivo y servidores autoritativos."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "8.1.1 Función de DNS en la red",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Permite usar nombres legibles (por ejemplo, www.ejemplo.com) en lugar de direcciones IPv4/IPv6.",
+                      "Sin DNS, la navegación y la mayoría de aplicaciones dependerían de direcciones IP manuales.",
+                      "Es un servicio crítico para operación de correo, web, autenticación y muchas plataformas corporativas."
+                    ]
+                  },
+                  {
+                    title: "8.1.2 Consulta DNS: flujo básico",
+                    items: [
+                      "El cliente consulta al resolvedor configurado (normalmente DNS del router o del ISP/empresa).",
+                      "Si no hay respuesta en caché, el resolvedor consulta servidores raíz, TLD y autoritativos según corresponda.",
+                      "La respuesta final regresa al cliente con la IP solicitada y se guarda temporalmente en caché."
+                    ]
+                  },
+                  {
+                    title: "8.1.3 Registros DNS más usados",
+                    items: [
+                      "A y AAAA: asocian nombre a dirección IPv4 o IPv6.",
+                      "CNAME: define alias de un nombre canónico.",
+                      "MX y NS: enrutan correo y delegan autoridad de zona."
+                    ]
+                  },
+                  {
+                    title: "8.1.4 Operación, rendimiento y seguridad",
+                    items: [
+                      "La caché DNS reduce latencia y tráfico, pero puede exponer problemas si hay datos obsoletos.",
+                      "Herramientas de diagnóstico: nslookup, dig y resolución inversa por PTR.",
+                      "Buenas prácticas: redundancia de servidores DNS, control de acceso y validación de registros."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar cómo DNS convierte nombres en direcciones IP y cómo su diseño afecta disponibilidad y rendimiento de los servicios."
                     ]
                   }
                 ]
@@ -5578,13 +5616,59 @@
               {
                 code: "8.2",
                 title: "Servicios de DHCP",
-                summary: "Base inicial del tema 8.2: Servicios de DHCP.",
+                summary:
+                  "DHCP asigna parámetros IP de forma automática para reducir errores de configuración manual y acelerar la incorporación de hosts a la red.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_8.2.png",
+                    alt: "Intercambio DHCP Discover, Offer, Request y Acknowledgment entre cliente y servidor."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "8.2.1 Propósito y beneficios de DHCP",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Automatiza asignación de dirección IP, máscara, gateway y DNS.",
+                      "Evita conflictos por IP duplicada y simplifica despliegues masivos de dispositivos.",
+                      "Permite administrar políticas de direccionamiento centralizadas por subred."
+                    ]
+                  },
+                  {
+                    title: "8.2.2 Proceso DORA",
+                    items: [
+                      "Discover: el cliente solicita configuración IP en broadcast.",
+                      "Offer: el servidor propone una dirección y parámetros de red.",
+                      "Request/Ack: el cliente acepta la oferta y el servidor confirma la concesión (lease)."
+                    ]
+                  },
+                  {
+                    title: "8.2.3 Componentes de una concesión",
+                    items: [
+                      "Lease time: tiempo de validez de la asignación IP.",
+                      "Opciones DHCP: DNS, dominio, NTP y otras configuraciones adicionales.",
+                      "Reservas: asociación fija entre MAC e IP para equipos que requieren dirección estable."
+                    ]
+                  },
+                  {
+                    title: "8.2.4 DHCP relay y buenas prácticas",
+                    items: [
+                      "Cuando servidor y clientes están en redes distintas, se usa relay (ip helper-address en router).",
+                      "Conviene excluir rangos estáticos (infraestructura, impresoras críticas, servidores).",
+                      "Seguridad recomendada: DHCP Snooping para mitigar servidores DHCP no autorizados."
+                    ]
+                  },
+                  {
+                    title: "Checklist de comprensión",
+                    items: [
+                      "Describir correctamente las cuatro fases DORA.",
+                      "Explicar por qué DHCP reduce errores operativos frente a configuración manual.",
+                      "Identificar cuándo se requiere DHCP relay."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Aplicar DHCP de forma segura y eficiente para entregar direccionamiento IP escalable en redes empresariales."
                     ]
                   }
                 ]
