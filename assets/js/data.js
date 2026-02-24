@@ -4479,6 +4479,110 @@
                     ]
                   }
                 ]
+              },
+              {
+                code: "16.6",
+                title: "Terminales virtuales",
+                summary:
+                  "Acceso remoto a dispositivos y servidores mediante sesiones virtuales, comparando Telnet y SSH con enfoque en seguridad.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_16.6_virtual_terminals_telnet_ssh.png",
+                    alt: "Comparacion entre Telnet y SSH para acceso remoto a CLI, con puertos y nivel de seguridad."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "16.6.1 Acceso remoto con Telnet o SSH",
+                    items: [
+                      "Clientes como Tera Term permiten abrir sesiones remotas hacia equipos de red y servidores.",
+                      "La sesion remota emula una terminal local y habilita administracion por linea de comandos.",
+                      "SSH se prioriza en entornos reales por su cifrado y proteccion de credenciales."
+                    ]
+                  },
+                  {
+                    title: "16.6.2 Telnet",
+                    items: [
+                      "Telnet es un protocolo historico de emulacion de terminal y usa TCP puerto 23.",
+                      "Una conexion Telnet establece una sesion vty para ejecutar comandos en el host remoto.",
+                      "Aunque util en laboratorios, su uso en produccion debe evitarse por falta de cifrado."
+                    ]
+                  },
+                  {
+                    title: "16.6.3 Problemas de seguridad con Telnet",
+                    items: [
+                      "Telnet transmite datos en texto plano, por lo que un atacante puede leer trafico capturado.",
+                      "Con acceso a credenciales, un tercero podria ejecutar acciones administrativas no autorizadas.",
+                      "SSH aporta autenticacion fuerte y cifrado de sesion, reduciendo riesgo operativo."
+                    ]
+                  },
+                  {
+                    title: "Checklist de operacion segura",
+                    items: [
+                      "Habilitar SSH y deshabilitar Telnet cuando el equipo y la politica lo permitan.",
+                      "Aplicar usuarios/roles con privilegios minimos para administracion remota.",
+                      "Registrar sesiones y auditar cambios para trazabilidad y respuesta a incidentes."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Justificar tecnicamente el uso de SSH sobre Telnet para administracion remota segura."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "16.7",
+                title: "Correo electronico y mensajeria",
+                summary:
+                  "Arquitectura de correo, protocolos SMTP/POP3/IMAP4 y evolucion hacia mensajeria instantanea y llamadas VoIP.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_16.7_email_messaging_voip.png",
+                    alt: "Resumen de protocolos de correo y servicios de mensajeria y llamadas por Internet."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "16.7.1 Clientes y servidores de correo",
+                    items: [
+                      "El correo es un servicio cliente-servidor donde los mensajes se almacenan en buzones remotos.",
+                      "Los usuarios acceden con clientes web o aplicaciones dedicadas segun plataforma.",
+                      "La direccion de buzon sigue formato usuario@empresa.dominio."
+                    ]
+                  },
+                  {
+                    title: "16.7.2 Protocolos de correo",
+                    items: [
+                      "SMTP envia correo desde cliente a servidor local y entre servidores (puerto 25).",
+                      "POP3 descarga mensajes al cliente y normalmente no los conserva en servidor (puerto 110).",
+                      "IMAP4 mantiene sincronizacion con buzon remoto y conserva mensajes en servidor (puerto 143)."
+                    ]
+                  },
+                  {
+                    title: "16.7.3 Mensajeria de texto",
+                    items: [
+                      "La mensajeria en tiempo real se integra en clientes web, moviles y plataformas colaborativas.",
+                      "Ademas del texto, muchas aplicaciones soportan envio de archivos, audio y video.",
+                      "Ejemplos frecuentes: Teams, Webex, WhatsApp y otros clientes de comunicacion empresarial y personal."
+                    ]
+                  },
+                  {
+                    title: "16.7.4 Llamadas telefonicas por Internet",
+                    items: [
+                      "VoIP convierte voz analogica en paquetes IP para transportar llamadas por la red.",
+                      "Para comunicacion con telefonia tradicional se requiere gateway hacia la red PSTN.",
+                      "Calidad de voz depende de latencia, perdida de paquetes y capacidad de la red."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Diferenciar servicios de correo, chat y VoIP para seleccionar protocolos y controles adecuados."
+                    ]
+                  }
+                ]
               }
             ]
           }
