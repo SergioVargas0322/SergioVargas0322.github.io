@@ -2299,6 +2299,161 @@
             ]
           }
         ]
+      },
+      {
+        id: "networking-basics",
+        title: "Conceptos básicos de redes",
+        provider: "Cisco Networking Academy",
+        level: "Fundamentos",
+        status: "En curso",
+        estimatedHours: 70,
+        summary:
+          "Curso base para comprender cómo se comunican los dispositivos en red, desde protocolos y estándares hasta direccionamiento, acceso y servicios de aplicación.",
+        tags: ["redes", "protocolos", "tcp/ip", "osi", "estándares"],
+        modules: [
+          {
+            key: "M5",
+            title: "Protocolos y modelos de comunicación de red",
+            topics: [
+              {
+                code: "5.1",
+                title: "Protocolos de comunicación",
+                summary:
+                  "Fundamentos de los protocolos como reglas de comunicación entre dispositivos y su impacto en redes cableadas e inalámbricas.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_5.1.png",
+                    alt: "Diagrama que representa cómo los protocolos definen reglas para intercambiar mensajes en red."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "5.1.1 Reglas para comunicarse",
+                    items: [
+                      "Toda comunicación requiere acuerdos previos: método, idioma y confirmación de recepción.",
+                      "En redes, estas reglas se implementan como protocolos para que origen y destino interpreten el mismo formato.",
+                      "Si dos equipos no comparten protocolos compatibles, no hay comunicación útil aunque exista enlace físico."
+                    ]
+                  },
+                  {
+                    title: "Elementos que define un protocolo",
+                    items: [
+                      "Formato y tamaño de mensaje: estructura que permite procesar correctamente cada unidad de datos.",
+                      "Temporización y secuencia: control del orden y tiempos de envío para evitar pérdidas o desincronización.",
+                      "Encapsulamiento y codificación: forma de empaquetar y representar datos al pasar por cada capa."
+                    ]
+                  },
+                  {
+                    title: "5.1.2 Por qué importan",
+                    items: [
+                      "Los protocolos hacen posible la interoperabilidad entre fabricantes, sistemas operativos y tipos de enlace.",
+                      "Reducen errores de implementación al estandarizar cómo se inicia, mantiene y finaliza una comunicación.",
+                      "Son base para diagnosticar fallas: entender el protocolo permite aislar rápidamente el punto de ruptura."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar por qué una red funciona cuando todos los hosts “hablan el mismo idioma” de protocolos."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "5.2",
+                title: "Estándares de comunicación",
+                summary:
+                  "Relación entre estándares de Internet, compatibilidad global y organismos que publican y mantienen especificaciones técnicas.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_5.2_1.png",
+                    alt: "Escenario de dispositivos conectados que dependen de estándares comunes para interoperar."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_5.2_2.png",
+                    alt: "Esquema de organismos y documentos RFC asociados al desarrollo de estándares de red."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "5.2.1 Dispositivos en una burbuja",
+                    items: [
+                      "Cada dispositivo solo conoce su estado local hasta que protocolos como DHCP, IP y DNS le aportan contexto de red.",
+                      "La comunicación extremo a extremo depende de protocolos coordinados, no de un único protocolo aislado.",
+                      "La transmisión se divide en paquetes para facilitar encaminamiento, control y recuperación ante errores."
+                    ]
+                  },
+                  {
+                    title: "5.2.2 Internet y estándares",
+                    items: [
+                      "Un estándar define reglas repetibles para implementar funciones como correo, web o direccionamiento.",
+                      "Gracias a los estándares, equipos distintos pueden intercambiar información de forma consistente.",
+                      "Sin estandarización, la expansión de Internet no sería sostenible ni confiable a escala global."
+                    ]
+                  },
+                  {
+                    title: "5.2.3 Organizaciones y RFC",
+                    items: [
+                      "Los estándares se discuten, prueban y publican mediante procesos formales en organizaciones técnicas.",
+                      "La IETF publica y mantiene RFC (Request for Comments) para documentar evolución y adopción de protocolos.",
+                      "Conocer el origen del estándar facilita decidir qué tecnología implementar y cómo mantenerla vigente."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "5.3",
+                title: "Modelos de comunicación de red",
+                summary:
+                  "Uso de la pila de protocolos y de los modelos TCP/IP y OSI para comprender funciones de red, diseño y resolución de problemas.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_5.3_1.png",
+                    alt: "Representación de pila de protocolos con capas de acceso, internet, transporte y aplicación."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_5.3_2.png",
+                    alt: "Comparación conceptual entre el modelo OSI y el modelo TCP/IP."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "5.3.1-5.3.2 Pila de protocolos",
+                    items: [
+                      "Un mensaje real utiliza varios protocolos simultáneamente, cada uno en una capa diferente.",
+                      "Ejemplo típico: Ethernet (acceso), IP (internet), TCP (transporte) y HTTP (aplicación).",
+                      "El enfoque por pila permite aislar problemas por capa en lugar de tratar toda la red como una sola caja negra."
+                    ]
+                  },
+                  {
+                    title: "5.3.3 Modelo TCP/IP",
+                    items: [
+                      "Es un modelo de protocolo: describe funciones alineadas con la suite usada en Internet.",
+                      "Sus capas facilitan implementación práctica y compatibilidad entre productos de distintos fabricantes.",
+                      "Permite introducir cambios tecnológicos por capa con impacto controlado en el resto de la arquitectura."
+                    ]
+                  },
+                  {
+                    title: "5.3.4 Modelo OSI",
+                    items: [
+                      "Es un modelo de referencia: describe qué debe hacerse en cada capa sin imponer un protocolo específico.",
+                      "Se usa ampliamente en diseño, documentación y troubleshooting por su granularidad conceptual.",
+                      "Su separación de funciones ayuda a explicar con precisión eventos de capa física, enlace, red y superiores."
+                    ]
+                  },
+                  {
+                    title: "5.3.5 Comparación OSI vs TCP/IP",
+                    items: [
+                      "TCP/IP describe protocolos en uso; OSI describe funciones generales requeridas para comunicar.",
+                      "La capa de internet de TCP/IP se relaciona con la capa de red de OSI; transporte es equivalente en ambos.",
+                      "Para análisis operativo, OSI suele ser más detallado en capas inferiores; para implementación, TCP/IP es el marco dominante."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   };
