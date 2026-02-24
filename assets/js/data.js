@@ -6068,13 +6068,51 @@
               {
                 code: "10.1",
                 title: "Navegación del IOS",
-                summary: "Base inicial del tema 10.1: Navegación del IOS.",
+                summary:
+                  "La navegación en Cisco IOS se basa en modos jerárquicos y comandos contextuales que permiten configurar, verificar y mantener dispositivos de red de forma controlada.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_10.1.png",
+                    alt: "Consola IOS mostrando transición entre modos de usuario, privilegiado y configuración."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "10.1.1 Acceso inicial al IOS",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Se puede acceder al dispositivo por consola, SSH o Telnet (según políticas de seguridad).",
+                      "Al iniciar, el prompt indica el modo actual y el alcance de los comandos permitidos.",
+                      "Identificar el prompt correctamente evita ejecutar comandos en el contexto equivocado."
+                    ]
+                  },
+                  {
+                    title: "10.1.2 Modos principales del CLI",
+                    items: [
+                      "User EXEC (`>`): monitoreo básico, sin privilegios de configuración.",
+                      "Privileged EXEC (`#`): verificación avanzada y acceso a configuración.",
+                      "Global configuration (`(config)#`): cambios de configuración del dispositivo y submodos."
+                    ]
+                  },
+                  {
+                    title: "10.1.3 Navegación eficiente",
+                    items: [
+                      "Comandos clave: `enable`, `configure terminal`, `exit`, `end` y `disable`.",
+                      "Ayuda contextual con `?`, autocompletado con Tab e historial con flechas.",
+                      "Atajos como `Ctrl+Z` permiten volver rápidamente al modo privilegiado."
+                    ]
+                  },
+                  {
+                    title: "10.1.4 Buenas prácticas operativas",
+                    items: [
+                      "Confirmar modo antes de aplicar cambios y documentar comandos críticos ejecutados.",
+                      "Realizar verificaciones antes y después de cada ajuste para validar impacto.",
+                      "Evitar sesiones concurrentes sin coordinación para reducir conflictos de configuración."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Navegar con seguridad entre modos del IOS y usar la ayuda contextual para administrar dispositivos con mayor precisión."
                     ]
                   }
                 ]
@@ -6082,13 +6120,59 @@
               {
                 code: "10.2",
                 title: "La Estructura de Comandos",
-                summary: "Base inicial del tema 10.2: La Estructura de Comandos.",
+                summary:
+                  "Comprender la sintaxis de comandos IOS permite ejecutar configuraciones correctas, interpretar errores y acelerar tareas de operación diaria.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_10.2.png",
+                    alt: "Ejemplo de sintaxis de comando IOS con palabras clave, parámetros y opciones."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "10.2.1 Sintaxis base de comandos",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Un comando puede incluir palabra clave principal, subcomandos y argumentos.",
+                      "La sintaxis exacta depende del modo actual; no todos los comandos existen en todos los modos.",
+                      "La ayuda contextual (`?`) muestra opciones válidas en la posición actual del cursor."
+                    ]
+                  },
+                  {
+                    title: "10.2.2 Palabras clave y argumentos",
+                    items: [
+                      "Palabras clave: términos fijos definidos por el IOS (por ejemplo, `interface`, `ip address`).",
+                      "Argumentos: valores variables como direcciones IP, máscaras o nombres de interfaz.",
+                      "Distinguir ambos reduce errores de interpretación al leer documentación y guías."
+                    ]
+                  },
+                  {
+                    title: "10.2.3 Abreviación y edición de línea",
+                    items: [
+                      "IOS permite abreviar comandos si la abreviatura es única (`conf t`, `show ip int br`).",
+                      "Teclas de edición (`Ctrl+A`, `Ctrl+E`, `Ctrl+U`) mejoran velocidad y precisión en CLI.",
+                      "Ante ambigüedad, IOS devuelve error y requiere completar el comando."
+                    ]
+                  },
+                  {
+                    title: "10.2.4 Interpretación de errores",
+                    items: [
+                      "Mensajes de `Invalid input` suelen indicar palabra incorrecta o contexto no válido.",
+                      "Errores de comando incompleto indican que faltan argumentos obligatorios.",
+                      "Corregir primero el modo y luego la sintaxis acelera la solución."
+                    ]
+                  },
+                  {
+                    title: "Checklist de comprensión",
+                    items: [
+                      "Separar correctamente palabras clave de argumentos en un comando IOS.",
+                      "Usar `?` para descubrir sintaxis válida sin salir del CLI.",
+                      "Corregir errores comunes de modo y de comando incompleto."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Construir y validar comandos IOS con estructura correcta para reducir fallas de configuración."
                     ]
                   }
                 ]
@@ -6096,13 +6180,51 @@
               {
                 code: "10.3",
                 title: "Ver la Información del Dispositivo",
-                summary: "Base inicial del tema 10.3: Ver la Información del Dispositivo.",
+                summary:
+                  "La verificación sistemática con comandos `show` permite conocer estado operativo, identificar fallas y confirmar que la configuración aplicada coincide con el comportamiento esperado.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_10.3.png",
+                    alt: "Salida de comandos show en IOS para revisar interfaces, versión y configuración activa."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "10.3.1 Comandos show esenciales",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "`show running-config`: configuración activa en memoria RAM.",
+                      "`show startup-config`: configuración guardada en NVRAM para arranque.",
+                      "`show version` y `show ip interface brief`: versión del sistema y estado resumido de interfaces."
+                    ]
+                  },
+                  {
+                    title: "10.3.2 Interpretación del estado de interfaces",
+                    items: [
+                      "`up/up`: interfaz operativa física y lógicamente.",
+                      "`administratively down`: interfaz deshabilitada por configuración (`shutdown`).",
+                      "`up/down` o `down/down`: posible problema de capa física, negociación o conectividad remota."
+                    ]
+                  },
+                  {
+                    title: "10.3.3 Verificación de configuración aplicada",
+                    items: [
+                      "Comparar running-config con startup-config evita reinicios con cambios no guardados.",
+                      "Usar `copy running-config startup-config` cuando los cambios ya fueron validados.",
+                      "Revisar hostname, direccionamiento e interfaces reduce errores en prácticas y exámenes."
+                    ]
+                  },
+                  {
+                    title: "10.3.4 Diagnóstico rápido en CLI",
+                    items: [
+                      "Combinar comandos show en secuencia da una vista integral del estado del equipo.",
+                      "Incluir hora, comandos y salidas relevantes facilita trazabilidad de incidentes.",
+                      "La disciplina de verificación antes y después de cambios mejora confiabilidad operativa."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Aplicar una rutina de verificación IOS para confirmar estado del dispositivo y diagnosticar fallas de forma estructurada."
                     ]
                   }
                 ]
