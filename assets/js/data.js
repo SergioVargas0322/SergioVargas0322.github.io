@@ -5830,13 +5830,51 @@
               {
                 code: "9.4",
                 title: "Números de Puerto",
-                summary: "Base inicial del tema 9.4: Números de Puerto.",
+                summary:
+                  "Los números de puerto permiten identificar servicios y aplicaciones en un host, haciendo posible que múltiples comunicaciones ocurran en paralelo sobre la misma dirección IP.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_9.4.png",
+                    alt: "Ejemplos de puertos de origen y destino utilizados por aplicaciones cliente y servidor."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "9.4.1 Puertos y sockets",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "Un puerto es un identificador lógico de 16 bits usado por TCP o UDP (rango 0-65535).",
+                      "Un socket combina IP + puerto + protocolo para identificar de forma única un flujo.",
+                      "Gracias a los sockets, un mismo host puede atender varios servicios al mismo tiempo."
+                    ]
+                  },
+                  {
+                    title: "9.4.2 Rangos de puertos",
+                    items: [
+                      "Bien conocidos (0-1023): reservados para servicios estándar como HTTP, HTTPS, DNS y SSH.",
+                      "Registrados (1024-49151): usados por aplicaciones de fabricante o servicios empresariales.",
+                      "Dinámicos/efímeros (49152-65535): usados temporalmente por clientes para iniciar sesiones."
+                    ]
+                  },
+                  {
+                    title: "9.4.3 Puertos comunes en operación",
+                    items: [
+                      "HTTP 80, HTTPS 443, DNS 53, DHCP 67/68, SSH 22.",
+                      "El cliente abre un puerto efímero y se conecta al puerto de servicio del servidor.",
+                      "Un mismo servidor puede exponer múltiples servicios, cada uno en su puerto correspondiente."
+                    ]
+                  },
+                  {
+                    title: "9.4.4 Seguridad y diagnóstico",
+                    items: [
+                      "Abrir solo puertos necesarios reduce superficie de ataque.",
+                      "Comandos útiles: netstat, ss, lsof y herramientas de escaneo controlado para auditoría.",
+                      "Filtrado en firewall por puerto/protocolo es base de la política de acceso."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Interpretar cómo los puertos direccionan el tráfico hacia el servicio correcto y aplicar controles de seguridad básicos sobre ellos."
                     ]
                   }
                 ]
@@ -5844,13 +5882,59 @@
               {
                 code: "9.5",
                 title: "Proceso de Comunicación TCP",
-                summary: "Base inicial del tema 9.5: Proceso de Comunicación TCP.",
+                summary:
+                  "TCP establece, mantiene y cierra sesiones mediante un proceso ordenado que garantiza entrega confiable, control de secuencia y recuperación ante pérdida de segmentos.",
+                images: [
+                  {
+                    src: "./assets/images/network-devices-initial-config/C6_9.5.png",
+                    alt: "Secuencia de establecimiento y finalización de una sesión TCP entre cliente y servidor."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Puntos clave iniciales",
+                    title: "9.5.1 Establecimiento de sesión (three-way handshake)",
                     items: [
-                      "Estructura base cargada desde el documento oficial del curso.",
-                      "Se ampliará con contenido detallado, imágenes y prácticas en las siguientes iteraciones."
+                      "SYN: el cliente inicia la conexión proponiendo número de secuencia inicial.",
+                      "SYN-ACK: el servidor confirma recepción y envía su propio número de secuencia.",
+                      "ACK: el cliente confirma y la sesión queda lista para intercambio de datos."
+                    ]
+                  },
+                  {
+                    title: "9.5.2 Transferencia de datos confiable",
+                    items: [
+                      "Cada segmento enviado espera confirmación (ACK) del receptor.",
+                      "Si no llega ACK dentro del tiempo esperado, TCP retransmite el segmento.",
+                      "La numeración de secuencia permite reordenar y detectar pérdidas o duplicados."
+                    ]
+                  },
+                  {
+                    title: "9.5.3 Control de flujo y ventanas",
+                    items: [
+                      "El receptor anuncia cuántos datos puede aceptar sin saturarse (window size).",
+                      "El emisor ajusta ritmo de envío para evitar desbordamiento del búfer receptor.",
+                      "Este mecanismo mantiene estabilidad de la sesión bajo distintas condiciones de red."
+                    ]
+                  },
+                  {
+                    title: "9.5.4 Cierre de sesión",
+                    items: [
+                      "FIN/ACK permite cerrar la conexión de forma ordenada cuando termina el intercambio.",
+                      "TIME_WAIT ayuda a evitar confusión con segmentos retrasados de sesiones anteriores.",
+                      "Un cierre abrupto (RST) puede indicar error, rechazo o interrupción inesperada."
+                    ]
+                  },
+                  {
+                    title: "Checklist de comprensión",
+                    items: [
+                      "Describir correctamente el three-way handshake.",
+                      "Explicar qué ocurre cuando se pierde un segmento TCP.",
+                      "Relacionar ventana TCP con control de flujo."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Analizar una sesión TCP de extremo a extremo y explicar cómo sus mecanismos sostienen comunicación confiable."
                     ]
                   }
                 ]
