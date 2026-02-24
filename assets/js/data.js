@@ -7226,7 +7226,7 @@
                 code: "4.3",
                 title: "Direccionamiento dinámico para GUA IPv6",
                 summary:
-                  "Desarrollo del tema 4.3: Direccionamiento dinámico para GUA IPv6. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "El direccionamiento dinámico en IPv6 permite asignar GUA sin configuración manual por host. Entender RS/RA, SLAAC y DHCPv6 (sin estado o con estado) es fundamental para desplegar redes escalables.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_4.3.png",
@@ -7235,30 +7235,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "4.3.1 y 4.3.2 Mensajes RS y RA",
                     items: [
-                      "4.3.1 Video - Mensajes RS y RA",
-                      "4.3.2 Mensajes RS y RA",
-                      "4.3.3 Método 1: SLAAC",
-                      "4.3.4 Método 2: SLAAC y DHCPv6 sin estado",
-                      "4.3.5 Método 3: DHCPv6 con estado",
-                      "4.3.6 Proceso EUI-64 versus generado aleatoriamente",
-                      "4.3.7 Proceso EUI-64",
-                      "4.3.8 ID de interfaz generadas aleatoriamente"
+                      "RS (Router Solicitation) acelera la obtención de parámetros IPv6 al solicitar anuncios de router.",
+                      "RA (Router Advertisement) informa prefijo, gateway y banderas para definir método de asignación.",
+                      "Las banderas M y O del RA indican si se debe usar DHCPv6 con estado o solo parámetros adicionales."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "4.3.3 Método 1: SLAAC",
                     items: [
-                      "Identificar y aplicar los conceptos clave de direccionamiento dinámico para gua ipv6.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "El host construye su GUA usando el prefijo del RA más un identificador de interfaz (IID).",
+                      "No requiere servidor DHCPv6 para dirección IP, por lo que reduce complejidad operativa.",
+                      "Es común en redes donde se busca autoconfiguración rápida con administración central mínima."
+                    ]
+                  },
+                  {
+                    title: "4.3.4 y 4.3.5 SLAAC + DHCPv6 sin estado vs con estado",
+                    items: [
+                      "SLAAC + DHCPv6 sin estado: el host obtiene IP por SLAAC y parámetros extra (DNS, dominio) por DHCPv6.",
+                      "DHCPv6 con estado: el servidor entrega la dirección y conserva control central de asignaciones.",
+                      "La elección depende de trazabilidad requerida, políticas de seguridad y facilidad de operación."
+                    ]
+                  },
+                  {
+                    title: "4.3.6 a 4.3.8 Generación de identificador de interfaz (IID)",
+                    items: [
+                      "EUI-64 deriva IID desde la MAC y facilita unicidad, pero puede exponer información del hardware.",
+                      "IID aleatorio o temporal mejora privacidad y reduce rastreo del dispositivo.",
+                      "Muchos sistemas modernos priorizan direcciones temporales para tráfico saliente."
+                    ]
+                  },
+                  {
+                    title: "Verificación y troubleshooting",
+                    items: [
+                      "Comprobar recepción de RA y prefijos correctos en hosts del segmento.",
+                      "Validar si el host tomó modo SLAAC, DHCPv6 sin estado o con estado según banderas RA.",
+                      "Si no hay GUA, revisar gateway local, filtros ICMPv6 y estado del servicio DHCPv6."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en direccionamiento dinámico para gua ipv6 dentro del contexto del curso."
+                      "Implementar direccionamiento dinámico IPv6 de forma controlada, diferenciando claramente SLAAC y DHCPv6 según el objetivo operativo."
                     ]
                   }
                 ]
@@ -7267,7 +7286,7 @@
                 code: "4.4",
                 title: "Direccionamiento dinámico para LLA de IPv6",
                 summary:
-                  "Desarrollo del tema 4.4: Direccionamiento dinámico para LLA de IPv6. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "Las direcciones link-local (LLA) se generan automáticamente en IPv6 y son imprescindibles para comunicación dentro del enlace y procesos de control como NDP. Su correcta validación evita fallas locales difíciles de detectar.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_4.4.png",
@@ -7276,26 +7295,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "4.4.1 LLA dinámicos",
                     items: [
-                      "4.4.1 LLA dinámicos",
-                      "4.4.2 LLA dinámicos en Windows",
-                      "4.4.3 LLA dinámicos en enrutadores Cisco",
-                      "4.4.4 Verificar la configuración de la dirección IPv6"
+                      "Toda interfaz IPv6 activa genera una LLA en el prefijo fe80::/10.",
+                      "La LLA solo es válida en el segmento local y no se enruta entre redes.",
+                      "Funciones críticas como descubrimiento de vecinos y next-hop IPv6 dependen de LLA."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "4.4.2 LLA dinámicos en Windows",
                     items: [
-                      "Identificar y aplicar los conceptos clave de direccionamiento dinámico para lla de ipv6.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Windows asigna LLA automáticamente al habilitar IPv6 en una interfaz.",
+                      "Puede coexistir con GUA/ULA, pero la conectividad local sigue resolviéndose mediante LLA.",
+                      "Conviene validar la LLA antes de escalar incidentes de routing o DNS."
+                    ]
+                  },
+                  {
+                    title: "4.4.3 LLA dinámicos en enrutadores Cisco",
+                    items: [
+                      "Cisco IOS genera LLA automática por interfaz IPv6, usada para protocolos y vecindad.",
+                      "Las adyacencias y rutas pueden referenciar next-hop link-local.",
+                      "Una interfaz sin LLA funcional puede romper descubrimiento de vecinos y convergencia."
+                    ]
+                  },
+                  {
+                    title: "4.4.4 Verificación de configuración IPv6",
+                    items: [
+                      "Verificar LLA y GUA por interfaz con comandos de inspección en host y router.",
+                      "Probar `ping` a la LLA usando el identificador de interfaz cuando aplique.",
+                      "Revisar tabla de vecinos para confirmar resolución correcta entre nodos del enlace."
+                    ]
+                  },
+                  {
+                    title: "Fallas frecuentes",
+                    items: [
+                      "Filtrado indebido de ICMPv6 en firewalls locales o de borde.",
+                      "Interfaz administrativamente down o con parámetros incompletos.",
+                      "Confusión entre pruebas de alcance local (LLA) y pruebas de alcance global (GUA)."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en direccionamiento dinámico para lla de ipv6 dentro del contexto del curso."
+                      "Verificar y diagnosticar direccionamiento link-local IPv6 para asegurar operación local estable y soporte efectivo de NDP."
                     ]
                   }
                 ]
@@ -7304,7 +7346,7 @@
                 code: "4.5",
                 title: "Direcciones Multicast de IPv6",
                 summary:
-                  "Desarrollo del tema 4.5: Direcciones Multicast de IPv6. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "IPv6 usa multicast de forma nativa para operaciones de control y descubrimiento, eliminando broadcast tradicional. Comprender grupos bien conocidos y direcciones de nodo solicitado es esencial para interpretar NDP y tráfico de enlace.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_4.5.png",
@@ -7313,25 +7355,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "4.5.1 Direcciones IPv6 de multidifusión asignadas",
                     items: [
-                      "4.5.1 Direcciones IPv6 de multidifusión asignadas",
-                      "4.5.2 Direcciones de multidifusión IPv6 bien conocidas",
-                      "4.5.3 Direcciones IPv6 de multidifusión de nodo solicitado"
+                      "Las direcciones multicast comienzan en ff00::/8 y se entregan a grupos específicos, no a todos los hosts.",
+                      "Cada grupo representa una función o conjunto de receptores dentro de un alcance determinado.",
+                      "Este modelo mejora eficiencia al reducir tráfico innecesario en comparación con mecanismos de difusión amplia."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "4.5.2 Multicast IPv6 bien conocido",
                     items: [
-                      "Identificar y aplicar los conceptos clave de direcciones multicast de ipv6.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Ejemplos comunes: ff02::1 (todos los nodos) y ff02::2 (todos los routers) en alcance de enlace.",
+                      "Los mensajes RS/RA y procesos NDP dependen de estos grupos para operación inicial de IPv6.",
+                      "Bloquear multicast crítico puede impedir autoconfiguración y descubrimiento de vecinos."
+                    ]
+                  },
+                  {
+                    title: "4.5.3 Multicast de nodo solicitado",
+                    items: [
+                      "Cada unicast/anycast IPv6 genera una dirección solicitada de nodo asociada.",
+                      "Se utiliza en Neighbor Solicitation para resolver direcciones de capa 2 de forma eficiente.",
+                      "Reduce ruido de red porque la consulta llega a un grupo específico, no a todos los dispositivos."
+                    ]
+                  },
+                  {
+                    title: "Relación con NDP",
+                    items: [
+                      "NDP reemplaza funciones de ARP usando ICMPv6 y grupos multicast definidos.",
+                      "La resolución de vecinos y detección de duplicados (DAD) dependen de multicast operativo.",
+                      "Problemas en multicast local suelen reflejarse como pérdida de conectividad intermitente."
+                    ]
+                  },
+                  {
+                    title: "Guía de validación",
+                    items: [
+                      "Confirmar membresía a grupos multicast relevantes en host y router.",
+                      "Verificar que switches y políticas de seguridad no bloqueen ICMPv6 esencial.",
+                      "Correlacionar tabla de vecinos con pruebas de conectividad para aislar fallas de descubrimiento."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en direcciones multicast de ipv6 dentro del contexto del curso."
+                      "Interpretar y validar el uso de multicast IPv6 en procesos de control, especialmente en descubrimiento de vecinos y operación local de la red."
                     ]
                   }
                 ]
