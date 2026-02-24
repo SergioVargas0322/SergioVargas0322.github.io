@@ -6712,7 +6712,7 @@
                 code: "1.3",
                 title: "Cableado de cobre",
                 summary:
-                  "Desarrollo del tema 1.3: Cableado de cobre. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "El cableado de cobre sigue siendo clave en LAN por costo y facilidad de despliegue. Su desempeño depende del tipo de cable, el entorno eléctrico y una instalación correcta.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_1.3.png",
@@ -6721,27 +6721,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "1.3.1 Características del cableado de cobre",
                     items: [
-                      "1.3.1 Características del cableado de cobre",
-                      "1.3.2 Tipos de cableado de cobre",
-                      "1.3.3 Par trenzado sin blindaje (UTP)",
-                      "1.3.4 Par trenzado blindado (STP)",
-                      "1.3.5 Cable Coaxial"
+                      "Transporta señales eléctricas y es sensible a atenuación, interferencia electromagnética (EMI) y diafonía.",
+                      "Su rendimiento real se ve afectado por distancia, calidad de terminación, curvatura y proximidad a fuentes de ruido.",
+                      "En redes de acceso y usuario final, ofrece una relación costo-rendimiento muy favorable."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "1.3.2 Tipos de cableado de cobre",
                     items: [
-                      "Identificar y aplicar los conceptos clave de cableado de cobre.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Par trenzado: medio dominante en Ethernet LAN (categorías Cat5e, Cat6, Cat6A, entre otras).",
+                      "Coaxial: mayor blindaje, más usado en entornos específicos (TV, CCTV, algunos accesos WAN).",
+                      "La selección debe considerar velocidad objetivo, distancia y condiciones del sitio."
+                    ]
+                  },
+                  {
+                    title: "1.3.3 UTP y 1.3.4 STP",
+                    items: [
+                      "UTP (Unshielded Twisted Pair): más económico y flexible, ideal para oficina con baja interferencia.",
+                      "STP (Shielded Twisted Pair): añade blindaje para ambientes con alto ruido eléctrico industrial.",
+                      "Un blindaje mal aterrizado puede generar problemas; no siempre STP será mejor opción."
+                    ]
+                  },
+                  {
+                    title: "1.3.5 Cable coaxial",
+                    items: [
+                      "Integra conductor central, dieléctrico, malla de blindaje y cubierta exterior.",
+                      "Tiene buena inmunidad al ruido y se utiliza donde se requiere robustez o compatibilidad legacy.",
+                      "En LAN modernas su uso es menor frente al par trenzado y la fibra óptica."
+                    ]
+                  },
+                  {
+                    title: "Criterios de selección en campo",
+                    items: [
+                      "Definir primero velocidad, distancia y ambiente (oficina, industrial, exterior).",
+                      "Verificar cumplimiento de categoría de cable y conectividad extremo a extremo.",
+                      "Documentar tipo de medio, ruta y pruebas para facilitar mantenimiento futuro."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en cableado de cobre dentro del contexto del curso."
+                      "Seleccionar y justificar el uso de medios de cobre según requisitos técnicos y condiciones reales de implementación."
                     ]
                   }
                 ]
@@ -6750,7 +6772,7 @@
                 code: "1.4",
                 title: "Cableado UTP",
                 summary:
-                  "Desarrollo del tema 1.4: Cableado UTP. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "El UTP es el medio Ethernet más común en redes empresariales. Comprender sus categorías, conectores y patrones de terminación evita fallas físicas frecuentes.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_1.4.jpeg",
@@ -6759,25 +6781,41 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "1.4.1 Propiedades del cableado UTP",
                     items: [
-                      "1.4.1 Propiedades del cableado UTP",
-                      "1.4.2 Conectores y estándares de cableado UTP",
-                      "1.4.3 Cables UTP directos y cruzados"
+                      "Está compuesto por pares trenzados que reducen diafonía y mejoran la integridad de la señal.",
+                      "La categoría del cable define capacidad de frecuencia y velocidades soportadas.",
+                      "Respeta límites de distancia, radio de curvatura y tensión de tendido para conservar desempeño."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "1.4.2 Conectores y estándares de cableado UTP",
                     items: [
-                      "Identificar y aplicar los conceptos clave de cableado utp.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Se termina típicamente con conectores RJ-45 bajo estándares T568A o T568B.",
+                      "La consistencia del esquema en ambos extremos es crítica para evitar errores de pinout.",
+                      "Mala crimpación o pares abiertos generan baja velocidad, errores CRC o enlace inestable."
+                    ]
+                  },
+                  {
+                    title: "1.4.3 Cables UTP directos y cruzados",
+                    items: [
+                      "Cable directo: mismo estándar en ambos extremos; se usa entre dispositivos de tipo diferente.",
+                      "Cable cruzado: intercambia pares TX/RX; tradicionalmente para dispositivos del mismo tipo.",
+                      "Con Auto-MDI/MDIX muchos equipos modernos corrigen automáticamente, pero entender la lógica sigue siendo esencial."
+                    ]
+                  },
+                  {
+                    title: "Verificación operativa",
+                    items: [
+                      "Probar continuidad y mapa de pares con tester antes de poner en producción.",
+                      "Revisar LEDs de enlace y negociación de velocidad/dúplex en switch y host.",
+                      "Etiquetar ambos extremos para reducir tiempo de diagnóstico y cambios."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en cableado utp dentro del contexto del curso."
+                      "Aplicar buenas prácticas de terminación UTP y diferenciar correctamente cuándo usar cable directo o cruzado."
                     ]
                   }
                 ]
@@ -6786,7 +6824,7 @@
                 code: "1.5",
                 title: "Cableado de fibra óptica",
                 summary:
-                  "Desarrollo del tema 1.5: Cableado de fibra óptica. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "La fibra óptica transmite datos por luz, ofreciendo gran capacidad, largas distancias e inmunidad a EMI. Es el medio preferido para troncales, backbone y enlaces de alta velocidad.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_1.5.png",
@@ -6795,28 +6833,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "1.5.1 Propiedades del cableado de fibra óptica",
                     items: [
-                      "1.5.1 Propiedades del cableado de fibra óptica",
-                      "1.5.2 Tipos de medios de fibra óptica",
-                      "1.5.3 Uso de cableado de fibra óptica",
-                      "1.5.4 Conectores de fibra óptica",
-                      "1.5.5 Cables de conexión de fibra",
-                      "1.5.6 Comparación entre fibra óptica y cobre"
+                      "Utiliza pulsos de luz, por lo que no sufre interferencia electromagnética como los medios de cobre.",
+                      "Permite mayores distancias y anchos de banda altos con menor degradación de señal.",
+                      "Su instalación exige mayor cuidado mecánico y limpieza en conectores."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "1.5.2 Tipos de medios y 1.5.3 usos",
                     items: [
-                      "Identificar y aplicar los conceptos clave de cableado de fibra óptica.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Multimodo (MMF): común en campus y centros de datos a distancias moderadas.",
+                      "Monomodo (SMF): ideal para distancias largas y enlaces WAN/metro.",
+                      "Se emplea en uplinks, interconexión entre switches, backbone y enlaces críticos."
+                    ]
+                  },
+                  {
+                    title: "1.5.4 y 1.5.5 Conectores y patch cords",
+                    items: [
+                      "Conectores comunes: LC, SC y otros, según módulo óptico y diseño de infraestructura.",
+                      "La limpieza de férulas y control de radio de curvatura es obligatoria para evitar pérdidas.",
+                      "La selección de transceptores (SFP/SFP+) y longitud de onda debe ser compatible en ambos extremos."
+                    ]
+                  },
+                  {
+                    title: "1.5.6 Comparación fibra versus cobre",
+                    items: [
+                      "Fibra: mayor velocidad y alcance, mejor inmunidad al ruido, costo inicial más alto.",
+                      "Cobre: menor costo y complejidad en acceso, pero limitado en distancia y sensibilidad a EMI.",
+                      "El diseño profesional combina ambos medios según rol del enlace y presupuesto."
+                    ]
+                  },
+                  {
+                    title: "Checklist de implementación",
+                    items: [
+                      "Validar tipo de fibra, transceptor y presupuesto óptico del enlace.",
+                      "Inspeccionar/limpiar conectores antes de conectar equipos activos.",
+                      "Registrar niveles ópticos y etiquetar fibras para operación y soporte."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en cableado de fibra óptica dentro del contexto del curso."
+                      "Comparar fibra y cobre con criterio técnico y seleccionar la opción adecuada según capacidad, distancia y confiabilidad."
                     ]
                   }
                 ]
