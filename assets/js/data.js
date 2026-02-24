@@ -2450,6 +2450,178 @@
                 ]
               }
             ]
+          },
+          {
+            key: "M2",
+            title: "Componentes, tipos y conexiones de red",
+            topics: [
+              {
+                code: "2.1",
+                title: "Clientes y servidores",
+                summary:
+                  "Diferencias entre roles de cliente y servidor, funcionamiento de redes entre pares (P2P) y escenarios donde un host puede cumplir múltiples funciones.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_2.1_1.png",
+                    alt: "Esquema básico cliente-servidor conectado por Internet."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_2.1_3.png",
+                    alt: "Ejemplo de red entre pares para compartir impresora y archivos."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_2.1_5.png",
+                    alt: "Servidor que atiende múltiples clientes con distintos servicios de red."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_2.1_4.png",
+                    alt: "Aplicación de mensajería donde cada extremo actúa como cliente y servidor."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "2.1.2 Roles de cliente y servidor",
+                    items: [
+                      "Un host cliente solicita recursos; un host servidor los ofrece mediante software de servicio específico.",
+                      "Cada servicio requiere su software correspondiente: por ejemplo, web, correo o archivos.",
+                      "En redes modernas, el rol depende del software instalado y del flujo de comunicación en cada momento."
+                    ]
+                  },
+                  {
+                    title: "2.1.3 Redes entre pares (P2P)",
+                    items: [
+                      "En un modelo P2P, los equipos pueden compartir recursos entre sí sin un servidor dedicado central.",
+                      "Es fácil de implementar y de bajo costo en entornos pequeños (hogar o microoficina).",
+                      "Sus límites aparecen en seguridad, administración centralizada y escalabilidad."
+                    ]
+                  },
+                  {
+                    title: "2.1.4 Aplicaciones P2P e híbridas",
+                    items: [
+                      "En aplicaciones P2P puras, cada nodo puede enviar y recibir recursos al mismo tiempo.",
+                      "En modelos híbridos, el intercambio se distribuye, pero existe un índice central para ubicar recursos.",
+                      "Este enfoque mejora descubrimiento de contenido, pero introduce dependencia parcial del servidor de índice."
+                    ]
+                  },
+                  {
+                    title: "2.1.5 Múltiples roles por host",
+                    items: [
+                      "Un mismo equipo puede ejecutar varios clientes y varios servicios simultáneamente.",
+                      "En pymes, un host puede actuar como servidor web, correo y archivos a la vez.",
+                      "A mayor mezcla de roles, mayor necesidad de monitoreo de rendimiento y endurecimiento de seguridad."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "2.2",
+                title: "Componentes de la red",
+                summary:
+                  "Identificación de infraestructura de red y sus tres bloques de hardware: dispositivos finales, dispositivos intermedios y medios de transmisión.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_2.2_1.png",
+                    alt: "Símbolos de infraestructura de red: dispositivos finales, intermedios y medios."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_2.2_2.png",
+                    alt: "Topología LAN interconectada por routers en una red de mayor alcance."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "2.2.2 Infraestructura de red",
+                    items: [
+                      "La infraestructura es la plataforma física y lógica que permite transportar mensajes de origen a destino.",
+                      "Puede ir desde un enlace simple entre dos equipos hasta redes de escala global.",
+                      "La confiabilidad de la red depende de cómo se diseñan y operan estos componentes base."
+                    ]
+                  },
+                  {
+                    title: "Categorías de hardware",
+                    items: [
+                      "Dispositivos finales: hosts que generan o consumen información (PC, móvil, impresora, cámara, teléfono IP).",
+                      "Dispositivos intermedios: conectan y dirigen tráfico (switches, routers, AP, firewall).",
+                      "Medios de red: transportan señales por cobre, fibra o inalámbrico."
+                    ]
+                  },
+                  {
+                    title: "2.2.3 Hosts y direccionamiento",
+                    items: [
+                      "Todo host es origen o destino de mensajes y requiere identificación única en la red.",
+                      "El direccionamiento permite determinar a qué equipo se envía cada paquete.",
+                      "Sin direccionamiento consistente, no hay entrega fiable de datos ni segmentación funcional."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "2.3",
+                title: "Opciones de conectividad al ISP",
+                summary:
+                  "Cómo un hogar u oficina pequeña se conecta al proveedor de Internet y qué criterios técnicos comparar entre tecnologías de acceso.",
+                images: [
+                  {
+                    src: "./assets/images/network-basics/C5_2.3_1.png",
+                    alt: "Servicios adicionales que puede ofrecer un proveedor de servicios de Internet."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_2.3_2.png",
+                    alt: "Comparación entre conexión directa por módem y conexión protegida con router integrado."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_2.3_3.png",
+                    alt: "Opciones de acceso por DSL, cable, red celular, satélite y dial-up."
+                  },
+                  {
+                    src: "./assets/images/network-basics/C5_2.3_4.png",
+                    alt: "Esquema de conectividad satelital entre usuario e ISP."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "2.3.1 Servicios del ISP",
+                    items: [
+                      "El ISP conecta la red local con Internet y, además, puede ofrecer correo, hosting, VoIP y soporte técnico.",
+                      "Los ISP se interconectan jerárquicamente para enrutar tráfico por rutas eficientes.",
+                      "La red troncal global se apoya principalmente en enlaces de fibra óptica terrestres y submarinos."
+                    ]
+                  },
+                  {
+                    title: "2.3.2 Conexión segura al ISP",
+                    items: [
+                      "Conectar una PC directamente al módem expone el host y no es una práctica recomendada.",
+                      "La opción estándar es usar router integrado (switch + AP + funciones de seguridad y direccionamiento interno).",
+                      "El router doméstico también simplifica conectar múltiples equipos cableados e inalámbricos."
+                    ]
+                  },
+                  {
+                    title: "2.3.3 Cable y DSL",
+                    items: [
+                      "Cable usa red coaxial y suele ofrecer conexión permanente con buen ancho de banda residencial.",
+                      "DSL usa línea telefónica y separa voz/datos mediante canales, con desempeño dependiente de distancia y calidad de línea.",
+                      "Ambas tecnologías requieren módem específico para convertir señal del proveedor a Ethernet local."
+                    ]
+                  },
+                  {
+                    title: "2.3.4 Conectividad adicional",
+                    items: [
+                      "Celular es útil para movilidad y zonas sin acceso fijo, pero suele tener límites por plan de datos.",
+                      "Satélite permite cobertura en áreas remotas, con costo de instalación mayor y dependencia de línea de vista.",
+                      "Dial-up es alternativa de baja velocidad, válida solo cuando no existen opciones de mayor capacidad."
+                    ]
+                  },
+                  {
+                    title: "Criterios de selección",
+                    items: [
+                      "Comparar latencia, estabilidad, velocidad real y costo total (equipo + mensualidad).",
+                      "Evaluar disponibilidad por ubicación geográfica antes de decidir tecnología.",
+                      "Priorizar seguridad de la red local y capacidad de crecimiento del enlace."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
