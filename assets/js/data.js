@@ -2312,141 +2312,139 @@
         tags: ["redes", "protocolos", "tcp/ip", "osi", "estándares"],
         modules: [
           {
-            key: "M5",
-            title: "Protocolos y modelos de comunicación de red",
+            key: "M1",
+            title: "Comunicaciones en un Mundo Conectado",
             topics: [
               {
-                code: "5.1",
-                title: "Protocolos de comunicación",
+                code: "1.1",
+                title: "Tipos de red y ecosistema conectado",
                 summary:
-                  "Fundamentos de los protocolos como reglas de comunicación entre dispositivos y su impacto en redes cableadas e inalámbricas.",
+                  "Panorama de Internet como red de redes, tipos de redes locales y variedad de dispositivos que hoy dependen de conectividad permanente.",
                 images: [
                   {
-                    src: "./assets/images/network-basics/C5_5.1.png",
-                    alt: "Diagrama que representa cómo los protocolos definen reglas para intercambiar mensajes en red."
+                    src: "./assets/images/network-basics/C5_1.1.png",
+                    alt: "Mapa de conectividad global con ejemplos de interacción en línea entre personas y servicios."
                   }
                 ],
                 sections: [
                   {
-                    title: "5.1.1 Reglas para comunicarse",
+                    title: "1.1.2 Todo está en línea",
                     items: [
-                      "Toda comunicación requiere acuerdos previos: método, idioma y confirmación de recepción.",
-                      "En redes, estas reglas se implementan como protocolos para que origen y destino interpreten el mismo formato.",
-                      "Si dos equipos no comparten protocolos compatibles, no hay comunicación útil aunque exista enlace físico."
+                      "Para usuarios y empresas, la conexión constante dejó de ser opcional: mensajería, compras, trabajo y aprendizaje dependen de Internet.",
+                      "Aunque solemos pensar Internet como un “lugar”, técnicamente es infraestructura física y lógica distribuida a escala global.",
+                      "La disponibilidad de red afecta actividades críticas, desde comunicación cotidiana hasta operación de servicios esenciales."
                     ]
                   },
                   {
-                    title: "Elementos que define un protocolo",
+                    title: "1.1.3-1.1.4 Internet y redes locales",
                     items: [
-                      "Formato y tamaño de mensaje: estructura que permite procesar correctamente cada unidad de datos.",
-                      "Temporización y secuencia: control del orden y tiempos de envío para evitar pérdidas o desincronización.",
-                      "Encapsulamiento y codificación: forma de empaquetar y representar datos al pasar por cada capa."
+                      "Internet no pertenece a una única entidad: es una colección de redes interconectadas que operan con estándares comunes.",
+                      "Las redes SOHO conectan hogares y oficinas pequeñas; redes empresariales escalan a cientos o miles de hosts.",
+                      "La 'red de redes' integra segmentos locales por medio de proveedores y enlaces de transporte de mayor alcance."
                     ]
                   },
                   {
-                    title: "5.1.2 Por qué importan",
+                    title: "1.1.5-1.1.7 Dispositivos conectados",
                     items: [
-                      "Los protocolos hacen posible la interoperabilidad entre fabricantes, sistemas operativos y tipos de enlace.",
-                      "Reducen errores de implementación al estandarizar cómo se inicia, mantiene y finaliza una comunicación.",
-                      "Son base para diagnosticar fallas: entender el protocolo permite aislar rápidamente el punto de ruptura."
+                      "La red ya no conecta solo PCs: móviles, wearables, IoT doméstico, automóviles, sensores industriales y equipos médicos también participan.",
+                      "Cada nuevo tipo de dispositivo incrementa superficie de gestión, seguridad y troubleshooting.",
+                      "Comprender el contexto de uso de cada dispositivo ayuda a elegir topología, políticas y prioridad de tráfico."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Explicar por qué una red funciona cuando todos los hosts “hablan el mismo idioma” de protocolos."
+                      "Diferenciar tipos de red y justificar por qué la conectividad continua es un requisito operativo en entornos modernos."
                     ]
                   }
                 ]
               },
               {
-                code: "5.2",
-                title: "Estándares de comunicación",
+                code: "1.2",
+                title: "Transmisión de datos: del bit al medio físico",
                 summary:
-                  "Relación entre estándares de Internet, compatibilidad global y organismos que publican y mantienen especificaciones técnicas.",
+                  "Cómo los datos se representan en binario y se convierten en señales eléctricas, ópticas o inalámbricas para viajar por la red.",
                 images: [
                   {
-                    src: "./assets/images/network-basics/C5_5.2_1.png",
-                    alt: "Escenario de dispositivos conectados que dependen de estándares comunes para interoperar."
-                  },
-                  {
-                    src: "./assets/images/network-basics/C5_5.2_2.png",
-                    alt: "Esquema de organismos y documentos RFC asociados al desarrollo de estándares de red."
+                    src: "./assets/images/network-basics/C5_1.2_data_flow.png",
+                    alt: "Diagrama del flujo de transmisión: datos, bits, señales y medios de red."
                   }
                 ],
                 sections: [
                   {
-                    title: "5.2.1 Dispositivos en una burbuja",
+                    title: "1.2.1 Tipos de datos personales",
                     items: [
-                      "Cada dispositivo solo conoce su estado local hasta que protocolos como DHCP, IP y DNS le aportan contexto de red.",
-                      "La comunicación extremo a extremo depende de protocolos coordinados, no de un único protocolo aislado.",
-                      "La transmisión se divide en paquetes para facilitar encaminamiento, control y recuperación ante errores."
+                      "Los datos voluntarios son los que compartimos conscientemente (formularios, mensajes, archivos).",
+                      "Los datos deducidos y observados se generan por actividad y telemetría (ubicación, patrones de consumo, uso de apps).",
+                      "El análisis de red debe considerar el ciclo de vida del dato: creación, transmisión, almacenamiento y exposición."
                     ]
                   },
                   {
-                    title: "5.2.2 Internet y estándares",
+                    title: "1.2.2 El bit y el byte",
                     items: [
-                      "Un estándar define reglas repetibles para implementar funciones como correo, web o direccionamiento.",
-                      "Gracias a los estándares, equipos distintos pueden intercambiar información de forma consistente.",
-                      "Sin estandarización, la expansión de Internet no sería sostenible ni confiable a escala global."
+                      "El bit (0 o 1) es la unidad mínima de información digital; ocho bits conforman un byte.",
+                      "Codificaciones como ASCII representan letras, números y símbolos mediante combinaciones binarias.",
+                      "Dispositivos de entrada y salida traducen entre lenguaje humano y representación binaria."
                     ]
                   },
                   {
-                    title: "5.2.3 Organizaciones y RFC",
+                    title: "1.2.3 Métodos comunes de transmisión",
                     items: [
-                      "Los estándares se discuten, prueban y publican mediante procesos formales en organizaciones técnicas.",
-                      "La IETF publica y mantiene RFC (Request for Comments) para documentar evolución y adopción de protocolos.",
-                      "Conocer el origen del estándar facilita decidir qué tecnología implementar y cómo mantenerla vigente."
+                      "Cobre: transporta pulsos eléctricos, muy usado en redes de acceso y cableado estructurado.",
+                      "Fibra óptica: transporta pulsos de luz, ideal para mayor distancia y mayor capacidad agregada.",
+                      "Inalámbrico: transporta ondas de radio, flexible para movilidad y despliegues rápidos."
+                    ]
+                  },
+                  {
+                    title: "Resultado del tema",
+                    items: [
+                      "Explicar cómo un dato pasa de contenido digital a señal transportada por un medio de red."
                     ]
                   }
                 ]
               },
               {
-                code: "5.3",
-                title: "Modelos de comunicación de red",
+                code: "1.3",
+                title: "Ancho de banda, rendimiento y latencia",
                 summary:
-                  "Uso de la pila de protocolos y de los modelos TCP/IP y OSI para comprender funciones de red, diseño y resolución de problemas.",
+                  "Diferencia entre capacidad teórica y desempeño real de una conexión, y factores que degradan la experiencia del usuario.",
                 images: [
                   {
-                    src: "./assets/images/network-basics/C5_5.3_1.png",
-                    alt: "Representación de pila de protocolos con capas de acceso, internet, transporte y aplicación."
-                  },
-                  {
-                    src: "./assets/images/network-basics/C5_5.3_2.png",
-                    alt: "Comparación conceptual entre el modelo OSI y el modelo TCP/IP."
+                    src: "./assets/images/network-basics/C5_1.3.png",
+                    alt: "Tabla de unidades de ancho de banda en bits por segundo y sus equivalencias."
                   }
                 ],
                 sections: [
                   {
-                    title: "5.3.1-5.3.2 Pila de protocolos",
+                    title: "1.3.1 Ancho de banda",
                     items: [
-                      "Un mensaje real utiliza varios protocolos simultáneamente, cada uno en una capa diferente.",
-                      "Ejemplo típico: Ethernet (acceso), IP (internet), TCP (transporte) y HTTP (aplicación).",
-                      "El enfoque por pila permite aislar problemas por capa en lugar de tratar toda la red como una sola caja negra."
+                      "Es la capacidad máxima teórica del medio para transportar datos por unidad de tiempo.",
+                      "Se expresa en bps y múltiplos como Kbps, Mbps, Gbps y Tbps.",
+                      "Está condicionado por tecnología, calidad del medio físico y límites de diseño."
                     ]
                   },
                   {
-                    title: "5.3.3 Modelo TCP/IP",
+                    title: "1.3.2 Rendimiento real",
                     items: [
-                      "Es un modelo de protocolo: describe funciones alineadas con la suite usada en Internet.",
-                      "Sus capas facilitan implementación práctica y compatibilidad entre productos de distintos fabricantes.",
-                      "Permite introducir cambios tecnológicos por capa con impacto controlado en el resto de la arquitectura."
+                      "El rendimiento es la tasa efectiva observada durante transferencia real; normalmente es menor que el ancho de banda nominal.",
+                      "La latencia, congestión, tipo de tráfico y cantidad de saltos intermedios influyen directamente en ese valor.",
+                      "En rutas multipunto, el segmento más lento impone el techo de rendimiento extremo a extremo."
                     ]
                   },
                   {
-                    title: "5.3.4 Modelo OSI",
+                    title: "1.3.3 Interpretación de pruebas de velocidad",
                     items: [
-                      "Es un modelo de referencia: describe qué debe hacerse en cada capa sin imponer un protocolo específico.",
-                      "Se usa ampliamente en diseño, documentación y troubleshooting por su granularidad conceptual.",
-                      "Su separación de funciones ayuda a explicar con precisión eventos de capa física, enlace, red y superiores."
+                      "Download mide velocidad de recepción; upload mide velocidad de envío; ambos deben analizarse junto con la latencia.",
+                      "En enlaces residenciales es común que download sea superior a upload por diseño comercial del servicio.",
+                      "Una prueba puntual orienta, pero la tendencia en distintos horarios refleja mejor la salud de la conexión."
                     ]
                   },
                   {
-                    title: "5.3.5 Comparación OSI vs TCP/IP",
+                    title: "Checklist técnico",
                     items: [
-                      "TCP/IP describe protocolos en uso; OSI describe funciones generales requeridas para comunicar.",
-                      "La capa de internet de TCP/IP se relaciona con la capa de red de OSI; transporte es equivalente en ambos.",
-                      "Para análisis operativo, OSI suele ser más detallado en capas inferiores; para implementación, TCP/IP es el marco dominante."
+                      "Validar capacidad contratada vs. rendimiento medido en varios momentos del día.",
+                      "Distinguir problemas de medio local (Wi-Fi/cable) de problemas del proveedor.",
+                      "Correlacionar métricas de rendimiento con tipo de aplicación (video, voz, juegos, nube)."
                     ]
                   }
                 ]
