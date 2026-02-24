@@ -6890,7 +6890,7 @@
                 code: "2.1",
                 title: "Topologías",
                 summary:
-                  "Desarrollo del tema 2.1: Topologías. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "Las topologías describen cómo se conectan los dispositivos y cómo fluye el tráfico. Comprender la relación entre topología física y lógica permite diseñar redes más estables y resolver fallas con mayor rapidez.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_2.1.png",
@@ -6899,27 +6899,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "2.1.1 Topologías física y lógica",
                     items: [
-                      "2.1.1 Topologías física y lógica",
-                      "2.1.2 Vídeo - La topología lógica",
-                      "2.1.3 Topologías de WAN",
-                      "2.1.4 Topología WAN de punto a punto",
-                      "2.1.5 Topologías de LAN"
+                      "La topología física representa el cableado y la disposición real de equipos y enlaces.",
+                      "La topología lógica representa el camino que siguen los datos, que puede diferir del diseño físico.",
+                      "Un mismo diseño físico puede presentar comportamientos lógicos distintos según VLAN, enrutamiento y políticas."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "2.1.2 Topología lógica",
                     items: [
-                      "Identificar y aplicar los conceptos clave de topologías.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Analizar topología lógica permite identificar dominios de broadcast y rutas de tráfico críticas.",
+                      "En troubleshooting, ayuda a ubicar cuellos de botella, saltos innecesarios y puntos únicos de falla.",
+                      "Herramientas de mapeo y tablas de switching/enrutamiento permiten validar la topología operativa."
+                    ]
+                  },
+                  {
+                    title: "2.1.3 y 2.1.4 Topologías WAN",
+                    items: [
+                      "Punto a punto: enlace directo entre dos nodos; simple y predecible para sucursales o troncales dedicadas.",
+                      "Hub-and-spoke: centraliza conectividad en un nodo principal; facilita control, pero depende del hub.",
+                      "Malla parcial o total: incrementa redundancia y resiliencia a costa de mayor complejidad y costo."
+                    ]
+                  },
+                  {
+                    title: "2.1.5 Topologías LAN",
+                    items: [
+                      "La topología estrella con switches es el modelo dominante por escalabilidad y facilidad de administración.",
+                      "Diseños jerárquicos (acceso, distribución y núcleo) mejoran rendimiento y simplifican crecimiento.",
+                      "Segmentar por VLAN y aplicar enlaces troncales evita dominios excesivos y reduce impacto de fallas."
+                    ]
+                  },
+                  {
+                    title: "Aplicación práctica",
+                    items: [
+                      "Elegir topología según criticidad del servicio, presupuesto y plan de crecimiento.",
+                      "Documentar la topología física y la lógica para acelerar cambios y diagnóstico de incidentes.",
+                      "Validar rutas de tráfico esperadas después de cada cambio de infraestructura."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en topologías dentro del contexto del curso."
+                      "Diferenciar topologías físicas y lógicas, y seleccionar estructuras LAN/WAN adecuadas para disponibilidad y rendimiento."
                     ]
                   }
                 ]
@@ -6928,7 +6950,7 @@
                 code: "2.2",
                 title: "Métodos de control de acceso al medio",
                 summary:
-                  "Desarrollo del tema 2.2: Métodos de control de acceso al medio. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "El control de acceso al medio define cómo múltiples dispositivos comparten un canal de transmisión sin degradar la comunicación. Entender dúplex y mecanismos de contención es clave para interpretar rendimiento y colisiones.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_2.2.png",
@@ -6937,26 +6959,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "2.2.1 Comunicación dúplex completo y semidúplex",
                     items: [
-                      "2.2.1 Comunicación dúplex completo y semidúplex",
-                      "2.2.2 Métodos de control de acceso",
-                      "2.2.3 Acceso basado en contención - CSMA/CD",
-                      "2.2.4 Acceso basado en contención - CSMA/CA"
+                      "Dúplex completo permite transmitir y recibir al mismo tiempo, eliminando colisiones en enlaces punto a punto con switch.",
+                      "Semidúplex alterna transmisión/recepción y puede generar colisiones cuando varios nodos comparten el medio.",
+                      "Un desajuste de dúplex entre extremos produce bajo rendimiento, errores y retransmisiones."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "2.2.2 Métodos de control de acceso",
                     items: [
-                      "Identificar y aplicar los conceptos clave de métodos de control de acceso al medio.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Los métodos determinan cuándo un equipo puede transmitir para minimizar conflictos en el canal.",
+                      "En medios compartidos se usan esquemas de contención y espera aleatoria.",
+                      "La eficiencia depende del tipo de medio, carga de tráfico y cantidad de nodos activos."
+                    ]
+                  },
+                  {
+                    title: "2.2.3 CSMA/CD",
+                    items: [
+                      "CSMA/CD (Carrier Sense Multiple Access with Collision Detection) se asocia a Ethernet compartida y semidúplex.",
+                      "El nodo escucha el medio, transmite si está libre y, si detecta colisión, detiene envío y aplica backoff.",
+                      "En Ethernet conmutada moderna en dúplex completo, CSMA/CD prácticamente no se utiliza."
+                    ]
+                  },
+                  {
+                    title: "2.2.4 CSMA/CA",
+                    items: [
+                      "CSMA/CA (Collision Avoidance) es común en redes inalámbricas IEEE 802.11.",
+                      "El equipo intenta evitar colisiones escuchando el canal, esperando intervalos y usando temporización aleatoria.",
+                      "El medio Wi-Fi es compartido por naturaleza; por eso la planificación de canales y potencia es crítica."
+                    ]
+                  },
+                  {
+                    title: "Comparación operativa",
+                    items: [
+                      "Ethernet con switch y dúplex completo ofrece latencia más predecible y mayor estabilidad bajo carga.",
+                      "Wi-Fi aporta movilidad, pero su desempeño varía por interferencia, distancia, obstáculos y densidad de clientes.",
+                      "Para tráfico crítico, prioriza enlaces cableados y reserva inalámbrico para movilidad y acceso flexible."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en métodos de control de acceso al medio dentro del contexto del curso."
+                      "Interpretar correctamente el comportamiento del medio compartido y escoger el método de acceso más adecuado según el escenario."
                     ]
                   }
                 ]
