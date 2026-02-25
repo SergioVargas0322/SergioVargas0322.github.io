@@ -7976,7 +7976,7 @@
                 code: "7.3",
                 title: "Solución de Problemas de Conexión Inalámbrica",
                 summary:
-                  "Desarrollo del tema 7.3: Solución de Problemas de Conexión Inalámbrica. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "Las fallas inalámbricas suelen combinar cobertura, interferencia y autenticación. Un diagnóstico por etapas permite aislar rápidamente si el problema está en radiofrecuencia, configuración o credenciales.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_7.3.png",
@@ -7985,24 +7985,42 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "7.3.1 Causas de problemas inalámbricos",
                     items: [
-                      "7.3.1 Causas de problemas inalámbricos",
-                      "7.3.2 Errores de Autenticación y Asociación"
+                      "Cobertura débil (RSSI bajo), interferencia de canales y obstáculos físicos.",
+                      "Saturación de clientes en un AP o canal, especialmente en 2.4 GHz.",
+                      "Incompatibilidades de estándar/banda o configuración de seguridad inconsistente."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "7.3.2 Errores de autenticación y asociación",
                     items: [
-                      "Identificar y aplicar los conceptos clave de solución de problemas de conexión inalámbrica.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "SSID correcto no garantiza acceso: clave, tipo de cifrado y políticas deben coincidir.",
+                      "Errores WPA2/WPA3, filtrado MAC o portal cautivo mal configurado bloquean asociación.",
+                      "Un cliente puede asociar al AP pero no obtener IP si DHCP falla en la red local."
+                    ]
+                  },
+                  {
+                    title: "Secuencia de diagnóstico recomendada",
+                    items: [
+                      "1) Verificar estado del radio y potencia del AP.",
+                      "2) Confirmar asociación del cliente (SSID, seguridad, banda).",
+                      "3) Validar direccionamiento IP, gateway y DNS obtenidos.",
+                      "4) Probar conectividad local y luego salida a Internet."
+                    ]
+                  },
+                  {
+                    title: "Indicadores y herramientas",
+                    items: [
+                      "Revisar RSSI/SNR, tasa de datos, canal y nivel de utilización.",
+                      "Usar análisis de espectro o escáner Wi-Fi para detectar solapamiento/interferencia.",
+                      "Correlacionar eventos del AP/controlador con hora exacta del incidente."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en solución de problemas de conexión inalámbrica dentro del contexto del curso."
+                      "Resolver incidentes Wi-Fi separando claramente problemas de radio, autenticación y servicios IP."
                     ]
                   }
                 ]
@@ -8011,7 +8029,7 @@
                 code: "7.4",
                 title: "Problemas Comunes de Conectividad a Internet",
                 summary:
-                  "Desarrollo del tema 7.4: Problemas Comunes de Conectividad a Internet. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "La conectividad a Internet depende de múltiples componentes: direccionamiento, gateway, DNS, firewall y rutas. Un método de verificación progresiva evita diagnósticos erróneos y reduce tiempo de resolución.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_7.4.png",
@@ -8020,29 +8038,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "7.4.1 Errores de configuración DHCP",
                     items: [
-                      "7.4.1 Errores de Configuración del Servidor DHCP",
-                      "7.4.2 Comprobar la Configuración de Internet",
-                      "7.4.3 Verificar la Configuración del Cortafuegos",
-                      "7.4.5 Divide y Vencerás con ping",
-                      "7.4.6 El Comando tracert",
-                      "7.4.7 El Comando netstat",
-                      "7.4.8 El Comando nslookup"
+                      "Sin IP válida, máscara/prefijo correcto o gateway, no hay salida a Internet.",
+                      "Pools agotados, exclusiones incorrectas o servidor DHCP inalcanzable afectan a múltiples usuarios.",
+                      "Validar concesión DHCP es el primer filtro antes de revisar capas superiores."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "7.4.2 y 7.4.3 Verificación de Internet y firewall",
                     items: [
-                      "Identificar y aplicar los conceptos clave de problemas comunes de conectividad a internet.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Comprobar parámetros locales: IP, gateway, DNS y estado de interfaz.",
+                      "Revisar reglas de firewall/ACL/NAT que puedan bloquear tráfico saliente o de retorno.",
+                      "Diferenciar fallo de acceso web (puertos 80/443) de fallo total de conectividad."
+                    ]
+                  },
+                  {
+                    title: "7.4.5 Divide y vencerás con ping",
+                    items: [
+                      "Probar por saltos: localhost -> gateway -> DNS público -> destino final.",
+                      "Si falla en el primer salto externo, probable problema local o de borde inmediato.",
+                      "Si llega a IP pero no por nombre, el problema suele estar en resolución DNS."
+                    ]
+                  },
+                  {
+                    title: "7.4.6 Comando tracert",
+                    items: [
+                      "`tracert`/`traceroute` muestra el camino y ayuda a ubicar dónde se interrumpe la ruta.",
+                      "Permite diferenciar caída interna, problema del ISP o falla remota del destino.",
+                      "Comparar trazas en distintos horarios ayuda a detectar congestión o rutas inestables."
+                    ]
+                  },
+                  {
+                    title: "7.4.7 netstat y 7.4.8 nslookup",
+                    items: [
+                      "`netstat` permite revisar conexiones activas, puertos en escucha y estados anómalos.",
+                      "`nslookup` valida si el DNS responde y qué dirección entrega para un dominio.",
+                      "Combinados, ayudan a distinguir fallas de capa de transporte frente a fallas de resolución."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en problemas comunes de conectividad a internet dentro del contexto del curso."
+                      "Diagnosticar conectividad a Internet con una secuencia lógica basada en evidencia y herramientas estándar."
                     ]
                   }
                 ]
@@ -8051,7 +8089,7 @@
                 code: "7.5",
                 title: "Asistencia al cliente",
                 summary:
-                  "Desarrollo del tema 7.5: Asistencia al cliente. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "La asistencia técnica efectiva combina diagnóstico correcto y comunicación clara con el usuario. Una buena gestión del caso reduce reprocesos, mejora tiempos de atención y eleva calidad del servicio.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_7.5.jpeg",
@@ -8060,27 +8098,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "7.5.1 Fuentes de ayuda",
                     items: [
-                      "7.5.1 Fuentes de ayuda",
-                      "7.5.2 Cuándo llamar para pedir ayuda",
-                      "7.5.3 Interacción con el Servicio de Soporte",
-                      "7.5.4 Resolución del Problema",
-                      "7.5.5 Casos del Servicio de Soporte y Órdenes de Trabajo"
+                      "Base de conocimiento interna, documentación del fabricante y runbooks del equipo.",
+                      "Historial de incidentes similares para acelerar diagnóstico y evitar repetir errores.",
+                      "Monitoreo y registros centralizados como evidencia objetiva del problema."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "7.5.2 Cuándo escalar",
                     items: [
-                      "Identificar y aplicar los conceptos clave de asistencia al cliente.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Escalar cuando el incidente supera privilegios, alcance técnico o tiempos comprometidos.",
+                      "Escalar con contexto completo: síntomas, pruebas realizadas, resultados y hora del evento.",
+                      "Evitar escalaciones vacías que retrasan la atención y saturan niveles superiores."
+                    ]
+                  },
+                  {
+                    title: "7.5.3 Interacción con soporte",
+                    items: [
+                      "Comunicar en lenguaje claro: impacto, prioridad y acciones ya ejecutadas.",
+                      "Alinear expectativas con el usuario sobre tiempos, ventanas de prueba y validación.",
+                      "Mantener trazabilidad de cada contacto para continuidad entre turnos."
+                    ]
+                  },
+                  {
+                    title: "7.5.4 Resolución y validación",
+                    items: [
+                      "Confirmar recuperación técnica con pruebas objetivas antes de cerrar.",
+                      "Validar con el usuario final que el servicio funciona según su caso real.",
+                      "Registrar causa raíz y acción correctiva para prevenir reincidencia."
+                    ]
+                  },
+                  {
+                    title: "7.5.5 Casos y órdenes de trabajo",
+                    items: [
+                      "Abrir ticket con severidad adecuada y datos verificables del incidente.",
+                      "Actualizar bitácora de actividades y cambios aplicados en cada intervención.",
+                      "Cerrar con evidencia de solución, impacto final y recomendaciones preventivas."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en asistencia al cliente dentro del contexto del curso."
+                      "Gestionar incidentes de red con enfoque técnico y de servicio, desde la apertura del caso hasta su cierre documentado."
                     ]
                   }
                 ]
