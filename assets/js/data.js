@@ -450,7 +450,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.1.1 Disk Operating System (DOS)",
+                    title: "Disk Operating System (DOS)",
                     items: [
                       "Los primeros sistemas usaban tarjetas perforadas, cinta de papel y cinta magnética antes de los discos modernos.",
                       "DOS habilitó lectura/escritura en discos y organización de archivos por sistema de archivos.",
@@ -466,7 +466,7 @@
                     ]
                   },
                   {
-                    title: "1.1.2 Versiones de Windows",
+                    title: "Versiones de Windows",
                     items: [
                       "Desde 1993, las versiones de Windows se basan en la arquitectura NT.",
                       "Con Windows XP se consolidó la adopción de 64 bits en equipos de usuario.",
@@ -474,7 +474,7 @@
                     ]
                   },
                   {
-                    title: "1.1.3 Interfaz gráfica de Windows",
+                    title: "Interfaz gráfica de Windows",
                     items: [
                       "El escritorio (Desktop) es personalizable por usuario e incluye accesos, archivos y papelera de reciclaje.",
                       "La barra de tareas (Taskbar) integra menú Inicio/búsqueda, accesos rápidos y área de notificaciones.",
@@ -482,7 +482,7 @@
                     ]
                   },
                   {
-                    title: "1.1.4 Vulnerabilidades del sistema operativo",
+                    title: "Vulnerabilidades del sistema operativo",
                     items: [
                       "Millones de líneas de código en SO y aplicaciones incrementan la superficie de falla.",
                       "Una vulnerabilidad puede explotarse para escalar privilegios, alterar permisos o robar información.",
@@ -526,7 +526,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.2.1 Hardware Abstraction Layers (HAL)",
+                    title: "Hardware Abstraction Layers (HAL)",
                     items: [
                       "La HAL intermedia entre hardware y kernel para aislar diferencias entre plataformas físicas.",
                       "El kernel mantiene control global de E/S, memoria y periféricos conectados.",
@@ -534,7 +534,7 @@
                     ]
                   },
                   {
-                    title: "1.2.2 Modo usuario y modo kernel",
+                    title: "Modo usuario y modo kernel",
                     items: [
                       "Aplicaciones de usuario corren en user mode con restricciones de hardware y memoria.",
                       "Código en kernel mode tiene acceso total; errores de drivers en este modo pueden detener todo el sistema.",
@@ -542,7 +542,7 @@
                     ]
                   },
                   {
-                    title: "1.2.3 Sistemas de archivos en Windows",
+                    title: "Sistemas de archivos en Windows",
                     items: [
                       "exFAT y FAT son simples y compatibles, pero FAT presenta límites de tamaño y particiones.",
                       "HFS+ (macOS) y EXT (Linux) pueden leerse en Windows con software adicional.",
@@ -552,7 +552,7 @@
                     ]
                   },
                   {
-                    title: "1.2.4 Flujos de datos alternos (ADS)",
+                    title: "Flujos de datos alternos (ADS)",
                     items: [
                       "NTFS permite asociar flujos alternos de datos a un archivo (ej.: Testfile.txt:ADS).",
                       "ADS puede ocultar información o código malicioso sin ser visible en un dir estándar.",
@@ -560,7 +560,7 @@
                     ]
                   },
                   {
-                    title: "1.2.5 y 1.2.6 - Proceso de arranque e inicio",
+                    title: "- Proceso de arranque e inicio",
                     items: [
                       "BIOS inicia con POST/MBR; UEFI utiliza archivos .efi en la EFI System Partition.",
                       "Bootmgr.exe carga BCD y decide ruta de hibernación (Winresume.exe) o arranque frío (Winload.exe).",
@@ -569,7 +569,7 @@
                     ]
                   },
                   {
-                    title: "1.2.7 y 1.2.8 - Apagado, procesos, hilos y servicios",
+                    title: "- Apagado, procesos, hilos y servicios",
                     items: [
                       "Un apagado correcto cierra apps/servicios en orden y reduce riesgo de corrupción.",
                       "Opciones de apagado: Shutdown, Restart e Hibernate según necesidad operativa.",
@@ -578,7 +578,7 @@
                     ]
                   },
                   {
-                    title: "1.2.9 Asignación de memoria y handles",
+                    title: "Asignación de memoria y handles",
                     items: [
                       "Windows usa direcciones virtuales traducidas a direcciones físicas mediante tablas de páginas.",
                       "Procesos de 32 bits direccionan hasta 4 GB; en 64 bits el espacio virtual se amplía drásticamente.",
@@ -587,7 +587,7 @@
                     ]
                   },
                   {
-                    title: "1.2.10 Registro de Windows",
+                    title: "Registro de Windows",
                     items: [
                       "El registro almacena configuración de hardware, software, usuarios y comportamiento del sistema.",
                       "Hives clave: HKCU, HKU, HKCR, HKLM y HKCC.",
@@ -636,7 +636,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.3.1 Ejecutar como administrador",
+                    title: "Ejecutar como administrador",
                     items: [
                       "No se recomienda trabajar siempre con cuenta Administrador por riesgo de heredar privilegios a software malicioso.",
                       "Para tareas puntuales, usar Run as Administrator sobre ejecutable o consola específica.",
@@ -644,7 +644,7 @@
                     ]
                   },
                   {
-                    title: "1.3.2 Usuarios locales y dominios",
+                    title: "Usuarios locales y dominios",
                     items: [
                       "Las cuentas locales almacenan configuración y permisos específicos del equipo.",
                       "Cuentas Guest/Administrator vienen deshabilitadas por seguridad y no deben activarse sin justificación.",
@@ -653,7 +653,7 @@
                     ]
                   },
                   {
-                    title: "1.3.3 CLI y PowerShell",
+                    title: "CLI y PowerShell",
                     items: [
                       "CLI (cmd) permite navegación, ejecución de comandos y scripts batch.",
                       "PowerShell amplía automatización con cmdlets, scripts .ps1 y funciones reutilizables.",
@@ -662,7 +662,7 @@
                     ]
                   },
                   {
-                    title: "1.3.4 Windows Management Instrumentation (WMI)",
+                    title: "Windows Management Instrumentation (WMI)",
                     items: [
                       "WMI permite inventario, monitoreo y administración remota de sistemas Windows.",
                       "La consola WMI Control expone opciones de resumen, respaldo, seguridad y configuración avanzada.",
@@ -671,7 +671,7 @@
                     ]
                   },
                   {
-                    title: "1.3.5 Comando net",
+                    title: "Comando net",
                     items: [
                       "El comando net centraliza administración de cuentas, sesiones, recursos compartidos y servicios.",
                       "Subcomandos clave: net accounts, net session, net share, net start/stop, net use, net view.",
@@ -679,7 +679,7 @@
                     ]
                   },
                   {
-                    title: "1.3.6 Administrador de tareas y Monitor de recursos",
+                    title: "Administrador de tareas y Monitor de recursos",
                     items: [
                       "Task Manager ofrece visibilidad por pestañas: Processes, Performance, Startup, Users, Details y Services.",
                       "Resource Monitor profundiza análisis de CPU, memoria, disco y red por proceso.",
@@ -687,7 +687,7 @@
                     ]
                   },
                   {
-                    title: "1.3.7 Redes",
+                    title: "Redes",
                     items: [
                       "Network and Sharing Center permite crear conexiones y ajustar propiedades del adaptador.",
                       "Configurar IPv4/IPv6 por DHCP o manual según diseño de red.",
@@ -695,7 +695,7 @@
                     ]
                   },
                   {
-                    title: "1.3.8 Acceso a recursos de red",
+                    title: "Acceso a recursos de red",
                     items: [
                       "SMB usa formato UNC (\\\\servidor\\recurso\\archivo) para acceso a recursos remotos.",
                       "Los administrative shares (C$, admin$, print$) requieren privilegios elevados.",
@@ -703,7 +703,7 @@
                     ]
                   },
                   {
-                    title: "1.3.9 Windows Server",
+                    title: "Windows Server",
                     items: [
                       "Windows Server orienta su uso a centros de datos y roles empresariales.",
                       "Servicios comunes: DNS, DHCP, AD DS, SMB/NFS/DFS, HTTP/HTTPS/FTP y virtualización (Hyper-V).",
@@ -751,7 +751,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.4.1 Comando netstat",
+                    title: "Comando netstat",
                     items: [
                       "El comando netstat ayuda a detectar conexiones entrantes/salientes no autorizadas.",
                       "Con netstat -abno puedes ver puertos, estado, proceso asociado y PID para correlación con Task Manager.",
@@ -760,7 +760,7 @@
                     ]
                   },
                   {
-                    title: "1.4.2 Visor de eventos",
+                    title: "Visor de eventos",
                     items: [
                       "Event Viewer registra eventos de aplicaciones, seguridad y sistema para diagnóstico y auditoría.",
                       "Cada evento incluye nivel (información, advertencia, error, crítico), origen, fecha/hora e ID.",
@@ -768,7 +768,7 @@
                     ]
                   },
                   {
-                    title: "1.4.3 Gestión de Windows Update",
+                    title: "Gestión de Windows Update",
                     items: [
                       "Mantener Windows actualizado reduce exposición a vulnerabilidades y zero-day exploits.",
                       "Los parches corrigen fallas específicas y los service packs agrupan mejoras y correcciones.",
@@ -776,7 +776,7 @@
                     ]
                   },
                   {
-                    title: "1.4.4 Política de seguridad local",
+                    title: "Política de seguridad local",
                     items: [
                       "La política local aplica en equipos fuera de dominio y define reglas de cuenta y seguridad del host.",
                       "Password Policy y Account Lockout Policy ayudan a mitigar intentos de fuerza bruta.",
@@ -785,7 +785,7 @@
                     ]
                   },
                   {
-                    title: "1.4.5 Windows Defender",
+                    title: "Windows Defender",
                     items: [
                       "Windows Defender ofrece protección en tiempo real contra virus, spyware y otras formas de malware.",
                       "Permite escaneos manuales, actualización de definiciones y revisión de historial de detecciones.",
@@ -793,7 +793,7 @@
                     ]
                   },
                   {
-                    title: "1.4.6 Firewall de Windows Defender",
+                    title: "Firewall de Windows Defender",
                     items: [
                       "Un firewall implementa control de tráfico mediante reglas de entrada y salida por puertos/aplicaciones.",
                       "Una postura restrictiva (permitir solo lo necesario) reduce la superficie de ataque.",
@@ -835,7 +835,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.1.1 Qué es Linux",
+                    title: "Qué es Linux",
                     items: [
                       "Linux es un sistema operativo creado en 1991, de código abierto, ligero y altamente configurable.",
                       "Está diseñado para operar en red, lo que facilita el desarrollo y uso de aplicaciones orientadas a servicios.",
@@ -844,7 +844,7 @@
                     ]
                   },
                   {
-                    title: "2.1.2 Valor de Linux en ciberseguridad",
+                    title: "Valor de Linux en ciberseguridad",
                     items: [
                       "La flexibilidad del código abierto permite construir entornos específicos para análisis de seguridad.",
                       "La CLI de Linux es potente para tareas locales y remotas, con menor consumo de recursos que un entorno gráfico completo.",
@@ -853,7 +853,7 @@
                     ]
                   },
                   {
-                    title: "2.1.3 Linux en el SOC",
+                    title: "Linux en el SOC",
                     items: [
                       "En un Security Operations Center, Linux permite montar plataformas ligeras con solo los paquetes necesarios.",
                       "Las herramientas pueden integrarse en flujos de trabajo coordinados para detección, análisis y respuesta.",
@@ -870,7 +870,7 @@
                     ]
                   },
                   {
-                    title: "2.1.4 Herramientas Linux y pentesting",
+                    title: "Herramientas Linux y pentesting",
                     items: [
                       "El penetration testing busca vulnerabilidades atacando de forma controlada un sistema o red.",
                       "Linux concentra múltiples herramientas técnicas: generadores de paquetes, escáneres de puertos y exploits de prueba.",
@@ -918,7 +918,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.2.1 La shell de Linux",
+                    title: "La shell de Linux",
                     items: [
                       "En Linux, la interacción con el sistema puede hacerse por GUI o por CLI; la CLI se accede con emuladores de terminal.",
                       "Terminales comunes: Terminator, eterm, xterm, konsole y gnome-terminal.",
@@ -927,7 +927,7 @@
                     ]
                   },
                   {
-                    title: "2.2.2 Comandos básicos",
+                    title: "Comandos básicos",
                     items: [
                       "Comandos fundamentales: pwd, ps, su, sudo, passwd, shutdown y man para documentación.",
                       "Comandos de red y gestión: ifconfig, iwconfig y apt-get para configuración o mantenimiento.",
@@ -936,7 +936,7 @@
                     ]
                   },
                   {
-                    title: "2.2.3 Comandos de archivos y directorios",
+                    title: "Comandos de archivos y directorios",
                     items: [
                       "Comandos clave para sistema de archivos: ls, cd, mkdir, cp, mv, rm, grep y cat.",
                       "Parámetros y switches permiten ajustar el comportamiento de cada comando según la tarea.",
@@ -944,7 +944,7 @@
                     ]
                   },
                   {
-                    title: "2.2.4 Trabajo con archivos de texto",
+                    title: "Trabajo con archivos de texto",
                     items: [
                       "Linux ofrece editores gráficos y de línea de comandos; ambos cumplen roles distintos en operación diaria.",
                       "En administración remota (ej. por SSH), los editores CLI son esenciales porque no siempre hay interfaz gráfica.",
@@ -952,7 +952,7 @@
                     ]
                   },
                   {
-                    title: "2.2.5 Importancia de los archivos de texto en Linux",
+                    title: "Importancia de los archivos de texto en Linux",
                     items: [
                       "En Linux, casi todo se representa como archivo, incluyendo gran parte de la configuración del sistema.",
                       "Los servicios y aplicaciones leen archivos de configuración para definir su comportamiento al iniciar.",
@@ -989,7 +989,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.3.1 Introducción a la comunicación cliente-servidor",
+                    title: "Introducción a la comunicación cliente-servidor",
                     items: [
                       "Un servidor es un equipo con software que ofrece recursos o funciones a clientes a través de la red.",
                       "Existen servicios de negocio (archivos, correo, web) y servicios de mantenimiento (logs, memoria, disco).",
@@ -997,7 +997,7 @@
                     ]
                   },
                   {
-                    title: "2.3.2 Servidores, servicios y puertos",
+                    title: "Servidores, servicios y puertos",
                     items: [
                       "Un puerto es un recurso de red asociado a un servicio; cuando está activo se dice que el servicio está listening.",
                       "Aunque el administrador puede cambiar puertos, muchos clientes usan puertos por defecto para interoperabilidad.",
@@ -1005,7 +1005,7 @@
                     ]
                   },
                   {
-                    title: "2.3.3 Clientes",
+                    title: "Clientes",
                     items: [
                       "Un cliente es una aplicación que habla un protocolo específico con un servidor.",
                       "Ejemplos: navegador web con HTTP para servidores web y cliente FTP para transferencia de archivos.",
@@ -1013,7 +1013,7 @@
                     ]
                   },
                   {
-                    title: "2.3.4 Detección de puertos con Nmap (lab)",
+                    title: "Detección de puertos con Nmap (lab)",
                     items: [
                       "Nmap permite discovery y auditoría para identificar hosts, servicios, puertos abiertos y posibles vectores de ataque.",
                       "Comandos útiles: nmap localhost, sudo nmap -sU localhost, nmap -sV localhost y nmap -A localhost.",
@@ -1046,7 +1046,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.4.1 Archivos de configuración de servicios",
+                    title: "Archivos de configuración de servicios",
                     items: [
                       "En Linux, los servicios cargan parámetros desde archivos de configuración al iniciar.",
                       "Campos comunes: puerto, ubicación de recursos y criterios de autorización de clientes.",
@@ -1064,7 +1064,7 @@
                     ]
                   },
                   {
-                    title: "2.4.2 Endurecimiento de dispositivos",
+                    title: "Endurecimiento de dispositivos",
                     items: [
                       "El endurecimiento (hardening) reduce riesgo con controles sobre acceso administrativo, servicios y superficie expuesta.",
                       "Prácticas clave: minimizar paquetes instalados y deshabilitar servicios innecesarios al arranque.",
@@ -1082,7 +1082,7 @@
                     ]
                   },
                   {
-                    title: "2.4.3 Monitoreo de logs de servicios",
+                    title: "Monitoreo de logs de servicios",
                     items: [
                       "Los logs registran eventos de kernel, servicios y aplicaciones para diagnóstico y auditoría.",
                       "Revisar periódicamente archivos como /var/log/messages permite detectar anomalías tempranas.",
@@ -1123,7 +1123,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.5.1 Tipos de sistemas de archivos en Linux",
+                    title: "Tipos de sistemas de archivos en Linux",
                     items: [
                       "Linux soporta múltiples sistemas de archivos; el administrador elige según rendimiento, flexibilidad, tamaño y seguridad.",
                       "Familia ext: ext2 (sin journal), ext3 (con journaling) y ext4 (mejoras de rendimiento y escalabilidad).",
@@ -1132,7 +1132,7 @@
                     ]
                   },
                   {
-                    title: "2.5.2 Roles de Linux y permisos de archivos",
+                    title: "Roles de Linux y permisos de archivos",
                     items: [
                       "Los permisos se aplican por archivo en el orden usuario, grupo y otros con derechos r, w y x.",
                       "El comando ls -l muestra permisos, enlaces, propietario, grupo, tamaño, fecha y nombre del archivo.",
@@ -1141,7 +1141,7 @@
                     ]
                   },
                   {
-                    title: "2.5.3 Enlaces duros y enlaces simbólicos",
+                    title: "Enlaces duros y enlaces simbólicos",
                     items: [
                       "Un hard link apunta al mismo inode que el archivo original; cambios en uno se reflejan en ambos.",
                       "Un symbolic link apunta por ruta; si el archivo origen desaparece, el enlace queda roto.",
@@ -1182,7 +1182,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.6.1 Sistema X Window",
+                    title: "Sistema X Window",
                     items: [
                       "X Window System (X11) provee el framework base para dibujar ventanas y gestionar interacción con teclado y mouse.",
                       "X permite ejecutar aplicaciones de forma remota y mostrar su interfaz gráfica en otro equipo conectado por red.",
@@ -1198,7 +1198,7 @@
                     ]
                   },
                   {
-                    title: "2.6.2 Interfaz gráfica de Linux",
+                    title: "Interfaz gráfica de Linux",
                     items: [
                       "La GUI no es obligatoria para que Linux funcione, pero mejora usabilidad para perfiles no avanzados en CLI.",
                       "Ubuntu usa GNOME 3 como interfaz por defecto con enfoque en simplicidad y experiencia de usuario.",
@@ -1245,7 +1245,7 @@
                 ],
                 sections: [
                   {
-                    title: "3.1.1 Redes de datos inalámbricas",
+                    title: "Redes de datos inalámbricas",
                     items: [
                       "Los dispositivos móviles se conectan a internet principalmente por Wi-Fi o por red celular.",
                       "Wi-Fi suele preferirse por costo y consumo de batería, mientras que celular depende del plan del operador.",
@@ -1254,7 +1254,7 @@
                     ]
                   },
                   {
-                    title: "3.1.2 Configuración manual de Wi-Fi",
+                    title: "Configuración manual de Wi-Fi",
                     items: [
                       "Buenas prácticas: usar seguridad robusta (WPA2 o superior), evitar texto claro para credenciales y preferir VPN.",
                       "Configuración manual requiere SSID, tipo de seguridad y contraseña en Android o iOS.",
@@ -1262,7 +1262,7 @@
                     ]
                   },
                   {
-                    title: "3.1.4 Estándares de comunicación celular",
+                    title: "Estándares de comunicación celular",
                     items: [
                       "Evolución de estándares: 1G analógico, 2G digital, 3G con internet móvil, 4G/LTE de alta velocidad y 5G de muy alta capacidad.",
                       "No todos los estándares se adoptan igual en todos los países; esto puede afectar compatibilidad internacional.",
@@ -1270,7 +1270,7 @@
                     ]
                   },
                   {
-                    title: "3.1.5 Modo avión",
+                    title: "Modo avión",
                     items: [
                       "Airplane Mode desactiva radios celulares, Wi-Fi y Bluetooth para cumplir restricciones operativas.",
                       "Tras activarlo, pueden habilitarse selectivamente algunas interfaces (como Wi-Fi o Bluetooth) si la política lo permite.",
@@ -1278,7 +1278,7 @@
                     ]
                   },
                   {
-                    title: "3.1.6 Punto de acceso (hotspot)",
+                    title: "Punto de acceso (hotspot)",
                     items: [
                       "Un hotspot (tethering) permite compartir internet celular con otros dispositivos por Wi-Fi, Bluetooth o USB.",
                       "Es útil cuando no existe red fija o Wi-Fi disponible para el equipo que necesita conectividad.",
@@ -1306,14 +1306,14 @@
                 ],
                 sections: [
                   {
-                    title: "3.2.1 Bluetooth en dispositivos móviles",
+                    title: "Bluetooth en dispositivos móviles",
                     items: [
                       "Bluetooth permite conectar parlantes, audífonos, teclados, mouse y controles de juego.",
                       "Estos periféricos mejoran productividad y experiencia multimedia sin cableado adicional."
                     ]
                   },
                   {
-                    title: "3.2.2 Emparejamiento Bluetooth",
+                    title: "Emparejamiento Bluetooth",
                     items: [
                       "El emparejamiento Bluetooth es el proceso por el cual dos dispositivos acuerdan parámetros de comunicación y autenticación.",
                       "Uno de los equipos debe estar en modo discoverable/visible para ser detectado.",
@@ -1349,7 +1349,7 @@
                 ],
                 sections: [
                   {
-                    title: "3.3.1 Introducción al correo electrónico",
+                    title: "Introducción al correo electrónico",
                     items: [
                       "El correo electrónico se basa en la interacción entre servidores de email y clientes de correo.",
                       "Los servidores reenvían y almacenan mensajes; los clientes permiten redactar, leer y administrar el buzón.",
@@ -1366,7 +1366,7 @@
                     ]
                   },
                   {
-                    title: "3.3.3 Configuración de correo en Android",
+                    title: "Configuración de correo en Android",
                     items: [
                       "Android integra servicios de Google y sincroniza correo, contactos y ajustes al iniciar sesión.",
                       "Para agregar cuenta: abrir Gmail/Email, elegir tipo de cuenta, ingresar credenciales y guardar configuración.",
@@ -1374,7 +1374,7 @@
                     ]
                   },
                   {
-                    title: "3.3.4 Configuración de correo en iOS",
+                    title: "Configuración de correo en iOS",
                     items: [
                       "iOS incluye Mail y soporta iCloud, Exchange, Google, Yahoo, AOL y Outlook.",
                       "El Apple ID habilita App Store, iTunes e iCloud, incluyendo correo y almacenamiento remoto de respaldo.",
@@ -1382,7 +1382,7 @@
                     ]
                   },
                   {
-                    title: "3.3.5 Correo en internet",
+                    title: "Correo en internet",
                     items: [
                       "Un usuario puede operar correo local (gestionado por TI interno) o internet email (gestionado por proveedor externo).",
                       "El acceso puede hacerse desde app nativa del SO, cliente web o app dedicada (por ejemplo Gmail).",
@@ -1410,7 +1410,7 @@
                 ],
                 sections: [
                   {
-                    title: "3.4.1 Tipos de datos para sincronizar",
+                    title: "Tipos de datos para sincronizar",
                     items: [
                       "La sincronización mantiene información consistente entre múltiples equipos (móvil, tablet, laptop, desktop).",
                       "Datos comunes: contactos, apps, correo, fotos, música, videos, calendario, documentos, marcadores, contraseñas y más.",
@@ -1418,7 +1418,7 @@
                     ]
                   },
                   {
-                    title: "3.4.2 Habilitar sincronización",
+                    title: "Habilitar sincronización",
                     items: [
                       "En Android, Sync y Auto Sync permiten elegir qué datos sincronizar y si se hace de forma automática.",
                       "En iOS hay dos conceptos: Backup (copia integral) y Sync (sincronización de contenido definido).",
@@ -1426,7 +1426,7 @@
                     ]
                   },
                   {
-                    title: "3.4.3 Tipos de conexión para sincronización",
+                    title: "Tipos de conexión para sincronización",
                     items: [
                       "La sincronización puede realizarse por USB o Wi-Fi, según plataforma y configuración del entorno.",
                       "Android suele apoyarse en servicios en la nube de Google para continuidad de datos entre dispositivos.",
@@ -1461,7 +1461,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.1.1 Código abierto versus código cerrado",
+                    title: "Código abierto versus código cerrado",
                     items: [
                       "Android es un sistema operativo móvil basado en Linux y de enfoque abierto; iOS es propietario y de código cerrado.",
                       "El código fuente abierto facilita auditoría y personalización; el código cerrado prioriza control del fabricante sobre plataforma y distribución.",
@@ -1469,7 +1469,7 @@
                     ]
                   },
                   {
-                    title: "4.1.2 Fuentes de aplicaciones y contenido",
+                    title: "Fuentes de aplicaciones y contenido",
                     items: [
                       "Las apps sustituyen a los programas tradicionales de escritorio y se descargan desde tiendas o fuentes autorizadas.",
                       "En iOS, Apple usa un modelo de revisión centralizada y ecosistema cerrado (walled garden) en App Store para filtrar contenido malicioso.",
@@ -1513,7 +1513,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.2.1 Elementos de la pantalla de inicio en Android",
+                    title: "Elementos de la pantalla de inicio en Android",
                     items: [
                       "Android organiza apps y widgets en varias pantallas con una pantalla principal (inicio).",
                       "El indicador de pantalla muestra qué escritorio está activo y permite navegación horizontal por deslizamiento.",
@@ -1529,7 +1529,7 @@
                     ]
                   },
                   {
-                    title: "4.2.3 Elementos de la pantalla de inicio en iOS",
+                    title: "Elementos de la pantalla de inicio en iOS",
                     items: [
                       "iOS también organiza apps por pantallas táctiles, pero con diferencias clave frente a Android.",
                       "No usa el mismo esquema de iconos de navegación y, según el modelo, privilegia botón físico o gestos.",
@@ -1572,7 +1572,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.3.1 Protección antimalware y sandbox",
+                    title: "Protección antimalware y sandbox",
                     items: [
                       "Los dispositivos móviles también son objetivos de malware: spyware, troyanos, adware y robo de credenciales.",
                       "Android e iOS aíslan aplicaciones con sandbox para limitar accesos no autorizados entre apps.",
@@ -1580,7 +1580,7 @@
                     ]
                   },
                   {
-                    title: "4.3.2 Fuentes confiables y permisos de aplicaciones",
+                    title: "Fuentes confiables y permisos de aplicaciones",
                     items: [
                       "Instalar aplicaciones solo desde fuentes confiables reduce el riesgo de código manipulado o malicioso.",
                       "Cada permiso solicitado debe revisarse con criterio: acceso a cámara, micrófono, ubicación, contactos y archivos.",
@@ -1588,7 +1588,7 @@
                     ]
                   },
                   {
-                    title: "4.3.3 Riesgos de rooteo y jailbreak",
+                    title: "Riesgos de rooteo y jailbreak",
                     items: [
                       "El rooteo (Android) y jailbreak (iOS) eliminan restricciones del fabricante para obtener privilegios elevados.",
                       "Este cambio debilita controles nativos de seguridad, rompe garantías y facilita persistencia de malware.",
@@ -1596,7 +1596,7 @@
                     ]
                   },
                   {
-                    title: "4.3.4 Gestión de actualizaciones y parches",
+                    title: "Gestión de actualizaciones y parches",
                     items: [
                       "Mantener sistema operativo y aplicaciones actualizadas corrige vulnerabilidades conocidas y fallos críticos.",
                       "No todos los equipos reciben parches al mismo ritmo; revisar versión, soporte del fabricante y fin de vida útil.",
@@ -1632,7 +1632,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.4.1 Orientación y sensores",
+                    title: "Orientación y sensores",
                     items: [
                       "La orientación automática usa acelerómetro y giroscopio para adaptar la pantalla a modo vertical u horizontal.",
                       "Una configuración adecuada mejora legibilidad, escritura y experiencia en apps multimedia.",
@@ -1640,7 +1640,7 @@
                     ]
                   },
                   {
-                    title: "4.4.2 Calibración y brillo",
+                    title: "Calibración y brillo",
                     items: [
                       "El brillo de pantalla impacta directamente batería, fatiga visual y visibilidad en exteriores.",
                       "El brillo adaptativo usa sensores de luz ambiente para ajustar nivel de forma automática.",
@@ -1648,7 +1648,7 @@
                     ]
                   },
                   {
-                    title: "4.4.3 Ubicación, GPS y servicios contextuales",
+                    title: "Ubicación, GPS y servicios contextuales",
                     items: [
                       "Los servicios de ubicación combinan GPS, Wi-Fi y red celular para estimar posición del dispositivo.",
                       "Aplicaciones de mapas, transporte y seguridad dependen de esta función para operar correctamente.",
@@ -1656,7 +1656,7 @@
                     ]
                   },
                   {
-                    title: "4.4.4 Funciones comunes de conectividad",
+                    title: "Funciones comunes de conectividad",
                     items: [
                       "Wi-Fi Calling permite cursar llamadas sobre redes Wi-Fi cuando la señal celular es débil.",
                       "VPN protege tráfico en redes públicas y es clave cuando se accede a recursos institucionales.",
@@ -1664,7 +1664,7 @@
                     ]
                   },
                   {
-                    title: "4.4.5 Asistentes virtuales y automatización",
+                    title: "Asistentes virtuales y automatización",
                     items: [
                       "Asistentes como Siri o Google Assistant ejecutan tareas por voz y aumentan productividad diaria.",
                       "Su uso implica tratamiento de datos de voz y contexto, por lo que requiere revisar privacidad.",
@@ -1692,7 +1692,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.5.1 Tipos de bloqueo de pantalla",
+                    title: "Tipos de bloqueo de pantalla",
                     items: [
                       "Métodos comunes: PIN, contraseña, patrón, huella y reconocimiento facial según plataforma.",
                       "La biometría mejora usabilidad, pero debe combinarse con código de respaldo robusto.",
@@ -1700,7 +1700,7 @@
                     ]
                   },
                   {
-                    title: "4.5.2 Restricciones por intentos fallidos",
+                    title: "Restricciones por intentos fallidos",
                     items: [
                       "Tras múltiples intentos erróneos, el sistema aplica retardo progresivo o bloqueo temporal.",
                       "Estas políticas mitigan fuerza bruta y reducen riesgo de acceso por prueba masiva.",
@@ -1708,7 +1708,7 @@
                     ]
                   },
                   {
-                    title: "4.5.3 Borrado automático y recuperación",
+                    title: "Borrado automático y recuperación",
                     items: [
                       "Algunos dispositivos permiten borrar datos tras un número de intentos fallidos configurable.",
                       "Antes de habilitar esta opción, validar respaldo reciente y probado para evitar pérdida irreversible.",
@@ -1744,7 +1744,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.6.1 Respaldo en la nube",
+                    title: "Respaldo en la nube",
                     items: [
                       "Servicios como iCloud o Google permiten respaldar datos, ajustes y aplicaciones de forma automática.",
                       "La estrategia de respaldo debe definir frecuencia, cifrado y verificación de restauración.",
@@ -1752,7 +1752,7 @@
                     ]
                   },
                   {
-                    title: "4.6.2 Localización de dispositivos",
+                    title: "Localización de dispositivos",
                     items: [
                       "Herramientas tipo Find My Device/Find My iPhone permiten ubicar equipos extraviados en mapa.",
                       "La localización requiere configuración previa, cuenta activa y conectividad del dispositivo.",
@@ -1760,7 +1760,7 @@
                     ]
                   },
                   {
-                    title: "4.6.3 Bloqueo remoto y modo perdido",
+                    title: "Bloqueo remoto y modo perdido",
                     items: [
                       "El bloqueo remoto impide acceso local y permite mostrar mensajes de contacto al recuperar el equipo.",
                       "El modo perdido reduce exposición de datos mientras se gestiona la recuperación del dispositivo.",
@@ -1768,7 +1768,7 @@
                     ]
                   },
                   {
-                    title: "4.6.4 Borrado remoto",
+                    title: "Borrado remoto",
                     items: [
                       "Si no es posible recuperar el equipo, el borrado remoto elimina datos y reduce riesgo de fuga de información.",
                       "Tras el borrado, el procedimiento incluye alta de nuevo dispositivo y restauración segura desde respaldo.",
@@ -1950,7 +1950,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.0.1 Tipos de archivo de Packet Tracer",
+                    title: "Tipos de archivo de Packet Tracer",
                     items: [
                       ".pka: archivo de actividad evaluable con ventana de instrucciones, puntuación y función de comprobación de resultados.",
                       "Un .pka incluye red inicial (visible al estudiante) y red de respuesta (ejecutada en segundo plano para validar).",
@@ -1960,7 +1960,7 @@
                     ]
                   },
                   {
-                    title: "2.0.2 Evaluaciones con Packet Tracer",
+                    title: "Evaluaciones con Packet Tracer",
                     items: [
                       "PTMO (Packet Tracer Media Object): pregunta dentro de un examen/cuestionario que abre un .pkt o .pka.",
                       "PTSA (Packet Tracer Skills Assessment): evaluación práctica sumativa e independiente para demostrar competencias.",
@@ -1996,7 +1996,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.1.1 Direccionamiento IP en hosts",
+                    title: "Direccionamiento IP en hosts",
                     items: [
                       "La IP se puede verificar por dos rutas: pestaña Configuración del host y pestaña Escritorio con comando ipconfig.",
                       "En PCs con direccionamiento estático, se validan IP, máscara y gateway configurados manualmente.",
@@ -2004,7 +2004,7 @@
                     ]
                   },
                   {
-                    title: "2.1.2 Conexiones de dispositivos",
+                    title: "Conexiones de dispositivos",
                     items: [
                       "Packet Tracer permite conexión automática o selección manual de cable (directo, cruzado y consola).",
                       "Se pueden administrar enlaces entre PC-switch, switch-switch, switch-router y consola RS-232 para administración.",
@@ -2012,7 +2012,7 @@
                     ]
                   },
                   {
-                    title: "2.1.3 Funciones avanzadas para prácticas",
+                    title: "Funciones avanzadas para prácticas",
                     items: [
                       "Es posible personalizar fondos para representar edificios, campus o ciudad y contextualizar la topología.",
                       "También se pueden personalizar iconos de dispositivos para mejorar documentación y lectura visual.",
@@ -2067,7 +2067,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.0.1 Bienvenida y contexto",
+                    title: "Bienvenida y contexto",
                     items: [
                       "Las redes forman parte de entornos cotidianos y empresariales; este curso aterriza esos conceptos en un caso de oficina pequeña.",
                       "Se usa Cisco Packet Tracer para configurar, administrar y monitorear dispositivos de red sin depender de hardware físico.",
@@ -2075,7 +2075,7 @@
                     ]
                   },
                   {
-                    title: "1.0.2 Perfil de entrada",
+                    title: "Perfil de entrada",
                     items: [
                       "Está dirigido a estudiantes que completaron Introducción a Cisco Packet Tracer o que tienen bases equivalentes.",
                       "También resulta útil para quienes inician en redes y desean desarrollar habilidades prácticas progresivas.",
@@ -2083,7 +2083,7 @@
                     ]
                   },
                   {
-                    title: "1.0.3 Recursos disponibles",
+                    title: "Recursos disponibles",
                     items: [
                       "Soporte general y preguntas frecuentes: https://www.netacad.com/help",
                       "Descarga y recursos de Packet Tracer: https://www.netacad.com/resources/lab-downloads",
@@ -2127,7 +2127,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.1.1 Descripción general de la topología",
+                    title: "Descripción general de la topología",
                     items: [
                       "La topología del curso se organiza en ubicaciones como hogar, oficina, biblioteca e ISP.",
                       "En vista física se observa la distribución realista de equipos; en vista lógica, conectividad y flujo de datos.",
@@ -2135,7 +2135,7 @@
                     ]
                   },
                   {
-                    title: "1.1.2-1.1.3 Cableado estructurado en oficina",
+                    title: "Cableado estructurado en oficina",
                     items: [
                       "Packet Tracer permite modelar paneles de parcheo, soportes de pared y cableado de cobre/fibra.",
                       "Los cables pueden ordenarse por color, trayecto y puntos de curvatura para simular instalaciones reales.",
@@ -2143,7 +2143,7 @@
                     ]
                   },
                   {
-                    title: "1.1.5 Conexiones cableadas e inalámbricas",
+                    title: "Conexiones cableadas e inalámbricas",
                     items: [
                       "Se combinan enlaces Ethernet y conectividad inalámbrica según el rol de cada dispositivo.",
                       "La práctica incluye preparación de red Wi-Fi y nociones de tecnologías inalámbricas como Bluetooth y datos móviles.",
@@ -2151,7 +2151,7 @@
                     ]
                   },
                   {
-                    title: "1.1.7 Configuración por GUI y CLI",
+                    title: "Configuración por GUI y CLI",
                     items: [
                       "Las pestañas Física, Configuración, CLI, Escritorio y Servicios cambian según el tipo de equipo.",
                       "La pestaña Config facilita ajustes básicos y muestra comandos IOS equivalentes como apoyo didáctico.",
@@ -2197,7 +2197,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.0.1 Modo de simulación de Packet Tracer",
+                    title: "Modo de simulación de Packet Tracer",
                     items: [
                       "Cambiar de Realtime a Simulation permite detener el tiempo de la red y observar cada evento de extremo a extremo.",
                       "Event List, Edit Filters y el control de velocidad ayudan a aislar protocolos (por ejemplo ICMP, ARP o DNS) durante el diagnóstico.",
@@ -2205,7 +2205,7 @@
                     ]
                   },
                   {
-                    title: "2.0.4 Clústeres para organizar redes complejas",
+                    title: "Clústeres para organizar redes complejas",
                     items: [
                       "Un clúster agrupa equipos en una sola entidad visual, útil para representar edificios, pisos o áreas funcionales.",
                       "Desde la vista física se pueden crear, renombrar, desagrupar y eliminar clústeres sin perder la lógica de conectividad.",
@@ -2213,7 +2213,7 @@
                     ]
                   },
                   {
-                    title: "2.0.5 Edición y anotación de topología",
+                    title: "Edición y anotación de topología",
                     items: [
                       "Las herramientas de notas, formas, texto y fondos convierten la topología en un diagrama operativo listo para soporte o auditoría.",
                       "Etiquetar enlaces críticos, puertas de enlace y equipos de borde reduce errores al aplicar cambios.",
@@ -2257,7 +2257,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.1.1 El controlador de red en Packet Tracer",
+                    title: "El controlador de red en Packet Tracer",
                     items: [
                       "Actúa como plano central de gestión para inventario, provisión, monitoreo y políticas de dispositivos.",
                       "Desde el dashboard se visualizan métricas de salud, disponibilidad y estado de administración.",
@@ -2273,7 +2273,7 @@
                     ]
                   },
                   {
-                    title: "2.1.4 Monitoreo de cambios con el controlador",
+                    title: "Monitoreo de cambios con el controlador",
                     items: [
                       "Después de modificar topología o servicios, se ejecuta Discovery y se validan variaciones en estado, rutas y visibilidad.",
                       "Las vistas de Assurance y Path Trace ayudan a correlacionar fallas con segmentos específicos de la red.",
@@ -2328,7 +2328,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.1.2 Todo está en línea",
+                    title: "Todo está en línea",
                     items: [
                       "Para usuarios y empresas, la conexión constante dejó de ser opcional: mensajería, compras, trabajo y aprendizaje dependen de Internet.",
                       "Aunque solemos pensar Internet como un “lugar”, técnicamente es infraestructura física y lógica distribuida a escala global.",
@@ -2336,7 +2336,7 @@
                     ]
                   },
                   {
-                    title: "1.1.3-1.1.4 Internet y redes locales",
+                    title: "Internet y redes locales",
                     items: [
                       "Internet no pertenece a una única entidad: es una colección de redes interconectadas que operan con estándares comunes.",
                       "Las redes SOHO conectan hogares y oficinas pequeñas; redes empresariales escalan a cientos o miles de hosts.",
@@ -2344,7 +2344,7 @@
                     ]
                   },
                   {
-                    title: "1.1.5-1.1.7 Dispositivos conectados",
+                    title: "Dispositivos conectados",
                     items: [
                       "La red ya no conecta solo PCs: móviles, wearables, IoT doméstico, automóviles, sensores industriales y equipos médicos también participan.",
                       "Cada nuevo tipo de dispositivo incrementa superficie de gestión, seguridad y troubleshooting.",
@@ -2372,7 +2372,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.2.1 Tipos de datos personales",
+                    title: "Tipos de datos personales",
                     items: [
                       "Los datos voluntarios son los que compartimos conscientemente (formularios, mensajes, archivos).",
                       "Los datos deducidos y observados se generan por actividad y telemetría (ubicación, patrones de consumo, uso de apps).",
@@ -2380,7 +2380,7 @@
                     ]
                   },
                   {
-                    title: "1.2.2 El bit y el byte",
+                    title: "El bit y el byte",
                     items: [
                       "El bit (0 o 1) es la unidad mínima de información digital; ocho bits conforman un byte.",
                       "Codificaciones como ASCII representan letras, números y símbolos mediante combinaciones binarias.",
@@ -2388,7 +2388,7 @@
                     ]
                   },
                   {
-                    title: "1.2.3 Métodos comunes de transmisión",
+                    title: "Métodos comunes de transmisión",
                     items: [
                       "Cobre: transporta pulsos eléctricos, muy usado en redes de acceso y cableado estructurado.",
                       "Fibra óptica: transporta pulsos de luz, ideal para mayor distancia y mayor capacidad agregada.",
@@ -2416,7 +2416,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.3.1 Ancho de banda",
+                    title: "Ancho de banda",
                     items: [
                       "Es la capacidad máxima teórica del medio para transportar datos por unidad de tiempo.",
                       "Se expresa en bps y múltiplos como Kbps, Mbps, Gbps y Tbps.",
@@ -2424,7 +2424,7 @@
                     ]
                   },
                   {
-                    title: "1.3.2 Rendimiento real",
+                    title: "Rendimiento real",
                     items: [
                       "El rendimiento es la tasa efectiva observada durante transferencia real; normalmente es menor que el ancho de banda nominal.",
                       "La latencia, congestión, tipo de tráfico y cantidad de saltos intermedios influyen directamente en ese valor.",
@@ -2432,7 +2432,7 @@
                     ]
                   },
                   {
-                    title: "1.3.3 Interpretación de pruebas de velocidad",
+                    title: "Interpretación de pruebas de velocidad",
                     items: [
                       "Download mide velocidad de recepción; upload mide velocidad de envío; ambos deben analizarse junto con la latencia.",
                       "En enlaces residenciales es común que download sea superior a upload por diseño comercial del servicio.",
@@ -2480,7 +2480,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.1.2 Roles de cliente y servidor",
+                    title: "Roles de cliente y servidor",
                     items: [
                       "Un host cliente solicita recursos; un host servidor los ofrece mediante software de servicio específico.",
                       "Cada servicio requiere su software correspondiente: por ejemplo, web, correo o archivos.",
@@ -2488,7 +2488,7 @@
                     ]
                   },
                   {
-                    title: "2.1.3 Redes entre pares (P2P)",
+                    title: "Redes entre pares (P2P)",
                     items: [
                       "En un modelo P2P, los equipos pueden compartir recursos entre sí sin un servidor dedicado central.",
                       "Es fácil de implementar y de bajo costo en entornos pequeños (hogar o microoficina).",
@@ -2496,7 +2496,7 @@
                     ]
                   },
                   {
-                    title: "2.1.4 Aplicaciones P2P e híbridas",
+                    title: "Aplicaciones P2P e híbridas",
                     items: [
                       "En aplicaciones P2P puras, cada nodo puede enviar y recibir recursos al mismo tiempo.",
                       "En modelos híbridos, el intercambio se distribuye, pero existe un índice central para ubicar recursos.",
@@ -2504,7 +2504,7 @@
                     ]
                   },
                   {
-                    title: "2.1.5 Múltiples roles por host",
+                    title: "Múltiples roles por host",
                     items: [
                       "Un mismo equipo puede ejecutar varios clientes y varios servicios simultáneamente.",
                       "En pymes, un host puede actuar como servidor web, correo y archivos a la vez.",
@@ -2530,7 +2530,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.2.2 Infraestructura de red",
+                    title: "Infraestructura de red",
                     items: [
                       "La infraestructura es la plataforma física y lógica que permite transportar mensajes de origen a destino.",
                       "Puede ir desde un enlace simple entre dos equipos hasta redes de escala global.",
@@ -2546,7 +2546,7 @@
                     ]
                   },
                   {
-                    title: "2.2.3 Hosts y direccionamiento",
+                    title: "Hosts y direccionamiento",
                     items: [
                       "Todo host es origen o destino de mensajes y requiere identificación única en la red.",
                       "El direccionamiento permite determinar a qué equipo se envía cada paquete.",
@@ -2580,7 +2580,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.3.1 Servicios del ISP",
+                    title: "Servicios del ISP",
                     items: [
                       "El ISP conecta la red local con Internet y, además, puede ofrecer correo, hosting, VoIP y soporte técnico.",
                       "Los ISP se interconectan jerárquicamente para enrutar tráfico por rutas eficientes.",
@@ -2588,7 +2588,7 @@
                     ]
                   },
                   {
-                    title: "2.3.2 Conexión segura al ISP",
+                    title: "Conexión segura al ISP",
                     items: [
                       "Conectar una PC directamente al módem expone el host y no es una práctica recomendada.",
                       "La opción estándar es usar router integrado (switch + AP + funciones de seguridad y direccionamiento interno).",
@@ -2596,7 +2596,7 @@
                     ]
                   },
                   {
-                    title: "2.3.3 Cable y DSL",
+                    title: "Cable y DSL",
                     items: [
                       "Cable usa red coaxial y suele ofrecer conexión permanente con buen ancho de banda residencial.",
                       "DSL usa línea telefónica y separa voz/datos mediante canales, con desempeño dependiente de distancia y calidad de línea.",
@@ -2604,7 +2604,7 @@
                     ]
                   },
                   {
-                    title: "2.3.4 Conectividad adicional",
+                    title: "Conectividad adicional",
                     items: [
                       "Celular es útil para movilidad y zonas sin acceso fijo, pero suele tener límites por plan de datos.",
                       "Satélite permite cobertura en áreas remotas, con costo de instalación mayor y dependencia de línea de vista.",
@@ -2644,7 +2644,7 @@
                 ],
                 sections: [
                   {
-                    title: "3.1.1-3.1.2 Un teléfono, múltiples redes",
+                    title: "Un teléfono, múltiples redes",
                     items: [
                       "Un smartphone moderno combina varias radios y protocolos en paralelo para cubrir distintos servicios.",
                       "Las llamadas y datos móviles usan red celular; la navegación en casa u oficina suele usar Wi-Fi.",
@@ -2652,7 +2652,7 @@
                     ]
                   },
                   {
-                    title: "3.1.3 Tecnologías inalámbricas clave",
+                    title: "Tecnologías inalámbricas clave",
                     items: [
                       "4G/5G: conectividad de amplia cobertura para acceso a Internet y servicios móviles del operador.",
                       "Wi-Fi: acceso local de alta velocidad mediante punto de acceso, ideal para reducir consumo de datos móviles.",
@@ -2688,7 +2688,7 @@
                 ],
                 sections: [
                   {
-                    title: "3.2.1 Wi-Fi en movilidad: valor y seguridad",
+                    title: "Wi-Fi en movilidad: valor y seguridad",
                     items: [
                       "Conectarse por Wi-Fi cuando está disponible reduce consumo del plan celular y ahorro de batería.",
                       "No se debe enviar información sensible por canales sin cifrado; para datos críticos conviene usar VPN.",
@@ -2696,7 +2696,7 @@
                     ]
                   },
                   {
-                    title: "3.2.2-3.2.4 Configuración de Wi-Fi y datos móviles",
+                    title: "Configuración de Wi-Fi y datos móviles",
                     items: [
                       "Si la red no aparece, revisar difusión SSID, conexión automática y coincidencia exacta de frase de contraseña.",
                       "Cuando no hay Wi-Fi, el dispositivo cambia a datos móviles; este cambio suele ser transparente para el usuario.",
@@ -2704,7 +2704,7 @@
                     ]
                   },
                   {
-                    title: "3.2.6-3.2.7 Bluetooth y emparejamiento",
+                    title: "Bluetooth y emparejamiento",
                     items: [
                       "Bluetooth permite conectar hasta varios accesorios con bajo consumo (audio, teclado, control y tethering).",
                       "El emparejamiento exige modo detectable, selección del dispositivo correcto y validación por PIN cuando aplica.",
@@ -2712,7 +2712,7 @@
                     ]
                   },
                   {
-                    title: "3.2.8 Escenario integrado de uso",
+                    title: "Escenario integrado de uso",
                     items: [
                       "Un móvil puede usar Bluetooth para audio, Wi-Fi para Internet y red celular para mensajería en paralelo.",
                       "Comprender esta coexistencia facilita diagnosticar fallos de conectividad intermitente.",
@@ -2744,7 +2744,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.1.1 Arquitectura típica del hogar",
+                    title: "Arquitectura típica del hogar",
                     items: [
                       "Una red doméstica suele separar dos ámbitos: la red local interna y la red externa del proveedor de Internet.",
                       "El módem traduce la señal del operador (por ejemplo cable o DSL) para entregarla al router del hogar.",
@@ -2752,7 +2752,7 @@
                     ]
                   },
                   {
-                    title: "4.1.2 Componentes de la red doméstica",
+                    title: "Componentes de la red doméstica",
                     items: [
                       "Además de PCs y móviles, hoy se conectan TVs, consolas, cámaras, impresoras y sensores del hogar.",
                       "A mayor cantidad de dispositivos, más importante es planificar cobertura Wi-Fi y capacidad de la LAN.",
@@ -2760,7 +2760,7 @@
                     ]
                   },
                   {
-                    title: "4.1.3 Puertos y segmentación básica",
+                    title: "Puertos y segmentación básica",
                     items: [
                       "Los puertos LAN conectan equipos internos dentro de la misma red local.",
                       "El puerto WAN/Internet enlaza con una red distinta: el proveedor de servicios.",
@@ -2794,7 +2794,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.2.1 Frecuencias inalámbricas LAN",
+                    title: "Frecuencias inalámbricas LAN",
                     items: [
                       "En el hogar predominan bandas de 2.4 GHz y 5 GHz para conectividad Wi-Fi.",
                       "Bluetooth opera en 2.4 GHz, con menor alcance y consumo, ideal para periféricos y audio.",
@@ -2802,7 +2802,7 @@
                     ]
                   },
                   {
-                    title: "4.2.2 Tecnologías cableadas",
+                    title: "Tecnologías cableadas",
                     items: [
                       "Ethernet sobre par trenzado (Cat5e/Cat6) es la opción más común para conexiones fijas en LAN.",
                       "El cable coaxial se usa ampliamente en acceso del ISP y ciertos escenarios de distribución.",
@@ -2842,7 +2842,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.3.1 Redes Wi-Fi e IEEE 802.11",
+                    title: "Redes Wi-Fi e IEEE 802.11",
                     items: [
                       "IEEE define las especificaciones técnicas que permiten que equipos de distintos fabricantes se comuniquen en una WLAN.",
                       "Las familias 802.11 evolucionan para mejorar velocidad, eficiencia y capacidad en escenarios con más dispositivos simultáneos.",
@@ -2858,7 +2858,7 @@
                     ]
                   },
                   {
-                    title: "4.3.2 Parámetros de configuración WLAN",
+                    title: "Parámetros de configuración WLAN",
                     items: [
                       "Modo de red: define qué estándares se permiten (por ejemplo, mixto o solo estándares recientes).",
                       "SSID: identifica la red; debe ser claro para administración, sin exponer marca/modelo del equipo.",
@@ -2898,7 +2898,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.4.1 Configuración inicial",
+                    title: "Configuración inicial",
                     items: [
                       "Para la puesta en marcha, conecta temporalmente una PC por cable a un puerto LAN del router, no al puerto WAN.",
                       "Luego conecta la interfaz WAN/Internet hacia el módem o medio del ISP y verifica estado de enlace.",
@@ -2914,7 +2914,7 @@
                     ]
                   },
                   {
-                    title: "4.4.2 Consideraciones de diseño",
+                    title: "Consideraciones de diseño",
                     items: [
                       "El nombre de red (SSID) debe evitar datos que revelen fabricante o modelo del equipo.",
                       "Verifica compatibilidad de los clientes inalámbricos para decidir si usar modo mixto o estándar específico.",
@@ -2956,7 +2956,7 @@
                 ],
                 sections: [
                   {
-                    title: "5.1.1 Reglas para comunicarse",
+                    title: "Reglas para comunicarse",
                     items: [
                       "En redes, igual que en la comunicaci\u00f3n humana, se requiere un conjunto de reglas compartidas.",
                       "Sin protocolo com\u00fan, los equipos no pueden interpretar correctamente lo que reciben.",
@@ -2996,7 +2996,7 @@
                 ],
                 sections: [
                   {
-                    title: "5.2.2 Internet y est\u00e1ndares",
+                    title: "Internet y est\u00e1ndares",
                     items: [
                       "Un est\u00e1ndar define c\u00f3mo se implementa una tecnolog\u00eda para que sea compatible con otras.",
                       "Permite que dispositivos de diferentes fabricantes intercambien datos sin conflictos.",
@@ -3004,7 +3004,7 @@
                     ]
                   },
                   {
-                    title: "5.2.3 Organizaciones de est\u00e1ndares",
+                    title: "Organizaciones de est\u00e1ndares",
                     items: [
                       "La IETF publica RFC que documentan protocolos y mejores pr\u00e1cticas de Internet.",
                       "IEEE, ISO y otros organismos aportan normas t\u00e9cnicas para distintas capas de red.",
@@ -3036,7 +3036,7 @@
                 ],
                 sections: [
                   {
-                    title: "5.3.1-5.3.2 Pila de protocolos",
+                    title: "Pila de protocolos",
                     items: [
                       "Una comunicaci\u00f3n real usa varios protocolos al mismo tiempo, cada uno en su capa.",
                       "Ejemplo t\u00edpico: Ethernet, IP, TCP y HTTP trabajando de forma coordinada.",
@@ -3044,7 +3044,7 @@
                     ]
                   },
                   {
-                    title: "5.3.3 Modelo TCP/IP",
+                    title: "Modelo TCP/IP",
                     items: [
                       "Organiza funciones en capas de acceso, Internet, transporte y aplicaci\u00f3n.",
                       "Describe el funcionamiento pr\u00e1ctico de la suite de protocolos usada en Internet.",
@@ -3052,7 +3052,7 @@
                     ]
                   },
                   {
-                    title: "5.3.4-5.3.5 Modelo OSI y comparaci\u00f3n",
+                    title: "Modelo OSI y comparaci\u00f3n",
                     items: [
                       "OSI es un modelo de referencia para entender funciones generales de comunicaci\u00f3n.",
                       "TCP/IP es un modelo aplicado, enfocado en protocolos en uso real.",
@@ -3080,7 +3080,7 @@
                 ],
                 sections: [
                   {
-                    title: "6.1.1 Importancia del medio f\u00edsico",
+                    title: "Importancia del medio f\u00edsico",
                     items: [
                       "El medio condiciona alcance, velocidad efectiva, estabilidad y susceptibilidad al ruido.",
                       "Una elecci\u00f3n incorrecta del cable puede degradar enlaces aunque los equipos sean de buena capacidad.",
@@ -3088,7 +3088,7 @@
                     ]
                   },
                   {
-                    title: "6.1.2 Criterios de selecci\u00f3n",
+                    title: "Criterios de selecci\u00f3n",
                     items: [
                       "Distancia m\u00e1xima: cada tecnolog\u00eda tiene l\u00edmites f\u00edsicos antes de requerir repetici\u00f3n o cambio de medio.",
                       "Entorno de instalaci\u00f3n: interferencia electromagn\u00e9tica, temperatura, humedad y riesgos mec\u00e1nicos.",
@@ -3097,7 +3097,7 @@
                     ]
                   },
                   {
-                    title: "6.1.3 Par trenzado (UTP/STP)",
+                    title: "Par trenzado (UTP/STP)",
                     items: [
                       "Es el medio m\u00e1s com\u00fan en LAN de usuario final por costo moderado y facilidad de instalaci\u00f3n.",
                       "Usa conectores RJ-45 y categor\u00edas de cableado (p. ej., Cat5e/Cat6/Cat6a) con distintas prestaciones.",
@@ -3147,7 +3147,7 @@
                 ],
                 sections: [
                   {
-                    title: "7.1.1 Campos de la trama Ethernet",
+                    title: "Campos de la trama Ethernet",
                     items: [
                       "La trama Ethernet incluye pre\u00e1mbulo, delimitador de inicio (SFD), MAC de destino, MAC de origen, tipo/longitud, datos y FCS.",
                       "Las direcciones MAC identifican el emisor y receptor en la red local para decidir el reenv\u00edo de tramas.",
@@ -3155,7 +3155,7 @@
                     ]
                   },
                   {
-                    title: "7.1.2 Encapsulaci\u00f3n y desencapsulaci\u00f3n",
+                    title: "Encapsulaci\u00f3n y desencapsulaci\u00f3n",
                     items: [
                       "El host de origen toma datos de capas superiores y los encapsula en una trama Ethernet para enviarlos por el medio.",
                       "El host receptor valida integridad, elimina la envoltura Ethernet y entrega el payload a la capa correspondiente.",
@@ -3199,7 +3199,7 @@
                 ],
                 sections: [
                   {
-                    title: "7.2.1 Conmutadores Ethernet",
+                    title: "Conmutadores Ethernet",
                     items: [
                       "Un switch opera en Capa 2 y toma decisiones de reenv\u00edo analizando la cabecera Ethernet.",
                       "En enlaces locales, el switch no enruta por IP; reenv\u00eda seg\u00fan la MAC de destino de cada trama.",
@@ -3207,7 +3207,7 @@
                     ]
                   },
                   {
-                    title: "7.2.2 Aprendizaje de direcciones MAC",
+                    title: "Aprendizaje de direcciones MAC",
                     items: [
                       "Cada vez que recibe una trama, el switch aprende la MAC de origen y la asocia al puerto de entrada.",
                       "Si la MAC de destino no est\u00e1 en la tabla, realiza flooding por todos los puertos excepto el de origen.",
@@ -3257,7 +3257,7 @@
                 ],
                 sections: [
                   {
-                    title: "8.1.1 La direcci\u00f3n IPv4 en la red",
+                    title: "La direcci\u00f3n IPv4 en la red",
                     items: [
                       "Cada host necesita una direcci\u00f3n IPv4 para participar en la mayor\u00eda de LAN e Internet.",
                       "La direcci\u00f3n IPv4 identifica l\u00f3gicamente al dispositivo en su red y en comunicaciones remotas.",
@@ -3273,7 +3273,7 @@
                     ]
                   },
                   {
-                    title: "8.1.2 Octetos y notaci\u00f3n decimal con puntos",
+                    title: "Octetos y notaci\u00f3n decimal con puntos",
                     items: [
                       "IPv4 tiene 32 bits, agrupados en 4 octetos de 8 bits cada uno.",
                       "Para facilitar lectura y configuraci\u00f3n, se usa notaci\u00f3n decimal con puntos (ej.: 209.165.200.1).",
@@ -3309,7 +3309,7 @@
                 ],
                 sections: [
                   {
-                    title: "8.2.1 Componente de red y componente de host",
+                    title: "Componente de red y componente de host",
                     items: [
                       "Toda direcci\u00f3n IPv4 combina una parte de red y una parte de host.",
                       "La m\u00e1scara de subred define qu\u00e9 bits pertenecen a red y cu\u00e1les identifican al host.",
@@ -3317,7 +3317,7 @@
                     ]
                   },
                   {
-                    title: "8.2.2 Direccionamiento jer\u00e1rquico",
+                    title: "Direccionamiento jer\u00e1rquico",
                     items: [
                       "Los hosts de una misma LAN deben compartir porci\u00f3n de red y tener host \u00fanico.",
                       "Si cambia la porci\u00f3n de red (p. ej., 192.168.5.x a 192.168.8.x), ya es otra red l\u00f3gica.",
@@ -3367,7 +3367,7 @@
                 ],
                 sections: [
                   {
-                    title: "9.1.2 Unidifusi\u00f3n",
+                    title: "Unidifusi\u00f3n",
                     items: [
                       "En unidifusi\u00f3n, un host env\u00eda un paquete a un \u00fanico destino (comunicaci\u00f3n uno a uno).",
                       "La direcci\u00f3n IP de origen siempre es unicast porque el paquete solo puede salir de un emisor.",
@@ -3375,7 +3375,7 @@
                     ]
                   },
                   {
-                    title: "9.1.4 Difusi\u00f3n",
+                    title: "Difusi\u00f3n",
                     items: [
                       "La difusi\u00f3n IPv4 env\u00eda un paquete a todos los hosts del dominio de broadcast local.",
                       "Puede ser limitada (255.255.255.255) o dirigida (por ejemplo, 172.16.4.255 en /24).",
@@ -3383,7 +3383,7 @@
                     ]
                   },
                   {
-                    title: "9.1.6 Multidifusi\u00f3n",
+                    title: "Multidifusi\u00f3n",
                     items: [
                       "La multidifusi\u00f3n permite que un origen env\u00ede a un grupo suscrito de receptores.",
                       "IPv4 reserva 224.0.0.0 a 239.255.255.255 para direcciones multicast.",
@@ -3419,7 +3419,7 @@
                 ],
                 sections: [
                   {
-                    title: "9.2.1 Direcciones p\u00fablicas y privadas",
+                    title: "Direcciones p\u00fablicas y privadas",
                     items: [
                       "Las direcciones p\u00fablicas son enrutables globalmente entre ISP y deben ser \u00fanicas en Internet.",
                       "Las privadas (RFC 1918) se usan en redes internas y no se enrutan directamente en Internet.",
@@ -3427,7 +3427,7 @@
                     ]
                   },
                   {
-                    title: "9.2.2 NAT para salida a Internet",
+                    title: "NAT para salida a Internet",
                     items: [
                       "NAT traduce direcciones privadas de origen a direcciones p\u00fablicas antes de salir al ISP.",
                       "Se implementa normalmente en el router de borde entre intranet e Internet.",
@@ -3435,7 +3435,7 @@
                     ]
                   },
                   {
-                    title: "9.2.4 Direcciones IPv4 de uso especial",
+                    title: "Direcciones IPv4 de uso especial",
                     items: [
                       "Loopback: 127.0.0.0/8 (com\u00fanmente 127.0.0.1) para pruebas locales de pila TCP/IP.",
                       "Link-local/APIPA: 169.254.0.0/16 cuando un host no obtiene direcci\u00f3n por DHCP.",
@@ -3443,7 +3443,7 @@
                     ]
                   },
                   {
-                    title: "9.2.5-9.2.6 Contexto y asignaci\u00f3n",
+                    title: "Contexto y asignaci\u00f3n",
                     items: [
                       "El direccionamiento con clase (A/B/C) fue reemplazado por enfoque sin clase para usar mejor el espacio IPv4.",
                       "IANA administra bloques globales y delega a RIR como ARIN, LACNIC, RIPE NCC, APNIC y AfriNIC.",
@@ -3471,7 +3471,7 @@
                 ],
                 sections: [
                   {
-                    title: "9.3.1-9.3.2 Dominios de difusi\u00f3n",
+                    title: "Dominios de difusi\u00f3n",
                     items: [
                       "En LAN Ethernet, protocolos como ARP y DHCP usan broadcast para descubrir informaci\u00f3n local.",
                       "Los switches propagan broadcast por sus puertos (excepto entrada).",
@@ -3479,7 +3479,7 @@
                     ]
                   },
                   {
-                    title: "9.3.3 Problemas en dominios grandes",
+                    title: "Problemas en dominios grandes",
                     items: [
                       "Un dominio con demasiados hosts puede generar tr\u00e1fico de difusi\u00f3n excesivo.",
                       "Esto provoca operaciones lentas en red y mayor carga de procesamiento en los dispositivos finales.",
@@ -3487,7 +3487,7 @@
                     ]
                   },
                   {
-                    title: "9.3.4 Razones para segmentar",
+                    title: "Razones para segmentar",
                     items: [
                       "Mejorar rendimiento reduciendo tr\u00e1fico irrelevante para cada segmento.",
                       "Aplicar seguridad por pol\u00edticas entre subredes (qu\u00e9 se comunica y qu\u00e9 no).",
@@ -3529,7 +3529,7 @@
                 ],
                 sections: [
                   {
-                    title: "10.1.1 Necesidad de IPv6",
+                    title: "Necesidad de IPv6",
                     items: [
                       "IPv4 se agota frente al crecimiento de usuarios, servicios y dispositivos conectados.",
                       "IPv6 usa 128 bits y provee un espacio de direcciones muy superior para escalabilidad global.",
@@ -3545,7 +3545,7 @@
                     ]
                   },
                   {
-                    title: "10.1.2 Coexistencia IPv4/IPv6",
+                    title: "Coexistencia IPv4/IPv6",
                     items: [
                       "Doble pila (dual-stack): IPv4 e IPv6 operan en paralelo en equipos y enlaces.",
                       "Tunelizaci\u00f3n: encapsula tr\u00e1fico IPv6 sobre infraestructura IPv4 existente.",
@@ -3581,7 +3581,7 @@
                 ],
                 sections: [
                   {
-                    title: "10.2.1 Sistema hexadecimal",
+                    title: "Sistema hexadecimal",
                     items: [
                       "IPv6 se expresa en hexadecimal (0-9 y A-F) para representar direcciones largas de forma legible.",
                       "Cada d\u00edgito hexadecimal equivale a 4 bits.",
@@ -3589,7 +3589,7 @@
                     ]
                   },
                   {
-                    title: "10.2.2 Formato de direcci\u00f3n IPv6",
+                    title: "Formato de direcci\u00f3n IPv6",
                     items: [
                       "Una direcci\u00f3n IPv6 tiene 128 bits y se escribe como 8 hextetos separados por dos puntos.",
                       "Cada hexteto representa 16 bits (4 d\u00edgitos hexadecimales).",
@@ -3597,7 +3597,7 @@
                     ]
                   },
                   {
-                    title: "10.2.4 Regla 1: omitir ceros iniciales",
+                    title: "Regla 1: omitir ceros iniciales",
                     items: [
                       "Se pueden omitir solo los ceros a la izquierda dentro de un hexteto.",
                       "No se deben omitir ceros finales porque la direcci\u00f3n se vuelve ambigua.",
@@ -3605,7 +3605,7 @@
                     ]
                   },
                   {
-                    title: "10.2.5 Regla 2: doble dos puntos (::)",
+                    title: "Regla 2: doble dos puntos (::)",
                     items: [
                       ":: reemplaza una sola secuencia contigua de hextetos en cero.",
                       "Solo puede usarse una vez por direcci\u00f3n IPv6.",
@@ -3647,7 +3647,7 @@
                 ],
                 sections: [
                   {
-                    title: "11.1.1 Asignacion estatica de IPv4",
+                    title: "Asignacion estatica de IPv4",
                     items: [
                       "En modo estatico, el administrador configura manualmente IP, mascara y gateway en cada host.",
                       "Es apropiado para servidores, impresoras y dispositivos que deben mantener direccion estable.",
@@ -3655,7 +3655,7 @@
                     ]
                   },
                   {
-                    title: "11.1.2 Asignacion dinamica con DHCP",
+                    title: "Asignacion dinamica con DHCP",
                     items: [
                       "DHCP entrega automaticamente parametros de red: IPv4, mascara, gateway y opciones adicionales.",
                       "Reduce trabajo manual del soporte y disminuye conflictos por direccion duplicada.",
@@ -3663,7 +3663,7 @@
                     ]
                   },
                   {
-                    title: "11.1.3 Roles de servidor DHCP",
+                    title: "Roles de servidor DHCP",
                     items: [
                       "Puede ejecutarse en servidor dedicado, router empresarial o router domestico.",
                       "En redes domesticas, el router suele actuar como cliente DHCP hacia ISP y servidor para LAN interna.",
@@ -3699,7 +3699,7 @@
                 ],
                 sections: [
                   {
-                    title: "11.2.1 Operacion DHCPv4 (DORA)",
+                    title: "Operacion DHCPv4 (DORA)",
                     items: [
                       "Discover: el cliente emite broadcast para localizar servidores DHCP.",
                       "Offer: el servidor propone direccion y parametros de configuracion.",
@@ -3707,7 +3707,7 @@
                     ]
                   },
                   {
-                    title: "11.2.2 Configuracion del servicio",
+                    title: "Configuracion del servicio",
                     items: [
                       "Definir rango de direcciones (pool), mascara, gateway y DNS para la red objetivo.",
                       "Verificar que el rango no incluya IP reservadas para infraestructura o servicios estaticos.",
@@ -3757,7 +3757,7 @@
                 ],
                 sections: [
                   {
-                    title: "12.1.1 Puerta de enlace a otras redes",
+                    title: "Puerta de enlace a otras redes",
                     items: [
                       "La puerta de enlace predeterminada es la salida del host hacia destinos fuera de su subred local.",
                       "El host compara red local y red destino usando IP + mascara; si no coinciden, envia al gateway.",
@@ -3765,7 +3765,7 @@
                     ]
                   },
                   {
-                    title: "12.1.2 Enrutadores como gateways",
+                    title: "Enrutadores como gateways",
                     items: [
                       "Cada interfaz del router conecta una red distinta y puede ser gateway de los hosts de ese segmento.",
                       "La IP del gateway puede configurarse de forma estatica o recibirse dinamicamente por DHCP.",
@@ -3773,7 +3773,7 @@
                     ]
                   },
                   {
-                    title: "12.1.3 Router como limite entre redes",
+                    title: "Router como limite entre redes",
                     items: [
                       "El router separa red interna (privada) y red externa (ISP/Internet).",
                       "Hacia adentro puede actuar como servidor DHCP; hacia afuera suele actuar como cliente DHCP del ISP.",
@@ -3809,7 +3809,7 @@
                 ],
                 sections: [
                   {
-                    title: "12.2.1 Introduccion a NAT",
+                    title: "Introduccion a NAT",
                     items: [
                       "Las redes privadas RFC1918 funcionan internamente pero no son enrutable globalmente en Internet.",
                       "NAT traduce direcciones privadas a publicas en el router de borde para permitir salida externa.",
@@ -3867,7 +3867,7 @@
                 ],
                 sections: [
                   {
-                    title: "13.1.1 Destino en la misma red",
+                    title: "Destino en la misma red",
                     items: [
                       "En una LAN, la trama Ethernet usa como MAC destino la del host final dentro del mismo segmento.",
                       "La IP identifica origen y destino logicos; la MAC permite entrega NIC a NIC en el enlace local.",
@@ -3875,7 +3875,7 @@
                     ]
                   },
                   {
-                    title: "13.1.2 Destino en red remota",
+                    title: "Destino en red remota",
                     items: [
                       "Si la IP destino esta fuera de la subred, la MAC destino inicial es la del gateway predeterminado.",
                       "El router desencapsula Capa 2, evalua IP destino y reencapsula para el siguiente salto.",
@@ -3919,7 +3919,7 @@
                 ],
                 sections: [
                   {
-                    title: "13.2.1 Difusion Ethernet",
+                    title: "Difusion Ethernet",
                     items: [
                       "Una trama broadcast usa MAC destino FF-FF-FF-FF-FF-FF y alcanza todos los hosts del dominio local.",
                       "El switch hace flooding por todos los puertos excepto el de entrada.",
@@ -3927,7 +3927,7 @@
                     ]
                   },
                   {
-                    title: "13.2.2 Dominios de difusion",
+                    title: "Dominios de difusion",
                     items: [
                       "Una LAN con switches forma un dominio de broadcast donde todos procesan difusiones.",
                       "Al crecer el numero de hosts, aumenta trafico broadcast y puede degradar rendimiento.",
@@ -3935,7 +3935,7 @@
                     ]
                   },
                   {
-                    title: "13.2.3-13.2.5 ARP",
+                    title: "ARP",
                     items: [
                       "ARP resuelve la MAC cuando el host conoce la IPv4 destino en su red local.",
                       "Proceso: solicitud ARP en broadcast, respuesta del host correcto, almacenamiento en tabla ARP.",
@@ -3977,7 +3977,7 @@
                 ],
                 sections: [
                   {
-                    title: "14.1.1 Division de la red local",
+                    title: "Division de la red local",
                     items: [
                       "Dividir una red reduce el trafico de difusion y evita que todos los hosts procesen mensajes irrelevantes.",
                       "La segmentacion mejora seguridad al limitar acceso entre departamentos, equipos y servicios sensibles.",
@@ -3985,7 +3985,7 @@
                     ]
                   },
                   {
-                    title: "14.1.2 Cuando se necesita enrutamiento",
+                    title: "Cuando se necesita enrutamiento",
                     items: [
                       "Si la red de origen y la red de destino no coinciden, el host debe usar un router para llegar al destino remoto.",
                       "El switch reenvia por direccion MAC (capa 2), mientras el router decide por direccion IP (capa 3).",
@@ -4029,7 +4029,7 @@
                 ],
                 sections: [
                   {
-                    title: "14.2.1 Reenvio de paquetes del router",
+                    title: "Reenvio de paquetes del router",
                     items: [
                       "El host envia al gateway cuando detecta que la IP destino esta fuera de su subred local.",
                       "El router busca la red destino en su tabla y reenvia por la interfaz asociada a esa ruta.",
@@ -4037,7 +4037,7 @@
                     ]
                   },
                   {
-                    title: "14.2.2-14.2.3 Mensajes dentro y entre redes",
+                    title: "Mensajes dentro y entre redes",
                     items: [
                       "Dentro de la misma red, el host usa ARP para resolver MAC del destino y envia directo por switch.",
                       "Entre redes, el host resuelve la MAC del gateway; el router cambia trama por salto y conserva el destino IP final.",
@@ -4045,7 +4045,7 @@
                     ]
                   },
                   {
-                    title: "14.2.4 Entradas de la tabla de enrutamiento",
+                    title: "Entradas de la tabla de enrutamiento",
                     items: [
                       "Cada entrada representa una red destino, su tipo de ruta y la interfaz o siguiente salto.",
                       "Las rutas pueden ser conectadas, estaticas o aprendidas dinamicamente desde otros routers.",
@@ -4053,7 +4053,7 @@
                     ]
                   },
                   {
-                    title: "14.2.5 Puerta de enlace predeterminada",
+                    title: "Puerta de enlace predeterminada",
                     items: [
                       "Cada host debe tener configurada la IP del gateway local para salir a redes remotas.",
                       "Un gateway ausente o incorrecto impide acceso fuera de la LAN aunque exista conectividad local.",
@@ -4081,7 +4081,7 @@
                 ],
                 sections: [
                   {
-                    title: "14.3.1 Redes de area local",
+                    title: "Redes de area local",
                     items: [
                       "Una LAN es una red local o conjunto de redes locales bajo el mismo control administrativo.",
                       "Las LAN modernas pueden abarcar multiples edificios y cientos de hosts interconectados.",
@@ -4089,7 +4089,7 @@
                     ]
                   },
                   {
-                    title: "14.3.2 Segmentos locales y remotos",
+                    title: "Segmentos locales y remotos",
                     items: [
                       "Un solo segmento simplifica la operacion inicial, pero incrementa dominio de difusion al crecer.",
                       "Separar hosts en redes distintas reduce broadcast y puede mejorar rendimiento por segmento.",
@@ -4139,7 +4139,7 @@
                 ],
                 sections: [
                   {
-                    title: "15.1.1 Operacion de UDP",
+                    title: "Operacion de UDP",
                     items: [
                       "UDP envia segmentos con baja sobrecarga y sin confirmaciones, por lo que reduce latencia.",
                       "No garantiza entrega ni orden; algunos segmentos pueden perderse o llegar fuera de secuencia.",
@@ -4191,7 +4191,7 @@
                 ],
                 sections: [
                   {
-                    title: "15.2.1 Numeros de puerto en capa de transporte",
+                    title: "Numeros de puerto en capa de transporte",
                     items: [
                       "Cada segmento TCP/UDP incluye puerto de origen y puerto de destino para identificar la conversacion.",
                       "Puertos bien conocidos (0-1023) representan servicios estandar como HTTP 80, HTTPS 443, FTP 21 y DNS 53.",
@@ -4199,7 +4199,7 @@
                     ]
                   },
                   {
-                    title: "15.2.2 Multiplexacion de aplicaciones",
+                    title: "Multiplexacion de aplicaciones",
                     items: [
                       "Un mismo host puede mantener varias sesiones simultaneas gracias a combinaciones IP:puerto distintas.",
                       "El servidor responde invirtiendo origen/destino para retornar datos al proceso correcto del cliente.",
@@ -4207,7 +4207,7 @@
                     ]
                   },
                   {
-                    title: "15.2.3 Pares de sockets",
+                    title: "Pares de sockets",
                     items: [
                       "Un socket combina direccion IP con numero de puerto, por ejemplo 192.168.1.5:5305.",
                       "La sesion completa se identifica con el par cliente-servidor, por ejemplo 192.168.1.5:5305 <-> 192.168.1.7:80.",
@@ -4215,7 +4215,7 @@
                     ]
                   },
                   {
-                    title: "15.2.4 Comando netstat",
+                    title: "Comando netstat",
                     items: [
                       "Netstat muestra conexiones activas, puertos en escucha y estado de sesiones TCP en el host.",
                       "La opcion -n evita resolucion de nombres y facilita analisis rapido con IP:puerto numericos.",
@@ -4249,7 +4249,7 @@
                 ],
                 sections: [
                   {
-                    title: "16.1.1 Interaccion de cliente y servidor",
+                    title: "Interaccion de cliente y servidor",
                     items: [
                       "Un servidor es un host que ejecuta software para ofrecer informacion o servicios a otros hosts de la red.",
                       "Las aplicaciones comunes (web, correo, redes sociales, banca, descargas) dependen de interacciones cliente-servidor.",
@@ -4257,7 +4257,7 @@
                     ]
                   },
                   {
-                    title: "16.1.2 Flujo IP en servicio web",
+                    title: "Flujo IP en servicio web",
                     items: [
                       "El usuario escribe una URL y primero ocurre resolucion DNS para obtener la direccion IP del servidor.",
                       "Luego se establece una sesion TCP usando IP origen/destino y puertos origen/destino (socket).",
@@ -4265,7 +4265,7 @@
                     ]
                   },
                   {
-                    title: "16.1.3 URI, URN y URL",
+                    title: "URI, URN y URL",
                     items: [
                       "URI es el identificador general de recursos en red.",
                       "URN nombra el recurso dentro de un espacio de nombres sin indicar su ubicacion.",
@@ -4273,7 +4273,7 @@
                     ]
                   },
                   {
-                    title: "16.1.4 Trafico web en Packet Tracer",
+                    title: "Trafico web en Packet Tracer",
                     items: [
                       "En simulacion se observa encapsulacion de HTTP sobre TCP y direccionamiento IP extremo a extremo.",
                       "La solicitud viaja desde el cliente hasta el servidor; la respuesta retorna con direcciones invertidas.",
@@ -4301,7 +4301,7 @@
                 ],
                 sections: [
                   {
-                    title: "16.2.1 Servicios mas usados",
+                    title: "Servicios mas usados",
                     items: [
                       "Busqueda web, correo, streaming, mensajeria y comercio electronico son servicios consumidos diariamente.",
                       "Cada servicio se implementa con software de aplicacion en servidores especializados o plataformas distribuidas.",
@@ -4345,7 +4345,7 @@
                 ],
                 sections: [
                   {
-                    title: "16.3.1 Funcion del servidor DNS",
+                    title: "Funcion del servidor DNS",
                     items: [
                       "DNS asocia nombres de dominio legibles por humanos con direcciones IP utilizables por la red.",
                       "Sin DNS, el usuario tendria que recordar y escribir direcciones numericas para cada servicio.",
@@ -4353,7 +4353,7 @@
                     ]
                   },
                   {
-                    title: "16.3.2 Entorno de practica y simuladores",
+                    title: "Entorno de practica y simuladores",
                     items: [
                       "El verificador de sintaxis exige comandos exactos para avanzar en practicas guiadas.",
                       "Herramientas como Packet Tracer permiten mas flexibilidad, incluyendo abreviaciones de comandos.",
@@ -4361,7 +4361,7 @@
                     ]
                   },
                   {
-                    title: "16.3.3 Comando nslookup",
+                    title: "Comando nslookup",
                     items: [
                       "nslookup permite consultar manualmente registros DNS y confirmar resolucion de un dominio.",
                       "Si no hay resolucion, se debe revisar direccion DNS configurada en host/router y conectividad.",
@@ -4397,7 +4397,7 @@
                 ],
                 sections: [
                   {
-                    title: "16.4.1 HTTP y HTML en la experiencia web",
+                    title: "HTTP y HTML en la experiencia web",
                     items: [
                       "HTTP define reglas de intercambio entre cliente y servidor para solicitar y entregar recursos web.",
                       "HTML es el lenguaje de marcado que estructura texto, imagenes, enlaces y elementos de interfaz.",
@@ -4405,7 +4405,7 @@
                     ]
                   },
                   {
-                    title: "16.4.2 Flujo operativo de una solicitud web",
+                    title: "Flujo operativo de una solicitud web",
                     items: [
                       "El cliente resuelve primero el nombre de dominio a una direccion IP usando DNS.",
                       "Con la IP obtenida, envia solicitud al servicio web en puerto 80 (HTTP) o 443 (HTTPS).",
@@ -4441,7 +4441,7 @@
                 ],
                 sections: [
                   {
-                    title: "16.5.1 Protocolo de transferencia de archivos",
+                    title: "Protocolo de transferencia de archivos",
                     items: [
                       "FTP permite subir y descargar archivos entre hosts a traves de una sesion cliente-servidor.",
                       "El canal de control usa TCP 21 para autenticacion y comandos de gestion de archivos.",
@@ -4457,7 +4457,7 @@
                     ]
                   },
                   {
-                    title: "16.5.2 Software cliente FTP",
+                    title: "Software cliente FTP",
                     items: [
                       "Clientes GUI como FileZilla muestran panel local y remoto para transferencias por arrastre.",
                       "En servidores publicos puede usarse usuario anonymous; entornos privados exigen credenciales.",
@@ -4493,7 +4493,7 @@
                 ],
                 sections: [
                   {
-                    title: "16.6.1 Acceso remoto con Telnet o SSH",
+                    title: "Acceso remoto con Telnet o SSH",
                     items: [
                       "Clientes como Tera Term permiten abrir sesiones remotas hacia equipos de red y servidores.",
                       "La sesion remota emula una terminal local y habilita administracion por linea de comandos.",
@@ -4501,7 +4501,7 @@
                     ]
                   },
                   {
-                    title: "16.6.2 Telnet",
+                    title: "Telnet",
                     items: [
                       "Telnet es un protocolo historico de emulacion de terminal y usa TCP puerto 23.",
                       "Una conexion Telnet establece una sesion vty para ejecutar comandos en el host remoto.",
@@ -4509,7 +4509,7 @@
                     ]
                   },
                   {
-                    title: "16.6.3 Problemas de seguridad con Telnet",
+                    title: "Problemas de seguridad con Telnet",
                     items: [
                       "Telnet transmite datos en texto plano, por lo que un atacante puede leer trafico capturado.",
                       "Con acceso a credenciales, un tercero podria ejecutar acciones administrativas no autorizadas.",
@@ -4545,7 +4545,7 @@
                 ],
                 sections: [
                   {
-                    title: "16.7.1 Clientes y servidores de correo",
+                    title: "Clientes y servidores de correo",
                     items: [
                       "El correo es un servicio cliente-servidor donde los mensajes se almacenan en buzones remotos.",
                       "Los usuarios acceden con clientes web o aplicaciones dedicadas segun plataforma.",
@@ -4553,7 +4553,7 @@
                     ]
                   },
                   {
-                    title: "16.7.2 Protocolos de correo",
+                    title: "Protocolos de correo",
                     items: [
                       "SMTP envia correo desde cliente a servidor local y entre servidores (puerto 25).",
                       "POP3 descarga mensajes al cliente y normalmente no los conserva en servidor (puerto 110).",
@@ -4561,7 +4561,7 @@
                     ]
                   },
                   {
-                    title: "16.7.3 Mensajeria de texto",
+                    title: "Mensajeria de texto",
                     items: [
                       "La mensajeria en tiempo real se integra en clientes web, moviles y plataformas colaborativas.",
                       "Ademas del texto, muchas aplicaciones soportan envio de archivos, audio y video.",
@@ -4569,7 +4569,7 @@
                     ]
                   },
                   {
-                    title: "16.7.4 Llamadas telefonicas por Internet",
+                    title: "Llamadas telefonicas por Internet",
                     items: [
                       "VoIP convierte voz analogica en paquetes IP para transportar llamadas por la red.",
                       "Para comunicacion con telefonia tradicional se requiere gateway hacia la red PSTN.",
@@ -4603,7 +4603,7 @@
                 ],
                 sections: [
                   {
-                    title: "17.1.1 Panorama de utilidades",
+                    title: "Panorama de utilidades",
                     items: [
                       "ipconfig muestra configuracion IP local del host y estado del adaptador.",
                       "ping verifica alcance a hosts IP y mide tiempo de respuesta extremo a extremo.",
@@ -4611,7 +4611,7 @@
                     ]
                   },
                   {
-                    title: "17.1.2 Comando ipconfig",
+                    title: "Comando ipconfig",
                     items: [
                       "Con ipconfig se validan IPv4, mascara de subred y gateway predeterminado de forma rapida.",
                       "ipconfig /all incluye datos extendidos: MAC, DNS, DHCP, lease y detalles de interfaz.",
@@ -4619,7 +4619,7 @@
                     ]
                   },
                   {
-                    title: "17.1.4 Comando ping",
+                    title: "Comando ping",
                     items: [
                       "El host envia solicitud de eco ICMP y espera respuesta para confirmar conectividad.",
                       "Secuencia recomendada: ping al gateway local, luego a IP externa y finalmente a nombre de dominio.",
@@ -4627,7 +4627,7 @@
                     ]
                   },
                   {
-                    title: "17.1.5 Interpretacion de resultados",
+                    title: "Interpretacion de resultados",
                     items: [
                       "Sin respuesta al gateway: posible falla local (NIC, cable, Wi-Fi, VLAN o configuracion IP).",
                       "Gateway responde pero destino externo no: revisar ruta WAN, ISP o politicas de filtrado.",
@@ -4682,7 +4682,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.1.1 Arquitectura de red",
+                    title: "Arquitectura de red",
                     items: [
                       "La arquitectura de red define cómo se integran infraestructura física, servicios y protocolos para conectar usuarios, dispositivos y aplicaciones.",
                       "Diseñar con arquitectura estándar facilita interoperabilidad entre fabricantes, crecimiento ordenado y operación mantenible.",
@@ -4690,7 +4690,7 @@
                     ]
                   },
                   {
-                    title: "1.1.2-1.1.3 Tolerancia a fallas y redundancia",
+                    title: "Tolerancia a fallas y redundancia",
                     items: [
                       "La tolerancia a fallas busca que la red siga operando aunque falle un enlace o un equipo.",
                       "La redundancia agrega rutas alternativas; si un camino cae, el tráfico puede reenrutarse por otro sin interrumpir el servicio.",
@@ -4698,7 +4698,7 @@
                     ]
                   },
                   {
-                    title: "1.1.4-1.1.5 Escalabilidad y calidad de servicio (QoS)",
+                    title: "Escalabilidad y calidad de servicio (QoS)",
                     items: [
                       "Escalabilidad significa crecer en usuarios, sedes y aplicaciones sin degradar de forma crítica el rendimiento existente.",
                       "QoS prioriza tráfico sensible al retardo, como voz y video en tiempo real, frente a tráfico menos urgente.",
@@ -4706,7 +4706,7 @@
                     ]
                   },
                   {
-                    title: "1.1.6 Seguridad como requisito de confiabilidad",
+                    title: "Seguridad como requisito de confiabilidad",
                     items: [
                       "Una red confiable también debe ser segura: sin seguridad, la disponibilidad y el rendimiento pueden colapsar por incidentes.",
                       "La tríada CIA orienta controles básicos: confidencialidad, integridad y disponibilidad de la información.",
@@ -4744,7 +4744,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.2.1 Direcciones físicas y lógicas",
+                    title: "Direcciones físicas y lógicas",
                     items: [
                       "La dirección MAC identifica de forma única la interfaz de red del host y se mantiene estable en el adaptador.",
                       "La dirección IP es lógica y depende de la red donde está conectado el host; puede cambiar entre ubicaciones.",
@@ -4752,7 +4752,7 @@
                     ]
                   },
                   {
-                    title: "1.2.2 Inspección de parámetros de red en el host",
+                    title: "Inspección de parámetros de red en el host",
                     items: [
                       "En equipos de usuario se debe validar estado del adaptador, dirección IP, máscara, gateway y DNS antes de escalar incidentes.",
                       "Comandos como ipconfig o ipconfig /all permiten corroborar rápidamente configuración, DHCP y dirección física.",
@@ -4760,7 +4760,7 @@
                     ]
                   },
                   {
-                    title: "1.2.4 Por qué segmentar con diseño jerárquico",
+                    title: "Por qué segmentar con diseño jerárquico",
                     items: [
                       "Las redes grandes en un solo dominio de difusión degradan rendimiento y dificultan localizar fallas.",
                       "Segmentar reduce tráfico innecesario, mejora control operativo y limita el alcance de incidentes.",
@@ -4768,7 +4768,7 @@
                     ]
                   },
                   {
-                    title: "1.2.5-1.2.6 Capas acceso, distribución y núcleo",
+                    title: "Capas acceso, distribución y núcleo",
                     items: [
                       "Acceso: conecta dispositivos finales mediante switches y puntos de acceso.",
                       "Distribución: agrega redes de acceso, aplica políticas y enruta tráfico entre segmentos.",
@@ -4811,7 +4811,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.1.1 Fundamentos de nube",
+                    title: "Fundamentos de nube",
                     items: [
                       "La nube combina centros de datos, virtualizaci\u00f3n y servicios remotos para ofrecer capacidad de c\u00f3mputo, almacenamiento y red.",
                       "En lugar de comprar todo el hardware por adelantado, una organizaci\u00f3n puede consumir recursos seg\u00fan demanda.",
@@ -4819,7 +4819,7 @@
                     ]
                   },
                   {
-                    title: "2.1.2 Modelos de despliegue",
+                    title: "Modelos de despliegue",
                     items: [
                       "Nube p\u00fablica: servicios accesibles por Internet para m\u00faltiples clientes, normalmente con pago por uso.",
                       "Nube privada: recursos dedicados a una sola organizaci\u00f3n con mayor control sobre pol\u00edticas y cumplimiento.",
@@ -4828,7 +4828,7 @@
                     ]
                   },
                   {
-                    title: "2.1.3 Modelos de servicio",
+                    title: "Modelos de servicio",
                     items: [
                       "SaaS: aplicaciones listas para usar (correo, colaboraci\u00f3n, ofim\u00e1tica).",
                       "PaaS: plataforma para desarrollar y desplegar aplicaciones sin administrar la base de infraestructura.",
@@ -4869,7 +4869,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.2.1 Qu\u00e9 es virtualizaci\u00f3n",
+                    title: "Qu\u00e9 es virtualizaci\u00f3n",
                     items: [
                       "Consiste en crear recursos l\u00f3gicos (m\u00e1quinas, redes o almacenamiento) sobre una base f\u00edsica compartida.",
                       "Permite consolidar servidores y reducir la proliferaci\u00f3n de equipos dedicados subutilizados.",
@@ -4877,7 +4877,7 @@
                     ]
                   },
                   {
-                    title: "2.2.2 Hipervisores tipo 1 y tipo 2",
+                    title: "Hipervisores tipo 1 y tipo 2",
                     items: [
                       "Tipo 1 (bare-metal): se instala directamente sobre hardware; ofrece mejor rendimiento y aislamiento para producci\u00f3n.",
                       "Tipo 2 (hosted): corre sobre un sistema operativo anfitri\u00f3n; es pr\u00e1ctico para laboratorio, pruebas y aprendizaje.",
@@ -4885,7 +4885,7 @@
                     ]
                   },
                   {
-                    title: "2.2.3 Ventajas y riesgos operativos",
+                    title: "Ventajas y riesgos operativos",
                     items: [
                       "Ventajas: menor costo total, mejor uso de CPU/RAM, aprovisionamiento r\u00e1pido y mayor flexibilidad.",
                       "Riesgos: dependencia del host f\u00edsico, sobreasignaci\u00f3n de recursos y complejidad de administraci\u00f3n.",
@@ -4893,7 +4893,7 @@
                     ]
                   },
                   {
-                    title: "2.2.4 Virtualizaci\u00f3n de red",
+                    title: "Virtualizaci\u00f3n de red",
                     items: [
                       "No solo se virtualizan servidores; tambi\u00e9n es posible virtualizar switching, routing y funciones de seguridad.",
                       "Esto facilita laboratorios, automatizaci\u00f3n y despliegues consistentes entre entornos de desarrollo y producci\u00f3n.",
@@ -4931,7 +4931,7 @@
                 ],
                 sections: [
                   {
-                    title: "3.1.1 Direcciones binarias e IPv4",
+                    title: "Direcciones binarias e IPv4",
                     items: [
                       "IPv4 se representa internamente en binario: 32 bits divididos en 4 octetos de 8 bits.",
                       "Cada octeto binario se convierte a decimal para facilitar lectura humana en notación decimal punteada.",
@@ -4939,7 +4939,7 @@
                     ]
                   },
                   {
-                    title: "3.1.2 Conversión binario a decimal",
+                    title: "Conversión binario a decimal",
                     items: [
                       "La conversión usa notación posicional en base 2: 128, 64, 32, 16, 8, 4, 2, 1.",
                       "Para pasar un octeto binario a decimal, se suman solo los valores donde el bit es 1.",
@@ -4947,7 +4947,7 @@
                     ]
                   },
                   {
-                    title: "3.1.5 y 3.1.6 Conversión decimal a binario",
+                    title: "Conversión decimal a binario",
                     items: [
                       "Para cada octeto decimal, se determina qué potencias de 2 lo componen y se marca 1 en esas posiciones.",
                       "Ejemplo: 10 decimal = 00001010 binario; 11 decimal = 00001011 binario.",
@@ -4955,7 +4955,7 @@
                     ]
                   },
                   {
-                    title: "3.1.9 Lectura práctica de una IPv4",
+                    title: "Lectura práctica de una IPv4",
                     items: [
                       "Una dirección IPv4 en decimal punteado (por ejemplo 192.168.10.10) es la forma operativa para configuración.",
                       "El dispositivo trabaja realmente con el flujo binario de 32 bits equivalente.",
@@ -4992,7 +4992,7 @@
                 ],
                 sections: [
                   {
-                    title: "3.2.1 Hexadecimal e IPv6",
+                    title: "Hexadecimal e IPv6",
                     items: [
                       "Hexadecimal es base 16 y usa símbolos 0-9 y A-F.",
                       "Cada dígito hexadecimal representa exactamente 4 bits binarios (un nibble).",
@@ -5008,7 +5008,7 @@
                     ]
                   },
                   {
-                    title: "3.2.2 Conversión entre hexadecimal y decimal",
+                    title: "Conversión entre hexadecimal y decimal",
                     items: [
                       "Para hex a decimal se aplica notación posicional en base 16.",
                       "Ejemplo: 2A(hex) = 2x16 + 10 = 42(dec).",
@@ -5050,7 +5050,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.1.1 El auge de Ethernet",
+                    title: "El auge de Ethernet",
                     items: [
                       "Al inicio de las redes, cada fabricante implementaba métodos y protocolos propios, dificultando la interconexión.",
                       "Los estándares permitieron compatibilidad entre equipos de distintos proveedores, mejor diseño y mayor competencia.",
@@ -5058,7 +5058,7 @@
                     ]
                   },
                   {
-                    title: "4.1.2 Evolución e IEEE 802.3",
+                    title: "Evolución e IEEE 802.3",
                     items: [
                       "El IEEE mantiene los estándares de red; para Ethernet, la familia clave es IEEE 802.3.",
                       "La notación 100BASE-T indica velocidad, tipo de señal y medio (100 Mbps, banda base, par trenzado).",
@@ -5066,7 +5066,7 @@
                     ]
                   },
                   {
-                    title: "4.1.3 Direccionamiento Ethernet",
+                    title: "Direccionamiento Ethernet",
                     items: [
                       "Las tramas incluyen MAC de origen y MAC de destino para entrega dentro de la misma LAN.",
                       "Si un switch no conoce el destino, puede inundar la trama por varios puertos; solo el host con MAC coincidente la procesa.",
@@ -5102,7 +5102,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.2.1 Encapsulación Ethernet",
+                    title: "Encapsulación Ethernet",
                     items: [
                       "Ethernet opera en capa física y capa de enlace de datos del modelo OSI.",
                       "Enlace de datos define estructura de trama y direccionamiento local; física define señal y medio.",
@@ -5110,7 +5110,7 @@
                     ]
                   },
                   {
-                    title: "4.2.2 Subcapas LLC y MAC",
+                    title: "Subcapas LLC y MAC",
                     items: [
                       "LLC (IEEE 802.2) identifica el protocolo de capa 3 usado por la trama, como IPv4 o IPv6.",
                       "MAC (IEEE 802.3) se enfoca en encapsulación, direccionamiento de capa 2 y control de acceso al medio.",
@@ -5118,7 +5118,7 @@
                     ]
                   },
                   {
-                    title: "4.2.3 Funciones de la subcapa MAC",
+                    title: "Funciones de la subcapa MAC",
                     items: [
                       "Define formato de trama, MAC origen/destino y campo FCS para detección de errores.",
                       "En medios compartidos y semidúplex se empleó CSMA/CD para resolver colisiones.",
@@ -5126,7 +5126,7 @@
                     ]
                   },
                   {
-                    title: "4.2.4 Campos y tamaño de trama",
+                    title: "Campos y tamaño de trama",
                     items: [
                       "Tamaño mínimo de trama Ethernet: 64 bytes; máximo estándar: 1518 bytes (sin considerar etiquetas adicionales).",
                       "Tramas menores al mínimo se descartan como inválidas; tramas mayores pueden considerarse jumbo según entorno.",
@@ -5162,7 +5162,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.3.1 Identificación de dispositivos en capa 2",
+                    title: "Identificación de dispositivos en capa 2",
                     items: [
                       "Una MAC (Media Access Control) pertenece a la interfaz de red, no al equipo completo.",
                       "Su longitud estándar es de 48 bits (6 bytes), representados en hexadecimal.",
@@ -5170,7 +5170,7 @@
                     ]
                   },
                   {
-                    title: "4.3.2 Estructura hexadecimal y fabricante (OUI)",
+                    title: "Estructura hexadecimal y fabricante (OUI)",
                     items: [
                       "Los primeros 24 bits suelen identificar al fabricante (OUI: Organizationally Unique Identifier).",
                       "Los últimos 24 bits identifican de forma específica la interfaz dentro de ese fabricante.",
@@ -5178,7 +5178,7 @@
                     ]
                   },
                   {
-                    title: "4.3.3 Tipos de dirección MAC de destino",
+                    title: "Tipos de dirección MAC de destino",
                     items: [
                       "Unicast: trama dirigida a una sola NIC específica.",
                       "Broadcast: trama enviada a todos los hosts del mismo dominio de broadcast (FF:FF:FF:FF:FF:FF).",
@@ -5186,7 +5186,7 @@
                     ]
                   },
                   {
-                    title: "4.3.4 Relación MAC e IP en la LAN",
+                    title: "Relación MAC e IP en la LAN",
                     items: [
                       "IP define el destino lógico extremo a extremo; MAC define la entrega local salto a salto.",
                       "Para enviar a un host local, el emisor necesita conocer su MAC y suele obtenerla con ARP (en IPv4).",
@@ -5222,7 +5222,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.4.1 Aprendizaje dinámico en el switch",
+                    title: "Aprendizaje dinámico en el switch",
                     items: [
                       "Cuando una trama entra por un puerto, el switch registra la MAC de origen y la asocia a ese puerto.",
                       "Esa asociación se guarda en la tabla de direcciones MAC (también llamada tabla CAM).",
@@ -5230,7 +5230,7 @@
                     ]
                   },
                   {
-                    title: "4.4.2 Reenvío, filtrado e inundación",
+                    title: "Reenvío, filtrado e inundación",
                     items: [
                       "Si conoce la MAC de destino, reenvía solo por el puerto asociado (forwarding).",
                       "Si destino y origen están en el mismo puerto, descarta la trama (filtering).",
@@ -5238,7 +5238,7 @@
                     ]
                   },
                   {
-                    title: "4.4.3 Temporización y actualización",
+                    title: "Temporización y actualización",
                     items: [
                       "Las entradas dinámicas caducan tras un tiempo de inactividad (aging) para evitar información obsoleta.",
                       "Cuando un host cambia de puerto, el switch actualiza la tabla con la nueva ubicación.",
@@ -5246,7 +5246,7 @@
                     ]
                   },
                   {
-                    title: "4.4.4 Operación y seguridad básica",
+                    title: "Operación y seguridad básica",
                     items: [
                       "Comandos de verificación en Cisco IOS: show mac address-table, show interface status.",
                       "Amenazas comunes: MAC spoofing y MAC flooding para forzar inundación de tráfico.",
@@ -5280,7 +5280,7 @@
                 ],
                 sections: [
                   {
-                    title: "5.1.1 Función principal de la capa 3",
+                    title: "Función principal de la capa 3",
                     items: [
                       "Define direcciones lógicas (IPv4/IPv6) para identificar origen y destino extremo a extremo.",
                       "Permite la comunicación entre redes distintas, no solo dentro de una misma LAN.",
@@ -5288,7 +5288,7 @@
                     ]
                   },
                   {
-                    title: "5.1.2 Encapsulación y unidad de datos",
+                    title: "Encapsulación y unidad de datos",
                     items: [
                       "La capa de red agrega un encabezado IP al segmento de capa de transporte y forma un paquete.",
                       "El paquete viaja por diferentes medios y tecnologías de enlace sin cambiar su dirección IP de destino final.",
@@ -5296,7 +5296,7 @@
                     ]
                   },
                   {
-                    title: "5.1.3 Enrutamiento y selección de ruta",
+                    title: "Enrutamiento y selección de ruta",
                     items: [
                       "Los routers examinan la IP de destino y consultan su tabla de enrutamiento para decidir el siguiente salto.",
                       "La ruta elegida depende de prefijo, métrica y protocolos de enrutamiento configurados.",
@@ -5304,7 +5304,7 @@
                     ]
                   },
                   {
-                    title: "5.1.4 Escalabilidad y segmentación de red",
+                    title: "Escalabilidad y segmentación de red",
                     items: [
                       "Dividir la red en subredes reduce dominios de broadcast y mejora rendimiento.",
                       "El direccionamiento jerárquico facilita crecimiento ordenado y políticas de seguridad.",
@@ -5332,7 +5332,7 @@
                 ],
                 sections: [
                   {
-                    title: "5.2.1 Estructura del encabezado IPv4",
+                    title: "Estructura del encabezado IPv4",
                     items: [
                       "Campos clave: versión, longitud de encabezado (IHL), longitud total, TTL, protocolo e IP origen/destino.",
                       "El campo Protocolo identifica la carga útil: por ejemplo, TCP (6), UDP (17) o ICMP (1).",
@@ -5340,7 +5340,7 @@
                     ]
                   },
                   {
-                    title: "5.2.2 Fragmentación y MTU",
+                    title: "Fragmentación y MTU",
                     items: [
                       "Si un paquete supera la MTU del enlace de salida, IPv4 puede fragmentarlo (según banderas de fragmentación).",
                       "Los fragmentos se reensamblan en el host destino, usando identificación y offset.",
@@ -5348,7 +5348,7 @@
                     ]
                   },
                   {
-                    title: "5.2.3 TTL y control de bucles",
+                    title: "TTL y control de bucles",
                     items: [
                       "TTL (Time To Live) se decrementa en cada router para evitar bucles infinitos.",
                       "Al llegar a cero, el router descarta el paquete y normalmente responde con ICMP Time Exceeded.",
@@ -5356,7 +5356,7 @@
                     ]
                   },
                   {
-                    title: "5.2.4 Buenas prácticas operativas",
+                    title: "Buenas prácticas operativas",
                     items: [
                       "Verificar direccionamiento, máscara y gateway antes de diagnosticar fallas de capa superior.",
                       "Usar ping y traceroute para validar alcance y ruta efectiva.",
@@ -5384,7 +5384,7 @@
                 ],
                 sections: [
                   {
-                    title: "5.3.1 Encabezado base IPv6",
+                    title: "Encabezado base IPv6",
                     items: [
                       "Campos principales: versión, clase de tráfico, etiqueta de flujo, longitud de carga útil, siguiente encabezado y límite de saltos.",
                       "Dirección de origen y destino son de 128 bits, lo que amplía significativamente el espacio de direcciones.",
@@ -5392,7 +5392,7 @@
                     ]
                   },
                   {
-                    title: "5.3.2 Encabezados de extensión",
+                    title: "Encabezados de extensión",
                     items: [
                       "Opciones como fragmentación, seguridad o ruteo especial se manejan en encabezados de extensión.",
                       "Esto evita sobrecargar el encabezado base y mejora eficiencia para tráfico común.",
@@ -5400,7 +5400,7 @@
                     ]
                   },
                   {
-                    title: "5.3.3 Diferencias operativas frente a IPv4",
+                    title: "Diferencias operativas frente a IPv4",
                     items: [
                       "En IPv6, los routers intermedios no fragmentan paquetes; la fragmentación la realiza el host origen.",
                       "No existe broadcast como en IPv4; se usan multicast y anycast para comunicaciones grupales o selectivas.",
@@ -5442,7 +5442,7 @@
                 ],
                 sections: [
                   {
-                    title: "6.1.1 Formato de una dirección IPv4",
+                    title: "Formato de una dirección IPv4",
                     items: [
                       "IPv4 usa 32 bits agrupados en 4 octetos de 8 bits, escritos en decimal punteado (ejemplo: 192.168.10.10).",
                       "Cada octeto puede tomar valores entre 0 y 255.",
@@ -5450,7 +5450,7 @@
                     ]
                   },
                   {
-                    title: "6.1.2 Red y host: máscara y prefijo",
+                    title: "Red y host: máscara y prefijo",
                     items: [
                       "La máscara de subred o longitud de prefijo (/24, /26, etc.) separa la porción de red de la porción de host.",
                       "Con /24, los primeros 24 bits identifican la red y los últimos 8 bits al host.",
@@ -5458,7 +5458,7 @@
                     ]
                   },
                   {
-                    title: "6.1.3 Cálculos básicos de direccionamiento",
+                    title: "Cálculos básicos de direccionamiento",
                     items: [
                       "Dirección de red: bits de host en 0.",
                       "Dirección de broadcast: bits de host en 1.",
@@ -5466,7 +5466,7 @@
                     ]
                   },
                   {
-                    title: "6.1.4 Errores comunes y validación",
+                    title: "Errores comunes y validación",
                     items: [
                       "Asignar la misma IP a dos hosts genera conflicto de direccionamiento.",
                       "Usar máscara incorrecta produce fallas de alcance aunque la IP parezca válida.",
@@ -5508,7 +5508,7 @@
                 ],
                 sections: [
                   {
-                    title: "7.1.1 Propósito de ARP en redes IPv4",
+                    title: "Propósito de ARP en redes IPv4",
                     items: [
                       "Un host puede conocer la IP de destino, pero para enviar en Ethernet necesita la MAC de destino local.",
                       "ARP resuelve la relación IPv4-MAC en la LAN y alimenta la tabla ARP del host.",
@@ -5516,7 +5516,7 @@
                     ]
                   },
                   {
-                    title: "7.1.2 Flujo básico de resolución",
+                    title: "Flujo básico de resolución",
                     items: [
                       "Si no existe entrada en caché, el host emite una ARP Request en broadcast (FF:FF:FF:FF:FF:FF).",
                       "Solo el dispositivo con la IP consultada responde con ARP Reply en unicast, indicando su MAC.",
@@ -5524,7 +5524,7 @@
                     ]
                   },
                   {
-                    title: "7.1.3 ARP y puerta de enlace predeterminada",
+                    title: "ARP y puerta de enlace predeterminada",
                     items: [
                       "Si el destino está fuera de la subred local, no se resuelve la MAC del destino final sino la MAC del gateway.",
                       "El host envía las tramas al router local, que luego reencamina el paquete a otras redes.",
@@ -5532,7 +5532,7 @@
                     ]
                   },
                   {
-                    title: "7.1.4 Caché ARP y operación diaria",
+                    title: "Caché ARP y operación diaria",
                     items: [
                       "Las entradas ARP se guardan temporalmente para evitar solicitudes repetitivas y reducir broadcast.",
                       "Cuando expiran o cambian dispositivos, las entradas se vuelven a aprender dinámicamente.",
@@ -5540,7 +5540,7 @@
                     ]
                   },
                   {
-                    title: "7.1.5 Riesgos y controles básicos",
+                    title: "Riesgos y controles básicos",
                     items: [
                       "ARP no tiene autenticación nativa, por lo que puede ser objetivo de suplantación (ARP spoofing).",
                       "Medidas defensivas en red empresarial: DHCP Snooping, Dynamic ARP Inspection y segmentación por VLAN.",
@@ -5574,7 +5574,7 @@
                 ],
                 sections: [
                   {
-                    title: "8.1.1 Función de DNS en la red",
+                    title: "Función de DNS en la red",
                     items: [
                       "Permite usar nombres legibles (por ejemplo, www.ejemplo.com) en lugar de direcciones IPv4/IPv6.",
                       "Sin DNS, la navegación y la mayoría de aplicaciones dependerían de direcciones IP manuales.",
@@ -5582,7 +5582,7 @@
                     ]
                   },
                   {
-                    title: "8.1.2 Consulta DNS: flujo básico",
+                    title: "Consulta DNS: flujo básico",
                     items: [
                       "El cliente consulta al resolvedor configurado (normalmente DNS del router o del ISP/empresa).",
                       "Si no hay respuesta en caché, el resolvedor consulta servidores raíz, TLD y autoritativos según corresponda.",
@@ -5590,7 +5590,7 @@
                     ]
                   },
                   {
-                    title: "8.1.3 Registros DNS más usados",
+                    title: "Registros DNS más usados",
                     items: [
                       "A y AAAA: asocian nombre a dirección IPv4 o IPv6.",
                       "CNAME: define alias de un nombre canónico.",
@@ -5598,7 +5598,7 @@
                     ]
                   },
                   {
-                    title: "8.1.4 Operación, rendimiento y seguridad",
+                    title: "Operación, rendimiento y seguridad",
                     items: [
                       "La caché DNS reduce latencia y tráfico, pero puede exponer problemas si hay datos obsoletos.",
                       "Herramientas de diagnóstico: nslookup, dig y resolución inversa por PTR.",
@@ -5626,7 +5626,7 @@
                 ],
                 sections: [
                   {
-                    title: "8.2.1 Propósito y beneficios de DHCP",
+                    title: "Propósito y beneficios de DHCP",
                     items: [
                       "Automatiza asignación de dirección IP, máscara, gateway y DNS.",
                       "Evita conflictos por IP duplicada y simplifica despliegues masivos de dispositivos.",
@@ -5634,7 +5634,7 @@
                     ]
                   },
                   {
-                    title: "8.2.2 Proceso DORA",
+                    title: "Proceso DORA",
                     items: [
                       "Discover: el cliente solicita configuración IP en broadcast.",
                       "Offer: el servidor propone una dirección y parámetros de red.",
@@ -5642,7 +5642,7 @@
                     ]
                   },
                   {
-                    title: "8.2.3 Componentes de una concesión",
+                    title: "Componentes de una concesión",
                     items: [
                       "Lease time: tiempo de validez de la asignación IP.",
                       "Opciones DHCP: DNS, dominio, NTP y otras configuraciones adicionales.",
@@ -5650,7 +5650,7 @@
                     ]
                   },
                   {
-                    title: "8.2.4 DHCP relay y buenas prácticas",
+                    title: "DHCP relay y buenas prácticas",
                     items: [
                       "Cuando servidor y clientes están en redes distintas, se usa relay (ip helper-address en router).",
                       "Conviene excluir rangos estáticos (infraestructura, impresoras críticas, servidores).",
@@ -5692,7 +5692,7 @@
                 ],
                 sections: [
                   {
-                    title: "9.1.1 Rol de la capa de transporte",
+                    title: "Rol de la capa de transporte",
                     items: [
                       "Recibe datos de aplicaciones, los divide en segmentos o datagramas y los entrega a la capa de red.",
                       "En el destino, reensambla información y la entrega al proceso correcto.",
@@ -5700,7 +5700,7 @@
                     ]
                   },
                   {
-                    title: "9.1.2 Multiplexación y puertos",
+                    title: "Multiplexación y puertos",
                     items: [
                       "Los números de puerto permiten que múltiples aplicaciones compartan simultáneamente la red.",
                       "Cada flujo se identifica por IP origen/destino, puerto origen/destino y protocolo (TCP/UDP).",
@@ -5708,7 +5708,7 @@
                     ]
                   },
                   {
-                    title: "9.1.3 Requisitos de las aplicaciones",
+                    title: "Requisitos de las aplicaciones",
                     items: [
                       "Algunas aplicaciones priorizan confiabilidad (por ejemplo, transferencia de archivos).",
                       "Otras priorizan baja latencia y continuidad (por ejemplo, voz y video en tiempo real).",
@@ -5736,7 +5736,7 @@
                 ],
                 sections: [
                   {
-                    title: "9.2.1 Características de TCP",
+                    title: "Características de TCP",
                     items: [
                       "Es orientado a conexión: antes de transferir datos se establece una sesión lógica entre extremos.",
                       "Garantiza entrega ordenada mediante números de secuencia y acuses de recibo (ACK).",
@@ -5744,7 +5744,7 @@
                     ]
                   },
                   {
-                    title: "9.2.2 Control de flujo y congestión",
+                    title: "Control de flujo y congestión",
                     items: [
                       "Usa ventana deslizante para ajustar cuántos datos se envían sin confirmación.",
                       "Reduce velocidad ante congestión detectada para proteger la red y estabilizar la comunicación.",
@@ -5752,7 +5752,7 @@
                     ]
                   },
                   {
-                    title: "9.2.3 Casos de uso típicos",
+                    title: "Casos de uso típicos",
                     items: [
                       "HTTP/HTTPS, SSH, FTP, SMTP/IMAP y otras aplicaciones donde la pérdida de datos no es aceptable.",
                       "Transacciones críticas (banca, gestión empresarial, autenticación) dependen de su confiabilidad.",
@@ -5788,7 +5788,7 @@
                 ],
                 sections: [
                   {
-                    title: "9.3.1 Características de UDP",
+                    title: "Características de UDP",
                     items: [
                       "No establece conexión previa ni mantiene estado de sesión entre extremos.",
                       "No confirma recepción ni retransmite automáticamente segmentos perdidos.",
@@ -5796,7 +5796,7 @@
                     ]
                   },
                   {
-                    title: "9.3.2 Ventajas operativas",
+                    title: "Ventajas operativas",
                     items: [
                       "Menor sobrecarga implica mayor eficiencia para tráfico sensible al retardo.",
                       "Permite a la aplicación decidir cómo manejar pérdida, jitter o corrección de errores.",
@@ -5804,7 +5804,7 @@
                     ]
                   },
                   {
-                    title: "9.3.3 Casos de uso frecuentes",
+                    title: "Casos de uso frecuentes",
                     items: [
                       "DNS, DHCP, streaming en tiempo real, voz sobre IP y videojuegos en línea.",
                       "En estos escenarios se tolera cierta pérdida para mantener continuidad y baja latencia.",
@@ -5840,7 +5840,7 @@
                 ],
                 sections: [
                   {
-                    title: "9.4.1 Puertos y sockets",
+                    title: "Puertos y sockets",
                     items: [
                       "Un puerto es un identificador lógico de 16 bits usado por TCP o UDP (rango 0-65535).",
                       "Un socket combina IP + puerto + protocolo para identificar de forma única un flujo.",
@@ -5848,7 +5848,7 @@
                     ]
                   },
                   {
-                    title: "9.4.2 Rangos de puertos",
+                    title: "Rangos de puertos",
                     items: [
                       "Bien conocidos (0-1023): reservados para servicios estándar como HTTP, HTTPS, DNS y SSH.",
                       "Registrados (1024-49151): usados por aplicaciones de fabricante o servicios empresariales.",
@@ -5856,7 +5856,7 @@
                     ]
                   },
                   {
-                    title: "9.4.3 Puertos comunes en operación",
+                    title: "Puertos comunes en operación",
                     items: [
                       "HTTP 80, HTTPS 443, DNS 53, DHCP 67/68, SSH 22.",
                       "El cliente abre un puerto efímero y se conecta al puerto de servicio del servidor.",
@@ -5864,7 +5864,7 @@
                     ]
                   },
                   {
-                    title: "9.4.4 Seguridad y diagnóstico",
+                    title: "Seguridad y diagnóstico",
                     items: [
                       "Abrir solo puertos necesarios reduce superficie de ataque.",
                       "Comandos útiles: netstat, ss, lsof y herramientas de escaneo controlado para auditoría.",
@@ -5892,7 +5892,7 @@
                 ],
                 sections: [
                   {
-                    title: "9.5.1 Establecimiento de sesión (three-way handshake)",
+                    title: "Establecimiento de sesión (three-way handshake)",
                     items: [
                       "SYN: el cliente inicia la conexión proponiendo número de secuencia inicial.",
                       "SYN-ACK: el servidor confirma recepción y envía su propio número de secuencia.",
@@ -5900,7 +5900,7 @@
                     ]
                   },
                   {
-                    title: "9.5.2 Transferencia de datos confiable",
+                    title: "Transferencia de datos confiable",
                     items: [
                       "Cada segmento enviado espera confirmación (ACK) del receptor.",
                       "Si no llega ACK dentro del tiempo esperado, TCP retransmite el segmento.",
@@ -5908,7 +5908,7 @@
                     ]
                   },
                   {
-                    title: "9.5.3 Control de flujo y ventanas",
+                    title: "Control de flujo y ventanas",
                     items: [
                       "El receptor anuncia cuántos datos puede aceptar sin saturarse (window size).",
                       "El emisor ajusta ritmo de envío para evitar desbordamiento del búfer receptor.",
@@ -5916,7 +5916,7 @@
                     ]
                   },
                   {
-                    title: "9.5.4 Cierre de sesión",
+                    title: "Cierre de sesión",
                     items: [
                       "FIN/ACK permite cerrar la conexión de forma ordenada cuando termina el intercambio.",
                       "TIME_WAIT ayuda a evitar confusión con segmentos retrasados de sesiones anteriores.",
@@ -5952,7 +5952,7 @@
                 ],
                 sections: [
                   {
-                    title: "9.6.1 Confirmación y orden de datos",
+                    title: "Confirmación y orden de datos",
                     items: [
                       "TCP asigna números de secuencia a cada byte transmitido para preservar orden lógico.",
                       "El receptor confirma con ACK el último byte recibido correctamente.",
@@ -5960,7 +5960,7 @@
                     ]
                   },
                   {
-                    title: "9.6.2 Retransmisión ante pérdida",
+                    title: "Retransmisión ante pérdida",
                     items: [
                       "Cuando no llega un ACK esperado, el emisor asume pérdida y retransmite.",
                       "Los temporizadores (RTO) ajustan cuándo reenviar según latencia observada.",
@@ -5968,7 +5968,7 @@
                     ]
                   },
                   {
-                    title: "9.6.3 Ventana deslizante y control de flujo",
+                    title: "Ventana deslizante y control de flujo",
                     items: [
                       "El campo de ventana anuncia cuántos bytes puede recibir el host destino sin saturar su búfer.",
                       "El emisor limita el volumen de datos en tránsito según esa ventana anunciada.",
@@ -5976,7 +5976,7 @@
                     ]
                   },
                   {
-                    title: "9.6.4 Control de congestión en red",
+                    title: "Control de congestión en red",
                     items: [
                       "TCP reduce su ritmo al detectar señales de congestión (pérdidas o ACK duplicados).",
                       "Luego incrementa gradualmente la tasa de envío cuando la ruta vuelve a estabilizarse.",
@@ -5984,7 +5984,7 @@
                     ]
                   },
                   {
-                    title: "9.6.5 Diagnóstico operativo",
+                    title: "Diagnóstico operativo",
                     items: [
                       "Síntomas típicos: baja velocidad sostenida, muchas retransmisiones y latencia variable.",
                       "Herramientas de apoyo: capturas de tráfico, contadores de interfaz y pruebas con iperf/ping.",
@@ -6012,7 +6012,7 @@
                 ],
                 sections: [
                   {
-                    title: "9.7.1 Flujo de comunicación sin conexión",
+                    title: "Flujo de comunicación sin conexión",
                     items: [
                       "El emisor puede transmitir datagramas UDP sin handshake previo.",
                       "Cada datagrama se procesa de forma independiente, sin mantenimiento de estado en el transporte.",
@@ -6020,7 +6020,7 @@
                     ]
                   },
                   {
-                    title: "9.7.2 Encabezado UDP y puertos",
+                    title: "Encabezado UDP y puertos",
                     items: [
                       "Campos básicos: puerto origen, puerto destino, longitud y checksum.",
                       "El checksum ayuda a detectar corrupción de datos en tránsito.",
@@ -6028,7 +6028,7 @@
                     ]
                   },
                   {
-                    title: "9.7.3 Aplicaciones típicas sobre UDP",
+                    title: "Aplicaciones típicas sobre UDP",
                     items: [
                       "Servicios como DNS y DHCP priorizan rapidez de respuesta con mensajes breves.",
                       "Voz y video en tiempo real usan UDP para minimizar retardo y jitter percibido.",
@@ -6036,7 +6036,7 @@
                     ]
                   },
                   {
-                    title: "9.7.4 Consideraciones de red y seguridad",
+                    title: "Consideraciones de red y seguridad",
                     items: [
                       "En enlaces inestables pueden aparecer pérdidas; QoS ayuda a priorizar tráfico sensible.",
                       "Es importante filtrar puertos UDP expuestos y limitar servicios innecesarios en borde.",
@@ -6078,7 +6078,7 @@
                 ],
                 sections: [
                   {
-                    title: "10.1.1 Acceso inicial al IOS",
+                    title: "Acceso inicial al IOS",
                     items: [
                       "Se puede acceder al dispositivo por consola, SSH o Telnet (según políticas de seguridad).",
                       "Al iniciar, el prompt indica el modo actual y el alcance de los comandos permitidos.",
@@ -6086,7 +6086,7 @@
                     ]
                   },
                   {
-                    title: "10.1.2 Modos principales del CLI",
+                    title: "Modos principales del CLI",
                     items: [
                       "User EXEC (`>`): monitoreo básico, sin privilegios de configuración.",
                       "Privileged EXEC (`#`): verificación avanzada y acceso a configuración.",
@@ -6094,7 +6094,7 @@
                     ]
                   },
                   {
-                    title: "10.1.3 Navegación eficiente",
+                    title: "Navegación eficiente",
                     items: [
                       "Comandos clave: `enable`, `configure terminal`, `exit`, `end` y `disable`.",
                       "Ayuda contextual con `?`, autocompletado con Tab e historial con flechas.",
@@ -6102,7 +6102,7 @@
                     ]
                   },
                   {
-                    title: "10.1.4 Buenas prácticas operativas",
+                    title: "Buenas prácticas operativas",
                     items: [
                       "Confirmar modo antes de aplicar cambios y documentar comandos críticos ejecutados.",
                       "Realizar verificaciones antes y después de cada ajuste para validar impacto.",
@@ -6130,7 +6130,7 @@
                 ],
                 sections: [
                   {
-                    title: "10.2.1 Sintaxis base de comandos",
+                    title: "Sintaxis base de comandos",
                     items: [
                       "Un comando puede incluir palabra clave principal, subcomandos y argumentos.",
                       "La sintaxis exacta depende del modo actual; no todos los comandos existen en todos los modos.",
@@ -6138,7 +6138,7 @@
                     ]
                   },
                   {
-                    title: "10.2.2 Palabras clave y argumentos",
+                    title: "Palabras clave y argumentos",
                     items: [
                       "Palabras clave: términos fijos definidos por el IOS (por ejemplo, `interface`, `ip address`).",
                       "Argumentos: valores variables como direcciones IP, máscaras o nombres de interfaz.",
@@ -6146,7 +6146,7 @@
                     ]
                   },
                   {
-                    title: "10.2.3 Abreviación y edición de línea",
+                    title: "Abreviación y edición de línea",
                     items: [
                       "IOS permite abreviar comandos si la abreviatura es única (`conf t`, `show ip int br`).",
                       "Teclas de edición (`Ctrl+A`, `Ctrl+E`, `Ctrl+U`) mejoran velocidad y precisión en CLI.",
@@ -6154,7 +6154,7 @@
                     ]
                   },
                   {
-                    title: "10.2.4 Interpretación de errores",
+                    title: "Interpretación de errores",
                     items: [
                       "Mensajes de `Invalid input` suelen indicar palabra incorrecta o contexto no válido.",
                       "Errores de comando incompleto indican que faltan argumentos obligatorios.",
@@ -6190,7 +6190,7 @@
                 ],
                 sections: [
                   {
-                    title: "10.3.1 Comandos show esenciales",
+                    title: "Comandos show esenciales",
                     items: [
                       "`show running-config`: configuración activa en memoria RAM.",
                       "`show startup-config`: configuración guardada en NVRAM para arranque.",
@@ -6198,7 +6198,7 @@
                     ]
                   },
                   {
-                    title: "10.3.2 Interpretación del estado de interfaces",
+                    title: "Interpretación del estado de interfaces",
                     items: [
                       "`up/up`: interfaz operativa física y lógicamente.",
                       "`administratively down`: interfaz deshabilitada por configuración (`shutdown`).",
@@ -6206,7 +6206,7 @@
                     ]
                   },
                   {
-                    title: "10.3.3 Verificación de configuración aplicada",
+                    title: "Verificación de configuración aplicada",
                     items: [
                       "Comparar running-config con startup-config evita reinicios con cambios no guardados.",
                       "Usar `copy running-config startup-config` cuando los cambios ya fueron validados.",
@@ -6214,7 +6214,7 @@
                     ]
                   },
                   {
-                    title: "10.3.4 Diagnóstico rápido en CLI",
+                    title: "Diagnóstico rápido en CLI",
                     items: [
                       "Combinar comandos show en secuencia da una vista integral del estado del equipo.",
                       "Incluir hora, comandos y salidas relevantes facilita trazabilidad de incidentes.",
@@ -6248,7 +6248,7 @@
                 ],
                 sections: [
                   {
-                    title: "11.1.1 Preparación inicial",
+                    title: "Preparación inicial",
                     items: [
                       "Conectar por consola y entrar al modo privilegiado con `enable`.",
                       "Pasar a configuración global con `configure terminal`.",
@@ -6256,7 +6256,7 @@
                     ]
                   },
                   {
-                    title: "11.1.2 Seguridad mínima de administración",
+                    title: "Seguridad mínima de administración",
                     items: [
                       "Configurar `enable secret` para proteger acceso privilegiado.",
                       "Establecer contraseña de consola (`line console 0`) y líneas VTY para acceso remoto controlado.",
@@ -6264,7 +6264,7 @@
                     ]
                   },
                   {
-                    title: "11.1.3 Gestión y verificación",
+                    title: "Gestión y verificación",
                     items: [
                       "Configurar una interfaz VLAN de gestión (SVI) con dirección IP para administración remota.",
                       "Verificar estado con `show ip interface brief` y revisar configuración con `show running-config`.",
@@ -6272,7 +6272,7 @@
                     ]
                   },
                   {
-                    title: "11.1.4 Errores comunes",
+                    title: "Errores comunes",
                     items: [
                       "Olvidar `no shutdown` en la SVI o en puertos requeridos.",
                       "No guardar configuración y perder cambios al reiniciar.",
@@ -6300,7 +6300,7 @@
                 ],
                 sections: [
                   {
-                    title: "11.2.1 Configuración base del router",
+                    title: "Configuración base del router",
                     items: [
                       "Asignar `hostname` y desactivar búsquedas DNS accidentales (`no ip domain-lookup`).",
                       "Configurar `enable secret` y parámetros de acceso local según política.",
@@ -6308,7 +6308,7 @@
                     ]
                   },
                   {
-                    title: "11.2.2 Direccionamiento de interfaces",
+                    title: "Direccionamiento de interfaces",
                     items: [
                       "Entrar a cada interfaz requerida (`interface g0/0/x`) y asignar IP/máscara.",
                       "Activar la interfaz con `no shutdown` y documentar con `description`.",
@@ -6316,7 +6316,7 @@
                     ]
                   },
                   {
-                    title: "11.2.3 Validación de conectividad",
+                    title: "Validación de conectividad",
                     items: [
                       "Probar conectividad local con `ping` hacia dispositivos conectados al mismo segmento.",
                       "Comprobar rutas y alcance interred una vez configurados gateway y rutas necesarias.",
@@ -6324,7 +6324,7 @@
                     ]
                   },
                   {
-                    title: "11.2.4 Persistencia y control de cambios",
+                    title: "Persistencia y control de cambios",
                     items: [
                       "Guardar configuración en NVRAM (`copy running-config startup-config`).",
                       "Comparar `running-config` y `startup-config` para evitar inconsistencias al reinicio.",
@@ -6360,7 +6360,7 @@
                 ],
                 sections: [
                   {
-                    title: "11.3.1 Control de acceso administrativo",
+                    title: "Control de acceso administrativo",
                     items: [
                       "Definir `enable secret` robusto y credenciales locales con privilegios mínimos necesarios.",
                       "Preferir SSH sobre Telnet para cifrar autenticación y sesión remota.",
@@ -6368,7 +6368,7 @@
                     ]
                   },
                   {
-                    title: "11.3.2 Endurecimiento de servicios",
+                    title: "Endurecimiento de servicios",
                     items: [
                       "Deshabilitar servicios que no se usan (por ejemplo, HTTP inseguro o protocolos heredados).",
                       "Usar banners de advertencia para notificar uso autorizado y trazabilidad legal.",
@@ -6376,7 +6376,7 @@
                     ]
                   },
                   {
-                    title: "11.3.3 Protección de puertos y plano de control",
+                    title: "Protección de puertos y plano de control",
                     items: [
                       "Colocar puertos no utilizados en estado `shutdown` y, si aplica, en una VLAN aislada.",
                       "Implementar controles de capa 2 según entorno: port-security, BPDU Guard y DHCP Snooping.",
@@ -6384,7 +6384,7 @@
                     ]
                   },
                   {
-                    title: "11.3.4 Operación segura continua",
+                    title: "Operación segura continua",
                     items: [
                       "Guardar respaldo de configuraciones y mantener inventario de versiones de IOS.",
                       "Aplicar parches y actualizaciones de seguridad de forma planificada.",
@@ -6420,7 +6420,7 @@
                 ],
                 sections: [
                   {
-                    title: "11.4.1 Función del gateway predeterminado",
+                    title: "Función del gateway predeterminado",
                     items: [
                       "Si el destino está fuera de la red local, el host envía el paquete al gateway configurado.",
                       "El gateway suele ser una interfaz de router o firewall conectada al mismo segmento LAN.",
@@ -6428,7 +6428,7 @@
                     ]
                   },
                   {
-                    title: "11.4.2 Configuración en hosts y switches",
+                    title: "Configuración en hosts y switches",
                     items: [
                       "En hosts, se configura junto con IP y máscara mediante DHCP o parámetros estáticos.",
                       "En switches de capa 2, el `ip default-gateway` habilita administración remota fuera de la VLAN local.",
@@ -6436,7 +6436,7 @@
                     ]
                   },
                   {
-                    title: "11.4.3 Verificación y solución de fallas",
+                    title: "Verificación y solución de fallas",
                     items: [
                       "Validar con `ping` al gateway local como primera prueba de conectividad.",
                       "Si hay respuesta local pero no remota, revisar rutas en el router y políticas de filtrado.",
@@ -6444,7 +6444,7 @@
                     ]
                   },
                   {
-                    title: "11.4.4 Errores comunes",
+                    title: "Errores comunes",
                     items: [
                       "Gateway en subred incorrecta respecto al host o SVI de gestión.",
                       "Interfaces del router en estado down o con IP mal configurada.",
@@ -6478,7 +6478,7 @@
                 ],
                 sections: [
                   {
-                    title: "12.1.1 Función de ICMP en redes IP",
+                    title: "Función de ICMP en redes IP",
                     items: [
                       "ICMP complementa a IPv4/IPv6 al reportar condiciones de red, no transporta datos de aplicación.",
                       "Se usa para notificar fallas, verificar alcance y apoyar descubrimiento de ruta.",
@@ -6486,7 +6486,7 @@
                     ]
                   },
                   {
-                    title: "12.1.2 Mensajes ICMP más relevantes",
+                    title: "Mensajes ICMP más relevantes",
                     items: [
                       "Echo Request/Echo Reply: base de la herramienta ping para validar respuesta extremo a extremo.",
                       "Destination Unreachable: informa que no se puede llegar a red, host o puerto destino.",
@@ -6494,7 +6494,7 @@
                     ]
                   },
                   {
-                    title: "12.1.3 Interpretación operativa",
+                    title: "Interpretación operativa",
                     items: [
                       "Unreachable suele apuntar a rutas ausentes, ACL restrictivas o errores de direccionamiento.",
                       "Time Exceeded frecuente puede reflejar bucles de ruteo o rutas ineficientes.",
@@ -6502,7 +6502,7 @@
                     ]
                   },
                   {
-                    title: "12.1.4 Consideraciones de seguridad",
+                    title: "Consideraciones de seguridad",
                     items: [
                       "Bloquear ICMP de forma total puede dificultar diagnóstico legítimo y operación diaria.",
                       "Se recomienda filtrar de forma granular según política, no deshabilitar ciegamente.",
@@ -6530,7 +6530,7 @@
                 ],
                 sections: [
                   {
-                    title: "12.2.1 Ping: alcance y latencia",
+                    title: "Ping: alcance y latencia",
                     items: [
                       "Envía Echo Request al destino y espera Echo Reply para confirmar conectividad.",
                       "Métricas útiles: paquetes enviados/recibidos, pérdida y RTT promedio/máximo.",
@@ -6538,7 +6538,7 @@
                     ]
                   },
                   {
-                    title: "12.2.2 Traceroute: visibilidad de ruta",
+                    title: "Traceroute: visibilidad de ruta",
                     items: [
                       "Incrementa TTL progresivamente para descubrir cada salto hacia el destino.",
                       "Cada router intermedio responde con ICMP Time Exceeded, revelando la secuencia de hops.",
@@ -6546,7 +6546,7 @@
                     ]
                   },
                   {
-                    title: "12.2.3 Metodología de diagnóstico",
+                    title: "Metodología de diagnóstico",
                     items: [
                       "Paso 1: validar configuración IP local (IP, máscara, gateway, DNS).",
                       "Paso 2: ping local y remoto para delimitar el alcance de la falla.",
@@ -6554,7 +6554,7 @@
                     ]
                   },
                   {
-                    title: "12.2.4 Limitaciones y buenas prácticas",
+                    title: "Limitaciones y buenas prácticas",
                     items: [
                       "Algunos equipos filtran ICMP; ausencia de respuesta no siempre implica caída total.",
                       "Comparar resultados desde varios puntos de la red mejora precisión del análisis.",
@@ -6609,7 +6609,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.1.1 La conexión física",
+                    title: "La conexión física",
                     items: [
                       "Antes de transmitir datos, dos dispositivos deben compartir un medio compatible: cobre, fibra o inalámbrico.",
                       "La conexión física incluye NIC, puertos, conectores, patch cords y un estándar común de enlace.",
@@ -6617,7 +6617,7 @@
                     ]
                   },
                   {
-                    title: "1.1.2 Función de la capa física",
+                    title: "Función de la capa física",
                     items: [
                       "Convierte bits en señales eléctricas, luminosas o de radio, y realiza el proceso inverso en recepción.",
                       "Define sincronización, codificación básica y parámetros de transmisión para que el receptor interprete correctamente.",
@@ -6661,7 +6661,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.2.1 Estándares de la capa física",
+                    title: "Estándares de la capa física",
                     items: [
                       "Los estándares (por ejemplo, IEEE 802.x) aseguran interoperabilidad entre equipos de distintos fabricantes.",
                       "Especifican medio, conectores, distancias máximas, velocidad y parámetros eléctricos u ópticos.",
@@ -6669,7 +6669,7 @@
                     ]
                   },
                   {
-                    title: "1.2.2 Componentes físicos",
+                    title: "Componentes físicos",
                     items: [
                       "Un enlace típico combina NIC, cableado o radio, conectores, patch panel y puertos de switch/router.",
                       "Cada componente agrega límites físicos: atenuación, ruido, pérdida de potencia o latencia.",
@@ -6677,7 +6677,7 @@
                     ]
                   },
                   {
-                    title: "1.2.3 Codificación y 1.2.4 señalización",
+                    title: "Codificación y señalización",
                     items: [
                       "La codificación convierte bits en patrones aptos para transmisión y recuperación de reloj.",
                       "La señalización define cómo se propagan esos patrones por el medio (voltaje, luz o modulación de radio).",
@@ -6685,7 +6685,7 @@
                     ]
                   },
                   {
-                    title: "1.2.5 a 1.2.7 Ancho de banda y terminología",
+                    title: "Ancho de banda y terminología",
                     items: [
                       "El ancho de banda es la capacidad máxima teórica del medio; se expresa en bit/s (kbps, Mbps, Gbps).",
                       "Throughput y goodput representan rendimiento real observado, usualmente menor que el ancho de banda nominal.",
@@ -6721,7 +6721,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.3.1 Características del cableado de cobre",
+                    title: "Características del cableado de cobre",
                     items: [
                       "Transporta señales eléctricas y es sensible a atenuación, interferencia electromagnética (EMI) y diafonía.",
                       "Su rendimiento real se ve afectado por distancia, calidad de terminación, curvatura y proximidad a fuentes de ruido.",
@@ -6729,7 +6729,7 @@
                     ]
                   },
                   {
-                    title: "1.3.2 Tipos de cableado de cobre",
+                    title: "Tipos de cableado de cobre",
                     items: [
                       "Par trenzado: medio dominante en Ethernet LAN (categorías Cat5e, Cat6, Cat6A, entre otras).",
                       "Coaxial: mayor blindaje, más usado en entornos específicos (TV, CCTV, algunos accesos WAN).",
@@ -6737,7 +6737,7 @@
                     ]
                   },
                   {
-                    title: "1.3.3 UTP y 1.3.4 STP",
+                    title: "UTP y STP",
                     items: [
                       "UTP (Unshielded Twisted Pair): más económico y flexible, ideal para oficina con baja interferencia.",
                       "STP (Shielded Twisted Pair): añade blindaje para ambientes con alto ruido eléctrico industrial.",
@@ -6745,7 +6745,7 @@
                     ]
                   },
                   {
-                    title: "1.3.5 Cable coaxial",
+                    title: "Cable coaxial",
                     items: [
                       "Integra conductor central, dieléctrico, malla de blindaje y cubierta exterior.",
                       "Tiene buena inmunidad al ruido y se utiliza donde se requiere robustez o compatibilidad legacy.",
@@ -6781,7 +6781,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.4.1 Propiedades del cableado UTP",
+                    title: "Propiedades del cableado UTP",
                     items: [
                       "Está compuesto por pares trenzados que reducen diafonía y mejoran la integridad de la señal.",
                       "La categoría del cable define capacidad de frecuencia y velocidades soportadas.",
@@ -6789,7 +6789,7 @@
                     ]
                   },
                   {
-                    title: "1.4.2 Conectores y estándares de cableado UTP",
+                    title: "Conectores y estándares de cableado UTP",
                     items: [
                       "Se termina típicamente con conectores RJ-45 bajo estándares T568A o T568B.",
                       "La consistencia del esquema en ambos extremos es crítica para evitar errores de pinout.",
@@ -6797,7 +6797,7 @@
                     ]
                   },
                   {
-                    title: "1.4.3 Cables UTP directos y cruzados",
+                    title: "Cables UTP directos y cruzados",
                     items: [
                       "Cable directo: mismo estándar en ambos extremos; se usa entre dispositivos de tipo diferente.",
                       "Cable cruzado: intercambia pares TX/RX; tradicionalmente para dispositivos del mismo tipo.",
@@ -6833,7 +6833,7 @@
                 ],
                 sections: [
                   {
-                    title: "1.5.1 Propiedades del cableado de fibra óptica",
+                    title: "Propiedades del cableado de fibra óptica",
                     items: [
                       "Utiliza pulsos de luz, por lo que no sufre interferencia electromagnética como los medios de cobre.",
                       "Permite mayores distancias y anchos de banda altos con menor degradación de señal.",
@@ -6841,7 +6841,7 @@
                     ]
                   },
                   {
-                    title: "1.5.2 Tipos de medios y 1.5.3 usos",
+                    title: "Tipos de medios y usos",
                     items: [
                       "Multimodo (MMF): común en campus y centros de datos a distancias moderadas.",
                       "Monomodo (SMF): ideal para distancias largas y enlaces WAN/metro.",
@@ -6849,7 +6849,7 @@
                     ]
                   },
                   {
-                    title: "1.5.4 y 1.5.5 Conectores y patch cords",
+                    title: "Conectores y patch cords",
                     items: [
                       "Conectores comunes: LC, SC y otros, según módulo óptico y diseño de infraestructura.",
                       "La limpieza de férulas y control de radio de curvatura es obligatoria para evitar pérdidas.",
@@ -6857,7 +6857,7 @@
                     ]
                   },
                   {
-                    title: "1.5.6 Comparación fibra versus cobre",
+                    title: "Comparación fibra versus cobre",
                     items: [
                       "Fibra: mayor velocidad y alcance, mejor inmunidad al ruido, costo inicial más alto.",
                       "Cobre: menor costo y complejidad en acceso, pero limitado en distancia y sensibilidad a EMI.",
@@ -6899,7 +6899,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.1.1 Topologías física y lógica",
+                    title: "Topologías física y lógica",
                     items: [
                       "La topología física representa el cableado y la disposición real de equipos y enlaces.",
                       "La topología lógica representa el camino que siguen los datos, que puede diferir del diseño físico.",
@@ -6907,7 +6907,7 @@
                     ]
                   },
                   {
-                    title: "2.1.2 Topología lógica",
+                    title: "Topología lógica",
                     items: [
                       "Analizar topología lógica permite identificar dominios de broadcast y rutas de tráfico críticas.",
                       "En troubleshooting, ayuda a ubicar cuellos de botella, saltos innecesarios y puntos únicos de falla.",
@@ -6915,7 +6915,7 @@
                     ]
                   },
                   {
-                    title: "2.1.3 y 2.1.4 Topologías WAN",
+                    title: "Topologías WAN",
                     items: [
                       "Punto a punto: enlace directo entre dos nodos; simple y predecible para sucursales o troncales dedicadas.",
                       "Hub-and-spoke: centraliza conectividad en un nodo principal; facilita control, pero depende del hub.",
@@ -6923,7 +6923,7 @@
                     ]
                   },
                   {
-                    title: "2.1.5 Topologías LAN",
+                    title: "Topologías LAN",
                     items: [
                       "La topología estrella con switches es el modelo dominante por escalabilidad y facilidad de administración.",
                       "Diseños jerárquicos (acceso, distribución y núcleo) mejoran rendimiento y simplifican crecimiento.",
@@ -6959,7 +6959,7 @@
                 ],
                 sections: [
                   {
-                    title: "2.2.1 Comunicación dúplex completo y semidúplex",
+                    title: "Comunicación dúplex completo y semidúplex",
                     items: [
                       "Dúplex completo permite transmitir y recibir al mismo tiempo, eliminando colisiones en enlaces punto a punto con switch.",
                       "Semidúplex alterna transmisión/recepción y puede generar colisiones cuando varios nodos comparten el medio.",
@@ -6967,7 +6967,7 @@
                     ]
                   },
                   {
-                    title: "2.2.2 Métodos de control de acceso",
+                    title: "Métodos de control de acceso",
                     items: [
                       "Los métodos determinan cuándo un equipo puede transmitir para minimizar conflictos en el canal.",
                       "En medios compartidos se usan esquemas de contención y espera aleatoria.",
@@ -6975,7 +6975,7 @@
                     ]
                   },
                   {
-                    title: "2.2.3 CSMA/CD",
+                    title: "CSMA/CD",
                     items: [
                       "CSMA/CD (Carrier Sense Multiple Access with Collision Detection) se asocia a Ethernet compartida y semidúplex.",
                       "El nodo escucha el medio, transmite si está libre y, si detecta colisión, detiene envío y aplica backoff.",
@@ -6983,7 +6983,7 @@
                     ]
                   },
                   {
-                    title: "2.2.4 CSMA/CA",
+                    title: "CSMA/CA",
                     items: [
                       "CSMA/CA (Collision Avoidance) es común en redes inalámbricas IEEE 802.11.",
                       "El equipo intenta evitar colisiones escuchando el canal, esperando intervalos y usando temporización aleatoria.",
@@ -7025,7 +7025,7 @@
                 ],
                 sections: [
                   {
-                    title: "3.1.1 Decisión de reenvío del host",
+                    title: "Decisión de reenvío del host",
                     items: [
                       "El host aplica máscara o prefijo para determinar si la IP destino pertenece a su red local.",
                       "Si el destino está en la misma red, resuelve la MAC del destino y envía directamente.",
@@ -7033,7 +7033,7 @@
                     ]
                   },
                   {
-                    title: "3.1.2 Puerta de enlace predeterminada",
+                    title: "Puerta de enlace predeterminada",
                     items: [
                       "La puerta de enlace es la interfaz del router que conecta la LAN con otras redes.",
                       "Sin gateway correcto, el host puede comunicarse localmente pero falla hacia redes remotas.",
@@ -7041,7 +7041,7 @@
                     ]
                   },
                   {
-                    title: "3.1.3 Flujo local y remoto",
+                    title: "Flujo local y remoto",
                     items: [
                       "Tráfico local: host -> switch -> host destino en la misma subred.",
                       "Tráfico remoto: host -> switch -> router (gateway) -> red de destino.",
@@ -7049,7 +7049,7 @@
                     ]
                   },
                   {
-                    title: "3.1.4 Visualización de rutas en el host",
+                    title: "Visualización de rutas en el host",
                     items: [
                       "La tabla de enrutamiento del host contiene ruta conectada, ruta local y ruta por defecto.",
                       "La ruta por defecto (0.0.0.0/0 o ::/0) se usa cuando no existe coincidencia más específica.",
@@ -7085,7 +7085,7 @@
                 ],
                 sections: [
                   {
-                    title: "3.2.1 Decisión de envío del router",
+                    title: "Decisión de envío del router",
                     items: [
                       "El router busca coincidencia por prefijo más largo (longest prefix match).",
                       "Si hay varias rutas equivalentes, puede aplicar balanceo según plataforma/configuración.",
@@ -7093,7 +7093,7 @@
                     ]
                   },
                   {
-                    title: "3.2.2 Estructura de la tabla de enrutamiento IP",
+                    title: "Estructura de la tabla de enrutamiento IP",
                     items: [
                       "Cada entrada define prefijo destino, siguiente salto o interfaz de salida, y métrica.",
                       "Las rutas conectadas aparecen automáticamente cuando una interfaz está up/up con IP válida.",
@@ -7101,7 +7101,7 @@
                     ]
                   },
                   {
-                    title: "3.2.3 Enrutamiento estático",
+                    title: "Enrutamiento estático",
                     items: [
                       "Se configura manualmente y ofrece control total del camino de tráfico.",
                       "Es útil en topologías pequeñas, rutas de respaldo o segmentos con comportamiento predecible.",
@@ -7109,7 +7109,7 @@
                     ]
                   },
                   {
-                    title: "3.2.4 Enrutamiento dinámico",
+                    title: "Enrutamiento dinámico",
                     items: [
                       "Protocolos como OSPF, EIGRP o RIP intercambian rutas entre routers automáticamente.",
                       "Mejoran convergencia y adaptabilidad frente a fallas o cambios de red.",
@@ -7117,7 +7117,7 @@
                     ]
                   },
                   {
-                    title: "3.2.5 y 3.2.6 Lectura de tabla IPv4",
+                    title: "Lectura de tabla IPv4",
                     items: [
                       "Interpretar códigos de origen de ruta (conectada, estática, dinámica) es básico para troubleshooting.",
                       "Verificar presencia de red destino, prefijo correcto y siguiente salto alcanzable.",
@@ -7159,7 +7159,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.1.1 Unidifusión, multidifusión y anycast",
+                    title: "Unidifusión, multidifusión y anycast",
                     items: [
                       "Unidifusión identifica una única interfaz destino; es el caso más común en tráfico host a host.",
                       "Multidifusión entrega tráfico a un grupo de interfaces suscritas y reemplaza funciones históricas de broadcast en IPv4.",
@@ -7167,7 +7167,7 @@
                     ]
                   },
                   {
-                    title: "4.1.2 Longitud de prefijo IPv6",
+                    title: "Longitud de prefijo IPv6",
                     items: [
                       "IPv6 usa prefijos, por ejemplo /64, para separar porción de red e identificador de interfaz.",
                       "La práctica recomendada en LAN es /64 para compatibilidad con SLAAC y descubrimiento de vecinos.",
@@ -7175,7 +7175,7 @@
                     ]
                   },
                   {
-                    title: "4.1.3 y 4.1.4 Unidifusión IPv6 y ULA",
+                    title: "Unidifusión IPv6 y ULA",
                     items: [
                       "GUA (Global Unicast Address) es enrutable globalmente y se usa para comunicación entre redes.",
                       "ULA (Unique Local Address) se usa internamente; no está destinada a enrutamiento público en Internet.",
@@ -7183,7 +7183,7 @@
                     ]
                   },
                   {
-                    title: "4.1.5 a 4.1.7 Estructura GUA y papel de LLA",
+                    title: "Estructura GUA y papel de LLA",
                     items: [
                       "Una GUA incluye prefijo global, subred e identificador de interfaz.",
                       "Las LLA (normalmente fe80::/10) se usan para control local: NDP, RA y vecindad en el mismo segmento.",
@@ -7219,7 +7219,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.2.1 GUA estática en un enrutador",
+                    title: "GUA estática en un enrutador",
                     items: [
                       "Habilitar enrutamiento IPv6 y asignar la GUA por interfaz con su prefijo correcto.",
                       "Confirmar estado administrativo y operativo de la interfaz para evitar falsos positivos de configuración.",
@@ -7227,7 +7227,7 @@
                     ]
                   },
                   {
-                    title: "4.2.2 GUA estática en un host Windows",
+                    title: "GUA estática en un host Windows",
                     items: [
                       "Configurar dirección IPv6, longitud de prefijo y gateway predeterminado acordes al segmento.",
                       "Verificar que DNS IPv6 y gateway correspondan a la misma arquitectura de direccionamiento.",
@@ -7235,7 +7235,7 @@
                     ]
                   },
                   {
-                    title: "4.2.3 LLA estática",
+                    title: "LLA estática",
                     items: [
                       "La LLA puede configurarse manualmente para facilitar administración y troubleshooting en enlaces críticos.",
                       "Su alcance es local al enlace, por lo que no se enruta entre redes.",
@@ -7287,7 +7287,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.3.1 y 4.3.2 Mensajes RS y RA",
+                    title: "Mensajes RS y RA",
                     items: [
                       "RS (Router Solicitation) acelera la obtención de parámetros IPv6 al solicitar anuncios de router.",
                       "RA (Router Advertisement) informa prefijo, gateway y banderas para definir método de asignación.",
@@ -7295,7 +7295,7 @@
                     ]
                   },
                   {
-                    title: "4.3.3 Método 1: SLAAC",
+                    title: "Método 1: SLAAC",
                     items: [
                       "El host construye su GUA usando el prefijo del RA más un identificador de interfaz (IID).",
                       "No requiere servidor DHCPv6 para dirección IP, por lo que reduce complejidad operativa.",
@@ -7303,7 +7303,7 @@
                     ]
                   },
                   {
-                    title: "4.3.4 y 4.3.5 SLAAC + DHCPv6 sin estado vs con estado",
+                    title: "SLAAC + DHCPv6 sin estado vs con estado",
                     items: [
                       "SLAAC + DHCPv6 sin estado: el host obtiene IP por SLAAC y parámetros extra (DNS, dominio) por DHCPv6.",
                       "DHCPv6 con estado: el servidor entrega la dirección y conserva control central de asignaciones.",
@@ -7311,7 +7311,7 @@
                     ]
                   },
                   {
-                    title: "4.3.6 a 4.3.8 Generación de identificador de interfaz (IID)",
+                    title: "Generación de identificador de interfaz (IID)",
                     items: [
                       "EUI-64 deriva IID desde la MAC y facilita unicidad, pero puede exponer información del hardware.",
                       "IID aleatorio o temporal mejora privacidad y reduce rastreo del dispositivo.",
@@ -7347,7 +7347,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.4.1 LLA dinámicos",
+                    title: "LLA dinámicos",
                     items: [
                       "Toda interfaz IPv6 activa genera una LLA en el prefijo fe80::/10.",
                       "La LLA solo es válida en el segmento local y no se enruta entre redes.",
@@ -7355,7 +7355,7 @@
                     ]
                   },
                   {
-                    title: "4.4.2 LLA dinámicos en Windows",
+                    title: "LLA dinámicos en Windows",
                     items: [
                       "Windows asigna LLA automáticamente al habilitar IPv6 en una interfaz.",
                       "Puede coexistir con GUA/ULA, pero la conectividad local sigue resolviéndose mediante LLA.",
@@ -7363,7 +7363,7 @@
                     ]
                   },
                   {
-                    title: "4.4.3 LLA dinámicos en enrutadores Cisco",
+                    title: "LLA dinámicos en enrutadores Cisco",
                     items: [
                       "Cisco IOS genera LLA automática por interfaz IPv6, usada para protocolos y vecindad.",
                       "Las adyacencias y rutas pueden referenciar next-hop link-local.",
@@ -7371,7 +7371,7 @@
                     ]
                   },
                   {
-                    title: "4.4.4 Verificación de configuración IPv6",
+                    title: "Verificación de configuración IPv6",
                     items: [
                       "Verificar LLA y GUA por interfaz con comandos de inspección en host y router.",
                       "Probar `ping` a la LLA usando el identificador de interfaz cuando aplique.",
@@ -7407,7 +7407,7 @@
                 ],
                 sections: [
                   {
-                    title: "4.5.1 Direcciones IPv6 de multidifusión asignadas",
+                    title: "Direcciones IPv6 de multidifusión asignadas",
                     items: [
                       "Las direcciones multicast comienzan en ff00::/8 y se entregan a grupos específicos, no a todos los hosts.",
                       "Cada grupo representa una función o conjunto de receptores dentro de un alcance determinado.",
@@ -7415,7 +7415,7 @@
                     ]
                   },
                   {
-                    title: "4.5.2 Multicast IPv6 bien conocido",
+                    title: "Multicast IPv6 bien conocido",
                     items: [
                       "Ejemplos comunes: ff02::1 (todos los nodos) y ff02::2 (todos los routers) en alcance de enlace.",
                       "Los mensajes RS/RA y procesos NDP dependen de estos grupos para operación inicial de IPv6.",
@@ -7423,7 +7423,7 @@
                     ]
                   },
                   {
-                    title: "4.5.3 Multicast de nodo solicitado",
+                    title: "Multicast de nodo solicitado",
                     items: [
                       "Cada unicast/anycast IPv6 genera una dirección solicitada de nodo asociada.",
                       "Se utiliza en Neighbor Solicitation para resolver direcciones de capa 2 de forma eficiente.",
@@ -7473,7 +7473,7 @@
                 ],
                 sections: [
                   {
-                    title: "5.1.1 Detección de vecinos IPv6",
+                    title: "Detección de vecinos IPv6",
                     items: [
                       "Cuando una interfaz IPv6 se activa, inicia procesos de descubrimiento con mensajes ICMPv6.",
                       "El host identifica routers locales, aprende prefijos y detecta vecinos en el mismo enlace.",
@@ -7481,7 +7481,7 @@
                     ]
                   },
                   {
-                    title: "5.1.2 Mensajes principales de NDP",
+                    title: "Mensajes principales de NDP",
                     items: [
                       "NS/NA (Neighbor Solicitation/Advertisement): resuelven y confirman direcciones de vecinos.",
                       "RS/RA (Router Solicitation/Advertisement): permiten descubrir puerta de enlace y parámetros IPv6.",
@@ -7489,7 +7489,7 @@
                     ]
                   },
                   {
-                    title: "5.1.3 Resolución de direcciones en IPv6",
+                    title: "Resolución de direcciones en IPv6",
                     items: [
                       "Para enviar en la misma red, el host usa NS hacia la multicast de nodo solicitado del destino.",
                       "El vecino responde con NA y su dirección MAC, permitiendo encapsulación de capa 2.",
@@ -7547,7 +7547,7 @@
                 ],
                 sections: [
                   {
-                    title: "6.1.1 Conectar más dispositivos",
+                    title: "Conectar más dispositivos",
                     items: [
                       "Un switch permite ampliar la LAN agregando puertos para hosts, impresoras, teléfonos IP y puntos de acceso.",
                       "Cada puerto del switch crea un dominio de colisión independiente, mejorando rendimiento frente a medios compartidos.",
@@ -7555,7 +7555,7 @@
                     ]
                   },
                   {
-                    title: "6.1.2 Conmutadores LAN de Cisco",
+                    title: "Conmutadores LAN de Cisco",
                     items: [
                       "Los switches de acceso operan principalmente en capa 2 y conmutan usando tabla MAC.",
                       "Modelos multicapa integran funciones de capa 3 para inter-VLAN y políticas de enrutamiento local.",
@@ -7563,7 +7563,7 @@
                     ]
                   },
                   {
-                    title: "6.1.3 y 6.1.4 Componentes del switch LAN",
+                    title: "Componentes del switch LAN",
                     items: [
                       "Hardware clave: CPU, RAM, flash, ASIC, backplane/switch fabric y fuentes de alimentación.",
                       "Interfaces físicas: puertos de acceso, troncales, puertos de administración y consola.",
@@ -7571,7 +7571,7 @@
                     ]
                   },
                   {
-                    title: "6.1.5 Operación del conmutador LAN",
+                    title: "Operación del conmutador LAN",
                     items: [
                       "Aprende MAC de origen por puerto y usa esa información para reenviar de manera selectiva.",
                       "Si desconoce la MAC destino, inunda la trama dentro de la VLAN correspondiente.",
@@ -7607,7 +7607,7 @@
                 ],
                 sections: [
                   {
-                    title: "6.2.1 Métodos de reenvío en switches Cisco",
+                    title: "Métodos de reenvío en switches Cisco",
                     items: [
                       "Store-and-forward: verifica FCS antes de reenviar; mayor confiabilidad con algo más de latencia.",
                       "Cut-through: reenvía apenas lee MAC destino; menor latencia pero puede propagar tramas con errores.",
@@ -7615,7 +7615,7 @@
                     ]
                   },
                   {
-                    title: "6.2.2 Conmutación cut-through",
+                    title: "Conmutación cut-through",
                     items: [
                       "Es útil en escenarios sensibles a latencia, como ciertos tráficos de tiempo real.",
                       "Debe evaluarse junto con calidad de medio para no incrementar retransmisiones por tramas defectuosas.",
@@ -7623,7 +7623,7 @@
                     ]
                   },
                   {
-                    title: "6.2.3 Búfer de memoria en conmutadores",
+                    title: "Búfer de memoria en conmutadores",
                     items: [
                       "Los búferes absorben picos de tráfico cuando la salida está congestionada o a menor velocidad.",
                       "Arquitecturas comunes: memoria por puerto o memoria compartida, según diseño del equipo.",
@@ -7631,7 +7631,7 @@
                     ]
                   },
                   {
-                    title: "6.2.4 Velocidad y dúplex",
+                    title: "Velocidad y dúplex",
                     items: [
                       "La negociación automática define velocidad y dúplex entre interfaces compatibles.",
                       "Un desajuste de dúplex (full/half) provoca rendimiento bajo, colisiones tardías y errores.",
@@ -7639,7 +7639,7 @@
                     ]
                   },
                   {
-                    title: "6.2.5 Auto-MDIX",
+                    title: "Auto-MDIX",
                     items: [
                       "Auto-MDIX detecta y corrige automáticamente pares TX/RX, reduciendo dependencia del tipo de cable.",
                       "Simplifica implementación al minimizar errores entre cable directo y cruzado.",
@@ -7675,7 +7675,7 @@
                 ],
                 sections: [
                   {
-                    title: "6.3.1 Encendido del conmutador",
+                    title: "Encendido del conmutador",
                     items: [
                       "Al energizar, el switch ejecuta POST para validar memoria, CPU e interfaces básicas.",
                       "Si el hardware pasa validaciones, el boot loader localiza la imagen IOS en flash.",
@@ -7683,7 +7683,7 @@
                     ]
                   },
                   {
-                    title: "6.3.2 Administración dentro de banda y fuera de banda",
+                    title: "Administración dentro de banda y fuera de banda",
                     items: [
                       "Dentro de banda: gestión por red (SSH/Telnet/SNMP) usando una interfaz SVI o ruta disponible.",
                       "Fuera de banda: acceso por consola o puerto dedicado de management, útil cuando no hay conectividad IP.",
@@ -7691,7 +7691,7 @@
                     ]
                   },
                   {
-                    title: "6.3.3 Archivos de inicio del IOS",
+                    title: "Archivos de inicio del IOS",
                     items: [
                       "La imagen del sistema operativo se almacena normalmente en flash.",
                       "La configuración persistente se guarda en startup-config (NVRAM) y se carga al iniciar.",
@@ -7736,7 +7736,7 @@
                 ],
                 sections: [
                   {
-                    title: "6.4.1 Componentes del enrutador Cisco",
+                    title: "Componentes del enrutador Cisco",
                     items: [
                       "CPU, RAM, NVRAM y flash sostienen ejecución del IOS, tablas y configuración persistente.",
                       "El router mantiene tablas de enrutamiento, ARP/vecinos y estados de protocolos.",
@@ -7744,7 +7744,7 @@
                     ]
                   },
                   {
-                    title: "6.4.2 Funciones y planos del router",
+                    title: "Funciones y planos del router",
                     items: [
                       "Plano de control: ejecuta protocolos de routing y administración del dispositivo.",
                       "Plano de datos: reenvía paquetes según FIB/tabla de rutas con prioridad de rendimiento.",
@@ -7752,7 +7752,7 @@
                     ]
                   },
                   {
-                    title: "6.4.3 Puertos e interfaces de un enrutador",
+                    title: "Puertos e interfaces de un enrutador",
                     items: [
                       "Interfaces WAN/LAN (físicas o lógicas) conectan segmentos y transportes distintos.",
                       "Puertos de consola/auxiliar/USB facilitan administración inicial o recuperación.",
@@ -7796,7 +7796,7 @@
                 ],
                 sections: [
                   {
-                    title: "6.5.1 Encendido del enrutador",
+                    title: "Encendido del enrutador",
                     items: [
                       "En el encendido, se ejecuta POST y se inicializa hardware base del equipo.",
                       "ROM/ROMMON prepara el entorno de arranque y busca la imagen IOS definida.",
@@ -7804,7 +7804,7 @@
                     ]
                   },
                   {
-                    title: "6.5.2 Puertos de administración",
+                    title: "Puertos de administración",
                     items: [
                       "Consola: acceso local inicial para configuración base o soporte de emergencia.",
                       "Gestión remota (SSH) se habilita después de direccionamiento y hardening mínimo.",
@@ -7812,7 +7812,7 @@
                     ]
                   },
                   {
-                    title: "6.5.3 Secuencia de arranque del router Cisco",
+                    title: "Secuencia de arranque del router Cisco",
                     items: [
                       "1) Inicialización y diagnóstico de hardware.",
                       "2) Carga del IOS desde flash/TFTP/USB según variables de boot.",
@@ -7863,7 +7863,7 @@
                 ],
                 sections: [
                   {
-                    title: "7.1.2 Descripción general del troubleshooting",
+                    title: "Descripción general del troubleshooting",
                     items: [
                       "El objetivo es identificar causa raíz y restaurar servicio sin generar efectos colaterales.",
                       "Debe combinarse observación técnica, hipótesis verificables y pruebas controladas.",
@@ -7871,7 +7871,7 @@
                     ]
                   },
                   {
-                    title: "7.1.3 Recopilar información",
+                    title: "Recopilar información",
                     items: [
                       "Delimitar alcance: quiénes están afectados, desde cuándo y en qué servicios.",
                       "Levantar evidencias: estado de enlaces, IP/gateway, logs, eventos y cambios recientes.",
@@ -7879,7 +7879,7 @@
                     ]
                   },
                   {
-                    title: "7.1.4 Métodos estructurados",
+                    title: "Métodos estructurados",
                     items: [
                       "Top-down: iniciar en capas altas y bajar cuando sea necesario.",
                       "Bottom-up: comenzar en físico/enlace y avanzar hacia capas superiores.",
@@ -7888,7 +7888,7 @@
                     ]
                   },
                   {
-                    title: "7.1.5 Selección del método",
+                    title: "Selección del método",
                     items: [
                       "Incidentes recurrentes de capa 1/2: normalmente conviene bottom-up.",
                       "Problemas de aplicación con enlace sano: suele ser más eficiente top-down.",
@@ -7925,7 +7925,7 @@
                 ],
                 sections: [
                   {
-                    title: "7.2.1 Problemas comunes de capa 1",
+                    title: "Problemas comunes de capa 1",
                     items: [
                       "Cables desconectados o dañados, conectores flojos y puertos defectuosos.",
                       "Interferencias electromagnéticas, exceso de distancia o mala calidad del medio.",
@@ -7933,7 +7933,7 @@
                     ]
                   },
                   {
-                    title: "7.2.2 Indicadores LED en router/AP",
+                    title: "Indicadores LED en router/AP",
                     items: [
                       "LED de energía: confirma encendido y estado básico de hardware.",
                       "LED de enlace/actividad: indica sincronización y tráfico en interfaces.",
@@ -7941,7 +7941,7 @@
                     ]
                   },
                   {
-                    title: "7.2.3 Problemas de cableado",
+                    title: "Problemas de cableado",
                     items: [
                       "Verificar tipo de cable, pinout y longitud según estándar (cobre/fibra).",
                       "Revisar daños físicos, curvaturas excesivas y terminaciones defectuosas.",
@@ -7985,7 +7985,7 @@
                 ],
                 sections: [
                   {
-                    title: "7.3.1 Causas de problemas inalámbricos",
+                    title: "Causas de problemas inalámbricos",
                     items: [
                       "Cobertura débil (RSSI bajo), interferencia de canales y obstáculos físicos.",
                       "Saturación de clientes en un AP o canal, especialmente en 2.4 GHz.",
@@ -7993,7 +7993,7 @@
                     ]
                   },
                   {
-                    title: "7.3.2 Errores de autenticación y asociación",
+                    title: "Errores de autenticación y asociación",
                     items: [
                       "SSID correcto no garantiza acceso: clave, tipo de cifrado y políticas deben coincidir.",
                       "Errores WPA2/WPA3, filtrado MAC o portal cautivo mal configurado bloquean asociación.",
@@ -8038,7 +8038,7 @@
                 ],
                 sections: [
                   {
-                    title: "7.4.1 Errores de configuración DHCP",
+                    title: "Errores de configuración DHCP",
                     items: [
                       "Sin IP válida, máscara/prefijo correcto o gateway, no hay salida a Internet.",
                       "Pools agotados, exclusiones incorrectas o servidor DHCP inalcanzable afectan a múltiples usuarios.",
@@ -8046,7 +8046,7 @@
                     ]
                   },
                   {
-                    title: "7.4.2 y 7.4.3 Verificación de Internet y firewall",
+                    title: "Verificación de Internet y firewall",
                     items: [
                       "Comprobar parámetros locales: IP, gateway, DNS y estado de interfaz.",
                       "Revisar reglas de firewall/ACL/NAT que puedan bloquear tráfico saliente o de retorno.",
@@ -8054,7 +8054,7 @@
                     ]
                   },
                   {
-                    title: "7.4.5 Divide y vencerás con ping",
+                    title: "Divide y vencerás con ping",
                     items: [
                       "Probar por saltos: localhost -> gateway -> DNS público -> destino final.",
                       "Si falla en el primer salto externo, probable problema local o de borde inmediato.",
@@ -8062,7 +8062,7 @@
                     ]
                   },
                   {
-                    title: "7.4.6 Comando tracert",
+                    title: "Comando tracert",
                     items: [
                       "`tracert`/`traceroute` muestra el camino y ayuda a ubicar dónde se interrumpe la ruta.",
                       "Permite diferenciar caída interna, problema del ISP o falla remota del destino.",
@@ -8070,7 +8070,7 @@
                     ]
                   },
                   {
-                    title: "7.4.7 netstat y 7.4.8 nslookup",
+                    title: "netstat y nslookup",
                     items: [
                       "`netstat` permite revisar conexiones activas, puertos en escucha y estados anómalos.",
                       "`nslookup` valida si el DNS responde y qué dirección entrega para un dominio.",
@@ -8098,7 +8098,7 @@
                 ],
                 sections: [
                   {
-                    title: "7.5.1 Fuentes de ayuda",
+                    title: "Fuentes de ayuda",
                     items: [
                       "Base de conocimiento interna, documentación del fabricante y runbooks del equipo.",
                       "Historial de incidentes similares para acelerar diagnóstico y evitar repetir errores.",
@@ -8106,7 +8106,7 @@
                     ]
                   },
                   {
-                    title: "7.5.2 Cuándo escalar",
+                    title: "Cuándo escalar",
                     items: [
                       "Escalar cuando el incidente supera privilegios, alcance técnico o tiempos comprometidos.",
                       "Escalar con contexto completo: síntomas, pruebas realizadas, resultados y hora del evento.",
@@ -8114,7 +8114,7 @@
                     ]
                   },
                   {
-                    title: "7.5.3 Interacción con soporte",
+                    title: "Interacción con soporte",
                     items: [
                       "Comunicar en lenguaje claro: impacto, prioridad y acciones ya ejecutadas.",
                       "Alinear expectativas con el usuario sobre tiempos, ventanas de prueba y validación.",
@@ -8122,7 +8122,7 @@
                     ]
                   },
                   {
-                    title: "7.5.4 Resolución y validación",
+                    title: "Resolución y validación",
                     items: [
                       "Confirmar recuperación técnica con pruebas objetivas antes de cerrar.",
                       "Validar con el usuario final que el servicio funciona según su caso real.",
@@ -8130,7 +8130,7 @@
                     ]
                   },
                   {
-                    title: "7.5.5 Casos y órdenes de trabajo",
+                    title: "Casos y órdenes de trabajo",
                     items: [
                       "Abrir ticket con severidad adecuada y datos verificables del incidente.",
                       "Actualizar bitácora de actividades y cambios aplicados en cada intervención.",
