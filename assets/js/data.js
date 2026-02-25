@@ -7666,7 +7666,7 @@
                 code: "6.3",
                 title: "Proceso de Arranque del Conmutador",
                 summary:
-                  "Desarrollo del tema 6.3: Proceso de Arranque del Conmutador. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "El arranque de un switch Cisco sigue una secuencia definida: inicialización de hardware, carga del IOS y lectura de configuración. Entender este proceso permite diagnosticar fallas desde el primer encendido.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_6.3.png",
@@ -7675,25 +7675,50 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "6.3.1 Encendido del conmutador",
                     items: [
-                      "6.3.1 Encendido del conmutador",
-                      "6.3.2 Vídeo - Administración de Dispositivos Dentro de Banda y Fuera de Banda",
-                      "6.3.3 Archivos de Inicio del IOS"
+                      "Al energizar, el switch ejecuta POST para validar memoria, CPU e interfaces básicas.",
+                      "Si el hardware pasa validaciones, el boot loader localiza la imagen IOS en flash.",
+                      "Una falla en POST o imagen IOS corrupta puede dejar el equipo en modo de recuperación."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "6.3.2 Administración dentro de banda y fuera de banda",
                     items: [
-                      "Identificar y aplicar los conceptos clave de proceso de arranque del conmutador.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Dentro de banda: gestión por red (SSH/Telnet/SNMP) usando una interfaz SVI o ruta disponible.",
+                      "Fuera de banda: acceso por consola o puerto dedicado de management, útil cuando no hay conectividad IP.",
+                      "Para puesta en marcha segura, se recomienda habilitar primero acceso por consola y luego SSH."
+                    ]
+                  },
+                  {
+                    title: "6.3.3 Archivos de inicio del IOS",
+                    items: [
+                      "La imagen del sistema operativo se almacena normalmente en flash.",
+                      "La configuración persistente se guarda en startup-config (NVRAM) y se carga al iniciar.",
+                      "Si no existe startup-config, el equipo arranca con configuración por defecto y entra a setup inicial."
+                    ]
+                  },
+                  {
+                    title: "Secuencia de arranque resumida",
+                    items: [
+                      "1) POST e inicialización de hardware.",
+                      "2) Carga del boot loader y localización del IOS.",
+                      "3) Carga del IOS y aplicación de startup-config.",
+                      "4) Disponibilidad operativa para administración y forwarding."
+                    ]
+                  },
+                  {
+                    title: "Comandos de verificación",
+                    items: [
+                      "`show version` para confirmar IOS, uptime y origen de arranque.",
+                      "`show boot` para revisar variable de arranque y archivos configurados.",
+                      "`dir flash:` y `show startup-config` para validar imagen y configuración persistente."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en proceso de arranque del conmutador dentro del contexto del curso."
+                      "Describir y validar el proceso de arranque del switch Cisco para resolver incidencias de inicialización de forma estructurada."
                     ]
                   }
                 ]
@@ -7702,7 +7727,7 @@
                 code: "6.4",
                 title: "Enrutadores Cisco",
                 summary:
-                  "Desarrollo del tema 6.4: Enrutadores Cisco. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "El router Cisco interconecta redes distintas y toma decisiones de reenvío en capa 3. Conocer sus componentes y puertos es esencial para despliegue, administración y troubleshooting.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_6.4.png",
@@ -7711,25 +7736,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "6.4.1 Componentes del enrutador Cisco",
                     items: [
-                      "6.4.1 Vídeo - Componentes del Enrutador Cisco",
-                      "6.4.2 Componentes del Enrutador",
-                      "6.4.3 Puertos de Interfaz de un Enrutador"
+                      "CPU, RAM, NVRAM y flash sostienen ejecución del IOS, tablas y configuración persistente.",
+                      "El router mantiene tablas de enrutamiento, ARP/vecinos y estados de protocolos.",
+                      "Su arquitectura está orientada a decidir next-hop y aplicar políticas de tráfico."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "6.4.2 Funciones y planos del router",
                     items: [
-                      "Identificar y aplicar los conceptos clave de enrutadores cisco.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Plano de control: ejecuta protocolos de routing y administración del dispositivo.",
+                      "Plano de datos: reenvía paquetes según FIB/tabla de rutas con prioridad de rendimiento.",
+                      "Plano de gestión: habilita monitoreo, acceso remoto y operación segura del equipo."
+                    ]
+                  },
+                  {
+                    title: "6.4.3 Puertos e interfaces de un enrutador",
+                    items: [
+                      "Interfaces WAN/LAN (físicas o lógicas) conectan segmentos y transportes distintos.",
+                      "Puertos de consola/auxiliar/USB facilitan administración inicial o recuperación.",
+                      "La correcta identificación de interfaces evita errores de direccionamiento y rutas."
+                    ]
+                  },
+                  {
+                    title: "Criterios de selección e instalación",
+                    items: [
+                      "Dimensionar por throughput, número de interfaces, servicios de seguridad y crecimiento esperado.",
+                      "Planificar redundancia eléctrica y topológica para evitar puntos únicos de falla.",
+                      "Documentar nomenclatura de interfaces y direccionamiento desde la puesta en producción."
+                    ]
+                  },
+                  {
+                    title: "Comandos de inspección inicial",
+                    items: [
+                      "`show ip interface brief` para revisar estado de interfaces y direccionamiento.",
+                      "`show ip route` o `show ipv6 route` para validar rutas disponibles.",
+                      "`show running-config` para confirmar parámetros activos y consistencia operativa."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en enrutadores cisco dentro del contexto del curso."
+                      "Identificar componentes y puertos del router Cisco para implementar y validar conectividad entre redes."
                     ]
                   }
                 ]
@@ -7738,7 +7787,7 @@
                 code: "6.5",
                 title: "Proceso de Arranque del Enrutador",
                 summary:
-                  "Desarrollo del tema 6.5: Proceso de Arranque del Enrutador. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "El router Cisco arranca siguiendo una cadena de inicialización que incluye ROM/ROMMON, carga del IOS y aplicación de startup-config. Comprender este ciclo es clave para recuperación y continuidad operativa.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_6.5.png",
@@ -7747,25 +7796,50 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "6.5.1 Encendido del enrutador",
                     items: [
-                      "6.5.1 Encendido del enrutador",
-                      "6.5.2 Puertos de administración",
-                      "6.5.3 Video - El Proceso de Arranque del Enrutador Cisco"
+                      "En el encendido, se ejecuta POST y se inicializa hardware base del equipo.",
+                      "ROM/ROMMON prepara el entorno de arranque y busca la imagen IOS definida.",
+                      "Si no encuentra imagen válida, el equipo entra en modo de recuperación (ROMMON)."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "6.5.2 Puertos de administración",
                     items: [
-                      "Identificar y aplicar los conceptos clave de proceso de arranque del enrutador.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Consola: acceso local inicial para configuración base o soporte de emergencia.",
+                      "Gestión remota (SSH) se habilita después de direccionamiento y hardening mínimo.",
+                      "Canales fuera de banda reducen tiempo de recuperación ante caída de la red de producción."
+                    ]
+                  },
+                  {
+                    title: "6.5.3 Secuencia de arranque del router Cisco",
+                    items: [
+                      "1) Inicialización y diagnóstico de hardware.",
+                      "2) Carga del IOS desde flash/TFTP/USB según variables de boot.",
+                      "3) Carga de startup-config desde NVRAM.",
+                      "4) Activación de interfaces y servicios del plano de control."
+                    ]
+                  },
+                  {
+                    title: "Fallas comunes y recuperación",
+                    items: [
+                      "Imagen IOS ausente/corrupta o variable de arranque mal definida.",
+                      "Startup-config inválida que bloquea gestión remota o interfaces.",
+                      "Uso de ROMMON y transferencia de imagen como mecanismo de recuperación."
+                    ]
+                  },
+                  {
+                    title: "Checklist operativo inicial",
+                    items: [
+                      "Confirmar versión IOS, archivo de arranque y uptime tras reinicio.",
+                      "Verificar interfaces críticas, rutas y acceso administrativo seguro.",
+                      "Guardar configuración (`copy running-config startup-config`) tras cambios validados."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en proceso de arranque del enrutador dentro del contexto del curso."
+                      "Diagnosticar el proceso de arranque del router y aplicar acciones de recuperación con impacto mínimo en la operación."
                     ]
                   }
                 ]
