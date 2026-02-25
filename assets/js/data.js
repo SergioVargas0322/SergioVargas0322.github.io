@@ -7854,7 +7854,7 @@
                 code: "7.1",
                 title: "El Proceso para Solucionar Problemas",
                 summary:
-                  "Desarrollo del tema 7.1: El Proceso para Solucionar Problemas. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "La solución de problemas de red debe seguir un método estructurado para reducir tiempos de indisponibilidad y evitar cambios impulsivos. Un proceso consistente mejora precisión técnica y trazabilidad.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_7.1.png",
@@ -7863,27 +7863,51 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "7.1.2 Descripción general del troubleshooting",
                     items: [
-                      "7.1.1 Vídeo - Solución de problemas de red",
-                      "7.1.2 Descripción General de la Solución de Problemas",
-                      "7.1.3 Recopilar información",
-                      "7.1.4 Métodos Estructurados de Solución de Problemas",
-                      "7.1.5 Pautas para Seleccionar un Método de Solución de Problemas"
+                      "El objetivo es identificar causa raíz y restaurar servicio sin generar efectos colaterales.",
+                      "Debe combinarse observación técnica, hipótesis verificables y pruebas controladas.",
+                      "La improvisación suele aumentar el tiempo de falla y dificultar auditoría posterior."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "7.1.3 Recopilar información",
                     items: [
-                      "Identificar y aplicar los conceptos clave de el proceso para solucionar problemas.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Delimitar alcance: quiénes están afectados, desde cuándo y en qué servicios.",
+                      "Levantar evidencias: estado de enlaces, IP/gateway, logs, eventos y cambios recientes.",
+                      "Priorizar indicadores objetivos antes de realizar modificaciones en producción."
+                    ]
+                  },
+                  {
+                    title: "7.1.4 Métodos estructurados",
+                    items: [
+                      "Top-down: iniciar en capas altas y bajar cuando sea necesario.",
+                      "Bottom-up: comenzar en físico/enlace y avanzar hacia capas superiores.",
+                      "Follow-the-path: seguir el trayecto real del tráfico desde origen hasta destino.",
+                      "Divide-and-conquer: probar en un punto intermedio para acotar rápidamente el problema."
+                    ]
+                  },
+                  {
+                    title: "7.1.5 Selección del método",
+                    items: [
+                      "Incidentes recurrentes de capa 1/2: normalmente conviene bottom-up.",
+                      "Problemas de aplicación con enlace sano: suele ser más eficiente top-down.",
+                      "Redes extensas o rutas complejas: follow-the-path reduce tiempo de aislamiento."
+                    ]
+                  },
+                  {
+                    title: "Ciclo operativo recomendado",
+                    items: [
+                      "1) Definir problema con evidencia.",
+                      "2) Formular hipótesis y priorizar pruebas de menor riesgo.",
+                      "3) Ejecutar corrección controlada y validar resultado.",
+                      "4) Documentar causa raíz, cambio aplicado y prevención."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en el proceso para solucionar problemas dentro del contexto del curso."
+                      "Aplicar un proceso de troubleshooting repetible, con decisiones técnicas justificadas y documentación útil para futuras incidencias."
                     ]
                   }
                 ]
@@ -7892,7 +7916,7 @@
                 code: "7.2",
                 title: "Problema de Capa Física",
                 summary:
-                  "Desarrollo del tema 7.2: Problema de Capa Física. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "La capa física es la primera fuente de fallas de conectividad. Diagnosticar correctamente cableado, puertos, energía e indicadores permite resolver incidentes antes de escalar a capas superiores.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_7.2.png",
@@ -7901,25 +7925,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "7.2.1 Problemas comunes de capa 1",
                     items: [
-                      "7.2.1 Problemas comunes de la Capa 1",
-                      "7.2.2 Indicadores LED del Enrutador Inalámbrico",
-                      "7.2.3 Problemas de Cableado"
+                      "Cables desconectados o dañados, conectores flojos y puertos defectuosos.",
+                      "Interferencias electromagnéticas, exceso de distancia o mala calidad del medio.",
+                      "Fuentes de energía inestables o dispositivos sin alimentación adecuada."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "7.2.2 Indicadores LED en router/AP",
                     items: [
-                      "Identificar y aplicar los conceptos clave de problema de capa física.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "LED de energía: confirma encendido y estado básico de hardware.",
+                      "LED de enlace/actividad: indica sincronización y tráfico en interfaces.",
+                      "Patrones de parpadeo o color anómalo suelen apuntar a velocidad/dúplex o autenticación."
+                    ]
+                  },
+                  {
+                    title: "7.2.3 Problemas de cableado",
+                    items: [
+                      "Verificar tipo de cable, pinout y longitud según estándar (cobre/fibra).",
+                      "Revisar daños físicos, curvaturas excesivas y terminaciones defectuosas.",
+                      "Confirmar negociación de velocidad/dúplex y compatibilidad transceptor/medio."
+                    ]
+                  },
+                  {
+                    title: "Pruebas rápidas de campo",
+                    items: [
+                      "Probar con cable conocido en buen estado y puerto alterno.",
+                      "Validar `link up/down` en ambos extremos para descartar falso positivo local.",
+                      "Aislar por segmentos: host -> switch -> gateway antes de revisar enrutamiento."
+                    ]
+                  },
+                  {
+                    title: "Comandos y herramientas útiles",
+                    items: [
+                      "Switch/router: `show interfaces`, `show interfaces status`, contadores CRC/drops.",
+                      "Host: estado de NIC, renegociación de enlace y pruebas `ping` locales.",
+                      "Herramientas físicas: tester de cable, certificador, OTDR (en fibra) según escenario."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en problema de capa física dentro del contexto del curso."
+                      "Diagnosticar fallas de capa física con un procedimiento claro que minimice tiempo de indisponibilidad y cambios innecesarios."
                     ]
                   }
                 ]
