@@ -7016,7 +7016,7 @@
                 code: "3.1",
                 title: "Cómo enruta un host",
                 summary:
-                  "Desarrollo del tema 3.1: Cómo enruta un host. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "Un host decide el siguiente salto comparando la IP destino con su propia red local. Si el destino está fuera de su subred, envía el tráfico a la puerta de enlace predeterminada.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_3.1.png",
@@ -7025,26 +7025,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "3.1.1 Decisión de reenvío del host",
                     items: [
-                      "3.1.1 Decisión de reenvío de host",
-                      "3.1.2 Puerta de enlace predeterminada",
-                      "3.1.3 Un host enruta a la puerta de enlace predeterminada",
-                      "3.1.4 Visualización de tablas de enrutamiento de host"
+                      "El host aplica máscara o prefijo para determinar si la IP destino pertenece a su red local.",
+                      "Si el destino está en la misma red, resuelve la MAC del destino y envía directamente.",
+                      "Si el destino es remoto, encapsula hacia la MAC del gateway, no hacia la MAC final."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "3.1.2 Puerta de enlace predeterminada",
                     items: [
-                      "Identificar y aplicar los conceptos clave de cómo enruta un host.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "La puerta de enlace es la interfaz del router que conecta la LAN con otras redes.",
+                      "Sin gateway correcto, el host puede comunicarse localmente pero falla hacia redes remotas.",
+                      "En IPv6, la gateway suele aprenderse por RA; en IPv4 se configura manual o por DHCP."
+                    ]
+                  },
+                  {
+                    title: "3.1.3 Flujo local y remoto",
+                    items: [
+                      "Tráfico local: host -> switch -> host destino en la misma subred.",
+                      "Tráfico remoto: host -> switch -> router (gateway) -> red de destino.",
+                      "Aunque cambia el next-hop de capa 2, la IP destino de capa 3 se mantiene extremo a extremo."
+                    ]
+                  },
+                  {
+                    title: "3.1.4 Visualización de rutas en el host",
+                    items: [
+                      "La tabla de enrutamiento del host contiene ruta conectada, ruta local y ruta por defecto.",
+                      "La ruta por defecto (0.0.0.0/0 o ::/0) se usa cuando no existe coincidencia más específica.",
+                      "Comandos útiles: `ipconfig`, `route print`, `netstat -rn`, `ip route` según sistema operativo."
+                    ]
+                  },
+                  {
+                    title: "Diagnóstico rápido",
+                    items: [
+                      "Verificar IP, máscara/prefijo y gateway antes de revisar equipos de red.",
+                      "Probar secuencia: ping a sí mismo, a vecino local, a gateway y a destino remoto.",
+                      "Si falla solo lo remoto, el primer sospechoso es gateway/ruta por defecto."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en cómo enruta un host dentro del contexto del curso."
+                      "Explicar y verificar cómo un host decide el next-hop para destinos locales y remotos en IPv4/IPv6."
                     ]
                   }
                 ]
@@ -7053,7 +7076,7 @@
                 code: "3.2",
                 title: "Tablas de enrutamiento",
                 summary:
-                  "Desarrollo del tema 3.2: Tablas de enrutamiento. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "La tabla de enrutamiento del router define por dónde reenviar cada paquete. Interpretar rutas conectadas, estáticas y dinámicas permite resolver pérdidas de conectividad con precisión.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_3.2.png",
@@ -7062,28 +7085,57 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "3.2.1 Decisión de envío del router",
                     items: [
-                      "3.2.1 Decisión de envío de paquetes del enrutador",
-                      "3.2.2 Tabla de enrutamiento IP del enrutador",
-                      "3.2.3 Enrutamiento estático",
-                      "3.2.4 Enrutamiento dinámico",
-                      "3.2.5 Video - Tablas de enrutamiento de un enrutador IPv4",
-                      "3.2.6 Introducción a una tabla de enrutamiento IPv4"
+                      "El router busca coincidencia por prefijo más largo (longest prefix match).",
+                      "Si hay varias rutas equivalentes, puede aplicar balanceo según plataforma/configuración.",
+                      "Si no encuentra ruta válida y no existe ruta por defecto, descarta el paquete."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "3.2.2 Estructura de la tabla de enrutamiento IP",
                     items: [
-                      "Identificar y aplicar los conceptos clave de tablas de enrutamiento.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Cada entrada define prefijo destino, siguiente salto o interfaz de salida, y métrica.",
+                      "Las rutas conectadas aparecen automáticamente cuando una interfaz está up/up con IP válida.",
+                      "La distancia administrativa y la métrica ayudan a elegir la mejor ruta cuando hay varias opciones."
+                    ]
+                  },
+                  {
+                    title: "3.2.3 Enrutamiento estático",
+                    items: [
+                      "Se configura manualmente y ofrece control total del camino de tráfico.",
+                      "Es útil en topologías pequeñas, rutas de respaldo o segmentos con comportamiento predecible.",
+                      "Escala de forma limitada: requiere mantenimiento manual ante cambios de topología."
+                    ]
+                  },
+                  {
+                    title: "3.2.4 Enrutamiento dinámico",
+                    items: [
+                      "Protocolos como OSPF, EIGRP o RIP intercambian rutas entre routers automáticamente.",
+                      "Mejoran convergencia y adaptabilidad frente a fallas o cambios de red.",
+                      "Exigen diseño y control para evitar inestabilidad, rutas subóptimas o sobrecarga."
+                    ]
+                  },
+                  {
+                    title: "3.2.5 y 3.2.6 Lectura de tabla IPv4",
+                    items: [
+                      "Interpretar códigos de origen de ruta (conectada, estática, dinámica) es básico para troubleshooting.",
+                      "Verificar presencia de red destino, prefijo correcto y siguiente salto alcanzable.",
+                      "Comandos clave: `show ip route`, `show ip interface brief`, `traceroute`."
+                    ]
+                  },
+                  {
+                    title: "Ruta de resolución de fallas",
+                    items: [
+                      "Confirmar estado de interfaces antes de analizar protocolos de routing.",
+                      "Validar tabla del router origen y del router intermedio donde se interrumpe el tráfico.",
+                      "Corregir por orden: direccionamiento, interfaz, ruta, y luego políticas/filtros."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en tablas de enrutamiento dentro del contexto del curso."
+                      "Interpretar tablas de enrutamiento y justificar decisiones de reenvío para aislar y corregir fallas de conectividad."
                     ]
                   }
                 ]
