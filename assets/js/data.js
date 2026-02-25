@@ -7464,7 +7464,7 @@
                 code: "5.1",
                 title: "Operación de descubrimiento de vecinos",
                 summary:
-                  "Desarrollo del tema 5.1: Operación de descubrimiento de vecinos. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "Neighbor Discovery Protocol (NDP) permite que IPv6 descubra vecinos, resuelva direcciones de capa 2 y aprenda parámetros de red sin ARP. Su operación correcta es crítica para conectividad local y salida hacia otras redes.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_5.1.png",
@@ -7473,25 +7473,57 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "5.1.1 Detección de vecinos IPv6",
                     items: [
-                      "5.1.1 Video - Detección de vecinos IPv6",
-                      "5.1.2 Mensajes de descubrimiento de vecinos IPv6",
-                      "5.1.3 Descubrimiento de vecinos IPv6 - Resolución de direcciones"
+                      "Cuando una interfaz IPv6 se activa, inicia procesos de descubrimiento con mensajes ICMPv6.",
+                      "El host identifica routers locales, aprende prefijos y detecta vecinos en el mismo enlace.",
+                      "NDP opera sobre direcciones multicast y reduce tráfico innecesario frente a mecanismos de difusión masiva."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "5.1.2 Mensajes principales de NDP",
                     items: [
-                      "Identificar y aplicar los conceptos clave de operación de descubrimiento de vecinos.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "NS/NA (Neighbor Solicitation/Advertisement): resuelven y confirman direcciones de vecinos.",
+                      "RS/RA (Router Solicitation/Advertisement): permiten descubrir puerta de enlace y parámetros IPv6.",
+                      "Redirect: un router puede sugerir un next-hop más eficiente para un destino."
+                    ]
+                  },
+                  {
+                    title: "5.1.3 Resolución de direcciones en IPv6",
+                    items: [
+                      "Para enviar en la misma red, el host usa NS hacia la multicast de nodo solicitado del destino.",
+                      "El vecino responde con NA y su dirección MAC, permitiendo encapsulación de capa 2.",
+                      "La información se guarda en caché de vecinos; si expira o cambia, el proceso se repite."
+                    ]
+                  },
+                  {
+                    title: "NDP y detección de direcciones duplicadas (DAD)",
+                    items: [
+                      "Antes de usar una IPv6, el host verifica que no exista otro nodo con la misma dirección.",
+                      "Si hay conflicto, la dirección no debe activarse para evitar colisiones lógicas.",
+                      "DAD evita errores silenciosos que degradan la red de forma intermitente."
+                    ]
+                  },
+                  {
+                    title: "Verificación y troubleshooting",
+                    items: [
+                      "Comprobar tabla de vecinos en host/router para validar aprendizaje de direcciones.",
+                      "Verificar recepción de RA y estado de gateway cuando falle conectividad remota.",
+                      "Si falla conectividad local, revisar ICMPv6 filtrado, VLAN, y estado de interfaz en ambos extremos."
+                    ]
+                  },
+                  {
+                    title: "Comandos sugeridos",
+                    items: [
+                      "Windows: `netsh interface ipv6 show neighbors`, `ipconfig /all`, `ping -6`.",
+                      "Cisco IOS: `show ipv6 neighbors`, `show ipv6 interface`, `show ipv6 route`.",
+                      "Pruebas de ruta: `tracert -6` o `traceroute -6` para ubicar el punto de falla."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en operación de descubrimiento de vecinos dentro del contexto del curso."
+                      "Explicar y validar la operación de NDP para resolver fallas de descubrimiento, vecindad y conectividad IPv6 de manera estructurada."
                     ]
                   }
                 ]
