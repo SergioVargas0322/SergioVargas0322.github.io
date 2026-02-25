@@ -7538,7 +7538,7 @@
                 code: "6.1",
                 title: "Conmutadores Cisco",
                 summary:
-                  "Desarrollo del tema 6.1: Conmutadores Cisco. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "Los conmutadores Cisco son el núcleo de la conectividad LAN. Su función principal es interconectar dispositivos finales de forma eficiente mediante conmutación de tramas y aprendizaje de direcciones MAC.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_6.1.png",
@@ -7547,27 +7547,49 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "6.1.1 Conectar más dispositivos",
                     items: [
-                      "6.1.1 Conectar más dispositivos",
-                      "6.1.2 Conmutadores LAN de Cisco",
-                      "6.1.3 Vídeo - Componentes de un Conmutador LAN - Parte 1",
-                      "6.1.4 Vídeo - Componentes de un Conmutador LAN - Parte 2",
-                      "6.1.5 Componentes del Conmutador LAN"
+                      "Un switch permite ampliar la LAN agregando puertos para hosts, impresoras, teléfonos IP y puntos de acceso.",
+                      "Cada puerto del switch crea un dominio de colisión independiente, mejorando rendimiento frente a medios compartidos.",
+                      "La topología estrella con switches simplifica crecimiento, soporte y segmentación por VLAN."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "6.1.2 Conmutadores LAN de Cisco",
                     items: [
-                      "Identificar y aplicar los conceptos clave de conmutadores cisco.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Los switches de acceso operan principalmente en capa 2 y conmutan usando tabla MAC.",
+                      "Modelos multicapa integran funciones de capa 3 para inter-VLAN y políticas de enrutamiento local.",
+                      "Seleccionar plataforma depende de densidad de puertos, PoE, uplinks y capacidad de switching."
+                    ]
+                  },
+                  {
+                    title: "6.1.3 y 6.1.4 Componentes del switch LAN",
+                    items: [
+                      "Hardware clave: CPU, RAM, flash, ASIC, backplane/switch fabric y fuentes de alimentación.",
+                      "Interfaces físicas: puertos de acceso, troncales, puertos de administración y consola.",
+                      "El plano de control gestiona protocolos; el plano de datos reenvía tramas a alta velocidad."
+                    ]
+                  },
+                  {
+                    title: "6.1.5 Operación del conmutador LAN",
+                    items: [
+                      "Aprende MAC de origen por puerto y usa esa información para reenviar de manera selectiva.",
+                      "Si desconoce la MAC destino, inunda la trama dentro de la VLAN correspondiente.",
+                      "La tabla MAC envejece entradas inactivas para adaptarse a cambios de topología."
+                    ]
+                  },
+                  {
+                    title: "Comandos de verificación",
+                    items: [
+                      "`show interfaces status` para validar estado y velocidad de puertos.",
+                      "`show mac address-table` para verificar aprendizaje de direcciones.",
+                      "`show vlan brief` para confirmar segmentación lógica en el switch."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en conmutadores cisco dentro del contexto del curso."
+                      "Explicar cómo opera un conmutador Cisco y validar su funcionamiento básico en una LAN real o de laboratorio."
                     ]
                   }
                 ]
@@ -7576,7 +7598,7 @@
                 code: "6.2",
                 title: "Velocidades del conmutador y métodos de reenvío",
                 summary:
-                  "Desarrollo del tema 6.2: Velocidades del conmutador y métodos de reenvío. Incluye fundamentos, verificación y aplicación práctica en redes Cisco.",
+                  "El rendimiento de un switch depende del método de reenvío, la capacidad de búfer y la negociación de velocidad/dúplex. Estos factores impactan directamente latencia, pérdida y estabilidad de la red.",
                 images: [
                   {
                     src: "./assets/images/network-addressing-troubleshooting-basics/C7_6.2.png",
@@ -7585,27 +7607,57 @@
                 ],
                 sections: [
                   {
-                    title: "Subtemas del tema",
+                    title: "6.2.1 Métodos de reenvío en switches Cisco",
                     items: [
-                      "6.2.1 Métodos de reenvío de tramas en switches Cisco",
-                      "6.2.2 Conmutación a través de corte",
-                      "6.2.3 Almacenamiento en búfer de memoria en los conmutadores",
-                      "6.2.4 Configuración de dúplex y velocidad",
-                      "6.2.5 Auto-MDIX"
+                      "Store-and-forward: verifica FCS antes de reenviar; mayor confiabilidad con algo más de latencia.",
+                      "Cut-through: reenvía apenas lee MAC destino; menor latencia pero puede propagar tramas con errores.",
+                      "Fragment-free (según plataforma) intenta balancear latencia y control de errores."
                     ]
                   },
                   {
-                    title: "Enfoque práctico",
+                    title: "6.2.2 Conmutación cut-through",
                     items: [
-                      "Identificar y aplicar los conceptos clave de velocidades del conmutador y métodos de reenvío.",
-                      "Validar resultados con comandos o pruebas de conectividad según el escenario.",
-                      "Documentar hallazgos para facilitar soporte y solución de problemas."
+                      "Es útil en escenarios sensibles a latencia, como ciertos tráficos de tiempo real.",
+                      "Debe evaluarse junto con calidad de medio para no incrementar retransmisiones por tramas defectuosas.",
+                      "No todos los modelos o condiciones operativas aplican el mismo comportamiento de forma idéntica."
+                    ]
+                  },
+                  {
+                    title: "6.2.3 Búfer de memoria en conmutadores",
+                    items: [
+                      "Los búferes absorben picos de tráfico cuando la salida está congestionada o a menor velocidad.",
+                      "Arquitecturas comunes: memoria por puerto o memoria compartida, según diseño del equipo.",
+                      "Búfer insuficiente puede causar drops y degradar aplicaciones sensibles a pérdida/jitter."
+                    ]
+                  },
+                  {
+                    title: "6.2.4 Velocidad y dúplex",
+                    items: [
+                      "La negociación automática define velocidad y dúplex entre interfaces compatibles.",
+                      "Un desajuste de dúplex (full/half) provoca rendimiento bajo, colisiones tardías y errores.",
+                      "Solo fija manualmente si existe requerimiento específico y controlado en ambos extremos."
+                    ]
+                  },
+                  {
+                    title: "6.2.5 Auto-MDIX",
+                    items: [
+                      "Auto-MDIX detecta y corrige automáticamente pares TX/RX, reduciendo dependencia del tipo de cable.",
+                      "Simplifica implementación al minimizar errores entre cable directo y cruzado.",
+                      "Si no está disponible o falla negociación, revisar pinout físico y configuración de puertos."
+                    ]
+                  },
+                  {
+                    title: "Diagnóstico de rendimiento",
+                    items: [
+                      "Revisar contadores de interfaz para detectar CRC, colisiones o drops.",
+                      "Verificar coincidencia de velocidad/dúplex entre ambos extremos del enlace.",
+                      "Correlacionar síntomas de aplicación con estado físico y estadísticas de switching."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Consolidar competencias operativas en velocidades del conmutador y métodos de reenvío dentro del contexto del curso."
+                      "Evaluar el comportamiento de reenvío del switch y ajustar parámetros de enlace para mejorar estabilidad y desempeño."
                     ]
                   }
                 ]
