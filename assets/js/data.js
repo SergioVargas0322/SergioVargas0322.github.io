@@ -9178,37 +9178,63 @@
               {
                 "code": "3.6",
                 "title": "Acceso inal\u00e1mbrico seguro",
-                "summary": "Las redes inal\u00e1mbricas est\u00e1n creciendo r\u00e1pidamente. Es importante comprender las vulnerabilidades, las amenazas y los exploits de las redes inal\u00e1mbricas.",
+                "summary": "Una WLAN segura exige controles t\u00e9cnicos y operativos frente a intercepci\u00f3n, intrusos, DoS y puntos de acceso no autorizados. La protecci\u00f3n real combina autenticaci\u00f3n fuerte, cifrado robusto y monitoreo continuo del entorno inal\u00e1mbrico.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_3_6.png",
-                    "alt": "Referencia visual del tema 3.6: Acceso inal\u00e1mbrico seguro."
+                    "alt": "Controles de seguridad para acceso inal\u00e1mbrico: cifrado, autenticaci\u00f3n y detecci\u00f3n de amenazas WLAN."
                   }
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Amenazas clave en WLAN",
                     "items": [
-                      "V\u00eddeo - Amenazas WLAN",
-                      "Descripci\u00f3n general de la seguridad inal\u00e1mbrica",
-                      "Ataques DoS",
-                      "Puntos de acceso no autorizados",
-                      "Ataque de Hombre en el medio",
-                      "V\u00eddeo: WLAN seguras"
+                      "Intercepci\u00f3n de datos cuando el tr\u00e1fico no est\u00e1 cifrado correctamente.",
+                      "Intrusos inal\u00e1mbricos que intentan asociarse con credenciales robadas o configuraciones d\u00e9biles.",
+                      "Ataques DoS por saturaci\u00f3n o interferencia intencional de radiofrecuencia.",
+                      "Puntos de acceso rogue o maliciosos que exponen la red interna sin autorizaci\u00f3n."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "DoS, interferencia y continuidad de servicio",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "El DoS tambi\u00e9n puede originarse por errores de configuraci\u00f3n, no solo por atacantes.",
+                      "La banda de 2.4 GHz suele tener m\u00e1s interferencia (microondas, monitores, tel\u00e9fonos inal\u00e1mbricos).",
+                      "En entornos ruidosos, priorizar 5 GHz y planificaci\u00f3n de canales para mejorar estabilidad.",
+                      "Aplicar respaldos de configuraci\u00f3n, control de cambios fuera de horario y validaci\u00f3n posterior."
+                    ]
+                  },
+                  {
+                    "title": "Rogue AP y ataques MITM (Evil Twin)",
+                    "items": [
+                      "Un AP no autorizado puede abrir una puerta de entrada a recursos corporativos.",
+                      "Evil Twin: AP falso con mismo SSID para atraer clientes y capturar tr\u00e1fico/credenciales.",
+                      "Defensa: inventario de dispositivos leg\u00edtimos, autenticaci\u00f3n fuerte y monitoreo de comportamiento an\u00f3malo.",
+                      "Usar WLC y herramientas de an\u00e1lisis del espectro para detecci\u00f3n temprana de AP sospechosos."
+                    ]
+                  },
+                  {
+                    "title": "Autenticaci\u00f3n y cifrado recomendados",
+                    "items": [
+                      "Ocultar SSID y filtrar MAC puede disuadir usuarios b\u00e1sicos, pero no detiene atacantes con experiencia.",
+                      "Evitar WEP y minimizar uso de WPA legado; preferir WPA2-AES o WPA3 seg\u00fan compatibilidad.",
+                      "En hogar/pyme, WPA2-Personal o WPA3-Personal con clave robusta y rotaci\u00f3n peri\u00f3dica.",
+                      "En empresa, WPA2/WPA3-Enterprise con RADIUS y credenciales por usuario para mayor trazabilidad."
+                    ]
+                  },
+                  {
+                    "title": "Medidas de operaci\u00f3n segura",
+                    "items": [
+                      "Deshabilitar administraci\u00f3n insegura del AP y cambiar credenciales por defecto.",
+                      "Segmentar clientes WLAN (usuarios, invitados, IoT) y aplicar pol\u00edticas por rol.",
+                      "Correlacionar eventos WLAN con SIEM/NMS para detecci\u00f3n y respuesta m\u00e1s r\u00e1pida.",
+                      "Auditar peri\u00f3dicamente cobertura, potencia y seguridad para evitar zonas ciegas o sobreexposici\u00f3n."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de acceso inal\u00e1mbrico seguro para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Implementar una WLAN corporativa resistente a intrusiones y fugas de informaci\u00f3n, con acceso controlado, cifrado fuerte y monitoreo continuo de amenazas inal\u00e1mbricas."
                     ]
                   }
                 ]
