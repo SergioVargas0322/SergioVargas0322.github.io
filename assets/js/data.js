@@ -9266,20 +9266,57 @@
               {
                 "code": "1.1",
                 "title": "El mundo de la ciberseguridad",
-                "summary": "Panorama general de la ciberseguridad y su impacto en personas, organizaciones y gobiernos.",
+                "summary": "Fundamentos de ciberseguridad, valor de la identidad digital y riesgos reales sobre datos personales en entornos conectados.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Base del tema",
+                    "title": "Ciberseguridad en contexto",
                     "items": [
-                      "La ciberseguridad protege sistemas, datos e identidad frente a uso no autorizado.",
-                      "El riesgo digital afecta tanto la vida personal como la operaci\u00f3n de empresas e instituciones p\u00fablicas."
+                      "La ciberseguridad es un esfuerzo continuo para proteger personas, organizaciones y gobiernos frente a uso no autorizado, da\u00f1o o robo de informaci\u00f3n.",
+                      "A nivel personal, protege identidad, cuentas, dispositivos y finanzas digitales.",
+                      "A nivel organizacional, protege reputaci\u00f3n, continuidad operativa, datos de clientes y cumplimiento legal.",
+                      "A nivel gubernamental, impacta seguridad nacional, estabilidad econ\u00f3mica y bienestar ciudadano."
+                    ]
+                  },
+                  {
+                    "title": "Identidad y datos personales",
+                    "items": [
+                      "La identidad fuera de l\u00ednea incluye datos como nombre completo, direcci\u00f3n, edad y documentos; tambi\u00e9n puede ser objetivo de fraude.",
+                      "La identidad en l\u00ednea incluye usuario, alias, perfiles, historial de actividad y huella digital en servicios web.",
+                      "Si una persona usa internet, ya tiene identidad digital, incluso sin redes sociales.",
+                      "Los datos sensibles abarcan registros m\u00e9dicos, educativos, laborales y financieros, todos valiosos para suplantaci\u00f3n o fraude."
+                    ]
+                  },
+                  {
+                    "title": "D\u00f3nde terminan sus datos",
+                    "items": [
+                      "Al compartir contenido (por ejemplo fotos), los datos pueden replicarse en m\u00faltiples dispositivos y servidores fuera de su control.",
+                      "Servicios m\u00e9dicos, aseguradoras, comercios y aplicaciones pueden procesar o conservar parte de su informaci\u00f3n.",
+                      "Dispositivos inteligentes y wearables generan telemetr\u00eda de salud, ubicaci\u00f3n o comportamiento que tambi\u00e9n requiere protecci\u00f3n."
+                    ]
+                  },
+                  {
+                    "title": "Qui\u00e9n busca sus datos y por qu\u00e9",
+                    "items": [
+                      "Ciberdelincuentes: buscan dinero, credenciales y robo de identidad para fraude de corto y largo plazo.",
+                      "Atacantes pueden explotar confianza personal (mensajes urgentes de familiares, ingenier\u00eda social, suplantaci\u00f3n).",
+                      "ISP, anunciantes, motores de b\u00fasqueda, redes sociales y sitios web tambi\u00e9n recopilan datos para perfiles y segmentaci\u00f3n.",
+                      "Cookies y rastreadores pueden construir un historial detallado de navegaci\u00f3n vinculado a su identidad digital."
+                    ]
+                  },
+                  {
+                    "title": "Pr\u00e1cticas de protecci\u00f3n inmediata",
+                    "items": [
+                      "Compartir solo lo necesario y revisar permisos de aplicaciones y servicios en la nube.",
+                      "Usar contrase\u00f1as robustas y \u00fanicas, con autenticaci\u00f3n multifactor en cuentas cr\u00edticas.",
+                      "Evitar publicar datos sensibles (ubicaci\u00f3n en tiempo real, documentos, identificadores personales).",
+                      "Comprobar solicitudes de dinero o datos por un canal alterno antes de actuar."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Reconocer por qu\u00e9 la ciberseguridad es una responsabilidad compartida en cualquier entorno conectado."
+                      "Comprender que la ciberseguridad comienza con la gesti\u00f3n responsable de la identidad y los datos personales, y que protegerlos exige decisiones diarias de uso digital."
                     ]
                   }
                 ]

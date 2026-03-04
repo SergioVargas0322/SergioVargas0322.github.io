@@ -321,7 +321,7 @@
       activeTopic.classList.remove("topic-target");
     }
 
-    // Reinicia la animacion aunque se seleccione el mismo tema consecutivamente.
+    // Reinicia la animación aunque se seleccione el mismo tema consecutivamente.
     topicNode.classList.remove("topic-target");
     void topicNode.offsetWidth;
     topicNode.classList.add("topic-target");
