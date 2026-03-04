@@ -9271,6 +9271,10 @@
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_sio_operaciones.png",
                     "alt": "Diagrama de operaciones de seguridad con amenazas, internet y usuarios."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_mccumber_principios.png",
+                    "alt": "Cubo de McCumber con principios base para proteger información."
                   }
                 ],
                 "sections": [
@@ -9333,7 +9337,7 @@
                 "images": [
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_mccumber_principios.png",
-                    "alt": "Cubo de McCumber con principios fundamentales para proteger informaci?n."
+                    "alt": "Cubo de McCumber con principios fundamentales para proteger información."
                   },
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_mccumber_estados.png",
@@ -9413,6 +9417,10 @@
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_hacker_perfil.png",
                     "alt": "Icono de atacante para representar perfiles de ciberatacantes."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_spoofing.png",
+                    "alt": "Ejemplo de suplantación de identidad en red como táctica de ataque."
                   }
                 ],
                 "sections": [
@@ -9467,7 +9475,11 @@
                 "images": [
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_certs.jpeg",
-                    "alt": "Logotipos de equipos internacionales de respuesta a incidentes inform?ticos."
+                    "alt": "Logotipos de equipos internacionales de respuesta a incidentes informáticos."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_sio_operaciones.png",
+                    "alt": "Modelo operativo de defensa y coordinación ante incidentes de gran escala."
                   }
                 ],
                 "sections": [
