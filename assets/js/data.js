@@ -8273,7 +8273,7 @@
               {
                 "code": "1.3",
                 "title": "Mesas de Ayuda",
-                "summary": "Las organizaciones operan con pol\u00edticas corporativas, de empleados y de seguridad bien definidas.",
+                "summary": "La mesa de ayuda es el punto central de soporte y debe operar con pol\u00edticas claras, registro disciplinado de tiquetes y comunicaci\u00f3n efectiva con usuarios para resolver o escalar incidentes con trazabilidad.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_1_3.png",
@@ -8282,28 +8282,45 @@
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Pol\u00edtica de seguridad y marco operativo",
                     "items": [
-                      "La Pol\u00edtica de Seguridad",
-                      "Mesas de Ayuda",
-                      "Sistemas de emisi\u00f3n de tiquetes",
-                      "Preguntar a los usuarios finales",
-                      "Escucha activa",
-                      "Demostraci\u00f3n en video - Escuchar activamente y resumir"
+                      "Definir identificaci\u00f3n y autenticaci\u00f3n de usuarios, complejidad de contrase\u00f1as y requisitos de acceso remoto.",
+                      "Aplicar SOP (procedimientos operativos est\u00e1ndar) para tareas repetibles y seguras.",
+                      "Usar directrices complementarias cuando no exista un SOP formal para un caso espec\u00edfico.",
+                      "Actualizar pol\u00edticas de forma continua seg\u00fan amenazas, vulnerabilidades y necesidades del negocio."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "Flujo de atenci\u00f3n y gesti\u00f3n de tiquetes",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "Recibir solicitudes por portal, chat, tel\u00e9fono o correo y validar si procede abrir incidente.",
+                      "Crear, clasificar y priorizar el tiquete con descripci\u00f3n clara del impacto y s\u00edntomas.",
+                      "Resolver y cerrar con evidencia, o escalar cuando el caso exceda alcance o credenciales.",
+                      "Documentar la soluci\u00f3n para alimentar la base de conocimiento y acelerar casos futuros."
+                    ]
+                  },
+                  {
+                    "title": "Entrevista t\u00e9cnica y escucha activa",
+                    "items": [
+                      "Guiar la conversaci\u00f3n con empat\u00eda: identificar qui\u00e9n, qu\u00e9 y cu\u00e1ndo del problema.",
+                      "Combinar preguntas abiertas (contexto) y cerradas (hechos verificables).",
+                      "Parafrasear y confirmar el incidente antes de ejecutar acciones t\u00e9cnicas.",
+                      "Evitar interrupciones y jerga innecesaria para reducir fricci\u00f3n con el usuario."
+                    ]
+                  },
+                  {
+                    "title": "Datos t\u00e9cnicos m\u00ednimos para diagn\u00f3stico",
+                    "items": [
+                      "Host: fabricante, modelo, serie, versi\u00f3n de SO, medio de red y pruebas ping/tracert.",
+                      "Windows: visor de eventos, administrador de dispositivos, tareas y herramientas de diagn\u00f3stico.",
+                      "Infraestructura Cisco: comandos IOS, registros y capturas de paquetes para evidenciar s\u00edntomas.",
+                      "Redactar notas claras, concisas y reutilizables por otros t\u00e9cnicos o niveles de escalamiento."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de mesas de ayuda para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Gestionar incidentes de mesa de ayuda con calidad de servicio y rigor t\u00e9cnico, desde la apertura del tiquete hasta su resoluci\u00f3n o escalamiento documentado."
                     ]
                   }
                 ]
