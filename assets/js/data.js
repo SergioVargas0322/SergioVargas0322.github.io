@@ -9543,6 +9543,14 @@
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_nmap_scan.png",
                     "alt": "Captura de escaneo Nmap para analizar puertos y servicios."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_ids.png",
+                    "alt": "Ubicación de IDS para detectar eventos sospechosos durante el análisis de un ataque."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_ips.png",
+                    "alt": "Ubicación de IPS para contener tráfico malicioso durante la respuesta inicial."
                   }
                 ],
                 "sections": [
@@ -9611,7 +9619,15 @@
                 "images": [
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_spoofing.png",
-                    "alt": "Diagrama de suplantaci?n de identidad en red (spoofing)."
+                    "alt": "Diagrama de suplantación de identidad en red (spoofing)."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_hacker_perfil.png",
+                    "alt": "Perfil de atacante como referencia de actores de infiltración."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_xss.png",
+                    "alt": "Vector XSS como ejemplo de infiltración en aplicaciones web."
                   }
                 ],
                 "sections": [
@@ -9698,7 +9714,15 @@
                 "images": [
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_xss.png",
-                    "alt": "Esquema de ataque XSS entre atacante, v?ctima y sitio comprometido."
+                    "alt": "Esquema de ataque XSS entre atacante, víctima y sitio comprometido."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_nmap_scan.png",
+                    "alt": "Reconocimiento técnico de puertos y servicios para identificar vectores explotables."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_mccumber_medidas.png",
+                    "alt": "Dimensión de medidas de seguridad para mitigar explotación de vulnerabilidades."
                   }
                 ],
                 "sections": [
@@ -9762,6 +9786,14 @@
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_tendencias_riesgo.png",
                     "alt": "Indicadores de tendencias de riesgo en ciberseguridad."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_sio_operaciones.png",
+                    "alt": "Vista operacional del ecosistema de amenazas y defensa en ciberseguridad."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_certs.jpeg",
+                    "alt": "Ecosistema CERT/FIRST para coordinación global ante incidentes de seguridad."
                   }
                 ],
                 "sections": [
@@ -9827,7 +9859,7 @@
                 "images": [
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_password_reglas.png",
-                    "alt": "Gu?a visual de buenas pr?cticas para crear contrase?as fuertes."
+                    "alt": "Guía visual de buenas prácticas para crear contraseñas fuertes."
                   }
                 ],
                 "sections": [
@@ -9888,7 +9920,7 @@
                 "images": [
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_mccumber_estados.png",
-                    "alt": "Protecci?n de datos seg?n su estado: en reposo, en tr?nsito y en uso."
+                    "alt": "Protección de datos según su estado: en reposo, en tránsito y en uso."
                   }
                 ],
                 "sections": [
