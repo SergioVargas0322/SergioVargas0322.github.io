@@ -9936,14 +9936,71 @@
               {
                 "code": "4.1",
                 "title": "Dispositivos y tecnolog\u00edas de ciberseguridad",
-                "summary": "Funci\u00f3n de firewalls, IDS/IPS, SIEM y otras tecnolog\u00edas de defensa empresarial.",
+                "summary": "Arquitectura de defensa organizacional con dispositivos de seguridad, inspecci\u00f3n de tr\u00e1fico, detecci\u00f3n en tiempo real y control de malware.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Puntos clave",
+                    "title": "Dispositivos de seguridad esenciales",
                     "items": [
-                      "La defensa organizacional requiere arquitectura por capas y correlaci\u00f3n de eventos.",
-                      "Las herramientas son efectivas cuando se acompa\u00f1an de procesos y personal capacitado."
+                      "Routers: interconectan segmentos y aplican filtrado b\u00e1sico de tr\u00e1fico.",
+                      "Firewalls: inspeccionan y aplican pol\u00edticas para permitir o bloquear comunicaciones.",
+                      "IPS: detecta y bloquea tr\u00e1fico malicioso seg\u00fan firmas y reglas.",
+                      "VPN: crea t\u00faneles cifrados para acceso remoto y conexi\u00f3n segura entre sedes.",
+                      "Antimalware/antivirus: combina firmas y an\u00e1lisis de comportamiento para detener c\u00f3digo malicioso.",
+                      "Otros controles: seguridad web/correo, control de acceso, descifrado y plataformas de gesti\u00f3n."
+                    ]
+                  },
+                  {
+                    "title": "Tipos de firewall y su alcance",
+                    "items": [
+                      "Firewall de red: protege segmentos completos; firewall de host: protege un equipo espec\u00edfico.",
+                      "Capa de red: filtra por IP origen/destino.",
+                      "Capa de transporte: filtra por puertos y estado de sesi\u00f3n.",
+                      "Capa de aplicaci\u00f3n: filtra por servicio o aplicaci\u00f3n concreta.",
+                      "Context-aware: decide seg\u00fan usuario, dispositivo, rol, aplicaci\u00f3n y perfil de amenaza.",
+                      "Proxy y proxy inverso: controlan acceso web y protegen/publican servicios internos."
+                    ]
+                  },
+                  {
+                    "title": "An\u00e1lisis de puertos como validaci\u00f3n",
+                    "items": [
+                      "El escaneo de puertos identifica servicios expuestos y ayuda a evaluar superficie de ataque.",
+                      "Estados comunes: abierto, cerrado o filtrado; cada estado orienta decisiones de hardening.",
+                      "Escaneos internos y externos permiten verificar si reglas de firewall y NAT funcionan como se espera.",
+                      "Puertos innecesarios abiertos deben cerrarse o restringirse con pol\u00edticas de acceso."
+                    ]
+                  },
+                  {
+                    "title": "IDS/IPS y detecci\u00f3n en tiempo real",
+                    "items": [
+                      "IDS detecta y alerta; IPS detecta y puede bloquear en l\u00ednea.",
+                      "El an\u00e1lisis por firmas y comportamiento permite detectar escaneos, sondas y ataques conocidos.",
+                      "La detecci\u00f3n temprana es cr\u00edtica frente a ataques de d\u00eda cero y campa\u00f1as DDoS.",
+                      "Defensa efectiva requiere correlaci\u00f3n de eventos entre firewall, IDS/IPS y telemetr\u00eda de endpoints."
+                    ]
+                  },
+                  {
+                    "title": "Protecci\u00f3n avanzada de malware",
+                    "items": [
+                      "Soluciones empresariales de an\u00e1lisis avanzado correlacionan archivos y comportamientos sospechosos a escala.",
+                      "El trabajo coordinado entre SOC, respuesta a incidentes e inteligencia de amenazas reduce tiempo de contenci\u00f3n.",
+                      "La automatizaci\u00f3n acelera bloqueo, investigaci\u00f3n forense y remediaci\u00f3n de compromisos."
+                    ]
+                  },
+                  {
+                    "title": "Buenas pr\u00e1cticas de seguridad organizacional",
+                    "items": [
+                      "Evaluaci\u00f3n de riesgos y pol\u00edtica de seguridad con roles y responsabilidades claras.",
+                      "Controles f\u00edsicos y de RR. HH. para proteger infraestructura y reducir amenazas internas.",
+                      "Parches y actualizaciones continuas en servidores, clientes y dispositivos de red.",
+                      "Copias de seguridad probadas, control de acceso fuerte y plan de respuesta a incidentes ensayado.",
+                      "Capacitaci\u00f3n de usuarios y cifrado de datos sensibles en reposo y en tr\u00e1nsito."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Dise\u00f1ar una defensa en profundidad para la organizaci\u00f3n, combinando controles de red, detecci\u00f3n activa, protecci\u00f3n de endpoints y gobernanza operativa."
                     ]
                   }
                 ]
