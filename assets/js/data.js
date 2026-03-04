@@ -8328,7 +8328,7 @@
               {
                 "code": "1.4",
                 "title": "Solucionar problemas de conectividad de dispositivos finales",
-                "summary": "Si us\u00f3 alguna de las herramientas para verificar la conectividad y descubri\u00f3 que alguna parte de su red no funciona como deber\u00eda, ahora es el momento de usar algunos comandos para solucionar los problemas de sus dispositivos.",
+                "summary": "El diagn\u00f3stico de conectividad en equipos finales requiere validar direccionamiento IP, comprobar alcance de Capa 3 y usar herramientas espec\u00edficas de Windows, Linux, macOS, iOS y Android para aislar la causa del fallo.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_1_4.jpeg",
@@ -8337,28 +8337,45 @@
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Paso 1: validar direccionamiento del host",
                     "items": [
-                      "Configuraci\u00f3n de red de Windows",
-                      "Verificar la conectividad en Windows",
-                      "Configuraci\u00f3n de red de Linux",
-                      "Verificar la conectividad en Linux",
-                      "Configuraci\u00f3n de red de MacOS",
-                      "Verificar la conectividad en MacOS"
+                      "Confirmar IP, m\u00e1scara, puerta de enlace y DNS antes de asumir una falla de red troncal.",
+                      "En Windows usar `ipconfig` para validaci\u00f3n r\u00e1pida y `ipconfig /all` para detalles (DHCP, MAC, arrendamiento, DNS).",
+                      "En Linux usar `ifconfig` o `ip address` para verificar interfaces activas, direcciones y estado de enlace.",
+                      "En macOS revisar GUI de red y complementar con `ifconfig`, `networksetup -listallnetworkservices` y `networksetup -getinfo <servicio>`."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "Paso 2: comprobar alcance y ruta de Capa 3",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "Ejecutar `ping` hacia puerta de enlace, recursos locales y destinos remotos para medir p\u00e9rdida y latencia.",
+                      "Si `ping` falla parcialmente, usar `tracert` (Windows) o `traceroute` (Linux/macOS) para ubicar el salto problem\u00e1tico.",
+                      "Considerar pol\u00edticas de firewall: algunos equipos bloquean ICMP y pueden generar falsos negativos de conectividad.",
+                      "Cuando se requiera validar puertos concretos, usar `nc`/`ncat` para comprobar apertura de servicios (por ejemplo, TCP 443)."
+                    ]
+                  },
+                  {
+                    "title": "Verificaci\u00f3n en dispositivos m\u00f3viles",
+                    "items": [
+                      "iOS: revisar datos IPv4/IPv6 y router en `Ajustes > Wi-Fi > (i)` sobre el SSID activo.",
+                      "Android: comprobar Wi-Fi o datos m\u00f3viles en `Configuraci\u00f3n > Conexiones/Red e Internet` y validar autenticaci\u00f3n.",
+                      "Si hay Wi-Fi sin internet, diferenciar entre enlace local funcional y falla de salida por puerta de enlace/ISP.",
+                      "En Android se pueden usar herramientas de terceros para pruebas de `ping`, `trace` y verificaci\u00f3n de puertos."
+                    ]
+                  },
+                  {
+                    "title": "Secuencia de diagn\u00f3stico recomendada",
+                    "items": [
+                      "1) Verificar capa f\u00edsica/enlace (interfaz activa, se\u00f1al y autenticaci\u00f3n).",
+                      "2) Validar direccionamiento (IP, m\u00e1scara, gateway, DNS).",
+                      "3) Probar conectividad por IP (`ping`) y luego por nombre (DNS).",
+                      "4) Trazar ruta y registrar evidencia para escalar cuando corresponda."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de solucionar problemas de conectividad de dispositivos finales para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Aplicar un procedimiento multiplataforma para diagnosticar conectividad de dispositivos finales, identificando r\u00e1pidamente si la falla est\u00e1 en configuraci\u00f3n local, servicios de red o salida a Internet."
                     ]
                   }
                 ]
