@@ -9498,14 +9498,63 @@
               {
                 "code": "2.1",
                 "title": "Analizando un ciberataque",
-                "summary": "Ciclo b\u00e1sico de un ataque y comportamiento de malware en sistemas comprometidos.",
+                "summary": "Tipos de malware, signos de compromiso y acciones iniciales para analizar y contener un ciberataque.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Puntos clave",
+                    "title": "Qu\u00e9 es malware y por qu\u00e9 importa",
                     "items": [
-                      "Un ataque combina reconocimiento, infiltraci\u00f3n, ejecuci\u00f3n y persistencia.",
-                      "El an\u00e1lisis temprano reduce tiempo de exposici\u00f3n y da\u00f1o operativo."
+                      "Malware es cualquier c\u00f3digo malicioso que roba datos, evade controles de acceso o compromete sistemas.",
+                      "Entender c\u00f3mo se propaga y qu\u00e9 efectos provoca permite contener incidentes con mayor rapidez.",
+                      "Un an\u00e1lisis temprano reduce tiempo de exposici\u00f3n, impacto operativo y costo de recuperaci\u00f3n."
+                    ]
+                  },
+                  {
+                    "title": "Tipos de malware m\u00e1s comunes",
+                    "items": [
+                      "Spyware: esp\u00eda actividad del usuario y puede capturar teclas, credenciales y datos sensibles.",
+                      "Adware: inunda con publicidad no deseada y con frecuencia viene acompa\u00f1ado de rastreo.",
+                      "Puerta trasera (backdoor): omite autenticaci\u00f3n para permitir acceso remoto no autorizado.",
+                      "Ransomware: cifra datos o bloquea el sistema para exigir un pago.",
+                      "Scareware: usa mensajes de miedo para inducir instalaci\u00f3n de software malicioso.",
+                      "Rootkit: altera componentes del sistema para ocultarse y escalar privilegios.",
+                      "Virus: se adjunta a archivos ejecutables y requiere acci\u00f3n del usuario para activarse.",
+                      "Troyano: aparenta ser leg\u00edtimo, pero ejecuta acciones maliciosas.",
+                      "Gusano: se autorreplica y se propaga por red sin depender de un archivo anfitri\u00f3n."
+                    ]
+                  },
+                  {
+                    "title": "S\u00edntomas de infecci\u00f3n",
+                    "items": [
+                      "Alto uso de CPU, lentitud extrema, bloqueos frecuentes o reinicios inesperados.",
+                      "Navegaci\u00f3n web anormalmente lenta, redirecciones y problemas de conectividad.",
+                      "Aparici\u00f3n de archivos/programas desconocidos o cambios no autorizados en configuraciones.",
+                      "Procesos o servicios extra\u00f1os en segundo plano.",
+                      "Env\u00edo de correos desde la cuenta del usuario sin su consentimiento."
+                    ]
+                  },
+                  {
+                    "title": "Acciones iniciales de respuesta",
+                    "items": [
+                      "Aislar el equipo sospechoso de la red para limitar propagaci\u00f3n.",
+                      "Preservar evidencias b\u00e1sicas (hora, procesos, eventos, archivos sospechosos) antes de limpiar.",
+                      "Ejecutar escaneo con herramientas antimalware actualizadas y validar integridad del sistema.",
+                      "Aplicar parches, cambiar credenciales comprometidas y revisar persistencias (tareas, servicios, inicio).",
+                      "Si hay rootkit o da\u00f1o profundo, priorizar reinstalaci\u00f3n limpia y restauraci\u00f3n desde respaldos verificados."
+                    ]
+                  },
+                  {
+                    "title": "Prevenci\u00f3n continua",
+                    "items": [
+                      "Capacitar usuarios frente a phishing, adjuntos y descargas no confiables.",
+                      "Mantener actualizados sistema operativo, aplicaciones y firmas de seguridad.",
+                      "Implementar m\u00ednimo privilegio, segmentaci\u00f3n y copias de seguridad peri\u00f3dicas probadas."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Identificar r\u00e1pidamente patrones de malware, reconocer indicadores de compromiso y ejecutar una contenci\u00f3n inicial efectiva."
                     ]
                   }
                 ]
