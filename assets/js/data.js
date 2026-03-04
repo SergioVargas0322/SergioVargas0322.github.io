@@ -8922,37 +8922,59 @@
               {
                 "code": "3.2",
                 "title": "Control de acceso",
-                "summary": "Los controles de acceso f\u00edsico son barreras reales desplegadas para evitar el contacto f\u00edsico directo con los sistemas.",
+                "summary": "El control de acceso en ciberseguridad combina barreras f\u00edsicas, controles l\u00f3gicos y pol\u00edticas administrativas para evitar accesos no autorizados y mantener trazabilidad sobre las acciones de los usuarios.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_3_2.png",
-                    "alt": "Referencia visual del tema 3.2: Control de acceso."
+                    "alt": "Controles de acceso f\u00edsico, l\u00f3gico y administrativo en una arquitectura de seguridad."
                   }
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Capas de control de acceso",
                     "items": [
-                      "Controles de acceso f\u00edsico",
-                      "Controles de acceso l\u00f3gico",
-                      "Controles de acceso administrativo",
-                      "Autenticaci\u00f3n, Autorizaci\u00f3n y Contabilidad (AAA)",
-                      "\u00bfQu\u00e9 es la identificaci\u00f3n?",
-                      "Gesti\u00f3n de identidad federada"
+                      "F\u00edsico: barreras de entrada como puertas, tarjetas, c\u00e1maras, alarmas y vigilancia para proteger instalaciones y equipos.",
+                      "L\u00f3gico: mecanismos de software/hardware como cifrado, ACL, firewalls, contrase\u00f1as y biometr\u00eda para restringir recursos digitales.",
+                      "Administrativo: pol\u00edticas, procedimientos y roles que definen qu\u00e9 se permite, qui\u00e9n lo aprueba y c\u00f3mo se audita."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "Modelo AAA en operaci\u00f3n",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "Autenticaci\u00f3n: verifica identidad con factores como contrase\u00f1a, token o biometr\u00eda.",
+                      "Autorizaci\u00f3n: define a qu\u00e9 recursos puede acceder el usuario y en qu\u00e9 condiciones (ACL, horarios, privilegios).",
+                      "Contabilidad (auditor\u00eda): registra sesiones, comandos y cambios para trazabilidad, cumplimiento e investigaci\u00f3n."
+                    ]
+                  },
+                  {
+                    "title": "Identificaci\u00f3n e identidad federada",
+                    "items": [
+                      "Cada usuario debe tener un identificador \u00fanico para asociar actividades con una identidad concreta.",
+                      "La identidad federada permite usar credenciales comunes entre sistemas/empresas del mismo ecosistema.",
+                      "Riesgo clave: una cuenta comprometida puede abrir acceso a varios servicios; por eso se requiere segmentaci\u00f3n, MFA y revisiones peri\u00f3dicas."
+                    ]
+                  },
+                  {
+                    "title": "Factores de autenticaci\u00f3n y buenas pr\u00e1cticas",
+                    "items": [
+                      "Algo que sabe: contrase\u00f1a, PIN o frase de paso.",
+                      "Algo que tiene: tarjeta inteligente, token o llave de seguridad.",
+                      "Algo que es: biometr\u00eda (huella, rostro, voz, retina).",
+                      "Aplicar MFA/2FA, usar gestor de contrase\u00f1as, rotaci\u00f3n peri\u00f3dica y complejidad adecuada seg\u00fan pol\u00edtica corporativa."
+                    ]
+                  },
+                  {
+                    "title": "Acciones t\u00e9cnicas recomendadas",
+                    "items": [
+                      "Implementar principio de menor privilegio y revisar permisos de forma recurrente.",
+                      "Unificar autenticaci\u00f3n y registros en plataformas centrales para acelerar detecci\u00f3n de accesos an\u00f3malos.",
+                      "Integrar controles de acceso con mesa de ayuda para documentar altas, cambios y revocaciones con evidencia."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de control de acceso para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Dise\u00f1ar y operar un esquema de control de acceso multicapa que reduzca riesgo de intrusi\u00f3n, mejore cumplimiento y fortalezca la respuesta ante incidentes."
                     ]
                   }
                 ]
