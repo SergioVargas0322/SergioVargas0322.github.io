@@ -8718,7 +8718,7 @@
               {
                 "code": "2.4",
                 "title": "Ataques a dispositivos inal\u00e1mbricos y m\u00f3viles",
-                "summary": "Grayware es cualquier aplicaci\u00f3n no deseada que se comporta de forma molesta o indeseable.",
+                "summary": "Los entornos inal\u00e1mbricos y m\u00f3viles ampl\u00edan la superficie de ataque mediante puntos de acceso no autorizados, abuso de Bluetooth, debilidades de protocolos Wi-Fi y campa\u00f1as de enga\u00f1o como SMiShing.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_2_4.png",
@@ -8727,28 +8727,63 @@
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Grayware y SMiShing",
                     "items": [
-                      "Grayware y SMiShing",
-                      "Puntos de acceso no autorizados",
-                      "Interferencia de radiofrecuencia",
-                      "Bluejacking y Bluesnarfing",
-                      "Ataques contra protocolos Wi-Fi",
-                      "Wi-Fi y defensa m\u00f3vil"
+                      "Grayware: aplicaciones no deseadas que pueden rastrear, perfilar o mostrar publicidad invasiva sin ser malware cl\u00e1sico.",
+                      "Muchos usuarios aceptan permisos excesivos por no revisar t\u00e9rminos y condiciones de las apps m\u00f3viles.",
+                      "SMiShing: mensajes SMS falsos que inducen clics en enlaces maliciosos o llamadas a n\u00fameros fraudulentos.",
+                      "Impacto t\u00edpico: robo de credenciales, instalaci\u00f3n de malware o exposici\u00f3n de informaci\u00f3n personal."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "Puntos de acceso no autorizados y ataque gemelo maligno",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "Un rogue AP dentro de la red corporativa puede abrir una puerta de entrada para atacantes externos.",
+                      "Puede operar como MitM para capturar credenciales y tr\u00e1fico sensible de usuarios conectados.",
+                      "El ataque evil twin imita una red leg\u00edtima con mejor se\u00f1al para atraer v\u00edctimas.",
+                      "La combinaci\u00f3n de ingenier\u00eda social y acceso f\u00edsico facilita la instalaci\u00f3n de estos dispositivos."
+                    ]
+                  },
+                  {
+                    "title": "Interferencia de radiofrecuencia (RFI)",
+                    "items": [
+                      "Las comunicaciones inal\u00e1mbricas son sensibles a EMI/RFI y otras fuentes de ruido en el entorno.",
+                      "Un atacante puede degradar o bloquear enlaces al generar interferencia en frecuencia y potencia compatibles.",
+                      "El resultado es p\u00e9rdida de disponibilidad o degradaci\u00f3n severa del servicio inal\u00e1mbrico.",
+                      "La mitigaci\u00f3n requiere dise\u00f1o RF adecuado, monitoreo del espectro y planes de contingencia."
+                    ]
+                  },
+                  {
+                    "title": "Bluejacking y bluesnarfing en Bluetooth",
+                    "items": [
+                      "Bluejacking: env\u00edo no autorizado de mensajes o contenido a dispositivos cercanos por Bluetooth.",
+                      "Bluesnarfing: extracci\u00f3n de informaci\u00f3n (contactos, correos u otros datos) desde un dispositivo objetivo.",
+                      "Ambos ataques requieren proximidad, pero aprovechan configuraciones inseguras de emparejamiento.",
+                      "Reducir visibilidad del dispositivo y desactivar Bluetooth cuando no se usa disminuye riesgo."
+                    ]
+                  },
+                  {
+                    "title": "Ataques contra protocolos Wi-Fi",
+                    "items": [
+                      "WEP es obsoleto por debilidades de dise\u00f1o (IV peque\u00f1o, est\u00e1tico y mala gesti\u00f3n de claves).",
+                      "WPA/WPA2 mejoran cifrado y autenticaci\u00f3n, pero a\u00fan exigen configuraci\u00f3n correcta y monitoreo continuo.",
+                      "Los atacantes pueden analizar tr\u00e1fico y explotar configuraciones d\u00e9biles o credenciales comprometidas.",
+                      "La seguridad real depende tanto del protocolo como de la higiene operativa de la red."
+                    ]
+                  },
+                  {
+                    "title": "Defensa Wi-Fi y m\u00f3vil",
+                    "items": [
+                      "Cambiar valores predeterminados, reforzar autenticaci\u00f3n y activar cifrado robusto en toda WLAN.",
+                      "Ubicar AP en arquitectura segura (DMZ/per\u00edmetro) y no exponer directamente la LAN interna.",
+                      "Detectar equipos no autorizados con herramientas de reconocimiento inal\u00e1mbrico y monitoreo continuo.",
+                      "Definir pol\u00edtica de acceso de invitados y exigir VPN en redes Wi-Fi p\u00fablicas para personal remoto."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de ataques a dispositivos inal\u00e1mbricos y m\u00f3viles para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Identificar amenazas inal\u00e1mbricas y m\u00f3viles prioritarias y aplicar controles t\u00e9cnicos y operativos para reducir compromiso de usuarios y exposici\u00f3n de la red."
                     ]
                   }
                 ]
