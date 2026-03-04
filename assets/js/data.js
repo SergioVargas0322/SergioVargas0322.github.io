@@ -9763,14 +9763,55 @@
               {
                 "code": "3.1",
                 "title": "Protegiendo sus dispositivos y su red",
-                "summary": "Pr\u00e1cticas de seguridad para dispositivos finales y redes dom\u00e9sticas o personales.",
+                "summary": "Buenas pr\u00e1cticas para proteger endpoints, Wi-Fi dom\u00e9stica, redes p\u00fablicas y autenticaci\u00f3n con contrase\u00f1as robustas.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Puntos clave",
+                    "title": "Protecci\u00f3n de dispositivos inform\u00e1ticos",
                     "items": [
-                      "La seguridad del usuario inicia con configuraci\u00f3n segura del dispositivo y del router.",
-                      "Actualizar, segmentar y monitorear reduce riesgo de compromiso."
+                      "Activar firewall local o de red y mantenerlo actualizado para bloquear accesos no autorizados.",
+                      "Instalar antivirus/antispyware y descargar software solo de fuentes confiables.",
+                      "Mantener sistema operativo y navegador con parches de seguridad al d\u00eda.",
+                      "Usar contrase\u00f1a en todos los dispositivos, cifrar datos sensibles y minimizar datos almacenados localmente."
+                    ]
+                  },
+                  {
+                    "title": "IoT y segmentaci\u00f3n de red",
+                    "items": [
+                      "Muchos dispositivos IoT no reciben actualizaciones frecuentes y permanecen vulnerables por largos periodos.",
+                      "Si un IoT se compromete, puede abrir una ruta hacia equipos y datos de la red local.",
+                      "Recomendaci\u00f3n: aislar IoT en una red separada (SSID/VLAN dedicada) con pol\u00edticas restrictivas."
+                    ]
+                  },
+                  {
+                    "title": "Seguridad Wi-Fi en el hogar",
+                    "items": [
+                      "Cambiar SSID y credenciales predeterminadas del router para evitar accesos triviales.",
+                      "Habilitar cifrado robusto (WPA2/WPA3 seg\u00fan compatibilidad) y mantener firmware del AP actualizado.",
+                      "No confiar en ocultar SSID como control principal; no sustituye autenticaci\u00f3n ni cifrado.",
+                      "Considerar mitigaciones de KRACK: parcheo oportuno de AP, clientes y sistemas."
+                    ]
+                  },
+                  {
+                    "title": "Riesgos de Wi-Fi p\u00fablica y Bluetooth",
+                    "items": [
+                      "En redes p\u00fablicas, evitar transacciones sensibles si no hay protecci\u00f3n adicional.",
+                      "Usar VPN confiable para cifrar el tr\u00e1fico extremo a extremo y reducir riesgo de intercepci\u00f3n.",
+                      "Desactivar compartici\u00f3n de archivos y mantener Bluetooth apagado cuando no se use."
+                    ]
+                  },
+                  {
+                    "title": "Contrase\u00f1as y frases de contrase\u00f1a",
+                    "items": [
+                      "Preferir frases de contrase\u00f1a largas y memorables sobre claves cortas complejas.",
+                      "Seguir lineamientos modernos (NIST): longitud suficiente, bloqueo de contrase\u00f1as comunes y evitar pistas.",
+                      "Evitar caducidad forzada sin justificaci\u00f3n de riesgo; priorizar MFA y detecci\u00f3n de compromiso."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Implementar una postura de seguridad personal integral que combine hardening de dispositivos, protecci\u00f3n de red inal\u00e1mbrica y autenticaci\u00f3n robusta."
                     ]
                   }
                 ]
