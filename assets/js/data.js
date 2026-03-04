@@ -9256,7 +9256,9 @@
           "privacidad",
           "amenazas",
           "defensa",
-          "concienciacion"
+          "concienciación",
+          "ética",
+          "legal"
         ],
         "modules": [
           {
