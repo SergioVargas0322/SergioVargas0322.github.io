@@ -26,6 +26,9 @@
     pendingJump: null,
     highlightTimer: null
   };
+  const courseOrderMap = new Map(
+    data.courses.map((course, index) => [course.id, index + 1])
+  );
 
   if (refs.catalogTitle) refs.catalogTitle.textContent = data.title || "Catálogo de Cursos";
   if (refs.catalogSubtitle) refs.catalogSubtitle.textContent = data.subtitle || "";
@@ -154,6 +157,7 @@
 
     refs.courseGrid.innerHTML = courses
       .map((course) => {
+        const courseNumber = courseOrderMap.get(course.id) || 0;
         const totalModules = course.modules.length;
         const totalTopics = countTopics(course);
         const activeClass = course.id === state.activeCourseId ? " active" : "";
@@ -161,7 +165,7 @@
 
         return `
         <button class="course-card${activeClass}" type="button" data-course-id="${escapeAttr(course.id)}">
-          <h3>${escapeHtml(course.title)}</h3>
+          <h3>${courseNumber}. ${escapeHtml(course.title)}</h3>
           <p class="course-meta">${escapeHtml(course.provider)} - ${escapeHtml(course.level)} - ${totalModules} módulos - ${totalTopics} temas</p>
           <div class="course-tags">${tags}</div>
         </button>`;
@@ -489,3 +493,4 @@
     return escapeHtml(value);
   }
 })();
+
