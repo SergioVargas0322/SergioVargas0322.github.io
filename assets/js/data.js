@@ -9113,37 +9113,64 @@
               {
                 "code": "3.5",
                 "title": "Firewalls y prevenci\u00f3n de intrusiones basada en host",
-                "summary": "Un firewall es un sistema o grupo de sistemas que impone una pol\u00edtica de control de acceso entre redes.",
+                "summary": "Los firewalls y controles de intrusi\u00f3n reducen el tr\u00e1fico malicioso al aplicar pol\u00edticas de acceso en red y endpoint. Su eficacia depende de dise\u00f1o por capas, reglas bien mantenidas y monitoreo continuo.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_3_5.png",
-                    "alt": "Referencia visual del tema 3.5: Firewalls y prevenci\u00f3n de intrusiones basada en host."
+                    "alt": "Comparativa de controles de firewall y prevenci\u00f3n de intrusiones en red y host."
                   }
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Fundamentos operativos del firewall",
                     "items": [
-                      "Cortafuegos (Firewall)",
-                      "Tipos de cortafuegos",
-                      "Beneficios y limitaciones del firewall de filtrado de paquetes",
-                      "Beneficios y limitaciones del firewall con estado",
-                      "Firewalls basados en host",
-                      "Programas antimalware"
+                      "El firewall act\u00faa como punto de tr\u00e1nsito y control entre redes internas y externas.",
+                      "Resiste ataques comunes y aplica pol\u00edticas de permitir/denegar seg\u00fan criterios definidos.",
+                      "Beneficios: reduce exposici\u00f3n de activos, bloquea flujos maliciosos y centraliza control de acceso.",
+                      "Limitaciones: mala configuraci\u00f3n, evasiones por t\u00fanel, impacto en rendimiento y dependencia de reglas precisas."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "Tipos de firewall y cu\u00e1ndo usarlos",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "Filtrado de paquetes (stateless): r\u00e1pido y simple con criterios L3/L4; adecuado como primera barrera.",
+                      "Stateful firewall: inspecciona estado de conexi\u00f3n y mejora control frente a suplantaci\u00f3n y DoS.",
+                      "Proxy/gateway de aplicaciones: inspecci\u00f3n m\u00e1s profunda (hasta capa de aplicaci\u00f3n).",
+                      "NGFW: integra IPS, reconocimiento de aplicaciones e inteligencia para amenazas avanzadas.",
+                      "Implementaciones complementarias: host-based, transparente e h\u00edbrida."
+                    ]
+                  },
+                  {
+                    "title": "Comparativa: filtrado de paquetes vs stateful",
+                    "items": [
+                      "Filtrado de paquetes: bajo costo e impacto, pero sin contexto de sesi\u00f3n y con menor capacidad ante fragmentaci\u00f3n/evasiones.",
+                      "Stateful: mejor registro y contexto de conexi\u00f3n; aun as\u00ed, no reemplaza inspecci\u00f3n de capa de aplicaci\u00f3n.",
+                      "Protocolos sin estado (como UDP/ICMP) y puertos din\u00e1micos pueden requerir ajustes adicionales.",
+                      "Ning\u00fan firewall aislado es suficiente: debe integrarse con segmentaci\u00f3n, hardening y monitoreo."
+                    ]
+                  },
+                  {
+                    "title": "Firewalls basados en host y administraci\u00f3n central",
+                    "items": [
+                      "Controlan tr\u00e1fico entrante/saliente por direcci\u00f3n IP, protocolo y puerto directamente en el endpoint.",
+                      "Pueden generar alertas por comportamiento sospechoso y registrar eventos para an\u00e1lisis forense.",
+                      "Modelo distribuido: combina protecci\u00f3n local con pol\u00edticas centralizadas y recolecci\u00f3n de logs.",
+                      "Ejemplos del curso: Windows Defender Firewall, iptables/nftables y TCP Wrappers en Linux."
+                    ]
+                  },
+                  {
+                    "title": "Antimalware y prevenci\u00f3n de intrusiones en endpoint",
+                    "items": [
+                      "El antimalware debe cubrir virus, gusanos, troyanos, spyware, adware y phishing.",
+                      "Buenas pr\u00e1cticas: usar soluciones reconocidas, actualizar firmas/motores y combinar detecci\u00f3n con reglas de firewall.",
+                      "En Windows Defender, preferir pol\u00edtica restrictiva por defecto y abrir solo puertos/servicios justificados.",
+                      "Usar configuraci\u00f3n avanzada para reglas de entrada/salida, perfiles por entorno y auditor\u00eda continua."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de firewalls y prevenci\u00f3n de intrusiones basada en host para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Dise\u00f1ar una defensa de intrusi\u00f3n en host y red que minimice superficie de ataque, aumente trazabilidad y mejore la capacidad de contenci\u00f3n ante incidentes."
                     ]
                   }
                 ]
