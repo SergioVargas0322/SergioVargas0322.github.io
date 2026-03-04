@@ -9053,35 +9053,59 @@
               {
                 "code": "3.4",
                 "title": "Protecci\u00f3n antimalware",
-                "summary": "La palabra \u201cterminal\u201d tiene varias definiciones. Para los fines de este curso, definiremos los terminales como hosts en la red que pueden tener acceso a otros hosts de la red y viceversa.",
+                "summary": "La protecci\u00f3n antimalware moderna requiere defensa por capas en terminales y red: detecci\u00f3n temprana, controles de acceso, visibilidad continua y respuesta coordinada frente a amenazas como ransomware y ataques sin archivos.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_3_4.png",
-                    "alt": "Referencia visual del tema 3.4: Protecci\u00f3n antimalware."
+                    "alt": "Arquitectura de protecci\u00f3n antimalware combinando controles de host y controles de red."
                   }
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Amenazas actuales en dispositivos finales",
                     "items": [
-                      "Amenazas de dispositivos finales",
-                      "Seguridad de dispositivo final",
-                      "Protecci\u00f3n contra malware basada en host",
-                      "Protecci\u00f3n contra malware basada en la red"
+                      "El endpoint ya no es solo PC o servidor: IoT, c\u00e1maras, impresoras y m\u00f3viles tambi\u00e9n ampl\u00edan superficie de ataque.",
+                      "Ransomware, trabajo remoto y baja visibilidad son riesgos dominantes en operaciones de ciberseguridad.",
+                      "Cada terminal comprometido puede convertirse en punto de pivote hacia activos cr\u00edticos de la organizaci\u00f3n."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "Por qu\u00e9 proteger LAN interna adem\u00e1s del per\u00edmetro",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "La seguridad perimetral (VPN, firewall, IPS, AAA) es necesaria pero no suficiente.",
+                      "Muchos incidentes inician dentro de la red interna por malware, suplantaci\u00f3n o mala configuraci\u00f3n.",
+                      "Se deben proteger terminales e infraestructura de LAN contra ataques a MAC table, DHCP, STP, VLAN y suplantaci\u00f3n."
+                    ]
+                  },
+                  {
+                    "title": "Protecci\u00f3n basada en host",
+                    "items": [
+                      "Antimalware en endpoint con tres enfoques de detecci\u00f3n: firma, heur\u00edstica y comportamiento.",
+                      "Modelo basado en agente para equipos individuales y modelo sin agente en entornos virtualizados para optimizar recursos.",
+                      "Firewall de host para restringir conexiones entrantes/salientes y limitar propagaci\u00f3n lateral de amenazas.",
+                      "Suites de seguridad (antivirus, antiphishing, HIPS y firewall) ofrecen defensa multicapa y telemetr\u00eda local."
+                    ]
+                  },
+                  {
+                    "title": "Protecci\u00f3n basada en red",
+                    "items": [
+                      "La red aporta capas adicionales de an\u00e1lisis que un endpoint aislado no puede cubrir por s\u00ed solo.",
+                      "Controles frecuentes: filtrado de correo, seguridad DNS, bloqueo de destinos maliciosos y verificaci\u00f3n de cumplimiento de dispositivos.",
+                      "Ejemplos de referencia del curso: Cisco Secure Endpoint, Secure Email, Umbrella y NAC."
+                    ]
+                  },
+                  {
+                    "title": "Criterios operativos para una defensa efectiva",
+                    "items": [
+                      "Integrar registros de host y red para correlaci\u00f3n y detecci\u00f3n temprana.",
+                      "Aplicar pol\u00edticas homog\u00e9neas en equipos corporativos y remotos con validaciones de postura de seguridad.",
+                      "Revisar peri\u00f3dicamente eficacia de controles y ajustar reglas seg\u00fan nuevos vectores de ataque."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de protecci\u00f3n antimalware para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Implementar una estrategia antimalware integral (host + red) que reduzca infecciones, mejore visibilidad y acelere la contenci\u00f3n de incidentes en la organizaci\u00f3n."
                     ]
                   }
                 ]
