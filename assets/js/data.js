@@ -10008,14 +10008,55 @@
               {
                 "code": "4.2",
                 "title": "Comportamiento a seguir en la ciberseguridad",
-                "summary": "Pr\u00e1cticas humanas y cultura de seguridad para reducir errores y exposici\u00f3n interna.",
+                "summary": "Enfoque operativo para detectar anomal\u00edas, ejecutar evaluaciones t\u00e9cnicas y reducir impacto mediante respuesta y gesti\u00f3n de riesgos.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Puntos clave",
+                    "title": "Seguridad basada en comportamiento",
                     "items": [
-                      "El factor humano es una de las superficies de ataque m\u00e1s explotadas.",
-                      "Formaci\u00f3n continua y procedimientos claros reducen incidentes por comportamiento."
+                      "Analiza flujos de comunicaci\u00f3n entre usuarios, equipos y destinos para detectar desviaciones del patr\u00f3n normal.",
+                      "Las anomal\u00edas de comportamiento pueden ser indicadores tempranos de compromiso o abuso interno.",
+                      "Honeypots permiten atraer, observar y registrar t\u00e9cnicas del atacante para fortalecer defensas reales."
+                    ]
+                  },
+                  {
+                    "title": "Telemetr\u00eda de red con NetFlow",
+                    "items": [
+                      "NetFlow recopila metadatos de flujo: qui\u00e9n se comunica, con qui\u00e9n, cu\u00e1ndo y c\u00f3mo.",
+                      "Routers, switches y firewalls exportan flujos a colectores para an\u00e1lisis hist\u00f3rico y en tiempo real.",
+                      "Con l\u00edneas base de comportamiento se detectan cambios en puertos, destinos, volumen y frecuencia de tr\u00e1fico."
+                    ]
+                  },
+                  {
+                    "title": "Pruebas de penetraci\u00f3n",
+                    "items": [
+                      "El pentest eval\u00faa sistemas, personas y procesos para descubrir fallas explotables antes que un atacante real.",
+                      "Fases habituales: planificaci\u00f3n, reconocimiento/escaneo, obtenci\u00f3n de acceso, persistencia controlada y reporte final.",
+                      "Los hallazgos deben traducirse en acciones concretas: parches, hardening, controles de acceso y capacitaci\u00f3n."
+                    ]
+                  },
+                  {
+                    "title": "Reducci\u00f3n del impacto ante incidentes",
+                    "items": [
+                      "Comunicar de forma oportuna a empleados, clientes y partes interesadas con mensajes claros y verificables.",
+                      "Asumir responsabilidad, describir alcance del incidente y transparentar datos potencialmente comprometidos.",
+                      "Investigar causa ra\u00edz con evidencia forense, cerrar puertas traseras y validar erradicaci\u00f3n completa.",
+                      "Aplicar lecciones aprendidas para evitar recurrencia y recuperar confianza."
+                    ]
+                  },
+                  {
+                    "title": "Gesti\u00f3n de riesgos",
+                    "items": [
+                      "Proceso continuo para identificar amenazas, estimar impacto y decidir tratamiento del riesgo.",
+                      "Opciones de tratamiento: eliminar, mitigar, transferir o aceptar seg\u00fan criticidad y costo/beneficio.",
+                      "El costo del control no debe superar el valor del activo protegido.",
+                      "Los riesgos aceptados tambi\u00e9n se monitorean; pueden escalar y requerir nuevas medidas."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Implementar un ciclo operativo de ciberseguridad que combine detecci\u00f3n por comportamiento, pruebas t\u00e9cnicas, respuesta efectiva e inteligencia de riesgo para mejorar resiliencia organizacional."
                     ]
                   }
                 ]
