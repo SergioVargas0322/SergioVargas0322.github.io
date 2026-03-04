@@ -8220,7 +8220,7 @@
               {
                 "code": "1.2",
                 "title": "Documentaci\u00f3n de red",
-                "summary": "Al igual que con cualquier actividad compleja, como la resoluci\u00f3n de problemas de red, se debe comenzar con una buena documentaci\u00f3n.",
+                "summary": "La documentaci\u00f3n de red es la base de un soporte eficiente: define el estado esperado de la infraestructura, acelera el diagn\u00f3stico y permite detectar desviaciones mediante topolog\u00edas, inventario y l\u00ednea base.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_1_2.png",
@@ -8229,28 +8229,43 @@
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Documentaci\u00f3n operativa imprescindible",
                     "items": [
-                      "Descripci\u00f3n general de la documentaci\u00f3n",
-                      "Topolog\u00edas y descripciones de red",
-                      "Topolog\u00edas de redes empresariales",
-                      "Servicios y aplicaciones de red en la nube",
-                      "Est\u00e1ndares inal\u00e1mbricos",
-                      "Documentaci\u00f3n del dispositivo de red"
+                      "Conservar topolog\u00edas f\u00edsicas y l\u00f3gicas actualizadas en una ubicaci\u00f3n controlada.",
+                      "Mantener inventario por dispositivo: modelo, firmware, SO, interfaces y rol.",
+                      "Versionar configuraciones, bit\u00e1coras de cambios y respaldos fuera del sitio principal.",
+                      "Registrar pol\u00edticas de enrutamiento, VLAN, seguridad y acceso remoto."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "Topolog\u00edas y alcance de red",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "Diferenciar PAN, LAN, VLAN, WLAN, WMN, CAN, MAN, WAN y VPN seg\u00fan cobertura y administraci\u00f3n.",
+                      "Usar diagramas f\u00edsicos para cableado/ubicaci\u00f3n y l\u00f3gicos para direccionamiento y rutas.",
+                      "En redes empresariales, documentar capas de acceso, distribuci\u00f3n y n\u00facleo con distintos niveles de detalle."
+                    ]
+                  },
+                  {
+                    "title": "Servicios en nube y est\u00e1ndares inal\u00e1mbricos",
+                    "items": [
+                      "Clasificar servicios consumidos por la organizaci\u00f3n: SaaS, PaaS, IaaS y variantes XaaS.",
+                      "Relacionar cada servicio con dependencias de red, seguridad y continuidad operativa.",
+                      "Documentar est\u00e1ndares 802.11, bandas (2.4/5/6 GHz), capacidades MIMO y uso de espectro licenciado/no licenciado."
+                    ]
+                  },
+                  {
+                    "title": "L\u00ednea base y descubrimiento autom\u00e1tico",
+                    "items": [
+                      "Definir l\u00ednea base de rendimiento (disponibilidad, errores, uso de enlaces y tendencias de tr\u00e1fico).",
+                      "Comparar comportamiento actual contra la l\u00ednea base para detectar anomal\u00edas reales.",
+                      "Usar CDP para descubrir vecinos y completar mapas l\u00f3gicos cuando falta documentaci\u00f3n.",
+                      "Comandos de apoyo: `show cdp neighbors` y `show cdp neighbors detail`."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de documentaci\u00f3n de red para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Construir y mantener una documentaci\u00f3n de red trazable que reduzca tiempos de soporte, facilite cambios seguros y mejore la toma de decisiones t\u00e9cnicas."
                     ]
                   }
                 ]
