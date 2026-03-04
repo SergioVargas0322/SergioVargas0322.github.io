@@ -1,21 +1,35 @@
 # SergioVargas0322.github.io
 
-Catálogo web para organizar cursos de Cisco por módulos y temas.
+Catálogo web para organizar y consultar cursos de Cisco por curso, módulo y tema.
 
 ## Estado actual
 - Proyecto activo: `CursosCISCO`.
-- Cursos cargados:
-  - `Conceptos Básicos de Hardware de Computadora`.
-  - `Operating Systems Basics`.
-- Base preparada para escalar a más cursos.
+- Cursos cargados actualmente: 9.
+- Flujo de trabajo: mejora incremental de contenido tema por tema.
 
-## Estructura
-- `index.html`: catálogo principal.
-- `assets/css/styles.css`: estilos globales del catálogo.
-- `assets/js/data.js`: datos del catálogo (actualmente 2 cursos).
-- `assets/js/app.js`: render, búsqueda y detalle de módulos/temas.
-- `assets/images/hardware-basics/`: imágenes del primer curso.
-- `assets/images/operating-systems-basics/`: imágenes base del segundo curso.
+## Cursos incluidos
+- Conceptos Básicos de Hardware de Computadora
+- Operating Systems Basics
+- Introducción a Cisco Packet Tracer
+- Exploración de redes con Cisco Packet Tracer
+- Conceptos básicos de redes
+- Dispositivos de Red y Configuración Inicial
+- Direccionamiento de red y solución de problemas básicos
+- Soporte y Seguridad de red
+- Introducción a Ciberseguridad
 
-## Uso local
-Abrir `index.html` en el navegador.
+## Estructura principal
+- `index.html`: interfaz del catálogo.
+- `assets/css/styles.css`: estilos globales.
+- `assets/js/data.js`: datos de cursos, módulos y temas.
+- `assets/js/app.js`: render, filtros, búsqueda y navegación por temas.
+- `assets/images/`: imágenes por curso.
+
+## Ejecución local
+1. Abrir `index.html` en el navegador.
+2. Verificar que las rutas `assets/` carguen correctamente.
+
+## Convenciones de contenido
+- El contenido se mantiene en español con ortografía correcta (tildes y ñ).
+- Las secciones de cada tema pueden variar según el contenido académico del módulo/tema.
+- Cada cambio de contenido se valida y se sincroniza con GitHub.

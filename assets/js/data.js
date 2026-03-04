@@ -8156,7 +8156,7 @@
         "level": "Intermedio",
         "status": "En curso",
         "estimatedHours": 30,
-        "summary": "Curso enfocado en diagn?stico, documentaci?n, soporte operativo y controles de ciberseguridad para proteger infraestructura, usuarios y servicios de red.",
+        "summary": "Curso enfocado en diagn\u00f3stico, documentaci\u00f3n, soporte operativo y controles de ciberseguridad para proteger infraestructura, usuarios y servicios de red.",
         "tags": [
           "soporte",
           "troubleshooting",
