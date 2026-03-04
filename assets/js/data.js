@@ -8870,37 +8870,51 @@
               {
                 "code": "3.1",
                 "title": "Fundamentos de seguridad",
-                "summary": "\u00bfHa o\u00eddo hablar del cubo de la ciberseguridad? Proporciona una manera \u00fatil de pensar en la protecci\u00f3n de datos.",
+                "summary": "Los fundamentos de seguridad de red se estructuran con el Cubo de Ciberseguridad: principios (confidencialidad, integridad y disponibilidad), estados del dato (en tr\u00e1nsito, en reposo y en proceso) y medidas de protecci\u00f3n (tecnolog\u00eda, pol\u00edticas/procedimientos y personas).",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_3_1.png",
-                    "alt": "Referencia visual del tema 3.1: Fundamentos de seguridad."
+                    "alt": "Cubo de ciberseguridad aplicado a principios, estados de datos y medidas de protecci\u00f3n."
                   }
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Cubo de ciberseguridad: tres dimensiones",
                     "items": [
-                      "El Cubo de Ciberseguridad",
-                      "Confidencialidad, Integridad y Disponibilidad",
-                      "Tr\u00edada de la CIA - El principio de confidencialidad",
-                      "Integridad de datos",
-                      "Disponibilidad",
-                      "Garant\u00eda de disponibilidad"
+                      "Principios: confidencialidad, integridad y disponibilidad como objetivos de protecci\u00f3n.",
+                      "Estados del dato: en tr\u00e1nsito, en reposo y en proceso; cada estado exige controles distintos.",
+                      "Medidas: tecnolog\u00eda, pol\u00edticas/procedimientos y personas capacitadas en operaci\u00f3n segura."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "Tr\u00edada CIA (CID) aplicada a redes",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "Confidencialidad: limita el acceso a informaci\u00f3n sensible mediante autenticaci\u00f3n, autorizaci\u00f3n y cifrado.",
+                      "Integridad: evita alteraciones no autorizadas usando hash, validaciones y control de cambios.",
+                      "Disponibilidad: mantiene servicios accesibles con redundancia, monitoreo y planes de recuperaci\u00f3n."
+                    ]
+                  },
+                  {
+                    "title": "Estados de los datos y controles recomendados",
+                    "items": [
+                      "En tr\u00e1nsito: proteger con TLS/IPsec, segmentaci\u00f3n y verificaci\u00f3n de identidad de extremo a extremo.",
+                      "En reposo: aplicar cifrado de disco/volumen, copias de seguridad y control de acceso por roles.",
+                      "En proceso: endurecer sistemas, restringir privilegios y supervisar procesos cr\u00edticos en tiempo real."
+                    ]
+                  },
+                  {
+                    "title": "Garant\u00eda de disponibilidad en operaci\u00f3n",
+                    "items": [
+                      "Mantenimiento preventivo y actualizaci\u00f3n peri\u00f3dica de sistemas, aplicaciones y firmware.",
+                      "Respaldo probado: no basta con copiar, tambi\u00e9n se debe validar restauraci\u00f3n.",
+                      "Plan de continuidad y recuperaci\u00f3n ante desastres con roles, tiempos y procedimientos definidos.",
+                      "Monitoreo activo de eventos y alertas para detectar incidentes antes de que afecten al usuario."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de fundamentos de seguridad para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Aplicar el Cubo de Ciberseguridad para seleccionar controles t\u00e9cnicos y operativos que reduzcan riesgos y mejoren continuidad, trazabilidad y respuesta ante incidentes."
                     ]
                   }
                 ]
