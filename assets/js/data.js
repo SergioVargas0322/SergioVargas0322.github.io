@@ -8438,7 +8438,7 @@
               {
                 "code": "1.6",
                 "title": "Solucionar problemas de conectividad de forma remota",
-                "summary": "Al ayudar a los usuarios remotos, a menudo no es eficiente guiar verbalmente a un usuario a trav\u00e9s de procedimientos complicados.",
+                "summary": "El soporte remoto permite diagnosticar y corregir incidencias sin presencia f\u00edsica, pero exige controles estrictos de seguridad, uso de protocolos adecuados y plataformas de gesti\u00f3n que den visibilidad continua de la red.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_1_6.png",
@@ -8447,28 +8447,54 @@
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Soporte remoto al usuario final",
                     "items": [
-                      "Soporte a usuarios remotos",
-                      "Acceso remoto con Telnet, SSH y RDP",
-                      "Demostraci\u00f3n en video - Escritorio remoto y Asistencia remota",
-                      "Comprender las VPN",
-                      "Sistemas de gesti\u00f3n de red",
-                      "V\u00eddeo - \u00bfQu\u00e9 es la gesti\u00f3n de red?"
+                      "Usar herramientas de escritorio remoto para observar y ajustar configuraciones directamente en el equipo del usuario.",
+                      "Diferenciar modelos de sesi\u00f3n: control completo, asistencia supervisada o acceso desatendido seg\u00fan pol\u00edtica corporativa.",
+                      "Registrar autorizaci\u00f3n del usuario y evidencia del cambio para mantener trazabilidad del soporte.",
+                      "Restringir acceso remoto a personal autorizado para reducir riesgos de ingenier\u00eda social."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "Protocolos y herramientas de acceso remoto",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "Telnet (TCP 23) es heredado y no cifra credenciales; evitarlo en entornos productivos.",
+                      "SSH (TCP 22) proporciona autenticaci\u00f3n y cifrado de sesi\u00f3n; debe ser la opci\u00f3n por defecto para CLI remota.",
+                      "RDP permite acceso gr\u00e1fico remoto a sistemas Windows; en macOS y otros entornos puede usarse VNC (TCP 5900).",
+                      "Clientes comunes de administraci\u00f3n remota: PuTTY, Tera Term, OpenSSH y suites de escritorio remoto empresariales."
+                    ]
+                  },
+                  {
+                    "title": "VPN para soporte y trabajo remoto seguro",
+                    "items": [
+                      "Implementar VPN para proteger tr\u00e1fico de acceso remoto sobre Internet no confiable.",
+                      "Distinguir VPN de sitio a sitio (t\u00fanel preconfigurado entre gateways) y VPN de acceso remoto (cliente a gateway).",
+                      "Validar que el cifrado y la autenticaci\u00f3n de la VPN est\u00e9n activos antes de habilitar acceso a recursos internos.",
+                      "Usar clientes corporativos aprobados (por ejemplo, AnyConnect) y controles de postura de seguridad."
+                    ]
+                  },
+                  {
+                    "title": "Sistemas de gesti\u00f3n de red (NMS)",
+                    "items": [
+                      "Monitorear dispositivos de red y clientes con telemetr\u00eda, SNMP/RMON y anal\u00edtica para detecci\u00f3n proactiva.",
+                      "Modelo en nube: despliegue r\u00e1pido, acceso global y escalabilidad para redes distribuidas.",
+                      "Modelo local (on-premises): mayor control de datos y cumplimiento en entornos con restricciones regulatorias.",
+                      "Usar paneles de gesti\u00f3n para correlacionar salud, rendimiento y seguridad en un solo flujo operativo."
+                    ]
+                  },
+                  {
+                    "title": "Automatizaci\u00f3n y programabilidad",
+                    "items": [
+                      "Automatizar tareas repetitivas de configuraci\u00f3n, verificaci\u00f3n y despliegue para reducir errores humanos.",
+                      "Aplicar scripts (por ejemplo, Python) y APIs para operar m\u00faltiples dispositivos de forma consistente.",
+                      "Definir controles de cambio, validaciones previas y rollback para evitar impacto operativo.",
+                      "Aprovechar automatizaci\u00f3n para acelerar resoluci\u00f3n de incidentes y mejorar disponibilidad del servicio."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de solucionar problemas de conectividad de forma remota para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Resolver incidencias de conectividad remota con procedimientos seguros y estandarizados, combinando acceso remoto, VPN, monitoreo centralizado y automatizaci\u00f3n para mejorar continuidad operativa."
                     ]
                   }
                 ]
