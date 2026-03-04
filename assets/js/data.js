@@ -9324,20 +9324,65 @@
               {
                 "code": "1.2",
                 "title": "Datos de la organizaci\u00f3n",
-                "summary": "Clasificaci\u00f3n de datos empresariales y su valor para la operaci\u00f3n y la seguridad.",
+                "summary": "Valor, clasificaci\u00f3n y protecci\u00f3n de los datos organizacionales frente a brechas de seguridad en entornos tradicionales y de nube.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Base del tema",
+                    "title": "Tipos de datos organizacionales",
                     "items": [
-                      "Los datos pueden ser p\u00fablicos, internos, confidenciales o restringidos seg\u00fan su sensibilidad.",
-                      "Una mala clasificaci\u00f3n aumenta riesgo legal, reputacional y financiero."
+                      "Los datos transaccionales soportan compras, ventas, producci\u00f3n y decisiones operativas del d\u00eda a d\u00eda.",
+                      "La propiedad intelectual (patentes, dise\u00f1os, planes de producto) puede definir la ventaja competitiva de una empresa.",
+                      "Los datos financieros (ingresos, balances, flujo de caja) reflejan la salud de la organizaci\u00f3n y son objetivo frecuente de fraude."
+                    ]
+                  },
+                  {
+                    "title": "IoT y Big Data en el riesgo empresarial",
+                    "items": [
+                      "El Internet de las cosas (IoT) conecta sensores, equipos y sistemas que recopilan y comparten datos de forma continua.",
+                      "La combinaci\u00f3n de IoT, nube y virtualizaci\u00f3n incrementa el volumen de datos y ampl\u00eda la superficie de ataque.",
+                      "A mayor cantidad de datos y dispositivos conectados, mayor necesidad de gobierno de datos y controles de seguridad escalables."
+                    ]
+                  },
+                  {
+                    "title": "Marco de protecci\u00f3n: Cubo de McCumber",
+                    "items": [
+                      "Principios base: confidencialidad, integridad y disponibilidad (CIA).",
+                      "Estados de la informaci\u00f3n: en proceso, en reposo y en tr\u00e1nsito.",
+                      "Medidas complementarias: pol\u00edticas y procedimientos, tecnolog\u00eda, y concientizaci\u00f3n/capacitaci\u00f3n del personal.",
+                      "El modelo ayuda a evaluar seguridad de forma integral, no solo desde la tecnolog\u00eda."
+                    ]
+                  },
+                  {
+                    "title": "Incidentes reales y lecciones",
+                    "items": [
+                      "Razer (2020): exposici\u00f3n de datos por configuraci\u00f3n incorrecta en nube y ventana de riesgo prolongada.",
+                      "Persirai (IoT): c\u00e1maras IP comprometidas para ataques DDoS mediante abuso de puertos y malware en memoria.",
+                      "Equifax (2017): explotaci\u00f3n de vulnerabilidad web con impacto masivo sobre datos personales.",
+                      "En una crisis, tambi\u00e9n aparecen fraudes secundarios (sitios falsos, phishing), por lo que se debe verificar siempre el dominio oficial."
+                    ]
+                  },
+                  {
+                    "title": "Consecuencias de una brecha",
+                    "items": [
+                      "Da\u00f1o reputacional y p\u00e9rdida de confianza de clientes, socios y empleados.",
+                      "Robo de identidad y fraude financiero sobre personas afectadas.",
+                      "P\u00e9rdidas econ\u00f3micas por interrupci\u00f3n operativa, sanciones regulatorias e inversiones urgentes en remediaci\u00f3n.",
+                      "Exposici\u00f3n de propiedad intelectual con impacto directo en competitividad."
+                    ]
+                  },
+                  {
+                    "title": "Acciones recomendadas",
+                    "items": [
+                      "Clasificar datos por sensibilidad y aplicar controles seg\u00fan riesgo.",
+                      "Fortalecer seguridad en nube con configuraci\u00f3n segura por defecto y revisiones peri\u00f3dicas.",
+                      "Mantener gesti\u00f3n de vulnerabilidades, respaldo y plan de respuesta a incidentes probado.",
+                      "Capacitar a usuarios para detectar phishing y validar fuentes oficiales antes de entregar informaci\u00f3n."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Identificar tipos de datos y su nivel de protecci\u00f3n requerido en la organizaci\u00f3n."
+                      "Evaluar el valor de los datos organizacionales, entender el impacto de una brecha y seleccionar controles t\u00e9cnicos, administrativos y humanos para reducir riesgo."
                     ]
                   }
                 ]
