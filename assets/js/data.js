@@ -8172,7 +8172,7 @@
               {
                 "code": "1.1",
                 "title": "Metodolog\u00edas de diagn\u00f3stico y soluci\u00f3n de problemas",
-                "summary": "La soluci\u00f3n de problemas es el proceso de identificar, localizar y corregir problemas. Este proceso implica la recopilaci\u00f3n de informaci\u00f3n y el uso de uno o m\u00e1s m\u00e9todos estructurados de soluci\u00f3n de problemas.",
+                "summary": "Este tema establece un flujo de diagn\u00f3stico repetible para incidentes de red: recopilar evidencia, aislar por capas, formular y validar hip\u00f3tesis, y cerrar con documentaci\u00f3n trazable para evitar reincidencias.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_1_1.png",
@@ -8181,28 +8181,38 @@
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Proceso de siete pasos (operativo)",
                     "items": [
-                      "Revisi\u00f3n del proceso de soluci\u00f3n de problemas",
-                      "Proceso de Siete Pasos para la Resoluci\u00f3n de Problemas",
-                      "Soluci\u00f3n de problemas con modelos en capas",
-                      "M\u00e9todos Estructurados de Soluci\u00f3n de Problemas",
-                      "Pautas para Seleccionar un M\u00e9todo de Soluci\u00f3n de Problemas",
-                      "Documentar hallazgos, acciones y resultados"
+                      "Definir el problema con s\u00edntomas verificables (alertas, consola, reporte de usuario).",
+                      "Recopilar informaci\u00f3n t\u00e9cnica del host/dispositivo y contexto de topolog\u00eda.",
+                      "Analizar evidencia, eliminar causas y formular la hip\u00f3tesis m\u00e1s probable.",
+                      "Probar la hip\u00f3tesis evaluando impacto, ventana de cambio y plan de reversa.",
+                      "Resolver, comunicar al usuario y confirmar restauraci\u00f3n del servicio."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "M\u00e9todos de diagn\u00f3stico por capas",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "Ascendente: iniciar en capa f\u00edsica cuando hay ca\u00eddas de enlace, errores o energ\u00eda.",
+                      "Descendente: iniciar en aplicaci\u00f3n cuando el fallo es funcional pero hay conectividad base.",
+                      "Divide y vencer\u00e1s: entrar por la capa con m\u00e1s evidencia para reducir tiempo de aislamiento.",
+                      "Seguir la ruta y comparaci\u00f3n: validar cada salto y contrastar contra un estado conocido estable.",
+                      "Sustituci\u00f3n controlada: reemplazar componente sospechoso para confirmar causa ra\u00edz."
+                    ]
+                  },
+                  {
+                    "title": "Evidencia m\u00ednima y trazabilidad",
+                    "items": [
+                      "Inventario relevante: fabricante, modelo, firmware, versi\u00f3n de SO y garant\u00eda.",
+                      "Artefactos de red: topolog\u00eda f\u00edsica/l\u00f3gica, configuraciones y archivos de registro.",
+                      "Historial del incidente: pasos ejecutados, comandos usados y resultados observados.",
+                      "Validaci\u00f3n con usuario final antes de cerrar el ticket."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de metodolog\u00edas de diagn\u00f3stico y soluci\u00f3n de problemas para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Aplicar un m\u00e9todo estructurado de troubleshooting que reduzca tiempo de diagn\u00f3stico, minimice cambios riesgosos y deje evidencia reutilizable."
                     ]
                   }
                 ]
