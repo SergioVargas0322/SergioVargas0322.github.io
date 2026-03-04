@@ -9644,14 +9644,57 @@
               {
                 "code": "2.3",
                 "title": "Aprovechamiento de las vulnerabilidades de seguridad",
-                "summary": "C\u00f3mo se explotan debilidades de hardware, software o configuraci\u00f3n para comprometer activos.",
+                "summary": "C\u00f3mo los atacantes explotan fallas de hardware y software, y qu\u00e9 controles reducen el riesgo de compromiso.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Puntos clave",
+                    "title": "Vulnerabilidades de hardware",
                     "items": [
-                      "Una vulnerabilidad sin mitigar se convierte en vector real de ataque.",
-                      "El hardening y el parchado oportuno reducen la probabilidad de explotaci\u00f3n."
+                      "Algunas fallas provienen del dise\u00f1o f\u00edsico del hardware y no solo del software.",
+                      "Rowhammer: acceso repetitivo a una fila de memoria RAM puede inducir corrupci\u00f3n en celdas vecinas.",
+                      "Meltdown y Spectre afectaron CPU de uso masivo y permitieron extraer datos mediante ataques de canal lateral.",
+                      "Aunque suelen ser ataques dirigidos, requieren mitigaciones de firmware, sistema operativo y controles de entorno."
+                    ]
+                  },
+                  {
+                    "title": "Vulnerabilidades de software",
+                    "items": [
+                      "Se originan por errores en sistema operativo, aplicaciones o configuraci\u00f3n insegura.",
+                      "Caso SynFUL Knock: instalaci\u00f3n de imagen IOS alterada en routers empresariales para tomar control del dispositivo.",
+                      "Buenas pr\u00e1cticas: validar integridad de im\u00e1genes/paquetes, restringir acceso f\u00edsico y limitar privilegios administrativos."
+                    ]
+                  },
+                  {
+                    "title": "Categor\u00edas frecuentes de fallas",
+                    "items": [
+                      "Desbordamiento de b\u00fafer: escritura fuera de l\u00edmites que permite corrupci\u00f3n de memoria o escalada de privilegios.",
+                      "Entrada no validada: datos maliciosos fuerzan comportamientos no previstos por la aplicaci\u00f3n.",
+                      "Condiciones de carrera: ejecuciones fuera de secuencia crean estados explotables.",
+                      "Debilidades de dise\u00f1o de seguridad: uso incorrecto de autenticaci\u00f3n, autorizaci\u00f3n o cifrado.",
+                      "Problemas de control de acceso: permisos excesivos o mal aplicados facilitan acceso no autorizado."
+                    ]
+                  },
+                  {
+                    "title": "Actualizaciones y gesti\u00f3n de vulnerabilidades",
+                    "items": [
+                      "El parcheo continuo reduce la ventana de explotaci\u00f3n de fallas conocidas.",
+                      "No basta con actualizar una vez: aparecen vulnerabilidades nuevas de forma regular.",
+                      "Programas de pruebas de penetraci\u00f3n y equipos dedicados (ejemplo: Project Zero) ayudan a detectar fallas antes de que se exploten."
+                    ]
+                  },
+                  {
+                    "title": "Controles recomendados",
+                    "items": [
+                      "Inventario de activos y clasificaci\u00f3n de criticidad para priorizar correcciones.",
+                      "Hardening de sistemas, m\u00ednimo privilegio y segmentaci\u00f3n para reducir superficie de ataque.",
+                      "Cifrado de datos en reposo y en tr\u00e1nsito para limitar impacto si hay acceso no autorizado.",
+                      "Monitoreo de integridad, registros y alertas para detecci\u00f3n temprana de actividad an\u00f3mala."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Identificar c\u00f3mo se explotan vulnerabilidades de hardware y software, y aplicar un ciclo de mitigaci\u00f3n basado en parcheo, configuraci\u00f3n segura y monitoreo continuo."
                     ]
                   }
                 ]
