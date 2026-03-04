@@ -10076,6 +10076,14 @@
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_ips.png",
                     "alt": "Ubicaci\u00f3n de IPS en la red para bloquear tr\u00e1fico malicioso."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_nmap_scan.png",
+                    "alt": "Escaneo de puertos y servicios como apoyo a validaci\u00f3n de superficie de ataque."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_tendencias_riesgo.png",
+                    "alt": "Indicadores de riesgo que justifican defensa por capas en la organizaci\u00f3n."
                   }
                 ],
                 "sections": [
@@ -10153,6 +10161,14 @@
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_netflow.png",
                     "alt": "Flujo NetFlow y campos de inspecci\u00f3n para an\u00e1lisis de tr\u00e1fico."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_nmap_scan.png",
+                    "alt": "Reconocimiento t\u00e9cnico con Nmap como insumo para an\u00e1lisis de comportamiento y pruebas."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_sio_operaciones.png",
+                    "alt": "Ciclo operativo de seguridad para detecci\u00f3n, an\u00e1lisis y respuesta ante incidentes."
                   }
                 ],
                 "sections": [
@@ -10218,6 +10234,14 @@
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_certs.jpeg",
                     "alt": "Organizaciones CERT de referencia para coordinaci\u00f3n de respuesta."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_netflow.png",
+                    "alt": "Telemetr\u00eda de red para soporte de decisiones en CSIRT y SOC."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_control_acceso_administrativo.png",
+                    "alt": "Controles administrativos que complementan el enfoque t\u00e9cnico de ciberseguridad."
                   }
                 ],
                 "sections": [
