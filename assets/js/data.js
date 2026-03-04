@@ -8791,7 +8791,7 @@
               {
                 "code": "2.5",
                 "title": "Ataques de aplicaciones",
-                "summary": "Los ataques a trav\u00e9s de aplicaciones web son cada vez m\u00e1s comunes. Los actores de amenazas explotan vulnerabilidades en la codificaci\u00f3n de una aplicaci\u00f3n basada en web para obtener acceso a una base de datos o servidor.",
+                "summary": "Las aplicaciones web y APIs son un vector cr\u00edtico de ataque; errores de validaci\u00f3n, manejo de sesi\u00f3n y programaci\u00f3n insegura permiten comprometer datos, identidad y control del sistema.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_2_5.png",
@@ -8800,28 +8800,63 @@
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Secuencias de comandos entre sitios (XSS)",
                     "items": [
-                      "Secuencias de comandos entre sitios",
-                      "Inyecci\u00f3n de c\u00f3digo",
-                      "Desbordamiento de b\u00fafer",
-                      "Ejecuciones remotas de c\u00f3digo",
-                      "Otros ataques de aplicaciones",
-                      "Defensa contra ataques de aplicaciones"
+                      "XSS inyecta scripts maliciosos en p\u00e1ginas web para ejecutarse en el navegador de la v\u00edctima.",
+                      "Puede robar cookies, tokens de sesi\u00f3n y datos sensibles para suplantar al usuario.",
+                      "Afecta especialmente formularios, campos de comentarios y entradas sin saneamiento.",
+                      "Mitigaci\u00f3n clave: validaci\u00f3n/sanitizaci\u00f3n de entrada y codificaci\u00f3n segura de salida."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "Inyecci\u00f3n de c\u00f3digo y consultas",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "SQL/XML injection: manipulaci\u00f3n de consultas por falta de validaci\u00f3n de entrada.",
+                      "Inyecci\u00f3n DLL y LDAP: ejecuci\u00f3n de componentes/consultas maliciosas con impacto en autenticaci\u00f3n y directorios.",
+                      "Consecuencias: lectura, alteraci\u00f3n o destrucci\u00f3n de datos; escalamiento de privilegios.",
+                      "Usar consultas parametrizadas, m\u00ednimos privilegios y controles estrictos de entrada reduce exposici\u00f3n."
+                    ]
+                  },
+                  {
+                    "title": "Desbordamiento de b\u00fafer y ejecuci\u00f3n remota",
+                    "items": [
+                      "El desbordamiento de b\u00fafer escribe fuera de l\u00edmites de memoria y altera el flujo del programa.",
+                      "Puede provocar ca\u00edda del servicio, corrupci\u00f3n de datos o ejecuci\u00f3n de c\u00f3digo arbitrario.",
+                      "La ejecuci\u00f3n remota de c\u00f3digo (RCE) permite al atacante operar con privilegios del proceso comprometido.",
+                      "La escalada de privilegios convierte una falla puntual en control amplio del sistema."
+                    ]
+                  },
+                  {
+                    "title": "Otros ataques de aplicaci\u00f3n",
+                    "items": [
+                      "CSRF: env\u00edo de comandos no autorizados desde sesiones v\u00e1lidas del usuario.",
+                      "Condici\u00f3n de carrera (TOC/TOU): explotaci\u00f3n de operaciones simult\u00e1neas sobre recursos compartidos.",
+                      "Traversal de directorios, abuso de API, repetici\u00f3n de solicitudes y agotamiento de recursos.",
+                      "Manejo incorrecto de errores y entradas expone informaci\u00f3n \u00fatil para nuevos ataques."
+                    ]
+                  },
+                  {
+                    "title": "Correo y enga\u00f1o como puerta de entrada",
+                    "items": [
+                      "Spam y phishing distribuyen enlaces o adjuntos maliciosos para comprometer aplicaciones y cuentas.",
+                      "Spear phishing, vishing, pharming y whaling aumentan efectividad por personalizaci\u00f3n y suplantaci\u00f3n.",
+                      "Indicadores comunes: urgencia artificial, dominios sospechosos, enlaces cr\u00edpticos y solicitudes inusuales.",
+                      "Ante duda, no abrir adjuntos/enlaces y reportar al equipo de ciberseguridad."
+                    ]
+                  },
+                  {
+                    "title": "Defensa contra ataques de aplicaciones",
+                    "items": [
+                      "Aplicar desarrollo seguro: validaci\u00f3n de entrada, control de errores y dise\u00f1o defensivo desde el c\u00f3digo fuente.",
+                      "Ejecutar pruebas de seguridad continuas en c\u00f3digo y binarios durante todo el ciclo de desarrollo.",
+                      "Mantener SO, frameworks, librer\u00edas y aplicaciones con parches y versiones soportadas.",
+                      "Combinar protecci\u00f3n t\u00e9cnica con capacitaci\u00f3n de usuarios para reducir vector humano de compromiso."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de ataques de aplicaciones para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Identificar y mitigar ataques de aplicaciones priorizando validaci\u00f3n de entrada, hardening de servicios y pr\u00e1cticas de desarrollo seguro para proteger datos y continuidad operativa."
                     ]
                   }
                 ]
