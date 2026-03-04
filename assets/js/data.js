@@ -9390,20 +9390,49 @@
               {
                 "code": "1.4",
                 "title": "Ciberatacantes",
-                "summary": "Tipos de actores de amenaza, motivaciones y objetivos comunes en ataques digitales.",
+                "summary": "Clasificaci\u00f3n de actores de amenaza, diferencias entre atacantes internos y externos, y sus motivaciones principales.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Base del tema",
+                    "title": "Tipos de atacantes",
                     "items": [
-                      "Existen atacantes oportunistas, criminales organizados, insiders y actores patrocinados por estados.",
-                      "Las motivaciones incluyen lucro, espionaje, sabotaje e impacto reputacional."
+                      "Los atacantes aficionados (script kiddies) usan herramientas p\u00fablicas para lanzar ataques con poco conocimiento t\u00e9cnico propio.",
+                      "Sombrero blanco: prueba sistemas con autorizaci\u00f3n para encontrar y reportar debilidades.",
+                      "Sombrero gris: detecta fallas sin autorizaci\u00f3n formal y puede divulgar hallazgos seg\u00fan su agenda.",
+                      "Sombrero negro: explota vulnerabilidades con fines ilegales (lucro, fraude, extorsi\u00f3n o sabotaje).",
+                      "Grupos organizados: ciberdelincuentes, hacktivistas y actores patrocinados por estados, con mayor sofisticaci\u00f3n y recursos."
+                    ]
+                  },
+                  {
+                    "title": "Amenazas internas y externas",
+                    "items": [
+                      "Amenaza interna: empleados, contratistas o socios que pueden exponer datos por error o por acci\u00f3n intencional.",
+                      "Ejemplos internos: mal manejo de informaci\u00f3n sensible, uso de USB infectados, clic en enlaces maliciosos o abuso de privilegios.",
+                      "Amenaza externa: atacantes fuera de la organizaci\u00f3n que aprovechan fallas de red, credenciales d\u00e9biles e ingenier\u00eda social."
+                    ]
+                  },
+                  {
+                    "title": "Motivaciones frecuentes",
+                    "items": [
+                      "Beneficio econ\u00f3mico: robo de dinero, datos o credenciales para fraude.",
+                      "Espionaje: extracci\u00f3n de secretos comerciales, tecnol\u00f3gicos o de defensa.",
+                      "Impacto pol\u00edtico o ideol\u00f3gico: hacktivismo, desinformaci\u00f3n y presi\u00f3n social.",
+                      "Sabotaje operativo: interrupci\u00f3n de servicios cr\u00edticos y da\u00f1o reputacional."
+                    ]
+                  },
+                  {
+                    "title": "Controles recomendados",
+                    "items": [
+                      "Aplicar principio de m\u00ednimo privilegio y control estricto de acceso a datos sensibles.",
+                      "Fortalecer autenticaci\u00f3n (MFA), segmentaci\u00f3n de red y monitoreo continuo de eventos.",
+                      "Capacitar al personal contra phishing e ingenier\u00eda social con simulaciones peri\u00f3dicas.",
+                      "Definir proceso formal de respuesta a incidentes para amenazas internas y externas."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Relacionar actor, motivaci\u00f3n y tipo de ataque para priorizar controles de defensa."
+                      "Distinguir perfiles de atacante y asociarlos a controles t\u00e9cnicos y operativos para reducir probabilidad e impacto de incidentes."
                     ]
                   }
                 ]
@@ -9411,20 +9440,51 @@
               {
                 "code": "1.5",
                 "title": "Guerra cibern\u00e9tica",
-                "summary": "Uso de capacidades digitales en conflictos entre estados y su efecto sobre infraestructura cr\u00edtica.",
+                "summary": "Uso estrat\u00e9gico de capacidades cibern\u00e9ticas por estados y grupos avanzados para espionaje y sabotaje de infraestructura cr\u00edtica.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Base del tema",
+                    "title": "Concepto operativo",
                     "items": [
-                      "La guerra cibern\u00e9tica puede afectar servicios esenciales sin presencia f\u00edsica en el territorio objetivo.",
-                      "Los ataques a infraestructura industrial y energ\u00e9tica evidencian su impacto estrat\u00e9gico."
+                      "La guerra cibern\u00e9tica busca ventaja frente a naciones o competidores mediante operaciones digitales persistentes.",
+                      "Puede combinar espionaje, interrupci\u00f3n de servicios y sabotaje de sistemas industriales sin invasi\u00f3n f\u00edsica."
+                    ]
+                  },
+                  {
+                    "title": "Caso de referencia: Stuxnet",
+                    "items": [
+                      "Stuxnet fue dise\u00f1ado para comprometer sistemas Windows y afectar controladores l\u00f3gicos programables (PLC) en entornos industriales.",
+                      "Us\u00f3 vulnerabilidades de d\u00eda cero, propagaci\u00f3n por USB y t\u00e9cnicas avanzadas de persistencia y actualizaci\u00f3n modular.",
+                      "Su objetivo principal no era robar datos, sino alterar procesos f\u00edsicos y da\u00f1ar infraestructura cr\u00edtica."
+                    ]
+                  },
+                  {
+                    "title": "Objetivos de la guerra cibern\u00e9tica",
+                    "items": [
+                      "Obtener inteligencia estrat\u00e9gica y secretos de defensa.",
+                      "Reducir brechas tecnol\u00f3gicas e industriales mediante espionaje digital.",
+                      "Desestabilizar servicios esenciales (energ\u00eda, transporte, comunicaciones, salud) para generar caos y presi\u00f3n pol\u00edtica."
+                    ]
+                  },
+                  {
+                    "title": "Impacto sobre la sociedad",
+                    "items": [
+                      "Una interrupci\u00f3n en infraestructura cr\u00edtica puede afectar comercio, movilidad, atenci\u00f3n m\u00e9dica y acceso a servicios digitales.",
+                      "Las consecuencias pueden escalar r\u00e1pidamente y erosionar la confianza ciudadana en instituciones y operadores."
+                    ]
+                  },
+                  {
+                    "title": "Preparaci\u00f3n defensiva",
+                    "items": [
+                      "Proteger sistemas OT/ICS con segmentaci\u00f3n, control de cambios y monitoreo especializado.",
+                      "Reducir superficie de ataque: gesti\u00f3n de parches, inventario de activos y control de medios removibles.",
+                      "Coordinar equipos t\u00e9cnicos, legales y de continuidad para responder a incidentes de alto impacto."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Distinguir operaciones cibercriminales de operaciones de ciberconflicto entre estados."
+                      "Diferenciar cibercrimen de ciberconflicto estatal y comprender por qu\u00e9 la protecci\u00f3n de infraestructura cr\u00edtica exige estrategias de defensa avanzadas."
                     ]
                   }
                 ]
