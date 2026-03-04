@@ -9819,14 +9819,54 @@
               {
                 "code": "3.2",
                 "title": "Mantenimiento de datos",
-                "summary": "Protecci\u00f3n de informaci\u00f3n mediante cifrado, copias de seguridad y control del ciclo de vida de los datos.",
+                "summary": "Protecci\u00f3n del ciclo de vida de la informaci\u00f3n mediante cifrado, respaldo peri\u00f3dico y eliminaci\u00f3n segura.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Puntos clave",
+                    "title": "Cifrado como control base",
                     "items": [
-                      "Los datos deben protegerse en tr\u00e1nsito, en reposo y en uso.",
-                      "Los respaldos probados son cr\u00edticos para recuperar operaci\u00f3n tras incidentes."
+                      "Cifrar convierte los datos en un formato ilegible para usuarios no autorizados.",
+                      "Solo quien posee la clave o credencial correcta puede restaurar el contenido original.",
+                      "El cifrado no evita la intercepci\u00f3n del tr\u00e1fico, pero reduce la exposici\u00f3n si los datos son capturados."
+                    ]
+                  },
+                  {
+                    "title": "Protecci\u00f3n de archivos y dispositivos",
+                    "items": [
+                      "Herramientas del sistema operativo (por ejemplo EFS en Windows) permiten cifrar archivos, carpetas o unidades.",
+                      "Cifrar dispositivos port\u00e1tiles reduce impacto por robo o p\u00e9rdida del equipo.",
+                      "La clave de acceso debe estar protegida con autenticaci\u00f3n fuerte y controles de cuenta."
+                    ]
+                  },
+                  {
+                    "title": "Respaldo de datos",
+                    "items": [
+                      "Realizar copias de seguridad peri\u00f3dicas evita p\u00e9rdida irreversible de informaci\u00f3n.",
+                      "Aplicar estrategia 3-2-1: tres copias, en dos medios distintos, con al menos una copia fuera del sitio.",
+                      "Automatizar respaldos y verificar restauraci\u00f3n de forma regular es tan importante como crear la copia."
+                    ]
+                  },
+                  {
+                    "title": "Opciones de almacenamiento de respaldo",
+                    "items": [
+                      "Local/secundario: NAS, discos externos u otros medios bajo control directo de la organizaci\u00f3n.",
+                      "Nube: servicios como AWS ofrecen disponibilidad y resiliencia ante incendio, robo o falla local.",
+                      "Seleccionar qu\u00e9 respaldar seg\u00fan criticidad de datos, costo y requisitos de recuperaci\u00f3n."
+                    ]
+                  },
+                  {
+                    "title": "Eliminaci\u00f3n segura y sanitizaci\u00f3n",
+                    "items": [
+                      "Borrar un archivo de forma convencional no siempre impide su recuperaci\u00f3n forense.",
+                      "Para datos sensibles, usar herramientas de sobreescritura segura y procedimientos de sanitizaci\u00f3n.",
+                      "Cuando el riesgo lo exige, la destrucci\u00f3n f\u00edsica del medio es la garant\u00eda m\u00e1s robusta.",
+                      "No olvidar eliminar tambi\u00e9n copias en servicios en la nube cuando aplique."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Definir y aplicar una estrategia pr\u00e1ctica de cifrado, respaldo y eliminaci\u00f3n segura para reducir riesgo de fuga, p\u00e9rdida o reutilizaci\u00f3n no autorizada de datos."
                     ]
                   }
                 ]
