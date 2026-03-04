@@ -10301,6 +10301,14 @@
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_control_acceso_administrativo.png",
                     "alt": "Elementos de control de acceso administrativo: pol\u00edticas, procedimientos y capacitaci\u00f3n."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_password_reglas.png",
+                    "alt": "Reglas y lineamientos de credenciales como base de cumplimiento y buenas pr\u00e1cticas."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_tendencias_riesgo.png",
+                    "alt": "Panorama de riesgos y amenazas que exige decisiones legales y \u00e9ticas en ciberseguridad."
                   }
                 ],
                 "sections": [
@@ -10352,6 +10360,14 @@
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_certs.jpeg",
                     "alt": "Organizaciones y ecosistema profesional de ciberseguridad (CERT/FIRST)."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_sio_operaciones.png",
+                    "alt": "Funciones operativas en centros de seguridad (SOC) y colaboraci\u00f3n entre equipos."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_netflow.png",
+                    "alt": "Ejemplo de anal\u00edtica de tr\u00e1fico como competencia t\u00e9cnica para carreras de ciberseguridad."
                   }
                 ],
                 "sections": [
