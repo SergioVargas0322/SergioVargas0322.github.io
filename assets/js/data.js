@@ -9702,14 +9702,54 @@
               {
                 "code": "2.4",
                 "title": "El panorama de la ciberseguridad",
-                "summary": "Tendencias actuales de amenazas, impacto del crimen digital y evoluci\u00f3n del riesgo.",
+                "summary": "Panorama actual centrado en criptomonedas y criptojacking como vectores de riesgo t\u00e9cnico y econ\u00f3mico.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Puntos clave",
+                    "title": "Criptomoneda en contexto",
                     "items": [
-                      "El panorama cambia r\u00e1pido por nuevas t\u00e9cnicas, plataformas y modelos de negocio delictivo.",
-                      "La vigilancia continua y la adaptaci\u00f3n de controles son esenciales para resiliencia."
+                      "La criptomoneda es dinero digital que usa criptograf\u00eda para proteger transacciones.",
+                      "Las operaciones se registran en un libro mayor distribuido (blockchain), replicado entre nodos de la red.",
+                      "La validaci\u00f3n de transacciones mediante miner\u00eda requiere capacidad computacional significativa."
+                    ]
+                  },
+                  {
+                    "title": "Riesgos asociados al ecosistema cripto",
+                    "items": [
+                      "El car\u00e1cter pseud\u00f3nimo y descentralizado puede dificultar trazabilidad en ciertos delitos.",
+                      "Los atacantes explotan credenciales de billeteras, claves privadas y plataformas mal configuradas.",
+                      "Las campa\u00f1as de extorsi\u00f3n digital suelen exigir pagos en criptoactivos por su rapidez operativa."
+                    ]
+                  },
+                  {
+                    "title": "Criptojacking: c\u00f3mo funciona",
+                    "items": [
+                      "El criptojacking instala o ejecuta c\u00f3digo que mina criptomonedas sin consentimiento del usuario.",
+                      "Puede afectar PC, servidores, port\u00e1tiles, dispositivos m\u00f3viles y entornos en la nube.",
+                      "El atacante monetiza recursos ajenos mientras la v\u00edctima asume costos de energ\u00eda y degradaci\u00f3n del servicio."
+                    ]
+                  },
+                  {
+                    "title": "Indicadores de compromiso",
+                    "items": [
+                      "Uso anormal y sostenido de CPU/GPU, sobrecalentamiento y rendimiento degradado.",
+                      "Incremento inesperado en consumo el\u00e9ctrico o costos de infraestructura cloud.",
+                      "Procesos desconocidos, tareas programadas sospechosas o conexiones salientes inusuales."
+                    ]
+                  },
+                  {
+                    "title": "Mitigaci\u00f3n recomendada",
+                    "items": [
+                      "Aplicar parches y endurecimiento del sistema en endpoints, servidores y contenedores.",
+                      "Restringir ejecuci\u00f3n de scripts no confiables y usar protecci\u00f3n EDR/antimalware actualizada.",
+                      "Monitorear consumo de recursos, telemetr\u00eda de procesos y tr\u00e1fico de red para detecci\u00f3n temprana.",
+                      "Asegurar cuentas con MFA y m\u00ednimo privilegio para reducir abuso de credenciales."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Explicar el rol de la criptomoneda en el panorama de amenazas y detectar tempranamente se\u00f1ales de criptojacking para contener su impacto."
                     ]
                   }
                 ]
