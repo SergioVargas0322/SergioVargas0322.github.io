@@ -9859,7 +9859,15 @@
                 "images": [
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_password_reglas.png",
-                    "alt": "Guía visual de buenas prácticas para crear contraseñas fuertes."
+                    "alt": "Gu\u00eda visual de buenas pr\u00e1cticas para crear contrase\u00f1as fuertes."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_ids.png",
+                    "alt": "IDS como control para detectar actividad sospechosa en la red dom\u00e9stica o personal."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_ips.png",
+                    "alt": "IPS como control para bloquear tr\u00e1fico malicioso y proteger dispositivos."
                   }
                 ],
                 "sections": [
@@ -9920,7 +9928,15 @@
                 "images": [
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_mccumber_estados.png",
-                    "alt": "Protección de datos según su estado: en reposo, en tránsito y en uso."
+                    "alt": "Protecci\u00f3n de datos seg\u00fan su estado: en reposo, en tr\u00e1nsito y en uso."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_mccumber_medidas.png",
+                    "alt": "Medidas de seguridad aplicadas para proteger datos durante todo su ciclo de vida."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_mccumber_principios.png",
+                    "alt": "Principios de confidencialidad, integridad y disponibilidad aplicados al mantenimiento de datos."
                   }
                 ],
                 "sections": [
@@ -9980,7 +9996,15 @@
                 "images": [
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_passphrase.png",
-                    "alt": "Construcci?n de frase de contrase?a segura con caracteres especiales."
+                    "alt": "Construcci\u00f3n de frase de contrase\u00f1a segura con caracteres especiales."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_spoofing.png",
+                    "alt": "Ejemplo de suplantaci\u00f3n de identidad digital como riesgo para la privacidad en l\u00ednea."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_xss.png",
+                    "alt": "Ejemplo de ataque web que compromete sesiones y datos de usuario en navegaci\u00f3n."
                   }
                 ],
                 "sections": [
@@ -10047,11 +10071,11 @@
                 "images": [
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_ids.png",
-                    "alt": "Ubicaci?n de IDS en la red para detectar tr?fico malicioso."
+                    "alt": "Ubicaci\u00f3n de IDS en la red para detectar tr\u00e1fico malicioso."
                   },
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_ips.png",
-                    "alt": "Ubicaci?n de IPS en la red para bloquear tr?fico malicioso."
+                    "alt": "Ubicaci\u00f3n de IPS en la red para bloquear tr\u00e1fico malicioso."
                   }
                 ],
                 "sections": [
@@ -10128,7 +10152,7 @@
                 "images": [
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_netflow.png",
-                    "alt": "Flujo NetFlow y campos de inspecci?n para an?lisis de tr?fico."
+                    "alt": "Flujo NetFlow y campos de inspecci\u00f3n para an\u00e1lisis de tr\u00e1fico."
                   }
                 ],
                 "sections": [
@@ -10189,11 +10213,11 @@
                 "images": [
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_sio_operaciones.png",
-                    "alt": "Modelo de operaciones de seguridad y coordinaci?n de controles."
+                    "alt": "Modelo de operaciones de seguridad y coordinaci\u00f3n de controles."
                   },
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_certs.jpeg",
-                    "alt": "Organizaciones CERT de referencia para coordinaci?n de respuesta."
+                    "alt": "Organizaciones CERT de referencia para coordinaci\u00f3n de respuesta."
                   }
                 ],
                 "sections": [
@@ -10252,7 +10276,7 @@
                 "images": [
                   {
                     "src": "./assets/images/intro-cybersecurity/C9_control_acceso_administrativo.png",
-                    "alt": "Elementos de control de acceso administrativo: pol?ticas, procedimientos y capacitaci?n."
+                    "alt": "Elementos de control de acceso administrativo: pol\u00edticas, procedimientos y capacitaci\u00f3n."
                   }
                 ],
                 "sections": [
