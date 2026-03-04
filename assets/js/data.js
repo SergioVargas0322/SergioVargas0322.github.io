@@ -8148,6 +8148,683 @@
             ]
           }
         ]
+      },
+      {
+        "id": "network-support-security",
+        "title": "Soporte y Seguridad de red",
+        "provider": "Cisco Networking Academy",
+        "level": "Intermedio",
+        "status": "En curso",
+        "estimatedHours": 30,
+        "summary": "Curso enfocado en diagn?stico, documentaci?n, soporte operativo y controles de ciberseguridad para proteger infraestructura, usuarios y servicios de red.",
+        "tags": [
+          "soporte",
+          "troubleshooting",
+          "seguridad",
+          "ciberseguridad",
+          "operaciones"
+        ],
+        "modules": [
+          {
+            "key": "M1",
+            "title": "Soporte de Red",
+            "topics": [
+              {
+                "code": "1.1",
+                "title": "Metodolog\u00edas de diagn\u00f3stico y soluci\u00f3n de problemas",
+                "summary": "La soluci\u00f3n de problemas es el proceso de identificar, localizar y corregir problemas. Este proceso implica la recopilaci\u00f3n de informaci\u00f3n y el uso de uno o m\u00e1s m\u00e9todos estructurados de soluci\u00f3n de problemas.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_1_1.png",
+                    "alt": "Referencia visual del tema 1.1: Metodolog\u00edas de diagn\u00f3stico y soluci\u00f3n de problemas."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "Revisi\u00f3n del proceso de soluci\u00f3n de problemas",
+                      "Proceso de Siete Pasos para la Resoluci\u00f3n de Problemas",
+                      "Soluci\u00f3n de problemas con modelos en capas",
+                      "M\u00e9todos Estructurados de Soluci\u00f3n de Problemas",
+                      "Pautas para Seleccionar un M\u00e9todo de Soluci\u00f3n de Problemas",
+                      "Documentar hallazgos, acciones y resultados"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de metodolog\u00edas de diagn\u00f3stico y soluci\u00f3n de problemas para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "1.2",
+                "title": "Documentaci\u00f3n de red",
+                "summary": "Al igual que con cualquier actividad compleja, como la resoluci\u00f3n de problemas de red, se debe comenzar con una buena documentaci\u00f3n.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_1_2.png",
+                    "alt": "Referencia visual del tema 1.2: Documentaci\u00f3n de red."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "Descripci\u00f3n general de la documentaci\u00f3n",
+                      "Topolog\u00edas y descripciones de red",
+                      "Topolog\u00edas de redes empresariales",
+                      "Servicios y aplicaciones de red en la nube",
+                      "Est\u00e1ndares inal\u00e1mbricos",
+                      "Documentaci\u00f3n del dispositivo de red"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de documentaci\u00f3n de red para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "1.3",
+                "title": "Mesas de Ayuda",
+                "summary": "Las organizaciones operan con pol\u00edticas corporativas, de empleados y de seguridad bien definidas.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_1_3.png",
+                    "alt": "Referencia visual del tema 1.3: Mesas de Ayuda."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "La Pol\u00edtica de Seguridad",
+                      "Mesas de Ayuda",
+                      "Sistemas de emisi\u00f3n de tiquetes",
+                      "Preguntar a los usuarios finales",
+                      "Escucha activa",
+                      "Demostraci\u00f3n en video - Escuchar activamente y resumir"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de mesas de ayuda para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "1.4",
+                "title": "Solucionar problemas de conectividad de dispositivos finales",
+                "summary": "Si us\u00f3 alguna de las herramientas para verificar la conectividad y descubri\u00f3 que alguna parte de su red no funciona como deber\u00eda, ahora es el momento de usar algunos comandos para solucionar los problemas de sus dispositivos.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_1_4.jpeg",
+                    "alt": "Referencia visual del tema 1.4: Solucionar problemas de conectividad de dispositivos finales."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "Configuraci\u00f3n de red de Windows",
+                      "Verificar la conectividad en Windows",
+                      "Configuraci\u00f3n de red de Linux",
+                      "Verificar la conectividad en Linux",
+                      "Configuraci\u00f3n de red de MacOS",
+                      "Verificar la conectividad en MacOS"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de solucionar problemas de conectividad de dispositivos finales para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "1.5",
+                "title": "Solucionar problemas de una red",
+                "summary": "Al documentar o diagnosticar un problema de red, a menudo es necesario recopilar informaci\u00f3n directamente de los enrutadores y conmutadores. Los comandos de red \u00fatiles y obvios incluyen ping, traceroute y telnet.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_1_5.png",
+                    "alt": "Referencia visual del tema 1.5: Solucionar problemas de una red."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "Dispositivos de red como fuentes de informaci\u00f3n de red",
+                      "Captura de paquetes y an\u00e1lisis de protocolo",
+                      "Medici\u00f3n del rendimiento de la red"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de solucionar problemas de una red para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "1.6",
+                "title": "Solucionar problemas de conectividad de forma remota",
+                "summary": "Al ayudar a los usuarios remotos, a menudo no es eficiente guiar verbalmente a un usuario a trav\u00e9s de procedimientos complicados.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_1_6.png",
+                    "alt": "Referencia visual del tema 1.6: Solucionar problemas de conectividad de forma remota."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "Soporte a usuarios remotos",
+                      "Acceso remoto con Telnet, SSH y RDP",
+                      "Demostraci\u00f3n en video - Escritorio remoto y Asistencia remota",
+                      "Comprender las VPN",
+                      "Sistemas de gesti\u00f3n de red",
+                      "V\u00eddeo - \u00bfQu\u00e9 es la gesti\u00f3n de red?"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de solucionar problemas de conectividad de forma remota para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "M2",
+            "title": "Amenazas, vulnerabilidades y ataques a la ciberseguridad",
+            "topics": [
+              {
+                "code": "2.1",
+                "title": "Amenazas comunes",
+                "summary": "Dado que las organizaciones enfrentan un n\u00famero cada vez mayor de amenazas cibern\u00e9ticas, es fundamental que cuenten con soluciones de seguridad s\u00f3lidas.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_2_1.jpeg",
+                    "alt": "Referencia visual del tema 2.1: Amenazas comunes."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "Dominios de amenazas",
+                      "Tipos de amenazas cibern\u00e9ticas",
+                      "Amenazas internas y externas",
+                      "Amenazas y vulnerabilidades del usuario",
+                      "Amenazas a los dispositivos",
+                      "Amenazas a la red de \u00e1rea local"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de amenazas comunes para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "2.2",
+                "title": "Enga\u00f1o",
+                "summary": "La ingenier\u00eda social es una estrategia no t\u00e9cnica que intenta manipular a las personas para que realicen acciones riesgosas o divulguen informaci\u00f3n confidencial.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_2_2.png",
+                    "alt": "Referencia visual del tema 2.2: Enga\u00f1o."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "Ingenier\u00eda Social",
+                      "T\u00e1cticas de ingenier\u00eda social",
+                      "Espiar por encima del hombro y hurgar en la basura",
+                      "Suplantaci\u00f3n de identidad y enga\u00f1os",
+                      "Piggybacking y Tailgating",
+                      "Otros m\u00e9todos de enga\u00f1o"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de enga\u00f1o para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "2.3",
+                "title": "Ataques cibern\u00e9ticos",
+                "summary": "Los ciberdelincuentes utilizan muchos tipos diferentes de software malicioso, o malware, para llevar a cabo sus actividades.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_2_3.png",
+                    "alt": "Referencia visual del tema 2.3: Ataques cibern\u00e9ticos."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "Malware",
+                      "Bombas L\u00f3gicas",
+                      "Ransomware",
+                      "Ataques de denegaci\u00f3n de servicio",
+                      "Sistema de nombres de dominio",
+                      "Ataques de capa 2"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de ataques cibern\u00e9ticos para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "2.4",
+                "title": "Ataques a dispositivos inal\u00e1mbricos y m\u00f3viles",
+                "summary": "Grayware es cualquier aplicaci\u00f3n no deseada que se comporta de forma molesta o indeseable.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_2_4.png",
+                    "alt": "Referencia visual del tema 2.4: Ataques a dispositivos inal\u00e1mbricos y m\u00f3viles."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "Grayware y SMiShing",
+                      "Puntos de acceso no autorizados",
+                      "Interferencia de radiofrecuencia",
+                      "Bluejacking y Bluesnarfing",
+                      "Ataques contra protocolos Wi-Fi",
+                      "Wi-Fi y defensa m\u00f3vil"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de ataques a dispositivos inal\u00e1mbricos y m\u00f3viles para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "2.5",
+                "title": "Ataques de aplicaciones",
+                "summary": "Los ataques a trav\u00e9s de aplicaciones web son cada vez m\u00e1s comunes. Los actores de amenazas explotan vulnerabilidades en la codificaci\u00f3n de una aplicaci\u00f3n basada en web para obtener acceso a una base de datos o servidor.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_2_5.png",
+                    "alt": "Referencia visual del tema 2.5: Ataques de aplicaciones."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "Secuencias de comandos entre sitios",
+                      "Inyecci\u00f3n de c\u00f3digo",
+                      "Desbordamiento de b\u00fafer",
+                      "Ejecuciones remotas de c\u00f3digo",
+                      "Otros ataques de aplicaciones",
+                      "Defensa contra ataques de aplicaciones"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de ataques de aplicaciones para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "M3",
+            "title": "Seguridad de Red",
+            "topics": [
+              {
+                "code": "3.1",
+                "title": "Fundamentos de seguridad",
+                "summary": "\u00bfHa o\u00eddo hablar del cubo de la ciberseguridad? Proporciona una manera \u00fatil de pensar en la protecci\u00f3n de datos.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_3_1.png",
+                    "alt": "Referencia visual del tema 3.1: Fundamentos de seguridad."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "El Cubo de Ciberseguridad",
+                      "Confidencialidad, Integridad y Disponibilidad",
+                      "Tr\u00edada de la CIA - El principio de confidencialidad",
+                      "Integridad de datos",
+                      "Disponibilidad",
+                      "Garant\u00eda de disponibilidad"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de fundamentos de seguridad para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "3.2",
+                "title": "Control de acceso",
+                "summary": "Los controles de acceso f\u00edsico son barreras reales desplegadas para evitar el contacto f\u00edsico directo con los sistemas.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_3_2.png",
+                    "alt": "Referencia visual del tema 3.2: Control de acceso."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "Controles de acceso f\u00edsico",
+                      "Controles de acceso l\u00f3gico",
+                      "Controles de acceso administrativo",
+                      "Autenticaci\u00f3n, Autorizaci\u00f3n y Contabilidad (AAA)",
+                      "\u00bfQu\u00e9 es la identificaci\u00f3n?",
+                      "Gesti\u00f3n de identidad federada"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de control de acceso para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "3.3",
+                "title": "Defensa de sistemas y dispositivos",
+                "summary": "\u00bfQu\u00e9 debe hacer una organizaci\u00f3n para fortalecer un sistema operativo y mantenerlo seguro?",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_3_3.svg",
+                    "alt": "Referencia visual del tema 3.3: Defensa de sistemas y dispositivos."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "Seguridad del sistema operativo",
+                      "Tipos de Antimalware",
+                      "Administraci\u00f3n de parches",
+                      "Seguridad de dispositivo final",
+                      "Cifrado de host",
+                      "Integridad de arranque"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de defensa de sistemas y dispositivos para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "3.4",
+                "title": "Protecci\u00f3n antimalware",
+                "summary": "La palabra \u201cterminal\u201d tiene varias definiciones. Para los fines de este curso, definiremos los terminales como hosts en la red que pueden tener acceso a otros hosts de la red y viceversa.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_3_4.png",
+                    "alt": "Referencia visual del tema 3.4: Protecci\u00f3n antimalware."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "Amenazas de dispositivos finales",
+                      "Seguridad de dispositivo final",
+                      "Protecci\u00f3n contra malware basada en host",
+                      "Protecci\u00f3n contra malware basada en la red"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de protecci\u00f3n antimalware para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "3.5",
+                "title": "Firewalls y prevenci\u00f3n de intrusiones basada en host",
+                "summary": "Un firewall es un sistema o grupo de sistemas que impone una pol\u00edtica de control de acceso entre redes.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_3_5.png",
+                    "alt": "Referencia visual del tema 3.5: Firewalls y prevenci\u00f3n de intrusiones basada en host."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "Cortafuegos (Firewall)",
+                      "Tipos de cortafuegos",
+                      "Beneficios y limitaciones del firewall de filtrado de paquetes",
+                      "Beneficios y limitaciones del firewall con estado",
+                      "Firewalls basados en host",
+                      "Programas antimalware"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de firewalls y prevenci\u00f3n de intrusiones basada en host para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "3.6",
+                "title": "Acceso inal\u00e1mbrico seguro",
+                "summary": "Las redes inal\u00e1mbricas est\u00e1n creciendo r\u00e1pidamente. Es importante comprender las vulnerabilidades, las amenazas y los exploits de las redes inal\u00e1mbricas.",
+                "images": [
+                  {
+                    "src": "./assets/images/network-support-security/C8_3_6.png",
+                    "alt": "Referencia visual del tema 3.6: Acceso inal\u00e1mbrico seguro."
+                  }
+                ],
+                "sections": [
+                  {
+                    "title": "Subtemas clave",
+                    "items": [
+                      "V\u00eddeo - Amenazas WLAN",
+                      "Descripci\u00f3n general de la seguridad inal\u00e1mbrica",
+                      "Ataques DoS",
+                      "Puntos de acceso no autorizados",
+                      "Ataque de Hombre en el medio",
+                      "V\u00eddeo: WLAN seguras"
+                    ]
+                  },
+                  {
+                    "title": "Enfoque pr?ctico",
+                    "items": [
+                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
+                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
+                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Aplicar los fundamentos de acceso inal\u00e1mbrico seguro para reducir riesgos y mejorar la continuidad operativa de la red."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   };

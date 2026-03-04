@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Tema 3.3">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b3d5c"/>
+      <stop offset="100%" stop-color="#1d6fa5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g)"/>
+  <rect x="80" y="80" width="1120" height="560" rx="24" fill="#ffffff" fill-opacity="0.12" stroke="#e6f4ff" stroke-opacity="0.45"/>
+  <text x="120" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="700" fill="#e8f6ff">Curso 8 - Tema 3.3</text>
+  <text x="120" y="320" font-family="Segoe UI, Arial, sans-serif" font-size="36" fill="#e8f6ff">Soporte y Seguridad de Red</text>
+  <text x="120" y="420" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#d9eeff">Referencia visual temporal para desarrollo de contenido.</text>
+</svg>
