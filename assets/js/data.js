@@ -9562,14 +9562,81 @@
               {
                 "code": "2.2",
                 "title": "M\u00e9todos de infiltraci\u00f3n",
-                "summary": "T\u00e9cnicas de entrada como ingenier\u00eda social, phishing y abuso de servicios expuestos.",
+                "summary": "Vectores de entrada usados por atacantes: ingenier\u00eda social, DoS/DDoS, botnets, MiTM, ataques de contrase\u00f1a y APT.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Puntos clave",
+                    "title": "Ingenier\u00eda social",
                     "items": [
-                      "La manipulaci\u00f3n de usuarios sigue siendo una v\u00eda de entrada frecuente.",
-                      "La combinaci\u00f3n de controles t\u00e9cnicos y capacitaci\u00f3n reduce superficie de riesgo."
+                      "La ingenier\u00eda social manipula a las personas para revelar informaci\u00f3n o ejecutar acciones inseguras.",
+                      "Pretexto: el atacante miente sobre su identidad o urgencia para obtener datos privilegiados.",
+                      "Tailgating: ingreso f\u00edsico no autorizado siguiendo a una persona con acceso leg\u00edtimo.",
+                      "Quid pro quo: intercambio de supuesta ayuda/regalo por credenciales o informaci\u00f3n sensible."
+                    ]
+                  },
+                  {
+                    "title": "Ataques de denegaci\u00f3n de servicio",
+                    "items": [
+                      "DoS: interrupci\u00f3n de servicios por saturaci\u00f3n o uso de paquetes malformados.",
+                      "DDoS: mismo objetivo, pero desde m\u00faltiples fuentes coordinadas para aumentar impacto.",
+                      "El efecto habitual es degradaci\u00f3n severa, ca\u00edda del servicio o indisponibilidad total."
+                    ]
+                  },
+                  {
+                    "title": "Botnets y control C2",
+                    "items": [
+                      "Una botnet es una red de equipos comprometidos (bots/zombies) controlados remotamente.",
+                      "Los bots se usan para DDoS, distribuci\u00f3n de malware, spam y fuerza bruta de contrase\u00f1as.",
+                      "El tr\u00e1fico hacia infraestructura de comando y control (C2) es un indicador clave de compromiso.",
+                      "Filtros de inteligencia de amenazas ayudan a detectar comunicaciones con botnets conocidas."
+                    ]
+                  },
+                  {
+                    "title": "Intercepci\u00f3n en ruta y manipulaci\u00f3n",
+                    "items": [
+                      "MiTM (Man-in-the-Middle): el atacante intercepta/modifica comunicaci\u00f3n entre dos extremos.",
+                      "MiTMo (Man-in-the-Mobile): variante orientada a dispositivos m\u00f3viles y robo de c\u00f3digos/sesiones.",
+                      "El riesgo principal es la captura de datos financieros, credenciales y tokens de autenticaci\u00f3n."
+                    ]
+                  },
+                  {
+                    "title": "Envenenamiento SEO y tr\u00e1fico malicioso",
+                    "items": [
+                      "El envenenamiento SEO manipula resultados de b\u00fasqueda para posicionar sitios maliciosos.",
+                      "Su objetivo es atraer usuarios hacia p\u00e1ginas con malware o fraude por ingenier\u00eda social."
+                    ]
+                  },
+                  {
+                    "title": "Ataques de contrase\u00f1a",
+                    "items": [
+                      "Password spraying: pocas contrase\u00f1as comunes contra muchas cuentas para evadir bloqueos.",
+                      "Diccionario: prueba sistem\u00e1tica de palabras frecuentes y variantes.",
+                      "Fuerza bruta: exploraci\u00f3n de combinaciones hasta acertar la clave.",
+                      "Tabla arco\u00edris: b\u00fasqueda de coincidencias de hash precalculadas.",
+                      "Intercepci\u00f3n de texto plano: captura de claves cuando no hay cifrado robusto."
+                    ]
+                  },
+                  {
+                    "title": "Amenazas persistentes avanzadas (APT)",
+                    "items": [
+                      "APT: operaciones sigilosas, multietapa y de largo plazo contra objetivos espec\u00edficos.",
+                      "Suelen estar bien financiadas y buscar espionaje, ventaja estrat\u00e9gica o sabotaje sostenido.",
+                      "La persistencia en el entorno objetivo es prioritaria para extraer valor sin ser detectados."
+                    ]
+                  },
+                  {
+                    "title": "Controles recomendados",
+                    "items": [
+                      "Capacitaci\u00f3n continua contra ingenier\u00eda social, verificaci\u00f3n de identidad y canales seguros.",
+                      "MFA, pol\u00edticas de contrase\u00f1a robusta y bloqueo adaptativo ante intentos sospechosos.",
+                      "Protecci\u00f3n de correo/web, segmentaci\u00f3n de red y monitoreo de tr\u00e1fico hacia C2.",
+                      "Plan de respuesta con detecci\u00f3n temprana, contenci\u00f3n, erradicaci\u00f3n y lecciones aprendidas."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Reconocer los principales m\u00e9todos de infiltraci\u00f3n y seleccionar controles preventivos y de detecci\u00f3n acordes al riesgo."
                     ]
                   }
                 ]
