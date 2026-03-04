@@ -8581,7 +8581,7 @@
               {
                 "code": "2.2",
                 "title": "Enga\u00f1o",
-                "summary": "La ingenier\u00eda social es una estrategia no t\u00e9cnica que intenta manipular a las personas para que realicen acciones riesgosas o divulguen informaci\u00f3n confidencial.",
+                "summary": "El enga\u00f1o en ciberseguridad combina ingenier\u00eda social y manipulaci\u00f3n psicol\u00f3gica para que las personas revelen informaci\u00f3n sensible o ejecuten acciones que debilitan la seguridad.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_2_2.png",
@@ -8590,28 +8590,54 @@
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Ingenier\u00eda social y objetivos del atacante",
                     "items": [
-                      "Ingenier\u00eda Social",
-                      "T\u00e1cticas de ingenier\u00eda social",
-                      "Espiar por encima del hombro y hurgar en la basura",
-                      "Suplantaci\u00f3n de identidad y enga\u00f1os",
-                      "Piggybacking y Tailgating",
-                      "Otros m\u00e9todos de enga\u00f1o"
+                      "La ingenier\u00eda social explota factores humanos (confianza, miedo, urgencia o autoridad) en lugar de fallas t\u00e9cnicas.",
+                      "Pretexto: crear una historia falsa para obtener informaci\u00f3n privilegiada.",
+                      "Quid pro quo: ofrecer un supuesto beneficio a cambio de datos sensibles.",
+                      "Fraude de identidad: usar datos robados para suplantar a la v\u00edctima y obtener bienes o acceso."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "T\u00e1cticas psicol\u00f3gicas m\u00e1s usadas",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "Autoridad, intimidaci\u00f3n, consenso, escasez y urgencia para forzar decisiones impulsivas.",
+                      "Familiaridad y confianza: el atacante construye relaci\u00f3n antes de solicitar acciones de riesgo.",
+                      "Estas t\u00e1cticas buscan que el usuario omita controles y entregue credenciales o datos.",
+                      "La respuesta correcta es verificar identidad y canal antes de actuar."
+                    ]
+                  },
+                  {
+                    "title": "M\u00e9todos de enga\u00f1o en campo y en l\u00ednea",
+                    "items": [
+                      "Espiar por encima del hombro y hurgar en la basura para obtener PIN, credenciales o documentos.",
+                      "Suplantaci\u00f3n de identidad y enga\u00f1os (hoax) para inducir miedo y propagaci\u00f3n de mensajes falsos.",
+                      "Piggybacking/tailgating: ingreso a zonas restringidas siguiendo a personal autorizado.",
+                      "Controles recomendados: credenciales visibles, cultura de no acompa\u00f1amiento indebido y uso de mantrap."
+                    ]
+                  },
+                  {
+                    "title": "Ataques adicionales basados en enga\u00f1o",
+                    "items": [
+                      "Estafa de facturas y portales falsos para capturar credenciales o pagos no autorizados.",
+                      "Ataque de pozo de agua: comprometer sitios frecuentados por la organizaci\u00f3n.",
+                      "Error tipogr\u00e1fico (typosquatting): dominios parecidos para desviar usuarios a sitios maliciosos.",
+                      "Campa\u00f1as de influencia: combinan desinformaci\u00f3n y redes sociales para manipular percepci\u00f3n y comportamiento."
+                    ]
+                  },
+                  {
+                    "title": "Defensa contra el enga\u00f1o",
+                    "items": [
+                      "No compartir credenciales ni datos confidenciales por correo, chat, SMS o llamadas no verificadas.",
+                      "Evitar clics impulsivos y descargas no iniciadas; validar URL y remitentes.",
+                      "Formalizar pol\u00edticas de seguridad y capacitar usuarios con ejercicios peri\u00f3dicos.",
+                      "Escalar de inmediato cualquier intento sospechoso al equipo de seguridad o mesa de ayuda."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de enga\u00f1o para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Identificar y bloquear t\u00e1cticas de ingenier\u00eda social antes de que comprometan usuarios, credenciales o activos cr\u00edticos de la organizaci\u00f3n."
                     ]
                   }
                 ]
