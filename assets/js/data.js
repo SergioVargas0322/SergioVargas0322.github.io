@@ -9267,7 +9267,12 @@
                 "code": "1.1",
                 "title": "El mundo de la ciberseguridad",
                 "summary": "Fundamentos de ciberseguridad, valor de la identidad digital y riesgos reales sobre datos personales en entornos conectados.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_sio_operaciones.png",
+                    "alt": "Diagrama de operaciones de seguridad con amenazas, internet y usuarios."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "Ciberseguridad en contexto",
@@ -9325,7 +9330,20 @@
                 "code": "1.2",
                 "title": "Datos de la organizaci\u00f3n",
                 "summary": "Valor, clasificaci\u00f3n y protecci\u00f3n de los datos organizacionales frente a brechas de seguridad en entornos tradicionales y de nube.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_mccumber_principios.png",
+                    "alt": "Cubo de McCumber con principios fundamentales para proteger informaci?n."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_mccumber_estados.png",
+                    "alt": "Cubo de McCumber enfocado en estados de los datos."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_mccumber_medidas.png",
+                    "alt": "Cubo de McCumber enfocado en medidas de seguridad."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "Tipos de datos organizacionales",
@@ -9391,7 +9409,12 @@
                 "code": "1.4",
                 "title": "Ciberatacantes",
                 "summary": "Clasificaci\u00f3n de actores de amenaza, diferencias entre atacantes internos y externos, y sus motivaciones principales.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_hacker_perfil.png",
+                    "alt": "Icono de atacante para representar perfiles de ciberatacantes."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "Tipos de atacantes",
@@ -9441,7 +9464,12 @@
                 "code": "1.5",
                 "title": "Guerra cibern\u00e9tica",
                 "summary": "Uso estrat\u00e9gico de capacidades cibern\u00e9ticas por estados y grupos avanzados para espionaje y sabotaje de infraestructura cr\u00edtica.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_certs.jpeg",
+                    "alt": "Logotipos de equipos internacionales de respuesta a incidentes inform?ticos."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "Concepto operativo",
@@ -9499,7 +9527,12 @@
                 "code": "2.1",
                 "title": "Analizando un ciberataque",
                 "summary": "Tipos de malware, signos de compromiso y acciones iniciales para analizar y contener un ciberataque.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_nmap_scan.png",
+                    "alt": "Captura de escaneo Nmap para analizar puertos y servicios."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "Qu\u00e9 es malware y por qu\u00e9 importa",
@@ -9563,7 +9596,12 @@
                 "code": "2.2",
                 "title": "M\u00e9todos de infiltraci\u00f3n",
                 "summary": "Vectores de entrada usados por atacantes: ingenier\u00eda social, DoS/DDoS, botnets, MiTM, ataques de contrase\u00f1a y APT.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_spoofing.png",
+                    "alt": "Diagrama de suplantaci?n de identidad en red (spoofing)."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "Ingenier\u00eda social",
@@ -9645,7 +9683,12 @@
                 "code": "2.3",
                 "title": "Aprovechamiento de las vulnerabilidades de seguridad",
                 "summary": "C\u00f3mo los atacantes explotan fallas de hardware y software, y qu\u00e9 controles reducen el riesgo de compromiso.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_xss.png",
+                    "alt": "Esquema de ataque XSS entre atacante, v?ctima y sitio comprometido."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "Vulnerabilidades de hardware",
@@ -9703,7 +9746,12 @@
                 "code": "2.4",
                 "title": "El panorama de la ciberseguridad",
                 "summary": "Panorama actual centrado en criptomonedas y criptojacking como vectores de riesgo t\u00e9cnico y econ\u00f3mico.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_tendencias_riesgo.png",
+                    "alt": "Indicadores de tendencias de riesgo en ciberseguridad."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "Criptomoneda en contexto",
@@ -9764,7 +9812,12 @@
                 "code": "3.1",
                 "title": "Protegiendo sus dispositivos y su red",
                 "summary": "Buenas pr\u00e1cticas para proteger endpoints, Wi-Fi dom\u00e9stica, redes p\u00fablicas y autenticaci\u00f3n con contrase\u00f1as robustas.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_password_reglas.png",
+                    "alt": "Gu?a visual de buenas pr?cticas para crear contrase?as fuertes."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "Protecci\u00f3n de dispositivos inform\u00e1ticos",
@@ -9820,7 +9873,12 @@
                 "code": "3.2",
                 "title": "Mantenimiento de datos",
                 "summary": "Protecci\u00f3n del ciclo de vida de la informaci\u00f3n mediante cifrado, respaldo peri\u00f3dico y eliminaci\u00f3n segura.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_mccumber_estados.png",
+                    "alt": "Protecci?n de datos seg?n su estado: en reposo, en tr?nsito y en uso."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "Cifrado como control base",
@@ -9875,7 +9933,12 @@
                 "code": "3.4",
                 "title": "Protecci\u00f3n de la privacidad en l\u00ednea",
                 "summary": "Controles para reducir exposici\u00f3n digital: autenticaci\u00f3n fuerte, acceso federado seguro y h\u00e1bitos de navegaci\u00f3n conscientes.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_passphrase.png",
+                    "alt": "Construcci?n de frase de contrase?a segura con caracteres especiales."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "Autenticaci\u00f3n en dos factores",
@@ -9937,7 +10000,16 @@
                 "code": "4.1",
                 "title": "Dispositivos y tecnolog\u00edas de ciberseguridad",
                 "summary": "Arquitectura de defensa organizacional con dispositivos de seguridad, inspecci\u00f3n de tr\u00e1fico, detecci\u00f3n en tiempo real y control de malware.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_ids.png",
+                    "alt": "Ubicaci?n de IDS en la red para detectar tr?fico malicioso."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_ips.png",
+                    "alt": "Ubicaci?n de IPS en la red para bloquear tr?fico malicioso."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "Dispositivos de seguridad esenciales",
@@ -10009,7 +10081,12 @@
                 "code": "4.2",
                 "title": "Comportamiento a seguir en la ciberseguridad",
                 "summary": "Enfoque operativo para detectar anomal\u00edas, ejecutar evaluaciones t\u00e9cnicas y reducir impacto mediante respuesta y gesti\u00f3n de riesgos.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_netflow.png",
+                    "alt": "Flujo NetFlow y campos de inspecci?n para an?lisis de tr?fico."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "Seguridad basada en comportamiento",
@@ -10065,7 +10142,16 @@
                 "code": "4.3",
                 "title": "Enfoque de Cisco para la ciberseguridad",
                 "summary": "Modelo integrado de Cisco para prevenir, detectar y responder incidentes mediante equipos especializados, automatizaci\u00f3n y control de acceso por identidad.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_sio_operaciones.png",
+                    "alt": "Modelo de operaciones de seguridad y coordinaci?n de controles."
+                  },
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_certs.jpeg",
+                    "alt": "Organizaciones CERT de referencia para coordinaci?n de respuesta."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "CSIRT y operaci\u00f3n proactiva",
@@ -10119,7 +10205,12 @@
                 "code": "5.1",
                 "title": "Cuestiones legales y \u00e9ticas",
                 "summary": "Principios legales y \u00e9ticos para ejercer ciberseguridad de forma responsable en contextos personales y corporativos.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_control_acceso_administrativo.png",
+                    "alt": "Elementos de control de acceso administrativo: pol?ticas, procedimientos y capacitaci?n."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "L\u00edmites legales en ciberseguridad",
@@ -10165,7 +10256,12 @@
                 "code": "5.2",
                 "title": "Educaci\u00f3n y carreras",
                 "summary": "Ruta de desarrollo profesional en ciberseguridad: exploraci\u00f3n de roles, aprendizaje continuo y certificaciones reconocidas.",
-                "images": [],
+                "images": [
+                  {
+                    "src": "./assets/images/intro-cybersecurity/C9_certs.jpeg",
+                    "alt": "Organizaciones y ecosistema profesional de ciberseguridad (CERT/FIRST)."
+                  }
+                ],
                 "sections": [
                   {
                     "title": "Plan de crecimiento profesional",
@@ -10208,3 +10304,4 @@
     ]
   };
 })();
+
