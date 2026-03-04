@@ -8982,37 +8982,70 @@
               {
                 "code": "3.3",
                 "title": "Defensa de sistemas y dispositivos",
-                "summary": "\u00bfQu\u00e9 debe hacer una organizaci\u00f3n para fortalecer un sistema operativo y mantenerlo seguro?",
+                "summary": "La defensa del endpoint combina hardening del sistema operativo, administraci\u00f3n de parches, protecci\u00f3n antimalware, cifrado de host e integridad de arranque para reducir la superficie de ataque y mantener continuidad operativa.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_3_3.svg",
-                    "alt": "Referencia visual del tema 3.3: Defensa de sistemas y dispositivos."
+                    "alt": "Defensa multicapa del endpoint: SO, parches, antimalware, cifrado e integridad de arranque."
                   }
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Hardening del sistema operativo",
                     "items": [
-                      "Seguridad del sistema operativo",
-                      "Tipos de Antimalware",
-                      "Administraci\u00f3n de parches",
-                      "Seguridad de dispositivo final",
-                      "Cifrado de host",
-                      "Integridad de arranque"
+                      "Eliminar servicios y software innecesarios para reducir vectores de ataque.",
+                      "Definir una l\u00ednea base t\u00e9cnica del host y comparar peri\u00f3dicamente configuraci\u00f3n y rendimiento.",
+                      "Operar con procedimientos documentados para monitoreo, evaluaci\u00f3n y despliegue de cambios de seguridad."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "Gesti\u00f3n de parches y actualizaciones",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "Tratar parches como control preventivo contra vulnerabilidades explotables.",
+                      "Probar actualizaciones en entorno controlado antes de despliegue masivo.",
+                      "Usar plataforma centralizada para aprobar/rechazar parches, calendarizar ventanas y emitir reportes de cumplimiento.",
+                      "Incluir aplicaciones de terceros en el ciclo de parchado para cerrar brechas frecuentes."
+                    ]
+                  },
+                  {
+                    "title": "Protecci\u00f3n antimalware moderna",
+                    "items": [
+                      "Riesgos actuales: antivirus falsos, malware sin archivos y scripts maliciosos.",
+                      "Complementar detecci\u00f3n por firma con heur\u00edstica y an\u00e1lisis de comportamiento.",
+                      "Retirar software no aprobado: puede violar pol\u00edticas e introducir riesgo operativo.",
+                      "Mantener telemetr\u00eda de seguridad para correlaci\u00f3n y respuesta temprana."
+                    ]
+                  },
+                  {
+                    "title": "Controles de endpoint y datos",
+                    "items": [
+                      "Firewall basado en host para restringir tr\u00e1fico entrante/saliente por reglas expl\u00edcitas.",
+                      "HIDS/HIPS para detectar o bloquear actividad an\u00f3mala en sistema y procesos.",
+                      "EDR para visibilidad continua, investigaci\u00f3n y contenci\u00f3n de amenazas avanzadas.",
+                      "DLP para prevenir fuga de informaci\u00f3n sensible y NGFW para inspecci\u00f3n profunda a nivel de red."
+                    ]
+                  },
+                  {
+                    "title": "Cifrado de host e integridad de arranque",
+                    "items": [
+                      "EFS/FDE protegen datos en reposo; BitLocker y TPM fortalecen resguardo de claves.",
+                      "Unidades autocifradas (SED) agregan protecci\u00f3n desde hardware.",
+                      "Secure Boot valida software de arranque confiable; Measured Boot registra evidencias de integridad para verificaci\u00f3n remota.",
+                      "La seguridad debe iniciar antes del sistema operativo y mantenerse durante todo el ciclo de vida del equipo."
+                    ]
+                  },
+                  {
+                    "title": "Protecci\u00f3n f\u00edsica del activo",
+                    "items": [
+                      "Aplicar cerraduras, control de acceso, RFID y resguardo de cuartos de telecomunicaciones.",
+                      "Prevenir manipulaci\u00f3n f\u00edsica de equipos port\u00e1tiles y dispositivos de red.",
+                      "Combinar seguridad l\u00f3gica con seguridad f\u00edsica para cerrar brechas fuera del software."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de defensa de sistemas y dispositivos para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Implementar una defensa de endpoint por capas que disminuya infecciones, limite impacto de incidentes y aumente la capacidad de detecci\u00f3n y recuperaci\u00f3n."
                     ]
                   }
                 ]
