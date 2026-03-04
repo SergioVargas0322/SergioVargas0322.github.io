@@ -10118,14 +10118,45 @@
               {
                 "code": "5.1",
                 "title": "Cuestiones legales y \u00e9ticas",
-                "summary": "Marco legal y dilemas \u00e9ticos que gu\u00edan la actuaci\u00f3n profesional en ciberseguridad.",
+                "summary": "Principios legales y \u00e9ticos para ejercer ciberseguridad de forma responsable en contextos personales y corporativos.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Puntos clave",
+                    "title": "L\u00edmites legales en ciberseguridad",
                     "items": [
-                      "La defensa digital debe respetar normativas y l\u00edmites \u00e9ticos.",
-                      "Documentar acciones y preservar evidencia es esencial en contextos legales."
+                      "Tener habilidad t\u00e9cnica para atacar un sistema no autoriza a hacerlo: la legalidad y el permiso expl\u00edcito son obligatorios.",
+                      "En entornos corporativos, acciones fuera de norma pueden generar sanciones para la empresa y responsabilidad personal.",
+                      "Ante duda legal, detener la acci\u00f3n y consultar al \u00e1rea legal o de recursos humanos."
+                    ]
+                  },
+                  {
+                    "title": "Dimensi\u00f3n internacional",
+                    "items": [
+                      "El ciberespacio no respeta fronteras f\u00edsicas tradicionales, lo que complica jurisdicci\u00f3n y atribuci\u00f3n de ataques.",
+                      "El derecho internacional en ciberseguridad sigue evolucionando mediante pr\u00e1ctica estatal, tratados y doctrina."
+                    ]
+                  },
+                  {
+                    "title": "\u00c9tica profesional aplicada",
+                    "items": [
+                      "No todo lo legal es \u00e9tico; la conducta profesional exige transparencia, integridad y responsabilidad.",
+                      "En pruebas de seguridad, ocultar hallazgos cr\u00edticos (por conveniencia personal) compromete a la organizaci\u00f3n y a sus clientes.",
+                      "Todo hallazgo relevante debe documentarse y reportarse seg\u00fan el alcance y el protocolo del ejercicio."
+                    ]
+                  },
+                  {
+                    "title": "Preguntas de decisi\u00f3n \u00e9tica",
+                    "items": [
+                      "\u00bfEs legal esta acci\u00f3n?",
+                      "\u00bfCumple la pol\u00edtica interna y beneficia a la organizaci\u00f3n y sus partes interesadas?",
+                      "\u00bfAceptar\u00eda que esta decisi\u00f3n fuera p\u00fablica en un titular de noticias?",
+                      "Si alguna respuesta es no, detenerse y escalar para orientaci\u00f3n."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Actuar dentro del marco legal y \u00e9tico, reportando hallazgos de forma completa y tomando decisiones defendibles ante auditor\u00eda, clientes y reguladores."
                     ]
                   }
                 ]
@@ -10133,14 +10164,39 @@
               {
                 "code": "5.2",
                 "title": "Educaci\u00f3n y carreras",
-                "summary": "Rutas de formaci\u00f3n y perfiles profesionales para iniciar y crecer en el sector de ciberseguridad.",
+                "summary": "Ruta de desarrollo profesional en ciberseguridad: exploraci\u00f3n de roles, aprendizaje continuo y certificaciones reconocidas.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Puntos clave",
+                    "title": "Plan de crecimiento profesional",
                     "items": [
-                      "La especializaci\u00f3n puede orientarse a SOC, pentesting, forense, GRC o arquitectura de seguridad.",
-                      "El desarrollo de carrera exige aprendizaje continuo, pr\u00e1ctica y certificaciones alineadas al rol."
+                      "Explorar vacantes reales permite entender habilidades demandadas por rol (SOC, respuesta, GRC, pentest, arquitectura).",
+                      "Revisar plataformas de empleo ayuda a mapear tendencias, requisitos y oportunidades globales.",
+                      "Definir una especialidad temprana acelera la selecci\u00f3n de cursos, laboratorios y experiencia pr\u00e1ctica."
+                    ]
+                  },
+                  {
+                    "title": "Certificaciones de referencia",
+                    "items": [
+                      "CCST Ciberseguridad: entrada para perfiles junior y estudiantes en etapa inicial.",
+                      "CompTIA Security+: base generalista reconocida para roles de seguridad TI.",
+                      "CEH: enfoque ofensivo controlado para evaluaci\u00f3n de vulnerabilidades de forma legal.",
+                      "CISSP: certificaci\u00f3n avanzada orientada a dise\u00f1o y gesti\u00f3n de programas de seguridad.",
+                      "Cisco Certified CyberOps Associate: competencias clave para analistas en centros de operaciones de seguridad."
+                    ]
+                  },
+                  {
+                    "title": "Estrategia recomendada",
+                    "items": [
+                      "Combinar estudio te\u00f3rico con pr\u00e1ctica constante en laboratorios y entornos simulados.",
+                      "Construir portafolio t\u00e9cnico con casos, reportes y ejercicios reproducibles.",
+                      "Actualizarse de forma continua en amenazas, herramientas y marcos de defensa."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Trazar un camino profesional realista y sostenible en ciberseguridad, alineando experiencia pr\u00e1ctica, certificaciones y objetivos de carrera."
                     ]
                   }
                 ]
