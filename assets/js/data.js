@@ -8383,7 +8383,7 @@
               {
                 "code": "1.5",
                 "title": "Solucionar problemas de una red",
-                "summary": "Al documentar o diagnosticar un problema de red, a menudo es necesario recopilar informaci\u00f3n directamente de los enrutadores y conmutadores. Los comandos de red \u00fatiles y obvios incluyen ping, traceroute y telnet.",
+                "summary": "Para diagnosticar fallas de red se requiere recopilar evidencia desde dispositivos Cisco, interpretar tr\u00e1fico con analizadores de protocolos y medir rendimiento real para separar problemas de capacidad, latencia o configuraci\u00f3n.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_1_5.png",
@@ -8392,25 +8392,45 @@
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Comandos IOS para recopilar evidencia",
                     "items": [
-                      "Dispositivos de red como fuentes de informaci\u00f3n de red",
-                      "Captura de paquetes y an\u00e1lisis de protocolo",
-                      "Medici\u00f3n del rendimiento de la red"
+                      "Usar `show version`, `show running-config` y `show inventory` para validar estado, versi\u00f3n y contexto del equipo.",
+                      "Verificar interfaces y direccionamiento con `show ip interface brief`, `show ipv6 interface brief` y `show interfaces`.",
+                      "Revisar topolog\u00eda y aprendizaje con `show ip route`, `show ipv6 route`, `show cdp neighbors detail`, `show arp` y `show ipv6 neighbors`.",
+                      "En conmutadores, validar capa 2 con `show vlan`, `show interface status` y `show mac-address table`."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "Niveles de acceso y uso eficiente de la CLI",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "Diferenciar `EXEC de usuario` (>) y `EXEC privilegiado` (#); muchos comandos de diagn\u00f3stico avanzados exigen privilegio 15.",
+                      "Entrar a modo privilegiado con `enable` solo cuando el procedimiento lo requiera y con control de credenciales.",
+                      "Usar ayuda sensible al contexto con `?` y autocompletado con `Tab` para reducir errores de sintaxis.",
+                      "Apoyarse en `show tech-support` cuando se necesite un paquete completo de informaci\u00f3n para escalamiento."
+                    ]
+                  },
+                  {
+                    "title": "Captura de paquetes y an\u00e1lisis de protocolos",
+                    "items": [
+                      "Utilizar analizadores como Wireshark para decodificar tramas por capas y observar comportamiento real del tr\u00e1fico.",
+                      "Aplicar filtros por host, protocolo o puerto para centrarse en el flujo afectado y evitar ruido de captura.",
+                      "Correlacionar cabeceras y tiempos entre capas para confirmar si la falla es de resoluci\u00f3n, transporte o aplicaci\u00f3n.",
+                      "Asegurar que las capturas queden documentadas (fecha, origen, filtro y hallazgo) para trazabilidad t\u00e9cnica."
+                    ]
+                  },
+                  {
+                    "title": "Medici\u00f3n de rendimiento: ancho de banda, rendimiento y latencia",
+                    "items": [
+                      "Distinguir ancho de banda (capacidad te\u00f3rica) de rendimiento (bits reales entregados por segundo).",
+                      "Considerar que el rendimiento disminuye por latencia, n\u00famero de saltos y procesamiento intermedio.",
+                      "Usar pruebas de velocidad de Internet para diagn\u00f3stico r\u00e1pido de enlace WAN y percepci\u00f3n de usuario.",
+                      "Emplear iPerf/iPerf3 entre cliente-servidor para obtener m\u00e9tricas por intervalo: transferencia y tasa de bits."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de solucionar problemas de una red para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Resolver problemas de red con evidencia objetiva, combinando verificaci\u00f3n en IOS, an\u00e1lisis de tr\u00e1fico y medici\u00f3n de rendimiento para identificar la causa ra\u00edz con menor tiempo de diagn\u00f3stico."
                     ]
                   }
                 ]
