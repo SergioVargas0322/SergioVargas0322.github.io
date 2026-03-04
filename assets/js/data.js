@@ -9874,14 +9874,55 @@
               {
                 "code": "3.4",
                 "title": "Protecci\u00f3n de la privacidad en l\u00ednea",
-                "summary": "Controles para minimizar exposici\u00f3n digital: autenticaci\u00f3n fuerte, configuraciones de privacidad y navegaci\u00f3n segura.",
+                "summary": "Controles para reducir exposici\u00f3n digital: autenticaci\u00f3n fuerte, acceso federado seguro y h\u00e1bitos de navegaci\u00f3n conscientes.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Puntos clave",
+                    "title": "Autenticaci\u00f3n en dos factores",
                     "items": [
-                      "Habilitar MFA y limitar datos compartidos reduce robo de identidad.",
-                      "La privacidad depende de h\u00e1bitos de uso, configuraci\u00f3n y herramientas de protecci\u00f3n."
+                      "2FA/MFA agrega una capa adicional al inicio de sesi\u00f3n, adem\u00e1s de usuario y contrase\u00f1a.",
+                      "El segundo factor puede ser algo que tienes (token/tel\u00e9fono), algo que eres (biometr\u00eda) o un c\u00f3digo temporal.",
+                      "Reduce el impacto del robo de contrase\u00f1as, aunque no elimina riesgos de phishing o malware avanzado."
+                    ]
+                  },
+                  {
+                    "title": "OAuth y acceso con terceros",
+                    "items": [
+                      "OAuth permite usar una cuenta existente para acceder a otra aplicaci\u00f3n sin compartir la contrase\u00f1a directamente.",
+                      "Beneficio: mejor experiencia de usuario y menor exposici\u00f3n de credenciales.",
+                      "Riesgo: otorgar permisos excesivos a aplicaciones de terceros puede exponer datos sensibles.",
+                      "Recomendaci\u00f3n: revisar y revocar peri\u00f3dicamente permisos de apps vinculadas."
+                    ]
+                  },
+                  {
+                    "title": "Ingenier\u00eda social y phishing dirigido",
+                    "items": [
+                      "Los atacantes estudian personas y procesos para crear correos convincentes con contexto real.",
+                      "Un adjunto malicioso puede iniciar ransomware o abrir una puerta para exfiltraci\u00f3n de datos.",
+                      "Incluso organizaciones grandes fallan cuando se combinan urgencia, confianza y falta de verificaci\u00f3n.",
+                      "Pr\u00e1ctica clave: verificar remitente, dominio, enlaces y contexto antes de abrir adjuntos."
+                    ]
+                  },
+                  {
+                    "title": "Privacidad en correo y navegaci\u00f3n",
+                    "items": [
+                      "El modo privado del navegador reduce huella local (historial, archivos temporales y cookies de sesi\u00f3n).",
+                      "Es \u00fatil en equipos compartidos para evitar exposici\u00f3n accidental de actividad local.",
+                      "No vuelve an\u00f3nimo al usuario frente a ISP, redes corporativas, proxies o sitios web."
+                    ]
+                  },
+                  {
+                    "title": "Controles complementarios recomendados",
+                    "items": [
+                      "Usar HTTPS y servicios de correo con cifrado para proteger contenido en tr\u00e1nsito.",
+                      "Usar VPN confiable en redes no confiables para reducir intercepci\u00f3n de tr\u00e1fico.",
+                      "Aplicar gestor de contrase\u00f1as, MFA y actualizaciones continuas de sistema y navegador."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Tomar decisiones de privacidad en l\u00ednea con criterio t\u00e9cnico, combinando autenticaci\u00f3n fuerte, validaci\u00f3n anti-phishing y configuraci\u00f3n segura de navegaci\u00f3n."
                     ]
                   }
                 ]
