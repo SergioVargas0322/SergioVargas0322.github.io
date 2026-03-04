@@ -8508,7 +8508,7 @@
               {
                 "code": "2.1",
                 "title": "Amenazas comunes",
-                "summary": "Dado que las organizaciones enfrentan un n\u00famero cada vez mayor de amenazas cibern\u00e9ticas, es fundamental que cuenten con soluciones de seguridad s\u00f3lidas.",
+                "summary": "Las amenazas cibern\u00e9ticas afectan usuarios, dispositivos, redes, aplicaciones y nubes; por eso la gesti\u00f3n de riesgos debe cubrir todos los dominios de exposici\u00f3n y no solo el per\u00edmetro.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_2_1.jpeg",
@@ -8517,28 +8517,63 @@
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Dominios de amenaza y superficie de ataque",
                     "items": [
-                      "Dominios de amenazas",
-                      "Tipos de amenazas cibern\u00e9ticas",
-                      "Amenazas internas y externas",
-                      "Amenazas y vulnerabilidades del usuario",
-                      "Amenazas a los dispositivos",
-                      "Amenazas a la red de \u00e1rea local"
+                      "Un dominio de amenaza es un \u00e1rea de control o protecci\u00f3n que un atacante puede aprovechar para obtener acceso.",
+                      "La superficie de ataque crece con acceso f\u00edsico, Wi-Fi fuera del per\u00edmetro, Bluetooth/NFC, nube y cadena de suministro.",
+                      "Tambi\u00e9n aportan riesgo los medios extra\u00edbles, adjuntos maliciosos y cuentas institucionales en redes sociales.",
+                      "La protecci\u00f3n efectiva exige controles t\u00e9cnicos y operativos coordinados entre dominios."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "Clasificaci\u00f3n de amenazas cibern\u00e9ticas",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "Software malicioso, errores de software y sabotaje intencional.",
+                      "Error humano, robo de equipos y fallas de hardware.",
+                      "Interrupciones de servicio (energ\u00eda, agua, infraestructura) y desastres naturales.",
+                      "Clasificar amenazas por probabilidad e impacto ayuda a priorizar inversiones de seguridad."
+                    ]
+                  },
+                  {
+                    "title": "Amenazas internas y externas",
+                    "items": [
+                      "Las internas pueden provenir de empleados o contratistas que filtran datos o introducen medios infectados.",
+                      "Las externas incluyen atacantes que explotan vulnerabilidades t\u00e9cnicas o aplican ingenier\u00eda social.",
+                      "Ambas buscan activos de alto valor: propiedad intelectual, datos financieros y registros sensibles.",
+                      "La mitigaci\u00f3n requiere controles de acceso, monitoreo continuo y cultura de seguridad."
+                    ]
+                  },
+                  {
+                    "title": "Riesgos por dominio operativo",
+                    "items": [
+                      "Usuario: desconocimiento, descargas no autorizadas, VPN no autorizada y uso inseguro de sitios web.",
+                      "Dispositivo: equipos desatendidos, software desactualizado y medios USB/CD/DVD no confiables.",
+                      "LAN: accesos no autorizados, firewall mal configurado, escaneo de puertos y sistemas sin parche.",
+                      "Nube privada/p\u00fablica y aplicaciones: errores de configuraci\u00f3n, accesos indebidos, p\u00e9rdida de datos y vulnerabilidades de desarrollo."
+                    ]
+                  },
+                  {
+                    "title": "Amenazas avanzadas y malware persistente",
+                    "items": [
+                      "APT: campa\u00f1as prolongadas, sigilosas y bien financiadas con objetivos estrat\u00e9gicos.",
+                      "Ataques algor\u00edtmicos: uso malicioso de l\u00f3gicas leg\u00edtimas para provocar comportamiento no deseado.",
+                      "Puertas traseras y RAT: mantienen acceso administrativo aun despu\u00e9s de cerrar la vulnerabilidad inicial.",
+                      "Rootkits: elevan privilegios y alteran herramientas de monitoreo; en muchos casos se requiere reinstalaci\u00f3n completa."
+                    ]
+                  },
+                  {
+                    "title": "Inteligencia de amenazas y fuentes de investigaci\u00f3n",
+                    "items": [
+                      "Usar cat\u00e1logos CVE para identificar vulnerabilidades conocidas y priorizar remediaci\u00f3n.",
+                      "Monitorear IOC (indicadores de compromiso) para detectar actividad maliciosa temprana.",
+                      "Integrar intercambio automatizado de inteligencia (AIS) con est\u00e1ndares STIX/TAXII.",
+                      "Complementar con investigaci\u00f3n en fuentes especializadas, incluida la web oscura, por equipos autorizados."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de amenazas comunes para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Evaluar amenazas comunes por dominio, clasificar su impacto y definir controles preventivos y de detecci\u00f3n para reducir el riesgo operativo de la organizaci\u00f3n."
                     ]
                   }
                 ]
