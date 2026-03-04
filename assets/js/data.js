@@ -8645,7 +8645,7 @@
               {
                 "code": "2.3",
                 "title": "Ataques cibern\u00e9ticos",
-                "summary": "Los ciberdelincuentes utilizan muchos tipos diferentes de software malicioso, o malware, para llevar a cabo sus actividades.",
+                "summary": "Los ataques cibern\u00e9ticos combinan malware, abuso de servicios de red y t\u00e9cnicas de intercepci\u00f3n para comprometer confidencialidad, integridad y disponibilidad de sistemas empresariales.",
                 "images": [
                   {
                     "src": "./assets/images/network-support-security/C8_2_3.png",
@@ -8654,28 +8654,63 @@
                 ],
                 "sections": [
                   {
-                    "title": "Subtemas clave",
+                    "title": "Malware: vectores y comportamiento",
                     "items": [
-                      "Malware",
-                      "Bombas L\u00f3gicas",
-                      "Ransomware",
-                      "Ataques de denegaci\u00f3n de servicio",
-                      "Sistema de nombres de dominio",
-                      "Ataques de capa 2"
+                      "Virus: se adjuntan a archivos, suelen requerir acci\u00f3n del usuario y pueden mutar para evadir detecci\u00f3n.",
+                      "Gusanos: se propagan de forma aut\u00f3noma explotando vulnerabilidades de red a gran velocidad.",
+                      "Troyanos: aparentan ser leg\u00edtimos para ejecutar acciones maliciosas con privilegios del usuario.",
+                      "Canales frecuentes de infecci\u00f3n: adjuntos de correo, descargas, medios extra\u00edbles y software no confiable."
                     ]
                   },
                   {
-                    "title": "Enfoque pr?ctico",
+                    "title": "Bombas l\u00f3gicas y ransomware",
                     "items": [
-                      "Identificar s?ntomas, riesgos y alcance real del incidente antes de intervenir.",
-                      "Aplicar validaciones t?cnicas en orden l?gico para aislar causa ra?z.",
-                      "Registrar hallazgos, acciones y resultados para continuidad del soporte."
+                      "Bomba l\u00f3gica: c\u00f3digo latente que se activa por una condici\u00f3n (fecha, evento o valor en base de datos).",
+                      "Puede da\u00f1ar software y tambi\u00e9n hardware cr\u00edtico (CPU, discos, fuentes, ventilaci\u00f3n).",
+                      "Ransomware: cifra informaci\u00f3n para exigir pago, sin garant\u00eda real de recuperaci\u00f3n.",
+                      "Suele entrar por phishing o vulnerabilidades sin parche; la prevenci\u00f3n depende de backup y hardening."
+                    ]
+                  },
+                  {
+                    "title": "Ataques de denegaci\u00f3n de servicio (DoS)",
+                    "items": [
+                      "Buscan interrumpir servicios saturando tr\u00e1fico o enviando paquetes malformados.",
+                      "Impactan disponibilidad de TI y tambi\u00e9n tecnolog\u00edas operativas (OT) en f\u00e1bricas y servicios cr\u00edticos.",
+                      "S\u00edntomas comunes: degradaci\u00f3n severa de rendimiento, timeouts y ca\u00eddas del servicio.",
+                      "Mitigaci\u00f3n base: filtrado de origen, segmentaci\u00f3n, capacidad de absorci\u00f3n y pol\u00edticas anti-DDoS."
+                    ]
+                  },
+                  {
+                    "title": "Abuso de DNS y redirecciones maliciosas",
+                    "items": [
+                      "Falsificaci\u00f3n/intoxicaci\u00f3n de cach\u00e9 DNS: altera resoluciones hacia servidores il\u00edcitos.",
+                      "Secuestro de dominio: toma de control de registros DNS mediante ingenier\u00eda social o compromiso de cuentas.",
+                      "Redirecci\u00f3n de URL: desv\u00edo a sitios falsos para robo de credenciales o distribuci\u00f3n de malware.",
+                      "Monitorear reputaci\u00f3n de dominio y cambios de DNS reduce la ventana de ataque."
+                    ]
+                  },
+                  {
+                    "title": "Ataques de capa 2 y en ruta",
+                    "items": [
+                      "Spoofing de MAC, ARP e IP: suplantaci\u00f3n para evadir autenticaci\u00f3n o desviar tr\u00e1fico.",
+                      "Saturaci\u00f3n de tabla MAC: inundaci\u00f3n de direcciones falsas para degradar seguridad del switch.",
+                      "MitM: intercepta y manipula comunicaciones entre emisor y destino.",
+                      "MitMo: variante en m\u00f3viles (por ejemplo, captura de SMS de verificaci\u00f3n en dos pasos)."
+                    ]
+                  },
+                  {
+                    "title": "Amenazas emergentes y controles defensivos",
+                    "items": [
+                      "Ataques de d\u00eda cero explotan fallas antes de que exista parche disponible.",
+                      "Keyloggers registran pulsaciones y exfiltran credenciales y datos sensibles.",
+                      "Defensas prioritarias: parchado continuo, firewalls con filtrado de origen, control de ICMP y monitoreo activo.",
+                      "Distribuir cargas, segmentar y validar telemetr\u00eda mejora resiliencia ante incidentes."
                     ]
                   },
                   {
                     "title": "Resultado esperado",
                     "items": [
-                      "Aplicar los fundamentos de ataques cibern\u00e9ticos para reducir riesgos y mejorar la continuidad operativa de la red."
+                      "Reconocer patrones de ataque cibern\u00e9tico y aplicar controles preventivos y de respuesta para reducir impacto operativo y tiempo de recuperaci\u00f3n."
                     ]
                   }
                 ]
