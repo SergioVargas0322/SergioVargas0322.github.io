@@ -9242,6 +9242,318 @@
             ]
           }
         ]
+      },
+      {
+        "id": "intro-cybersecurity",
+        "title": "Introducci\u00f3n a Ciberseguridad",
+        "provider": "Cisco Networking Academy",
+        "level": "Fundamentos",
+        "status": "En curso",
+        "estimatedHours": 15,
+        "summary": "Curso introductorio sobre amenazas digitales, protecci\u00f3n de datos personales y organizacionales, controles de seguridad y ruta profesional en ciberseguridad.",
+        "tags": [
+          "ciberseguridad",
+          "privacidad",
+          "amenazas",
+          "defensa",
+          "concienciacion"
+        ],
+        "modules": [
+          {
+            "key": "M1",
+            "title": "Introducci\u00f3n a la Ciberseguridad",
+            "topics": [
+              {
+                "code": "1.1",
+                "title": "El mundo de la ciberseguridad",
+                "summary": "Panorama general de la ciberseguridad y su impacto en personas, organizaciones y gobiernos.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Base del tema",
+                    "items": [
+                      "La ciberseguridad protege sistemas, datos e identidad frente a uso no autorizado.",
+                      "El riesgo digital afecta tanto la vida personal como la operaci\u00f3n de empresas e instituciones p\u00fablicas."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Reconocer por qu\u00e9 la ciberseguridad es una responsabilidad compartida en cualquier entorno conectado."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "1.2",
+                "title": "Datos de la organizaci\u00f3n",
+                "summary": "Clasificaci\u00f3n de datos empresariales y su valor para la operaci\u00f3n y la seguridad.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Base del tema",
+                    "items": [
+                      "Los datos pueden ser p\u00fablicos, internos, confidenciales o restringidos seg\u00fan su sensibilidad.",
+                      "Una mala clasificaci\u00f3n aumenta riesgo legal, reputacional y financiero."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Identificar tipos de datos y su nivel de protecci\u00f3n requerido en la organizaci\u00f3n."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "1.4",
+                "title": "Ciberatacantes",
+                "summary": "Tipos de actores de amenaza, motivaciones y objetivos comunes en ataques digitales.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Base del tema",
+                    "items": [
+                      "Existen atacantes oportunistas, criminales organizados, insiders y actores patrocinados por estados.",
+                      "Las motivaciones incluyen lucro, espionaje, sabotaje e impacto reputacional."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Relacionar actor, motivaci\u00f3n y tipo de ataque para priorizar controles de defensa."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "1.5",
+                "title": "Guerra cibern\u00e9tica",
+                "summary": "Uso de capacidades digitales en conflictos entre estados y su efecto sobre infraestructura cr\u00edtica.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Base del tema",
+                    "items": [
+                      "La guerra cibern\u00e9tica puede afectar servicios esenciales sin presencia f\u00edsica en el territorio objetivo.",
+                      "Los ataques a infraestructura industrial y energ\u00e9tica evidencian su impacto estrat\u00e9gico."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Distinguir operaciones cibercriminales de operaciones de ciberconflicto entre estados."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "M2",
+            "title": "Ataques, conceptos y t\u00e9cnicas",
+            "topics": [
+              {
+                "code": "2.1",
+                "title": "Analizando un ciberataque",
+                "summary": "Ciclo b\u00e1sico de un ataque y comportamiento de malware en sistemas comprometidos.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Puntos clave",
+                    "items": [
+                      "Un ataque combina reconocimiento, infiltraci\u00f3n, ejecuci\u00f3n y persistencia.",
+                      "El an\u00e1lisis temprano reduce tiempo de exposici\u00f3n y da\u00f1o operativo."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "2.2",
+                "title": "M\u00e9todos de infiltraci\u00f3n",
+                "summary": "T\u00e9cnicas de entrada como ingenier\u00eda social, phishing y abuso de servicios expuestos.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Puntos clave",
+                    "items": [
+                      "La manipulaci\u00f3n de usuarios sigue siendo una v\u00eda de entrada frecuente.",
+                      "La combinaci\u00f3n de controles t\u00e9cnicos y capacitaci\u00f3n reduce superficie de riesgo."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "2.3",
+                "title": "Aprovechamiento de las vulnerabilidades de seguridad",
+                "summary": "C\u00f3mo se explotan debilidades de hardware, software o configuraci\u00f3n para comprometer activos.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Puntos clave",
+                    "items": [
+                      "Una vulnerabilidad sin mitigar se convierte en vector real de ataque.",
+                      "El hardening y el parchado oportuno reducen la probabilidad de explotaci\u00f3n."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "2.4",
+                "title": "El panorama de la ciberseguridad",
+                "summary": "Tendencias actuales de amenazas, impacto del crimen digital y evoluci\u00f3n del riesgo.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Puntos clave",
+                    "items": [
+                      "El panorama cambia r\u00e1pido por nuevas t\u00e9cnicas, plataformas y modelos de negocio delictivo.",
+                      "La vigilancia continua y la adaptaci\u00f3n de controles son esenciales para resiliencia."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "M3",
+            "title": "Protegiendo sus datos y su privacidad",
+            "topics": [
+              {
+                "code": "3.1",
+                "title": "Protegiendo sus dispositivos y su red",
+                "summary": "Pr\u00e1cticas de seguridad para dispositivos finales y redes dom\u00e9sticas o personales.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Puntos clave",
+                    "items": [
+                      "La seguridad del usuario inicia con configuraci\u00f3n segura del dispositivo y del router.",
+                      "Actualizar, segmentar y monitorear reduce riesgo de compromiso."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "3.2",
+                "title": "Mantenimiento de datos",
+                "summary": "Protecci\u00f3n de informaci\u00f3n mediante cifrado, copias de seguridad y control del ciclo de vida de los datos.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Puntos clave",
+                    "items": [
+                      "Los datos deben protegerse en tr\u00e1nsito, en reposo y en uso.",
+                      "Los respaldos probados son cr\u00edticos para recuperar operaci\u00f3n tras incidentes."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "3.4",
+                "title": "Protecci\u00f3n de la privacidad en l\u00ednea",
+                "summary": "Controles para minimizar exposici\u00f3n digital: autenticaci\u00f3n fuerte, configuraciones de privacidad y navegaci\u00f3n segura.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Puntos clave",
+                    "items": [
+                      "Habilitar MFA y limitar datos compartidos reduce robo de identidad.",
+                      "La privacidad depende de h\u00e1bitos de uso, configuraci\u00f3n y herramientas de protecci\u00f3n."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "M4",
+            "title": "Protegiendo a la organizaci\u00f3n",
+            "topics": [
+              {
+                "code": "4.1",
+                "title": "Dispositivos y tecnolog\u00edas de ciberseguridad",
+                "summary": "Funci\u00f3n de firewalls, IDS/IPS, SIEM y otras tecnolog\u00edas de defensa empresarial.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Puntos clave",
+                    "items": [
+                      "La defensa organizacional requiere arquitectura por capas y correlaci\u00f3n de eventos.",
+                      "Las herramientas son efectivas cuando se acompa\u00f1an de procesos y personal capacitado."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "4.2",
+                "title": "Comportamiento a seguir en la ciberseguridad",
+                "summary": "Pr\u00e1cticas humanas y cultura de seguridad para reducir errores y exposici\u00f3n interna.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Puntos clave",
+                    "items": [
+                      "El factor humano es una de las superficies de ataque m\u00e1s explotadas.",
+                      "Formaci\u00f3n continua y procedimientos claros reducen incidentes por comportamiento."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "4.3",
+                "title": "Enfoque de Cisco para la ciberseguridad",
+                "summary": "Visi\u00f3n integral de prevenci\u00f3n, detecci\u00f3n y respuesta basada en capacidades y equipos especializados.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Puntos clave",
+                    "items": [
+                      "La respuesta efectiva integra personas, procesos y tecnolog\u00eda.",
+                      "Los CSIRT y flujos de escalamiento mejoran coordinaci\u00f3n ante incidentes."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "M5",
+            "title": "\u00bfSu futuro estar\u00e1 relacionado con la ciberseguridad?",
+            "topics": [
+              {
+                "code": "5.1",
+                "title": "Cuestiones legales y \u00e9ticas",
+                "summary": "Marco legal y dilemas \u00e9ticos que gu\u00edan la actuaci\u00f3n profesional en ciberseguridad.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Puntos clave",
+                    "items": [
+                      "La defensa digital debe respetar normativas y l\u00edmites \u00e9ticos.",
+                      "Documentar acciones y preservar evidencia es esencial en contextos legales."
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "5.2",
+                "title": "Educaci\u00f3n y carreras",
+                "summary": "Rutas de formaci\u00f3n y perfiles profesionales para iniciar y crecer en el sector de ciberseguridad.",
+                "images": [],
+                "sections": [
+                  {
+                    "title": "Puntos clave",
+                    "items": [
+                      "La especializaci\u00f3n puede orientarse a SOC, pentesting, forense, GRC o arquitectura de seguridad.",
+                      "El desarrollo de carrera exige aprendizaje continuo, pr\u00e1ctica y certificaciones alineadas al rol."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   };
