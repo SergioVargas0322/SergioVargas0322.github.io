@@ -10064,14 +10064,47 @@
               {
                 "code": "4.3",
                 "title": "Enfoque de Cisco para la ciberseguridad",
-                "summary": "Visi\u00f3n integral de prevenci\u00f3n, detecci\u00f3n y respuesta basada en capacidades y equipos especializados.",
+                "summary": "Modelo integrado de Cisco para prevenir, detectar y responder incidentes mediante equipos especializados, automatizaci\u00f3n y control de acceso por identidad.",
                 "images": [],
                 "sections": [
                   {
-                    "title": "Puntos clave",
+                    "title": "CSIRT y operaci\u00f3n proactiva",
                     "items": [
-                      "La respuesta efectiva integra personas, procesos y tecnolog\u00eda.",
-                      "Los CSIRT y flujos de escalamiento mejoran coordinaci\u00f3n ante incidentes."
+                      "Un CSIRT recibe, valida y responde incidentes de seguridad; en un enfoque maduro tambi\u00e9n anticipa amenazas.",
+                      "El enfoque de Cisco incluye evaluaci\u00f3n proactiva de amenazas, planeaci\u00f3n de mitigaci\u00f3n y an\u00e1lisis de tendencias.",
+                      "La colaboraci\u00f3n con comunidades y centros de intercambio de inteligencia fortalece la capacidad de respuesta."
+                    ]
+                  },
+                  {
+                    "title": "Security playbook",
+                    "items": [
+                      "Un playbook define procedimientos repetibles para detecci\u00f3n, escalamiento y respuesta a incidentes.",
+                      "Debe incluir consultas estandarizadas, fuentes de datos, responsables y tiempos objetivo de respuesta.",
+                      "Tambi\u00e9n documenta acciones post-incidente: contenci\u00f3n, recuperaci\u00f3n, mejoras y lecciones aprendidas.",
+                      "La automatizaci\u00f3n de casos frecuentes reduce variabilidad y acelera la operaci\u00f3n del SOC."
+                    ]
+                  },
+                  {
+                    "title": "Herramientas clave de detecci\u00f3n y prevenci\u00f3n",
+                    "items": [
+                      "SIEM: centraliza logs y alertas para correlacionar eventos hist\u00f3ricos y en tiempo real.",
+                      "DLP: protege datos en uso, en tr\u00e1nsito y en reposo para evitar fuga de informaci\u00f3n sensible.",
+                      "La combinaci\u00f3n SIEM + DLP mejora visibilidad, trazabilidad y cumplimiento de pol\u00edticas."
+                    ]
+                  },
+                  {
+                    "title": "Identidad, segmentaci\u00f3n y visibilidad",
+                    "items": [
+                      "Cisco ISE centraliza pol\u00edticas de acceso basadas en identidad y contexto de usuario/dispositivo.",
+                      "TrustSec aplica segmentaci\u00f3n para aislar amenazas y limitar movimiento lateral.",
+                      "Stealthwatch aporta anal\u00edtica de comportamiento y detecci\u00f3n de anomal\u00edas, incluso en tr\u00e1fico cifrado.",
+                      "La integraci\u00f3n de estas capacidades habilita control en tiempo real y respuesta coordinada."
+                    ]
+                  },
+                  {
+                    "title": "Resultado esperado",
+                    "items": [
+                      "Comprender c\u00f3mo una arquitectura integrada (CSIRT + playbooks + SIEM/DLP + ISE/TrustSec) mejora la resiliencia y reduce el tiempo de detecci\u00f3n y respuesta ante incidentes."
                     ]
                   }
                 ]
