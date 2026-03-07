@@ -10410,6 +10410,601 @@
             ]
           }
         ]
+      },
+      {
+            "id": "intro-iot-digital-transformation",
+            "title": "Introducción al Internet de las Cosas y Transformación Digital",
+            "provider": "Cisco Networking Academy",
+            "level": "Fundamentos",
+            "status": "En curso",
+            "estimatedHours": 20,
+            "summary": "Curso base para comprender IoT, automatización, datos masivos, seguridad y oportunidades profesionales en la transformación digital.",
+            "tags": [
+                  "iot",
+                  "transformacion-digital",
+                  "automatizacion",
+                  "inteligencia-artificial",
+                  "datos-masivos",
+                  "seguridad"
+            ],
+            "modules": [
+                  {
+                        "key": "M1",
+                        "title": "Transformación digital y conectividad IoT",
+                        "topics": [
+                              {
+                                    "code": "1.1",
+                                    "title": "La digitalización transforma los negocios",
+                                    "summary": "Cómo la digitalización cambia procesos, productos y toma de decisiones en organizaciones.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_001.jpeg",
+                                                "alt": "Globo digital conectado que representa transformación de negocios a escala global."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Transformación digital",
+                                                "items": [
+                                                      "Digitalizar no solo es usar tecnología: implica rediseñar procesos y servicios.",
+                                                      "La conectividad continua mejora visibilidad operativa y velocidad de respuesta."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Impacto empresarial",
+                                                "items": [
+                                                      "Permite reducir costos, mejorar experiencia de cliente y escalar operaciones.",
+                                                      "Exige mayor disciplina en ciberseguridad y gobierno de datos."
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    "code": "1.2",
+                                    "title": "Conectados globalmente a través de redes",
+                                    "summary": "La red como plataforma para conectar personas, servicios y dispositivos en múltiples entornos.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_008.png",
+                                                "alt": "Diagrama LAN y WAN que conecta hogares, servicios e infraestructura."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "La red es la base",
+                                                "items": [
+                                                      "Toda solución IoT depende de red estable para transportar datos y control.",
+                                                      "Disponibilidad, latencia y seguridad condicionan el valor del servicio."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Tipos de red",
+                                                "items": [
+                                                      "LAN conecta recursos locales de alta velocidad.",
+                                                      "WAN interconecta sedes y servicios remotos, incluyendo nube."
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    "code": "1.3",
+                                    "title": "El crecimiento de los dispositivos de IoT",
+                                    "summary": "Expansión de sensores y actuadores en hogar, industria y ciudades inteligentes.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_009.png",
+                                                "alt": "Ecosistema IoT con múltiples dispositivos y nodos conectados."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Qué es IoT",
+                                                "items": [
+                                                      "Integra objetos físicos con sensores, conectividad y lógica de control.",
+                                                      "Los dispositivos reportan estado y pueden ejecutar acciones automatizadas."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Beneficios y retos",
+                                                "items": [
+                                                      "Mejora monitoreo, eficiencia y capacidad de respuesta en tiempo real.",
+                                                      "Aumenta la superficie de ataque y demanda diseño seguro desde el inicio."
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    "code": "1.4",
+                                    "title": "Conexión de los dispositivos de IoT a la red",
+                                    "summary": "Integración de sensores, controladores y servicios de borde/nube para operación continua.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_010.png",
+                                                "alt": "Arquitectura IoT con controlador, sensores y actuadores en computación perimetral."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Integración técnica",
+                                                "items": [
+                                                      "Los gateways concentran telemetría y traducen protocolos de dispositivos.",
+                                                      "El borde reduce latencia para decisiones inmediatas."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Validación operativa",
+                                                "items": [
+                                                      "Simular topologías en laboratorio reduce riesgo antes del despliegue real.",
+                                                      "La observabilidad permite detectar desviaciones y ajustar políticas."
+                                                ]
+                                          }
+                                    ]
+                              }
+                        ]
+                  },
+                  {
+                        "key": "M2",
+                        "title": "Programación y prototipado",
+                        "topics": [
+                              {
+                                    "code": "2.1",
+                                    "title": "Conceptos de programación básica",
+                                    "summary": "Fundamentos de algoritmos, variables y estructuras para resolver problemas técnicos.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_012.png",
+                                                "alt": "Diagrama de flujo con decisiones y acciones para resolver un problema."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Lógica de solución",
+                                                "items": [
+                                                      "Un algoritmo organiza pasos ordenados y verificables.",
+                                                      "Los diagramas de flujo facilitan analizar decisiones y rutas alternativas."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Estructuras básicas",
+                                                "items": [
+                                                      "Variables almacenan estado y permiten cálculos.",
+                                                      "Secuencia, condición e iteración son la base del control de programa."
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    "code": "2.2",
+                                    "title": "Programación básica con Blockly",
+                                    "summary": "Uso de programación visual para aprender lógica sin fricción sintáctica inicial.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_015.jpeg",
+                                                "alt": "Pantalla de Blockly Games para aprendizaje progresivo de programación."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Aprendizaje visual",
+                                                "items": [
+                                                      "Blockly permite enfocarse en lógica y estructura del problema.",
+                                                      "Reduce errores de sintaxis al usar bloques predefinidos."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Aplicación práctica",
+                                                "items": [
+                                                      "Facilita transición posterior a lenguajes textuales como Python.",
+                                                      "Los retos gamificados mejoran comprensión de ciclos y condicionales."
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    "code": "2.3",
+                                    "title": "Programación con Python",
+                                    "summary": "Introducción a Python para automatización, análisis y scripts de soporte en IoT.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_011.png",
+                                                "alt": "Asistente digital como referencia a aplicaciones programables."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Fundamentos",
+                                                "items": [
+                                                      "Python es legible, versátil y ampliamente adoptado en redes e IoT.",
+                                                      "El intérprete facilita pruebas rápidas en etapas iniciales."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Estructuras clave",
+                                                "items": [
+                                                      "Variables, funciones y tipos de datos soportan scripts reutilizables.",
+                                                      "Condicionales y ciclos permiten automatizar tareas repetitivas."
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    "code": "2.4",
+                                    "title": "¿Qué es la creación de un prototipo?",
+                                    "summary": "Construcción de versiones iniciales para validar hipótesis técnicas y de negocio.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_017.jpeg",
+                                                "alt": "Trabajo práctico de ensamblaje electrónico durante prototipado."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Propósito",
+                                                "items": [
+                                                      "Prototipar reduce incertidumbre y permite aprender con bajo costo.",
+                                                      "Valida funcionalidad, usabilidad y viabilidad antes del despliegue final."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Iteración",
+                                                "items": [
+                                                      "Diseñar, construir, probar y ajustar en ciclos cortos.",
+                                                      "Documentar hallazgos mejora trazabilidad técnica y decisiones."
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    "code": "2.5",
+                                    "title": "Recursos para la creación de prototipos",
+                                    "summary": "Selección de herramientas físicas y digitales para acelerar pruebas funcionales.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_018.jpeg",
+                                                "alt": "Herramientas y materiales comunes en laboratorios de prototipado."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Recursos técnicos",
+                                                "items": [
+                                                      "Kits electrónicos y componentes modulares aceleran desarrollo inicial.",
+                                                      "Entornos de programación y simulación apoyan validación temprana."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Comunidad",
+                                                "items": [
+                                                      "Makerspaces y talleres colaborativos aportan mentoría y recursos.",
+                                                      "Participar en comunidades mejora aprendizaje y ejecución de proyectos."
+                                                ]
+                                          }
+                                    ]
+                              }
+                        ]
+                  },
+                  {
+                        "key": "M3",
+                        "title": "Datos masivos y analítica",
+                        "topics": [
+                              {
+                                    "code": "3.1",
+                                    "title": "¿Qué son los datos masivos?",
+                                    "summary": "Concepto de Big Data y características que exigen nuevos enfoques de procesamiento.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_019.png",
+                                                "alt": "Representación de volumen, velocidad y variedad en datos masivos."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Características clave",
+                                                "items": [
+                                                      "Volumen, velocidad y variedad definen escenarios de datos masivos.",
+                                                      "IoT incrementa generación continua de datos de sensores y eventos."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Implicaciones",
+                                                "items": [
+                                                      "Se requieren plataformas escalables para almacenar y analizar información.",
+                                                      "La calidad del dato condiciona decisiones de negocio y operación."
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    "code": "3.2",
+                                    "title": "¿Dónde se almacenan los datos masivos?",
+                                    "summary": "Estrategias de almacenamiento en borde, centro de datos y nube según latencia y escala.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_021.png",
+                                                "alt": "Arquitectura que combina computación de borde, internet y nube."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Opciones de almacenamiento",
+                                                "items": [
+                                                      "El borde procesa eventos cercanos a la fuente para menor latencia.",
+                                                      "La nube aporta elasticidad para cargas variables y crecimiento rápido."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Procesamiento distribuido",
+                                                "items": [
+                                                      "Distribuir datos entre nodos aumenta resiliencia y rendimiento.",
+                                                      "La arquitectura debe equilibrar costo, seguridad y cumplimiento."
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    "code": "3.3",
+                                    "title": "Soporte de empresas con datos masivos",
+                                    "summary": "Uso de analítica y visualización para decisiones más rápidas y mejor desempeño operativo.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
+                                                "alt": "Visualización analítica para encontrar relaciones y patrones en datos."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Valor para negocio",
+                                                "items": [
+                                                      "La analítica detecta patrones de demanda, eficiencia y riesgo.",
+                                                      "Permite decisiones sustentadas en evidencia y no en supuestos."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Visualización",
+                                                "items": [
+                                                      "Elegir el gráfico correcto mejora comprensión y comunicación ejecutiva.",
+                                                      "Los hallazgos deben traducirse en acciones concretas medibles."
+                                                ]
+                                          }
+                                    ]
+                              }
+                        ]
+                  },
+                  {
+                        "key": "M4",
+                        "title": "Automatización, IA e intención de red",
+                        "topics": [
+                              {
+                                    "code": "4.1",
+                                    "title": "Automatización",
+                                    "summary": "Aplicación de reglas y procesos automáticos para mejorar consistencia y velocidad operativa.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_002.png",
+                                                "alt": "Robot con paneles de datos representando operaciones automatizadas."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Qué automatizar",
+                                                "items": [
+                                                      "Tareas repetitivas y de alto volumen con reglas claras.",
+                                                      "Procesos con impacto en tiempos de respuesta y reducción de errores."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Beneficios",
+                                                "items": [
+                                                      "Mayor eficiencia, trazabilidad y capacidad de escalar servicios.",
+                                                      "Más tiempo del equipo para análisis y mejora continua."
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    "code": "4.2",
+                                    "title": "Inteligencia artificial (AI) y aprendizaje de máquina (ML)",
+                                    "summary": "Uso de modelos de IA/ML para identificar patrones y apoyar decisiones en entornos IoT.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_026.jpeg",
+                                                "alt": "Panel con métricas y patrones para análisis con IA y aprendizaje de máquina."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Fundamentos",
+                                                "items": [
+                                                      "IA engloba técnicas para resolver tareas cognitivas complejas.",
+                                                      "ML aprende patrones desde datos para predecir o clasificar eventos."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Aplicación en IoT",
+                                                "items": [
+                                                      "Permite detección de anomalías y mantenimiento predictivo.",
+                                                      "Requiere datos de calidad y validación continua del modelo."
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    "code": "4.3",
+                                    "title": "Redes basadas en intención",
+                                    "summary": "Modelo que traduce objetivos de negocio a políticas de red con verificación continua.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_027.png",
+                                                "alt": "Ciclo operativo de redes basadas en intención con validación y ajuste."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Concepto operativo",
+                                                "items": [
+                                                      "La intención se convierte en políticas técnicas de manera automatizada.",
+                                                      "La red valida estado real y corrige desviaciones de forma continua."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Relación con IA/ML",
+                                                "items": [
+                                                      "IA/ML mejora detección de anomalías y recomendaciones de ajuste.",
+                                                      "Aumenta consistencia de cambios y reduce errores operativos."
+                                                ]
+                                          }
+                                    ]
+                              }
+                        ]
+                  },
+                  {
+                        "key": "M5",
+                        "title": "Seguridad en IoT y protección de datos",
+                        "topics": [
+                              {
+                                    "code": "5.1",
+                                    "title": "¿Por qué la seguridad es tan importante?",
+                                    "summary": "Importancia de proteger datos y servicios en ecosistemas conectados y de alta exposición.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_020.jpeg",
+                                                "alt": "Carpeta protegida que representa seguridad de información sensible."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Datos y amenazas",
+                                                "items": [
+                                                      "Datos personales y operativos son objetivos de fraude y extorsión.",
+                                                      "Más dispositivos conectados implican mayor superficie de ataque."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Consecuencias",
+                                                "items": [
+                                                      "Una brecha afecta finanzas, reputación y continuidad de la organización.",
+                                                      "La prevención requiere controles técnicos y disciplina operativa."
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    "code": "5.2",
+                                    "title": "Protegiendo el mundo corporativo",
+                                    "summary": "Buenas prácticas para proteger infraestructura, red inalámbrica, endpoints y activos IoT.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_028.png",
+                                                "alt": "Escenario de Wi-Fi público que evidencia riesgos y necesidad de controles."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Prácticas recomendadas",
+                                                "items": [
+                                                      "Aplicar mínimo privilegio, MFA y segmentación de red por funciones.",
+                                                      "Mantener parches, inventario de activos y monitoreo continuo."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Foco en IoT",
+                                                "items": [
+                                                      "Actualizar firmware y eliminar configuraciones por defecto inseguras.",
+                                                      "Aislar dispositivos IoT para limitar movimiento lateral en incidentes."
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    "code": "5.3",
+                                    "title": "Protección de datos personales y dispositivos",
+                                    "summary": "Controles de seguridad para hogares inteligentes y uso de conectividad pública.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_005.png",
+                                                "alt": "Hogar inteligente con sensores y dispositivos que requieren configuración segura."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Hogar inteligente",
+                                                "items": [
+                                                      "Cambiar credenciales por defecto y separar red IoT de red principal.",
+                                                      "Aplicar actualizaciones y desactivar servicios no necesarios."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Uso en redes públicas",
+                                                "items": [
+                                                      "Evitar transacciones sensibles sin VPN y validación del punto de acceso.",
+                                                      "Usar MFA, bloqueo de dispositivo y copias de seguridad periódicas."
+                                                ]
+                                          }
+                                    ]
+                              }
+                        ]
+                  },
+                  {
+                        "key": "M6",
+                        "title": "Oportunidades profesionales y aprendizaje continuo",
+                        "topics": [
+                              {
+                                    "code": "6.1",
+                                    "title": "Desafíos y oportunidades en el mundo digital",
+                                    "summary": "Cambios tecnológicos que redefinen perfiles profesionales y competencias requeridas.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_003.png",
+                                                "alt": "Logística conectada como ejemplo de transformación en sectores productivos."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Contexto actual",
+                                                "items": [
+                                                      "La digitalización acelera cambios en procesos y expectativas de usuarios.",
+                                                      "El mercado demanda perfiles con base técnica y capacidad de adaptación."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Aprendizaje permanente",
+                                                "items": [
+                                                      "Actualizar habilidades es clave para sostener empleabilidad.",
+                                                      "Combinar teoría y práctica mejora preparación para roles emergentes."
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    "code": "6.2",
+                                    "title": "Oportunidades profesionales y de educación",
+                                    "summary": "Rutas de formación, certificaciones y comunidades para crecer en IoT y transformación digital.",
+                                    "images": [
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_002.png",
+                                                "alt": "Tecnologías emergentes que representan oportunidades de carrera y certificación."
+                                          }
+                                    ],
+                                    "sections": [
+                                          {
+                                                "title": "Ruta formativa",
+                                                "items": [
+                                                      "Definir objetivos por rol ayuda a elegir cursos y laboratorios relevantes.",
+                                                      "Las certificaciones validan competencias ante empleadores y clientes."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Ecosistema profesional",
+                                                "items": [
+                                                      "Participar en comunidades técnicas acelera aprendizaje y networking.",
+                                                      "Construir portafolio práctico mejora acceso a oportunidades laborales."
+                                                ]
+                                          }
+                                    ]
+                              }
+                        ]
+                  }
+            ]
       }
     ]
   };
