@@ -150,6 +150,10 @@ input[type="search"] {
   background: #eef7ff;
 }
 
+.search-suggestion.is-active {
+  background: #deefff;
+}
+
 .suggestion-title {
   display: block;
   color: #1e3648;

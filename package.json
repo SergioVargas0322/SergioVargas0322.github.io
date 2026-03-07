@@ -1,0 +1,11 @@
+{
+  "name": "cursoscisco-catalog",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Catalogo web de cursos Cisco",
+  "scripts": {
+    "check:data": "node scripts/check-catalog.js",
+    "check:search": "node scripts/check-search.js",
+    "check": "npm run check:data && npm run check:search"
+  }
+}
