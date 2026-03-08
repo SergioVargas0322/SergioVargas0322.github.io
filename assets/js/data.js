@@ -11405,27 +11405,59 @@
                               },
                               {
                                     "code": "5.3",
-                                    "title": "Protección de datos personales y dispositivos",
-                                    "summary": "Controles de seguridad para hogares inteligentes y uso de conectividad pública.",
+                                    "title": "Protecci\u00f3n de datos personales y dispositivos",
+                                    "summary": "Pr\u00e1cticas de seguridad para proteger identidad digital, dispositivos personales y hogares conectados frente a amenazas comunes en entornos IoT.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_005.png",
-                                                "alt": "Hogar inteligente con sensores y dispositivos que requieren configuración segura."
+                                                "alt": "Hogar inteligente con m\u00faltiples dispositivos que requieren configuraci\u00f3n segura."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_028.png",
+                                                "alt": "Uso de conectividad p\u00fablica que incrementa riesgo de exposici\u00f3n de datos."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_020.jpeg",
+                                                "alt": "Protecci\u00f3n de informaci\u00f3n personal mediante controles de acceso y cifrado."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Hogar inteligente",
+                                                "title": "Higiene digital personal",
                                                 "items": [
-                                                      "Cambiar credenciales por defecto y separar red IoT de red principal.",
-                                                      "Aplicar actualizaciones y desactivar servicios no necesarios."
+                                                      "Usar contrase\u00f1as \u00fanicas y robustas con gestor de credenciales para evitar reutilizaci\u00f3n riesgosa.",
+                                                      "Activar autenticaci\u00f3n multifactor (MFA) en cuentas cr\u00edticas: correo, banca y servicios en nube.",
+                                                      "Mantener sistema operativo y aplicaciones actualizadas para cerrar vulnerabilidades conocidas."
                                                 ]
                                           },
                                           {
-                                                "title": "Uso en redes públicas",
+                                                "title": "Seguridad en hogar inteligente",
                                                 "items": [
-                                                      "Evitar transacciones sensibles sin VPN y validación del punto de acceso.",
-                                                      "Usar MFA, bloqueo de dispositivo y copias de seguridad periódicas."
+                                                      "Cambiar credenciales por defecto de routers, c\u00e1maras y dispositivos IoT desde la instalaci\u00f3n inicial.",
+                                                      "Separar red IoT de la red principal para aislar equipos de menor confianza.",
+                                                      "Desactivar servicios no usados (UPnP, acceso remoto abierto) y revisar permisos de aplicaciones m\u00f3viles."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Uso seguro de redes p\u00fablicas",
+                                                "items": [
+                                                      "Evitar transacciones sensibles en Wi-Fi p\u00fablica sin VPN y sin validar el nombre real del punto de acceso.",
+                                                      "Preferir sitios HTTPS y desconfiar de portales cautivos que solicitan datos innecesarios.",
+                                                      "Deshabilitar conexi\u00f3n autom\u00e1tica a redes abiertas y apagar Bluetooth/NFC cuando no se use."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Respaldo y recuperaci\u00f3n",
+                                                "items": [
+                                                      "Realizar copias de seguridad peri\u00f3dicas en medios separados y verificar que la restauraci\u00f3n funcione.",
+                                                      "Configurar bloqueo de pantalla, cifrado de dispositivo y borrado remoto en caso de p\u00e9rdida.",
+                                                      "Definir un plan personal de respuesta: cambiar credenciales, revocar sesiones y reportar incidente."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Aplicar una l\u00ednea base de seguridad personal y dom\u00e9stica que reduzca exposici\u00f3n de datos y facilite recuperaci\u00f3n ante incidentes."
                                                 ]
                                           }
                                     ]
