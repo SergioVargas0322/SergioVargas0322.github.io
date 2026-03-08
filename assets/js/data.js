@@ -11751,7 +11751,7 @@
                 code: "2.0",
                 title: "Controles ambientales en Packet Tracer",
                 summary:
-                  "Uso de variables ambientales, gr\u00e1ficos y contenedores para simular escenarios reales que afectan el comportamiento de sensores y actuadores IoT.",
+                  "Aplicaci\u00f3n de controles ambientales, contenedores y gr\u00e1ficos temporales en Packet Tracer para modelar c\u00f3mo el entorno impacta sensores y actuadores IoT.",
                 images: [
                   {
                     src: "./assets/images/packet-tracer-network-exploration/C4_2.2.png",
@@ -11760,37 +11760,65 @@
                   {
                     src: "./assets/images/iot-digital-transformation/C10_media_023.png",
                     alt: "Visualizaci\u00f3n de m\u00e9tricas y datos para seguimiento de condiciones ambientales."
+                  },
+                  {
+                    src: "./assets/images/iot-digital-transformation/C10_media_019.png",
+                    alt: "Escenario de ciudad conectada donde el entorno modifica el comportamiento de los dispositivos."
                   }
                 ],
                 sections: [
                   {
-                    title: "Qu\u00e9 controla el entorno",
+                    title: "Alcance de los controles ambientales",
                     items: [
-                      "Cada contenedor del espacio f\u00edsico tiene variables propias como temperatura, lluvia, viento, agua y gases.",
-                      "Las condiciones del entorno pueden disparar eventos en sensores y activar respuestas autom\u00e1ticas.",
-                      "El tiempo simulado permite observar ciclos diarios y tendencias operativas."
+                      "Cada contenedor (interurbano, ciudad, edificio y armario de cableado) tiene su propio conjunto de variables ambientales.",
+                      "Packet Tracer incluye m\u00faltiples elementos predeterminados: temperatura, lluvia, nivel de agua, viento, humo y gases.",
+                      "Los dispositivos IoT reaccionan al entorno en tiempo de simulaci\u00f3n, no solo a comandos manuales."
                     ]
                   },
                   {
-                    title: "Elementos t\u00e9cnicos clave",
+                    title: "Tiempo y comportamiento de simulaci\u00f3n",
                     items: [
-                      "KeyFrame: representa un instante de tiempo con un valor ambiental definido.",
-                      "Gr\u00e1fico de KeyFrame: muestra c\u00f3mo cambia una variable durante el d\u00eda.",
-                      "Transferencia: define la velocidad de convergencia entre contenedores principal/secundario."
+                      "Por defecto, 1 segundo real equivale a 30 minutos del tiempo del contenedor.",
+                      "El atajo May\u00fas + E abre r\u00e1pidamente la ventana de controles ambientales.",
+                      "Es posible ajustar el ritmo del tiempo para pruebas r\u00e1pidas o escenarios m\u00e1s realistas."
                     ]
                   },
                   {
-                    title: "Aplicaci\u00f3n pr\u00e1ctica",
+                    title: "KeyFrames y gr\u00e1ficas",
                     items: [
-                      "Crear escenarios de seguridad (movimiento/humo) para validar alarmas y notificaciones.",
-                      "Simular riego inteligente por humedad para optimizar consumo de agua.",
-                      "Comparar comportamiento del sistema antes y despu\u00e9s de modificar condiciones ambientales."
+                      "Un KeyFrame representa un instante con valores espec\u00edficos de una variable ambiental.",
+                      "La gr\u00e1fica de KeyFrames permite ajustar m\u00ednimos, m\u00e1ximos y transiciones durante 24 horas.",
+                      "La transferencia controla qu\u00e9 tan r\u00e1pido un contenedor secundario converge al principal."
+                    ]
+                  },
+                  {
+                    title: "Escenarios recomendados de laboratorio",
+                    items: [
+                      "Configurar sensor de movimiento + c\u00e1mara para alertas autom\u00e1ticas en seguridad dom\u00e9stica.",
+                      "Programar riego por humedad para encendido/apagado basado en condiciones reales simuladas.",
+                      "Comparar d\u00edas simulados para validar estabilidad y repetibilidad de la automatizaci\u00f3n."
+                    ]
+                  },
+                  {
+                    title: "Errores frecuentes",
+                    items: [
+                      "Modificar variables sin activar el elemento correspondiente en el contenedor.",
+                      "No reiniciar o pausar correctamente el tiempo tras cambios grandes en KeyFrames.",
+                      "Interpretar mal resultados por no diferenciar tiempo real y tiempo de simulaci\u00f3n."
+                    ]
+                  },
+                  {
+                    title: "Checklist de validaci\u00f3n 2.0",
+                    items: [
+                      "Variable ambiental seleccionada y visible en gr\u00e1fica.",
+                      "KeyFrames ajustados y comportamiento observado durante al menos un ciclo.",
+                      "Evidencia de reacci\u00f3n de al menos un sensor y un actuador."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Configurar y analizar controles ambientales en Packet Tracer para validar reacciones de dispositivos IoT frente a cambios del entorno."
+                      "Configurar condiciones ambientales reproducibles y validar c\u00f3mo impactan la respuesta autom\u00e1tica de dispositivos IoT."
                     ]
                   }
                 ]
@@ -11799,7 +11827,7 @@
                 code: "2.1",
                 title: "Crear una cosa de IoT en Packet Tracer",
                 summary:
-                  "Dise\u00f1o y construcci\u00f3n de un dispositivo IoT personalizado (Thing), incluyendo conectividad, reglas y personalizaci\u00f3n de scripts para nuevas funciones.",
+                  "Dise\u00f1o, implementaci\u00f3n y prueba de una Thing personalizada en Packet Tracer, reutilizando l\u00f3gica existente y adapt\u00e1ndola con reglas y c\u00f3digo propio.",
                 images: [
                   {
                     src: "./assets/images/packet-tracer-network-exploration/C4_2.1.png",
@@ -11808,45 +11836,65 @@
                   {
                     src: "./assets/images/iot-digital-transformation/C10_media_017.jpeg",
                     alt: "Espacio de laboratorio para programaci\u00f3n y pruebas de prototipos IoT."
+                  },
+                  {
+                    src: "./assets/images/packet-tracer-basics/C3_2.0.png",
+                    alt: "Topolog\u00eda con dispositivos cableados e inal\u00e1mbricos para validar conectividad de nuevos nodos."
                   }
                 ],
                 sections: [
                   {
-                    title: "Dise\u00f1o antes de implementar",
+                    title: "Dise\u00f1o de la Thing",
                     items: [
                       "Definir qu\u00e9 problema resuelve la nueva cosa, c\u00f3mo se conecta y qu\u00e9 estados debe mostrar.",
-                      "Seleccionar o crear recursos gr\u00e1ficos para representar estado inicial y estado activo.",
-                      "Revisar si existe un dispositivo similar para reutilizar su l\u00f3gica como base."
+                      "Preparar al menos dos estados visuales (normal/activo) para facilitar monitoreo.",
+                      "Identificar un dispositivo similar en Packet Tracer para reutilizar su l\u00f3gica base."
                     ]
                   },
                   {
-                    title: "Construcci\u00f3n del dispositivo",
+                    title: "Construcci\u00f3n en Thing Editor",
                     items: [
                       "Usar la plantilla Thing para crear un nuevo dispositivo personalizado.",
-                      "Configurar nombre, interfaces de E/S y adaptador de red (DHCP o est\u00e1tico).",
-                      "Agregar im\u00e1genes y reglas en el Thing Editor para reflejar cambios de estado."
+                      "Configurar nombre funcional, interfaces de E/S y tipo de conectividad (inal\u00e1mbrica o cableada).",
+                      "Agregar im\u00e1genes, subcomponentes y propiedades desde la pesta\u00f1a avanzada del editor."
                     ]
                   },
                   {
-                    title: "Programaci\u00f3n y pruebas",
+                    title: "Reglas y programaci\u00f3n",
                     items: [
                       "Modificar scripts en JavaScript, Python o Visual Blocky seg\u00fan objetivo del dispositivo.",
-                      "Tomar un script existente (por ejemplo, detector de movimiento) y adaptarlo al nuevo componente.",
-                      "Validar conectividad y comportamiento mediante pruebas de red y eventos (Alt + clic, ping, monitoreo)."
+                      "Copiar un script funcional (por ejemplo, detector de movimiento) y adaptarlo en `main.js` al nuevo dispositivo.",
+                      "Vincular condiciones y acciones con reglas para activar estados, alertas o actuadores."
                     ]
                   },
                   {
-                    title: "Reutilizaci\u00f3n",
+                    title: "Integraci\u00f3n de red y validaciones",
                     items: [
-                      "Guardar la cosa creada como plantilla para usarla en futuros proyectos.",
-                      "Documentar par\u00e1metros de red, eventos y dependencias del script.",
-                      "Eliminar o versionar plantillas para mantener orden del entorno de desarrollo."
+                      "Conectar la Thing a la red por DHCP o IP est\u00e1tica y validar alcance con ping desde otro host.",
+                      "Registrar el dispositivo en puerta de enlace o servidor IoT seg\u00fan arquitectura definida.",
+                      "Probar cambios de estado con eventos del entorno o interacci\u00f3n manual (Alt + clic)."
+                    ]
+                  },
+                  {
+                    title: "Errores comunes y prevenci\u00f3n",
+                    items: [
+                      "Script copiado sin cambiar el identificador del dispositivo en c\u00f3digo.",
+                      "Reglas creadas sin asociar correctamente subcomponente, condici\u00f3n y acci\u00f3n.",
+                      "Plantilla sin documentaci\u00f3n t\u00e9cnica, lo que dificulta su reutilizaci\u00f3n posterior."
+                    ]
+                  },
+                  {
+                    title: "Resultado reusable",
+                    items: [
+                      "Guardar la Thing como plantilla para reutilizarla en nuevos escenarios.",
+                      "Versionar cambios de script y par\u00e1metros para mantener trazabilidad.",
+                      "Documentar entradas/salidas del dispositivo para escalar integraciones."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Crear una cosa IoT personalizada en Packet Tracer, conectarla a la red y validar su funcionamiento con reglas y scripts adaptados."
+                      "Crear una Thing IoT personalizada, operativa y reutilizable, con conectividad validada y automatizaci\u00f3n funcional basada en scripts."
                     ]
                   }
                 ]
