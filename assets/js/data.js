@@ -10921,54 +10921,118 @@
                         "topics": [
                               {
                                     "code": "3.1",
-                                    "title": "¿Qué son los datos masivos?",
-                                    "summary": "Concepto de Big Data y características que exigen nuevos enfoques de procesamiento.",
+                                    "title": "\u00bfQu\u00e9 son los datos masivos?",
+                                    "summary": "Introducci\u00f3n a Big Data en contextos IoT: volumen, velocidad y diversidad de datos que exigen arquitectura, calidad y anal\u00edtica escalables.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_019.png",
-                                                "alt": "Representación de volumen, velocidad y variedad en datos masivos."
+                                                "alt": "Representaci\u00f3n de volumen, velocidad y variedad en datos masivos."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
+                                                "alt": "Panel anal\u00edtico con m\u00e9tricas y tendencias derivadas de datos masivos."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_001.jpeg",
+                                                "alt": "Interconexi\u00f3n global que genera grandes vol\u00famenes de datos en servicios digitales."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Características clave",
+                                                "title": "Definici\u00f3n operativa de Big Data",
                                                 "items": [
-                                                      "Volumen, velocidad y variedad definen escenarios de datos masivos.",
-                                                      "IoT incrementa generación continua de datos de sensores y eventos."
+                                                      "Se considera Big Data cuando el volumen, la velocidad o la complejidad superan herramientas tradicionales.",
+                                                      "En IoT, los sensores generan telemetr\u00eda continua que incrementa cardinalidad y frecuencia de eventos.",
+                                                      "El valor no est\u00e1 en almacenar todo, sino en convertir datos en decisiones accionables."
                                                 ]
                                           },
                                           {
-                                                "title": "Implicaciones",
+                                                "title": "Las V de los datos masivos",
                                                 "items": [
-                                                      "Se requieren plataformas escalables para almacenar y analizar información.",
-                                                      "La calidad del dato condiciona decisiones de negocio y operación."
+                                                      "Volumen: cantidad creciente de registros por dispositivo, usuario y proceso.",
+                                                      "Velocidad: necesidad de ingesta y procesamiento casi en tiempo real.",
+                                                      "Variedad y veracidad: datos estructurados, semiestructurados y no estructurados con distinta confiabilidad."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Ciclo de valor del dato",
+                                                "items": [
+                                                      "Captura: obtenci\u00f3n desde sensores, APIs y sistemas transaccionales.",
+                                                      "Preparaci\u00f3n: limpieza, normalizaci\u00f3n y enriquecimiento para evitar sesgos de an\u00e1lisis.",
+                                                      "Explotaci\u00f3n: modelos, tableros y alertas que soportan operaci\u00f3n y estrategia."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Riesgos por mala calidad de datos",
+                                                "items": [
+                                                      "Datos incompletos o inconsistentes producen decisiones r\u00e1pidas pero equivocadas.",
+                                                      "La falta de trazabilidad dificulta auditor\u00eda y cumplimiento regulatorio.",
+                                                      "Sin gobierno de datos, aumentan costos de almacenamiento y retrabajo anal\u00edtico."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Explicar qu\u00e9 hace masivos a los datos, c\u00f3mo se transforman en valor y qu\u00e9 controles garantizan su calidad."
                                                 ]
                                           }
                                     ]
                               },
                               {
                                     "code": "3.2",
-                                    "title": "¿Dónde se almacenan los datos masivos?",
-                                    "summary": "Estrategias de almacenamiento en borde, centro de datos y nube según latencia y escala.",
+                                    "title": "\u00bfD\u00f3nde se almacenan los datos masivos?",
+                                    "summary": "Estrategias de almacenamiento en borde, centro de datos y nube, con enfoque en latencia, costo, soberan\u00eda del dato y continuidad operativa.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_021.png",
-                                                "alt": "Arquitectura que combina computación de borde, internet y nube."
+                                                "alt": "Arquitectura que combina computaci\u00f3n de borde, internet y nube."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_008.png",
+                                                "alt": "Conectividad entre redes locales y WAN para transporte de grandes vol\u00famenes de datos."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_005.png",
+                                                "alt": "Dispositivos IoT en hogar inteligente que generan datos para almacenamiento distribuido."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Opciones de almacenamiento",
+                                                "title": "Capas de almacenamiento",
                                                 "items": [
-                                                      "El borde procesa eventos cercanos a la fuente para menor latencia.",
-                                                      "La nube aporta elasticidad para cargas variables y crecimiento rápido."
+                                                      "Borde (edge): conserva y procesa eventos cercanos a la fuente cuando la latencia es cr\u00edtica.",
+                                                      "Centro de datos: ofrece control directo, integraci\u00f3n interna y cumplimiento espec\u00edfico.",
+                                                      "Nube: aporta elasticidad, alta disponibilidad y servicios administrados de anal\u00edtica."
                                                 ]
                                           },
                                           {
-                                                "title": "Procesamiento distribuido",
+                                                "title": "Criterios para decidir arquitectura",
                                                 "items": [
-                                                      "Distribuir datos entre nodos aumenta resiliencia y rendimiento.",
-                                                      "La arquitectura debe equilibrar costo, seguridad y cumplimiento."
+                                                      "Latencia requerida por la operaci\u00f3n y tolerancia a interrupciones de conectividad.",
+                                                      "Costo total (almacenamiento, transferencia, respaldo y operaci\u00f3n).",
+                                                      "Requisitos legales: retenci\u00f3n, privacidad, residencia y acceso a datos."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Modelo h\u00edbrido recomendado",
+                                                "items": [
+                                                      "Procesar localmente eventos urgentes y sincronizar lotes consolidados a la nube.",
+                                                      "Mantener cat\u00e1logo de datos, pol\u00edticas de ciclo de vida y niveles de servicio por tipo de informaci\u00f3n.",
+                                                      "Incluir replicaci\u00f3n, respaldos y pruebas de recuperaci\u00f3n ante desastres."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Checklist de dise\u00f1o",
+                                                "items": [
+                                                      "Clasificar datos por criticidad, sensibilidad y frecuencia de acceso.",
+                                                      "Definir retenci\u00f3n y purga autom\u00e1tica para evitar sobrecostos.",
+                                                      "Asegurar cifrado en reposo y en tr\u00e1nsito con controles de acceso por rol."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Seleccionar una arquitectura de almacenamiento coherente con requisitos de rendimiento, seguridad y gobernanza."
                                                 ]
                                           }
                                     ]
@@ -10976,26 +11040,58 @@
                               {
                                     "code": "3.3",
                                     "title": "Soporte de empresas con datos masivos",
-                                    "summary": "Uso de analítica y visualización para decisiones más rápidas y mejor desempeño operativo.",
+                                    "summary": "Aplicaci\u00f3n de anal\u00edtica y visualizaci\u00f3n para optimizar operaciones, reducir riesgo y acelerar decisiones de negocio basadas en evidencia.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
-                                                "alt": "Visualización analítica para encontrar relaciones y patrones en datos."
+                                                "alt": "Visualizaci\u00f3n anal\u00edtica para identificar relaciones y patrones en datos empresariales."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_026.jpeg",
+                                                "alt": "Panel con m\u00e9tricas y tendencias para toma de decisiones asistida por datos."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_027.png",
+                                                "alt": "Flujo de decisiones y ajustes continuos apoyados por anal\u00edtica operacional."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Valor para negocio",
+                                                "title": "Casos de uso empresariales",
                                                 "items": [
-                                                      "La analítica detecta patrones de demanda, eficiencia y riesgo.",
-                                                      "Permite decisiones sustentadas en evidencia y no en supuestos."
+                                                      "Mantenimiento predictivo para disminuir paradas no planificadas y costos correctivos.",
+                                                      "Optimizaci\u00f3n de cadena de suministro mediante pron\u00f3sticos de demanda y trazabilidad.",
+                                                      "Detecci\u00f3n de anomal\u00edas de seguridad y fraude con monitoreo continuo."
                                                 ]
                                           },
                                           {
-                                                "title": "Visualización",
+                                                "title": "Niveles de anal\u00edtica",
                                                 "items": [
-                                                      "Elegir el gráfico correcto mejora comprensión y comunicación ejecutiva.",
-                                                      "Los hallazgos deben traducirse en acciones concretas medibles."
+                                                      "Descriptiva: explica qu\u00e9 ocurri\u00f3 y c\u00f3mo se comport\u00f3 el sistema.",
+                                                      "Diagn\u00f3stica: identifica causas probables de incidencias o desviaciones.",
+                                                      "Predictiva/prescriptiva: anticipa escenarios y sugiere acciones \u00f3ptimas."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Visualizaci\u00f3n orientada a decisi\u00f3n",
+                                                "items": [
+                                                      "Cada tablero debe responder una pregunta de negocio concreta, no solo mostrar datos.",
+                                                      "Seleccionar KPIs claros evita ruido y acelera priorizaci\u00f3n ejecutiva.",
+                                                      "Alertas con umbrales bien definidos permiten intervenci\u00f3n oportuna."
+                                                ]
+                                          },
+                                          {
+                                                "title": "M\u00e9tricas de impacto",
+                                                "items": [
+                                                      "Tiempo medio de detecci\u00f3n y resoluci\u00f3n de incidentes (MTTD/MTTR).",
+                                                      "Disponibilidad de servicios cr\u00edticos y cumplimiento de SLA.",
+                                                      "Ahorro operativo y mejora de productividad atribuible a iniciativas basadas en datos."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Relacionar anal\u00edtica, visualizaci\u00f3n y KPIs con mejoras medibles en operaci\u00f3n, seguridad y resultados del negocio."
                                                 ]
                                           }
                                     ]
