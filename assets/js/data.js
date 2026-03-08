@@ -11589,6 +11589,239 @@
                         ]
                   }
             ]
+      },
+      {
+        id: "iot-packet-tracer-exploration",
+        title: "Exploraci\u00f3n de IoT con Cisco Packet Tracer",
+        provider: "Cisco Networking Academy",
+        level: "Fundamentos",
+        status: "En curso",
+        estimatedHours: 8,
+        summary:
+          "Curso pr\u00e1ctico para dise\u00f1ar, conectar, monitorear y programar soluciones IoT en Cisco Packet Tracer mediante escenarios de hogar inteligente y control ambiental.",
+        tags: ["iot", "packet tracer", "domotica", "automatizacion", "simulacion"],
+        modules: [
+          {
+            key: "M1",
+            title: "Cree su propia red dom\u00e9stica inteligente",
+            topics: [
+              {
+                code: "1.1",
+                title: "Dispositivos de IoT en Packet Tracer",
+                summary:
+                  "Introducci\u00f3n al ecosistema IoT dentro de Packet Tracer: tipos de dispositivos, categor\u00edas disponibles y formas de conectarlos a la red local.",
+                images: [
+                  {
+                    src: "./assets/images/iot-digital-transformation/C10_media_005.png",
+                    alt: "Entorno de hogar inteligente con dispositivos IoT conectados."
+                  },
+                  {
+                    src: "./assets/images/packet-tracer-basics/C3_1.0.png",
+                    alt: "Interfaz de Cisco Packet Tracer para explorar y agregar componentes."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Concepto clave",
+                    items: [
+                      "IoT integra sensores, actuadores y dispositivos inteligentes que intercambian datos en red.",
+                      "En Packet Tracer, los dispositivos IoT se encuentran en End Devices con subcategor\u00edas como Home, City e Industry.",
+                      "Los dispositivos pueden operar por conexi\u00f3n inal\u00e1mbrica o cableada seg\u00fan el escenario."
+                    ]
+                  },
+                  {
+                    title: "Recorrido en Packet Tracer",
+                    items: [
+                      "Ubicar dispositivos IoT desde el panel inferior de selecci\u00f3n espec\u00edfica.",
+                      "Arrastrar componentes al espacio de trabajo y revisar sus pesta\u00f1as de configuraci\u00f3n, GUI y atributos.",
+                      "Usar Alt + clic en dispositivos compatibles para simular acciones r\u00e1pidas de control."
+                    ]
+                  },
+                  {
+                    title: "Buenas pr\u00e1cticas iniciales",
+                    items: [
+                      "Definir primero la puerta de enlace o servidor de registro antes de agregar muchos nodos.",
+                      "Nombrar dispositivos por funci\u00f3n para facilitar monitoreo y pruebas.",
+                      "Validar conectividad b\u00e1sica de cada dispositivo antes de avanzar a automatizaciones."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Identificar dispositivos IoT disponibles en Packet Tracer y conectarlos correctamente a una arquitectura de red dom\u00e9stica."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.2",
+                title: "Cree y controle su red dom\u00e9stica inteligente",
+                summary:
+                  "Implementaci\u00f3n de una red dom\u00e9stica con puerta de enlace, registro de dispositivos y monitoreo local o remoto mediante aplicaciones IoT.",
+                images: [
+                  {
+                    src: "./assets/images/packet-tracer-basics/C3_2.1.png",
+                    alt: "Topolog\u00eda de red dom\u00e9stica en Packet Tracer con enlaces cableados e inal\u00e1mbricos."
+                  },
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_2.3.png",
+                    alt: "Panel web de administraci\u00f3n para monitoreo y descubrimiento de dispositivos."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Arquitectura base del hogar inteligente",
+                    items: [
+                      "La puerta de enlace dom\u00e9stica concentra conectividad a Internet, WLAN local y servicios de registro IoT.",
+                      "Los dispositivos se integran por LAN o Wi-Fi y luego se administran desde tableta, smartphone o PC.",
+                      "El dise\u00f1o permite control local y, con configuraci\u00f3n adicional, control remoto por Internet."
+                    ]
+                  },
+                  {
+                    title: "Flujo de conexi\u00f3n y control",
+                    items: [
+                      "Instalar la puerta de enlace y conectarla al m\u00f3dem/ISP con cable Ethernet.",
+                      "Asociar cada dispositivo IoT al SSID o red local y verificar IP asignada.",
+                      "Monitorear estados y ejecutar acciones (bloquear, encender, ajustar) desde el IoT Monitor."
+                    ]
+                  },
+                  {
+                    title: "Registro en servidor dedicado",
+                    items: [
+                      "Alternativamente, registrar dispositivos en un servidor IoT dedicado con servicios complementarios (DNS, DHCP, Web, FTP, correo).",
+                      "Configurar IP del servidor, credenciales y tipo de acceso para administraci\u00f3n remota.",
+                      "Confirmar que los nuevos dispositivos aparezcan en el panel del servidor tras el registro."
+                    ]
+                  },
+                  {
+                    title: "Checklist operativo",
+                    items: [
+                      "Puerta de enlace activa y con conectividad hacia Internet.",
+                      "Dispositivos registrados, visibles y con estado coherente en la app.",
+                      "Prueba de control remoto exitosa en al menos un actuador (p. ej., cerradura o ventilador)."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Construir una red dom\u00e9stica inteligente funcional con capacidad de monitoreo y control local/remoto en Packet Tracer."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M2",
+            title: "Controles ambientales y cosas de IoT en Packet Tracer",
+            topics: [
+              {
+                code: "2.0",
+                title: "Controles ambientales en Packet Tracer",
+                summary:
+                  "Uso de variables ambientales, gr\u00e1ficos y contenedores para simular escenarios reales que afectan el comportamiento de sensores y actuadores IoT.",
+                images: [
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_2.2.png",
+                    alt: "Panel de simulaci\u00f3n de Packet Tracer para analizar eventos y comportamiento temporal."
+                  },
+                  {
+                    src: "./assets/images/iot-digital-transformation/C10_media_023.png",
+                    alt: "Visualizaci\u00f3n de m\u00e9tricas y datos para seguimiento de condiciones ambientales."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Qu\u00e9 controla el entorno",
+                    items: [
+                      "Cada contenedor del espacio f\u00edsico tiene variables propias como temperatura, lluvia, viento, agua y gases.",
+                      "Las condiciones del entorno pueden disparar eventos en sensores y activar respuestas autom\u00e1ticas.",
+                      "El tiempo simulado permite observar ciclos diarios y tendencias operativas."
+                    ]
+                  },
+                  {
+                    title: "Elementos t\u00e9cnicos clave",
+                    items: [
+                      "KeyFrame: representa un instante de tiempo con un valor ambiental definido.",
+                      "Gr\u00e1fico de KeyFrame: muestra c\u00f3mo cambia una variable durante el d\u00eda.",
+                      "Transferencia: define la velocidad de convergencia entre contenedores principal/secundario."
+                    ]
+                  },
+                  {
+                    title: "Aplicaci\u00f3n pr\u00e1ctica",
+                    items: [
+                      "Crear escenarios de seguridad (movimiento/humo) para validar alarmas y notificaciones.",
+                      "Simular riego inteligente por humedad para optimizar consumo de agua.",
+                      "Comparar comportamiento del sistema antes y despu\u00e9s de modificar condiciones ambientales."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Configurar y analizar controles ambientales en Packet Tracer para validar reacciones de dispositivos IoT frente a cambios del entorno."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "2.1",
+                title: "Crear una cosa de IoT en Packet Tracer",
+                summary:
+                  "Dise\u00f1o y construcci\u00f3n de un dispositivo IoT personalizado (Thing), incluyendo conectividad, reglas y personalizaci\u00f3n de scripts para nuevas funciones.",
+                images: [
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_2.1.png",
+                    alt: "Entorno de trabajo en Packet Tracer para integrar dispositivos y cableado."
+                  },
+                  {
+                    src: "./assets/images/iot-digital-transformation/C10_media_017.jpeg",
+                    alt: "Espacio de laboratorio para programaci\u00f3n y pruebas de prototipos IoT."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Dise\u00f1o antes de implementar",
+                    items: [
+                      "Definir qu\u00e9 problema resuelve la nueva cosa, c\u00f3mo se conecta y qu\u00e9 estados debe mostrar.",
+                      "Seleccionar o crear recursos gr\u00e1ficos para representar estado inicial y estado activo.",
+                      "Revisar si existe un dispositivo similar para reutilizar su l\u00f3gica como base."
+                    ]
+                  },
+                  {
+                    title: "Construcci\u00f3n del dispositivo",
+                    items: [
+                      "Usar la plantilla Thing para crear un nuevo dispositivo personalizado.",
+                      "Configurar nombre, interfaces de E/S y adaptador de red (DHCP o est\u00e1tico).",
+                      "Agregar im\u00e1genes y reglas en el Thing Editor para reflejar cambios de estado."
+                    ]
+                  },
+                  {
+                    title: "Programaci\u00f3n y pruebas",
+                    items: [
+                      "Modificar scripts en JavaScript, Python o Visual Blocky seg\u00fan objetivo del dispositivo.",
+                      "Tomar un script existente (por ejemplo, detector de movimiento) y adaptarlo al nuevo componente.",
+                      "Validar conectividad y comportamiento mediante pruebas de red y eventos (Alt + clic, ping, monitoreo)."
+                    ]
+                  },
+                  {
+                    title: "Reutilizaci\u00f3n",
+                    items: [
+                      "Guardar la cosa creada como plantilla para usarla en futuros proyectos.",
+                      "Documentar par\u00e1metros de red, eventos y dependencias del script.",
+                      "Eliminar o versionar plantillas para mantener orden del entorno de desarrollo."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Crear una cosa IoT personalizada en Packet Tracer, conectarla a la red y validar su funcionamiento con reglas y scripts adaptados."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   };
