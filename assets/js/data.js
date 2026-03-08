@@ -11470,54 +11470,118 @@
                         "topics": [
                               {
                                     "code": "6.1",
-                                    "title": "Desafíos y oportunidades en el mundo digital",
-                                    "summary": "Cambios tecnológicos que redefinen perfiles profesionales y competencias requeridas.",
+                                    "title": "Desaf\u00edos y oportunidades en el mundo digital",
+                                    "summary": "An\u00e1lisis de c\u00f3mo la transformaci\u00f3n digital redefine perfiles profesionales, exige nuevas competencias y abre oportunidades en sectores impulsados por datos.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_003.png",
-                                                "alt": "Logística conectada como ejemplo de transformación en sectores productivos."
+                                                "alt": "Log\u00edstica conectada como ejemplo de transformaci\u00f3n digital en sectores productivos."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_001.jpeg",
+                                                "alt": "Interconexi\u00f3n global que acelera cambios en trabajo, servicios y modelos de negocio."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
+                                                "alt": "Panel de datos para decisiones r\u00e1pidas en entornos digitales competitivos."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Contexto actual",
+                                                "title": "Desaf\u00edos del entorno actual",
                                                 "items": [
-                                                      "La digitalización acelera cambios en procesos y expectativas de usuarios.",
-                                                      "El mercado demanda perfiles con base técnica y capacidad de adaptación."
+                                                      "La velocidad del cambio tecnol\u00f3gico acorta la vigencia de habilidades t\u00e9cnicas tradicionales.",
+                                                      "La convergencia entre redes, datos y ciberseguridad exige perfiles m\u00e1s integrales.",
+                                                      "La automatizaci\u00f3n desplaza tareas operativas repetitivas y prioriza funciones de mayor valor."
                                                 ]
                                           },
                                           {
-                                                "title": "Aprendizaje permanente",
+                                                "title": "Competencias que ganan relevancia",
                                                 "items": [
-                                                      "Actualizar habilidades es clave para sostener empleabilidad.",
-                                                      "Combinar teoría y práctica mejora preparación para roles emergentes."
+                                                      "Fundamentos de redes, seguridad, programaci\u00f3n y an\u00e1lisis de datos como base transversal.",
+                                                      "Pensamiento cr\u00edtico, resoluci\u00f3n de problemas y comunicaci\u00f3n t\u00e9cnica para trabajo colaborativo.",
+                                                      "Capacidad de aprendizaje continuo para adaptarse a herramientas y marcos emergentes."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Oportunidades por industria",
+                                                "items": [
+                                                      "Manufactura, energ\u00eda, salud, retail y log\u00edstica demandan talento para digitalizar operaciones.",
+                                                      "IoT y anal\u00edtica habilitan nuevos servicios y roles orientados a eficiencia y trazabilidad.",
+                                                      "La ciberseguridad crece como funci\u00f3n cr\u00edtica en cualquier proceso de transformaci\u00f3n."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Riesgos de no adaptarse",
+                                                "items": [
+                                                      "Estancamiento profesional por falta de actualizaci\u00f3n frente a demanda del mercado.",
+                                                      "Dependencia excesiva de tareas manuales con menor proyecci\u00f3n de crecimiento.",
+                                                      "Brecha entre conocimiento te\u00f3rico y competencias aplicadas en escenarios reales."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Identificar desaf\u00edos del entorno digital y definir las competencias prioritarias para mantener empleabilidad y crecimiento profesional."
                                                 ]
                                           }
                                     ]
                               },
                               {
                                     "code": "6.2",
-                                    "title": "Oportunidades profesionales y de educación",
-                                    "summary": "Rutas de formación, certificaciones y comunidades para crecer en IoT y transformación digital.",
+                                    "title": "Oportunidades profesionales y de educaci\u00f3n",
+                                    "summary": "Ruta pr\u00e1ctica para crecer en IoT y transformaci\u00f3n digital mediante formaci\u00f3n estructurada, certificaciones y evidencia de habilidades aplicadas.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_002.png",
-                                                "alt": "Tecnologías emergentes que representan oportunidades de carrera y certificación."
+                                                "alt": "Tecnolog\u00edas emergentes asociadas a nuevas rutas de carrera y especializaci\u00f3n."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_026.jpeg",
+                                                "alt": "M\u00e9tricas y anal\u00edtica como habilidades clave para roles t\u00e9cnicos modernos."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_017.jpeg",
+                                                "alt": "Pr\u00e1ctica de laboratorio que fortalece portafolio y experiencia demostrable."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Ruta formativa",
+                                                "title": "Definici\u00f3n de ruta profesional",
                                                 "items": [
-                                                      "Definir objetivos por rol ayuda a elegir cursos y laboratorios relevantes.",
-                                                      "Las certificaciones validan competencias ante empleadores y clientes."
+                                                      "Elegir un objetivo inicial (soporte, redes, seguridad, IoT, datos) evita dispersi\u00f3n de esfuerzos.",
+                                                      "Mapear habilidades requeridas por rol permite priorizar cursos y laboratorios con impacto real.",
+                                                      "Establecer metas trimestrales facilita medir avance y ajustar el plan de aprendizaje."
                                                 ]
                                           },
                                           {
-                                                "title": "Ecosistema profesional",
+                                                "title": "Formaci\u00f3n y certificaciones",
                                                 "items": [
-                                                      "Participar en comunidades técnicas acelera aprendizaje y networking.",
-                                                      "Construir portafolio práctico mejora acceso a oportunidades laborales."
+                                                      "Combinar fundamentos t\u00e9cnicos con especializaci\u00f3n progresiva mejora versatilidad profesional.",
+                                                      "Las certificaciones validan competencias ante empleadores y estandarizan el nivel esperado.",
+                                                      "El aprendizaje debe incluir laboratorios pr\u00e1cticos, no solo teor\u00eda."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Portafolio y evidencia",
+                                                "items": [
+                                                      "Documentar proyectos, scripts, diagramas y soluciones implementadas aumenta credibilidad t\u00e9cnica.",
+                                                      "Publicar resultados y lecciones aprendidas demuestra madurez profesional.",
+                                                      "Un portafolio bien curado acelera entrevistas y oportunidades de colaboraci\u00f3n."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Networking y comunidad",
+                                                "items": [
+                                                      "Participar en comunidades t\u00e9cnicas expone a problemas reales y buenas pr\u00e1cticas actuales.",
+                                                      "Mentor\u00eda y colaboraci\u00f3n aceleran aprendizaje y evitan errores comunes en etapas iniciales.",
+                                                      "Contribuir en foros o proyectos incrementa visibilidad profesional."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Construir una ruta de crecimiento con objetivos claros, evidencias pr\u00e1cticas y acciones concretas para acceder a nuevas oportunidades."
                                                 ]
                                           }
                                     ]
