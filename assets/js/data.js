@@ -11104,54 +11104,118 @@
                         "topics": [
                               {
                                     "code": "4.1",
-                                    "title": "Automatización",
-                                    "summary": "Aplicación de reglas y procesos automáticos para mejorar consistencia y velocidad operativa.",
+                                    "title": "Automatizaci\u00f3n",
+                                    "summary": "Aplicaci\u00f3n de reglas, scripts y flujos orquestados para reducir tareas manuales, aumentar consistencia y escalar operaciones en entornos digitales e IoT.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_002.png",
-                                                "alt": "Robot con paneles de datos representando operaciones automatizadas."
+                                                "alt": "Robot y paneles de datos representando procesos automatizados en operaci\u00f3n."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_027.png",
+                                                "alt": "Ciclo de validaci\u00f3n continua para aplicar cambios autom\u00e1ticos con control."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
+                                                "alt": "Tablero de indicadores para medir impacto de automatizaciones."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Qué automatizar",
+                                                "title": "Qu\u00e9 automatizar primero",
                                                 "items": [
-                                                      "Tareas repetitivas y de alto volumen con reglas claras.",
-                                                      "Procesos con impacto en tiempos de respuesta y reducción de errores."
+                                                      "Procesos repetitivos, frecuentes y con reglas claras: aprovisionamiento, validaciones y reportes.",
+                                                      "Tareas con alto impacto en tiempo de respuesta o con historial de errores humanos.",
+                                                      "Flujos con entrada y salida bien definidas para facilitar pruebas y monitoreo."
                                                 ]
                                           },
                                           {
-                                                "title": "Beneficios",
+                                                "title": "Niveles de automatizaci\u00f3n",
                                                 "items": [
-                                                      "Mayor eficiencia, trazabilidad y capacidad de escalar servicios.",
-                                                      "Más tiempo del equipo para análisis y mejora continua."
+                                                      "Automatizaci\u00f3n asistida: el humano dispara o aprueba pasos cr\u00edticos.",
+                                                      "Automatizaci\u00f3n parcial: algunas decisiones siguen en control manual.",
+                                                      "Automatizaci\u00f3n completa: ejecuci\u00f3n continua con verificaciones y rollback autom\u00e1tico."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Riesgos y controles",
+                                                "items": [
+                                                      "Automatizar un proceso defectuoso acelera el error; primero se estandariza, luego se automatiza.",
+                                                      "Cambios sin trazabilidad pueden generar incidencias masivas; usar versionado y revisiones.",
+                                                      "Definir guardrails: l\u00edmites de ejecuci\u00f3n, ventanas de cambio y alertas de desviaci\u00f3n."
+                                                ]
+                                          },
+                                          {
+                                                "title": "M\u00e9tricas de valor",
+                                                "items": [
+                                                      "Tiempo de ejecuci\u00f3n antes/despu\u00e9s de automatizar.",
+                                                      "Tasa de error operativo y n\u00famero de reprocesos.",
+                                                      "Capacidad liberada del equipo para tareas de an\u00e1lisis y mejora continua."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Seleccionar un proceso candidato, definir controles y justificar la automatizaci\u00f3n con m\u00e9tricas operativas."
                                                 ]
                                           }
                                     ]
                               },
                               {
                                     "code": "4.2",
-                                    "title": "Inteligencia artificial (AI) y aprendizaje de máquina (ML)",
-                                    "summary": "Uso de modelos de IA/ML para identificar patrones y apoyar decisiones en entornos IoT.",
+                                    "title": "Inteligencia artificial (AI) y aprendizaje de m\u00e1quina (ML)",
+                                    "summary": "Uso de IA y ML para detectar patrones, anticipar fallos y apoyar decisiones en sistemas conectados con datos de gran volumen.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_026.jpeg",
-                                                "alt": "Panel con métricas y patrones para análisis con IA y aprendizaje de máquina."
+                                                "alt": "Panel anal\u00edtico con indicadores usados para modelos de IA y ML."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_019.png",
+                                                "alt": "Representaci\u00f3n de datos masivos como insumo para entrenamiento de modelos."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
+                                                "alt": "Visualizaci\u00f3n de resultados y predicciones para soporte de decisiones."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Fundamentos",
+                                                "title": "Diferencia entre IA y ML",
                                                 "items": [
-                                                      "IA engloba técnicas para resolver tareas cognitivas complejas.",
-                                                      "ML aprende patrones desde datos para predecir o clasificar eventos."
+                                                      "IA es el campo general que busca resolver tareas cognitivas mediante sistemas computacionales.",
+                                                      "ML es una t\u00e9cnica dentro de IA que aprende patrones a partir de datos hist\u00f3ricos.",
+                                                      "No todo sistema automatizado usa ML; la elecci\u00f3n depende del problema y la disponibilidad de datos."
                                                 ]
                                           },
                                           {
-                                                "title": "Aplicación en IoT",
+                                                "title": "Pipeline b\u00e1sico de un modelo",
                                                 "items": [
-                                                      "Permite detección de anomalías y mantenimiento predictivo.",
-                                                      "Requiere datos de calidad y validación continua del modelo."
+                                                      "Recolecci\u00f3n y limpieza de datos para eliminar ruido e inconsistencias.",
+                                                      "Entrenamiento y validaci\u00f3n con m\u00e9tricas objetivas seg\u00fan el tipo de tarea.",
+                                                      "Despliegue y monitoreo de deriva del modelo para mantener desempe\u00f1o."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Casos de uso en IoT",
+                                                "items": [
+                                                      "Mantenimiento predictivo para anticipar fallos en equipos cr\u00edticos.",
+                                                      "Detecci\u00f3n de anomal\u00edas de red y comportamiento no habitual de dispositivos.",
+                                                      "Optimizaci\u00f3n energ\u00e9tica y de capacidad en operaciones distribuidas."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Riesgos y uso responsable",
+                                                "items": [
+                                                      "Modelos sesgados pueden tomar decisiones injustas o ineficientes.",
+                                                      "Explicabilidad y trazabilidad son clave para auditor\u00eda y confianza operativa.",
+                                                      "Los modelos deben coexistir con controles humanos en decisiones de alto impacto."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Explicar c\u00f3mo IA/ML genera valor en IoT, qu\u00e9 datos necesita y qu\u00e9 controles garantizan su uso seguro y confiable."
                                                 ]
                                           }
                                     ]
