@@ -11222,27 +11222,59 @@
                               },
                               {
                                     "code": "4.3",
-                                    "title": "Redes basadas en intención",
-                                    "summary": "Modelo que traduce objetivos de negocio a políticas de red con verificación continua.",
+                                    "title": "Redes basadas en intenci\u00f3n",
+                                    "summary": "Enfoque de red que traduce objetivos de negocio en pol\u00edticas t\u00e9cnicas autom\u00e1ticas, con verificaci\u00f3n continua del estado real y ajuste din\u00e1mico.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_027.png",
-                                                "alt": "Ciclo operativo de redes basadas en intención con validación y ajuste."
+                                                "alt": "Ciclo operativo de red basada en intenci\u00f3n con validaci\u00f3n y ajuste continuo."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_026.jpeg",
+                                                "alt": "Panel de control con m\u00e9tricas para evaluar cumplimiento de pol\u00edticas de red."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
+                                                "alt": "Visualizaci\u00f3n de eventos y decisiones para mantener alineada la red con la intenci\u00f3n declarada."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Concepto operativo",
+                                                "title": "De la intenci\u00f3n a la configuraci\u00f3n",
                                                 "items": [
-                                                      "La intención se convierte en políticas técnicas de manera automatizada.",
-                                                      "La red valida estado real y corrige desviaciones de forma continua."
+                                                      "La intenci\u00f3n expresa el resultado esperado del negocio: disponibilidad, segmentaci\u00f3n, prioridad de tr\u00e1fico y seguridad.",
+                                                      "La plataforma convierte esa intenci\u00f3n en pol\u00edticas t\u00e9cnicas y configuraciones coherentes en toda la infraestructura.",
+                                                      "Se reduce la brecha entre dise\u00f1o y operaci\u00f3n, disminuyendo cambios manuales inconsistentes."
                                                 ]
                                           },
                                           {
-                                                "title": "Relación con IA/ML",
+                                                "title": "Ciclo cerrado de operaci\u00f3n",
                                                 "items": [
-                                                      "IA/ML mejora detección de anomalías y recomendaciones de ajuste.",
-                                                      "Aumenta consistencia de cambios y reduce errores operativos."
+                                                      "Definir intenci\u00f3n, desplegar pol\u00edticas, observar estado real y corregir desviaciones autom\u00e1ticamente.",
+                                                      "La validaci\u00f3n continua detecta incumplimientos antes de que impacten al usuario final.",
+                                                      "El sistema mantiene trazabilidad de cambios para auditor\u00eda y mejora continua."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Relaci\u00f3n con IA y anal\u00edtica",
+                                                "items": [
+                                                      "La anal\u00edtica aporta contexto operativo para priorizar acciones de remediaci\u00f3n.",
+                                                      "IA/ML mejora detecci\u00f3n de anomal\u00edas y recomendaciones de ajuste de pol\u00edticas.",
+                                                      "La automatizaci\u00f3n guiada por datos acelera respuesta sin perder control."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Beneficios y l\u00edmites",
+                                                "items": [
+                                                      "Beneficios: menor error humano, cambios m\u00e1s consistentes y mayor velocidad de despliegue.",
+                                                      "L\u00edmites: exige inventario confiable, modelos de pol\u00edticas claros y disciplina de gobernanza.",
+                                                      "No reemplaza el criterio t\u00e9cnico; lo potencia con ejecuci\u00f3n repetible y validable."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Explicar c\u00f3mo una red basada en intenci\u00f3n traduce objetivos de negocio en controles operativos medibles y sostenibles."
                                                 ]
                                           }
                                     ]
