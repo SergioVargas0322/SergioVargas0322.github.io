@@ -10537,53 +10537,101 @@
                               {
                                     "code": "1.3",
                                     "title": "El crecimiento de los dispositivos de IoT",
-                                    "summary": "Expansión de sensores y actuadores en hogar, industria y ciudades inteligentes.",
+                                    "summary": "Crecimiento acelerado de sensores y actuadores en hogares, industria, salud y ciudades, y su impacto en datos, operaci\u00f3n y seguridad.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_009.png",
-                                                "alt": "Ecosistema IoT con múltiples dispositivos y nodos conectados."
+                                                "alt": "Ecosistema IoT con m\u00faltiples dispositivos y nodos conectados."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_011.png",
+                                                "alt": "Sensores conectados en entorno industrial para monitoreo continuo."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_019.png",
+                                                "alt": "Panel de datos IoT para an\u00e1lisis de eventos y toma de decisiones."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Qué es IoT",
+                                                "title": "Qu\u00e9 impulsa el crecimiento de IoT",
                                                 "items": [
-                                                      "Integra objetos físicos con sensores, conectividad y lógica de control.",
-                                                      "Los dispositivos reportan estado y pueden ejecutar acciones automatizadas."
+                                                      "La reducci\u00f3n de costos en sensores, conectividad y c\u00f3mputo aceler\u00f3 la adopci\u00f3n en m\u00faltiples sectores.",
+                                                      "La necesidad de visibilidad en tiempo real impulsa despliegues en log\u00edstica, manufactura, energ\u00eda y salud.",
+                                                      "Los modelos de negocio basados en datos convierten telemetr\u00eda en decisiones operativas y comerciales."
                                                 ]
                                           },
                                           {
-                                                "title": "Beneficios y retos",
+                                                "title": "Impacto t\u00e9cnico y operativo",
                                                 "items": [
-                                                      "Mejora monitoreo, eficiencia y capacidad de respuesta en tiempo real.",
-                                                      "Aumenta la superficie de ataque y demanda diseño seguro desde el inicio."
+                                                      "M\u00e1s dispositivos implican m\u00e1s direcciones, m\u00e1s tr\u00e1fico y mayor necesidad de segmentaci\u00f3n de red.",
+                                                      "El borde (edge) procesa eventos cr\u00edticos con baja latencia antes de enviar datos a nube o centro de datos.",
+                                                      "La interoperabilidad entre fabricantes requiere est\u00e1ndares, pasarelas y gesti\u00f3n de versiones de firmware."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Riesgos y controles clave",
+                                                "items": [
+                                                      "Cada dispositivo adicional ampl\u00eda la superficie de ataque y puede convertirse en punto de entrada.",
+                                                      "Es obligatorio aplicar identidad por dispositivo, actualizaci\u00f3n segura y cifrado de comunicaciones.",
+                                                      "La observabilidad continua ayuda a detectar comportamiento an\u00f3malo y fallos tempranos."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Explicar por qu\u00e9 crece IoT, qu\u00e9 retos de escalabilidad introduce y qu\u00e9 controles m\u00ednimos exige para operar con seguridad."
                                                 ]
                                           }
                                     ]
                               },
                               {
                                     "code": "1.4",
-                                    "title": "Conexión de los dispositivos de IoT a la red",
-                                    "summary": "Integración de sensores, controladores y servicios de borde/nube para operación continua.",
+                                    "title": "Conexi\u00f3n de los dispositivos de IoT a la red",
+                                    "summary": "Integraci\u00f3n de sensores, actuadores, gateways y plataformas de gesti\u00f3n para transportar telemetr\u00eda y ejecutar acciones de control confiables.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_010.png",
-                                                "alt": "Arquitectura IoT con controlador, sensores y actuadores en computación perimetral."
+                                                "alt": "Arquitectura IoT con controlador, sensores y actuadores en computaci\u00f3n perimetral."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_021.png",
+                                                "alt": "Conectividad entre borde, red WAN e infraestructura central."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
+                                                "alt": "Flujo de datos IoT desde dispositivo hasta plataforma de an\u00e1lisis."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Integración técnica",
+                                                "title": "Arquitectura de conexi\u00f3n",
                                                 "items": [
-                                                      "Los gateways concentran telemetría y traducen protocolos de dispositivos.",
-                                                      "El borde reduce latencia para decisiones inmediatas."
+                                                      "Los dispositivos IoT se conectan por Ethernet, Wi-Fi, Bluetooth, LPWAN o red celular seg\u00fan alcance y consumo energ\u00e9tico.",
+                                                      "Los gateways agregan tr\u00e1fico, traducen protocolos y aplican pol\u00edticas antes de enviar informaci\u00f3n al n\u00facleo.",
+                                                      "El dise\u00f1o debe considerar disponibilidad, latencia, seguridad y costo operacional."
                                                 ]
                                           },
                                           {
-                                                "title": "Validación operativa",
+                                                "title": "Protocolos y flujo de datos",
                                                 "items": [
-                                                      "Simular topologías en laboratorio reduce riesgo antes del despliegue real.",
-                                                      "La observabilidad permite detectar desviaciones y ajustar políticas."
+                                                      "MQTT, CoAP y HTTP/HTTPS son opciones frecuentes para telemetr\u00eda y control en IoT.",
+                                                      "Los datos deben etiquetarse con tiempo, estado e identidad de origen para facilitar trazabilidad.",
+                                                      "La calidad de servicio evita p\u00e9rdida de eventos cr\u00edticos en escenarios con congesti\u00f3n."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Checklist de implementaci\u00f3n",
+                                                "items": [
+                                                      "Asignar direccionamiento y segmentaci\u00f3n por tipo de dispositivo y criticidad del servicio.",
+                                                      "Validar autenticaci\u00f3n mutua, cifrado en tr\u00e1nsito y actualizaci\u00f3n segura de firmware.",
+                                                      "Monitorear disponibilidad, consumo de ancho de banda y salud del gateway."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Dise\u00f1ar una conexi\u00f3n IoT b\u00e1sica, justificar el medio o protocolo elegido y definir controles m\u00ednimos de operaci\u00f3n segura."
                                                 ]
                                           }
                                     ]
