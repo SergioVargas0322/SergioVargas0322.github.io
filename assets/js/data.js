@@ -11609,7 +11609,7 @@
                 code: "1.1",
                 title: "Dispositivos de IoT en Packet Tracer",
                 summary:
-                  "Introducci\u00f3n al ecosistema IoT dentro de Packet Tracer: tipos de dispositivos, categor\u00edas disponibles y formas de conectarlos a la red local.",
+                  "Exploraci\u00f3n guiada del ecosistema IoT en Packet Tracer para reconocer tipos de dispositivos, rutas de conexi\u00f3n y criterios de preparaci\u00f3n antes de controlar una red dom\u00e9stica inteligente.",
                 images: [
                   {
                     src: "./assets/images/iot-digital-transformation/C10_media_005.png",
@@ -11618,37 +11618,57 @@
                   {
                     src: "./assets/images/packet-tracer-basics/C3_1.0.png",
                     alt: "Interfaz de Cisco Packet Tracer para explorar y agregar componentes."
+                  },
+                  {
+                    src: "./assets/images/iot-digital-transformation/C10_media_001.jpeg",
+                    alt: "Conectividad global entre dispositivos y servicios digitales."
                   }
                 ],
                 sections: [
                   {
-                    title: "Concepto clave",
+                    title: "Ubicaci\u00f3n y clasificaci\u00f3n en la interfaz",
                     items: [
-                      "IoT integra sensores, actuadores y dispositivos inteligentes que intercambian datos en red.",
-                      "En Packet Tracer, los dispositivos IoT se encuentran en End Devices con subcategor\u00edas como Home, City e Industry.",
-                      "Los dispositivos pueden operar por conexi\u00f3n inal\u00e1mbrica o cableada seg\u00fan el escenario."
+                      "En End Devices se encuentran subcategor\u00edas como Home, City, Industry y Power Grid para escenarios IoT distintos.",
+                      "Cada categor\u00eda combina sensores (entrada), actuadores (salida) y nodos inteligentes con l\u00f3gica de control.",
+                      "Antes de arrastrar dispositivos, conviene definir qu\u00e9 procesos se van a monitorear o automatizar."
                     ]
                   },
                   {
-                    title: "Recorrido en Packet Tracer",
+                    title: "Conectividad base de dispositivos IoT",
                     items: [
-                      "Ubicar dispositivos IoT desde el panel inferior de selecci\u00f3n espec\u00edfica.",
-                      "Arrastrar componentes al espacio de trabajo y revisar sus pesta\u00f1as de configuraci\u00f3n, GUI y atributos.",
-                      "Usar Alt + clic en dispositivos compatibles para simular acciones r\u00e1pidas de control."
+                      "Un dispositivo IoT requiere una puerta de enlace dom\u00e9stica o un servidor de registro para ser gestionado.",
+                      "La conexi\u00f3n puede ser inal\u00e1mbrica (SSID/clave) o cableada, seg\u00fan capacidad del equipo.",
+                      "La pesta\u00f1a Config permite validar m\u00e9todo de asociaci\u00f3n, direccionamiento y servidor objetivo."
                     ]
                   },
                   {
-                    title: "Buenas pr\u00e1cticas iniciales",
+                    title: "Interacci\u00f3n y observabilidad",
                     items: [
-                      "Definir primero la puerta de enlace o servidor de registro antes de agregar muchos nodos.",
-                      "Nombrar dispositivos por funci\u00f3n para facilitar monitoreo y pruebas.",
-                      "Validar conectividad b\u00e1sica de cada dispositivo antes de avanzar a automatizaciones."
+                      "Con Alt + clic se prueban acciones r\u00e1pidas en dispositivos compatibles (puertas, luces y otros actuadores).",
+                      "La pesta\u00f1a Attributes aporta contexto operativo (energ\u00eda, costo, tiempo entre fallas) para an\u00e1lisis t\u00e9cnico.",
+                      "Una tableta o PC con app IoT Monitor facilita visualizar estado y control desde una sola interfaz."
+                    ]
+                  },
+                  {
+                    title: "Errores frecuentes y correcci\u00f3n",
+                    items: [
+                      "Dispositivo no visible en monitor: revisar registro IoT, credenciales y red de asociaci\u00f3n.",
+                      "Sin conectividad: validar IP (DHCP/est\u00e1tica), puerta de enlace y estado del enlace inal\u00e1mbrico.",
+                      "Control inconsistente: verificar que el dispositivo tenga la interfaz correcta y servicios activos."
+                    ]
+                  },
+                  {
+                    title: "Checklist de validaci\u00f3n 1.1",
+                    items: [
+                      "Se agregaron y nombraron dispositivos IoT representativos del caso.",
+                      "Cada dispositivo muestra conectividad de red y asociaci\u00f3n al controlador esperado.",
+                      "Se ejecut\u00f3 al menos una acci\u00f3n de prueba y se observ\u00f3 su cambio de estado."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Identificar dispositivos IoT disponibles en Packet Tracer y conectarlos correctamente a una arquitectura de red dom\u00e9stica."
+                      "Reconocer dispositivos IoT de Packet Tracer, conectarlos con criterio t\u00e9cnico y dejarlos listos para monitoreo y control."
                     ]
                   }
                 ]
@@ -11657,7 +11677,7 @@
                 code: "1.2",
                 title: "Cree y controle su red dom\u00e9stica inteligente",
                 summary:
-                  "Implementaci\u00f3n de una red dom\u00e9stica con puerta de enlace, registro de dispositivos y monitoreo local o remoto mediante aplicaciones IoT.",
+                  "Construcci\u00f3n de una red dom\u00e9stica inteligente en Packet Tracer con dos enfoques de administraci\u00f3n: puerta de enlace local y servidor de registro dedicado.",
                 images: [
                   {
                     src: "./assets/images/packet-tracer-basics/C3_2.1.png",
@@ -11666,45 +11686,57 @@
                   {
                     src: "./assets/images/packet-tracer-network-exploration/C4_2.3.png",
                     alt: "Panel web de administraci\u00f3n para monitoreo y descubrimiento de dispositivos."
+                  },
+                  {
+                    src: "./assets/images/packet-tracer-network-exploration/C4_2.4.png",
+                    alt: "Panel de descubrimiento de red con estado de dispositivos y conectividad."
                   }
                 ],
                 sections: [
                   {
-                    title: "Arquitectura base del hogar inteligente",
+                    title: "Topolog\u00eda m\u00ednima funcional",
                     items: [
-                      "La puerta de enlace dom\u00e9stica concentra conectividad a Internet, WLAN local y servicios de registro IoT.",
-                      "Los dispositivos se integran por LAN o Wi-Fi y luego se administran desde tableta, smartphone o PC.",
-                      "El dise\u00f1o permite control local y, con configuraci\u00f3n adicional, control remoto por Internet."
+                      "M\u00f3dem/ISP, puerta de enlace dom\u00e9stica, dispositivo cliente (tableta/PC) y nodos IoT finales.",
+                      "La puerta de enlace integra conectividad, registro IoT y descubrimiento autom\u00e1tico en LAN/WLAN local.",
+                      "Este dise\u00f1o cubre control local inmediato sin depender de infraestructura externa."
                     ]
                   },
                   {
-                    title: "Flujo de conexi\u00f3n y control",
+                    title: "Flujo local con puerta de enlace dom\u00e9stica",
                     items: [
-                      "Instalar la puerta de enlace y conectarla al m\u00f3dem/ISP con cable Ethernet.",
-                      "Asociar cada dispositivo IoT al SSID o red local y verificar IP asignada.",
-                      "Monitorear estados y ejecutar acciones (bloquear, encender, ajustar) desde el IoT Monitor."
+                      "Conectar la puerta de enlace al m\u00f3dem con cable Ethernet directo y validar salida a Internet.",
+                      "Asociar cada dispositivo IoT al SSID local y comprobar asignaci\u00f3n de IP.",
+                      "Usar IoT Monitor para verificar estado y ejecutar acciones de control en tiempo real."
                     ]
                   },
                   {
-                    title: "Registro en servidor dedicado",
+                    title: "Flujo alterno con servidor de registro dedicado",
                     items: [
-                      "Alternativamente, registrar dispositivos en un servidor IoT dedicado con servicios complementarios (DNS, DHCP, Web, FTP, correo).",
-                      "Configurar IP del servidor, credenciales y tipo de acceso para administraci\u00f3n remota.",
-                      "Confirmar que los nuevos dispositivos aparezcan en el panel del servidor tras el registro."
+                      "Registrar dispositivos en un servidor IoT que puede coexistir con servicios Web, DHCP, DNS, FTP y correo.",
+                      "Configurar IP del servidor y credenciales en cada dispositivo para alta autom\u00e1tica.",
+                      "Gestionar remotamente por navegador cuando el servidor est\u00e1 fuera de la red local."
                     ]
                   },
                   {
-                    title: "Checklist operativo",
+                    title: "Seguridad y operaci\u00f3n recomendada",
                     items: [
-                      "Puerta de enlace activa y con conectividad hacia Internet.",
-                      "Dispositivos registrados, visibles y con estado coherente en la app.",
-                      "Prueba de control remoto exitosa en al menos un actuador (p. ej., cerradura o ventilador)."
+                      "Cambiar credenciales por defecto en puerta de enlace y servidor IoT.",
+                      "Documentar IP, usuario y estado de registro de cada dispositivo para soporte posterior.",
+                      "Separar pruebas funcionales de pruebas de seguridad para evitar falsos diagn\u00f3sticos."
+                    ]
+                  },
+                  {
+                    title: "Checklist de validaci\u00f3n 1.2",
+                    items: [
+                      "Puerta de enlace o servidor dedicado operativo seg\u00fan escenario definido.",
+                      "Dispositivos visibles en la interfaz de monitoreo con estado actualizado.",
+                      "Control remoto comprobado en al menos un dispositivo actuador y un sensor."
                     ]
                   },
                   {
                     title: "Resultado esperado",
                     items: [
-                      "Construir una red dom\u00e9stica inteligente funcional con capacidad de monitoreo y control local/remoto en Packet Tracer."
+                      "Implementar y administrar una red dom\u00e9stica inteligente en Packet Tracer con monitoreo estable y control local/remoto confiable."
                     ]
                   }
                 ]
