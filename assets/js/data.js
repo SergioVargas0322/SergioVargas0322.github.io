@@ -11287,27 +11287,59 @@
                         "topics": [
                               {
                                     "code": "5.1",
-                                    "title": "¿Por qué la seguridad es tan importante?",
-                                    "summary": "Importancia de proteger datos y servicios en ecosistemas conectados y de alta exposición.",
+                                    "title": "\u00bfPor qu\u00e9 la seguridad es tan importante?",
+                                    "summary": "Fundamentos de ciberseguridad en IoT: proteger datos, continuidad de servicio y confianza del usuario frente a amenazas cada vez m\u00e1s automatizadas.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_020.jpeg",
-                                                "alt": "Carpeta protegida que representa seguridad de información sensible."
+                                                "alt": "Protecci\u00f3n de informaci\u00f3n sensible en entornos digitales conectados."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_028.png",
+                                                "alt": "Escenario de conectividad expuesta que requiere controles de seguridad robustos."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_005.png",
+                                                "alt": "Dispositivos inteligentes en hogar que incrementan la superficie de ataque si no se aseguran."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Datos y amenazas",
+                                                "title": "Valor que se protege",
                                                 "items": [
-                                                      "Datos personales y operativos son objetivos de fraude y extorsión.",
-                                                      "Más dispositivos conectados implican mayor superficie de ataque."
+                                                      "Datos personales, operativos y de negocio tienen valor econ\u00f3mico y legal.",
+                                                      "Disponibilidad de servicios conectados impacta operaci\u00f3n, ingresos y experiencia del usuario.",
+                                                      "La confianza del cliente depende de la capacidad de proteger informaci\u00f3n y responder incidentes."
                                                 ]
                                           },
                                           {
-                                                "title": "Consecuencias",
+                                                "title": "Amenazas frecuentes en IoT",
                                                 "items": [
-                                                      "Una brecha afecta finanzas, reputación y continuidad de la organización.",
-                                                      "La prevención requiere controles técnicos y disciplina operativa."
+                                                      "Credenciales por defecto, firmware obsoleto y configuraciones inseguras facilitan intrusiones.",
+                                                      "Botnets y ransomware aprovechan equipos mal segmentados o sin monitoreo.",
+                                                      "Ingenier\u00eda social y phishing siguen siendo puertas de entrada para comprometer sistemas."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Impacto de una brecha",
+                                                "items": [
+                                                      "Interrupci\u00f3n de servicios cr\u00edticos y degradaci\u00f3n del rendimiento operacional.",
+                                                      "P\u00e9rdidas econ\u00f3micas por recuperaci\u00f3n, sanciones regulatorias y da\u00f1o reputacional.",
+                                                      "Exposici\u00f3n de datos sensibles con consecuencias legales y contractuales."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Principios de defensa",
+                                                "items": [
+                                                      "Defensa en profundidad: capas de prevenci\u00f3n, detecci\u00f3n y respuesta coordinadas.",
+                                                      "M\u00ednimo privilegio, segmentaci\u00f3n y autenticaci\u00f3n fuerte para reducir movimiento lateral.",
+                                                      "Parcheo continuo, copias de seguridad y plan de respuesta a incidentes probado."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Justificar por qu\u00e9 la seguridad es requisito de negocio en IoT y definir controles b\u00e1sicos para reducir riesgo real."
                                                 ]
                                           }
                                     ]
@@ -11315,26 +11347,58 @@
                               {
                                     "code": "5.2",
                                     "title": "Protegiendo el mundo corporativo",
-                                    "summary": "Buenas prácticas para proteger infraestructura, red inalámbrica, endpoints y activos IoT.",
+                                    "summary": "Controles y pr\u00e1cticas para proteger infraestructura empresarial, usuarios, endpoints y activos IoT con un enfoque preventivo y medible.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_028.png",
-                                                "alt": "Escenario de Wi-Fi público que evidencia riesgos y necesidad de controles."
+                                                "alt": "Entorno corporativo expuesto a riesgos en redes inal\u00e1mbricas y acceso remoto."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_027.png",
+                                                "alt": "Ciclo de monitoreo y ajuste continuo aplicable a seguridad empresarial."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_020.jpeg",
+                                                "alt": "Control de acceso a informaci\u00f3n corporativa sensible."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Prácticas recomendadas",
+                                                "title": "Controles t\u00e9cnicos prioritarios",
                                                 "items": [
-                                                      "Aplicar mínimo privilegio, MFA y segmentación de red por funciones.",
-                                                      "Mantener parches, inventario de activos y monitoreo continuo."
+                                                      "Segmentaci\u00f3n de red por funciones, criticidad y nivel de confianza.",
+                                                      "MFA, gesti\u00f3n centralizada de identidades y pol\u00edticas de acceso condicional.",
+                                                      "EDR/antimalware, filtrado DNS y protecci\u00f3n de correo para reducir superficie de ataque."
                                                 ]
                                           },
                                           {
-                                                "title": "Foco en IoT",
+                                                "title": "Gesti\u00f3n de vulnerabilidades",
                                                 "items": [
-                                                      "Actualizar firmware y eliminar configuraciones por defecto inseguras.",
-                                                      "Aislar dispositivos IoT para limitar movimiento lateral en incidentes."
+                                                      "Inventario actualizado de activos para saber qu\u00e9 proteger y qu\u00e9 priorizar.",
+                                                      "Escaneo peri\u00f3dico, clasificaci\u00f3n por riesgo y plan de remediaci\u00f3n con responsables.",
+                                                      "Parches en ventanas controladas con verificaci\u00f3n posterior al cambio."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Foco espec\u00edfico en IoT empresarial",
+                                                "items": [
+                                                      "Eliminar credenciales por defecto y forzar actualizaciones de firmware firmadas.",
+                                                      "Aislar VLAN de IoT respecto a sistemas administrativos y datos cr\u00edticos.",
+                                                      "Monitorear comportamiento de dispositivos para detectar desviaciones tempranas."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Operaci\u00f3n y cultura de seguridad",
+                                                "items": [
+                                                      "Capacitaci\u00f3n continua del personal para reducir riesgo humano y mejorar reporte temprano.",
+                                                      "Procedimientos claros de escalamiento y respuesta ante incidentes.",
+                                                      "Auditor\u00edas peri\u00f3dicas para verificar cumplimiento de pol\u00edticas y eficacia de controles."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Dise\u00f1ar una l\u00ednea base de seguridad corporativa que combine controles t\u00e9cnicos, operativos y de gobernanza."
                                                 ]
                                           }
                                     ]
