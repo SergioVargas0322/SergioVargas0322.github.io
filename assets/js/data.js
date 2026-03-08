@@ -10435,26 +10435,50 @@
                               {
                                     "code": "1.1",
                                     "title": "La digitalización transforma los negocios",
-                                    "summary": "Cómo la digitalización cambia procesos, productos y toma de decisiones en organizaciones.",
+                                    "summary": "Evolución de la digitalización hacia modelos de negocio conectados, orientados a datos y mejora continua.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_001.jpeg",
                                                 "alt": "Globo digital conectado que representa transformación de negocios a escala global."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_002.png",
+                                                "alt": "Automatización y analítica como impulsores de eficiencia en procesos empresariales."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_003.png",
+                                                "alt": "Cadena logística conectada que ejemplifica digitalización operativa en tiempo real."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Transformación digital",
+                                                "title": "De digitalizar a transformar",
                                                 "items": [
-                                                      "Digitalizar no solo es usar tecnología: implica rediseñar procesos y servicios.",
-                                                      "La conectividad continua mejora visibilidad operativa y velocidad de respuesta."
+                                                      "Digitalizar no es solo usar tecnología; implica rediseñar procesos, roles y servicios.",
+                                                      "La transformación digital integra personas, procesos y datos en una estrategia común.",
+                                                      "La mejora continua depende de métricas claras y decisiones guiadas por evidencia."
                                                 ]
                                           },
                                           {
-                                                "title": "Impacto empresarial",
+                                                "title": "Impacto en operaciones y clientes",
                                                 "items": [
-                                                      "Permite reducir costos, mejorar experiencia de cliente y escalar operaciones.",
-                                                      "Exige mayor disciplina en ciberseguridad y gobierno de datos."
+                                                      "Reduce tiempos de ciclo, errores operativos y costos de reproceso.",
+                                                      "Permite experiencias de cliente más rápidas y personalizadas.",
+                                                      "Facilita escalar servicios cuando la arquitectura tecnológica está preparada."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Riesgos de una adopción superficial",
+                                                "items": [
+                                                      "Incorporar herramientas sin rediseño de procesos suele generar sobrecostos y bajo retorno.",
+                                                      "Sin gobierno de datos, aumenta el riesgo de decisiones rápidas pero incorrectas.",
+                                                      "Sin seguridad por diseño, crece la exposición a incidentes y paradas de servicio."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Diferenciar digitalización y transformación digital, y explicar su impacto en competitividad, eficiencia y resiliencia."
                                                 ]
                                           }
                                     ]
@@ -10462,26 +10486,50 @@
                               {
                                     "code": "1.2",
                                     "title": "Conectados globalmente a través de redes",
-                                    "summary": "La red como plataforma para conectar personas, servicios y dispositivos en múltiples entornos.",
+                                    "summary": "La red como plataforma de interconexión entre usuarios, sistemas e IoT en entornos locales y distribuidos.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_008.png",
                                                 "alt": "Diagrama LAN y WAN que conecta hogares, servicios e infraestructura."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_021.png",
+                                                "alt": "Arquitectura de conectividad entre borde, internet y centro de datos."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_001.jpeg",
+                                                "alt": "Interconexión global que sustenta servicios digitales y colaboración remota."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "La red es la base",
+                                                "title": "La red como plataforma base",
                                                 "items": [
-                                                      "Toda solución IoT depende de red estable para transportar datos y control.",
-                                                      "Disponibilidad, latencia y seguridad condicionan el valor del servicio."
+                                                      "Toda solución digital depende de una red estable para transportar datos, voz, video y telemetría.",
+                                                      "Disponibilidad, latencia, capacidad y seguridad condicionan la continuidad operativa.",
+                                                      "Una red bien diseñada habilita automatización y analítica en tiempo real."
                                                 ]
                                           },
                                           {
-                                                "title": "Tipos de red",
+                                                "title": "Tipos de red según alcance",
                                                 "items": [
-                                                      "LAN conecta recursos locales de alta velocidad.",
-                                                      "WAN interconecta sedes y servicios remotos, incluyendo nube."
+                                                      "LAN conecta recursos locales con alta velocidad y baja latencia.",
+                                                      "WAN interconecta sedes, centros de datos y servicios remotos.",
+                                                      "WLAN agrega movilidad para usuarios y dispositivos IoT en un mismo sitio."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Direccionamiento y visibilidad",
+                                                "items": [
+                                                      "El direccionamiento IP correcto permite identificar, enrutar y administrar dispositivos de forma consistente.",
+                                                      "La segmentación de red reduce superficie de ataque y mejora control del tráfico.",
+                                                      "El monitoreo continuo permite detectar congestión, fallos y comportamiento anómalo de manera temprana."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Relacionar tipo de red, alcance y calidad de conectividad con objetivos operativos de soluciones IoT y servicios digitales."
                                                 ]
                                           }
                                     ]
