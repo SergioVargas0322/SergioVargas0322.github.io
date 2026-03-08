@@ -10754,81 +10754,161 @@
                               },
                               {
                                     "code": "2.3",
-                                    "title": "Programación con Python",
-                                    "summary": "Introducción a Python para automatización, análisis y scripts de soporte en IoT.",
+                                    "title": "Programaci\u00f3n con Python",
+                                    "summary": "Introducci\u00f3n pr\u00e1ctica a Python para automatizar tareas, procesar datos de sensores y construir scripts reutilizables en proyectos IoT.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_011.png",
-                                                "alt": "Asistente digital como referencia a aplicaciones programables."
+                                                "alt": "Sistema conectado que representa automatizaci\u00f3n mediante software en IoT."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_012.png",
+                                                "alt": "Flujo l\u00f3gico de decisiones, aplicable a scripts de Python para control de procesos."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_019.png",
+                                                "alt": "Panel de an\u00e1lisis de datos, resultado t\u00edpico de scripts de procesamiento en Python."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Fundamentos",
+                                                "title": "Por qu\u00e9 Python en IoT",
                                                 "items": [
-                                                      "Python es legible, versátil y ampliamente adoptado en redes e IoT.",
-                                                      "El intérprete facilita pruebas rápidas en etapas iniciales."
+                                                      "Python es legible, tiene amplia comunidad y dispone de bibliotecas para redes, datos y automatizaci\u00f3n.",
+                                                      "Permite crear prototipos funcionales r\u00e1pidos sin sacrificar claridad del c\u00f3digo.",
+                                                      "Su ecosistema facilita integrar APIs, archivos CSV/JSON y servicios en la nube."
                                                 ]
                                           },
                                           {
-                                                "title": "Estructuras clave",
+                                                "title": "Estructuras esenciales",
                                                 "items": [
-                                                      "Variables, funciones y tipos de datos soportan scripts reutilizables.",
-                                                      "Condicionales y ciclos permiten automatizar tareas repetitivas."
+                                                      "Variables, listas y diccionarios permiten modelar estados y lecturas de dispositivos.",
+                                                      "Condicionales y bucles controlan decisiones repetitivas en flujos de monitoreo.",
+                                                      "Funciones y m\u00f3dulos mejoran reutilizaci\u00f3n, mantenimiento y pruebas."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Flujo de script recomendado",
+                                                "items": [
+                                                      "Capturar datos, validar formato, procesar eventos y registrar resultados en bit\u00e1cora.",
+                                                      "Manejar excepciones evita que errores puntuales detengan todo el proceso.",
+                                                      "Separar configuraci\u00f3n, l\u00f3gica y salida ayuda a escalar el script a entornos reales."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Desarrollar y explicar un script b\u00e1sico en Python que lea datos, aplique reglas y genere una salida verificable."
                                                 ]
                                           }
                                     ]
                               },
                               {
                                     "code": "2.4",
-                                    "title": "¿Qué es la creación de un prototipo?",
-                                    "summary": "Construcción de versiones iniciales para validar hipótesis técnicas y de negocio.",
+                                    "title": "\u00bfQu\u00e9 es la creaci\u00f3n de un prototipo?",
+                                    "summary": "Construcci\u00f3n de versiones iniciales para validar hip\u00f3tesis t\u00e9cnicas, funcionales y de negocio antes de un despliegue completo.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_017.jpeg",
-                                                "alt": "Trabajo práctico de ensamblaje electrónico durante prototipado."
+                                                "alt": "Trabajo pr\u00e1ctico de ensamblaje electr\u00f3nico durante prototipado."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_018.jpeg",
+                                                "alt": "Herramientas y componentes utilizados para construir prototipos funcionales."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
+                                                "alt": "Visualizaci\u00f3n de resultados que apoya la validaci\u00f3n de un prototipo IoT."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Propósito",
+                                                "title": "Objetivo del prototipo",
                                                 "items": [
-                                                      "Prototipar reduce incertidumbre y permite aprender con bajo costo.",
-                                                      "Valida funcionalidad, usabilidad y viabilidad antes del despliegue final."
+                                                      "Reducir incertidumbre con evidencia temprana sobre funcionalidad, costo y factibilidad.",
+                                                      "Validar supuestos clave antes de comprometer tiempo y presupuesto de despliegue.",
+                                                      "Detectar riesgos t\u00e9cnicos y de usabilidad en etapas de bajo impacto."
                                                 ]
                                           },
                                           {
-                                                "title": "Iteración",
+                                                "title": "Niveles de fidelidad",
                                                 "items": [
-                                                      "Diseñar, construir, probar y ajustar en ciclos cortos.",
-                                                      "Documentar hallazgos mejora trazabilidad técnica y decisiones."
+                                                      "Prototipo de baja fidelidad: valida idea y flujo general con recursos m\u00ednimos.",
+                                                      "Prototipo funcional: prueba integraci\u00f3n entre hardware, software y conectividad.",
+                                                      "Piloto controlado: eval\u00faa comportamiento en un entorno cercano al real."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Ciclo iterativo",
+                                                "items": [
+                                                      "Dise\u00f1ar, construir, medir y ajustar en iteraciones cortas con criterios claros.",
+                                                      "Registrar m\u00e9tricas t\u00e9cnicas (latencia, estabilidad, consumo) y retroalimentaci\u00f3n de usuario.",
+                                                      "Cerrar cada iteraci\u00f3n con decisiones: continuar, corregir o descartar."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Definir un prototipo IoT viable, sus criterios de \u00e9xito y el plan de iteraciones para madurarlo."
                                                 ]
                                           }
                                     ]
                               },
                               {
                                     "code": "2.5",
-                                    "title": "Recursos para la creación de prototipos",
-                                    "summary": "Selección de herramientas físicas y digitales para acelerar pruebas funcionales.",
+                                    "title": "Recursos para la creaci\u00f3n de prototipos",
+                                    "summary": "Selecci\u00f3n de recursos t\u00e9cnicos, humanos y de laboratorio para construir prototipos de forma r\u00e1pida, segura y trazable.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_018.jpeg",
-                                                "alt": "Herramientas y materiales comunes en laboratorios de prototipado."
+                                                "alt": "Recursos de laboratorio para pruebas de prototipado electr\u00f3nico."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_017.jpeg",
+                                                "alt": "Equipo de trabajo desarrollando prototipos con enfoque pr\u00e1ctico."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_015.jpeg",
+                                                "alt": "Herramienta visual de programaci\u00f3n \u00fatil en etapas tempranas de prototipado."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Recursos técnicos",
+                                                "title": "Recursos t\u00e9cnicos m\u00ednimos",
                                                 "items": [
-                                                      "Kits electrónicos y componentes modulares aceleran desarrollo inicial.",
-                                                      "Entornos de programación y simulación apoyan validación temprana."
+                                                      "Microcontrolador o placa de desarrollo, sensores b\u00e1sicos y fuente de energ\u00eda estable.",
+                                                      "Entorno de desarrollo, control de versiones y repositorio para trazabilidad del c\u00f3digo.",
+                                                      "Instrumentaci\u00f3n b\u00e1sica (mult\u00edmetro, cables, protoboard) para diagn\u00f3stico r\u00e1pido."
                                                 ]
                                           },
                                           {
-                                                "title": "Comunidad",
+                                                "title": "Recursos humanos y metodol\u00f3gicos",
                                                 "items": [
-                                                      "Makerspaces y talleres colaborativos aportan mentoría y recursos.",
-                                                      "Participar en comunidades mejora aprendizaje y ejecución de proyectos."
+                                                      "Roles claros: quien dise\u00f1a, quien implementa, quien prueba y quien valida resultados.",
+                                                      "Backlog de experimentos y criterios de aceptaci\u00f3n por iteraci\u00f3n.",
+                                                      "Bit\u00e1cora de hallazgos para no repetir errores y acelerar mejoras."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Seguridad y gobernanza en laboratorio",
+                                                "items": [
+                                                      "Separar redes de prueba de redes productivas y usar credenciales dedicadas.",
+                                                      "Evitar contrase\u00f1as por defecto y registrar cambios de configuraci\u00f3n relevantes.",
+                                                      "Mantener inventario de componentes y versiones de firmware utilizadas."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Checklist de preparaci\u00f3n",
+                                                "items": [
+                                                      "Definir problema, alcance y m\u00e9trica de \u00e9xito antes de comprar o ensamblar.",
+                                                      "Confirmar compatibilidad entre componentes y protocolos de comunicaci\u00f3n.",
+                                                      "Planificar pruebas funcionales, de estabilidad y de recuperaci\u00f3n ante fallos."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Seleccionar un kit de recursos coherente con el objetivo del prototipo y justificar su elecci\u00f3n t\u00e9cnica."
                                                 ]
                                           }
                                     ]
