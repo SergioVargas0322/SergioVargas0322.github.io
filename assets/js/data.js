@@ -10644,54 +10644,110 @@
                         "topics": [
                               {
                                     "code": "2.1",
-                                    "title": "Conceptos de programación básica",
-                                    "summary": "Fundamentos de algoritmos, variables y estructuras para resolver problemas técnicos.",
+                                    "title": "Conceptos de programaci\u00f3n b\u00e1sica",
+                                    "summary": "Fundamentos de pensamiento algor\u00edtmico, estructuras de control y modelado de datos para resolver problemas t\u00e9cnicos en entornos IoT.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_012.png",
                                                 "alt": "Diagrama de flujo con decisiones y acciones para resolver un problema."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_015.jpeg",
+                                                "alt": "Interfaz de bloques usada para practicar l\u00f3gica de programaci\u00f3n."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_011.png",
+                                                "alt": "Sistema conectado que ilustra automatizaci\u00f3n y ejecuci\u00f3n de instrucciones."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Lógica de solución",
+                                                "title": "Pensamiento algor\u00edtmico",
                                                 "items": [
-                                                      "Un algoritmo organiza pasos ordenados y verificables.",
-                                                      "Los diagramas de flujo facilitan analizar decisiones y rutas alternativas."
+                                                      "Un algoritmo descompone un problema en pasos finitos, ordenados y verificables.",
+                                                      "Definir entradas, proceso y salida evita ambig\u00fcedades al implementar una soluci\u00f3n.",
+                                                      "Diagramas de flujo y pseudoc\u00f3digo ayudan a validar la l\u00f3gica antes de programar."
                                                 ]
                                           },
                                           {
-                                                "title": "Estructuras básicas",
+                                                "title": "Estructuras b\u00e1sicas",
                                                 "items": [
-                                                      "Variables almacenan estado y permiten cálculos.",
-                                                      "Secuencia, condición e iteración son la base del control de programa."
+                                                      "Variables, tipos de datos y operadores permiten modelar estado y reglas de negocio.",
+                                                      "Secuencia, condicionales e iteraciones son la base para automatizar decisiones repetitivas.",
+                                                      "Funciones simples favorecen reutilizaci\u00f3n y mantenimiento del c\u00f3digo."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Buenas pr\u00e1cticas iniciales",
+                                                "items": [
+                                                      "Nombrar variables con claridad y evitar l\u00f3gica duplicada reduce errores.",
+                                                      "Probar casos normales y casos l\u00edmite mejora confiabilidad desde etapas tempranas.",
+                                                      "Documentar supuestos t\u00e9cnicos facilita trabajo colaborativo y soporte posterior."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Plantear una soluci\u00f3n algor\u00edtmica b\u00e1sica y traducirla a estructuras de programaci\u00f3n comprensibles y comprobables."
                                                 ]
                                           }
                                     ]
                               },
                               {
                                     "code": "2.2",
-                                    "title": "Programación básica con Blockly",
-                                    "summary": "Uso de programación visual para aprender lógica sin fricción sintáctica inicial.",
+                                    "title": "Programaci\u00f3n b\u00e1sica con Blockly",
+                                    "summary": "Uso de programaci\u00f3n visual para adquirir fundamentos de l\u00f3gica, control de flujo y depuraci\u00f3n sin fricci\u00f3n sint\u00e1ctica.",
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_015.jpeg",
-                                                "alt": "Pantalla de Blockly Games para aprendizaje progresivo de programación."
+                                                "alt": "Pantalla de Blockly Games para aprendizaje progresivo de programaci\u00f3n."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_012.png",
+                                                "alt": "Flujo de decisiones que puede implementarse con bloques l\u00f3gicos."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_017.jpeg",
+                                                "alt": "Actividad pr\u00e1ctica de prototipado que conecta l\u00f3gica visual con resultados reales."
                                           }
                                     ],
                                     "sections": [
                                           {
-                                                "title": "Aprendizaje visual",
+                                                "title": "Por qu\u00e9 empezar con bloques",
                                                 "items": [
-                                                      "Blockly permite enfocarse en lógica y estructura del problema.",
-                                                      "Reduce errores de sintaxis al usar bloques predefinidos."
+                                                      "Blockly elimina errores de sintaxis y permite enfocarse en la secuencia l\u00f3gica del problema.",
+                                                      "Cada bloque representa una instrucci\u00f3n concreta y ayuda a visualizar dependencias.",
+                                                      "El aprendizaje es m\u00e1s r\u00e1pido para quienes inician en programaci\u00f3n."
                                                 ]
                                           },
                                           {
-                                                "title": "Aplicación práctica",
+                                                "title": "Patrones que se entrenan",
                                                 "items": [
-                                                      "Facilita transición posterior a lenguajes textuales como Python.",
-                                                      "Los retos gamificados mejoran comprensión de ciclos y condicionales."
+                                                      "Uso de condicionales para tomar decisiones seg\u00fan entradas o estados del sistema.",
+                                                      "Uso de bucles para repetir tareas de forma eficiente.",
+                                                      "Descomposici\u00f3n en bloques reutilizables como antesala de funciones."
+                                                ]
+                                          },
+                                          {
+                                                "title": "De Blockly a Python",
+                                                "items": [
+                                                      "Los mismos conceptos de flujo se trasladan a lenguajes textuales con cambios de sintaxis.",
+                                                      "La transici\u00f3n es m\u00e1s simple cuando se domina primero la l\u00f3gica del problema.",
+                                                      "Comparar soluciones en bloques y en texto refuerza comprensi\u00f3n de estructuras."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Checklist de pr\u00e1ctica",
+                                                "items": [
+                                                      "Resolver un reto con secuencia y luego optimizarlo con condicionales o bucles.",
+                                                      "Probar entradas distintas y registrar resultados esperados vs. obtenidos.",
+                                                      "Explicar verbalmente la l\u00f3gica antes de implementarla en otro lenguaje."
+                                                ]
+                                          },
+                                          {
+                                                "title": "Resultado esperado",
+                                                "items": [
+                                                      "Construir programas sencillos en Blockly y justificar su l\u00f3gica como base para evolucionar a Python."
                                                 ]
                                           }
                                     ]
