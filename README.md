@@ -34,7 +34,7 @@ Catálogo web para organizar y consultar cursos de Cisco por curso, módulo y te
 ## Checks de calidad
 Requisitos: Node.js 20+ (recomendado 24).
 
-- `npm run check:data`: valida estructura del catalogo, duplicados y rutas de imagenes.
+- `npm run check:data`: valida estructura del catálogo, duplicados y rutas de imágenes.
 - `npm run check:search`: valida comportamiento de búsqueda por tokens exactos.
 - `npm run check:ui`: valida integridad básica entre `index.html`, `README.md` y el catálogo.
 - `npm run check`: ejecuta todos los checks.

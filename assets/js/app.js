@@ -54,8 +54,33 @@
   const TOPIC_AUTOPLAY_RESUME_DELAY_MS = 10000;
   const HEADER_COMPACT_ENTER_Y = 84;
   const HEADER_COMPACT_EXIT_Y = 28;
+  const COURSE_VISUALS = {
+    "hardware-basics": { tone: "hardware", sigil: "HW", label: "Hardware" },
+    "operating-systems-basics": { tone: "systems", sigil: "OS", label: "Sistemas" },
+    "packet-tracer-intro": { tone: "packet", sigil: "PT", label: "Simulación" },
+    "packet-tracer-network-exploration": { tone: "topology", sigil: "NX", label: "Topologías" },
+    "networking-basics": { tone: "network", sigil: "NET", label: "Redes" },
+    "network-devices-initial-config": {
+      tone: "config",
+      sigil: "CFG",
+      label: "Configuración"
+    },
+    "network-addressing-troubleshooting-basics": {
+      tone: "addressing",
+      sigil: "IP",
+      label: "Dirección"
+    },
+    "network-support-security": { tone: "support", sigil: "NOC", label: "Soporte" },
+    "intro-cybersecurity": { tone: "cyber", sigil: "CY", label: "Ciberseg." },
+    "intro-iot-digital-transformation": {
+      tone: "iot",
+      sigil: "IOT",
+      label: "Transformación"
+    },
+    "iot-packet-tracer-exploration": { tone: "iotlab", sigil: "LAB", label: "IoT Lab" }
+  };
 
-  if (refs.catalogTitle) refs.catalogTitle.textContent = data.title || "Catalogo de Cursos";
+  if (refs.catalogTitle) refs.catalogTitle.textContent = data.title || "Catálogo de Cursos";
   if (refs.catalogSubtitle) refs.catalogSubtitle.textContent = data.subtitle || "";
 
   bindEvents();
@@ -224,6 +249,32 @@
     });
   }
 
+  function getCourseVisual(course) {
+    const visual = COURSE_VISUALS[course && course.id ? course.id : ""];
+    if (visual) return visual;
+
+    const fallbackLabel = Array.isArray(course && course.tags) && course.tags.length
+      ? formatTagLabel(course.tags[0])
+      : "Curso";
+    const fallbackSigil = String(fallbackLabel)
+      .replace(/[^a-z0-9]+/gi, "")
+      .slice(0, 3)
+      .toUpperCase() || "CS";
+
+    return {
+      tone: "default",
+      sigil: fallbackSigil,
+      label: fallbackLabel
+    };
+  }
+
+  function formatTagLabel(tag) {
+    return String(tag || "")
+      .replace(/[-_]+/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
   function onSearchInputKeyDown(event) {
     if (!refs.searchSuggestions || !refs.searchInput) return;
     if (!hasQuery(state.query) && (event.key === "ArrowDown" || event.key === "ArrowUp")) return;
@@ -341,7 +392,7 @@
     if (!refs.courseGrid) return;
 
     if (!courses.length) {
-      refs.courseGrid.innerHTML = `<p class="empty">No hay cursos que coincidan con la busqueda.</p>`;
+      refs.courseGrid.innerHTML = `<p class="empty">No hay cursos que coincidan con la búsqueda.</p>`;
       return;
     }
 
@@ -351,12 +402,22 @@
         const totalModules = (course.modules || []).length;
         const totalTopics = countTopics(course);
         const activeClass = course.id === state.activeCourseId ? " active" : "";
-        const tags = (course.tags || []).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
+        const visual = getCourseVisual(course);
+        const tags = (course.tags || [])
+          .map((tag) => `<span class="tag">${escapeHtml(formatTagLabel(tag))}</span>`)
+          .join("");
 
         return `
-        <button class="course-card${activeClass}" type="button" data-course-id="${escapeAttr(course.id)}">
-          <h3>${courseNumber}. ${escapeHtml(course.title)}</h3>
-          <p class="course-meta">${escapeHtml(course.provider)} - ${escapeHtml(course.level)} - ${totalModules} modulos - ${totalTopics} temas</p>
+        <button class="course-card${activeClass}" type="button" data-course-id="${escapeAttr(course.id)}" data-course-tone="${escapeAttr(visual.tone)}">
+          <div class="course-card-top">
+            <div class="course-identity">
+              <span class="course-sigil" aria-hidden="true">${escapeHtml(visual.sigil)}</span>
+              <span class="course-track">${escapeHtml(visual.label)}</span>
+            </div>
+            <span class="course-order" aria-label="Curso ${courseNumber}">${courseNumber}</span>
+          </div>
+          <h3>${escapeHtml(course.title)}</h3>
+          <p class="course-meta">${escapeHtml(course.provider)} - ${escapeHtml(course.level)} - ${totalModules} módulos - ${totalTopics} temas</p>
           <div class="course-tags">${tags}</div>
         </button>`;
       })
@@ -374,6 +435,7 @@
     }
 
     const hasTerms = snapshot.terms.length > 0;
+    const visual = getCourseVisual(course);
     const modules = (course.modules || []).map((module) => ({
       ...module,
       topics: (module.topics || []).filter((topic) =>
@@ -386,16 +448,27 @@
     const visibleTopics = visibleModules.reduce((sum, module) => sum + module.topics.length, 0);
 
     refs.courseDetail.innerHTML = `
-      <h2>${escapeHtml(course.title)}</h2>
-      <p class="detail-summary">${escapeHtml(course.summary)}</p>
-      <div class="module-list">
-        ${
-          visibleModules.length
-            ? visibleModules.map((module) => renderModule(course.id, module, false)).join("")
-            : `<p class="empty">No hay modulos/temas que coincidan con la busqueda actual.</p>`
-        }
-      </div>
-      <p class="course-meta">Mostrando ${visibleTopics} de ${totalTopics} temas del curso.</p>`;
+      <div class="course-detail-shell" data-course-tone="${escapeAttr(visual.tone)}">
+        <div class="course-hero">
+          <div class="course-hero-mark">
+            <span class="course-hero-sigil" aria-hidden="true">${escapeHtml(visual.sigil)}</span>
+            <p class="course-hero-track">${escapeHtml(visual.label)}</p>
+          </div>
+          <div class="course-hero-copy">
+            <p class="course-hero-meta">${escapeHtml(course.provider)} - ${escapeHtml(course.level)}</p>
+            <h2>${escapeHtml(course.title)}</h2>
+            <p class="detail-summary">${escapeHtml(course.summary)}</p>
+          </div>
+        </div>
+        <div class="module-list">
+          ${
+            visibleModules.length
+              ? visibleModules.map((module) => renderModule(course.id, module, false)).join("")
+              : `<p class="empty">No hay módulos/temas que coincidan con la búsqueda actual.</p>`
+          }
+        </div>
+        <p class="course-meta">Mostrando ${visibleTopics} de ${totalTopics} temas del curso.</p>
+      </div>`;
 
     syncModuleAccordion();
     applyPendingJump();
@@ -426,7 +499,7 @@
       .map(
         (section) => `
         <section class="section-block">
-          <h5>${escapeHtml(section.title || "Seccion")}</h5>
+          <h5>${escapeHtml(section.title || "Sección")}</h5>
           <ul>
             ${(section.items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
           </ul>
@@ -476,7 +549,7 @@
         ${
           hasMultipleImages
             ? `<div class="topic-carousel-toolbar">
-                <div class="topic-carousel-nav" role="group" aria-label="Navegacion de imagenes">
+                <div class="topic-carousel-nav" role="group" aria-label="Navegación de imágenes">
                   <button class="topic-carousel-step" type="button" data-topic-ref="${escapeAttr(topicRef)}" data-carousel-action="prev" aria-label="Mostrar imagen anterior">
                     Anterior
                   </button>
@@ -789,7 +862,7 @@
       activeTopic.classList.remove("topic-target");
     }
 
-    // Reinicia la animacion aunque se seleccione el mismo tema consecutivamente.
+    // Reinicia la animación aunque se seleccione el mismo tema consecutivamente.
     topicNode.classList.remove("topic-target");
     void topicNode.offsetWidth;
     topicNode.classList.add("topic-target");

@@ -26,11 +26,11 @@
                 images: [
                   {
                     src: "./assets/images/hardware-basics/C1_1.1_lab_safety.svg",
-                    alt: "Infografia de seguridad general en laboratorio de hardware con prevencion electrica y control del area de trabajo."
+                    alt: "Infografia de seguridad general en laboratorio de hardware con prevención electrica y control del area de trabajo."
                   },
                   {
                     src: "./assets/images/hardware-basics/C1_1.1.png",
-                    alt: "Diagrama PASS para uso basico de extintor en incendio electrico."
+                    alt: "Diagrama PASS para uso básico de extintor en incendio eléctrico."
                   }
                 ],
                 sections: [
@@ -74,7 +74,7 @@
                   },
                   {
                     src: "./assets/images/hardware-basics/C1_1.4.png",
-                    alt: "Fuente de alimentacion de escritorio como referencia de riesgo por alto voltaje interno."
+                    alt: "Fuente de alimentación de escritorio como referencia de riesgo por alto voltaje interno."
                   }
                 ],
                 sections: [
@@ -111,7 +111,7 @@
                 images: [
                   {
                     src: "./assets/images/hardware-basics/C1_1.5.png",
-                    alt: "Intervencion tecnica dentro del gabinete durante desmontaje o reensamble."
+                    alt: "Intervención tecnica dentro del gabinete durante desmontaje o reensamble."
                   },
                   {
                     src: "./assets/images/hardware-basics/C1_1.3.png",
@@ -185,7 +185,7 @@
                   },
                   {
                     src: "./assets/images/hardware-basics/C1_1.5_ram.jpeg",
-                    alt: "Modulo de memoria RAM utilizado como referencia para instalacion."
+                    alt: "Módulo de memoria RAM utilizado como referencia para instalación."
                   },
                   {
                     src: "./assets/images/hardware-basics/C1_1.5.png",
@@ -217,15 +217,15 @@
                 images: [
                   {
                     src: "./assets/images/hardware-basics/C1_1.6_storage_adapters.svg",
-                    alt: "Comparativa visual entre unidad SATA, modulo M.2 y tarjeta adaptadora PCIe."
+                    alt: "Comparativa visual entre unidad SATA, módulo M.2 y tarjeta adaptadora PCIe."
                   },
                   {
                     src: "./assets/images/hardware-basics/C1_1.6_sata_drive.jpeg",
-                    alt: "Unidad SATA de 2.5 pulgadas para instalacion de almacenamiento."
+                    alt: "Unidad SATA de 2.5 pulgadas para instalación de almacenamiento."
                   },
                   {
                     src: "./assets/images/hardware-basics/C1_1.6_m2_ssd.jpeg",
-                    alt: "Unidad M.2 SSD para expansion de almacenamiento de alto rendimiento."
+                    alt: "Unidad M.2 SSD para expansión de almacenamiento de alto rendimiento."
                   }
                 ],
                 sections: [
@@ -329,7 +329,7 @@
                   },
                   {
                     src: "./assets/images/hardware-basics/C1_2.2_hotspot.png",
-                    alt: "Pantalla de configuracion de zona Wi-Fi portatil y conectividad celular."
+                    alt: "Pantalla de configuración de zona Wi-Fi portatil y conectividad celular."
                   },
                   {
                     src: "./assets/images/hardware-basics/C1_2.2_wifi_standards.svg",
@@ -434,7 +434,7 @@
                 images: [
                   {
                     src: "./assets/images/hardware-basics/C1_3.2_mobile_parts_maintenance.svg",
-                    alt: "Resumen de partes reemplazables, conectividad y mantenimiento basico de dispositivos moviles."
+                    alt: "Resumen de partes reemplazables, conectividad y mantenimiento básico de dispositivos moviles."
                   },
                   {
                     src: "./assets/images/hardware-basics/C1_3.2.png",
@@ -3696,33 +3696,33 @@
           },
           {
             key: "M11",
-            title: "Direccionamiento dinamico con DHCP",
+            title: "Direccionamiento dinámico con DHCP",
             topics: [
               {
                 code: "11.1",
-                title: "Direccionamiento estatico y dinamico",
+                title: "Direccionamiento estático y dinámico",
                 summary:
-                  "Comparacion entre configuracion manual y asignacion automatica de IPv4 para optimizar control operativo y escalabilidad.",
+                  "Comparación entre configuración manual y asignación automatica de IPv4 para optimizar control operativo y escalabilidad.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_11.1_static_vs_dhcpv4.png",
-                    alt: "Comparativa de direccionamiento IPv4 estatico frente a direccionamiento dinamico con DHCP."
+                    alt: "Comparativa de direccionamiento IPv4 estático frente a direccionamiento dinámico con DHCP."
                   }
                 ],
                 sections: [
                   {
-                    title: "Asignacion estatica de IPv4",
+                    title: "Asignación estática de IPv4",
                     items: [
-                      "En modo estatico, el administrador configura manualmente IP, mascara y gateway en cada host.",
-                      "Es apropiado para servidores, impresoras y dispositivos que deben mantener direccion estable.",
+                      "En modo estático, el administrador configura manualmente IP, máscara y gateway en cada host.",
+                      "Es apropiado para servidores, impresoras y dispositivos que deben mantener dirección estable.",
                       "Aporta control fino, pero incrementa tiempo operativo y riesgo de errores de captura."
                     ]
                   },
                   {
-                    title: "Asignacion dinamica con DHCP",
+                    title: "Asignación dinamica con DHCP",
                     items: [
-                      "DHCP entrega automaticamente parametros de red: IPv4, mascara, gateway y opciones adicionales.",
-                      "Reduce trabajo manual del soporte y disminuye conflictos por direccion duplicada.",
+                      "DHCP entrega automaticamente parametros de red: IPv4, máscara, gateway y opciones adicionales.",
+                      "Reduce trabajo manual del soporte y disminuye conflictos por dirección duplicada.",
                       "Las direcciones se asignan por arrendamiento (lease) y regresan al pool cuando expiran."
                     ]
                   },
@@ -3731,13 +3731,13 @@
                     items: [
                       "Puede ejecutarse en servidor dedicado, router empresarial o router domestico.",
                       "En redes domesticas, el router suele actuar como cliente DHCP hacia ISP y servidor para LAN interna.",
-                      "El servicio DHCP debe dimensionarse segun cantidad de clientes y politicas de renovacion."
+                      "El servicio DHCP debe dimensionarse segun cantidad de clientes y políticas de renovación."
                     ]
                   },
                   {
-                    title: "Criterio de implementacion",
+                    title: "Criterio de implementación",
                     items: [
-                      "Usar estatico para infraestructura critica y dinamico para estaciones de usuario.",
+                      "Usar estático para infraestructura crítica y dinámico para estaciones de usuario.",
                       "Mantener inventario de reservas y excluir rangos para evitar solapamientos.",
                       "Documentar pools, tiempos de lease y parametros entregados por segmento."
                     ]
@@ -3745,45 +3745,45 @@
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Elegir correctamente entre direccionamiento estatico y DHCP segun tipo de dispositivo y contexto operativo."
+                      "Elegir correctamente entre direccionamiento estático y DHCP segun tipo de dispositivo y contexto operativo."
                     ]
                   }
                 ]
               },
               {
                 code: "11.2",
-                title: "Configuracion y operacion de DHCPv4",
+                title: "Configuración y operación de DHCPv4",
                 summary:
-                  "Funcionamiento del intercambio DORA, parametros distribuidos por DHCP y validacion basica de conectividad en clientes.",
+                  "Funcionamiento del intercambio DORA, parametros distribuidos por DHCP y validación basica de conectividad en clientes.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_11.2_dhcpv4_dora_flow.png",
-                    alt: "Flujo DHCPv4 DORA entre cliente y servidor con parametros de configuracion entregados."
+                    alt: "Flujo DHCPv4 DORA entre cliente y servidor con parametros de configuración entregados."
                   }
                 ],
                 sections: [
                   {
-                    title: "Operacion DHCPv4 (DORA)",
+                    title: "Operación DHCPv4 (DORA)",
                     items: [
                       "Discover: el cliente emite broadcast para localizar servidores DHCP.",
-                      "Offer: el servidor propone direccion y parametros de configuracion.",
+                      "Offer: el servidor propone dirección y parametros de configuración.",
                       "Request: el cliente solicita formalmente la oferta seleccionada; ACK: el servidor confirma y registra lease."
                     ]
                   },
                   {
-                    title: "Configuracion del servicio",
+                    title: "Configuración del servicio",
                     items: [
-                      "Definir rango de direcciones (pool), mascara, gateway y DNS para la red objetivo.",
+                      "Definir rango de direcciones (pool), máscara, gateway y DNS para la red objetivo.",
                       "Verificar que el rango no incluya IP reservadas para infraestructura o servicios estaticos.",
                       "En routers domesticos/SMB, DHCP suele venir habilitado por defecto y debe ajustarse al plan de direccionamiento."
                     ]
                   },
                   {
-                    title: "Validacion posterior",
+                    title: "Validación posterior",
                     items: [
                       "Confirmar que cada cliente reciba IP unica dentro del rango esperado.",
-                      "Probar conectividad local y hacia gateway con ping una vez asignada la configuracion.",
-                      "Revisar tabla de leases para asociacion correcta entre MAC y direccion entregada."
+                      "Probar conectividad local y hacia gateway con ping una vez asignada la configuración.",
+                      "Revisar tabla de leases para asociación correcta entre MAC y dirección entregada."
                     ]
                   },
                   {
@@ -3791,13 +3791,13 @@
                     items: [
                       "Pool agotado por lease demasiado largo o falta de capacidad planificada.",
                       "Gateway/DNS mal configurados en servidor DHCP, aun con IP valida en clientes.",
-                      "Solapamiento entre direccionamiento estatico y dinamico en la misma subred."
+                      "Solapamiento entre direccionamiento estático y dinámico en la misma subred."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Implementar y verificar DHCPv4 para entregar configuracion consistente y reducir incidencias en usuarios finales."
+                      "Implementar y verificar DHCPv4 para entregar configuración consistente y reducir incidencias en usuarios finales."
                     ]
                   }
                 ]
@@ -3812,11 +3812,11 @@
                 code: "12.1",
                 title: "Limites de red y puerta de enlace predeterminada",
                 summary:
-                  "Como un host decide si enviar trafico localmente o reenviarlo al gateway para alcanzar redes remotas.",
+                  "Como un host decide si enviar tráfico localmente o reenviarlo al gateway para alcanzar redes remotas.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_12.1_default_gateway_limits.png",
-                    alt: "Diagrama de decision del host para trafico local y remoto usando puerta de enlace predeterminada."
+                    alt: "Diagrama de decisión del host para tráfico local y remoto usando puerta de enlace predeterminada."
                   }
                 ],
                 sections: [
@@ -3824,15 +3824,15 @@
                     title: "Puerta de enlace a otras redes",
                     items: [
                       "La puerta de enlace predeterminada es la salida del host hacia destinos fuera de su subred local.",
-                      "El host compara red local y red destino usando IP + mascara; si no coinciden, envia al gateway.",
-                      "Si gateway o mascara estan mal configurados, no habra conectividad hacia redes remotas."
+                      "El host compara red local y red destino usando IP + máscara; si no coinciden, envia al gateway.",
+                      "Si gateway o máscara estan mal configurados, no habra conectividad hacia redes remotas."
                     ]
                   },
                   {
                     title: "Enrutadores como gateways",
                     items: [
                       "Cada interfaz del router conecta una red distinta y puede ser gateway de los hosts de ese segmento.",
-                      "La IP del gateway puede configurarse de forma estatica o recibirse dinamicamente por DHCP.",
+                      "La IP del gateway puede configurarse de forma estática o recibirse dinamicamente por DHCP.",
                       "En redes domesticas, el router inalambrico suele entregar su IP LAN como gateway predeterminado."
                     ]
                   },
@@ -3841,47 +3841,47 @@
                     items: [
                       "El router separa red interna (privada) y red externa (ISP/Internet).",
                       "Hacia adentro puede actuar como servidor DHCP; hacia afuera suele actuar como cliente DHCP del ISP.",
-                      "Este limite mejora control de trafico y evita exposicion directa de hosts internos."
+                      "Este limite mejora control de tráfico y evita exposición directa de hosts internos."
                     ]
                   },
                   {
                     title: "Checklist de host",
                     items: [
                       "IP y gateway deben pertenecer a la misma subred local del host.",
-                      "Verificar mascara correcta antes de diagnosticar problemas de salida a Internet.",
+                      "Verificar máscara correcta antes de diagnosticar problemas de salida a Internet.",
                       "Validar primero alcance al gateway (ping) y luego a destino remoto."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Configurar correctamente el gateway predeterminado para habilitar comunicacion fuera de la LAN."
+                      "Configurar correctamente el gateway predeterminado para habilitar comunicación fuera de la LAN."
                     ]
                   }
                 ]
               },
               {
                 code: "12.2",
-                title: "Traduccion de direcciones de red (NAT)",
+                title: "Traducción de direcciones de red (NAT)",
                 summary:
-                  "Principio de operacion de NAT para permitir que redes privadas accedan a Internet mediante direcciones publicas.",
+                  "Principio de operación de NAT para permitir que redes privadas accedan a Internet mediante direcciones públicas.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_12.2_nat_intro_flow.png",
-                    alt: "Flujo de traduccion NAT entre host privado, router de borde e Internet publica."
+                    alt: "Flujo de traducción NAT entre host privado, router de borde e Internet publica."
                   }
                 ],
                 sections: [
                   {
-                    title: "Introduccion a NAT",
+                    title: "Introducción a NAT",
                     items: [
                       "Las redes privadas RFC1918 funcionan internamente pero no son enrutable globalmente en Internet.",
-                      "NAT traduce direcciones privadas a publicas en el router de borde para permitir salida externa.",
-                      "Sin esta traduccion, un host privado no podria comunicarse con servicios publicos en Internet."
+                      "NAT traduce direcciones privadas a públicas en el router de borde para permitir salida externa.",
+                      "Sin esta traducción, un host privado no podria comunicarse con servicios publicos en Internet."
                     ]
                   },
                   {
-                    title: "Flujo basico de traduccion",
+                    title: "Flujo básico de traducción",
                     items: [
                       "Salida: el router reemplaza IP origen privada por una IP publica registrada y guarda el mapeo.",
                       "Retorno: la respuesta llega a IP publica; el router consulta tabla NAT y restaura destino privado.",
@@ -3892,16 +3892,16 @@
                     title: "Rangos privados usados con NAT",
                     items: [
                       "10.0.0.0/8 para despliegues amplios empresariales.",
-                      "172.16.0.0/12 para segmentacion intermedia.",
+                      "172.16.0.0/12 para segmentación intermedia.",
                       "192.168.0.0/16 frecuente en entornos domesticos y pymes."
                     ]
                   },
                   {
                     title: "Consideraciones operativas",
                     items: [
-                      "NAT simplifica consumo de IP publicas, pero agrega estado y complejidad en troubleshooting.",
-                      "Documentar politicas de traduccion es clave para auditoria y soporte.",
-                      "Una mala configuracion de NAT puede bloquear servicios o romper conectividad de aplicaciones."
+                      "NAT simplifica consumo de IP públicas, pero agrega estado y complejidad en troubleshooting.",
+                      "Documentar políticas de traducción es clave para auditoria y soporte.",
+                      "Una mala configuración de NAT puede bloquear servicios o romper conectividad de aplicaciones."
                     ]
                   },
                   {
@@ -3922,11 +3922,11 @@
                 code: "13.1",
                 title: "MAC e IP en comunicaciones locales y remotas",
                 summary:
-                  "Relacion entre direccion logica (IP) y direccion fisica (MAC), y como cambia la encapsulacion en cada salto.",
+                  "Relación entre dirección lógica (IP) y dirección física (MAC), y como cambia la encapsulación en cada salto.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_13.1_mac_ip_local_remote.png",
-                    alt: "Comparacion de direccionamiento MAC e IP para destino local y destino en red remota."
+                    alt: "Comparación de direccionamiento MAC e IP para destino local y destino en red remota."
                   }
                 ],
                 sections: [
@@ -3947,43 +3947,43 @@
                     ]
                   },
                   {
-                    title: "Encapsulacion por salto",
+                    title: "Encapsulación por salto",
                     items: [
                       "Cada medio de enlace exige una nueva trama de Capa 2 apropiada para esa interfaz.",
-                      "La decision de forwarding depende de capa 3; la entrega fisica se realiza en capa 2.",
-                      "Este desacople permite atravesar multiples redes con tecnologias de enlace distintas."
+                      "La decisión de forwarding depende de capa 3; la entrega física se realiza en capa 2.",
+                      "Este desacople permite atravesar multiples redes con tecnologías de enlace distintas."
                     ]
                   },
                   {
-                    title: "Relacion practica MAC-IP",
+                    title: "Relación practica MAC-IP",
                     items: [
-                      "IP responde al 'donde va' en la red logica; MAC responde al 'a quien entrego' en el enlace actual.",
-                      "Sin resolucion MAC correcta, el paquete IP no puede salir como trama valida.",
-                      "Comprender esta relacion acelera troubleshooting de conectividad local y de primer salto."
+                      "IP responde al 'donde va' en la red lógica; MAC responde al 'a quien entrego' en el enlace actual.",
+                      "Sin resolución MAC correcta, el paquete IP no puede salir como trama valida.",
+                      "Comprender esta relación acelera troubleshooting de conectividad local y de primer salto."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Diferenciar claramente el rol de IP y MAC al enviar trafico dentro de la LAN o hacia redes remotas."
+                      "Diferenciar claramente el rol de IP y MAC al enviar tráfico dentro de la LAN o hacia redes remotas."
                     ]
                   }
                 ]
               },
               {
                 code: "13.2",
-                title: "Contencion de difusiones y funcionamiento de ARP",
+                title: "Contención de difusiones y funcionamiento de ARP",
                 summary:
                   "Impacto del broadcast en dominios Ethernet y uso de ARP para resolver direcciones MAC a partir de IPv4.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_13.2_broadcast_arp.png",
-                    alt: "Difusion Ethernet, dominio de broadcast y flujo ARP de solicitud/respuesta."
+                    alt: "Difusión Ethernet, dominio de broadcast y flujo ARP de solicitud/respuesta."
                   }
                 ],
                 sections: [
                   {
-                    title: "Difusion Ethernet",
+                    title: "Difusión Ethernet",
                     items: [
                       "Una trama broadcast usa MAC destino FF-FF-FF-FF-FF-FF y alcanza todos los hosts del dominio local.",
                       "El switch hace flooding por todos los puertos excepto el de entrada.",
@@ -3991,11 +3991,11 @@
                     ]
                   },
                   {
-                    title: "Dominios de difusion",
+                    title: "Dominios de difusión",
                     items: [
                       "Una LAN con switches forma un dominio de broadcast donde todos procesan difusiones.",
-                      "Al crecer el numero de hosts, aumenta trafico broadcast y puede degradar rendimiento.",
-                      "Dividir la red con routers reduce alcance de difusion y mejora escalabilidad."
+                      "Al crecer el numero de hosts, aumenta tráfico broadcast y puede degradar rendimiento.",
+                      "Dividir la red con routers reduce alcance de difusión y mejora escalabilidad."
                     ]
                   },
                   {
@@ -4007,17 +4007,17 @@
                     ]
                   },
                   {
-                    title: "Contencion operativa",
+                    title: "Contención operativa",
                     items: [
                       "ARP y otros broadcast deben mantenerse controlados para evitar consumo excesivo en acceso.",
-                      "Segmentacion adecuada y disenio de subredes limitan impacto de difusion masiva.",
+                      "Segmentación adecuada y disenio de subredes limitan impacto de difusión masiva.",
                       "Revisar tablas ARP y comportamiento de flooding ayuda a detectar anomalias de red."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Explicar como ARP funciona dentro del dominio de broadcast y por que la segmentacion lo contiene."
+                      "Explicar como ARP funciona dentro del dominio de broadcast y por que la segmentación lo contiene."
                     ]
                   }
                 ]
@@ -4036,15 +4036,15 @@
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_14.1_routing_need.png",
-                    alt: "Diagrama de segmentacion de red por seguridad, difusion y crecimiento con un router entre subredes."
+                    alt: "Diagrama de segmentación de red por seguridad, difusión y crecimiento con un router entre subredes."
                   }
                 ],
                 sections: [
                   {
-                    title: "Division de la red local",
+                    title: "División de la red local",
                     items: [
-                      "Dividir una red reduce el trafico de difusion y evita que todos los hosts procesen mensajes irrelevantes.",
-                      "La segmentacion mejora seguridad al limitar acceso entre departamentos, equipos y servicios sensibles.",
+                      "Dividir una red reduce el tráfico de difusión y evita que todos los hosts procesen mensajes irrelevantes.",
+                      "La segmentación mejora seguridad al limitar acceso entre departamentos, equipos y servicios sensibles.",
                       "Tambien responde a necesidades fisicas: sedes, pisos o edificios con alcances de red diferentes."
                     ]
                   },
@@ -4052,12 +4052,12 @@
                     title: "Cuando se necesita enrutamiento",
                     items: [
                       "Si la red de origen y la red de destino no coinciden, el host debe usar un router para llegar al destino remoto.",
-                      "El switch reenvia por direccion MAC (capa 2), mientras el router decide por direccion IP (capa 3).",
-                      "Cada interfaz del router define una red independiente y separa dominios de difusion."
+                      "El switch reenvia por dirección MAC (capa 2), mientras el router decide por dirección IP (capa 3).",
+                      "Cada interfaz del router define una red independiente y separa dominios de difusión."
                     ]
                   },
                   {
-                    title: "Encapsulacion y reenvio",
+                    title: "Encapsulación y reenvio",
                     items: [
                       "El host encapsula el paquete IP en una trama de enlace y lo entrega al gateway predeterminado.",
                       "El router desencapsula, consulta destino IP, selecciona interfaz de salida y reencapsula para el siguiente salto.",
@@ -4067,15 +4067,15 @@
                   {
                     title: "Criterios de diseno",
                     items: [
-                      "Separar redes por funcion, criticidad y volumen de trafico para simplificar operacion y crecimiento.",
-                      "Contener difusion y aplicar politicas de acceso reduce riesgo y mejora rendimiento.",
+                      "Separar redes por función, criticidad y volumen de tráfico para simplificar operación y crecimiento.",
+                      "Contener difusión y aplicar políticas de acceso reduce riesgo y mejora rendimiento.",
                       "Planificar direccionamiento por segmentos facilita enrutamiento y troubleshooting."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Justificar tecnicamente por que segmentar y como el enrutamiento habilita comunicacion segura entre redes."
+                      "Justificar tecnicamente por que segmentar y como el enrutamiento habilita comunicación segura entre redes."
                     ]
                   }
                 ]
@@ -4084,11 +4084,11 @@
                 code: "14.2",
                 title: "La tabla de enrutamiento",
                 summary:
-                  "Como el router usa su tabla para reenviar paquetes a redes conocidas, descartar trafico invalido y usar ruta predeterminada cuando aplica.",
+                  "Como el router usa su tabla para reenviar paquetes a redes conocidas, descartar tráfico invalido y usar ruta predeterminada cuando aplica.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_14.2_routing_table_forwarding.png",
-                    alt: "Proceso de decision del router con tabla de enrutamiento, ruta especifica y ruta por defecto."
+                    alt: "Proceso de decisión del router con tabla de enrutamiento, ruta especifica y ruta por defecto."
                   }
                 ],
                 sections: [
@@ -4127,7 +4127,7 @@
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Interpretar la logica de forwarding del router y validar rutas para resolver fallas de conectividad entre redes."
+                      "Interpretar la lógica de forwarding del router y validar rutas para resolver fallas de conectividad entre redes."
                     ]
                   }
                 ]
@@ -4136,11 +4136,11 @@
                 code: "14.3",
                 title: "Crear una LAN",
                 summary:
-                  "Diseno basico de LAN: una sola red local frente a segmentos multiples, con sus ventajas, riesgos y criterio de uso.",
+                  "Diseno básico de LAN: una sola red local frente a segmentos multiples, con sus ventajas, riesgos y criterio de uso.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_14.3_lan_design_segments.png",
-                    alt: "Comparacion de diseno LAN en un solo segmento frente a segmentacion por redes locales y remotas."
+                    alt: "Comparación de diseno LAN en un solo segmento frente a segmentación por redes locales y remotas."
                   }
                 ],
                 sections: [
@@ -4149,31 +4149,31 @@
                     items: [
                       "Una LAN es una red local o conjunto de redes locales bajo el mismo control administrativo.",
                       "Las LAN modernas pueden abarcar multiples edificios y cientos de hosts interconectados.",
-                      "Una intranet es una LAN privada de organizacion con acceso restringido a usuarios autorizados."
+                      "Una intranet es una LAN privada de organización con acceso restringido a usuarios autorizados."
                     ]
                   },
                   {
                     title: "Segmentos locales y remotos",
                     items: [
-                      "Un solo segmento simplifica la operacion inicial, pero incrementa dominio de difusion al crecer.",
+                      "Un solo segmento simplifica la operación inicial, pero incrementa dominio de difusión al crecer.",
                       "Separar hosts en redes distintas reduce broadcast y puede mejorar rendimiento por segmento.",
-                      "La segmentacion exige enrutamiento, mas planificacion y mayor costo de implementacion."
+                      "La segmentación exige enrutamiento, mas planificación y mayor costo de implementación."
                     ]
                   },
                   {
-                    title: "Comparacion de enfoques",
+                    title: "Comparación de enfoques",
                     items: [
                       "Segmento unico: menos complejidad y menor costo, adecuado para redes pequenas.",
-                      "Segmentado: mayor control, mejor seguridad y organizacion para redes medianas o grandes.",
-                      "La decision depende de escala, politicas de acceso, criticidad de servicios y presupuesto."
+                      "Segmentado: mayor control, mejor seguridad y organización para redes medianas o grandes.",
+                      "La decisión depende de escala, políticas de acceso, criticidad de servicios y presupuesto."
                     ]
                   },
                   {
                     title: "Checklist de diseno LAN",
                     items: [
                       "Definir que hosts deben comunicarse directamente y cuales deben aislarse por seguridad.",
-                      "Estimar crecimiento de dispositivos, trafico esperado y necesidad de QoS.",
-                      "Alinear direccionamiento IP, gateways y politicas de enrutamiento con el diseno elegido."
+                      "Estimar crecimiento de dispositivos, tráfico esperado y necesidad de QoS.",
+                      "Alinear direccionamiento IP, gateways y políticas de enrutamiento con el diseno elegido."
                     ]
                   },
                   {
@@ -4194,50 +4194,50 @@
                 code: "15.1",
                 title: "TCP y UDP en la capa de transporte",
                 summary:
-                  "Comparacion de comportamiento entre TCP y UDP para seleccionar el protocolo adecuado segun tipo de aplicacion y criticidad de datos.",
+                  "Comparación de comportamiento entre TCP y UDP para seleccionar el protocolo adecuado segun tipo de aplicación y criticidad de datos.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_15.1_tcp_udp_comparison.png",
-                    alt: "Comparacion visual entre TCP y UDP con caracteristicas de confiabilidad, latencia y casos de uso."
+                    alt: "Comparación visual entre TCP y UDP con caracteristicas de confiabilidad, latencia y casos de uso."
                   }
                 ],
                 sections: [
                   {
-                    title: "Operacion de UDP",
+                    title: "Operación de UDP",
                     items: [
                       "UDP envia segmentos con baja sobrecarga y sin confirmaciones, por lo que reduce latencia.",
                       "No garantiza entrega ni orden; algunos segmentos pueden perderse o llegar fuera de secuencia.",
-                      "Es adecuado para voz, video en tiempo real y aplicaciones donde prima continuidad sobre precision absoluta."
+                      "Es adecuado para voz, video en tiempo real y aplicaciones donde prima continuidad sobre precisión absoluta."
                     ]
                   },
                   {
-                    title: "Operacion de TCP",
+                    title: "Operación de TCP",
                     items: [
                       "TCP utiliza numeros de secuencia y acuses de recibo (ACK) para entrega confiable y ordenada.",
-                      "Si detecta perdida de segmentos, retransmite automaticamente para completar la conversacion.",
+                      "Si detecta perdida de segmentos, retransmite automaticamente para completar la conversación.",
                       "Agrega mayor control y sobrecarga, por lo que suele introducir mas latencia que UDP."
                     ]
                   },
                   {
-                    title: "Criterio de seleccion",
+                    title: "Criterio de selección",
                     items: [
-                      "Usar UDP cuando la aplicacion tolera perdida ocasional y requiere respuesta inmediata.",
-                      "Usar TCP cuando la integridad de los datos es critica, por ejemplo web, banca o transferencia de archivos.",
-                      "La eleccion depende de equilibrio entre velocidad, confiabilidad y experiencia de usuario."
+                      "Usar UDP cuando la aplicación tolera perdida ocasional y requiere respuesta inmediata.",
+                      "Usar TCP cuando la integridad de los datos es crítica, por ejemplo web, banca o transferencia de archivos.",
+                      "La elección depende de equilibrio entre velocidad, confiabilidad y experiencia de usuario."
                     ]
                   },
                   {
                     title: "Checklist de diagnostico",
                     items: [
-                      "Verificar si la aplicacion espera entrega confiable o solo entrega de mejor esfuerzo.",
+                      "Verificar si la aplicación espera entrega confiable o solo entrega de mejor esfuerzo.",
                       "Correlacionar sintomas (cortes, retrasos, retransmisiones) con el protocolo de transporte usado.",
-                      "Evitar comparar rendimiento TCP y UDP sin considerar tipo de trafico y condiciones del enlace."
+                      "Evitar comparar rendimiento TCP y UDP sin considerar tipo de tráfico y condiciones del enlace."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Distinguir el funcionamiento de TCP y UDP para justificar la seleccion del protocolo en cada servicio."
+                      "Distinguir el funcionamiento de TCP y UDP para justificar la selección del protocolo en cada servicio."
                     ]
                   }
                 ]
@@ -4246,7 +4246,7 @@
                 code: "15.2",
                 title: "Numeros de puerto, sockets y netstat",
                 summary:
-                  "Uso de puertos TCP/UDP para identificar servicios y conversaciones, interpretacion de pares de sockets y verificacion de conexiones activas con netstat.",
+                  "Uso de puertos TCP/UDP para identificar servicios y conversaciones, interpretación de pares de sockets y verificación de conexiones activas con netstat.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_15.2_ports_sockets_netstat.png",
@@ -4257,13 +4257,13 @@
                   {
                     title: "Numeros de puerto en capa de transporte",
                     items: [
-                      "Cada segmento TCP/UDP incluye puerto de origen y puerto de destino para identificar la conversacion.",
+                      "Cada segmento TCP/UDP incluye puerto de origen y puerto de destino para identificar la conversación.",
                       "Puertos bien conocidos (0-1023) representan servicios estandar como HTTP 80, HTTPS 443, FTP 21 y DNS 53.",
-                      "En clientes, el puerto de origen suele asignarse de forma dinamica (efimero) para cada sesion."
+                      "En clientes, el puerto de origen suele asignarse de forma dinamica (efimero) para cada sesión."
                     ]
                   },
                   {
-                    title: "Multiplexacion de aplicaciones",
+                    title: "Multiplexación de aplicaciones",
                     items: [
                       "Un mismo host puede mantener varias sesiones simultaneas gracias a combinaciones IP:puerto distintas.",
                       "El servidor responde invirtiendo origen/destino para retornar datos al proceso correcto del cliente.",
@@ -4273,8 +4273,8 @@
                   {
                     title: "Pares de sockets",
                     items: [
-                      "Un socket combina direccion IP con numero de puerto, por ejemplo 192.168.1.5:5305.",
-                      "La sesion completa se identifica con el par cliente-servidor, por ejemplo 192.168.1.5:5305 <-> 192.168.1.7:80.",
+                      "Un socket combina dirección IP con numero de puerto, por ejemplo 192.168.1.5:5305.",
+                      "La sesión completa se identifica con el par cliente-servidor, por ejemplo 192.168.1.5:5305 <-> 192.168.1.7:80.",
                       "Los pares de sockets permiten diferenciar conexiones concurrentes hacia el mismo servicio."
                     ]
                   },
@@ -4282,14 +4282,14 @@
                     title: "Comando netstat",
                     items: [
                       "Netstat muestra conexiones activas, puertos en escucha y estado de sesiones TCP en el host.",
-                      "La opcion -n evita resolucion de nombres y facilita analisis rapido con IP:puerto numericos.",
+                      "La opción -n evita resolución de nombres y facilita análisis rapido con IP:puerto numericos.",
                       "Conexiones no identificadas o inesperadas pueden indicar procesos anomalos y deben investigarse."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Interpretar puertos y sockets para analizar trafico y usar netstat como control basico de seguridad operativa."
+                      "Interpretar puertos y sockets para analizar tráfico y usar netstat como control básico de seguridad operativa."
                     ]
                   }
                 ]
@@ -4298,13 +4298,13 @@
           },
           {
             key: "M16",
-            title: "Servicios de la capa de aplicacion",
+            title: "Servicios de la capa de aplicación",
             topics: [
               {
                 code: "16.1",
-                title: "Relacion cliente-servidor",
+                title: "Relación cliente-servidor",
                 summary:
-                  "Como clientes y servidores cooperan para entregar servicios web, incluyendo resolucion DNS, sockets y solicitud/respuesta HTTP.",
+                  "Como clientes y servidores cooperan para entregar servicios web, incluyendo resolución DNS, sockets y solicitud/respuesta HTTP.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_16.1_client_server_flow.png",
@@ -4313,9 +4313,9 @@
                 ],
                 sections: [
                   {
-                    title: "Interaccion de cliente y servidor",
+                    title: "Interacción de cliente y servidor",
                     items: [
-                      "Un servidor es un host que ejecuta software para ofrecer informacion o servicios a otros hosts de la red.",
+                      "Un servidor es un host que ejecuta software para ofrecer información o servicios a otros hosts de la red.",
                       "Las aplicaciones comunes (web, correo, redes sociales, banca, descargas) dependen de interacciones cliente-servidor.",
                       "Estas interacciones funcionan porque cliente y servidor comparten estandares y protocolos definidos."
                     ]
@@ -4323,8 +4323,8 @@
                   {
                     title: "Flujo IP en servicio web",
                     items: [
-                      "El usuario escribe una URL y primero ocurre resolucion DNS para obtener la direccion IP del servidor.",
-                      "Luego se establece una sesion TCP usando IP origen/destino y puertos origen/destino (socket).",
+                      "El usuario escribe una URL y primero ocurre resolución DNS para obtener la dirección IP del servidor.",
+                      "Luego se establece una sesión TCP usando IP origen/destino y puertos origen/destino (socket).",
                       "El servidor recibe solicitud HTTP en su puerto de servicio y responde invirtiendo origen y destino."
                     ]
                   },
@@ -4332,14 +4332,14 @@
                     title: "URI, URN y URL",
                     items: [
                       "URI es el identificador general de recursos en red.",
-                      "URN nombra el recurso dentro de un espacio de nombres sin indicar su ubicacion.",
-                      "URL define ubicacion y acceso al recurso (esquema, host, ruta y otros componentes)."
+                      "URN nombra el recurso dentro de un espacio de nombres sin indicar su ubicación.",
+                      "URL define ubicación y acceso al recurso (esquema, host, ruta y otros componentes)."
                     ]
                   },
                   {
-                    title: "Trafico web en Packet Tracer",
+                    title: "Tráfico web en Packet Tracer",
                     items: [
-                      "En simulacion se observa encapsulacion de HTTP sobre TCP y direccionamiento IP extremo a extremo.",
+                      "En simulación se observa encapsulación de HTTP sobre TCP y direccionamiento IP extremo a extremo.",
                       "La solicitud viaja desde el cliente hasta el servidor; la respuesta retorna con direcciones invertidas.",
                       "El intercambio continua hasta completar transferencia de HTML y recursos asociados."
                     ]
@@ -4356,28 +4356,28 @@
                 code: "16.2",
                 title: "Servicios de aplicaciones de red comunes",
                 summary:
-                  "Panorama de servicios frecuentes de Internet y su dependencia de protocolos TCP/IP para comunicacion confiable entre clientes y servidores.",
+                  "Panorama de servicios frecuentes de Internet y su dependencia de protocolos TCP/IP para comunicación confiable entre clientes y servidores.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_16.2_common_app_services.png",
-                    alt: "Resumen de servicios de aplicacion comunes y protocolos/puertos asociados."
+                    alt: "Resumen de servicios de aplicación comunes y protocolos/puertos asociados."
                   }
                 ],
                 sections: [
                   {
                     title: "Servicios mas usados",
                     items: [
-                      "Busqueda web, correo, streaming, mensajeria y comercio electronico son servicios consumidos diariamente.",
-                      "Cada servicio se implementa con software de aplicacion en servidores especializados o plataformas distribuidas.",
-                      "La entrega depende de la pila TCP/IP y de la coordinacion entre protocolos de aplicacion, transporte y red."
+                      "Búsqueda web, correo, streaming, mensajeria y comercio electronico son servicios consumidos diariamente.",
+                      "Cada servicio se implementa con software de aplicación en servidores especializados o plataformas distribuidas.",
+                      "La entrega depende de la pila TCP/IP y de la coordinación entre protocolos de aplicación, transporte y red."
                     ]
                   },
                   {
                     title: "Mapa servicio-protocolo",
                     items: [
                       "Web: HTTP/HTTPS en puertos 80/443.",
-                      "Resolucion de nombres: DNS en puerto 53 (UDP/TCP segun contexto).",
-                      "Correo: SMTP, IMAP y POP3 para envio y recuperacion de mensajes."
+                      "Resolución de nombres: DNS en puerto 53 (UDP/TCP segun contexto).",
+                      "Correo: SMTP, IMAP y POP3 para envio y recuperación de mensajes."
                     ]
                   },
                   {
@@ -4391,7 +4391,7 @@
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Relacionar servicios de aplicacion con sus protocolos para diagnostico y administracion eficiente."
+                      "Relacionar servicios de aplicación con sus protocolos para diagnostico y administración eficiente."
                     ]
                   }
                 ]
@@ -4400,20 +4400,20 @@
                 code: "16.3",
                 title: "Sistema de nombres de dominio (DNS)",
                 summary:
-                  "Funcionamiento de DNS para traducir nombres a IP y uso de herramientas de validacion como nslookup en escenarios reales y simulados.",
+                  "Funcionamiento de DNS para traducir nombres a IP y uso de herramientas de validación como nslookup en escenarios reales y simulados.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_16.3_dns_resolution_flow.png",
-                    alt: "Diagrama de resolucion DNS y ejemplo de validacion con comando nslookup."
+                    alt: "Diagrama de resolución DNS y ejemplo de validación con comando nslookup."
                   }
                 ],
                 sections: [
                   {
-                    title: "Funcion del servidor DNS",
+                    title: "Función del servidor DNS",
                     items: [
                       "DNS asocia nombres de dominio legibles por humanos con direcciones IP utilizables por la red.",
                       "Sin DNS, el usuario tendria que recordar y escribir direcciones numericas para cada servicio.",
-                      "El flujo habitual es consulta, busqueda en base de datos y respuesta con el registro correspondiente."
+                      "El flujo habitual es consulta, búsqueda en base de datos y respuesta con el registro correspondiente."
                     ]
                   },
                   {
@@ -4421,22 +4421,22 @@
                     items: [
                       "El verificador de sintaxis exige comandos exactos para avanzar en practicas guiadas.",
                       "Herramientas como Packet Tracer permiten mas flexibilidad, incluyendo abreviaciones de comandos.",
-                      "Practicar en simulacion reduce riesgo antes de aplicar cambios en equipos de produccion."
+                      "Practicar en simulación reduce riesgo antes de aplicar cambios en equipos de producción."
                     ]
                   },
                   {
                     title: "Comando nslookup",
                     items: [
-                      "nslookup permite consultar manualmente registros DNS y confirmar resolucion de un dominio.",
-                      "Si no hay resolucion, se debe revisar direccion DNS configurada en host/router y conectividad.",
+                      "nslookup permite consultar manualmente registros DNS y confirmar resolución de un dominio.",
+                      "Si no hay resolución, se debe revisar dirección DNS configurada en host/router y conectividad.",
                       "En redes domesticas, el router suele distribuir DNS via DHCP a clientes de la LAN."
                     ]
                   },
                   {
-                    title: "Checklist de verificacion DNS",
+                    title: "Checklist de verificación DNS",
                     items: [
                       "Validar que el cliente tenga DNS configurado correctamente (manual o por DHCP).",
-                      "Probar resolucion con nslookup antes de diagnosticar navegacion o aplicaciones.",
+                      "Probar resolución con nslookup antes de diagnosticar navegación o aplicaciones.",
                       "Confirmar que dominio, servidor DNS y ruta IP hacia el resolvedor sean alcanzables."
                     ]
                   },
@@ -4452,11 +4452,11 @@
                 code: "16.4",
                 title: "Clientes y servidores web",
                 summary:
-                  "Funcionamiento de HTTP y HTML en la publicacion de contenido web, y transicion a HTTPS para proteger datos durante la navegacion.",
+                  "Funcionamiento de HTTP y HTML en la publicación de contenido web, y transición a HTTPS para proteger datos durante la navegación.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_16.4_http_html_https_flow.png",
-                    alt: "Flujo web con DNS, solicitud HTTP/HTTPS, entrega de HTML y comparacion de seguridad entre HTTP y HTTPS."
+                    alt: "Flujo web con DNS, solicitud HTTP/HTTPS, entrega de HTML y comparación de seguridad entre HTTP y HTTPS."
                   }
                 ],
                 sections: [
@@ -4464,14 +4464,14 @@
                     title: "HTTP y HTML en la experiencia web",
                     items: [
                       "HTTP define reglas de intercambio entre cliente y servidor para solicitar y entregar recursos web.",
-                      "HTML es el lenguaje de marcado que estructura texto, imagenes, enlaces y elementos de interfaz.",
+                      "HTML es el lenguaje de marcado que estructura texto, imágenes, enlaces y elementos de interfaz.",
                       "El navegador interpreta el HTML recibido para construir la pagina visible al usuario."
                     ]
                   },
                   {
                     title: "Flujo operativo de una solicitud web",
                     items: [
-                      "El cliente resuelve primero el nombre de dominio a una direccion IP usando DNS.",
+                      "El cliente resuelve primero el nombre de dominio a una dirección IP usando DNS.",
                       "Con la IP obtenida, envia solicitud al servicio web en puerto 80 (HTTP) o 443 (HTTPS).",
                       "El servidor responde con contenido HTML y recursos asociados para renderizado completo."
                     ]
@@ -4480,14 +4480,14 @@
                     title: "Seguridad y estandares",
                     items: [
                       "HTTP sin cifrado puede ser interceptado por terceros durante el transito de datos.",
-                      "HTTPS agrega cifrado TLS para proteger confidencialidad e integridad de la comunicacion.",
+                      "HTTPS agrega cifrado TLS para proteger confidencialidad e integridad de la comunicación.",
                       "Los estandares HTTP/HTML permiten interoperabilidad entre clientes y servidores de distintos fabricantes."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Explicar como colaboran HTTP y HTML, y por que HTTPS es requisito para navegacion segura."
+                      "Explicar como colaboran HTTP y HTML, y por que HTTPS es requisito para navegación segura."
                     ]
                   }
                 ]
@@ -4507,17 +4507,17 @@
                   {
                     title: "Protocolo de transferencia de archivos",
                     items: [
-                      "FTP permite subir y descargar archivos entre hosts a traves de una sesion cliente-servidor.",
-                      "El canal de control usa TCP 21 para autenticacion y comandos de gestion de archivos.",
+                      "FTP permite subir y descargar archivos entre hosts a traves de una sesión cliente-servidor.",
+                      "El canal de control usa TCP 21 para autenticación y comandos de gestión de archivos.",
                       "El canal de datos suele usar TCP 20 para transportar contenido solicitado o cargado."
                     ]
                   },
                   {
-                    title: "Gestion remota por comandos",
+                    title: "Gestión remota por comandos",
                     items: [
                       "Ademas de transferir, FTP permite listar, renombrar y eliminar archivos segun permisos.",
-                      "Esta capacidad facilita mantenimiento remoto de repositorios y sitios web basicos.",
-                      "Una mala configuracion de permisos puede exponer informacion sensible."
+                      "Esta capacidad facilita mantenimiento remoto de repositorios y sitios web básicos.",
+                      "Una mala configuración de permisos puede exponer información sensible."
                     ]
                   },
                   {
@@ -4525,15 +4525,15 @@
                     items: [
                       "Clientes GUI como FileZilla muestran panel local y remoto para transferencias por arrastre.",
                       "En servidores publicos puede usarse usuario anonymous; entornos privados exigen credenciales.",
-                      "Antes de operar en produccion conviene validar destino, permisos y trazabilidad de cambios."
+                      "Antes de operar en producción conviene validar destino, permisos y trazabilidad de cambios."
                     ]
                   },
                   {
-                    title: "Consideracion de seguridad",
+                    title: "Consideración de seguridad",
                     items: [
                       "FTP tradicional transmite credenciales en texto plano y no cifra el canal por defecto.",
                       "Para mayor seguridad en entornos reales se recomienda FTPS o SFTP segun politica organizacional.",
-                      "Aplicar cifrado y control de acceso reduce riesgo de fuga o manipulacion de archivos."
+                      "Aplicar cifrado y control de acceso reduce riesgo de fuga o manipulación de archivos."
                     ]
                   },
                   {
@@ -4552,7 +4552,7 @@
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_16.6_virtual_terminals_telnet_ssh.png",
-                    alt: "Comparacion entre Telnet y SSH para acceso remoto a CLI, con puertos y nivel de seguridad."
+                    alt: "Comparación entre Telnet y SSH para acceso remoto a CLI, con puertos y nivel de seguridad."
                   }
                 ],
                 sections: [
@@ -4560,38 +4560,38 @@
                     title: "Acceso remoto con Telnet o SSH",
                     items: [
                       "Clientes como Tera Term permiten abrir sesiones remotas hacia equipos de red y servidores.",
-                      "La sesion remota emula una terminal local y habilita administracion por linea de comandos.",
-                      "SSH se prioriza en entornos reales por su cifrado y proteccion de credenciales."
+                      "La sesión remota emula una terminal local y habilita administración por linea de comandos.",
+                      "SSH se prioriza en entornos reales por su cifrado y protección de credenciales."
                     ]
                   },
                   {
                     title: "Telnet",
                     items: [
-                      "Telnet es un protocolo historico de emulacion de terminal y usa TCP puerto 23.",
-                      "Una conexion Telnet establece una sesion vty para ejecutar comandos en el host remoto.",
-                      "Aunque util en laboratorios, su uso en produccion debe evitarse por falta de cifrado."
+                      "Telnet es un protocolo historico de emulación de terminal y usa TCP puerto 23.",
+                      "Una conexion Telnet establece una sesión vty para ejecutar comandos en el host remoto.",
+                      "Aunque util en laboratorios, su uso en producción debe evitarse por falta de cifrado."
                     ]
                   },
                   {
                     title: "Problemas de seguridad con Telnet",
                     items: [
-                      "Telnet transmite datos en texto plano, por lo que un atacante puede leer trafico capturado.",
+                      "Telnet transmite datos en texto plano, por lo que un atacante puede leer tráfico capturado.",
                       "Con acceso a credenciales, un tercero podria ejecutar acciones administrativas no autorizadas.",
-                      "SSH aporta autenticacion fuerte y cifrado de sesion, reduciendo riesgo operativo."
+                      "SSH aporta autenticación fuerte y cifrado de sesión, reduciendo riesgo operativo."
                     ]
                   },
                   {
-                    title: "Checklist de operacion segura",
+                    title: "Checklist de operación segura",
                     items: [
                       "Habilitar SSH y deshabilitar Telnet cuando el equipo y la politica lo permitan.",
-                      "Aplicar usuarios/roles con privilegios minimos para administracion remota.",
+                      "Aplicar usuarios/roles con privilegios minimos para administración remota.",
                       "Registrar sesiones y auditar cambios para trazabilidad y respuesta a incidentes."
                     ]
                   },
                   {
                     title: "Resultado del tema",
                     items: [
-                      "Justificar tecnicamente el uso de SSH sobre Telnet para administracion remota segura."
+                      "Justificar tecnicamente el uso de SSH sobre Telnet para administración remota segura."
                     ]
                   }
                 ]
@@ -4600,7 +4600,7 @@
                 code: "16.7",
                 title: "Correo electronico y mensajeria",
                 summary:
-                  "Arquitectura de correo, protocolos SMTP/POP3/IMAP4 y evolucion hacia mensajeria instantanea y llamadas VoIP.",
+                  "Arquitectura de correo, protocolos SMTP/POP3/IMAP4 y evolución hacia mensajeria instantanea y llamadas VoIP.",
                 images: [
                   {
                     src: "./assets/images/network-basics/C5_16.7_email_messaging_voip.png",
@@ -4613,7 +4613,7 @@
                     items: [
                       "El correo es un servicio cliente-servidor donde los mensajes se almacenan en buzones remotos.",
                       "Los usuarios acceden con clientes web o aplicaciones dedicadas segun plataforma.",
-                      "La direccion de buzon sigue formato usuario@empresa.dominio."
+                      "La dirección de buzon sigue formato usuario@empresa.dominio."
                     ]
                   },
                   {
@@ -4621,7 +4621,7 @@
                     items: [
                       "SMTP envia correo desde cliente a servidor local y entre servidores (puerto 25).",
                       "POP3 descarga mensajes al cliente y normalmente no los conserva en servidor (puerto 110).",
-                      "IMAP4 mantiene sincronizacion con buzon remoto y conserva mensajes en servidor (puerto 143)."
+                      "IMAP4 mantiene sincronización con buzon remoto y conserva mensajes en servidor (puerto 143)."
                     ]
                   },
                   {
@@ -4629,14 +4629,14 @@
                     items: [
                       "La mensajeria en tiempo real se integra en clientes web, moviles y plataformas colaborativas.",
                       "Ademas del texto, muchas aplicaciones soportan envio de archivos, audio y video.",
-                      "Ejemplos frecuentes: Teams, Webex, WhatsApp y otros clientes de comunicacion empresarial y personal."
+                      "Ejemplos frecuentes: Teams, Webex, WhatsApp y otros clientes de comunicación empresarial y personal."
                     ]
                   },
                   {
                     title: "Llamadas telefonicas por Internet",
                     items: [
                       "VoIP convierte voz analogica en paquetes IP para transportar llamadas por la red.",
-                      "Para comunicacion con telefonia tradicional se requiere gateway hacia la red PSTN.",
+                      "Para comunicación con telefonia tradicional se requiere gateway hacia la red PSTN.",
                       "Calidad de voz depende de latencia, perdida de paquetes y capacidad de la red."
                     ]
                   },
@@ -4656,7 +4656,7 @@
             topics: [
               {
                 code: "17.1",
-                title: "Comandos de solucion de problemas",
+                title: "Comandos de solución de problemas",
                 summary:
                   "Uso practico de utilidades CLI para aislar fallas de conectividad: ipconfig, ping, netstat, tracert y nslookup.",
                 images: [
@@ -4669,15 +4669,15 @@
                   {
                     title: "Panorama de utilidades",
                     items: [
-                      "ipconfig muestra configuracion IP local del host y estado del adaptador.",
+                      "ipconfig muestra configuración IP local del host y estado del adaptador.",
                       "ping verifica alcance a hosts IP y mide tiempo de respuesta extremo a extremo.",
-                      "netstat, tracert y nslookup amplian el diagnostico para sesiones, rutas y resolucion DNS."
+                      "netstat, tracert y nslookup amplian el diagnostico para sesiones, rutas y resolución DNS."
                     ]
                   },
                   {
                     title: "Comando ipconfig",
                     items: [
-                      "Con ipconfig se validan IPv4, mascara de subred y gateway predeterminado de forma rapida.",
+                      "Con ipconfig se validan IPv4, máscara de subred y gateway predeterminado de forma rápida.",
                       "ipconfig /all incluye datos extendidos: MAC, DNS, DHCP, lease y detalles de interfaz.",
                       "Si hay direccionamiento desactualizado o invalido, usar ipconfig /release y luego ipconfig /renew."
                     ]
@@ -4691,17 +4691,17 @@
                     ]
                   },
                   {
-                    title: "Interpretacion de resultados",
+                    title: "Interpretación de resultados",
                     items: [
-                      "Sin respuesta al gateway: posible falla local (NIC, cable, Wi-Fi, VLAN o configuracion IP).",
-                      "Gateway responde pero destino externo no: revisar ruta WAN, ISP o politicas de filtrado.",
-                      "Ping exitoso y aplicacion falla: investigar servicio especifico en host destino."
+                      "Sin respuesta al gateway: posible falla local (NIC, cable, Wi-Fi, VLAN o configuración IP).",
+                      "Gateway responde pero destino externo no: revisar ruta WAN, ISP o políticas de filtrado.",
+                      "Ping exitoso y aplicación falla: investigar servicio especifico en host destino."
                     ]
                   },
                   {
                     title: "Checklist de troubleshooting",
                     items: [
-                      "Confirmar capa fisica y estado de interfaz antes de concluir falla de capa 3 o superior.",
+                      "Confirmar capa física y estado de interfaz antes de concluir falla de capa 3 o superior.",
                       "Documentar cada prueba (comando, destino, resultado) para acotar causas sistematicamente.",
                       "Escalar con evidencia: salida de ipconfig /all, pruebas de ping y sintomas observados."
                     ]
@@ -6258,7 +6258,7 @@
                     items: [
                       "`show running-config`: configuración activa en memoria RAM.",
                       "`show startup-config`: configuración guardada en NVRAM para arranque.",
-                      "`show version` y `show ip interface brief`: versión del sistema y estado resumido de interfaces."
+                      "`show versión` y `show ip interface brief`: versión del sistema y estado resumido de interfaces."
                     ]
                   },
                   {
@@ -7774,7 +7774,7 @@
                   {
                     title: "Comandos de verificación",
                     items: [
-                      "`show version` para confirmar IOS, uptime y origen de arranque.",
+                      "`show versión` para confirmar IOS, uptime y origen de arranque.",
                       "`show boot` para revisar variable de arranque y archivos configurados.",
                       "`dir flash:` y `show startup-config` para validar imagen y configuración persistente."
                     ]
@@ -8458,7 +8458,7 @@
                   {
                     "title": "Comandos IOS para recopilar evidencia",
                     "items": [
-                      "Usar `show version`, `show running-config` y `show inventory` para validar estado, versi\u00f3n y contexto del equipo.",
+                      "Usar `show versión`, `show running-config` y `show inventory` para validar estado, versi\u00f3n y contexto del equipo.",
                       "Verificar interfaces y direccionamiento con `show ip interface brief`, `show ipv6 interface brief` y `show interfaces`.",
                       "Revisar topolog\u00eda y aprendizaje con `show ip route`, `show ipv6 route`, `show cdp neighbors detail`, `show arp` y `show ipv6 neighbors`.",
                       "En conmutadores, validar capa 2 con `show vlan`, `show interface status` y `show mac-address table`."
@@ -10485,8 +10485,8 @@
             "summary": "Curso base para comprender IoT, automatización, datos masivos, seguridad y oportunidades profesionales en la transformación digital.",
             "tags": [
                   "iot",
-                  "transformacion-digital",
-                  "automatizacion",
+                  "transformación digital",
+                  "automatización",
                   "inteligencia-artificial",
                   "datos-masivos",
                   "seguridad"
@@ -11695,7 +11695,7 @@
         estimatedHours: 8,
         summary:
           "Curso pr\u00e1ctico para dise\u00f1ar, conectar, monitorear y programar soluciones IoT en Cisco Packet Tracer mediante escenarios de hogar inteligente y control ambiental.",
-        tags: ["iot", "packet tracer", "domotica", "automatizacion", "simulacion"],
+        tags: ["iot", "packet tracer", "domótica", "automatización", "simulación"],
         modules: [
           {
             key: "M1",
