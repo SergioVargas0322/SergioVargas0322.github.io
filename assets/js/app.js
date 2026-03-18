@@ -210,11 +210,26 @@
       ? window.scrollY > HEADER_COMPACT_EXIT_Y
       : window.scrollY > HEADER_COMPACT_ENTER_Y;
     refs.siteHeader.classList.toggle("is-compact", shouldCompact);
+    if (isCompact && !shouldCompact && window.scrollY > 0) {
+      forceScrollToTop();
+    }
     if (refs.jumpToCourses) {
       refs.jumpToCourses.tabIndex = shouldCompact ? 0 : -1;
       refs.jumpToCourses.setAttribute("aria-hidden", String(!shouldCompact));
     }
     syncStickyOffsets();
+  }
+
+  function forceScrollToTop() {
+    const scrollToTop = () => {
+      const scrollingElement = document.scrollingElement || document.documentElement || document.body;
+      if (scrollingElement) scrollingElement.scrollTop = 0;
+      window.scrollTo(0, 0);
+    };
+
+    scrollToTop();
+    window.requestAnimationFrame(scrollToTop);
+    window.setTimeout(scrollToTop, 240);
   }
 
   function jumpToCourses() {
