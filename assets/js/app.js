@@ -10,6 +10,7 @@
     searchInput: byId("searchInput"),
     searchSuggestions: byId("searchSuggestions"),
     clearSearch: byId("clearSearch"),
+    jumpToCourses: byId("jumpToCourses"),
     coursePicker: byId("coursePicker"),
     resultMeta: byId("resultMeta"),
     courseGrid: byId("courseGrid"),
@@ -129,6 +130,10 @@
       });
     }
 
+    if (refs.jumpToCourses) {
+      refs.jumpToCourses.addEventListener("click", jumpToCourses);
+    }
+
     if (refs.imageModalNext) {
       refs.imageModalNext.addEventListener("click", () => {
         moveImageModal(1);
@@ -180,6 +185,43 @@
       ? window.scrollY > HEADER_COMPACT_EXIT_Y
       : window.scrollY > HEADER_COMPACT_ENTER_Y;
     refs.siteHeader.classList.toggle("is-compact", shouldCompact);
+    if (refs.jumpToCourses) {
+      refs.jumpToCourses.tabIndex = shouldCompact ? 0 : -1;
+      refs.jumpToCourses.setAttribute("aria-hidden", String(!shouldCompact));
+    }
+    syncStickyOffsets();
+  }
+
+  function jumpToCourses() {
+    hideSearchSuggestions();
+    if (refs.coursePicker) refs.coursePicker.open = true;
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.setTimeout(() => {
+      const summary = refs.coursePicker ? refs.coursePicker.querySelector("summary") : null;
+      if (summary && typeof summary.focus === "function") {
+        summary.focus({ preventScroll: true });
+      }
+    }, 360);
+  }
+
+  function syncStickyOffsets() {
+    if (!refs.siteHeader) return;
+    const rootStyle = window.getComputedStyle(document.documentElement);
+    const stickyTop = Number.parseFloat(rootStyle.getPropertyValue("--header-sticky-top")) || 0;
+    const headerHeight = refs.siteHeader.getBoundingClientRect().height;
+    const contentOffset = Math.ceil(headerHeight + stickyTop + 16);
+    document.documentElement.style.setProperty("--content-scroll-offset", `${contentOffset}px`);
+  }
+
+  function scrollNodeIntoView(node, behavior = "smooth") {
+    if (!node) return;
+    const rootStyle = window.getComputedStyle(document.documentElement);
+    const offset = Number.parseFloat(rootStyle.getPropertyValue("--content-scroll-offset")) || 0;
+    const targetTop = window.scrollY + node.getBoundingClientRect().top - offset;
+    window.scrollTo({
+      top: Math.max(0, Math.round(targetTop)),
+      behavior
+    });
   }
 
   function onSearchInputKeyDown(event) {
@@ -712,7 +754,7 @@
 
         syncTopicAutoplay();
         requestAnimationFrame(() => {
-          moduleItem.scrollIntoView({ behavior: "smooth", block: "start" });
+          scrollNodeIntoView(moduleItem);
         });
       });
     });
@@ -734,7 +776,7 @@
     if (!topicNode) return;
 
     setTimeout(() => {
-      topicNode.scrollIntoView({ behavior: "smooth", block: "start" });
+      scrollNodeIntoView(topicNode);
       flashTopic(topicNode);
     }, moduleNode ? 180 : 0);
   }
