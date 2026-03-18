@@ -51,14 +51,28 @@
   const searchIndex = buildSearchIndex(data.courses);
   const TOPIC_AUTOPLAY_DELAY_MS = 5000;
   const TOPIC_AUTOPLAY_RESUME_DELAY_MS = 10000;
+  const HEADER_COMPACT_ENTER_Y = 84;
+  const HEADER_COMPACT_EXIT_Y = 28;
 
   if (refs.catalogTitle) refs.catalogTitle.textContent = data.title || "Catalogo de Cursos";
   if (refs.catalogSubtitle) refs.catalogSubtitle.textContent = data.subtitle || "";
 
   bindEvents();
   render();
+  syncHeaderChrome();
 
   function bindEvents() {
+    let headerSyncQueued = false;
+
+    const queueHeaderSync = () => {
+      if (headerSyncQueued) return;
+      headerSyncQueued = true;
+      window.requestAnimationFrame(() => {
+        headerSyncQueued = false;
+        syncHeaderChrome();
+      });
+    };
+
     if (refs.searchInput) {
       refs.searchInput.addEventListener("input", (event) => {
         state.query = event.target.value.trim();
@@ -154,6 +168,18 @@
       if (event.target.closest(".search-wrap")) return;
       hideSearchSuggestions();
     });
+
+    window.addEventListener("scroll", queueHeaderSync, { passive: true });
+    window.addEventListener("resize", queueHeaderSync);
+  }
+
+  function syncHeaderChrome() {
+    if (!refs.siteHeader) return;
+    const isCompact = refs.siteHeader.classList.contains("is-compact");
+    const shouldCompact = isCompact
+      ? window.scrollY > HEADER_COMPACT_EXIT_Y
+      : window.scrollY > HEADER_COMPACT_ENTER_Y;
+    refs.siteHeader.classList.toggle("is-compact", shouldCompact);
   }
 
   function onSearchInputKeyDown(event) {
