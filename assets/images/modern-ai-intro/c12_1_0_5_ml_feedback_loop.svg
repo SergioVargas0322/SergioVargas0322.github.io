@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Ciclo de aprendizaje automático</title>
+  <desc id="desc">Diagrama del aprendizaje automático como un ciclo de datos, predicción, etiqueta correcta, medida de desempeño y ajuste del modelo.</desc>
+  <foreignObject x="0" y="0" width="1200" height="1040">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+      <style>
+        * { box-sizing: border-box; }
+        .page {
+          width: 1200px;
+          height: 1040px;
+          padding: 36px;
+          background: linear-gradient(135deg, #eef2ff 0%, #f7fbff 58%, #effaf6 100%);
+          font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+        .frame {
+          height: 100%;
+          padding: 34px 38px;
+          border-radius: 28px;
+          border: 3px solid #d7e0f1;
+          background: rgba(255, 255, 255, 0.96);
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+        }
+        h1, h2, p { margin: 0; }
+        h1 {
+          color: #1d2b4f;
+          font-size: 42px;
+          line-height: 1.05;
+        }
+        .lead {
+          color: #52627d;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 1.35;
+        }
+        .top {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 18px;
+        }
+        .panel {
+          padding: 20px 22px;
+          border-radius: 22px;
+          border: 2px solid;
+        }
+        .rules { background: #fff5ea; border-color: #e6cfb0; }
+        .examples { background: #eef8f9; border-color: #c1dcde; }
+        .panel h2 {
+          color: #203052;
+          font-size: 26px;
+          margin-bottom: 10px;
+        }
+        .panel p {
+          color: #50627a;
+          font-size: 18px;
+          line-height: 1.38;
+          font-weight: 600;
+        }
+        .flow {
+          display: grid;
+          grid-template-columns: repeat(6, minmax(0, 1fr));
+          gap: 16px;
+          align-items: stretch;
+        }
+        .node {
+          padding: 18px 16px;
+          border-radius: 20px;
+          border: 2px solid;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 10px;
+          min-height: 162px;
+        }
+        .node h2 {
+          font-size: 22px;
+          color: #203052;
+        }
+        .node p {
+          color: #52647d;
+          font-size: 17px;
+          line-height: 1.35;
+          font-weight: 600;
+        }
+        .n1 { background: #eef2ff; border-color: #cbd3f2; }
+        .n2 { background: #f1fbfb; border-color: #c1ddde; }
+        .n3 { background: #fff8ef; border-color: #e7cfb1; }
+        .n4 { background: #f5f1ff; border-color: #d8cdf3; }
+        .n5 { background: #eef8f1; border-color: #c8dccb; }
+        .n1, .n2, .n3 { grid-column: span 2; }
+        .n4, .n5 { grid-column: span 3; }
+        .footer {
+          margin-top: auto;
+          padding: 20px 24px;
+          border-radius: 24px;
+          background: #203052;
+          color: #fff;
+        }
+        .footer h2 {
+          color: #fff;
+          font-size: 25px;
+          margin-bottom: 10px;
+        }
+        .footer p {
+          color: #ecf1ff;
+          font-size: 18px;
+          line-height: 1.4;
+          font-weight: 600;
+        }
+      </style>
+      <div class="frame">
+        <h1>Aprender con retroalimentación</h1>
+        <p class="lead">El aprendizaje automático aparece como alternativa cuando escribir todas las reglas deja de ser sostenible. En vez de describir cada caso, se le enseña al sistema con ejemplos y una medida clara de acierto.</p>
+        <div class="top">
+          <div class="panel rules">
+            <h2>Enfoque basado en reglas</h2>
+            <p>Se parece a seguir un libro de cocina paso a paso: alguien define las instrucciones y la máquina solo las ejecuta.</p>
+          </div>
+          <div class="panel examples">
+            <h2>Enfoque basado en ejemplos</h2>
+            <p>Se parece a observar, intentar, corregir y volver a intentar. El sistema aprende porque compara su respuesta con la respuesta correcta.</p>
+          </div>
+        </div>
+        <div class="flow">
+          <div class="node n1">
+            <h2>1. Datos</h2>
+            <p>Se presentan ejemplos, como imágenes de panda y no panda.</p>
+          </div>
+          <div class="node n2">
+            <h2>2. Predicción</h2>
+            <p>El sistema produce una respuesta inicial con lo que sabe hasta ese momento.</p>
+          </div>
+          <div class="node n3">
+            <h2>3. Etiqueta correcta</h2>
+            <p>Se le muestra cuál era la respuesta esperada para ese ejemplo.</p>
+          </div>
+          <div class="node n4">
+            <h2>4. Medida</h2>
+            <p>Se calcula si la respuesta fue buena o mala con un criterio objetivo.</p>
+          </div>
+          <div class="node n5">
+            <h2>5. Ajuste</h2>
+            <p>El modelo corrige su comportamiento para rendir mejor en el siguiente intento.</p>
+          </div>
+        </div>
+        <div class="footer">
+          <h2>Idea central</h2>
+          <p>Aprender no significa memorizar respuestas exactas, sino mejorar de manera progresiva a partir de experiencia, medición y corrección. Esa lógica aparece en clasificadores simples y en herramientas de entrenamiento guiado.</p>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

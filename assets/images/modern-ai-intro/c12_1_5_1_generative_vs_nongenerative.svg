@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">IA generativa frente a no generativa</title>
+  <desc id="desc">Infografía que compara tareas de salida cerrada con tareas de salida abierta y creativa.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef8ff"/>
+      <stop offset="100%" stop-color="#fff7ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="32" fill="url(#bg)"/>
+  <style>
+    .fo-root, .fo-root * { box-sizing: border-box; }
+    .fo-root {
+      width: 100%;
+      height: 100%;
+      font-family: Aptos, "Segoe UI", Arial, sans-serif;
+      color: #273a69;
+    }
+    .canvas { width: 100%; height: 100%; padding: 28px; }
+    .shell {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border: 3px solid #cbd6f6;
+      border-radius: 28px;
+      padding: 28px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .heading { display: flex; flex-direction: column; gap: 10px; }
+    .heading h1 { margin: 0; font-size: 34px; line-height: 1.08; font-weight: 800; }
+    .heading p { margin: 0; max-width: 980px; font-size: 18px; line-height: 1.34; font-weight: 600; color: #5b6f95; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .card {
+      border-radius: 22px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 128px;
+    }
+    .card h2 { margin: 0; font-size: 19px; line-height: 1.14; font-weight: 800; }
+    .card p { margin: 0; font-size: 15px; line-height: 1.32; font-weight: 600; color: #42557c; }
+    .nongen { background: #eef8ff; border: 2px solid #b7dce8; }
+    .gen { background: #fff5ea; border: 2px solid #efc89b; }
+    .compare {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 14px;
+    }
+    .note, .mini {
+      border-radius: 22px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .note {
+      background: #f3f0ff;
+      border: 2px solid #d9cef8;
+    }
+    .mini {
+      background: #f6f8fb;
+      border: 2px solid #d9dfeb;
+    }
+    .note h2, .mini h2 { margin: 0; font-size: 21px; line-height: 1.14; font-weight: 800; }
+    .note p, .mini p { margin: 0; font-size: 15px; line-height: 1.32; font-weight: 600; color: #42557c; }
+    .takeaway {
+      background: #283a66;
+      border-radius: 22px;
+      padding: 18px 22px;
+      color: #fff;
+      text-align: center;
+    }
+    .takeaway p { margin: 0; font-size: 20px; line-height: 1.28; font-weight: 800; }
+  </style>
+  <foreignObject x="0" y="0" width="1200" height="700">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo-root">
+      <div class="canvas">
+        <div class="shell">
+          <div class="heading">
+            <h1>La diferencia clave está en el tipo de salida</h1>
+            <p>No toda IA “crea”. Algunas tareas eligen una respuesta dentro de un conjunto cerrado; otras producen algo nuevo y abierto.</p>
+          </div>
+
+          <div class="grid">
+            <article class="card nongen">
+              <h2>Clasificador de imagen</h2>
+              <p>Recibe una foto y elige una clase de una lista conocida. La salida está acotada.</p>
+            </article>
+            <article class="card nongen">
+              <h2>Análisis de sentimiento</h2>
+              <p>Lee un texto y devuelve una etiqueta como positivo, negativo o neutral.</p>
+            </article>
+            <article class="card gen">
+              <h2>Generación de imagen</h2>
+              <p>Parte de una descripción y crea una imagen nueva, no una elección entre fotos predefinidas.</p>
+            </article>
+            <article class="card gen">
+              <h2>Resumen o traducción abierta</h2>
+              <p>Produce texto propio y admite varias respuestas razonables para el mismo encargo.</p>
+            </article>
+          </div>
+
+          <div class="compare">
+            <section class="note">
+              <h2>Una forma útil de pensarlo</h2>
+              <p>La IA no generativa se parece más a una prueba de opción múltiple o a una predicción numérica. La generativa se parece más a una redacción abierta: hay varias salidas posibles que pueden ser válidas.</p>
+            </section>
+            <section class="mini">
+              <h2>Qué mirar primero</h2>
+              <p>Antes de preguntar “si usa IA”, conviene preguntar si el sistema selecciona entre respuestas previstas o si debe inventar una salida en el momento.</p>
+            </section>
+          </div>
+
+          <section class="takeaway">
+            <p>La pregunta correcta no es si “usa IA”, sino si la salida está cerrada y controlada o si es abierta y generada en el momento.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

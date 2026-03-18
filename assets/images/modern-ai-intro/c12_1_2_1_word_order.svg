@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="940" viewBox="0 0 1200 940" role="img" aria-labelledby="title desc">
+  <title id="title">Traducción automática: ambigüedad y orden de palabras</title>
+  <desc id="desc">Infografía sobre varios significados para una misma palabra, cambios de orden sintáctico y omisión de pronombres.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#fff8ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="940" rx="32" fill="url(#bg)"/>
+  <style>
+    .fo-root, .fo-root * { box-sizing: border-box; }
+    .fo-root {
+      width: 100%;
+      height: 100%;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #273a69;
+    }
+    .canvas {
+      width: 100%;
+      height: 100%;
+      padding: 40px;
+    }
+    .shell {
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      border: 3px solid #cbd6f6;
+      border-radius: 28px;
+      padding: 36px 38px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    .heading {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .heading h1 {
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.12;
+      font-weight: 800;
+      color: #273a69;
+    }
+    .heading p {
+      margin: 0;
+      max-width: 860px;
+      font-size: 18px;
+      line-height: 1.35;
+      font-weight: 600;
+      color: #5b6f95;
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+    .panel {
+      border-radius: 24px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      min-height: 0;
+    }
+    .panel-left {
+      background: #eef8ff;
+      border: 2px solid #b7dce8;
+    }
+    .panel-right {
+      background: #f4f6ff;
+      border: 2px solid #d7ddfb;
+    }
+    .panel h2 {
+      margin: 0;
+      font-size: 23px;
+      line-height: 1.18;
+      font-weight: 800;
+      color: #273a69;
+    }
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      min-height: 0;
+    }
+    .meaning-card,
+    .order-card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 16px 18px;
+      border: 2px solid #d6e4f2;
+      min-height: 0;
+    }
+    .meaning-card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .meaning-card .word {
+      margin: 0;
+      font-size: 21px;
+      line-height: 1.08;
+      font-weight: 800;
+    }
+    .meaning-card p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.32;
+      font-weight: 600;
+      color: #42557c;
+    }
+    .word-teal { color: #178ca7; }
+    .word-indigo { color: #5f67c8; }
+    .word-orange { color: #d88021; }
+    .order-card {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      gap: 16px;
+      align-items: start;
+    }
+    .labels, .values {
+      display: grid;
+      gap: 10px;
+    }
+    .labels span,
+    .values span {
+      display: block;
+      font-size: 18px;
+      line-height: 1.18;
+      font-weight: 700;
+      color: #273a69;
+    }
+    .takeaway {
+      margin-top: auto;
+      background: #283a66;
+      border-radius: 24px;
+      padding: 26px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      color: #ffffff;
+    }
+    .takeaway h3 {
+      margin: 0;
+      font-size: 25px;
+      line-height: 1.1;
+      font-weight: 800;
+    }
+    .takeaway p {
+      margin: 0;
+      max-width: 760px;
+      font-size: 18px;
+      line-height: 1.34;
+      font-weight: 600;
+      color: #ffffff;
+    }
+  </style>
+  <foreignObject x="0" y="0" width="1200" height="940">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo-root">
+      <div class="canvas">
+        <div class="shell">
+          <div class="heading">
+            <h1>Traducir no es alinear palabras una debajo de otra</h1>
+            <p>Una palabra puede activar varios significados, y la misma idea cambia de forma cuando cambia el idioma.</p>
+          </div>
+
+          <div class="columns">
+            <section class="panel panel-left">
+              <h2>Una palabra, varias lecturas</h2>
+              <div class="stack">
+                <article class="meaning-card">
+                  <p class="word word-teal">llamas</p>
+                  <p>puede ser fuego, animal o parte de “cómo te llamas”</p>
+                </article>
+                <article class="meaning-card">
+                  <p class="word word-indigo">light</p>
+                  <p>puede ser luz o algo ligero, según qué rasgo esté describiendo</p>
+                </article>
+                <article class="meaning-card">
+                  <p class="word word-orange">bank / banco</p>
+                  <p>institución financiera, orilla de río o incluso banco para sentarse</p>
+                </article>
+              </div>
+            </section>
+
+            <section class="panel panel-right">
+              <h2>Orden y piezas que cambian</h2>
+              <div class="stack">
+                <article class="order-card">
+                  <div class="labels">
+                    <span>Inglés</span>
+                    <span>Hindi</span>
+                  </div>
+                  <div class="values">
+                    <span>I ate the salad</span>
+                    <span>I the salad ate</span>
+                  </div>
+                </article>
+                <article class="order-card">
+                  <div class="labels">
+                    <span>Inglés</span>
+                    <span>Español</span>
+                  </div>
+                  <div class="values">
+                    <span>fresh salad</span>
+                    <span>ensalada fresca</span>
+                  </div>
+                </article>
+                <article class="order-card">
+                  <div class="labels">
+                    <span>Pronombre explícito</span>
+                    <span>Pronombre omitido</span>
+                  </div>
+                  <div class="values">
+                    <span>Yo comí</span>
+                    <span>Comí la ensalada</span>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+
+          <section class="takeaway">
+            <h3>Idea central</h3>
+            <p>Traducir exige escoger significado, reordenar la frase y decidir si ciertas piezas se muestran o se omiten. Una traducción literal puede conservar palabras y perder sentido.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

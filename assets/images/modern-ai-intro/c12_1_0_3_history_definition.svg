@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Cómo se empezó a definir la IA</title>
+  <desc id="desc">Línea de tiempo que resume el test de Turing, la conferencia de Dartmouth y una definición operativa de inteligencia artificial.</desc>
+  <foreignObject x="0" y="0" width="1200" height="900">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+      <style>
+        * { box-sizing: border-box; }
+        .page {
+          width: 1200px;
+          height: 900px;
+          padding: 36px;
+          background: linear-gradient(135deg, #eef1ff 0%, #f7fbff 55%, #fff5ea 100%);
+          font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+        .frame {
+          height: 100%;
+          padding: 34px 38px;
+          border-radius: 28px;
+          border: 3px solid #d8dff0;
+          background: rgba(255, 255, 255, 0.96);
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+        }
+        h1, h2, p { margin: 0; }
+        h1 {
+          color: #1d2b4f;
+          font-size: 42px;
+          line-height: 1.05;
+        }
+        .lead {
+          color: #54647f;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 1.35;
+          max-width: 980px;
+        }
+        .timeline {
+          position: relative;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 22px;
+          margin-top: 4px;
+        }
+        .timeline::before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          top: 18px;
+          bottom: 18px;
+          width: 4px;
+          border-radius: 999px;
+          background: linear-gradient(180deg, #8ea2df 0%, #c7d1f2 100%);
+          transform: translateX(-50%);
+        }
+        .card {
+          padding: 24px;
+          border-radius: 24px;
+          border: 2px solid;
+          background: #fff;
+          min-height: 264px;
+          position: relative;
+          z-index: 1;
+        }
+        .card h2 {
+          color: #203052;
+          font-size: 31px;
+          margin-bottom: 14px;
+        }
+        .card p {
+          color: #50627b;
+          font-size: 18px;
+          line-height: 1.38;
+          font-weight: 600;
+        }
+        .turing { background: #eef2ff; border-color: #cad3f2; }
+        .mccarthy { background: #fff4ea; border-color: #e7ccb0; }
+        .dot {
+          position: absolute;
+          top: 28px;
+          width: 22px;
+          height: 22px;
+          border-radius: 999px;
+          background: #4f5d91;
+          border: 4px solid #fff;
+        }
+        .left .dot { right: -34px; }
+        .right .dot { left: -34px; }
+        .definition {
+          margin-top: auto;
+          padding: 22px 24px;
+          border-radius: 24px;
+          background: linear-gradient(135deg, #203052 0%, #374873 100%);
+          color: #fff;
+        }
+        .definition h2 {
+          color: #fff;
+          font-size: 26px;
+          margin-bottom: 12px;
+        }
+        .definition p {
+          color: #edf2ff;
+          font-size: 18px;
+          line-height: 1.4;
+          font-weight: 600;
+        }
+      </style>
+      <div class="frame">
+        <h1>Cómo se empezó a definir la IA</h1>
+        <p class="lead">La definición de inteligencia artificial nace de una pregunta muy concreta: si una máquina puede realizar tareas que asociamos con inteligencia, incluso en una conversación donde existe ambigüedad.</p>
+        <div class="timeline">
+          <div class="card turing left">
+            <div class="dot"></div>
+            <h2>1950 · Alan Turing</h2>
+            <p>Turing propone el juego de imitación, hoy conocido como test de Turing. La idea es evaluar si un observador humano puede distinguir, solo por texto, entre una persona y una máquina.</p>
+          </div>
+          <div class="card mccarthy right">
+            <div class="dot"></div>
+            <h2>1956 · John McCarthy</h2>
+            <p>En Dartmouth se consolida el término inteligencia artificial y se plantea investigar si el aprendizaje y otros rasgos de la inteligencia pueden describirse con suficiente precisión para ser simulados por máquinas.</p>
+          </div>
+        </div>
+        <div class="definition">
+          <h2>Definición operativa</h2>
+          <p>La IA puede entenderse como la ciencia e ingeniería de construir máquinas inteligentes: sistemas orientados a tareas, capaces de producir resultados útiles, aprender de la experiencia y actuar razonablemente aun cuando el contexto no sea completamente claro.</p>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

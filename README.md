@@ -4,7 +4,7 @@ Catálogo web para organizar y consultar cursos de Cisco por curso, módulo y te
 
 ## Estado actual
 - Proyecto activo: `CursosCISCO`.
-- Cursos cargados actualmente: 11.
+- Cursos cargados actualmente: 13.
 - Flujo de trabajo: mejora incremental de contenido tema por tema.
 
 ## Cursos incluidos
@@ -19,6 +19,8 @@ Catálogo web para organizar y consultar cursos de Cisco por curso, módulo y te
 - Introducción a Ciberseguridad
 - Introducción al Internet de las Cosas y Transformación Digital
 - Exploración de IoT con Cisco Packet Tracer
+- Introducción a la IA moderna
+- Introducción a la Ciencia de Datos
 
 ## Estructura principal
 - `index.html`: interfaz del catálogo.

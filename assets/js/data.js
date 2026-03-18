@@ -1,4 +1,4 @@
-(() => {
+﻿(() => {
   window.CATALOG_DATA = {
     title: "Catálogo de Cursos Cisco",
     subtitle: "Consulta personal para reforzar contenidos por curso, módulo y tema.",
@@ -11998,8 +11998,1005 @@
             ]
           }
         ]
+      },
+      {
+        id: "modern-ai-intro",
+        title: "Introducci\u00f3n a la IA moderna",
+        provider: "Cisco Networking Academy",
+        level: "Fundamentos",
+        status: "En curso",
+        estimatedHours: 18,
+        summary:
+          "Curso introductorio sobre inteligencia artificial moderna con enfoque pr\u00e1ctico en aprendizaje autom\u00e1tico, visi\u00f3n artificial, traducci\u00f3n autom\u00e1tica, chatbots e IA generativa para uso cotidiano y profesional.",
+        tags: [
+          "ia",
+          "aprendizaje-autom\u00e1tico",
+          "visi\u00f3n-artificial",
+          "traducci\u00f3n-autom\u00e1tica",
+          "chatbots",
+          "ia-generativa"
+        ],
+        modules: [
+          {
+            key: "M1",
+            title: "M\u00f3dulo 1: Introducci\u00f3n a la IA moderna",
+            topics: [
+              {
+                code: "1.0",
+                title: "IA, aprendizaje autom\u00e1tico y modelos",
+                summary:
+                  "Base conceptual de la IA moderna: qu\u00e9 resuelve, c\u00f3mo se distinguen las tareas simples de las tareas inteligentes y por qu\u00e9 el aprendizaje autom\u00e1tico y los modelos permiten abordar problemas m\u00e1s complejos.",
+                images: [
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_0_1_ai_everyday.svg",
+                    alt: "Infograf\u00eda sobre aplicaciones cotidianas de inteligencia artificial en voz, visi\u00f3n, traducci\u00f3n y chatbots."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_0_2_course_outcomes.svg",
+                    alt: "Resumen visual de capacidades pr\u00e1cticas relacionadas con traducci\u00f3n, escritura, entrevistas simuladas y uso guiado de herramientas de IA."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_0_3_history_definition.svg",
+                    alt: "L\u00ednea de tiempo con Alan Turing, John McCarthy y las primeras definiciones de inteligencia artificial."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_0_4_intelligence_spectrum.svg",
+                    alt: "Escala visual de tareas con distinto nivel de dificultad para una m\u00e1quina, desde reglas simples hasta ambig\u00fcedad."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_0_5_ml_feedback_loop.svg",
+                    alt: "Diagrama del ciclo de aprendizaje autom\u00e1tico con ejemplos, predicci\u00f3n, etiqueta correcta y ajuste del modelo."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_0_6_model_training.svg",
+                    alt: "Esquema de entrenamiento de un modelo con features, par\u00e1metros, salida, etiqueta y optimizador."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_0_7_big_picture.svg",
+                    alt: "Mapa general de inteligencia artificial, aprendizaje autom\u00e1tico, modelos y aplicaciones pr\u00e1cticas."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Panorama inicial",
+                    items: [
+                      "La IA ya aparece en funciones normales como dictado por voz, reconocimiento visual, traducci\u00f3n autom\u00e1tica y chat conversacional.",
+                      "Las herramientas reales permiten entender la IA desde tareas concretas y no solo desde definiciones abstractas.",
+                      "La meta pr\u00e1ctica es usar IA para aprender, redactar, comparar respuestas, preparar entrevistas y resolver tareas cotidianas."
+                    ]
+                  },
+                  {
+                    title: "Definici\u00f3n y criterio de inteligencia",
+                    items: [
+                      "El test de Turing y la formulaci\u00f3n de John McCarthy ayudan a entender la IA como la ciencia e ingenier\u00eda de construir m\u00e1quinas inteligentes.",
+                      "La inteligencia se presenta como un espectro: algunas tareas se resuelven con reglas directas, mientras otras exigen contexto, inferencia y manejo de ambig\u00fcedad.",
+                      "Cuantas m\u00e1s excepciones y decisiones abiertas requiere una tarea, m\u00e1s \u00fatil resulta un enfoque basado en aprendizaje y no solo en reglas manuales."
+                    ]
+                  },
+                  {
+                    title: "Aprendizaje autom\u00e1tico y modelos",
+                    items: [
+                      "El aprendizaje autom\u00e1tico aparece cuando ya no basta con escribir reglas: el sistema mejora usando datos, ejemplos y retroalimentaci\u00f3n medible.",
+                      "Un modelo recibe entradas, produce una salida y ajusta par\u00e1metros durante el entrenamiento al compararse con una etiqueta correcta.",
+                      "Los conceptos base de este panorama son features, medida de desempe\u00f1o, optimizador, entrenamiento, inferencia y redes neuronales."
+                    ]
+                  },
+                  {
+                    title: "Mapa para orientarse",
+                    items: [
+                      "Conviene empezar por el mapa general: IA como campo amplio, aprendizaje autom\u00e1tico como sub\u00e1rea y modelos como herramientas concretas.",
+                      "Despu\u00e9s resulta m\u00e1s f\u00e1cil ubicar aplicaciones como visi\u00f3n artificial, traducci\u00f3n, chatbots y generaci\u00f3n dentro de una misma l\u00f3gica t\u00e9cnica.",
+                      "La analog\u00eda de la tostadora basta para fijar la idea central sin perderse todav\u00eda en demasiado detalle."
+                    ]
+                  },
+                  {
+                    title: "Resultado esperado",
+                    items: [
+                      "Quedar con una base conceptual clara para entrar a visi\u00f3n artificial sin sentir que cada concepto aparece aislado.",
+                      "Entender qu\u00e9 resuelve la IA moderna, por qu\u00e9 aprende con datos y c\u00f3mo se conectan entre s\u00ed sus aplicaciones principales."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.1",
+                title: "Visi\u00f3n artificial",
+                summary:
+                  "Explica c\u00f3mo la visi\u00f3n artificial localiza objetos, compara im\u00e1genes por cercan\u00eda, separa regiones a nivel de p\u00edxel y extrae texto para volverlo utilizable.",
+                images: [
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_1_1_object_detection.svg",
+                    alt: "Diagrama de localizaci\u00f3n, clasificaci\u00f3n y detecci\u00f3n de objetos con cuadros delimitadores y etiquetas."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_1_2_similarity_search.svg",
+                    alt: "Explicaci\u00f3n visual de embeddings y b\u00fasqueda de similitud mediante distancia entre representaciones."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_1_3_image_segmentation.svg",
+                    alt: "Proceso de segmentaci\u00f3n de im\u00e1genes con m\u00e1scara, sujeto y fondo desenfocado."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_1_4_ocr_pipeline.svg",
+                    alt: "Flujo de OCR para detectar caracteres, reconocer texto y reutilizarlo o traducirlo."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_1_5_incubation_break.svg",
+                    alt: "Esquema de preparaci\u00f3n, pausa, iluminaci\u00f3n y verificaci\u00f3n para consolidar aprendizaje."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Encontrar y nombrar objetos",
+                    items: [
+                      "La localizaci\u00f3n marca con cuadros delimitadores las regiones donde aparece algo relevante, mientras la clasificaci\u00f3n asigna una etiqueta a lo que hay dentro de la imagen o dentro de cada recorte.",
+                      "La detecci\u00f3n de objetos surge al combinar ambas tareas: indica d\u00f3nde est\u00e1 un objeto y qu\u00e9 objeto es, incluso cuando hay varios en una misma fotograf\u00eda.",
+                      "El resultado puede cambiar seg\u00fan el \u00e1ngulo de la c\u00e1mara, el encuadre y qu\u00e9 tan ajustado est\u00e9 el cuadro delimitador alrededor del objeto."
+                    ]
+                  },
+                  {
+                    title: "Comparar im\u00e1genes por cercan\u00eda",
+                    items: [
+                      "La b\u00fasqueda de similitud representa una imagen mediante un embedding, es decir, una lista compacta de n\u00fameros que resume sus rasgos importantes.",
+                      "Dos im\u00e1genes se consideran parecidas cuando la distancia entre sus embeddings es corta dentro de ese espacio num\u00e9rico.",
+                      "La misma idea puede aplicarse a im\u00e1genes, audio o texto para recuperar elementos parecidos sin depender solo de etiquetas expl\u00edcitas."
+                    ]
+                  },
+                  {
+                    title: "Separar regiones y extraer texto",
+                    items: [
+                      "La segmentaci\u00f3n decide p\u00edxel por p\u00edxel qu\u00e9 pertenece al sujeto y qu\u00e9 pertenece al fondo, y esa m\u00e1scara permite desenfocar, resaltar o reemplazar regiones con m\u00e1s precisi\u00f3n.",
+                      "El OCR tambi\u00e9n parte de localizar regiones, pero luego clasifica caracteres para convertir texto dentro de una imagen en contenido editable, copiable o traducible.",
+                      "Ambas t\u00e9cnicas convierten una imagen en una estructura m\u00e1s manipulable: una m\u00e1scara para editar y texto para reutilizar."
+                    ]
+                  },
+                  {
+                    title: "Criterio humano y pausa estrat\u00e9gica",
+                    items: [
+                      "La visi\u00f3n artificial puede fallar cuando el objeto est\u00e1 mal encuadrado, el texto sigue una forma poco habitual o la imagen no ofrece suficiente contexto, por eso el usuario sigue validando el resultado.",
+                      "Cuando una tarea visual o de estudio se atasca, conviene alternar entre preparaci\u00f3n, pausa, iluminaci\u00f3n y verificaci\u00f3n; ese ciclo ayuda a volver con una perspectiva m\u00e1s clara.",
+                      "Tomar un descanso no interrumpe necesariamente el aprendizaje: tambi\u00e9n puede mejorar la comprensi\u00f3n y la calidad de las decisiones al volver al problema."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.2",
+                title: "Traducci\u00f3n autom\u00e1tica",
+                summary:
+                  "Traducir bien exige interpretar ambig\u00fcedad l\u00e9xica, orden de palabras, contexto social, expresiones idiom\u00e1ticas y relaciones que pueden quedar muy separadas dentro del texto.",
+                images: [
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_2_1_word_order.svg",
+                    alt: "Resumen visual de ambig\u00fcedad l\u00e9xica, orden de palabras y omisi\u00f3n de pronombres en traducci\u00f3n autom\u00e1tica."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_2_2_context_translation.svg",
+                    alt: "Comparaci\u00f3n entre registro informal y formal para mostrar c\u00f3mo el contexto cambia la traducci\u00f3n."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_2_3_literal_vs_idiomatic.svg",
+                    alt: "Explicaci\u00f3n visual de traducci\u00f3n literal frente a traducci\u00f3n idiom\u00e1tica con la expresi\u00f3n piece of cake."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_2_4_long_distance_dependencies.svg",
+                    alt: "Esquema de dependencias largas entre sustantivos, pronombres y concordancia de g\u00e9nero."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_2_5_detective_context.svg",
+                    alt: "M\u00e9todo de prueba paso a paso para revisar traducciones y detectar patrones de comportamiento."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Una palabra no siempre tiene un solo sentido",
+                    items: [
+                      "Palabras como \"llamas\", \"light\" o \"bank\" pueden activar significados distintos seg\u00fan la frase donde aparecen, as\u00ed que un diccionario aislado no basta para traducir bien.",
+                      "La ambig\u00fcedad tambi\u00e9n aparece cuando dos palabras comparten escritura o pronunciaci\u00f3n; por eso el sistema necesita mirar alrededor antes de decidir.",
+                      "La traducci\u00f3n autom\u00e1tica empieza resolviendo una pregunta b\u00e1sica: cu\u00e1l de todos los significados posibles es el que realmente encaja aqu\u00ed."
+                    ]
+                  },
+                  {
+                    title: "Orden, omisiones y concordancia",
+                    items: [
+                      "Los idiomas no ordenan igual sujeto, verbo y objeto; lo que en ingl\u00e9s aparece como sujeto-verbo-objeto puede pasar a sujeto-objeto-verbo en otros idiomas.",
+                      "Tambi\u00e9n cambian el lugar de los adjetivos y, en algunas lenguas, ciertos pronombres pueden omitirse sin que la frase deje de entenderse.",
+                      "Traducir implica reorganizar la frase completa, no mover cada palabra al mismo lugar que ocupaba en el original."
+                    ]
+                  },
+                  {
+                    title: "El contexto decide el registro y el sentido",
+                    items: [
+                      "Las palabras cercanas aportan pistas sobre tono, intenci\u00f3n y relaci\u00f3n entre hablantes; eso permite distinguir, por ejemplo, entre un trato informal y uno formal.",
+                      "El contexto tambi\u00e9n evita sacar frases de su entorno real, porque un fragmento aislado puede cambiar por completo el sentido de lo que se quiso decir.",
+                      "Los modelos intentan aprovechar esas pistas, pero no siguen reglas r\u00edgidas: a veces necesitan varias se\u00f1ales al mismo tiempo para elegir la forma correcta."
+                    ]
+                  },
+                  {
+                    title: "Literal frente a idiom\u00e1tico",
+                    items: [
+                      "Expresiones como \"piece of cake\" pueden significar una porci\u00f3n de pastel o que algo fue muy f\u00e1cil; traducir palabra por palabra no siempre conserva la intenci\u00f3n.",
+                      "Cuando el sistema interpreta que hay una expresi\u00f3n cultural, busca un equivalente natural en el idioma destino en lugar de copiar la imagen literal.",
+                      "Un peque\u00f1o cambio de contexto puede hacer que la misma frase pase de traducci\u00f3n literal a idiom\u00e1tica, o viceversa."
+                    ]
+                  },
+                  {
+                    title: "Dependencias largas y revisi\u00f3n activa",
+                    items: [
+                      "Cuando un sustantivo y el pronombre que lo retoma quedan muy separados, la traducci\u00f3n puede perder la relaci\u00f3n entre ambos y fallar en concordancia o referencia.",
+                      "Ese tipo de error aparece, por ejemplo, cuando \"it\" deja de vincularse con un nombre femenino y el sistema cae en una forma masculina por defecto.",
+                      "La mejor forma de revisar una traducci\u00f3n es probar una variable a la vez, comparar contra casos cuyo resultado ya conoces y observar en qu\u00e9 momento cambia el patr\u00f3n."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.3",
+                title: "Descripci\u00f3n general de los chatbots",
+                summary:
+                  "Resume qu\u00e9 puede hacer un chatbot, c\u00f3mo los modelos de lenguaje generan texto, por qu\u00e9 aparecen alucinaciones o sesgos de contexto y qu\u00e9 pr\u00e1cticas vuelven m\u00e1s fiable su uso.",
+                images: [
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_3_1_chatbot_map.svg",
+                    alt: "Mapa visual de prompt, respuesta y principales familias de tareas de un chatbot."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_3_2_next_word_prediction.svg",
+                    alt: "Esquema de generaci\u00f3n palabra por palabra y comparaci\u00f3n entre responder primero o razonar primero."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_3_3_memory_and_hallucination.svg",
+                    alt: "Comparaci\u00f3n entre alucinaciones y memoria conversacional, con se\u00f1ales para revisar respuestas de chatbots."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_3_4_model_choice.svg",
+                    alt: "Comparaci\u00f3n entre tareas f\u00e1ciles y dif\u00edciles, uso de varios chatbots y elecci\u00f3n entre modelos alojados o locales."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_3_5_prompt_and_verify.svg",
+                    alt: "Checklist para escribir prompts con m\u00e1s contexto y verificar antes de confiar en una respuesta."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Mapa r\u00e1pido",
+                    items: [
+                      "Prompt es la entrada; completion o respuesta es la salida.",
+                      "Las tareas m\u00e1s comunes se pueden agrupar en expandir, sintetizar, transformar, evaluar, conversar, tomar acciones y combinar imagen con texto."
+                    ]
+                  },
+                  {
+                    title: "C\u00f3mo sale una respuesta",
+                    items: [
+                      "Un modelo de lenguaje grande genera texto prediciendo la siguiente palabra o fragmento a partir de lo que ya ley\u00f3 y de lo que \u00e9l mismo acaba de escribir.",
+                      "Por eso suele ayudar pedir primero razonamiento, esquema, investigaci\u00f3n o pasos intermedios y dejar la respuesta final para despu\u00e9s."
+                    ]
+                  },
+                  {
+                    title: "L\u00edmites que importan",
+                    items: [
+                      "Las alucinaciones aparecen cuando el sistema llena huecos con una respuesta plausible pero no comprobada.",
+                      "La memoria conversacional arrastra contexto reciente y puede sesgar respuestas posteriores aunque la pregunta nueva sea ambigua.",
+                      "Las tareas con una sola respuesta correcta, varios pasos o menos datos de entrenamiento suelen requerir m\u00e1s revisi\u00f3n."
+                    ]
+                  },
+                  {
+                    title: "Elegir herramienta",
+                    items: [
+                      "Comparar varios chatbots funciona como una segunda opini\u00f3n y deja ver fortalezas, l\u00edmites y estilos de respuesta distintos.",
+                      "Los modelos alojados suelen rendir mejor en tareas dif\u00edciles; los modelos descargables aportan privacidad, uso sin internet y menor costo energ\u00e9tico para tareas simples."
+                    ]
+                  },
+                  {
+                    title: "Prompt y verificaci\u00f3n",
+                    items: [
+                      "Un buen prompt aporta contexto, subtareas, formato esperado, criterio de calidad y, si hace falta, ejemplos o un rol temporal.",
+                      "Antes de confiar en una tarea compleja, conviene probar una versi\u00f3n m\u00e1s f\u00e1cil de verificar contra la fuente original."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.4",
+                title: "Formas de usar chatbots",
+                summary:
+                  "Agrupa los usos pr\u00e1cticos m\u00e1s comunes de un chatbot: expandir preguntas, generar ideas, sintetizar fuentes, etiquetar grandes vol\u00famenes de texto, transformar o evaluar contenido, practicar conversaciones y activar herramientas o entradas multimodales.",
+                images: [
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_4_1_expand_questions.svg",
+                    alt: "Mapa visual de c\u00f3mo ampliar preguntas con estructura, seguimiento, reflexi\u00f3n y aclaraciones."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_4_2_generate_ideas.svg",
+                    alt: "Resumen visual de generaci\u00f3n de ideas con varias opciones, an\u00e1lisis de ejemplos y uso de rol o contexto."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_4_3_summarize_sources.svg",
+                    alt: "Flujo para resumir fuentes largas con foco tem\u00e1tico, citas y verificaci\u00f3n contra el material original."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_4_4_label_replies.svg",
+                    alt: "Esquema de etiquetado de muchas respuestas de texto para luego contarlas y sintetizarlas."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_4_5_transform_evaluate.svg",
+                    alt: "Comparaci\u00f3n entre transformar contenido y evaluar respuestas con verificaci\u00f3n y criterios expl\u00edcitos."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_4_6_chat_practice.svg",
+                    alt: "Ejemplos de conversaci\u00f3n abierta, entrevista simulada y colaboraci\u00f3n entre roles de chatbot."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_4_7_tools_multimodal.svg",
+                    alt: "Uso de herramientas, asistentes personales, generaci\u00f3n de im\u00e1genes y prompts con imagen m\u00e1s texto."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Expandir preguntas",
+                    items: [
+                      "Pedir comparar, listar, describir o explicar con preguntas de seguimiento da m\u00e1s profundidad que una sola consulta gen\u00e9rica.",
+                      "Tambi\u00e9n sirve para llenar huecos de memoria, aclarar una confusi\u00f3n y pedir que revise su propia respuesta."
+                    ]
+                  },
+                  {
+                    title: "Generar ideas",
+                    items: [
+                      "Conviene pedir varias opciones, no una sola, y luego analizar por qu\u00e9 una propuesta funciona para generar variantes.",
+                      "Los roles, el contexto personal y el tono deseado vuelven la lluvia de ideas m\u00e1s espec\u00edfica y menos gen\u00e9rica."
+                    ]
+                  },
+                  {
+                    title: "Sintetizar fuentes",
+                    items: [
+                      "Resumir un art\u00edculo largo funciona mejor si indicas el subtema de inter\u00e9s y puedes verificar citas o fragmentos contra la fuente.",
+                      "Si necesitas wording exacto, es mejor pedir citas directas o texto relevante extra\u00eddo palabra por palabra."
+                    ]
+                  },
+                  {
+                    title: "Etiquetar y agrupar texto",
+                    items: [
+                      "Etiquetar por tema, sentimiento o postura convierte muchas respuestas sueltas en una tabla que luego se puede contar y resumir.",
+                      "Antes de sintetizar, conviene verificar que el enlace o documento incluya todo el material y definir reglas como un conteo por respuesta.",
+                      "En prompts largos ayuda poner la tarea al principio y usar delimitadores para que el objetivo no se pierda en medio del contexto."
+                    ]
+                  },
+                  {
+                    title: "Transformar y evaluar",
+                    items: [
+                      "Transformar incluye traducir con opciones literales o idiom\u00e1ticas, reformular para otra audiencia y revisar claridad o estilo.",
+                      "Evaluar incluye verificar hechos, calificar con escalas o r\u00fabricas y justificar por qu\u00e9 una respuesta merece cierta nota."
+                    ]
+                  },
+                  {
+                    title: "Conversar y practicar",
+                    items: [
+                      "La conversaci\u00f3n continua permite profundizar un tema, dejar que el chatbot haga preguntas y ensayar situaciones como una entrevista.",
+                      "Trabajar con dos roles o dos chatbots distintos sirve para simular colaboraci\u00f3n, revisi\u00f3n y coaching."
+                    ]
+                  },
+                  {
+                    title: "Herramientas e inputs multimodales",
+                    items: [
+                      "Un chatbot puede apoyarse en b\u00fasquedas, c\u00f3digo, asistentes personales o generadores de im\u00e1genes para pasar del texto a la acci\u00f3n.",
+                      "Con imagen m\u00e1s texto conviene pedir primero qu\u00e9 se ve y luego la tarea, porque el fondo y el contexto pueden cambiar la interpretaci\u00f3n."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.5",
+                title: "IA generativa y otras palabras de vocabulario",
+                summary:
+                  "Ordena vocabulario frecuente alrededor de la IA moderna: qu\u00e9 vuelve generativa a una tarea, c\u00f3mo se relacionan transformadores, modelos fundamentales y ajuste por instrucciones, qu\u00e9 significan compresi\u00f3n y GPU, y c\u00f3mo RAG, ajuste fino, agentes y apilamiento de habilidades encajan en un panorama pr\u00e1ctico.",
+                images: [
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_5_1_generative_vs_nongenerative.svg",
+                    alt: "Comparaci\u00f3n visual entre tareas generativas y no generativas con ejemplos de clasificaci\u00f3n, resumen e imagen."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_5_2_foundation_transformers.svg",
+                    alt: "Resumen de transformadores, modelos fundamentales, modelo base, ajuste por instrucciones y sigla GPT."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_5_3_compression_gpu.svg",
+                    alt: "Infograf\u00eda sobre cuantizaci\u00f3n, destilaci\u00f3n, poda y papel de la GPU en entrenamiento e inferencia."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_5_4_rag_finetuning_agents.svg",
+                    alt: "Diferencias entre RAG, ajuste fino y agentes con \u00e9nfasis en recuperaci\u00f3n, entrenamiento y autonom\u00eda."
+                  },
+                  {
+                    src: "./assets/images/modern-ai-intro/c12_1_5_5_skill_stacking.svg",
+                    alt: "Mapa de apilamiento de habilidades para combinar intereses creativos y t\u00e9cnicos en una propuesta diferencial."
+                  }
+                ],
+                sections: [
+                  {
+                    title: "Generativa vs no generativa",
+                    items: [
+                      "Una tarea es no generativa cuando la salida viene de un conjunto cerrado: clase, n\u00famero, s\u00ed/no o selecci\u00f3n entre opciones.",
+                      "Es generativa cuando produce contenido abierto como texto, imagen, audio o una traducci\u00f3n con varias respuestas posibles.",
+                      "Un mismo problema puede abordarse de las dos formas seg\u00fan el tipo de salida que exijas."
+                    ]
+                  },
+                  {
+                    title: "Transformadores y modelos fundamentales",
+                    items: [
+                      "Los transformadores son redes de secuencia que procesan muchos tokens en paralelo y por eso escalan mejor que modelos secuenciales m\u00e1s antiguos.",
+                      "Un modelo fundamental aprende una habilidad amplia sobre un dominio y luego puede generalizar a muchas tareas si recibe buenas instrucciones.",
+                      "Modelo base, ajuste por instrucciones y GPT describen etapas o etiquetas de ese recorrido."
+                    ]
+                  },
+                  {
+                    title: "Compresi\u00f3n y hardware",
+                    items: [
+                      "Cuantizaci\u00f3n, destilaci\u00f3n y poda reducen tama\u00f1o para que un modelo pueda ejecutarse con menos memoria o en hardware m\u00e1s modesto.",
+                      "La GPU acelera el c\u00e1lculo paralelo y por eso es clave en entrenamiento e inferencia, mientras la CPU coordina y delega ese trabajo pesado."
+                    ]
+                  },
+                  {
+                    title: "RAG, ajuste fino y agentes",
+                    items: [
+                      "RAG recupera fragmentos relevantes desde una base vectorial para anclar la respuesta en informaci\u00f3n espec\u00edfica del dominio.",
+                      "El ajuste fino ense\u00f1a al modelo con datos curados de un dominio o comportamiento concreto; no es lo mismo que recuperar texto al vuelo.",
+                      "Los agentes a\u00f1aden planificaci\u00f3n, reflexi\u00f3n, uso de herramientas y colaboraci\u00f3n sobre un LLM."
+                    ]
+                  },
+                  {
+                    title: "Apilamiento de habilidades",
+                    items: [
+                      "Destacar no siempre significa ser el mejor en una sola cosa; muchas veces pesa m\u00e1s combinar dos o tres habilidades poco comunes.",
+                      "El valor aumenta cuando una afici\u00f3n creativa y una competencia t\u00e9cnica se refuerzan mutuamente en un contexto profesional."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+        ]
+      },
+      {
+        id: "data-science-intro",
+        title: "Introducci\u00f3n a la Ciencia de Datos",
+        provider: "Cisco Networking Academy",
+        level: "Fundamentos",
+        status: "En curso",
+        estimatedHours: 12,
+        summary:
+          "Curso introductorio para comprender fuentes de datos, visualizaci\u00f3n, big data, inteligencia artificial, aprendizaje autom\u00e1tico y rutas profesionales en an\u00e1lisis de datos.",
+        tags: [
+          "ciencia-de-datos",
+          "an\u00e1lisis-de-datos",
+          "visualizaci\u00f3n",
+          "big-data",
+          "aprendizaje-autom\u00e1tico",
+          "carreras"
+        ],
+        modules: [
+          {
+            key: "M1",
+            title: "\u00bfQu\u00e9 son los Datos?",
+            topics: [
+              {
+                code: "1.1.1",
+                title: "V\u00eddeo - \u00bfQu\u00e9 son los Datos y de D\u00f3nde Provienen?",
+                summary:
+                  "Explica c\u00f3mo generamos datos voluntarios, observados e inferidos y por qu\u00e9 el an\u00e1lisis les da valor.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Las personas producen datos al llenar formularios, usar servicios, desplazarse o interactuar en l\u00ednea.",
+                      "El an\u00e1lisis convierte registros aislados en informaci\u00f3n accionable para personalizar servicios y entender comportamientos."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.1.3",
+                title: "V\u00eddeo - Uso de Datos en la Vida Diaria",
+                summary:
+                  "Muestra c\u00f3mo la recopilaci\u00f3n y el an\u00e1lisis de datos ya influyen en decisiones, recomendaciones y mejoras de productos.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Los datos provienen de sensores, dispositivos, aplicaciones, registros, redes sociales y servicios web.",
+                      "Su uso permite recomendar productos, mejorar procesos, seguir eventos y entender mejor el comportamiento de los usuarios."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.1.5",
+                title: "La Importancia de la Visualizaci\u00f3n",
+                summary:
+                  "Introduce la visualizaci\u00f3n como herramienta esencial para comunicar patrones, tendencias y hallazgos de manera comprensible.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "No basta con analizar datos: tambi\u00e9n hay que presentarlos de forma clara para apoyar decisiones.",
+                      "Elegir bien una visualizaci\u00f3n depende del tipo de variables, la cantidad de datos y la historia que se quiere contar."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.1.6",
+                title: "Formas de Visualizar los Datos",
+                summary:
+                  "Repasa distintos tipos de gr\u00e1ficos y sus casos de uso para representar comparaciones, tendencias y distribuciones.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Cada gr\u00e1fico sirve mejor para ciertos escenarios, como l\u00edneas para tendencias o barras para comparaciones.",
+                      "La visualizaci\u00f3n correcta hace m\u00e1s intuitivos datos complejos y evita interpretaciones enga\u00f1osas."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M2",
+            title: "Los Datos nos Rodean",
+            topics: [
+              {
+                code: "1.2.1",
+                title: "Datos Discretos vs Continuos",
+                summary:
+                  "Diferencia entre datos cualitativos y cuantitativos, y dentro de estos \u00faltimos entre discretos y continuos.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Los datos cualitativos describen atributos, mientras que los cuantitativos expresan cantidades medibles.",
+                      "Los discretos toman valores contables y los continuos pueden asumir valores dentro de un rango."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.2.3",
+                title: "Tipos de Datos",
+                summary:
+                  "Explica c\u00f3mo los tipos de datos determinan qu\u00e9 operaciones, validaciones y an\u00e1lisis son posibles en una tabla o sistema.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Identificar el tipo correcto de cada campo mejora la calidad del modelado, el almacenamiento y el an\u00e1lisis.",
+                      "Texto, fechas, n\u00fameros y otros tipos se tratan de manera distinta dentro de las aplicaciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.2.5",
+                title: "Variedad de Datos",
+                summary:
+                  "Describe la creciente diversidad de formatos de datos generados por dispositivos, plataformas y servicios digitales.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "La expansi\u00f3n tecnol\u00f3gica ha multiplicado la variedad de datos disponibles, desde texto hasta audio, video y telemetr\u00eda.",
+                      "Analizar datos modernos exige reconocer que no todos comparten la misma estructura ni el mismo nivel de preparaci\u00f3n."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.2.6",
+                title: "Datos Estructurados y No Estructurados",
+                summary:
+                  "Compara datos organizados en filas y columnas con informaci\u00f3n libre que requiere m\u00e9todos distintos de gesti\u00f3n.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Los datos estructurados son m\u00e1s f\u00e1ciles de almacenar y consultar mediante esquemas claros.",
+                      "Los datos no estructurados representan la mayor parte del volumen actual y requieren procesos m\u00e1s complejos para explotarse."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.2.8",
+                title: "Selecci\u00f3n de Datos Relevantes",
+                summary:
+                  "Plantea la importancia de definir primero la pregunta del negocio para elegir solo los datos que aportan valor.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Seleccionar datos relevantes evita ruido, reduce esfuerzo y mejora la utilidad del an\u00e1lisis.",
+                      "La pertinencia de una variable siempre depende del problema que se desea resolver."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M3",
+            title: "Comprensi\u00f3n del Negocio",
+            topics: [
+              {
+                code: "1.3.1",
+                title: "V\u00eddeo - An\u00e1lisis de Datos para Ideas de Negocios",
+                summary:
+                  "Introduce c\u00f3mo la ciencia de datos impulsa innovaci\u00f3n, eficiencia y reducci\u00f3n de riesgo en empresas.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "El tipo de anal\u00edtica elegido depende del problema: no todo reto empresarial requiere la misma aproximaci\u00f3n.",
+                      "Analizar tendencias y KPI permite detectar oportunidades, ajustar procesos y tomar decisiones mejor informadas."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.3.3",
+                title: "V\u00eddeo - Perspectivas Humanitarias a partir de An\u00e1lisis de Datos",
+                summary:
+                  "Muestra c\u00f3mo el an\u00e1lisis de datos tambi\u00e9n ayuda a organizaciones humanitarias a anticipar y coordinar respuestas.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Los datos permiten prever sequ\u00edas, desplazamientos y necesidades de ayuda en comunidades vulnerables.",
+                      "Sat\u00e9lites, sensores, c\u00e1maras y redes sociales aportan evidencias para decidir mejor d\u00f3nde actuar."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.3.4",
+                title: "Ejemplos Sociales",
+                summary:
+                  "Presenta casos donde organizaciones y comunidades usan datos para responder a crisis y resolver problemas reales.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "La disponibilidad de datos compartidos mejora la coordinaci\u00f3n de la ayuda y la capacidad de prevenci\u00f3n.",
+                      "Competencias y proyectos colaborativos demuestran que la ciencia de datos tambi\u00e9n tiene un fuerte impacto social."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.3.5",
+                title: "Elemento de Pr\u00e1ctica - Ejemplos Sociales",
+                summary:
+                  "Ejercicio aplicado para interpretar gr\u00e1ficos y estimar consecuencias sociales a partir de indicadores de cambio.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "La pr\u00e1ctica obliga a pasar de la lectura de datos a la formulaci\u00f3n de conclusiones con impacto humano.",
+                      "Predecir afectaciones futuras requiere observar tendencias y relacionarlas con poblaciones o contextos concretos."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "1.3.6",
+                title: "Ejemplo Ambiental - Cambio Clim\u00e1tico",
+                summary:
+                  "Relaciona la ciencia de datos con la observaci\u00f3n clim\u00e1tica y el uso de tableros p\u00fablicos para entender impactos globales.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Los tableros interactivos ayudan a traducir datos ambientales complejos en patrones visibles y comparables.",
+                      "El an\u00e1lisis de datos es clave para monitorear el cambio clim\u00e1tico y orientar respuestas basadas en evidencia."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M4",
+            title: "Comprendiendo los Datos Masivos",
+            topics: [
+              {
+                code: "2.1.1",
+                title: "Definici\u00f3n de Datos Masivos",
+                summary:
+                  "Define el concepto de big data como datos demasiado grandes, r\u00e1pidos o diversos para abordarse con m\u00e9todos tradicionales.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "El tama\u00f1o es importante, pero no es el \u00fanico rasgo: tambi\u00e9n influyen velocidad y variedad.",
+                      "Los datos masivos obligan a repensar c\u00f3mo se recopilan, almacenan y procesan los flujos digitales."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "2.1.2",
+                title: "Caracter\u00edsticas de los Datos Masivos",
+                summary:
+                  "Presenta las caracter\u00edsticas m\u00e1s conocidas del big data y c\u00f3mo afectan su administraci\u00f3n.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Las cuatro V ayudan a entender la complejidad del big data: volumen, velocidad, variedad y calidad o valor.",
+                      "Cada caracter\u00edstica introduce retos espec\u00edficos para captura, transporte, acceso y an\u00e1lisis."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "2.1.4",
+                title: "Los Beneficios Potenciales del Crecimiento de Datos",
+                summary:
+                  "Explica por qu\u00e9 el crecimiento de datos abre oportunidades de optimizaci\u00f3n, personalizaci\u00f3n y predicci\u00f3n.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "IoT, smartphones, redes sociales y mejor conectividad son motores claros del crecimiento de datos.",
+                      "Ese crecimiento puede traducirse en nuevos servicios, mejores decisiones y m\u00e1s capacidad de anticipaci\u00f3n."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M5",
+            title: "Comprendiendo la Administraci\u00f3n de los Datos Masivos",
+            topics: [
+              {
+                code: "2.2.1",
+                title: "Canalizaciones de Datos",
+                summary:
+                  "Introduce las canalizaciones de datos y el papel de los ingenieros de datos en la ingesti\u00f3n, transformaci\u00f3n y carga.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Una canalizaci\u00f3n organiza el recorrido de los datos desde su captura hasta su almacenamiento y uso anal\u00edtico.",
+                      "Conceptos como ETL ayudan a dividir ese flujo en etapas comprensibles y repetibles."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M6",
+            title: "IA Realidad y Ficci\u00f3n",
+            topics: [
+              {
+                code: "3.1.1",
+                title: "V\u00eddeo - \"Data Crunchers\": Uso de la Inteligencia Artificial en la Agricultura",
+                summary:
+                  "Caso aplicado de IA en agricultura usando im\u00e1genes y datos de GPS para entrenar sistemas de reconocimiento.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "La IA necesita grandes vol\u00famenes de datos, especialmente no estructurados, para aprender tareas visuales.",
+                      "Aplicaciones como la detecci\u00f3n de maleza muestran c\u00f3mo la IA resuelve problemas concretos del mundo f\u00edsico."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "3.1.2",
+                title: "IA a Nuestro Alrededor",
+                summary:
+                  "Recorre ejemplos cotidianos de inteligencia artificial en entretenimiento, agricultura y otros sectores.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "La IA ya aparece en recomendaciones, clasificaci\u00f3n de contenido, diagn\u00f3stico visual y automatizaci\u00f3n.",
+                      "Reconocer esos casos cotidianos ayuda a separar la realidad del discurso exagerado sobre la tecnolog\u00eda."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "3.1.4",
+                title: "V\u00eddeo - IA en Acci\u00f3n",
+                summary:
+                  "Ejemplo de herramientas de IA generativa para redactar contenido, adaptar estilo y acelerar tareas creativas.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Las plataformas de generaci\u00f3n de texto permiten producir borradores r\u00e1pidos a partir de objetivos y palabras clave.",
+                      "El valor real sigue estando en seleccionar, revisar y personalizar la salida generada."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M7",
+            title: "Datos Masivos y Aprendizaje Autom\u00e1tico",
+            topics: [
+              {
+                code: "3.2.1",
+                title: "V\u00eddeo - \u00bfQu\u00e9 es el Aprendizaje Autom\u00e1tico?",
+                summary:
+                  "Introduce el aprendizaje autom\u00e1tico como una forma de resolver problemas a partir de datos en vez de reglas detalladas.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Los clasificadores y algoritmos permiten que la m\u00e1quina aprenda patrones a partir de ejemplos de entrenamiento.",
+                      "El aprendizaje autom\u00e1tico difiere del software tradicional porque no depende solo de instrucciones escritas paso a paso."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "3.2.3",
+                title: "Tipos de An\u00e1lisis de Aprendizaje Autom\u00e1tico",
+                summary:
+                  "Describe los principales enfoques del aprendizaje autom\u00e1tico y los problemas que cada uno resuelve mejor.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "El aprendizaje supervisado se usa mucho en predicci\u00f3n, clasificaci\u00f3n y regresi\u00f3n.",
+                      "Distinguir entre enfoques ayuda a elegir mejor el modelo seg\u00fan el tipo de dato y el objetivo del an\u00e1lisis."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "3.2.5",
+                title: "El Proceso de Aprendizaje Autom\u00e1tico",
+                summary:
+                  "Resume el ciclo de preparaci\u00f3n, entrenamiento, prueba y ajuste que siguen los proyectos de aprendizaje autom\u00e1tico.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "La limpieza de datos y la separaci\u00f3n entre conjuntos de aprendizaje y prueba son pasos esenciales.",
+                      "El proceso es iterativo y requiere prueba y error para ajustar el modelo y mejorar su desempe\u00f1o."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "3.2.7",
+                title: "Entrenando M\u00e1quinas para Reconocer Patrones",
+                summary:
+                  "Explica c\u00f3mo los algoritmos aprenden patrones en im\u00e1genes, texto o video para automatizar decisiones.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "El reconocimiento de patrones usa regularidades estad\u00edsticas para clasificar o identificar elementos similares.",
+                      "Aplicaciones como biometr\u00eda y an\u00e1lisis visual muestran su utilidad en problemas reales."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M8",
+            title: "Prepar\u00e1ndose para una Carrera en An\u00e1lisis de Datos",
+            topics: [
+              {
+                code: "4.1.1",
+                title: "Roles en las Profesiones de An\u00e1lisis de Datos",
+                summary:
+                  "Presenta los perfiles m\u00e1s comunes del ecosistema de datos y sus responsabilidades principales.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Analistas, ingenieros y otros perfiles de datos trabajan sobre etapas distintas del flujo de informaci\u00f3n.",
+                      "Entender esas funciones ayuda a identificar qu\u00e9 rol se ajusta mejor a tus intereses y habilidades."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.1.3",
+                title: "El Mercado Laboral",
+                summary:
+                  "Muestra la alta demanda de perfiles de datos e IA y el crecimiento esperado del sector laboral.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Los informes del mercado destacan an\u00e1lisis de datos e inteligencia artificial como campos con fuerte crecimiento.",
+                      "Conocer la demanda ayuda a planificar una transici\u00f3n profesional con expectativas m\u00e1s realistas."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.1.4",
+                title: "Herramientas y Habilidades",
+                summary:
+                  "Resume las competencias t\u00e9cnicas y blandas necesarias para iniciar una carrera en an\u00e1lisis de datos.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "SQL, administraci\u00f3n de datos, estad\u00edstica y visualizaci\u00f3n son bases muy valoradas en roles de entrada.",
+                      "La comunicaci\u00f3n, el trabajo en equipo y la atenci\u00f3n al detalle tambi\u00e9n son decisivos."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            key: "M9",
+            title: "Tomando los Pr\u00f3ximos Pasos",
+            topics: [
+              {
+                code: "4.2.1",
+                title: "V\u00eddeo - La Importancia de los Portafolios de Proyectos",
+                summary:
+                  "Explica por qu\u00e9 un portafolio es una evidencia clave para demostrar habilidades anal\u00edticas a futuros empleadores.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "El portafolio complementa curr\u00edculum y carta de presentaci\u00f3n con muestras reales de trabajo.",
+                      "Incluir proyectos y reflexiones personales ayuda a mostrar intereses, criterio y crecimiento profesional."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.2.3",
+                title: "Iniciando su Portafolio de Proyectos",
+                summary:
+                  "Ofrece una gu\u00eda inicial para documentar proyectos y construir una marca personal a partir del trabajo realizado.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "Cada proyecto deber\u00eda dejar claro el problema, los datos usados, el m\u00e9todo aplicado y las conclusiones.",
+                      "La constancia en documentar lo que haces fortalece tu portafolio y facilita futuras postulaciones."
+                    ]
+                  }
+                ]
+              },
+              {
+                code: "4.2.4",
+                title: "Su Camino hacia una Nueva Carrera",
+                summary:
+                  "Cierra el curso ubic\u00e1ndolo como primer paso dentro de una ruta formativa m\u00e1s amplia en datos.",
+                sections: [
+                  {
+                    title: "Claves del tema",
+                    items: [
+                      "El aprendizaje en datos es progresivo y se fortalece al continuar con cursos, proyectos y pr\u00e1ctica constante.",
+                      "El objetivo es transformar la curiosidad inicial en una trayectoria profesional sostenible."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   };
 })();
+
 

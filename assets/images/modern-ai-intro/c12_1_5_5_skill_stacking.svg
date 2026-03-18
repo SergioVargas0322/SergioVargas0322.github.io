@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Apilamiento de habilidades</title>
+  <desc id="desc">Infografía sobre combinar habilidades creativas y técnicas para construir una propuesta profesional más distintiva.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef8ff"/>
+      <stop offset="100%" stop-color="#fff7ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="680" rx="32" fill="url(#bg)"/>
+  <style>
+    .fo-root, .fo-root * { box-sizing: border-box; }
+    .fo-root {
+      width: 100%;
+      height: 100%;
+      font-family: Aptos, "Segoe UI", Arial, sans-serif;
+      color: #273a69;
+    }
+    .canvas { width: 100%; height: 100%; padding: 28px; }
+    .shell {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border: 3px solid #cbd6f6;
+      border-radius: 28px;
+      padding: 28px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .heading { display: flex; flex-direction: column; gap: 10px; }
+    .heading h1 { margin: 0; font-size: 34px; line-height: 1.08; font-weight: 800; }
+    .heading p { margin: 0; max-width: 980px; font-size: 18px; line-height: 1.34; font-weight: 600; color: #5b6f95; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .card {
+      border-radius: 22px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 110px;
+    }
+    .card h2 { margin: 0; font-size: 20px; line-height: 1.12; font-weight: 800; }
+    .card p { margin: 0; font-size: 15px; line-height: 1.32; font-weight: 600; color: #42557c; }
+    .c1 { background: #eef8ff; border: 2px solid #b7dce8; }
+    .c2 { background: #f3f0ff; border: 2px solid #d9cef8; }
+    .c3 { background: #fff5ea; border: 2px solid #efc89b; }
+    .c4 { background: #eef9f1; border: 2px solid #b8dfc3; }
+    .note {
+      background: #f6f8fb;
+      border: 2px solid #d9dfeb;
+      border-radius: 22px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .note h2 { margin: 0; font-size: 21px; line-height: 1.14; font-weight: 800; }
+    .note p { margin: 0; font-size: 15px; line-height: 1.32; font-weight: 600; color: #42557c; }
+    .takeaway {
+      background: #283a66;
+      border-radius: 22px;
+      padding: 18px 22px;
+      color: #fff;
+      text-align: center;
+    }
+    .takeaway p { margin: 0; font-size: 20px; line-height: 1.28; font-weight: 800; }
+  </style>
+  <foreignObject x="0" y="0" width="1200" height="680">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo-root">
+      <div class="canvas">
+        <div class="shell">
+          <div class="heading">
+            <h1>Destacar no siempre es ser el mejor en una sola cosa</h1>
+            <p>Muchas veces pesa más una combinación rara pero útil de habilidades técnicas, creativas y personales que una sola especialidad aislada.</p>
+          </div>
+
+          <div class="grid">
+            <article class="card c1">
+              <h2>Medicina + danza + video</h2>
+              <p>Puede transformarse en terapia física, entrenamiento para bailarines y contenido educativo especializado.</p>
+            </article>
+            <article class="card c2">
+              <h2>Zoología + fotografía</h2>
+              <p>Convierte el trabajo científico en divulgación visual, libros o material educativo con valor propio.</p>
+            </article>
+            <article class="card c3">
+              <h2>Arte + programación</h2>
+              <p>Una mezcla así puede abrir camino hacia diseño interactivo, videojuegos o visualización creativa.</p>
+            </article>
+            <article class="card c4">
+              <h2>Docencia + humor</h2>
+              <p>Un rasgo expresivo bien usado puede mejorar atención, memoria y conexión con la audiencia.</p>
+            </article>
+          </div>
+
+          <section class="note">
+            <h2>Dónde entra la IA</h2>
+            <p>La IA no reemplaza ese apilamiento. Lo potencia: ayuda a escribir, diseñar, investigar, editar o prototipar, pero el valor diferencial sigue estando en la mezcla única de intereses y criterio humano.</p>
+          </section>
+
+          <section class="takeaway">
+            <p>Una combinación poco común de habilidades suele ser más difícil de copiar que una habilidad aislada llevada al promedio.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

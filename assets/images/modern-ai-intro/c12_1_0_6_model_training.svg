@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Cómo aprende un modelo</title>
+  <desc id="desc">Esquema de entrenamiento e inferencia de un modelo con features, parámetros, etiqueta, medida de desempeño y optimizador.</desc>
+  <foreignObject x="0" y="0" width="1200" height="1100">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+      <style>
+        * { box-sizing: border-box; }
+        .page {
+          width: 1200px;
+          height: 1100px;
+          padding: 36px;
+          background: linear-gradient(135deg, #eef2ff 0%, #f8fbff 48%, #fff5eb 100%);
+          font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+        .frame {
+          height: 100%;
+          padding: 34px 38px;
+          border-radius: 28px;
+          border: 3px solid #d6def4;
+          background: rgba(255, 255, 255, 0.96);
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+        }
+        h1, h2, p { margin: 0; }
+        h1 {
+          color: #1d2b4f;
+          font-size: 42px;
+          line-height: 1.05;
+        }
+        .lead {
+          color: #52627d;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 1.35;
+        }
+        .diagram {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 18px;
+          align-items: stretch;
+        }
+        .col {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+        .diagram .col:last-child {
+          grid-column: 1 / -1;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .card {
+          padding: 20px 22px;
+          border-radius: 22px;
+          border: 2px solid;
+        }
+        .card h2 {
+          color: #213354;
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+        .card p {
+          color: #50627a;
+          font-size: 17px;
+          line-height: 1.35;
+          font-weight: 600;
+        }
+        .inputs { background: #eef8f9; border-color: #c1dcde; }
+        .model { background: #eef2ff; border-color: #cad3f2; }
+        .feedback { background: #fff4ea; border-color: #e5ceb0; }
+        .modes {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 16px;
+        }
+        .train { background: #f5f1ff; border-color: #d8cdf3; }
+        .infer { background: #eef8f1; border-color: #c8dccb; }
+        .footer {
+          margin-top: auto;
+          padding: 18px 24px;
+          border-radius: 24px;
+          background: #203052;
+          color: #fff;
+        }
+        .footer h2 {
+          color: #fff;
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+        .footer p {
+          color: #ebf1ff;
+          font-size: 17px;
+          line-height: 1.4;
+          font-weight: 600;
+        }
+      </style>
+      <div class="frame">
+        <h1>De las características a la respuesta</h1>
+        <p class="lead">La analogía de una tostadora ayuda a ver cómo un modelo recibe información de entrada, ajusta parámetros internos y se acerca a una salida correcta mediante entrenamiento.</p>
+        <div class="diagram">
+          <div class="col">
+            <div class="card inputs">
+              <h2>Features o entradas</h2>
+              <p>Son los datos que describen el caso: tamaño, tipo, forma, longitud, imagen, texto o audio, según la tarea.</p>
+            </div>
+            <div class="card inputs">
+              <h2>Etiqueta correcta</h2>
+              <p>Durante el entrenamiento existe una respuesta esperada que permite comparar qué tan bien respondió el modelo.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card model">
+              <h2>Modelo + parámetros</h2>
+              <p>El modelo es la función que transforma entradas en salidas. Sus parámetros son los valores internos que se ajustan con la experiencia.</p>
+            </div>
+            <div class="card model">
+              <h2>Salida</h2>
+              <p>Es la predicción del sistema: una clase, un texto, una decisión o una recomendación concreta.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card feedback">
+              <h2>Medida de desempeño</h2>
+              <p>Cuantifica qué tan cerca estuvo la salida del resultado correcto.</p>
+            </div>
+            <div class="card feedback">
+              <h2>Optimizador</h2>
+              <p>Usa esa señal para reajustar parámetros y mejorar la respuesta futura.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modes">
+          <div class="card train">
+            <h2>Entrenamiento</h2>
+            <p>La etiqueta correcta está disponible y el modelo todavía cambia. Aquí se produce el aprendizaje real.</p>
+          </div>
+          <div class="card infer">
+            <h2>Inferencia</h2>
+            <p>El usuario entrega una entrada y recibe una respuesta. El modelo ya no se ajusta en ese mismo instante.</p>
+          </div>
+        </div>
+        <div class="footer">
+          <h2>Aplicaciones relacionadas</h2>
+          <p>La misma lógica se aplica en modelos para datos estructurados, visión artificial, audio, reconocimiento de voz, procesamiento de lenguaje natural y redes neuronales profundas.</p>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Inteligencia como espectro de tareas</title>
+  <desc id="desc">Escala visual que va desde tareas con reglas simples hasta tareas ambiguas como reconocer objetos o reconstruir fondos.</desc>
+  <foreignObject x="0" y="0" width="1200" height="1040">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+      <style>
+        * { box-sizing: border-box; }
+        .page {
+          width: 1200px;
+          height: 1040px;
+          padding: 36px;
+          background: linear-gradient(135deg, #eef2ff 0%, #f8fbff 52%, #fff5ea 100%);
+          font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+        .frame {
+          height: 100%;
+          padding: 34px 38px;
+          border-radius: 28px;
+          border: 3px solid #d7dff3;
+          background: rgba(255, 255, 255, 0.96);
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+        }
+        h1, h2, p { margin: 0; }
+        h1 {
+          color: #1d2b4f;
+          font-size: 42px;
+          line-height: 1.05;
+        }
+        .lead {
+          color: #52627d;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 1.35;
+          max-width: 980px;
+        }
+        .scale {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 18px;
+        }
+        .step {
+          padding: 22px 20px;
+          border-radius: 22px;
+          border: 2px solid;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          min-height: 220px;
+        }
+        .step h2 {
+          font-size: 25px;
+          color: #213354;
+        }
+        .step p {
+          color: #50627a;
+          font-size: 18px;
+          line-height: 1.35;
+          font-weight: 600;
+        }
+        .low { background: #eef5ff; border-color: #c6d5ee; }
+        .mid { background: #f1fbfb; border-color: #c3dede; }
+        .high { background: #fff8ef; border-color: #e7cfaf; }
+        .top { background: #f5f0ff; border-color: #d9cdf3; }
+        .meter {
+          height: 18px;
+          border-radius: 999px;
+          background: linear-gradient(90deg, #5c6bc0 0%, #2c7c8f 35%, #d07a28 70%, #7a57c2 100%);
+          margin-top: 8px;
+        }
+        .footer {
+          margin-top: auto;
+          padding: 20px 24px;
+          border-radius: 24px;
+          background: #203052;
+          color: #fff;
+        }
+        .footer h2 {
+          color: #fff;
+          font-size: 26px;
+          margin-bottom: 10px;
+        }
+        .footer p {
+          color: #edf2ff;
+          font-size: 18px;
+          line-height: 1.4;
+          font-weight: 600;
+        }
+      </style>
+      <div class="frame">
+        <h1>La inteligencia se parece más a una escala que a un interruptor</h1>
+        <p class="lead">Algunas tareas se resuelven con reglas directas, mientras que otras exigen contexto, inferencia y manejo de ambigüedad. Esa diferencia ayuda a entender por qué ciertas aplicaciones se sienten más inteligentes.</p>
+        <div class="scale">
+          <div class="step low">
+            <h2>1. Reglas directas</h2>
+            <p>Escala de grises o ajustes con fórmulas claras. La máquina sigue instrucciones bien definidas y consistentes.</p>
+          </div>
+          <div class="step mid">
+            <h2>2. Acción guiada</h2>
+            <p>Recortar con medidas exactas sigue siendo simple si el usuario ya indicó qué área y qué tamaño necesita.</p>
+          </div>
+          <div class="step high">
+            <h2>3. Decisión contextual</h2>
+            <p>Elegir el mejor encuadre o reconocer objetos obliga a decidir qué conservar, qué descartar y qué es relevante.</p>
+          </div>
+          <div class="step top">
+            <h2>4. Inferencia ambigua</h2>
+            <p>Borrar un objeto y reconstruir el fondo exige imaginar una respuesta razonable ante información faltante.</p>
+          </div>
+        </div>
+        <div class="meter"></div>
+        <div class="footer">
+          <h2>Idea central</h2>
+          <p>Cuando una tarea exige más reglas, excepciones y decisiones contextuales, crece la necesidad de inteligencia. En ese punto, el aprendizaje automático resulta más útil que una lista rígida de instrucciones.</p>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

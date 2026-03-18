@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Compresión de modelos y GPU</title>
+  <desc id="desc">Infografía sobre cuantización, destilación, poda y el papel de la GPU para ejecutar modelos con menos costo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef8ff"/>
+      <stop offset="100%" stop-color="#fff7ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="32" fill="url(#bg)"/>
+  <style>
+    .fo-root, .fo-root * { box-sizing: border-box; }
+    .fo-root {
+      width: 100%;
+      height: 100%;
+      font-family: Aptos, "Segoe UI", Arial, sans-serif;
+      color: #273a69;
+    }
+    .canvas { width: 100%; height: 100%; padding: 28px; }
+    .shell {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border: 3px solid #cbd6f6;
+      border-radius: 28px;
+      padding: 28px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .heading { display: flex; flex-direction: column; gap: 10px; }
+    .heading h1 { margin: 0; font-size: 34px; line-height: 1.08; font-weight: 800; }
+    .heading p { margin: 0; max-width: 940px; font-size: 18px; line-height: 1.34; font-weight: 600; color: #5b6f95; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .card {
+      border-radius: 22px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 126px;
+    }
+    .card h2 { margin: 0; font-size: 20px; line-height: 1.12; font-weight: 800; }
+    .card p { margin: 0; font-size: 15px; line-height: 1.32; font-weight: 600; color: #42557c; }
+    .c1 { background: #eef8ff; border: 2px solid #b7dce8; }
+    .c2 { background: #f3f0ff; border: 2px solid #d9cef8; }
+    .c3 { background: #fff5ea; border: 2px solid #efc89b; }
+    .c4 { background: #eef9f1; border: 2px solid #b8dfc3; }
+    .note {
+      background: #f6f8fb;
+      border: 2px solid #d9dfeb;
+      border-radius: 22px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .note h2 { margin: 0; font-size: 21px; line-height: 1.14; font-weight: 800; }
+    .note p { margin: 0; font-size: 15px; line-height: 1.32; font-weight: 600; color: #42557c; }
+    .takeaway {
+      background: #283a66;
+      border-radius: 22px;
+      padding: 18px 22px;
+      color: #fff;
+      text-align: center;
+    }
+    .takeaway p { margin: 0; font-size: 20px; line-height: 1.28; font-weight: 800; }
+  </style>
+  <foreignObject x="0" y="0" width="1200" height="720">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo-root">
+      <div class="canvas">
+        <div class="shell">
+          <div class="heading">
+            <h1>Comprimir un modelo es hacerlo más portable</h1>
+            <p>Parte del vocabulario sobre modelos descargables gira alrededor de cómo ocupan menos memoria y cómo se ejecutan más rápido.</p>
+          </div>
+
+          <div class="grid">
+            <article class="card c1">
+              <h2>Cuantización</h2>
+              <p>Guarda parámetros con menos bits, por ejemplo 16 u 8 en lugar de 32, para reducir espacio.</p>
+            </article>
+            <article class="card c2">
+              <h2>Destilación</h2>
+              <p>Entrena un modelo más pequeño usando las salidas del modelo grande como referencia.</p>
+            </article>
+            <article class="card c3">
+              <h2>Poda</h2>
+              <p>Apaga parámetros poco importantes y ahorra almacenamiento al simplificar la red resultante.</p>
+            </article>
+            <article class="card c4">
+              <h2>GPU</h2>
+              <p>Acelera operaciones matemáticas en paralelo y por eso es clave en entrenamiento e inferencia de modelos.</p>
+            </article>
+          </div>
+
+          <section class="note">
+            <h2>Qué cambia en la práctica</h2>
+            <p>Compresión apunta a menos memoria, menos almacenamiento y, a veces, menos consumo. La GPU apunta a menos espera: acelera los cálculos que el modelo repite miles de veces.</p>
+          </section>
+
+          <section class="takeaway">
+            <p>Compresión reduce costo y memoria; la GPU reduce tiempo de cálculo. Juntas hacen viable usar modelos más grandes o correrlos mejor.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

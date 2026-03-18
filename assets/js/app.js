@@ -77,7 +77,9 @@
       sigil: "IOT",
       label: "Transformación"
     },
-    "iot-packet-tracer-exploration": { tone: "iotlab", sigil: "LAB", label: "IoT Lab" }
+    "iot-packet-tracer-exploration": { tone: "iotlab", sigil: "LAB", label: "IoT Lab" },
+    "modern-ai-intro": { tone: "ai", sigil: "IA", label: "IA moderna" },
+    "data-science-intro": { tone: "data", sigil: "DS", label: "Datos" }
   };
 
   if (refs.catalogTitle) refs.catalogTitle.textContent = data.title || "Catálogo de Cursos";
