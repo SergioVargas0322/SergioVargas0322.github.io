@@ -255,6 +255,7 @@
 
   function scrollNodeIntoView(node, behavior = "smooth") {
     if (!node) return;
+    syncStickyOffsets();
     const rootStyle = window.getComputedStyle(document.documentElement);
     const offset = Number.parseFloat(rootStyle.getPropertyValue("--content-scroll-offset")) || 0;
     const targetTop = window.scrollY + node.getBoundingClientRect().top - offset;
@@ -262,6 +263,18 @@
       top: Math.max(0, Math.round(targetTop)),
       behavior
     });
+  }
+
+  function scrollNodeIntoViewSettled(node, behavior = "smooth") {
+    if (!node) return;
+
+    scrollNodeIntoView(node, behavior);
+    window.requestAnimationFrame(() => {
+      scrollNodeIntoView(node, "auto");
+    });
+    window.setTimeout(() => {
+      scrollNodeIntoView(node, "auto");
+    }, 240);
   }
 
   function getCourseVisual(course) {
@@ -842,7 +855,7 @@
 
         syncTopicAutoplay();
         requestAnimationFrame(() => {
-          scrollNodeIntoView(moduleItem);
+          scrollNodeIntoViewSettled(moduleItem);
         });
       });
     });
@@ -864,7 +877,7 @@
     if (!topicNode) return;
 
     setTimeout(() => {
-      scrollNodeIntoView(topicNode);
+      scrollNodeIntoViewSettled(topicNode);
       flashTopic(topicNode);
     }, moduleNode ? 180 : 0);
   }
