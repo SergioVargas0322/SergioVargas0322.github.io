@@ -6,6 +6,7 @@
   "scripts": {
     "check:data": "node scripts/check-catalog.js",
     "check:search": "node scripts/check-search.js",
-    "check": "npm run check:data && npm run check:search"
+    "check:ui": "node scripts/check-ui.js",
+    "check": "npm run check:data && npm run check:search && npm run check:ui"
   }
 }
