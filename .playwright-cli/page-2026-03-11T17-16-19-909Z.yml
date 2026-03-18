@@ -1,0 +1,120 @@
+- generic [active] [ref=e1]:
+  - link "Saltar al contenido" [ref=e2] [cursor=pointer]:
+    - /url: "#mainContent"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: Sergio Vargas - U00114112
+      - heading "Catálogo de Cursos Cisco" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Consulta personal para reforzar contenidos por curso, módulo y tema.
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: Buscar cursos o temas
+        - combobox "Buscar cursos o temas" [ref=e11]
+      - button "Limpiar" [ref=e12] [cursor=pointer]
+  - main [ref=e13]:
+    - region "Detalle del curso seleccionado" [ref=e14]:
+      - group [ref=e15]:
+        - generic "Cursos disponibles 11 curso(s)" [ref=e16] [cursor=pointer]:
+          - generic [ref=e17]: Cursos disponibles
+          - generic [ref=e18]: 11 curso(s)
+        - generic [ref=e19]:
+          - button "1. Conceptos Básicos de Hardware de Computadora Cisco Networking Academy - Fundamentos - 3 modulos - 12 temas hardware soporte seguridad mantenimiento" [ref=e20] [cursor=pointer]:
+            - heading "1. Conceptos Básicos de Hardware de Computadora" [level=3] [ref=e21]
+            - paragraph [ref=e22]: Cisco Networking Academy - Fundamentos - 3 modulos - 12 temas
+            - generic [ref=e23]:
+              - generic [ref=e24]: hardware
+              - generic [ref=e25]: soporte
+              - generic [ref=e26]: seguridad
+              - generic [ref=e27]: mantenimiento
+          - button "2. Operating Systems Basics Cisco Networking Academy - Fundamentos - 4 modulos - 20 temas sistemas operativos windows linux móvil seguridad" [ref=e28] [cursor=pointer]:
+            - heading "2. Operating Systems Basics" [level=3] [ref=e29]
+            - paragraph [ref=e30]: Cisco Networking Academy - Fundamentos - 4 modulos - 20 temas
+            - generic [ref=e31]:
+              - generic [ref=e32]: sistemas operativos
+              - generic [ref=e33]: windows
+              - generic [ref=e34]: linux
+              - generic [ref=e35]: móvil
+              - generic [ref=e36]: seguridad
+          - button "3. Introducción a Cisco Packet Tracer Cisco Networking Academy - Inicial - 2 modulos - 4 temas packet tracer simulación redes cisco" [ref=e37] [cursor=pointer]:
+            - heading "3. Introducción a Cisco Packet Tracer" [level=3] [ref=e38]
+            - paragraph [ref=e39]: Cisco Networking Academy - Inicial - 2 modulos - 4 temas
+            - generic [ref=e40]:
+              - generic [ref=e41]: packet tracer
+              - generic [ref=e42]: simulación
+              - generic [ref=e43]: redes
+              - generic [ref=e44]: cisco
+          - button "4. Exploración de redes con Cisco Packet Tracer Cisco Networking Academy - Inicial - 2 modulos - 4 temas packet tracer topologías simulación controlador de red" [ref=e45] [cursor=pointer]:
+            - heading "4. Exploración de redes con Cisco Packet Tracer" [level=3] [ref=e46]
+            - paragraph [ref=e47]: Cisco Networking Academy - Inicial - 2 modulos - 4 temas
+            - generic [ref=e48]:
+              - generic [ref=e49]: packet tracer
+              - generic [ref=e50]: topologías
+              - generic [ref=e51]: simulación
+              - generic [ref=e52]: controlador de red
+          - button "5. Conceptos básicos de redes Cisco Networking Academy - Fundamentos - 17 modulos - 44 temas redes protocolos tcp/ip osi estándares" [ref=e53] [cursor=pointer]:
+            - heading "5. Conceptos básicos de redes" [level=3] [ref=e54]
+            - paragraph [ref=e55]: Cisco Networking Academy - Fundamentos - 17 modulos - 44 temas
+            - generic [ref=e56]:
+              - generic [ref=e57]: redes
+              - generic [ref=e58]: protocolos
+              - generic [ref=e59]: tcp/ip
+              - generic [ref=e60]: osi
+              - generic [ref=e61]: estándares
+          - button "6. Dispositivos de Red y Configuración Inicial Cisco Networking Academy - Intermedio - 12 modulos - 33 temas redes switching routing ios troubleshooting" [ref=e62] [cursor=pointer]:
+            - heading "6. Dispositivos de Red y Configuración Inicial" [level=3] [ref=e63]
+            - paragraph [ref=e64]: Cisco Networking Academy - Intermedio - 12 modulos - 33 temas
+            - generic [ref=e65]:
+              - generic [ref=e66]: redes
+              - generic [ref=e67]: switching
+              - generic [ref=e68]: routing
+              - generic [ref=e69]: ios
+              - generic [ref=e70]: troubleshooting
+          - button "7. Direccionamiento de red y solución de problemas básicos Cisco Networking Academy - Intermedio - 7 modulos - 25 temas direccionamiento ipv6 ios troubleshooting cisco" [ref=e71] [cursor=pointer]:
+            - heading "7. Direccionamiento de red y solución de problemas básicos" [level=3] [ref=e72]
+            - paragraph [ref=e73]: Cisco Networking Academy - Intermedio - 7 modulos - 25 temas
+            - generic [ref=e74]:
+              - generic [ref=e75]: direccionamiento
+              - generic [ref=e76]: ipv6
+              - generic [ref=e77]: ios
+              - generic [ref=e78]: troubleshooting
+              - generic [ref=e79]: cisco
+          - button "8. Soporte y Seguridad de red Cisco Networking Academy - Intermedio - 3 modulos - 17 temas soporte troubleshooting seguridad ciberseguridad operaciones" [ref=e80] [cursor=pointer]:
+            - heading "8. Soporte y Seguridad de red" [level=3] [ref=e81]
+            - paragraph [ref=e82]: Cisco Networking Academy - Intermedio - 3 modulos - 17 temas
+            - generic [ref=e83]:
+              - generic [ref=e84]: soporte
+              - generic [ref=e85]: troubleshooting
+              - generic [ref=e86]: seguridad
+              - generic [ref=e87]: ciberseguridad
+              - generic [ref=e88]: operaciones
+          - button "9. Introducción a Ciberseguridad Cisco Networking Academy - Fundamentos - 5 modulos - 16 temas ciberseguridad privacidad amenazas defensa concienciación ética legal" [ref=e89] [cursor=pointer]:
+            - heading "9. Introducción a Ciberseguridad" [level=3] [ref=e90]
+            - paragraph [ref=e91]: Cisco Networking Academy - Fundamentos - 5 modulos - 16 temas
+            - generic [ref=e92]:
+              - generic [ref=e93]: ciberseguridad
+              - generic [ref=e94]: privacidad
+              - generic [ref=e95]: amenazas
+              - generic [ref=e96]: defensa
+              - generic [ref=e97]: concienciación
+              - generic [ref=e98]: ética
+              - generic [ref=e99]: legal
+          - button "10. Introducción al Internet de las Cosas y Transformación Digital Cisco Networking Academy - Fundamentos - 6 modulos - 20 temas iot transformacion-digital automatizacion inteligencia-artificial datos-masivos seguridad" [ref=e100] [cursor=pointer]:
+            - heading "10. Introducción al Internet de las Cosas y Transformación Digital" [level=3] [ref=e101]
+            - paragraph [ref=e102]: Cisco Networking Academy - Fundamentos - 6 modulos - 20 temas
+            - generic [ref=e103]:
+              - generic [ref=e104]: iot
+              - generic [ref=e105]: transformacion-digital
+              - generic [ref=e106]: automatizacion
+              - generic [ref=e107]: inteligencia-artificial
+              - generic [ref=e108]: datos-masivos
+              - generic [ref=e109]: seguridad
+          - button "11. Exploración de IoT con Cisco Packet Tracer Cisco Networking Academy - Fundamentos - 2 modulos - 4 temas iot packet tracer domotica automatizacion simulacion" [ref=e110] [cursor=pointer]:
+            - heading "11. Exploración de IoT con Cisco Packet Tracer" [level=3] [ref=e111]
+            - paragraph [ref=e112]: Cisco Networking Academy - Fundamentos - 2 modulos - 4 temas
+            - generic [ref=e113]:
+              - generic [ref=e114]: iot
+              - generic [ref=e115]: packet tracer
+              - generic [ref=e116]: domotica
+              - generic [ref=e117]: automatizacion
+              - generic [ref=e118]: simulacion
+      - paragraph [ref=e120]: Selecciona un curso para ver su contenido.

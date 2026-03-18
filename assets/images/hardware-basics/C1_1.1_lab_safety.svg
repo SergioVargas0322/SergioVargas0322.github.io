@@ -1,0 +1,281 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Seguridad general y contra incendios</title>
+  <desc id="desc">Infografia sobre seguridad personal, control del area de trabajo y respuesta inicial ante un incendio electrico.</desc>
+  <foreignObject x="0" y="0" width="1200" height="900">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        .page {
+          width: 1200px;
+          height: 900px;
+          padding: 40px;
+          background: linear-gradient(135deg, #eef7fb 0%, #fdf4e8 100%);
+          font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        .frame {
+          height: 820px;
+          padding: 34px 46px 36px;
+          border: 4px solid #c9dbe4;
+          border-radius: 28px;
+          background: #ffffff;
+          display: flex;
+          flex-direction: column;
+          gap: 34px;
+        }
+
+        h1,
+        h2,
+        p,
+        ul,
+        li {
+          margin: 0;
+          padding: 0;
+        }
+
+        h1 {
+          color: #143847;
+          font-size: 42px;
+          font-weight: 800;
+          line-height: 1.08;
+        }
+
+        .top-grid {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+          gap: 36px;
+          align-items: stretch;
+        }
+
+        .panel {
+          border: 3px solid;
+          border-radius: 24px;
+          padding: 28px 30px;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .panel-blue {
+          gap: 20px;
+          background: #eef6ff;
+          border-color: #b7d1e0;
+        }
+
+        .panel-cream {
+          gap: 18px;
+          background: #fff5ec;
+          border-color: #e2c7a9;
+        }
+
+        .panel-green {
+          gap: 14px;
+          background: #f4fbf6;
+          border-color: #bfd6c6;
+        }
+
+        .panel-dark {
+          gap: 14px;
+          background: #143847;
+          border-color: #143847;
+        }
+
+        h2 {
+          color: #143847;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 1.2;
+        }
+
+        .panel-dark h2 {
+          color: #ffffff;
+        }
+
+        .body {
+          color: #35515f;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.35;
+        }
+
+        .body-soft {
+          color: #526b78;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.35;
+        }
+
+        .body-inverse {
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.35;
+        }
+
+        .checklist {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .checklist li {
+          display: flex;
+          gap: 18px;
+          align-items: flex-start;
+        }
+
+        .check {
+          width: 38px;
+          height: 38px;
+          flex: 0 0 38px;
+          margin-top: 1px;
+          border-radius: 999px;
+          background: #0f6c7b;
+          position: relative;
+        }
+
+        .check::before {
+          content: "";
+          position: absolute;
+          left: 12px;
+          top: 8px;
+          width: 8px;
+          height: 16px;
+          border-right: 5px solid #ffffff;
+          border-bottom: 5px solid #ffffff;
+          transform: rotate(45deg);
+        }
+
+        .fire-grid {
+          display: grid;
+          grid-template-columns: 150px minmax(0, 1fr);
+          gap: 24px;
+          align-items: center;
+        }
+
+        .extinguisher {
+          width: 140px;
+          height: 170px;
+          margin: 0 auto;
+          position: relative;
+        }
+
+        .ext-body {
+          position: absolute;
+          left: 24px;
+          top: 36px;
+          width: 82px;
+          height: 126px;
+          border-radius: 24px;
+          background: #d7422d;
+        }
+
+        .ext-neck {
+          position: absolute;
+          left: 48px;
+          top: 14px;
+          width: 40px;
+          height: 38px;
+          border-radius: 12px;
+          background: #4a5560;
+        }
+
+        .ext-hose {
+          position: absolute;
+          left: 88px;
+          top: 38px;
+          width: 74px;
+          height: 14px;
+          border-radius: 999px;
+          background: #4a5560;
+          transform: rotate(-20deg);
+          transform-origin: left center;
+        }
+
+        .ext-gauge {
+          position: absolute;
+          left: 50px;
+          top: 94px;
+          width: 42px;
+          height: 42px;
+          border-radius: 999px;
+          background: #f9efe7;
+        }
+
+        .steps {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 18px;
+        }
+
+        .step {
+          max-width: 100%;
+          padding: 14px 24px;
+          border-radius: 18px;
+          background: #f7ddd1;
+          color: #2d4c5d;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.22;
+          display: inline-block;
+        }
+      </style>
+
+      <div class="frame">
+        <h1>Seguridad general y contra incendios</h1>
+
+        <div class="top-grid">
+          <section class="panel panel-blue">
+            <h2>Antes de abrir el equipo</h2>
+            <ul class="checklist">
+              <li>
+                <span class="check"></span>
+                <p class="body">Quita joyas y asegura la ropa.</p>
+              </li>
+              <li>
+                <span class="check"></span>
+                <p class="body">Corta energia y descarga residual.</p>
+              </li>
+              <li>
+                <span class="check"></span>
+                <p class="body">Mantiene la mesa seca y ordenada.</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="panel panel-cream">
+            <h2>Respuesta ante incendio electrico</h2>
+            <div class="fire-grid">
+              <div class="extinguisher" aria-hidden="true">
+                <div class="ext-body"></div>
+                <div class="ext-neck"></div>
+                <div class="ext-hose"></div>
+                <div class="ext-gauge"></div>
+              </div>
+              <div class="steps">
+                <div class="step">Usa extintor clase C.</div>
+                <div class="step">Apunta a la base del fuego.</div>
+                <div class="step">PASS: pull, aim, squeeze, sweep.</div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel panel-green">
+          <h2>Control del area de trabajo</h2>
+          <p class="body-soft">Ubica salidas, ventilacion y extintor antes de empezar.</p>
+          <p class="body-soft">No abras PSU ni monitores con alto voltaje interno.</p>
+        </section>
+
+        <section class="panel panel-dark">
+          <h2>Objetivo del tema</h2>
+          <p class="body-inverse">Trabajar sin riesgo personal, con control de energia, orden del puesto y respuesta basica ante fuego electrico.</p>
+        </section>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

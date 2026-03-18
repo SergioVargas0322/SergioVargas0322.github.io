@@ -19,6 +19,10 @@
     imageModal: byId("imageModal"),
     imageModalContent: document.querySelector("#imageModal .image-modal-content"),
     imageModalImg: byId("imageModalImg"),
+    imageModalNav: byId("imageModalNav"),
+    imageModalPrev: byId("imageModalPrev"),
+    imageModalNext: byId("imageModalNext"),
+    imageModalStatus: byId("imageModalStatus"),
     imageModalCaption: byId("imageModalCaption"),
     imageModalClose: byId("imageModalClose")
   };
@@ -32,6 +36,12 @@
     searchSnapshot: null,
     suggestions: [],
     activeSuggestionIndex: -1,
+    topicImageIndexes: Object.create(null),
+    topicAutoplayTimers: Object.create(null),
+    autoplayResumeTimer: null,
+    autoplayPaused: false,
+    autoplayHoldForModal: false,
+    modalTopicRef: "",
     lastModalTrigger: null
   };
 
@@ -39,6 +49,8 @@
     data.courses.map((course, index) => [course.id, index + 1])
   );
   const searchIndex = buildSearchIndex(data.courses);
+  const TOPIC_AUTOPLAY_DELAY_MS = 5000;
+  const TOPIC_AUTOPLAY_RESUME_DELAY_MS = 10000;
 
   if (refs.catalogTitle) refs.catalogTitle.textContent = data.title || "Catalogo de Cursos";
   if (refs.catalogSubtitle) refs.catalogSubtitle.textContent = data.subtitle || "";
@@ -93,10 +105,19 @@
     }
 
     if (refs.courseDetail) {
-      refs.courseDetail.addEventListener("click", (event) => {
-        const imageButton = event.target.closest("button[data-image-src]");
-        if (!imageButton) return;
-        openImageModal(imageButton.dataset.imageSrc, imageButton.dataset.imageAlt, imageButton);
+      refs.courseDetail.addEventListener("click", onCourseDetailClick);
+      refs.courseDetail.addEventListener("keydown", onCourseDetailKeyDown);
+    }
+
+    if (refs.imageModalPrev) {
+      refs.imageModalPrev.addEventListener("click", () => {
+        moveImageModal(-1);
+      });
+    }
+
+    if (refs.imageModalNext) {
+      refs.imageModalNext.addEventListener("click", () => {
+        moveImageModal(1);
       });
     }
 
@@ -116,8 +137,16 @@
         hideSearchSuggestions();
         return;
       }
-      if (event.key === "Tab" && isImageModalOpen()) {
+      if (!isImageModalOpen()) return;
+
+      if (event.key === "Tab") {
         trapModalFocus(event);
+        return;
+      }
+
+      if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+        event.preventDefault();
+        moveImageModal(event.key === "ArrowRight" ? 1 : -1);
       }
     });
 
@@ -152,6 +181,40 @@
 
     event.preventDefault();
     moveActiveSuggestion(event.key === "ArrowDown" ? 1 : -1);
+  }
+
+  function onCourseDetailClick(event) {
+    const carouselControl = event.target.closest("button[data-carousel-action], button[data-carousel-index]");
+    if (carouselControl) {
+      event.preventDefault();
+      pauseAutoplayForInteraction();
+      updateTopicCarousel(carouselControl);
+      return;
+    }
+
+    const imageButton = event.target.closest("button[data-image-src]");
+    if (!imageButton) return;
+
+    openImageModal(
+      imageButton.dataset.imageSrc,
+      imageButton.dataset.imageAlt,
+      imageButton.dataset.imageCaption,
+      imageButton
+    );
+  }
+
+  function onCourseDetailKeyDown(event) {
+    const imageButton = event.target.closest(".topic-image-button[data-topic-ref]");
+    if (!imageButton) return;
+    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+
+    event.preventDefault();
+    pauseAutoplayForInteraction();
+    shiftTopicImage(
+      imageButton.dataset.topicRef || "",
+      event.key === "ArrowRight" ? 1 : -1,
+      { type: "image" }
+    );
   }
 
   function moveActiveSuggestion(step) {
@@ -238,6 +301,7 @@
     const course = data.courses.find((item) => item.id === state.activeCourseId);
     if (!course) {
       refs.courseDetail.innerHTML = `<p class="empty">Selecciona un curso para ver su contenido.</p>`;
+      syncTopicAutoplay();
       return;
     }
 
@@ -267,6 +331,7 @@
 
     syncModuleAccordion();
     applyPendingJump();
+    syncTopicAutoplay();
   }
 
   function topicMatchesSnapshot(courseId, moduleKey, topicCode, snapshot) {
@@ -311,38 +376,297 @@
           ${sections}
         </div>
         <aside class="topic-media">
-          ${renderTopicMedia(topic)}
+          ${renderTopicMedia(topic, topicRef)}
         </aside>
       </div>
     </article>`;
   }
 
-  function renderTopicMedia(topic) {
+  function renderTopicMedia(topic, topicRef) {
     const images = topic.images || [];
     if (!images.length) return `<p class="topic-image-hint">Sin imagen disponible.</p>`;
 
-    const primary = images[0];
-    const thumbnails = images.slice(1);
+    const activeIndex = getTopicImageIndex(topicRef, images.length);
+    const activeImage = images[activeIndex];
+    const imageCaption = getImageCaption(activeImage, topic.title, activeIndex, images.length);
+    const hasMultipleImages = images.length > 1;
 
     return `
-      <button class="topic-image-button" type="button" data-image-src="${escapeAttr(primary.src)}" data-image-alt="${escapeAttr(primary.alt || topic.title)}">
-        <img loading="lazy" src="${escapeAttr(primary.src)}" alt="${escapeAttr(primary.alt || topic.title)}"/>
-      </button>
-      ${
-        thumbnails.length
-          ? `<div class="topic-thumbs">
-              ${thumbnails
-                .map(
-                  (image) => `
-                <button class="topic-thumb-button" type="button" data-image-src="${escapeAttr(image.src)}" data-image-alt="${escapeAttr(image.alt || topic.title)}">
-                  <img loading="lazy" src="${escapeAttr(image.src)}" alt="${escapeAttr(image.alt || topic.title)}"/>
-                </button>`
-                )
-                .join("")}
-            </div>`
-          : ""
+      <div class="topic-carousel">
+        <button
+          class="topic-image-button"
+          type="button"
+          data-image-src="${escapeAttr(activeImage.src)}"
+          data-image-alt="${escapeAttr(activeImage.alt || topic.title)}"
+          data-image-caption="${escapeAttr(imageCaption)}"
+          data-topic-ref="${escapeAttr(topicRef)}"
+          data-image-index="${activeIndex}"
+          aria-label="${escapeAttr(`Abrir ${imageCaption}`)}"
+        >
+          <img loading="lazy" src="${escapeAttr(activeImage.src)}" alt="${escapeAttr(activeImage.alt || topic.title)}"/>
+        </button>
+        ${
+          hasMultipleImages
+            ? `<div class="topic-carousel-toolbar">
+                <div class="topic-carousel-nav" role="group" aria-label="Navegacion de imagenes">
+                  <button class="topic-carousel-step" type="button" data-topic-ref="${escapeAttr(topicRef)}" data-carousel-action="prev" aria-label="Mostrar imagen anterior">
+                    Anterior
+                  </button>
+                  <span class="topic-carousel-status" aria-live="polite">${activeIndex + 1} / ${images.length}</span>
+                  <button class="topic-carousel-step" type="button" data-topic-ref="${escapeAttr(topicRef)}" data-carousel-action="next" aria-label="Mostrar imagen siguiente">
+                    Siguiente
+                  </button>
+                </div>
+                <div class="topic-carousel-dots" role="group" aria-label="Seleccionar imagen">
+                  ${images
+                    .map(
+                      (image, index) => `
+                    <button
+                      class="topic-carousel-dot${index === activeIndex ? " is-active" : ""}"
+                      type="button"
+                      data-topic-ref="${escapeAttr(topicRef)}"
+                      data-carousel-index="${index}"
+                      aria-label="${escapeAttr(`Mostrar imagen ${index + 1} de ${images.length}`)}"
+                      aria-pressed="${String(index === activeIndex)}"
+                    >
+                      <span class="sr-only">Imagen ${index + 1}</span>
+                    </button>`
+                    )
+                    .join("")}
+                </div>
+              </div>`
+            : ""
+        }
+        <p class="topic-image-hint">${
+          hasMultipleImages
+            ? "Usa Anterior o Siguiente para cambiar. Haz clic para ampliar."
+            : "Haz clic en la imagen para ampliar."
+        }</p>
+      </div>`;
+  }
+
+  function updateTopicCarousel(controlButton) {
+    const topicRef = controlButton.dataset.topicRef || "";
+    const topicContext = findTopicByRef(topicRef);
+    if (!topicContext) return;
+
+    const images = topicContext.topic.images || [];
+    if (images.length < 2) return;
+
+    let nextIndex = getTopicImageIndex(topicRef, images.length);
+    let focusRequest = { type: "image" };
+
+    if (controlButton.dataset.carouselAction === "prev") {
+      nextIndex -= 1;
+      focusRequest = { type: "action", value: "prev" };
+    } else if (controlButton.dataset.carouselAction === "next") {
+      nextIndex += 1;
+      focusRequest = { type: "action", value: "next" };
+    } else if (Object.prototype.hasOwnProperty.call(controlButton.dataset, "carouselIndex")) {
+      nextIndex = Number(controlButton.dataset.carouselIndex);
+      nextIndex = normalizeCarouselIndex(nextIndex, images.length);
+      focusRequest = { type: "index", value: String(nextIndex) };
+    }
+
+    setTopicImageIndex(topicRef, nextIndex, images.length);
+    refreshTopicMedia(topicContext.topic, topicRef, focusRequest);
+    syncImageModalTopic(topicRef);
+  }
+
+  function shiftTopicImage(topicRef, step, focusRequest) {
+    const topicContext = findTopicByRef(topicRef);
+    if (!topicContext) return;
+
+    const images = topicContext.topic.images || [];
+    if (images.length < 2) return;
+
+    const activeIndex = getTopicImageIndex(topicRef, images.length);
+    setTopicImageIndex(topicRef, activeIndex + step, images.length);
+    refreshTopicMedia(topicContext.topic, topicRef, focusRequest);
+    syncImageModalTopic(topicRef);
+  }
+
+  function refreshTopicMedia(topic, topicRef, focusRequest) {
+    const topicNode = byId(topicRef);
+    if (!topicNode) return;
+
+    const mediaNode = topicNode.querySelector(".topic-media");
+    if (!mediaNode) return;
+
+    mediaNode.innerHTML = renderTopicMedia(topic, topicRef);
+    restoreTopicMediaFocus(topicNode, focusRequest);
+  }
+
+  function restoreTopicMediaFocus(topicNode, focusRequest) {
+    if (!topicNode || !focusRequest) return;
+
+    const controls = Array.from(topicNode.querySelectorAll(".topic-media button"));
+    let nextFocus = null;
+
+    if (focusRequest.type === "action") {
+      nextFocus = controls.find((button) => button.dataset.carouselAction === focusRequest.value) || null;
+    } else if (focusRequest.type === "index") {
+      nextFocus = controls.find((button) => button.dataset.carouselIndex === focusRequest.value) || null;
+    } else {
+      nextFocus = topicNode.querySelector(".topic-image-button");
+    }
+
+    if (nextFocus) nextFocus.focus();
+  }
+
+  function findTopicByRef(topicRef) {
+    const course = data.courses.find((item) => item.id === state.activeCourseId);
+    if (!course || !topicRef) return null;
+
+    for (const module of course.modules || []) {
+      for (const topic of module.topics || []) {
+        if (buildTopicRef(course.id, module.key, topic.code) === topicRef) {
+          return { course, module, topic };
+        }
       }
-      <p class="topic-image-hint">Haz clic en la imagen para ampliar.</p>`;
+    }
+
+    return null;
+  }
+
+  function getTopicImageIndex(topicRef, imageCount) {
+    if (!imageCount) return 0;
+    const storedIndex = Number(state.topicImageIndexes[topicRef]);
+    if (!Number.isInteger(storedIndex)) return 0;
+    return normalizeCarouselIndex(storedIndex, imageCount);
+  }
+
+  function setTopicImageIndex(topicRef, nextIndex, imageCount) {
+    if (!topicRef || !imageCount) return 0;
+    const normalizedIndex = normalizeCarouselIndex(nextIndex, imageCount);
+    state.topicImageIndexes[topicRef] = normalizedIndex;
+    return normalizedIndex;
+  }
+
+  function normalizeCarouselIndex(index, imageCount) {
+    if (!imageCount) return 0;
+    const safeIndex = Number.isFinite(index) ? Math.trunc(index) : 0;
+    return (safeIndex + imageCount) % imageCount;
+  }
+
+  function getImageCaption(image, fallbackTitle, index, total) {
+    const baseText = (image && image.alt) || fallbackTitle || "Imagen del tema";
+    if (total > 1) return `Imagen ${index + 1} de ${total}. ${baseText}`;
+    return baseText;
+  }
+
+  function syncTopicAutoplay(options = {}) {
+    const immediate = Boolean(options.immediate);
+    const eligibleTopicRefs = getAutoplayEligibleTopicRefs();
+    const timerTopicRefs = Object.keys(state.topicAutoplayTimers);
+
+    timerTopicRefs.forEach((topicRef) => {
+      if (!eligibleTopicRefs.has(topicRef) || state.autoplayPaused) {
+        clearTopicAutoplayTimer(topicRef);
+      }
+    });
+
+    if (state.autoplayPaused) return;
+
+    eligibleTopicRefs.forEach((topicRef) => {
+      if (!state.topicAutoplayTimers[topicRef]) {
+        scheduleTopicAutoplay(topicRef, immediate ? 0 : TOPIC_AUTOPLAY_DELAY_MS);
+      }
+    });
+  }
+
+  function getAutoplayEligibleTopicRefs() {
+    if (!refs.courseDetail) return new Set();
+
+    const topicRefs = new Set();
+    const imageButtons = refs.courseDetail.querySelectorAll(
+      "details.module-item[open] .topic-image-button[data-topic-ref]"
+    );
+
+    imageButtons.forEach((button) => {
+      const topicRef = button.dataset.topicRef || "";
+      const topicContext = findTopicByRef(topicRef);
+      if ((topicContext && topicContext.topic.images ? topicContext.topic.images.length : 0) > 1) {
+        topicRefs.add(topicRef);
+      }
+    });
+
+    return topicRefs;
+  }
+
+  function scheduleTopicAutoplay(topicRef, delay = TOPIC_AUTOPLAY_DELAY_MS) {
+    if (!topicRef || state.autoplayPaused) return;
+
+    clearTopicAutoplayTimer(topicRef);
+    state.topicAutoplayTimers[topicRef] = window.setTimeout(() => {
+      delete state.topicAutoplayTimers[topicRef];
+      autoplayTopicImage(topicRef);
+    }, delay);
+  }
+
+  function autoplayTopicImage(topicRef) {
+    if (!topicRef || state.autoplayPaused) return;
+    if (isImageModalOpen()) return;
+
+    const topicNode = byId(topicRef);
+    if (!topicNode || !topicNode.closest("details.module-item[open]")) return;
+
+    const topicContext = findTopicByRef(topicRef);
+    if (!topicContext) return;
+
+    const images = topicContext.topic.images || [];
+    if (images.length < 2) return;
+
+    const activeIndex = getTopicImageIndex(topicRef, images.length);
+    setTopicImageIndex(topicRef, activeIndex + 1, images.length);
+    refreshTopicMedia(topicContext.topic, topicRef);
+    scheduleTopicAutoplay(topicRef, TOPIC_AUTOPLAY_DELAY_MS);
+  }
+
+  function clearTopicAutoplayTimer(topicRef) {
+    const timerId = state.topicAutoplayTimers[topicRef];
+    if (!timerId) return;
+    window.clearTimeout(timerId);
+    delete state.topicAutoplayTimers[topicRef];
+  }
+
+  function clearAllTopicAutoplayTimers() {
+    Object.keys(state.topicAutoplayTimers).forEach((topicRef) => {
+      clearTopicAutoplayTimer(topicRef);
+    });
+  }
+
+  function clearAutoplayResumeTimer() {
+    if (!state.autoplayResumeTimer) return;
+    window.clearTimeout(state.autoplayResumeTimer);
+    state.autoplayResumeTimer = null;
+  }
+
+  function pauseAutoplayForInteraction() {
+    state.autoplayPaused = true;
+    state.autoplayHoldForModal = false;
+    clearAllTopicAutoplayTimers();
+    clearAutoplayResumeTimer();
+    scheduleAutoplayResume(TOPIC_AUTOPLAY_RESUME_DELAY_MS);
+  }
+
+  function pauseAutoplayUntilModalClose() {
+    state.autoplayPaused = true;
+    state.autoplayHoldForModal = true;
+    clearAllTopicAutoplayTimers();
+    clearAutoplayResumeTimer();
+  }
+
+  function scheduleAutoplayResume(delay = TOPIC_AUTOPLAY_RESUME_DELAY_MS) {
+    clearAutoplayResumeTimer();
+    if (state.autoplayHoldForModal) return;
+
+    state.autoplayResumeTimer = window.setTimeout(() => {
+      state.autoplayResumeTimer = null;
+      if (state.autoplayHoldForModal) return;
+      state.autoplayPaused = false;
+      syncTopicAutoplay({ immediate: true });
+    }, delay);
   }
 
   function syncModuleAccordion() {
@@ -351,12 +675,16 @@
     const moduleItems = refs.courseDetail.querySelectorAll("details.module-item");
     moduleItems.forEach((moduleItem) => {
       moduleItem.addEventListener("toggle", () => {
-        if (!moduleItem.open) return;
+        if (!moduleItem.open) {
+          syncTopicAutoplay();
+          return;
+        }
 
         moduleItems.forEach((otherItem) => {
           if (otherItem !== moduleItem) otherItem.open = false;
         });
 
+        syncTopicAutoplay();
         requestAnimationFrame(() => {
           moduleItem.scrollIntoView({ behavior: "smooth", block: "start" });
         });
@@ -479,13 +807,27 @@
     activeOption.scrollIntoView({ block: "nearest" });
   }
 
-  function openImageModal(src, alt, triggerElement) {
+  function openImageModal(src, alt, caption, triggerElement) {
     if (!refs.imageModal || !refs.imageModalImg || !src) return;
 
+    pauseAutoplayUntilModalClose();
     state.lastModalTrigger = triggerElement || document.activeElement;
-    refs.imageModalImg.src = src;
-    refs.imageModalImg.alt = alt || "Imagen del tema";
-    if (refs.imageModalCaption) refs.imageModalCaption.textContent = alt || "";
+    state.modalTopicRef = triggerElement && triggerElement.dataset ? triggerElement.dataset.topicRef || "" : "";
+
+    if (state.modalTopicRef) {
+      const topicContext = findTopicByRef(state.modalTopicRef);
+      const images = topicContext && topicContext.topic ? topicContext.topic.images || [] : [];
+      const triggerIndex = Number(triggerElement.dataset.imageIndex);
+      if (topicContext && images.length) {
+        setTopicImageIndex(state.modalTopicRef, triggerIndex, images.length);
+        syncImageModalTopic(state.modalTopicRef);
+      } else {
+        renderImageModalFallback(src, alt, caption);
+      }
+    } else {
+      renderImageModalFallback(src, alt, caption);
+    }
+
     refs.imageModal.setAttribute("aria-hidden", "false");
     refs.imageModal.hidden = false;
     document.body.classList.add("modal-open");
@@ -502,12 +844,18 @@
   function closeImageModal() {
     if (!isImageModalOpen()) return;
 
+    const modalTopicRef = state.modalTopicRef;
+    const topicNode = modalTopicRef ? byId(modalTopicRef) : null;
+    const replacementTrigger = topicNode ? topicNode.querySelector(".topic-image-button") : null;
+
     refs.imageModal.hidden = true;
     refs.imageModal.setAttribute("aria-hidden", "true");
     document.body.classList.remove("modal-open");
     setBackgroundInteractivityDisabled(false);
     if (refs.imageModalImg) refs.imageModalImg.src = "";
     if (refs.imageModalImg) refs.imageModalImg.alt = "";
+    if (refs.imageModalNav) refs.imageModalNav.hidden = true;
+    if (refs.imageModalStatus) refs.imageModalStatus.textContent = "";
     if (refs.imageModalCaption) refs.imageModalCaption.textContent = "";
 
     if (
@@ -516,8 +864,15 @@
       document.contains(state.lastModalTrigger)
     ) {
       state.lastModalTrigger.focus();
+    } else if (replacementTrigger && typeof replacementTrigger.focus === "function") {
+      replacementTrigger.focus();
     }
+
     state.lastModalTrigger = null;
+    state.modalTopicRef = "";
+    state.autoplayHoldForModal = false;
+    state.autoplayPaused = true;
+    scheduleAutoplayResume(TOPIC_AUTOPLAY_RESUME_DELAY_MS);
   }
 
   function isImageModalOpen() {
@@ -564,6 +919,52 @@
       event.preventDefault();
       first.focus();
     }
+  }
+
+  function moveImageModal(step) {
+    if (!isImageModalOpen() || !state.modalTopicRef) return;
+
+    const topicContext = findTopicByRef(state.modalTopicRef);
+    if (!topicContext) return;
+
+    const images = topicContext.topic.images || [];
+    if (images.length < 2) return;
+
+    pauseAutoplayUntilModalClose();
+    const activeIndex = getTopicImageIndex(state.modalTopicRef, images.length);
+    setTopicImageIndex(state.modalTopicRef, activeIndex + step, images.length);
+    refreshTopicMedia(topicContext.topic, state.modalTopicRef);
+    syncImageModalTopic(state.modalTopicRef);
+  }
+
+  function syncImageModalTopic(topicRef) {
+    if (!topicRef || topicRef !== state.modalTopicRef) return;
+
+    const topicContext = findTopicByRef(topicRef);
+    if (!topicContext) return;
+
+    const images = topicContext.topic.images || [];
+    if (!images.length) return;
+
+    const activeIndex = getTopicImageIndex(topicRef, images.length);
+    const activeImage = images[activeIndex];
+    const imageCaption = getImageCaption(activeImage, topicContext.topic.title, activeIndex, images.length);
+
+    refs.imageModalImg.src = activeImage.src;
+    refs.imageModalImg.alt = activeImage.alt || topicContext.topic.title || "Imagen del tema";
+    if (refs.imageModalCaption) refs.imageModalCaption.textContent = imageCaption;
+    if (refs.imageModalNav) refs.imageModalNav.hidden = images.length < 2;
+    if (refs.imageModalStatus) {
+      refs.imageModalStatus.textContent = images.length > 1 ? `${activeIndex + 1} / ${images.length}` : "";
+    }
+  }
+
+  function renderImageModalFallback(src, alt, caption) {
+    refs.imageModalImg.src = src;
+    refs.imageModalImg.alt = alt || "Imagen del tema";
+    if (refs.imageModalNav) refs.imageModalNav.hidden = true;
+    if (refs.imageModalStatus) refs.imageModalStatus.textContent = "";
+    if (refs.imageModalCaption) refs.imageModalCaption.textContent = caption || alt || "";
   }
 
   function getFocusableElements(container) {

@@ -1,0 +1,392 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Componentes internos y seguridad ESD</title>
+  <desc id="desc">Infografia sobre arquitectura base de una PC y controles de seguridad electrica y electrostatica.</desc>
+  <foreignObject x="0" y="0" width="1200" height="900">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        .page {
+          width: 1200px;
+          height: 900px;
+          padding: 36px;
+          background: linear-gradient(135deg, #eef8ff 0%, #f6f8ee 100%);
+          font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        .frame {
+          height: 828px;
+          padding: 34px 42px 36px;
+          border: 4px solid #c8d9e2;
+          border-radius: 28px;
+          background: #ffffff;
+          display: flex;
+          flex-direction: column;
+          gap: 26px;
+        }
+
+        h1,
+        h2,
+        p {
+          margin: 0;
+        }
+
+        h1 {
+          color: #143847;
+          font-size: 42px;
+          font-weight: 800;
+          line-height: 1.08;
+        }
+
+        h2 {
+          color: #143847;
+          font-size: 21px;
+          font-weight: 700;
+          line-height: 1.18;
+        }
+
+        .body {
+          color: #35515f;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.35;
+        }
+
+        .body-soft {
+          color: #4f6875;
+          font-size: 17px;
+          font-weight: 600;
+          line-height: 1.35;
+        }
+
+        .body-inverse {
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.35;
+        }
+
+        .top-grid {
+          display: grid;
+          grid-template-columns: minmax(0, 1.28fr) minmax(0, 0.84fr);
+          gap: 26px;
+          align-items: stretch;
+        }
+
+        .panel {
+          border: 3px solid;
+          border-radius: 24px;
+          padding: 20px 22px;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .panel-blue {
+          gap: 18px;
+          background: #f4fbff;
+          border-color: #bdd6e3;
+        }
+
+        .panel-cream {
+          gap: 18px;
+          background: #fff6ec;
+          border-color: #e2c8ac;
+        }
+
+        .panel-dark {
+          gap: 14px;
+          background: #143847;
+          border-color: #143847;
+        }
+
+        .panel-dark h2 {
+          color: #ffffff;
+        }
+
+        .board {
+          min-height: 260px;
+          border-radius: 26px;
+          background: #214d5f;
+          padding: 36px 42px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .board-top {
+          display: grid;
+          grid-template-columns: 1.1fr 0.86fr;
+          gap: 34px;
+          align-items: center;
+        }
+
+        .cpu {
+          width: 170px;
+          height: 126px;
+          border-radius: 20px;
+          background: #94d5ef;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #143847;
+          font-size: 38px;
+          font-weight: 800;
+          letter-spacing: 0.02em;
+        }
+
+        .ram-stack {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+          align-items: flex-start;
+        }
+
+        .ram,
+        .chipset,
+        .storage {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          color: #35515f;
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        .ram {
+          width: 146px;
+          height: 52px;
+          border-radius: 12px;
+          background: #cfe48a;
+        }
+
+        .board-bottom {
+          margin-top: 26px;
+          display: flex;
+          gap: 36px;
+          align-items: center;
+        }
+
+        .chipset {
+          width: 146px;
+          height: 76px;
+          border-radius: 14px;
+          background: #f4c46e;
+        }
+
+        .storage {
+          width: 158px;
+          height: 64px;
+          border-radius: 14px;
+          background: #f1a48f;
+        }
+
+        .safety-list {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+          flex: 1 1 auto;
+          justify-content: center;
+        }
+
+        .safety-row {
+          display: grid;
+          grid-template-columns: 84px minmax(0, 1fr);
+          gap: 16px;
+          align-items: center;
+        }
+
+        .icon-wrap {
+          width: 84px;
+          height: 84px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .icon-check,
+        .icon-ground {
+          width: 68px;
+          height: 68px;
+          border-radius: 999px;
+          position: relative;
+        }
+
+        .icon-check {
+          background: #0f6c7b;
+        }
+
+        .icon-check::before {
+          content: "";
+          position: absolute;
+          left: 22px;
+          top: 15px;
+          width: 12px;
+          height: 22px;
+          border-right: 6px solid #ffffff;
+          border-bottom: 6px solid #ffffff;
+          transform: rotate(40deg);
+        }
+
+        .icon-ground {
+          background: #143847;
+        }
+
+        .icon-ground::before,
+        .icon-ground::after {
+          content: "";
+          position: absolute;
+          left: 33px;
+          background: #dff3ff;
+          border-radius: 999px;
+        }
+
+        .icon-ground::before {
+          top: 12px;
+          width: 6px;
+          height: 44px;
+        }
+
+        .icon-ground::after {
+          top: 34px;
+          width: 36px;
+          height: 6px;
+          left: 16px;
+          box-shadow: 4px 14px 0 0 #dff3ff, 8px 28px 0 0 #dff3ff;
+        }
+
+        .icon-bag {
+          width: 68px;
+          height: 54px;
+          border-radius: 14px;
+          border: 4px solid #5f7180;
+          background: #c6d2db;
+          position: relative;
+        }
+
+        .icon-bag::before,
+        .icon-bag::after {
+          content: "";
+          position: absolute;
+          top: -1px;
+          width: 33px;
+          height: 24px;
+          border-top: 4px solid #5f7180;
+        }
+
+        .icon-bag::before {
+          left: 2px;
+          transform: skewY(37deg);
+        }
+
+        .icon-bag::after {
+          right: 2px;
+          transform: skewY(-37deg);
+        }
+
+        .icon-warning {
+          width: 0;
+          height: 0;
+          border-left: 36px solid transparent;
+          border-right: 36px solid transparent;
+          border-bottom: 62px solid #ffd45b;
+          position: relative;
+          filter: drop-shadow(0 0 0 #9f7a08);
+        }
+
+        .icon-warning::before {
+          content: "";
+          position: absolute;
+          left: -39px;
+          top: 4px;
+          width: 0;
+          height: 0;
+          border-left: 39px solid transparent;
+          border-right: 39px solid transparent;
+          border-bottom: 68px solid transparent;
+          outline: 4px solid #9f7a08;
+          outline-offset: -4px;
+          clip-path: polygon(50% 0, 0 100%, 100% 100%);
+        }
+
+        .warn-mark {
+          position: absolute;
+          left: -5px;
+          top: 22px;
+          color: #143847;
+          font-size: 34px;
+          font-weight: 800;
+          line-height: 1;
+        }
+      </style>
+
+      <div class="frame">
+        <h1>Componentes internos y seguridad ESD</h1>
+
+        <div class="top-grid">
+          <section class="panel panel-blue">
+            <h2>Arquitectura base de una PC</h2>
+
+            <div class="board">
+              <div class="board-top">
+                <div class="cpu">CPU</div>
+                <div class="ram-stack">
+                  <div class="ram">RAM</div>
+                  <div class="ram">RAM</div>
+                </div>
+              </div>
+
+              <div class="board-bottom">
+                <div class="chipset">Chipset</div>
+                <div class="storage">Storage</div>
+              </div>
+            </div>
+
+            <p class="body-soft">La placa base conecta CPU, RAM, almacenamiento y expansion.</p>
+          </section>
+
+          <section class="panel panel-cream">
+            <h2>Control electrico y ESD</h2>
+
+            <div class="safety-list">
+              <div class="safety-row">
+                <div class="icon-wrap">
+                  <div class="icon-warning"><span class="warn-mark">!</span></div>
+                </div>
+                <p class="body">No abrir PSU ni monitores.</p>
+              </div>
+
+              <div class="safety-row">
+                <div class="icon-wrap">
+                  <div class="icon-check"></div>
+                </div>
+                <p class="body">Pulsera y tapete a tierra.</p>
+              </div>
+
+              <div class="safety-row">
+                <div class="icon-wrap">
+                  <div class="icon-bag"></div>
+                </div>
+                <p class="body">Piezas en bolsa antiestatica.</p>
+              </div>
+
+              <div class="safety-row">
+                <div class="icon-wrap">
+                  <div class="icon-ground"></div>
+                </div>
+                <p class="body">Descarga energia antes de manipular piezas.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel panel-dark">
+          <h2>Puntos clave del tema</h2>
+          <p class="body-inverse">Reconoce la arquitectura interna y protege el hardware frente a alto voltaje y ESD.</p>
+        </section>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

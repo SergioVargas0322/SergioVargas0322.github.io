@@ -1,0 +1,36 @@
+- generic [active] [ref=e1]:
+  - link "Saltar al contenido" [ref=e2] [cursor=pointer]:
+    - /url: "#mainContent"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: Sergio Vargas - U00114112
+      - heading "Catálogo de Cursos Cisco" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Consulta personal para reforzar contenidos por curso, módulo y tema.
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: Buscar cursos o temas
+        - combobox "Buscar cursos o temas" [ref=e11]
+      - button "Limpiar" [ref=e12] [cursor=pointer]
+  - main [ref=e13]:
+    - region "Detalle del curso seleccionado" [ref=e14]:
+      - group [ref=e15]:
+        - generic "Cursos disponibles 11 curso(s)" [ref=e16] [cursor=pointer]:
+          - generic [ref=e17]: Cursos disponibles
+          - generic [ref=e18]: 11 curso(s)
+      - generic [ref=e119]:
+        - heading "Conceptos Básicos de Hardware de Computadora" [level=2] [ref=e121]
+        - paragraph [ref=e122]: Curso base para soporte técnico de computadoras personales, portátiles y dispositivos móviles, con enfoque en seguridad, montaje y mantenimiento preventivo.
+        - generic [ref=e123]:
+          - group [ref=e124]:
+            - generic "M1 - Computadoras personales 7 tema(s)" [ref=e125] [cursor=pointer]:
+              - generic [ref=e126]: M1 - Computadoras personales
+              - generic [ref=e127]: 7 tema(s)
+          - group [ref=e128]:
+            - generic "M2 - Computadoras portátiles 3 tema(s)" [ref=e129] [cursor=pointer]:
+              - generic [ref=e130]: M2 - Computadoras portátiles
+              - generic [ref=e131]: 3 tema(s)
+          - group [ref=e132]:
+            - generic "M3 - Otros dispositivos móviles 2 tema(s)" [ref=e133] [cursor=pointer]:
+              - generic [ref=e134]: M3 - Otros dispositivos móviles
+              - generic [ref=e135]: 2 tema(s)
+        - paragraph [ref=e136]: Mostrando 12 de 12 temas del curso.

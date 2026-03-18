@@ -25,8 +25,12 @@
                   "Normas de seguridad para prevenir lesiones, daños eléctricos y respuesta inicial ante incendios.",
                 images: [
                   {
+                    src: "./assets/images/hardware-basics/C1_1.1_lab_safety.svg",
+                    alt: "Infografia de seguridad general en laboratorio de hardware con prevencion electrica y control del area de trabajo."
+                  },
+                  {
                     src: "./assets/images/hardware-basics/C1_1.1.png",
-                    alt: "Ilustración de seguridad general en laboratorio de hardware."
+                    alt: "Diagrama PASS para uso basico de extintor en incendio electrico."
                   }
                 ],
                 sections: [
@@ -61,8 +65,16 @@
                   "Reconocer componentes internos y prevenir daños por alto voltaje y descarga electrostática.",
                 images: [
                   {
+                    src: "./assets/images/hardware-basics/C1_1.2_pc_esd.svg",
+                    alt: "Resumen visual de componentes internos de una PC y controles de seguridad electrica y ESD."
+                  },
+                  {
                     src: "./assets/images/hardware-basics/C1_1.2.jpg",
-                    alt: "Ejemplo de descarga electrostática en componente electrónico."
+                    alt: "Ejemplo de descarga electrostatica sobre componente electronico."
+                  },
+                  {
+                    src: "./assets/images/hardware-basics/C1_1.4.png",
+                    alt: "Fuente de alimentacion de escritorio como referencia de riesgo por alto voltaje interno."
                   }
                 ],
                 sections: [
@@ -98,8 +110,12 @@
                   "Proceso ordenado de desmontaje, uso de herramientas y registro de piezas.",
                 images: [
                   {
+                    src: "./assets/images/hardware-basics/C1_1.5.png",
+                    alt: "Intervencion tecnica dentro del gabinete durante desmontaje o reensamble."
+                  },
+                  {
                     src: "./assets/images/hardware-basics/C1_1.3.png",
-                    alt: "Desmontaje técnico de computadora de escritorio."
+                    alt: "Kit de herramientas para desmontaje tecnico de computadora."
                   }
                 ],
                 sections: [
@@ -164,8 +180,16 @@
                   "Instalación de CPU, RAM y componentes base respetando compatibilidad y control térmico.",
                 images: [
                   {
+                    src: "./assets/images/hardware-basics/C1_1.5_cpu.jpeg",
+                    alt: "Primer plano de CPU instalada sobre placa base."
+                  },
+                  {
+                    src: "./assets/images/hardware-basics/C1_1.5_ram.jpeg",
+                    alt: "Modulo de memoria RAM utilizado como referencia para instalacion."
+                  },
+                  {
                     src: "./assets/images/hardware-basics/C1_1.5.png",
-                    alt: "Montaje de CPU y memoria en placa base."
+                    alt: "Montaje de componentes base dentro del equipo antes del cierre."
                   }
                 ],
                 sections: [
@@ -192,8 +216,16 @@
                   "Integración de almacenamiento y expansión según rendimiento, espacio y consumo.",
                 images: [
                   {
-                    src: "./assets/images/hardware-basics/C1_1.6.png",
-                    alt: "Instalación de unidad de almacenamiento y tarjetas adaptadoras."
+                    src: "./assets/images/hardware-basics/C1_1.6_storage_adapters.svg",
+                    alt: "Comparativa visual entre unidad SATA, modulo M.2 y tarjeta adaptadora PCIe."
+                  },
+                  {
+                    src: "./assets/images/hardware-basics/C1_1.6_sata_drive.jpeg",
+                    alt: "Unidad SATA de 2.5 pulgadas para instalacion de almacenamiento."
+                  },
+                  {
+                    src: "./assets/images/hardware-basics/C1_1.6_m2_ssd.jpeg",
+                    alt: "Unidad M.2 SSD para expansion de almacenamiento de alto rendimiento."
                   }
                 ],
                 sections: [
@@ -257,7 +289,15 @@
                 images: [
                   {
                     src: "./assets/images/hardware-basics/C1_2.1.jpg",
-                    alt: "Componentes internos de una computadora portátil."
+                    alt: "Placa base de equipo portatil como referencia de diseno compacto."
+                  },
+                  {
+                    src: "./assets/images/hardware-basics/C1_2.1_components_table.png",
+                    alt: "Tabla comparativa de componentes entre computador portatil y equipo de escritorio."
+                  },
+                  {
+                    src: "./assets/images/hardware-basics/C1_1.6_m2_ssd.jpeg",
+                    alt: "Unidad M.2 tipica de portatil para ilustrar componentes internos compactos."
                   }
                 ],
                 sections: [
@@ -284,8 +324,16 @@
                   "Configuración segura de Wi-Fi y Bluetooth, adaptadores y acceso compartido.",
                 images: [
                   {
-                    src: "./assets/images/hardware-basics/C1_2.2.jpg",
-                    alt: "Configuración de conectividad inalámbrica en laptop."
+                    src: "./assets/images/hardware-basics/C1_2.2_wireless_setup.svg",
+                    alt: "Resumen visual de Bluetooth, Wi-Fi y hotspot para equipos portatiles."
+                  },
+                  {
+                    src: "./assets/images/hardware-basics/C1_2.2_hotspot.png",
+                    alt: "Pantalla de configuracion de zona Wi-Fi portatil y conectividad celular."
+                  },
+                  {
+                    src: "./assets/images/hardware-basics/C1_2.2_wifi_standards.svg",
+                    alt: "Resumen de estandares Wi-Fi relevantes para portatiles."
                   }
                 ],
                 sections: [
@@ -348,8 +396,16 @@
                   "Panorama de smartphone, tablet, lector electrónico y wearables en contexto de movilidad.",
                 images: [
                   {
+                    src: "./assets/images/hardware-basics/C1_3.1_mobile_ecosystem.svg",
+                    alt: "Panorama de smartphone, tablet, wearables y AR/VR dentro del ecosistema movil."
+                  },
+                  {
+                    src: "./assets/images/hardware-basics/C1_3.1_tablet_reader.jpeg",
+                    alt: "Uso de tablet o lector electronico como parte del ecosistema movil."
+                  },
+                  {
                     src: "./assets/images/hardware-basics/C1_3.1.png",
-                    alt: "Ecosistema de dispositivos móviles para productividad y conectividad."
+                    alt: "Esquema corporal de wearables y sensores conectados."
                   }
                 ],
                 sections: [
@@ -377,8 +433,16 @@
                   "Partes reemplazables, conectividad por cable/inalámbrica y mantenimiento básico.",
                 images: [
                   {
+                    src: "./assets/images/hardware-basics/C1_3.2_mobile_parts_maintenance.svg",
+                    alt: "Resumen de partes reemplazables, conectividad y mantenimiento basico de dispositivos moviles."
+                  },
+                  {
                     src: "./assets/images/hardware-basics/C1_3.2.png",
-                    alt: "Conectividad y mantenimiento de teléfonos y dispositivos móviles."
+                    alt: "Comparativa visual de conectores comunes para dispositivos moviles."
+                  },
+                  {
+                    src: "./assets/images/hardware-basics/C1_3.2_mobile_sharing.jpeg",
+                    alt: "Compartido de datos o conectividad entre dispositivos moviles."
                   }
                 ],
                 sections: [
@@ -10446,6 +10510,10 @@
                                                 "alt": "Automatización y analítica como impulsores de eficiencia en procesos empresariales."
                                           },
                                           {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_004.png",
+                                                "alt": "Edificio inteligente como ejemplo de digitalización de servicios, operación e infraestructura."
+                                          },
+                                          {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_003.png",
                                                 "alt": "Cadena logística conectada que ejemplifica digitalización operativa en tiempo real."
                                           }
@@ -10489,16 +10557,16 @@
                                     "summary": "La red como plataforma de interconexión entre usuarios, sistemas e IoT en entornos locales y distribuidos.",
                                     "images": [
                                           {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_007.png",
+                                                "alt": "Ciudad y usuarios conectados por una red que sirve de base a servicios digitales e IoT."
+                                          },
+                                          {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_008.png",
-                                                "alt": "Diagrama LAN y WAN que conecta hogares, servicios e infraestructura."
+                                                "alt": "Diagrama LAN y WAN que compara redes locales y de amplio alcance."
                                           },
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_021.png",
-                                                "alt": "Arquitectura de conectividad entre borde, internet y centro de datos."
-                                          },
-                                          {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_001.jpeg",
-                                                "alt": "Interconexión global que sustenta servicios digitales y colaboración remota."
+                                                "alt": "Arquitectura de conectividad entre borde, internet y centro de datos para servicios distribuidos."
                                           }
                                     ],
                                     "sections": [
@@ -10544,12 +10612,12 @@
                                                 "alt": "Ecosistema IoT con m\u00faltiples dispositivos y nodos conectados."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_011.png",
-                                                "alt": "Sensores conectados en entorno industrial para monitoreo continuo."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_005.png",
+                                                "alt": "Hogar inteligente con sensores, cerraduras, alarmas y c\u00e1maras como ejemplo del crecimiento de IoT."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_019.png",
-                                                "alt": "Panel de datos IoT para an\u00e1lisis de eventos y toma de decisiones."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_006.png",
+                                                "alt": "Veh\u00edculo conectado con sensores y automatizaci\u00f3n como ejemplo de expansi\u00f3n de dispositivos IoT."
                                           }
                                     ],
                                     "sections": [
@@ -10599,8 +10667,8 @@
                                                 "alt": "Conectividad entre borde, red WAN e infraestructura central."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
-                                                "alt": "Flujo de datos IoT desde dispositivo hasta plataforma de an\u00e1lisis."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_027.png",
+                                                "alt": "Red basada en la intenci\u00f3n que automatiza pol\u00edticas, visibilidad y correcciones en la conectividad IoT."
                                           }
                                     ],
                                     "sections": [
@@ -10652,12 +10720,12 @@
                                                 "alt": "Diagrama de flujo con decisiones y acciones para resolver un problema."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_015.jpeg",
-                                                "alt": "Interfaz de bloques usada para practicar l\u00f3gica de programaci\u00f3n."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_013.png",
+                                                "alt": "Programa visual en bloques que representa secuencia, entradas y decisiones de la l\u00f3gica algor\u00edtmica."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_011.png",
-                                                "alt": "Sistema conectado que ilustra automatizaci\u00f3n y ejecuci\u00f3n de instrucciones."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_014.png",
+                                                "alt": "Asignaci\u00f3n de una variable como ejemplo visual de almacenamiento y manipulaci\u00f3n de datos."
                                           }
                                     ],
                                     "sections": [
@@ -10699,16 +10767,16 @@
                                     "summary": "Uso de programaci\u00f3n visual para adquirir fundamentos de l\u00f3gica, control de flujo y depuraci\u00f3n sin fricci\u00f3n sint\u00e1ctica.",
                                     "images": [
                                           {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_013.png",
+                                                "alt": "Programa en Blockly con bloques enlazados para construir una soluci\u00f3n paso a paso."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_014.png",
+                                                "alt": "Bloque de variable en Blockly para declarar y asignar valores sin escribir sintaxis textual."
+                                          },
+                                          {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_015.jpeg",
-                                                "alt": "Pantalla de Blockly Games para aprendizaje progresivo de programaci\u00f3n."
-                                          },
-                                          {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_012.png",
-                                                "alt": "Flujo de decisiones que puede implementarse con bloques l\u00f3gicos."
-                                          },
-                                          {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_017.jpeg",
-                                                "alt": "Actividad pr\u00e1ctica de prototipado que conecta l\u00f3gica visual con resultados reales."
+                                                "alt": "Pantalla de Blockly Games usada para practicar l\u00f3gica, secuencia y depuraci\u00f3n inicial."
                                           }
                                     ],
                                     "sections": [
@@ -10758,16 +10826,20 @@
                                     "summary": "Introducci\u00f3n pr\u00e1ctica a Python para automatizar tareas, procesar datos de sensores y construir scripts reutilizables en proyectos IoT.",
                                     "images": [
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_011.png",
-                                                "alt": "Sistema conectado que representa automatizaci\u00f3n mediante software en IoT."
+                                                "src": "./assets/images/iot-digital-transformation/C10_M2_blockly_bridge.png",
+                                                "alt": "Ejemplo en Blockly que sirve de puente entre lógica visual y scripts posteriores en Python."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_012.png",
-                                                "alt": "Flujo l\u00f3gico de decisiones, aplicable a scripts de Python para control de procesos."
+                                                "src": "./assets/images/iot-digital-transformation/C10_M2_python_guess_game.png",
+                                                "alt": "Script b\u00e1sico en Python con entrada, condicionales y bucle while."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_019.png",
-                                                "alt": "Panel de an\u00e1lisis de datos, resultado t\u00edpico de scripts de procesamiento en Python."
+                                                "src": "./assets/images/iot-digital-transformation/C10_M2_python_repl.png",
+                                                "alt": "Interprete interactivo de Python para probar expresiones, variables y decisiones en tiempo real."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_M2_python_sensor_rules.png",
+                                                "alt": "Ejemplo de script Python para aplicar reglas a una lectura de sensor y registrar eventos."
                                           }
                                     ],
                                     "sections": [
@@ -10813,12 +10885,12 @@
                                                 "alt": "Trabajo pr\u00e1ctico de ensamblaje electr\u00f3nico durante prototipado."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_018.jpeg",
-                                                "alt": "Herramientas y componentes utilizados para construir prototipos funcionales."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_005.png",
+                                                "alt": "Sistema IoT funcional que sirve como referencia de un prototipo integrado de hardware, software y conectividad."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
-                                                "alt": "Visualizaci\u00f3n de resultados que apoya la validaci\u00f3n de un prototipo IoT."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_018.jpeg",
+                                                "alt": "Herramientas y componentes utilizados para construir y ajustar prototipos funcionales."
                                           }
                                     ],
                                     "sections": [
@@ -10864,12 +10936,12 @@
                                                 "alt": "Recursos de laboratorio para pruebas de prototipado electr\u00f3nico."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_017.jpeg",
-                                                "alt": "Equipo de trabajo desarrollando prototipos con enfoque pr\u00e1ctico."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_015.jpeg",
+                                                "alt": "Recurso de programaci\u00f3n visual \u00fatil para validar l\u00f3gica y pruebas tempranas del prototipo."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_015.jpeg",
-                                                "alt": "Herramienta visual de programaci\u00f3n \u00fatil en etapas tempranas de prototipado."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_017.jpeg",
+                                                "alt": "Trabajo pr\u00e1ctico en laboratorio como recurso humano y formativo para crear prototipos."
                                           }
                                     ],
                                     "sections": [
@@ -10929,12 +11001,12 @@
                                                 "alt": "Representaci\u00f3n de volumen, velocidad y variedad en datos masivos."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
-                                                "alt": "Panel anal\u00edtico con m\u00e9tricas y tendencias derivadas de datos masivos."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_005.png",
+                                                "alt": "Hogar inteligente cuyos sensores generan flujo continuo de datos como ejemplo cotidiano de Big Data en IoT."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_001.jpeg",
-                                                "alt": "Interconexi\u00f3n global que genera grandes vol\u00famenes de datos en servicios digitales."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_006.png",
+                                                "alt": "Veh\u00edculo aut\u00f3nomo como ejemplo de dispositivo que genera grandes vol\u00famenes de datos en tiempo real."
                                           }
                                     ],
                                     "sections": [
@@ -10986,14 +11058,6 @@
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_021.png",
                                                 "alt": "Arquitectura que combina computaci\u00f3n de borde, internet y nube."
-                                          },
-                                          {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_008.png",
-                                                "alt": "Conectividad entre redes locales y WAN para transporte de grandes vol\u00famenes de datos."
-                                          },
-                                          {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_005.png",
-                                                "alt": "Dispositivos IoT en hogar inteligente que generan datos para almacenamiento distribuido."
                                           }
                                     ],
                                     "sections": [
@@ -11043,16 +11107,24 @@
                                     "summary": "Aplicaci\u00f3n de anal\u00edtica y visualizaci\u00f3n para optimizar operaciones, reducir riesgo y acelerar decisiones de negocio basadas en evidencia.",
                                     "images": [
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
-                                                "alt": "Visualizaci\u00f3n anal\u00edtica para identificar relaciones y patrones en datos empresariales."
-                                          },
-                                          {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_026.jpeg",
                                                 "alt": "Panel con m\u00e9tricas y tendencias para toma de decisiones asistida por datos."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_027.png",
-                                                "alt": "Flujo de decisiones y ajustes continuos apoyados por anal\u00edtica operacional."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_022.jpeg",
+                                                "alt": "Gr\u00e1fico de l\u00edneas para visualizar tendencias y cambios a lo largo del tiempo."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
+                                                "alt": "Gr\u00e1fico de dispersi\u00f3n para identificar relaciones y correlaciones entre variables."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_024.jpeg",
+                                                "alt": "Gr\u00e1fico circular para mostrar composici\u00f3n porcentual de categor\u00edas."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_025.jpeg",
+                                                "alt": "Gr\u00e1fico de barras o columnas para comparar magnitudes entre categor\u00edas."
                                           }
                                     ],
                                     "sections": [
@@ -11108,16 +11180,20 @@
                                     "summary": "Aplicaci\u00f3n de reglas, scripts y flujos orquestados para reducir tareas manuales, aumentar consistencia y escalar operaciones en entornos digitales e IoT.",
                                     "images": [
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_002.png",
-                                                "alt": "Robot y paneles de datos representando procesos automatizados en operaci\u00f3n."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_005.png",
+                                                "alt": "Hogar inteligente con sensores y actuadores como ejemplo de automatizaci\u00f3n dom\u00e9stica."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_027.png",
-                                                "alt": "Ciclo de validaci\u00f3n continua para aplicar cambios autom\u00e1ticos con control."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_004.png",
+                                                "alt": "Edificio inteligente donde los sistemas del inmueble se automatizan para operar con mayor eficiencia."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
-                                                "alt": "Tablero de indicadores para medir impacto de automatizaciones."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_007.png",
+                                                "alt": "Ciudad conectada como ejemplo de automatizaci\u00f3n aplicada a servicios e infraestructura urbana."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_006.png",
+                                                "alt": "Veh\u00edculo inteligente con sensores y decisiones autom\u00e1ticas como caso de automatizaci\u00f3n avanzada."
                                           }
                                     ],
                                     "sections": [
@@ -11167,16 +11243,20 @@
                                     "summary": "Uso de IA y ML para detectar patrones, anticipar fallos y apoyar decisiones en sistemas conectados con datos de gran volumen.",
                                     "images": [
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_026.jpeg",
-                                                "alt": "Panel anal\u00edtico con indicadores usados para modelos de IA y ML."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_002.png",
+                                                "alt": "Interfaz de robot y anal\u00edtica como representaci\u00f3n general de inteligencia artificial aplicada."
                                           },
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_019.png",
-                                                "alt": "Representaci\u00f3n de datos masivos como insumo para entrenamiento de modelos."
+                                                "alt": "Datos masivos como insumo para entrenar modelos de aprendizaje de m\u00e1quina."
                                           },
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
-                                                "alt": "Visualizaci\u00f3n de resultados y predicciones para soporte de decisiones."
+                                                "alt": "Visualizaci\u00f3n de resultados y correlaciones como salida de modelos de aprendizaje."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_006.png",
+                                                "alt": "Veh\u00edculo aut\u00f3nomo como caso de uso de IA y ML en entornos IoT."
                                           }
                                     ],
                                     "sections": [
@@ -11228,14 +11308,6 @@
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_027.png",
                                                 "alt": "Ciclo operativo de red basada en intenci\u00f3n con validaci\u00f3n y ajuste continuo."
-                                          },
-                                          {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_026.jpeg",
-                                                "alt": "Panel de control con m\u00e9tricas para evaluar cumplimiento de pol\u00edticas de red."
-                                          },
-                                          {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
-                                                "alt": "Visualizaci\u00f3n de eventos y decisiones para mantener alineada la red con la intenci\u00f3n declarada."
                                           }
                                     ],
                                     "sections": [
@@ -11292,15 +11364,19 @@
                                     "images": [
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_020.jpeg",
-                                                "alt": "Protecci\u00f3n de informaci\u00f3n sensible en entornos digitales conectados."
-                                          },
-                                          {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_028.png",
-                                                "alt": "Escenario de conectividad expuesta que requiere controles de seguridad robustos."
+                                                "alt": "Protecci\u00f3n de datos personales y operativos con valor econ\u00f3mico, legal y reputacional."
                                           },
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_005.png",
-                                                "alt": "Dispositivos inteligentes en hogar que incrementan la superficie de ataque si no se aseguran."
+                                                "alt": "Hogar inteligente como ejemplo de superficie de ataque IoT si sensores y credenciales no se aseguran."
+                                          },
+                                          {
+                                                "src": "./assets/images/intro-cybersecurity/C9_tendencias_riesgo.png",
+                                                "alt": "Indicadores de aumento del riesgo cibern\u00e9tico que justifican controles preventivos y monitoreo continuo."
+                                          },
+                                          {
+                                                "src": "./assets/images/intro-cybersecurity/C9_mccumber_principios.png",
+                                                "alt": "Confidencialidad, integridad y disponibilidad como base para proteger datos y servicios IoT."
                                           }
                                     ],
                                     "sections": [
@@ -11350,16 +11426,28 @@
                                     "summary": "Controles y pr\u00e1cticas para proteger infraestructura empresarial, usuarios, endpoints y activos IoT con un enfoque preventivo y medible.",
                                     "images": [
                                           {
+                                                "src": "./assets/images/intro-cybersecurity/C9_control_acceso_administrativo.png",
+                                                "alt": "Controles administrativos y de acceso que sostienen la seguridad corporativa."
+                                          },
+                                          {
+                                                "src": "./assets/images/intro-cybersecurity/C9_nmap_scan.png",
+                                                "alt": "Gesti\u00f3n de vulnerabilidades mediante descubrimiento t\u00e9cnico de servicios expuestos."
+                                          },
+                                          {
+                                                "src": "./assets/images/intro-cybersecurity/C9_ids.png",
+                                                "alt": "Monitoreo de red con IDS para detectar tr\u00e1fico an\u00f3malo y amenazas tempranas."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_004.png",
+                                                "alt": "Edificio inteligente como ejemplo de activos IoT empresariales que requieren segmentaci\u00f3n y control."
+                                          },
+                                          {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_028.png",
-                                                "alt": "Entorno corporativo expuesto a riesgos en redes inal\u00e1mbricas y acceso remoto."
+                                                "alt": "Acceso inal\u00e1mbrico corporativo y p\u00fablico que exige pol\u00edticas seguras de Wi-Fi y autenticaci\u00f3n."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_027.png",
-                                                "alt": "Ciclo de monitoreo y ajuste continuo aplicable a seguridad empresarial."
-                                          },
-                                          {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_020.jpeg",
-                                                "alt": "Control de acceso a informaci\u00f3n corporativa sensible."
+                                                "src": "./assets/images/intro-cybersecurity/C9_sio_operaciones.png",
+                                                "alt": "Operaci\u00f3n coordinada de seguridad para detecci\u00f3n, escalamiento y respuesta ante incidentes."
                                           }
                                     ],
                                     "sections": [
@@ -11409,16 +11497,20 @@
                                     "summary": "Pr\u00e1cticas de seguridad para proteger identidad digital, dispositivos personales y hogares conectados frente a amenazas comunes en entornos IoT.",
                                     "images": [
                                           {
+                                                "src": "./assets/images/intro-cybersecurity/C9_password_reglas.png",
+                                                "alt": "Contrase\u00f1as robustas y MFA como base de higiene digital personal."
+                                          },
+                                          {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_005.png",
-                                                "alt": "Hogar inteligente con m\u00faltiples dispositivos que requieren configuraci\u00f3n segura."
+                                                "alt": "Hogar inteligente con c\u00e1maras, cerraduras y sensores que requieren configuraci\u00f3n segura."
                                           },
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_028.png",
-                                                "alt": "Uso de conectividad p\u00fablica que incrementa riesgo de exposici\u00f3n de datos."
+                                                "alt": "Uso de Wi-Fi p\u00fablica con riesgo de exposici\u00f3n si no se valida la red y no se usa protecci\u00f3n adicional."
                                           },
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_020.jpeg",
-                                                "alt": "Protecci\u00f3n de informaci\u00f3n personal mediante controles de acceso y cifrado."
+                                                "alt": "Protecci\u00f3n de datos personales mediante acceso controlado, cifrado y resguardo."
                                           }
                                     ],
                                     "sections": [
@@ -11474,16 +11566,20 @@
                                     "summary": "An\u00e1lisis de c\u00f3mo la transformaci\u00f3n digital redefine perfiles profesionales, exige nuevas competencias y abre oportunidades en sectores impulsados por datos.",
                                     "images": [
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_003.png",
-                                                "alt": "Log\u00edstica conectada como ejemplo de transformaci\u00f3n digital en sectores productivos."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_030.jpeg",
+                                                "alt": "Flujo acelerado de datos y servicios que simboliza la velocidad del cambio en el mundo digital."
                                           },
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_001.jpeg",
-                                                "alt": "Interconexi\u00f3n global que acelera cambios en trabajo, servicios y modelos de negocio."
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_003.png",
+                                                "alt": "Cadena log\u00edstica conectada como ejemplo de sectores que crean nuevas oportunidades profesionales."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_002.png",
+                                                "alt": "IA, software y automatizaci\u00f3n como \u00e1reas de especializaci\u00f3n emergentes en el mercado laboral."
                                           },
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_023.png",
-                                                "alt": "Panel de datos para decisiones r\u00e1pidas en entornos digitales competitivos."
+                                                "alt": "Anal\u00edtica y visualizaci\u00f3n de datos como competencia demandada en entornos digitales."
                                           }
                                     ],
                                     "sections": [
@@ -11533,16 +11629,16 @@
                                     "summary": "Ruta pr\u00e1ctica para crecer en IoT y transformaci\u00f3n digital mediante formaci\u00f3n estructurada, certificaciones y evidencia de habilidades aplicadas.",
                                     "images": [
                                           {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_002.png",
-                                                "alt": "Tecnolog\u00edas emergentes asociadas a nuevas rutas de carrera y especializaci\u00f3n."
-                                          },
-                                          {
-                                                "src": "./assets/images/iot-digital-transformation/C10_media_026.jpeg",
-                                                "alt": "M\u00e9tricas y anal\u00edtica como habilidades clave para roles t\u00e9cnicos modernos."
+                                                "src": "./assets/images/iot-digital-transformation/C10_M6_career_path.png",
+                                                "alt": "Mapa visual de comunidades, certificaciones, laboratorios y portafolio para crecer profesionalmente."
                                           },
                                           {
                                                 "src": "./assets/images/iot-digital-transformation/C10_media_017.jpeg",
-                                                "alt": "Pr\u00e1ctica de laboratorio que fortalece portafolio y experiencia demostrable."
+                                                "alt": "Pr\u00e1ctica de laboratorio y experimentaci\u00f3n como base del aprendizaje aplicado."
+                                          },
+                                          {
+                                                "src": "./assets/images/iot-digital-transformation/C10_media_002.png",
+                                                "alt": "Tecnolog\u00edas emergentes asociadas a nuevas rutas de carrera y especializaci\u00f3n."
                                           }
                                     ],
                                     "sections": [

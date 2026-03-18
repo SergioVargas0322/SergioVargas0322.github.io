@@ -1,0 +1,110 @@
+- generic [ref=e1]:
+  - link "Saltar al contenido" [ref=e2] [cursor=pointer]:
+    - /url: "#mainContent"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: Sergio Vargas - U00114112
+      - heading "Catálogo de Cursos Cisco" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Consulta personal para reforzar contenidos por curso, módulo y tema.
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: Buscar cursos o temas
+        - combobox "Buscar cursos o temas" [ref=e11]
+      - button "Limpiar" [ref=e12] [cursor=pointer]
+  - main [ref=e13]:
+    - region "Detalle del curso seleccionado" [ref=e14]:
+      - group [ref=e15]:
+        - generic "Cursos disponibles 11 curso(s)" [ref=e16] [cursor=pointer]:
+          - generic [ref=e17]: Cursos disponibles
+          - generic [ref=e18]: 11 curso(s)
+      - generic [ref=e119]:
+        - heading "Conceptos Básicos de Hardware de Computadora" [level=2] [ref=e121]
+        - paragraph [ref=e122]: Curso base para soporte técnico de computadoras personales, portátiles y dispositivos móviles, con enfoque en seguridad, montaje y mantenimiento preventivo.
+        - generic [ref=e123]:
+          - group [ref=e124]:
+            - generic "M1 - Computadoras personales 7 tema(s)" [ref=e125] [cursor=pointer]:
+              - generic [ref=e126]: M1 - Computadoras personales
+              - generic [ref=e127]: 7 tema(s)
+          - group [ref=e128]:
+            - generic "M2 - Computadoras portátiles 3 tema(s)" [ref=e129] [cursor=pointer]:
+              - generic [ref=e130]: M2 - Computadoras portátiles
+              - generic [ref=e131]: 3 tema(s)
+          - group [ref=e132]:
+            - generic "M3 - Otros dispositivos móviles 2 tema(s)" [active] [ref=e133] [cursor=pointer]:
+              - generic [ref=e134]: M3 - Otros dispositivos móviles
+              - generic [ref=e135]: 2 tema(s)
+            - generic [ref=e454]:
+              - article [ref=e455]:
+                - generic [ref=e456]: "3.1"
+                - heading "Descripción general de dispositivos móviles" [level=4] [ref=e457]
+                - paragraph [ref=e458]: Panorama de smartphone, tablet, lector electrónico y wearables en contexto de movilidad.
+                - generic [ref=e459]:
+                  - generic [ref=e460]:
+                    - generic [ref=e461]:
+                      - heading "Puntos importantes" [level=5] [ref=e462]
+                      - list [ref=e463]:
+                        - listitem [ref=e464]: Movilidad depende de conectividad celular o redes de datos disponibles.
+                        - listitem [ref=e465]: Sistemas operativos móviles con aplicaciones de tiendas específicas.
+                        - listitem [ref=e466]: Servicios de ubicación, GPS y uso compartido de red.
+                    - generic [ref=e467]:
+                      - heading "Tendencias" [level=5] [ref=e468]
+                      - list [ref=e469]:
+                        - listitem [ref=e470]: Crecimiento de wearables, realidad aumentada y realidad virtual.
+                        - listitem [ref=e471]: Mayor integración de sensores de salud y actividad.
+                  - complementary [ref=e472]:
+                    - generic [ref=e473]:
+                      - button "Abrir Imagen 1 de 3. Panorama de smartphone, tablet, wearables y AR/VR dentro del ecosistema movil." [ref=e474] [cursor=pointer]:
+                        - img "Panorama de smartphone, tablet, wearables y AR/VR dentro del ecosistema movil." [ref=e475]
+                      - generic [ref=e476]:
+                        - group "Navegacion de imagenes" [ref=e477]:
+                          - button "Mostrar imagen anterior" [ref=e478] [cursor=pointer]: Anterior
+                          - generic [ref=e479]: 1 / 3
+                          - button "Mostrar imagen siguiente" [ref=e480] [cursor=pointer]: Siguiente
+                        - group "Seleccionar imagen" [ref=e481]:
+                          - button "Mostrar imagen 1 de 3" [pressed] [ref=e482] [cursor=pointer]:
+                            - generic [ref=e483]: Imagen 1
+                          - button "Mostrar imagen 2 de 3" [ref=e484] [cursor=pointer]:
+                            - generic [ref=e485]: Imagen 2
+                          - button "Mostrar imagen 3 de 3" [ref=e486] [cursor=pointer]:
+                            - generic [ref=e487]: Imagen 3
+                      - paragraph [ref=e488]: Usa Anterior o Siguiente para cambiar. Haz clic para ampliar.
+              - article [ref=e489]:
+                - generic [ref=e490]: "3.2"
+                - heading "Hardware y mantenimiento de dispositivos móviles" [level=4] [ref=e491]
+                - paragraph [ref=e492]: Partes reemplazables, conectividad por cable/inalámbrica y mantenimiento básico.
+                - generic [ref=e493]:
+                  - generic [ref=e494]:
+                    - generic [ref=e495]:
+                      - heading "Puntos importantes" [level=5] [ref=e496]
+                      - list [ref=e497]:
+                        - listitem [ref=e498]: "FRP comunes: memoria SD, SIM y batería (según equipo)."
+                        - listitem [ref=e499]: "Conectores: mini-USB, micro-USB, USB-C, Lightning y propietarios."
+                        - listitem [ref=e500]: "Conectividad: NFC, IR, Bluetooth, Wi-Fi, anclaje y zona portátil."
+                    - generic [ref=e501]:
+                      - heading "Mantenimiento mínimo" [level=5] [ref=e502]
+                      - list [ref=e503]:
+                        - listitem [ref=e504]: Limpieza de pantalla con productos adecuados.
+                        - listitem [ref=e505]: Copias de respaldo periódicas de datos.
+                        - listitem [ref=e506]: Actualización de sistema operativo y aplicaciones.
+                    - generic [ref=e507]:
+                      - heading "Resultado esperado" [level=5] [ref=e508]
+                      - list [ref=e509]:
+                        - listitem [ref=e510]: Dispositivo funcional, protegido y con menor riesgo de pérdida de información.
+                  - complementary [ref=e511]:
+                    - generic [ref=e512]:
+                      - button "Abrir Imagen 1 de 3. Resumen de partes reemplazables, conectividad y mantenimiento basico de dispositivos moviles." [ref=e513] [cursor=pointer]:
+                        - img "Resumen de partes reemplazables, conectividad y mantenimiento basico de dispositivos moviles." [ref=e514]
+                      - generic [ref=e515]:
+                        - group "Navegacion de imagenes" [ref=e516]:
+                          - button "Mostrar imagen anterior" [ref=e517] [cursor=pointer]: Anterior
+                          - generic [ref=e518]: 1 / 3
+                          - button "Mostrar imagen siguiente" [ref=e519] [cursor=pointer]: Siguiente
+                        - group "Seleccionar imagen" [ref=e520]:
+                          - button "Mostrar imagen 1 de 3" [pressed] [ref=e521] [cursor=pointer]:
+                            - generic [ref=e522]: Imagen 1
+                          - button "Mostrar imagen 2 de 3" [ref=e523] [cursor=pointer]:
+                            - generic [ref=e524]: Imagen 2
+                          - button "Mostrar imagen 3 de 3" [ref=e525] [cursor=pointer]:
+                            - generic [ref=e526]: Imagen 3
+                      - paragraph [ref=e527]: Usa Anterior o Siguiente para cambiar. Haz clic para ampliar.
+        - paragraph [ref=e136]: Mostrando 12 de 12 temas del curso.

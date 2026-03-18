@@ -1,0 +1,263 @@
+- generic [ref=e1]:
+  - link "Saltar al contenido" [ref=e2] [cursor=pointer]:
+    - /url: "#mainContent"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: Sergio Vargas - U00114112
+      - heading "Catálogo de Cursos Cisco" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Consulta personal para reforzar contenidos por curso, módulo y tema.
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: Buscar cursos o temas
+        - combobox "Buscar cursos o temas" [ref=e11]
+      - button "Limpiar" [ref=e12] [cursor=pointer]
+  - main [ref=e13]:
+    - region "Detalle del curso seleccionado" [ref=e14]:
+      - group [ref=e15]:
+        - generic "Cursos disponibles 11 curso(s)" [ref=e16] [cursor=pointer]:
+          - generic [ref=e17]: Cursos disponibles
+          - generic [ref=e18]: 11 curso(s)
+      - generic [ref=e119]:
+        - heading "Conceptos Básicos de Hardware de Computadora" [level=2] [ref=e121]
+        - paragraph [ref=e122]: Curso base para soporte técnico de computadoras personales, portátiles y dispositivos móviles, con enfoque en seguridad, montaje y mantenimiento preventivo.
+        - generic [ref=e123]:
+          - group [ref=e124]:
+            - generic "M1 - Computadoras personales 7 tema(s)" [active] [ref=e125] [cursor=pointer]:
+              - generic [ref=e126]: M1 - Computadoras personales
+              - generic [ref=e127]: 7 tema(s)
+            - generic [ref=e137]:
+              - article [ref=e138]:
+                - generic [ref=e139]: "1.1"
+                - heading "Seguridad general y contra incendios" [level=4] [ref=e140]
+                - paragraph [ref=e141]: Normas de seguridad para prevenir lesiones, daños eléctricos y respuesta inicial ante incendios.
+                - generic [ref=e142]:
+                  - generic [ref=e143]:
+                    - generic [ref=e144]:
+                      - heading "Puntos importantes" [level=5] [ref=e145]
+                      - list [ref=e146]:
+                        - listitem [ref=e147]: Retirar joyas, asegurar ropa suelta y trabajar con orden.
+                        - listitem [ref=e148]: Desconectar energía antes de abrir o intervenir equipos.
+                        - listitem [ref=e149]: No abrir fuentes de alimentación ni monitores con alto voltaje interno.
+                    - generic [ref=e150]:
+                      - heading "Checklist operativo" [level=5] [ref=e151]
+                      - list [ref=e152]:
+                        - listitem [ref=e153]: Identificar rutas de evacuación y extintor más cercano.
+                        - listitem [ref=e154]: Verificar condiciones del extintor antes de cualquier práctica.
+                        - listitem [ref=e155]: "Aplicar protocolo PASS: Pull, Aim, Squeeze, Sweep."
+                    - generic [ref=e156]:
+                      - heading "Resultado esperado" [level=5] [ref=e157]
+                      - list [ref=e158]:
+                        - listitem [ref=e159]: Intervenir equipos con seguridad personal y control de riesgos eléctricos.
+                  - complementary [ref=e160]:
+                    - generic [ref=e364]:
+                      - button "Abrir Imagen 1 de 2. Infografia de seguridad general en laboratorio de hardware con prevencion electrica y control del area de trabajo." [ref=e365] [cursor=pointer]:
+                        - img "Infografia de seguridad general en laboratorio de hardware con prevencion electrica y control del area de trabajo." [ref=e366]
+                      - generic [ref=e367]:
+                        - group "Navegacion de imagenes" [ref=e368]:
+                          - button "Mostrar imagen anterior" [ref=e369] [cursor=pointer]: Anterior
+                          - generic [ref=e370]: 1 / 2
+                          - button "Mostrar imagen siguiente" [ref=e371] [cursor=pointer]: Siguiente
+                        - group "Seleccionar imagen" [ref=e372]:
+                          - button "Mostrar imagen 1 de 2" [pressed] [ref=e373] [cursor=pointer]:
+                            - generic [ref=e374]: Imagen 1
+                          - button "Mostrar imagen 2 de 2" [ref=e375] [cursor=pointer]:
+                            - generic [ref=e376]: Imagen 2
+                      - paragraph [ref=e377]: Usa Anterior o Siguiente para cambiar. Haz clic para ampliar.
+              - article [ref=e175]:
+                - generic [ref=e176]: "1.2"
+                - heading "Computadoras personales y seguridad eléctrica/ESD" [level=4] [ref=e177]
+                - paragraph [ref=e178]: Reconocer componentes internos y prevenir daños por alto voltaje y descarga electrostática.
+                - generic [ref=e179]:
+                  - generic [ref=e180]:
+                    - generic [ref=e181]:
+                      - heading "Arquitectura base" [level=5] [ref=e182]
+                      - list [ref=e183]:
+                        - listitem [ref=e184]: Entrada, procesamiento, memoria temporal y salida.
+                        - listitem [ref=e185]: Relación entre placa base, CPU, RAM, almacenamiento y tarjetas de expansión.
+                    - generic [ref=e186]:
+                      - heading "Factores de riesgo" [level=5] [ref=e187]
+                      - list [ref=e188]:
+                        - listitem [ref=e189]: Componentes pueden retener voltaje aún estando apagados.
+                        - listitem [ref=e190]: Intercambiar adaptadores de energía incompatibles puede dañar equipos.
+                        - listitem [ref=e191]: Menos de 30V de estática pueden afectar hardware sensible.
+                    - generic [ref=e192]:
+                      - heading "Checklist ESD" [level=5] [ref=e193]
+                      - list [ref=e194]:
+                        - listitem [ref=e195]: Usar pulsera y alfombrilla antiestática conectada a tierra.
+                        - listitem [ref=e196]: Mantener componentes en bolsas antiestáticas hasta su instalación.
+                        - listitem [ref=e197]: Tocar superficie conectada a tierra antes de manipular piezas.
+                  - complementary [ref=e198]:
+                    - generic [ref=e378]:
+                      - button "Abrir Imagen 3 de 3. Fuente de alimentacion de escritorio como referencia de riesgo por alto voltaje interno." [ref=e379] [cursor=pointer]:
+                        - img "Fuente de alimentacion de escritorio como referencia de riesgo por alto voltaje interno." [ref=e380]
+                      - generic [ref=e381]:
+                        - group "Navegacion de imagenes" [ref=e382]:
+                          - button "Mostrar imagen anterior" [ref=e383] [cursor=pointer]: Anterior
+                          - generic [ref=e384]: 3 / 3
+                          - button "Mostrar imagen siguiente" [ref=e385] [cursor=pointer]: Siguiente
+                        - group "Seleccionar imagen" [ref=e386]:
+                          - button "Mostrar imagen 1 de 3" [ref=e387] [cursor=pointer]:
+                            - generic [ref=e388]: Imagen 1
+                          - button "Mostrar imagen 2 de 3" [ref=e389] [cursor=pointer]:
+                            - generic [ref=e390]: Imagen 2
+                          - button "Mostrar imagen 3 de 3" [pressed] [ref=e391] [cursor=pointer]:
+                            - generic [ref=e392]: Imagen 3
+                      - paragraph [ref=e393]: Usa Anterior o Siguiente para cambiar. Haz clic para ampliar.
+              - article [ref=e215]:
+                - generic [ref=e216]: "1.3"
+                - heading "Desmontaje del equipo" [level=4] [ref=e217]
+                - paragraph [ref=e218]: Proceso ordenado de desmontaje, uso de herramientas y registro de piezas.
+                - generic [ref=e219]:
+                  - generic [ref=e220]:
+                    - generic [ref=e221]:
+                      - heading "Herramientas clave" [level=5] [ref=e222]
+                      - list [ref=e223]:
+                        - listitem [ref=e224]: Pulsera y tapete antiestático.
+                        - listitem [ref=e225]: Aire comprimido, destornilladores Phillips/Torx/plano.
+                        - listitem [ref=e226]: Extractor magnético y probador de cableado.
+                    - generic [ref=e227]:
+                      - heading "Pasos críticos" [level=5] [ref=e228]
+                      - list [ref=e229]:
+                        - listitem [ref=e230]: Apagar, desconectar y descargar energía residual.
+                        - listitem [ref=e231]: Retirar panel y desmontar por capas, documentando conexiones.
+                        - listitem [ref=e232]: Organizar tornillos y piezas para montaje posterior.
+                    - generic [ref=e233]:
+                      - heading "Resultado esperado" [level=5] [ref=e234]
+                      - list [ref=e235]:
+                        - listitem [ref=e236]: Desmontaje seguro con trazabilidad para diagnóstico y reensamblaje.
+                  - complementary [ref=e237]:
+                    - generic [ref=e394]:
+                      - button "Abrir Imagen 1 de 2. Intervencion tecnica dentro del gabinete durante desmontaje o reensamble." [ref=e395] [cursor=pointer]:
+                        - img "Intervencion tecnica dentro del gabinete durante desmontaje o reensamble." [ref=e396]
+                      - generic [ref=e397]:
+                        - group "Navegacion de imagenes" [ref=e398]:
+                          - button "Mostrar imagen anterior" [ref=e399] [cursor=pointer]: Anterior
+                          - generic [ref=e400]: 1 / 2
+                          - button "Mostrar imagen siguiente" [ref=e401] [cursor=pointer]: Siguiente
+                        - group "Seleccionar imagen" [ref=e402]:
+                          - button "Mostrar imagen 1 de 2" [pressed] [ref=e403] [cursor=pointer]:
+                            - generic [ref=e404]: Imagen 1
+                          - button "Mostrar imagen 2 de 2" [ref=e405] [cursor=pointer]:
+                            - generic [ref=e406]: Imagen 2
+                      - paragraph [ref=e407]: Usa Anterior o Siguiente para cambiar. Haz clic para ampliar.
+              - article [ref=e252]:
+                - generic [ref=e253]: "1.4"
+                - heading "Gabinete y fuente de alimentación" [level=4] [ref=e254]
+                - paragraph [ref=e255]: Montaje de gabinete y PSU con conexión correcta y validación eléctrica inicial.
+                - generic [ref=e256]:
+                  - generic [ref=e257]:
+                    - generic [ref=e258]:
+                      - heading "Puntos importantes" [level=5] [ref=e259]
+                      - list [ref=e260]:
+                        - listitem [ref=e261]: Verificar posición y fijación mecánica de la PSU.
+                        - listitem [ref=e262]: Conectar líneas principales y auxiliares sin forzar conectores.
+                        - listitem [ref=e263]: Mantener flujo de aire libre para evitar sobrecalentamiento.
+                    - generic [ref=e264]:
+                      - heading "Factores" [level=5] [ref=e265]
+                      - list [ref=e266]:
+                        - listitem [ref=e267]: Compatibilidad física del gabinete.
+                        - listitem [ref=e268]: Capacidad de potencia y eficiencia de la fuente.
+                        - listitem [ref=e269]: Calidad del cableado interno.
+                  - complementary [ref=e270]:
+                    - generic [ref=e271]:
+                      - button "Abrir Instalación de fuente de alimentación dentro del gabinete." [ref=e272] [cursor=pointer]:
+                        - img "Instalación de fuente de alimentación dentro del gabinete." [ref=e273]
+                      - paragraph [ref=e274]: Haz clic en la imagen para ampliar.
+              - article [ref=e275]:
+                - generic [ref=e276]: "1.5"
+                - heading "Componentes de placa base" [level=4] [ref=e277]
+                - paragraph [ref=e278]: Instalación de CPU, RAM y componentes base respetando compatibilidad y control térmico.
+                - generic [ref=e279]:
+                  - generic [ref=e280]:
+                    - generic [ref=e281]:
+                      - heading "Checklist técnico" [level=5] [ref=e282]
+                      - list [ref=e283]:
+                        - listitem [ref=e284]: Confirmar socket/chipset compatible con CPU.
+                        - listitem [ref=e285]: Instalar RAM en canales correctos y con firmeza uniforme.
+                        - listitem [ref=e286]: Aplicar solución térmica y fijar disipador sin exceso de presión.
+                    - generic [ref=e287]:
+                      - heading "Resultados" [level=5] [ref=e288]
+                      - list [ref=e289]:
+                        - listitem [ref=e290]: POST estable, memoria detectada y temperaturas dentro de rango.
+                  - complementary [ref=e291]:
+                    - generic [ref=e408]:
+                      - button "Abrir Imagen 3 de 3. Montaje de componentes base dentro del equipo antes del cierre." [ref=e409] [cursor=pointer]:
+                        - img "Montaje de componentes base dentro del equipo antes del cierre." [ref=e410]
+                      - generic [ref=e411]:
+                        - group "Navegacion de imagenes" [ref=e412]:
+                          - button "Mostrar imagen anterior" [ref=e413] [cursor=pointer]: Anterior
+                          - generic [ref=e414]: 3 / 3
+                          - button "Mostrar imagen siguiente" [ref=e415] [cursor=pointer]: Siguiente
+                        - group "Seleccionar imagen" [ref=e416]:
+                          - button "Mostrar imagen 1 de 3" [ref=e417] [cursor=pointer]:
+                            - generic [ref=e418]: Imagen 1
+                          - button "Mostrar imagen 2 de 3" [ref=e419] [cursor=pointer]:
+                            - generic [ref=e420]: Imagen 2
+                          - button "Mostrar imagen 3 de 3" [pressed] [ref=e421] [cursor=pointer]:
+                            - generic [ref=e422]: Imagen 3
+                      - paragraph [ref=e423]: Usa Anterior o Siguiente para cambiar. Haz clic para ampliar.
+              - article [ref=e308]:
+                - generic [ref=e309]: "1.6"
+                - heading "Unidades y tarjetas adaptadoras" [level=4] [ref=e310]
+                - paragraph [ref=e311]: Integración de almacenamiento y expansión según rendimiento, espacio y consumo.
+                - generic [ref=e312]:
+                  - generic [ref=e313]:
+                    - generic [ref=e314]:
+                      - heading "Puntos importantes" [level=5] [ref=e315]
+                      - list [ref=e316]:
+                        - listitem [ref=e317]: "Elegir interfaces correctas: SATA, M.2, PCIe."
+                        - listitem [ref=e318]: Asegurar fijación física y cableado de energía/datos.
+                        - listitem [ref=e319]: Validar detección en BIOS/UEFI y sistema operativo.
+                    - generic [ref=e320]:
+                      - heading "Factores" [level=5] [ref=e321]
+                      - list [ref=e322]:
+                        - listitem [ref=e323]: Ancho de banda requerido.
+                        - listitem [ref=e324]: Disponibilidad de ranuras y conectores.
+                        - listitem [ref=e325]: Compatibilidad por generación del hardware.
+                  - complementary [ref=e326]:
+                    - generic [ref=e424]:
+                      - button "Abrir Imagen 3 de 3. Unidad M.2 SSD para expansion de almacenamiento de alto rendimiento." [ref=e425] [cursor=pointer]:
+                        - img "Unidad M.2 SSD para expansion de almacenamiento de alto rendimiento." [ref=e426]
+                      - generic [ref=e427]:
+                        - group "Navegacion de imagenes" [ref=e428]:
+                          - button "Mostrar imagen anterior" [ref=e429] [cursor=pointer]: Anterior
+                          - generic [ref=e430]: 3 / 3
+                          - button "Mostrar imagen siguiente" [ref=e431] [cursor=pointer]: Siguiente
+                        - group "Seleccionar imagen" [ref=e432]:
+                          - button "Mostrar imagen 1 de 3" [ref=e433] [cursor=pointer]:
+                            - generic [ref=e434]: Imagen 1
+                          - button "Mostrar imagen 2 de 3" [ref=e435] [cursor=pointer]:
+                            - generic [ref=e436]: Imagen 2
+                          - button "Mostrar imagen 3 de 3" [pressed] [ref=e437] [cursor=pointer]:
+                            - generic [ref=e438]: Imagen 3
+                      - paragraph [ref=e439]: Usa Anterior o Siguiente para cambiar. Haz clic para ampliar.
+              - article [ref=e343]:
+                - generic [ref=e344]: "1.7"
+                - heading "Cableado y cierre del ensamble" [level=4] [ref=e345]
+                - paragraph [ref=e346]: Cierre de ensamblaje con cableado ordenado, pruebas básicas y validación final.
+                - generic [ref=e347]:
+                  - generic [ref=e348]:
+                    - generic [ref=e349]:
+                      - heading "Checklist de cierre" [level=5] [ref=e350]
+                      - list [ref=e351]:
+                        - listitem [ref=e352]: Revisar conectores de panel frontal, ventiladores y periféricos.
+                        - listitem [ref=e353]: Confirmar ausencia de cables sueltos o bloqueando ventiladores.
+                        - listitem [ref=e354]: Verificar tornillos y fijaciones de componentes.
+                    - generic [ref=e355]:
+                      - heading "Resultado esperado" [level=5] [ref=e356]
+                      - list [ref=e357]:
+                        - listitem [ref=e358]: Equipo estable, limpio y listo para pruebas de funcionamiento.
+                  - complementary [ref=e359]:
+                    - generic [ref=e360]:
+                      - button "Abrir Organización de cableado interno antes del cierre de gabinete." [ref=e361] [cursor=pointer]:
+                        - img "Organización de cableado interno antes del cierre de gabinete." [ref=e362]
+                      - paragraph [ref=e363]: Haz clic en la imagen para ampliar.
+          - group [ref=e128]:
+            - generic "M2 - Computadoras portátiles 3 tema(s)" [ref=e129] [cursor=pointer]:
+              - generic [ref=e130]: M2 - Computadoras portátiles
+              - generic [ref=e131]: 3 tema(s)
+          - group [ref=e132]:
+            - generic "M3 - Otros dispositivos móviles 2 tema(s)" [ref=e133] [cursor=pointer]:
+              - generic [ref=e134]: M3 - Otros dispositivos móviles
+              - generic [ref=e135]: 2 tema(s)
+        - paragraph [ref=e136]: Mostrando 12 de 12 temas del curso.

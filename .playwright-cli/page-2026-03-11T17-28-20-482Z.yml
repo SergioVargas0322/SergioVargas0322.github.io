@@ -1,0 +1,110 @@
+- generic [ref=e1]:
+  - link "Saltar al contenido" [ref=e2] [cursor=pointer]:
+    - /url: "#mainContent"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: Sergio Vargas - U00114112
+      - heading "Catálogo de Cursos Cisco" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Consulta personal para reforzar contenidos por curso, módulo y tema.
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: Buscar cursos o temas
+        - combobox "Buscar cursos o temas" [ref=e11]
+      - button "Limpiar" [ref=e12] [cursor=pointer]
+  - main [ref=e13]:
+    - region "Detalle del curso seleccionado" [ref=e14]:
+      - group [ref=e15]:
+        - generic "Cursos disponibles 11 curso(s)" [ref=e16] [cursor=pointer]:
+          - generic [ref=e17]: Cursos disponibles
+          - generic [ref=e18]: 11 curso(s)
+      - generic [ref=e119]:
+        - heading "Conceptos Básicos de Hardware de Computadora" [level=2] [ref=e121]
+        - paragraph [ref=e122]: Curso base para soporte técnico de computadoras personales, portátiles y dispositivos móviles, con enfoque en seguridad, montaje y mantenimiento preventivo.
+        - generic [ref=e123]:
+          - group [ref=e124]:
+            - generic "M1 - Computadoras personales 7 tema(s)" [ref=e125] [cursor=pointer]:
+              - generic [ref=e126]: M1 - Computadoras personales
+              - generic [ref=e127]: 7 tema(s)
+          - group [ref=e128]:
+            - generic "M2 - Computadoras portátiles 3 tema(s)" [ref=e129] [cursor=pointer]:
+              - generic [ref=e130]: M2 - Computadoras portátiles
+              - generic [ref=e131]: 3 tema(s)
+          - group [ref=e132]:
+            - generic "M3 - Otros dispositivos móviles 2 tema(s)" [active] [ref=e133] [cursor=pointer]:
+              - generic [ref=e134]: M3 - Otros dispositivos móviles
+              - generic [ref=e135]: 2 tema(s)
+            - generic [ref=e454]:
+              - article [ref=e455]:
+                - generic [ref=e456]: "3.1"
+                - heading "Descripción general de dispositivos móviles" [level=4] [ref=e457]
+                - paragraph [ref=e458]: Panorama de smartphone, tablet, lector electrónico y wearables en contexto de movilidad.
+                - generic [ref=e459]:
+                  - generic [ref=e460]:
+                    - generic [ref=e461]:
+                      - heading "Puntos importantes" [level=5] [ref=e462]
+                      - list [ref=e463]:
+                        - listitem [ref=e464]: Movilidad depende de conectividad celular o redes de datos disponibles.
+                        - listitem [ref=e465]: Sistemas operativos móviles con aplicaciones de tiendas específicas.
+                        - listitem [ref=e466]: Servicios de ubicación, GPS y uso compartido de red.
+                    - generic [ref=e467]:
+                      - heading "Tendencias" [level=5] [ref=e468]
+                      - list [ref=e469]:
+                        - listitem [ref=e470]: Crecimiento de wearables, realidad aumentada y realidad virtual.
+                        - listitem [ref=e471]: Mayor integración de sensores de salud y actividad.
+                  - complementary [ref=e472]:
+                    - generic [ref=e560]:
+                      - button "Abrir Imagen 2 de 3. Uso de tablet o lector electronico como parte del ecosistema movil." [ref=e561] [cursor=pointer]:
+                        - img "Uso de tablet o lector electronico como parte del ecosistema movil." [ref=e562]
+                      - generic [ref=e563]:
+                        - group "Navegacion de imagenes" [ref=e564]:
+                          - button "Mostrar imagen anterior" [ref=e565] [cursor=pointer]: Anterior
+                          - generic [ref=e566]: 2 / 3
+                          - button "Mostrar imagen siguiente" [ref=e567] [cursor=pointer]: Siguiente
+                        - group "Seleccionar imagen" [ref=e568]:
+                          - button "Mostrar imagen 1 de 3" [ref=e569] [cursor=pointer]:
+                            - generic [ref=e570]: Imagen 1
+                          - button "Mostrar imagen 2 de 3" [pressed] [ref=e571] [cursor=pointer]:
+                            - generic [ref=e572]: Imagen 2
+                          - button "Mostrar imagen 3 de 3" [ref=e573] [cursor=pointer]:
+                            - generic [ref=e574]: Imagen 3
+                      - paragraph [ref=e575]: Usa Anterior o Siguiente para cambiar. Haz clic para ampliar.
+              - article [ref=e489]:
+                - generic [ref=e490]: "3.2"
+                - heading "Hardware y mantenimiento de dispositivos móviles" [level=4] [ref=e491]
+                - paragraph [ref=e492]: Partes reemplazables, conectividad por cable/inalámbrica y mantenimiento básico.
+                - generic [ref=e493]:
+                  - generic [ref=e494]:
+                    - generic [ref=e495]:
+                      - heading "Puntos importantes" [level=5] [ref=e496]
+                      - list [ref=e497]:
+                        - listitem [ref=e498]: "FRP comunes: memoria SD, SIM y batería (según equipo)."
+                        - listitem [ref=e499]: "Conectores: mini-USB, micro-USB, USB-C, Lightning y propietarios."
+                        - listitem [ref=e500]: "Conectividad: NFC, IR, Bluetooth, Wi-Fi, anclaje y zona portátil."
+                    - generic [ref=e501]:
+                      - heading "Mantenimiento mínimo" [level=5] [ref=e502]
+                      - list [ref=e503]:
+                        - listitem [ref=e504]: Limpieza de pantalla con productos adecuados.
+                        - listitem [ref=e505]: Copias de respaldo periódicas de datos.
+                        - listitem [ref=e506]: Actualización de sistema operativo y aplicaciones.
+                    - generic [ref=e507]:
+                      - heading "Resultado esperado" [level=5] [ref=e508]
+                      - list [ref=e509]:
+                        - listitem [ref=e510]: Dispositivo funcional, protegido y con menor riesgo de pérdida de información.
+                  - complementary [ref=e511]:
+                    - generic [ref=e576]:
+                      - button "Abrir Imagen 2 de 3. Comparativa visual de conectores comunes para dispositivos moviles." [ref=e577] [cursor=pointer]:
+                        - img "Comparativa visual de conectores comunes para dispositivos moviles." [ref=e578]
+                      - generic [ref=e579]:
+                        - group "Navegacion de imagenes" [ref=e580]:
+                          - button "Mostrar imagen anterior" [ref=e581] [cursor=pointer]: Anterior
+                          - generic [ref=e582]: 2 / 3
+                          - button "Mostrar imagen siguiente" [ref=e583] [cursor=pointer]: Siguiente
+                        - group "Seleccionar imagen" [ref=e584]:
+                          - button "Mostrar imagen 1 de 3" [ref=e585] [cursor=pointer]:
+                            - generic [ref=e586]: Imagen 1
+                          - button "Mostrar imagen 2 de 3" [pressed] [ref=e587] [cursor=pointer]:
+                            - generic [ref=e588]: Imagen 2
+                          - button "Mostrar imagen 3 de 3" [ref=e589] [cursor=pointer]:
+                            - generic [ref=e590]: Imagen 3
+                      - paragraph [ref=e591]: Usa Anterior o Siguiente para cambiar. Haz clic para ampliar.
+        - paragraph [ref=e136]: Mostrando 12 de 12 temas del curso.

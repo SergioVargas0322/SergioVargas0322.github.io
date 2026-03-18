@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Curso 10 M1 Validator</title>
+<base href="../../"/>
+<link rel="stylesheet" href="assets/css/styles.css"/>
+<style>
+  body[data-ready="true"] .topic-card[data-validator-target="true"] {
+    outline: 4px solid #2d6cdf;
+    outline-offset: 4px;
+  }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#mainContent">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-copy">
+      <p class="eyebrow">Validator</p>
+      <h1 id="catalogTitle">Curso 10 - Modulo 1</h1>
+      <p id="catalogSubtitle">Validacion automatica de imagenes en la pagina.</p>
+    </div>
+  </header>
+
+  <main id="mainContent" class="layout">
+    <section class="panel details-panel" aria-label="Detalle del curso seleccionado">
+      <details id="coursePicker" class="course-picker" open>
+        <summary>
+          <span>Cursos disponibles</span>
+          <span id="resultMeta" aria-live="polite"></span>
+        </summary>
+        <div id="courseGrid" class="course-grid"></div>
+      </details>
+      <div id="courseDetail" class="course-detail"></div>
+    </section>
+  </main>
+
+  <div id="imageModal" class="image-modal" aria-hidden="true" hidden>
+    <div class="image-modal-content" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen" tabindex="-1">
+      <button id="imageModalClose" class="image-modal-close" type="button" aria-label="Cerrar imagen ampliada">Cerrar</button>
+      <img id="imageModalImg" src="" alt=""/>
+      <div id="imageModalNav" class="image-modal-nav" hidden>
+        <button id="imageModalPrev" class="image-modal-step" type="button" aria-label="Mostrar imagen anterior en modal">Anterior</button>
+        <p id="imageModalStatus" class="image-modal-status" aria-live="polite"></p>
+        <button id="imageModalNext" class="image-modal-step" type="button" aria-label="Mostrar imagen siguiente en modal">Siguiente</button>
+      </div>
+      <p id="imageModalCaption" class="image-modal-caption"></p>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const courseId = params.get("course") || "intro-iot-digital-transformation";
+      const moduleKey = params.get("module") || "M1";
+      const topicCode = params.get("topic") || "1.1";
+      const imageIndex = Math.max(1, Number(params.get("image") || "1"));
+      const openModal = params.get("modal") === "1";
+
+      function slug(value) {
+        return String(value || "")
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-+|-+$/g, "");
+      }
+
+      function buildTopicRef() {
+        return "topic-" + slug(courseId) + "-" + slug(moduleKey) + "-" + slug(topicCode);
+      }
+
+      function waitFor(condition, timeoutMs) {
+        const timeout = timeoutMs || 8000;
+        const started = Date.now();
+        return new Promise((resolve, reject) => {
+          function tick() {
+            let result = null;
+            try {
+              result = condition();
+            } catch (error) {
+              reject(error);
+              return;
+            }
+            if (result) {
+              resolve(result);
+              return;
+            }
+            if (Date.now() - started > timeout) {
+              reject(new Error("Timeout waiting for validator state."));
+              return;
+            }
+            window.requestAnimationFrame(tick);
+          }
+          tick();
+        });
+      }
+
+      async function run() {
+        const courseButton = await waitFor(() =>
+          document.querySelector('#courseGrid button[data-course-id="' + courseId + '"]')
+        );
+        courseButton.click();
+
+        const moduleItem = await waitFor(() =>
+          document.querySelector('#courseDetail details[data-module-key="' + moduleKey + '"]')
+        );
+        if (!moduleItem.open) {
+          const summary = moduleItem.querySelector("summary");
+          if (summary) summary.click();
+        }
+
+        const topicNode = await waitFor(() => document.getElementById(buildTopicRef()));
+        topicNode.dataset.validatorTarget = "true";
+        topicNode.scrollIntoView({ block: "center" });
+        await new Promise((resolve) => window.setTimeout(resolve, 250));
+
+        const imageSelector = String(Math.max(0, imageIndex - 1));
+        const imageDot = topicNode.querySelector('button[data-carousel-index="' + imageSelector + '"]');
+        if (imageDot) {
+          imageDot.click();
+          await new Promise((resolve) => window.setTimeout(resolve, 250));
+        }
+
+        if (openModal) {
+          const imageButton = topicNode.querySelector(".topic-image-button");
+          if (!imageButton) throw new Error("Topic image button not found.");
+          imageButton.click();
+          await waitFor(() => {
+            const modal = document.getElementById("imageModal");
+            return modal && !modal.hidden;
+          });
+        }
+
+        document.body.dataset.ready = "true";
+      }
+
+      window.addEventListener("load", () => {
+        run().catch((error) => {
+          document.body.dataset.ready = "error";
+          document.body.dataset.error = error && error.message ? error.message : String(error);
+          console.error(error);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

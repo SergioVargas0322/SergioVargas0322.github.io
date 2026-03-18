@@ -1,0 +1,126 @@
+- generic [ref=e1]:
+  - link "Saltar al contenido" [ref=e2] [cursor=pointer]:
+    - /url: "#mainContent"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: Sergio Vargas - U00114112
+      - heading "Catálogo de Cursos Cisco" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Consulta personal para reforzar contenidos por curso, módulo y tema.
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: Buscar cursos o temas
+        - combobox "Buscar cursos o temas" [ref=e11]
+      - button "Limpiar" [ref=e12] [cursor=pointer]
+  - main [ref=e13]:
+    - region "Detalle del curso seleccionado" [ref=e14]:
+      - group [ref=e15]:
+        - generic "Cursos disponibles 11 curso(s)" [ref=e16] [cursor=pointer]:
+          - generic [ref=e17]: Cursos disponibles
+          - generic [ref=e18]: 11 curso(s)
+      - generic [ref=e119]:
+        - heading "Conceptos Básicos de Hardware de Computadora" [level=2] [ref=e121]
+        - paragraph [ref=e122]: Curso base para soporte técnico de computadoras personales, portátiles y dispositivos móviles, con enfoque en seguridad, montaje y mantenimiento preventivo.
+        - generic [ref=e123]:
+          - group [ref=e124]:
+            - generic "M1 - Computadoras personales 7 tema(s)" [ref=e125] [cursor=pointer]:
+              - generic [ref=e126]: M1 - Computadoras personales
+              - generic [ref=e127]: 7 tema(s)
+          - group [ref=e128]:
+            - generic "M2 - Computadoras portátiles 3 tema(s)" [active] [ref=e129] [cursor=pointer]:
+              - generic [ref=e130]: M2 - Computadoras portátiles
+              - generic [ref=e131]: 3 tema(s)
+            - generic [ref=e364]:
+              - article [ref=e365]:
+                - generic [ref=e366]: "2.1"
+                - heading "Componentes de computadoras portátiles" [level=4] [ref=e367]
+                - paragraph [ref=e368]: Comparación de arquitectura portátil vs escritorio y sus límites de mantenimiento.
+                - generic [ref=e369]:
+                  - generic [ref=e370]:
+                    - generic [ref=e371]:
+                      - heading "Puntos importantes" [level=5] [ref=e372]
+                      - list [ref=e373]:
+                        - listitem [ref=e374]: Diseño compacto con menor margen térmico.
+                        - listitem [ref=e375]: Componentes más integrados y menos reemplazables.
+                        - listitem [ref=e376]: Dependencia de partes específicas por fabricante.
+                    - generic [ref=e377]:
+                      - heading "Resultado esperado" [level=5] [ref=e378]
+                      - list [ref=e379]:
+                        - listitem [ref=e380]: Diagnóstico y mantenimiento considerando restricciones físicas y de compatibilidad.
+                  - complementary [ref=e381]:
+                    - generic [ref=e382]:
+                      - button "Abrir Imagen 1 de 3. Placa base de equipo portatil como referencia de diseno compacto." [ref=e383] [cursor=pointer]:
+                        - img "Placa base de equipo portatil como referencia de diseno compacto." [ref=e384]
+                      - generic [ref=e385]:
+                        - group "Navegacion de imagenes" [ref=e386]:
+                          - button "Mostrar imagen anterior" [ref=e387] [cursor=pointer]: Anterior
+                          - generic [ref=e388]: 1 / 3
+                          - button "Mostrar imagen siguiente" [ref=e389] [cursor=pointer]: Siguiente
+                        - group "Seleccionar imagen" [ref=e390]:
+                          - button "Mostrar imagen 1 de 3" [pressed] [ref=e391] [cursor=pointer]:
+                            - generic [ref=e392]: Imagen 1
+                          - button "Mostrar imagen 2 de 3" [ref=e393] [cursor=pointer]:
+                            - generic [ref=e394]: Imagen 2
+                          - button "Mostrar imagen 3 de 3" [ref=e395] [cursor=pointer]:
+                            - generic [ref=e396]: Imagen 3
+                      - paragraph [ref=e397]: Usa Anterior o Siguiente para cambiar. Haz clic para ampliar.
+              - article [ref=e398]:
+                - generic [ref=e399]: "2.2"
+                - heading "Configuración inalámbrica en portátiles" [level=4] [ref=e400]
+                - paragraph [ref=e401]: Configuración segura de Wi-Fi y Bluetooth, adaptadores y acceso compartido.
+                - generic [ref=e402]:
+                  - generic [ref=e403]:
+                    - generic [ref=e404]:
+                      - heading "Puntos importantes" [level=5] [ref=e405]
+                      - list [ref=e406]:
+                        - listitem [ref=e407]: Seleccionar SSID correcto y autenticar clave de seguridad.
+                        - listitem [ref=e408]: Definir si el equipo debe ser detectable en redes públicas.
+                        - listitem [ref=e409]: Validar conectividad y perfil de red al finalizar.
+                    - generic [ref=e410]:
+                      - heading "Factores técnicos" [level=5] [ref=e411]
+                      - list [ref=e412]:
+                        - listitem [ref=e413]: Adaptadores mini-PCIe/M.2 según modelo del equipo.
+                        - listitem [ref=e414]: Versiones y clases de Bluetooth para alcance y velocidad.
+                        - listitem [ref=e415]: Uso de anclaje por USB, Bluetooth o zona Wi-Fi portátil.
+                  - complementary [ref=e416]:
+                    - generic [ref=e417]:
+                      - button "Abrir Imagen 1 de 3. Flujo practico de emparejamiento Bluetooth." [ref=e418] [cursor=pointer]:
+                        - img "Flujo practico de emparejamiento Bluetooth." [ref=e419]
+                      - generic [ref=e420]:
+                        - group "Navegacion de imagenes" [ref=e421]:
+                          - button "Mostrar imagen anterior" [ref=e422] [cursor=pointer]: Anterior
+                          - generic [ref=e423]: 1 / 3
+                          - button "Mostrar imagen siguiente" [ref=e424] [cursor=pointer]: Siguiente
+                        - group "Seleccionar imagen" [ref=e425]:
+                          - button "Mostrar imagen 1 de 3" [pressed] [ref=e426] [cursor=pointer]:
+                            - generic [ref=e427]: Imagen 1
+                          - button "Mostrar imagen 2 de 3" [ref=e428] [cursor=pointer]:
+                            - generic [ref=e429]: Imagen 2
+                          - button "Mostrar imagen 3 de 3" [ref=e430] [cursor=pointer]:
+                            - generic [ref=e431]: Imagen 3
+                      - paragraph [ref=e432]: Usa Anterior o Siguiente para cambiar. Haz clic para ampliar.
+              - article [ref=e433]:
+                - generic [ref=e434]: "2.3"
+                - heading "Mantenimiento preventivo de portátiles" [level=4] [ref=e435]
+                - paragraph [ref=e436]: Rutinas para reducir fallas por polvo, golpes, humedad y sobrecalentamiento.
+                - generic [ref=e437]:
+                  - generic [ref=e438]:
+                    - generic [ref=e439]:
+                      - heading "Checklist preventivo" [level=5] [ref=e440]
+                      - list [ref=e441]:
+                        - listitem [ref=e442]: Mantener líquidos y alimentos lejos del equipo.
+                        - listitem [ref=e443]: Realizar limpieza con materiales no abrasivos.
+                        - listitem [ref=e444]: Desconectar energía y retirar batería antes de limpiar.
+                    - generic [ref=e445]:
+                      - heading "Resultados" [level=5] [ref=e446]
+                      - list [ref=e447]:
+                        - listitem [ref=e448]: Mayor vida útil del equipo y menor frecuencia de fallas.
+                  - complementary [ref=e449]:
+                    - generic [ref=e450]:
+                      - button "Abrir Mantenimiento preventivo de laptop con limpieza segura." [ref=e451] [cursor=pointer]:
+                        - img "Mantenimiento preventivo de laptop con limpieza segura." [ref=e452]
+                      - paragraph [ref=e453]: Haz clic en la imagen para ampliar.
+          - group [ref=e132]:
+            - generic "M3 - Otros dispositivos móviles 2 tema(s)" [ref=e133] [cursor=pointer]:
+              - generic [ref=e134]: M3 - Otros dispositivos móviles
+              - generic [ref=e135]: 2 tema(s)
+        - paragraph [ref=e136]: Mostrando 12 de 12 temas del curso.

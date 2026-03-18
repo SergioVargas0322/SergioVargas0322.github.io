@@ -1,0 +1,348 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Configuracion inalambrica en portatiles</title>
+  <desc id="desc">Infografia sobre configuracion de Bluetooth, Wi-Fi y hotspot en portatiles, con tarjetas de igual altura y contenido adaptable.</desc>
+  <foreignObject x="0" y="0" width="1200" height="900">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        .page {
+          width: 1200px;
+          height: 900px;
+          padding: 36px;
+          background: linear-gradient(135deg, #eef7ff 0%, #f5faf2 100%);
+          font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        .frame {
+          height: 828px;
+          padding: 34px 42px 34px;
+          border: 4px solid #c8d9e2;
+          border-radius: 28px;
+          background: #ffffff;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+          margin: 0;
+          padding: 0;
+        }
+
+        h1 {
+          color: #143847;
+          font-size: 42px;
+          font-weight: 800;
+          line-height: 1.08;
+        }
+
+        .subtitle {
+          color: #5a6f7b;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.35;
+        }
+
+        h3 {
+          color: #143847;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 1.18;
+        }
+
+        .body-inverse {
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.35;
+        }
+
+        .cards {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 20px;
+          align-items: stretch;
+        }
+
+        .card {
+          border: 3px solid;
+          border-radius: 24px;
+          padding: 18px 18px 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          min-width: 0;
+        }
+
+        .card-blue {
+          background: #eef6ff;
+          border-color: #bcd6e3;
+        }
+
+        .card-green {
+          background: #f6fff1;
+          border-color: #cbdcbc;
+        }
+
+        .card-cream {
+          background: #fff8ef;
+          border-color: #e0d0b8;
+        }
+
+        .visual {
+          min-height: 112px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .icon-bt {
+          width: 96px;
+          height: 96px;
+          border-radius: 999px;
+          background: #0f6c7b;
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 34px;
+          font-weight: 800;
+          letter-spacing: 0.04em;
+        }
+
+        .icon-wifi {
+          width: 116px;
+          height: 92px;
+          position: relative;
+        }
+
+        .wifi-arc {
+          position: absolute;
+          left: 50%;
+          border: 7px solid transparent;
+          border-top-color: #0f6c7b;
+          border-radius: 50%;
+          transform: translateX(-50%) rotate(180deg);
+        }
+
+        .wifi-arc.arc-1 {
+          top: 0;
+          width: 92px;
+          height: 48px;
+        }
+
+        .wifi-arc.arc-2 {
+          top: 24px;
+          width: 64px;
+          height: 36px;
+        }
+
+        .wifi-arc.arc-3 {
+          top: 48px;
+          width: 36px;
+          height: 24px;
+        }
+
+        .wifi-dot {
+          position: absolute;
+          left: 46px;
+          top: 70px;
+          width: 24px;
+          height: 24px;
+          border-radius: 999px;
+          background: #0f6c7b;
+        }
+
+        .icon-phone {
+          position: relative;
+          width: 108px;
+          height: 104px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .phone-shell {
+          width: 56px;
+          height: 96px;
+          border-radius: 18px;
+          background: #214d5f;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .phone-screen {
+          width: 34px;
+          height: 62px;
+          border-radius: 11px;
+          background: #9fd2ef;
+        }
+
+        .phone-home {
+          position: absolute;
+          bottom: 10px;
+          width: 11px;
+          height: 11px;
+          border-radius: 999px;
+          background: #ffffff;
+        }
+
+        .phone-signal {
+          position: absolute;
+          left: 8px;
+          width: 26px;
+          height: 14px;
+          border: 5px solid transparent;
+          border-top-color: #0f6c7b;
+          border-radius: 50%;
+          transform: rotate(180deg);
+        }
+
+        .phone-signal.sig-1 {
+          top: 28px;
+        }
+
+        .phone-signal.sig-2 {
+          top: 48px;
+          width: 38px;
+          left: 0;
+        }
+
+        .steps {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-top: auto;
+        }
+
+        .step {
+          border-radius: 16px;
+          padding: 12px 14px;
+          color: #35515f;
+          font-size: 17px;
+          font-weight: 700;
+          line-height: 1.28;
+          display: flex;
+          gap: 10px;
+          align-items: flex-start;
+        }
+
+        .card-blue .step {
+          background: #dfeefe;
+        }
+
+        .card-green .step {
+          background: #e6f4df;
+        }
+
+        .card-cream .step {
+          background: #f6e5d7;
+        }
+
+        .num {
+          width: 24px;
+          height: 24px;
+          flex: 0 0 24px;
+          border-radius: 999px;
+          background: #143847;
+          color: #ffffff;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 13px;
+          font-weight: 800;
+          line-height: 1;
+          margin-top: 1px;
+        }
+
+        .panel-dark {
+          border-radius: 22px;
+          background: #143847;
+          padding: 20px 26px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .panel-dark h2 {
+          color: #ffffff;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 1.18;
+          margin: 0;
+        }
+      </style>
+
+      <div class="frame">
+        <div>
+          <h1>Configuracion inalambrica en portatiles</h1>
+          <p class="subtitle">Pasos base para emparejar accesorios, unirse a Wi-Fi y compartir conectividad desde el movil.</p>
+        </div>
+
+        <div class="cards">
+          <section class="card card-blue">
+            <h3>Bluetooth</h3>
+            <div class="visual"><div class="icon-bt">BT</div></div>
+            <ul class="steps">
+              <li class="step"><span class="num">1</span><span>Activa Bluetooth en ambos equipos.</span></li>
+              <li class="step"><span class="num">2</span><span>Pon el accesorio en modo visible.</span></li>
+              <li class="step"><span class="num">3</span><span>Empareja y confirma PIN o codigo.</span></li>
+            </ul>
+          </section>
+
+          <section class="card card-green">
+            <h3>Wi-Fi</h3>
+            <div class="visual">
+              <div class="icon-wifi">
+                <div class="wifi-arc arc-1"></div>
+                <div class="wifi-arc arc-2"></div>
+                <div class="wifi-arc arc-3"></div>
+                <div class="wifi-dot"></div>
+              </div>
+            </div>
+            <ul class="steps">
+              <li class="step"><span class="num">1</span><span>Selecciona el SSID correcto.</span></li>
+              <li class="step"><span class="num">2</span><span>Ingresa la clave o credencial de acceso.</span></li>
+              <li class="step"><span class="num">3</span><span>Guarda el perfil y valida conectividad.</span></li>
+            </ul>
+          </section>
+
+          <section class="card card-cream">
+            <h3>Hotspot / celular</h3>
+            <div class="visual">
+              <div class="icon-phone">
+                <div class="phone-signal sig-1"></div>
+                <div class="phone-signal sig-2"></div>
+                <div class="phone-shell">
+                  <div class="phone-screen"></div>
+                  <div class="phone-home"></div>
+                </div>
+              </div>
+            </div>
+            <ul class="steps">
+              <li class="step"><span class="num">1</span><span>Define si compartiras por hotspot, USB o Bluetooth.</span></li>
+              <li class="step"><span class="num">2</span><span>Activa la opcion y fija nombre y clave.</span></li>
+              <li class="step"><span class="num">3</span><span>Verifica consumo, seguridad y equipo conectado.</span></li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="panel-dark">
+          <h2>Revision minima</h2>
+          <p class="body-inverse">Comprobar detectabilidad, autenticacion, intensidad de senal y si el equipo debe o no ser visible en redes publicas.</p>
+        </section>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Hardware y mantenimiento de dispositivos moviles</title>
+  <desc id="desc">Infografia compacta sobre partes reemplazables, conectividad fisica e inalambrica y mantenimiento minimo recomendado.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef8ff" />
+      <stop offset="100%" stop-color="#f8f6ef" />
+    </linearGradient>
+    <style>
+      .title { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 40px; font-weight: 700; fill: #143847; }
+      .section { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 22px; font-weight: 700; fill: #143847; }
+      .body { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 17px; font-weight: 600; fill: #35515f; }
+      .small { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 16px; font-weight: 700; fill: #35515f; }
+      .inverse-section { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 22px; font-weight: 700; fill: #ffffff; }
+      .inverse-body { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 17px; font-weight: 600; fill: #dceaf0; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="900" rx="36" fill="url(#bg)" />
+  <rect x="36" y="36" width="1128" height="828" rx="28" fill="#ffffff" stroke="#c8d9e2" stroke-width="4" />
+  <text x="78" y="108" class="title">Hardware y mantenimiento de dispositivos moviles</text>
+
+  <rect x="78" y="160" width="498" height="290" rx="24" fill="#f4fbff" stroke="#bcd5e2" stroke-width="3" />
+  <text x="112" y="212" class="section">Partes reemplazables de campo</text>
+
+  <rect x="116" y="258" width="98" height="156" rx="14" fill="#e8eef2" stroke="#7a909e" stroke-width="3" />
+  <path d="M128 290h74M128 320h74M128 350h58" stroke="#7a909e" stroke-width="8" stroke-linecap="round" />
+  <text x="165" y="438" text-anchor="middle" class="small">microSD</text>
+
+  <rect x="250" y="282" width="132" height="98" rx="14" fill="#f1c46e" />
+  <rect x="264" y="298" width="32" height="22" rx="4" fill="#fff3d2" />
+  <text x="316" y="438" text-anchor="middle" class="small">SIM</text>
+
+  <rect x="422" y="270" width="104" height="128" rx="16" fill="#36505d" />
+  <rect x="438" y="288" width="72" height="18" rx="8" fill="#89b7ca" />
+  <text x="474" y="438" text-anchor="middle" class="small">Battery</text>
+
+  <rect x="624" y="160" width="500" height="290" rx="24" fill="#fff8ef" stroke="#e1d0b8" stroke-width="3" />
+  <text x="658" y="212" class="section">Conectividad fisica e inalambrica</text>
+
+  <rect x="678" y="268" width="74" height="126" rx="18" fill="#214d5f" />
+  <rect x="702" y="252" width="26" height="34" rx="8" fill="#f1c46e" />
+  <text x="715" y="430" text-anchor="middle" class="small">USB-C</text>
+
+  <rect x="814" y="290" width="84" height="42" rx="21" fill="#7fc1da" />
+  <rect x="830" y="302" width="52" height="18" rx="9" fill="#f7fbff" />
+  <text x="856" y="430" text-anchor="middle" class="small">Lightning</text>
+
+  <circle cx="1002" cy="286" r="38" fill="#0f6c7b" />
+  <circle cx="1002" cy="286" r="18" fill="#dff5ff" />
+  <path d="M966 360c16-12 28-18 36-18 12 0 24 6 36 18" fill="none" stroke="#0f6c7b" stroke-width="8" stroke-linecap="round" />
+  <path d="M972 390c12-8 22-12 30-12 9 0 18 4 30 12" fill="none" stroke="#0f6c7b" stroke-width="8" stroke-linecap="round" />
+  <text x="1002" y="430" text-anchor="middle" class="small">Wi-Fi / BT / NFC</text>
+
+  <rect x="78" y="500" width="1046" height="296" rx="24" fill="#f7fff6" stroke="#c7ddc2" stroke-width="3" />
+  <text x="112" y="552" class="section">Mantenimiento minimo recomendado</text>
+
+  <circle cx="142" cy="620" r="18" fill="#0f6c7b" />
+  <path d="M134 620l6 6 12-14" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="178" y="626" class="body">Limpia pantalla y conectores con insumos adecuados.</text>
+
+  <circle cx="142" cy="678" r="18" fill="#0f6c7b" />
+  <path d="M134 678l6 6 12-14" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="178" y="684" class="body">Haz copias de respaldo periodicas de los datos.</text>
+
+  <circle cx="142" cy="736" r="18" fill="#0f6c7b" />
+  <path d="M134 736l6 6 12-14" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="178" y="742" class="body">Actualiza sistema y aplicaciones para reducir riesgos.</text>
+
+  <rect x="770" y="584" width="290" height="154" rx="22" fill="#143847" />
+  <text x="804" y="634" class="inverse-section">Objetivo</text>
+  <text x="804" y="668" class="inverse-body">
+    <tspan x="804" dy="0">Equipo movil protegido,</tspan>
+    <tspan x="804" dy="21">con datos respaldados</tspan>
+    <tspan x="804" dy="21">y menor riesgo operativo.</tspan>
+  </text>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Descripcion general de dispositivos moviles</title>
+  <desc id="desc">Resumen visual del ecosistema movil con smartphone, tablet, wearables y AR/VR.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef6ff" />
+      <stop offset="100%" stop-color="#f7f2ff" />
+    </linearGradient>
+    <style>
+      .title { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 40px; font-weight: 700; fill: #143847; }
+      .section { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 20px; font-weight: 700; fill: #143847; }
+      .body { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 16px; font-weight: 600; fill: #35515f; }
+      .inverse-section { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 22px; font-weight: 700; fill: #ffffff; }
+      .inverse-body { font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 17px; font-weight: 600; fill: #dceaf0; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="900" rx="36" fill="url(#bg)" />
+  <rect x="36" y="36" width="1128" height="828" rx="28" fill="#ffffff" stroke="#c7d8e4" stroke-width="4" />
+  <text x="78" y="108" class="title">Descripcion general de dispositivos moviles</text>
+
+  <rect x="82" y="176" width="244" height="414" rx="24" fill="#f4fbff" stroke="#bcd6e3" stroke-width="3" />
+  <text x="116" y="226" class="section">Smartphone</text>
+  <rect x="148" y="262" width="112" height="228" rx="24" fill="#1f3f4d" />
+  <rect x="160" y="282" width="88" height="188" rx="16" fill="#6fd1f0" />
+  <circle cx="204" cy="430" r="18" fill="#ffffff" />
+  <circle cx="206" cy="324" r="16" fill="#f5c15a" />
+  <text x="116" y="536" class="body">
+    <tspan x="116" dy="0">Apps, GPS, camara</tspan>
+    <tspan x="116" dy="20">y compartido de red.</tspan>
+  </text>
+
+  <rect x="350" y="176" width="244" height="414" rx="24" fill="#f9fff3" stroke="#cadebf" stroke-width="3" />
+  <text x="384" y="226" class="section">Tablet / e-reader</text>
+  <rect x="396" y="284" width="152" height="194" rx="20" fill="#37505e" />
+  <rect x="412" y="300" width="120" height="162" rx="12" fill="#e9f3ff" />
+  <path d="M432 336h80M432 366h80M432 396h60" stroke="#94b7ca" stroke-width="8" stroke-linecap="round" />
+  <text x="384" y="536" class="body">
+    <tspan x="384" dy="0">Lectura, video y</tspan>
+    <tspan x="384" dy="20">productividad movil.</tspan>
+  </text>
+
+  <rect x="618" y="176" width="244" height="414" rx="24" fill="#fff8ef" stroke="#e1d0b8" stroke-width="3" />
+  <text x="652" y="226" class="section">Wearables</text>
+  <rect x="676" y="292" width="128" height="140" rx="50" fill="#36505d" />
+  <rect x="710" y="318" width="60" height="88" rx="16" fill="#7fd2e8" />
+  <path d="M676 332c-28 0-50 22-50 50v22c0 27 22 50 50 50M804 332c28 0 50 22 50 50v22c0 27-22 50-50 50" fill="none" stroke="#36505d" stroke-width="24" stroke-linecap="round" />
+  <text x="652" y="536" class="body">
+    <tspan x="652" dy="0">Alertas, actividad</tspan>
+    <tspan x="652" dy="20">fisica y salud.</tspan>
+  </text>
+
+  <rect x="886" y="176" width="244" height="414" rx="24" fill="#f7f3ff" stroke="#d5caec" stroke-width="3" />
+  <text x="920" y="226" class="section">AR / VR</text>
+  <rect x="944" y="306" width="126" height="92" rx="28" fill="#31424d" />
+  <rect x="962" y="332" width="38" height="28" rx="8" fill="#a2d3f2" />
+  <rect x="1014" y="332" width="38" height="28" rx="8" fill="#a2d3f2" />
+  <path d="M944 350h-32M1070 350h32" stroke="#31424d" stroke-width="16" stroke-linecap="round" />
+  <text x="920" y="536" class="body">
+    <tspan x="920" dy="0">Experiencias inmersivas</tspan>
+    <tspan x="920" dy="20">y apoyo contextual.</tspan>
+  </text>
+
+  <rect x="82" y="652" width="1048" height="162" rx="24" fill="#143847" />
+  <text x="118" y="706" class="inverse-section">Resumen del tema</text>
+  <text x="118" y="742" class="inverse-body">
+    <tspan x="118" dy="0">El ecosistema movil combina smartphone, tablet, lector,</tspan>
+    <tspan x="118" dy="21">wearables y experiencias AR/VR segun el contexto de uso.</tspan>
+  </text>
+</svg>

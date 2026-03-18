@@ -1,0 +1,325 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Unidades y tarjetas adaptadoras</title>
+  <desc id="desc">Comparativa entre unidad SATA, modulo M.2 y tarjeta adaptadora PCIe para seleccionar la opcion adecuada en una PC.</desc>
+  <foreignObject x="0" y="0" width="1200" height="900">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        .page {
+          width: 1200px;
+          height: 900px;
+          padding: 36px;
+          background: linear-gradient(135deg, #eef7ff 0%, #f6fbf2 100%);
+          font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        .frame {
+          height: 828px;
+          padding: 34px 42px 34px;
+          border: 4px solid #c8d9e2;
+          border-radius: 28px;
+          background: #ffffff;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+          margin: 0;
+        }
+
+        h1 {
+          color: #143847;
+          font-size: 42px;
+          font-weight: 800;
+          line-height: 1.08;
+        }
+
+        h3 {
+          color: #143847;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 1.18;
+        }
+
+        .body {
+          color: #35515f;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.35;
+        }
+
+        .body-inverse {
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.35;
+        }
+
+        .cards {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 22px;
+          align-items: stretch;
+        }
+
+        .card {
+          border: 3px solid;
+          border-radius: 24px;
+          padding: 18px 18px 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+          min-width: 0;
+        }
+
+        .card-blue {
+          background: #f4fbff;
+          border-color: #bcd4e2;
+        }
+
+        .card-green {
+          background: #f8fff3;
+          border-color: #c8dcb9;
+        }
+
+        .card-cream {
+          background: #fff7ee;
+          border-color: #dec9b1;
+        }
+
+        .visual {
+          flex: 1 1 auto;
+          min-height: 220px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .meta {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .drive-sata {
+          width: 180px;
+          height: 128px;
+          border-radius: 20px;
+          background: #2e5162;
+          position: relative;
+        }
+
+        .drive-sata::before {
+          content: "";
+          position: absolute;
+          left: 66px;
+          top: 26px;
+          width: 48px;
+          height: 48px;
+          border-radius: 999px;
+          background: #bdd7e4;
+          box-shadow: inset 0 0 0 15px #2e5162;
+        }
+
+        .sata-lines {
+          margin-top: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          align-items: center;
+        }
+
+        .line-gold,
+        .line-coral {
+          border-radius: 999px;
+        }
+
+        .line-gold {
+          width: 104px;
+          height: 16px;
+          background: #f1c46e;
+        }
+
+        .line-coral {
+          width: 78px;
+          height: 16px;
+          background: #f1a48f;
+        }
+
+        .m2-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 22px;
+        }
+
+        .m2-stick {
+          width: 188px;
+          height: 54px;
+          border-radius: 12px;
+          background: #2e5162;
+          padding: 13px 20px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .nand {
+          width: 28px;
+          height: 28px;
+          border-radius: 6px;
+          background: #cfe48a;
+        }
+
+        .m2-hole {
+          width: 12px;
+          height: 12px;
+          margin-left: auto;
+          border-radius: 999px;
+          background: #f5e1cc;
+        }
+
+        .pcie-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 14px;
+        }
+
+        .pcie-bracket {
+          width: 170px;
+          height: 38px;
+          background: #7fc1da;
+          clip-path: polygon(0 100%, 20% 0, 100% 0, 80% 100%);
+        }
+
+        .pcie-card {
+          width: 206px;
+          height: 92px;
+          border-radius: 18px;
+          background: #214d5f;
+          position: relative;
+          padding: 18px 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+        }
+
+        .pcie-card::after {
+          content: "";
+          position: absolute;
+          right: 10px;
+          bottom: -12px;
+          width: 44px;
+          height: 14px;
+          border-radius: 8px;
+          background: #f1c46e;
+        }
+
+        .pcie-top,
+        .pcie-bottom {
+          border-radius: 999px;
+        }
+
+        .pcie-top {
+          width: 98px;
+          height: 16px;
+          background: #cfe48a;
+        }
+
+        .pcie-bottom {
+          width: 132px;
+          height: 16px;
+          background: #f1a48f;
+        }
+
+        .panel-dark {
+          border-radius: 22px;
+          background: #143847;
+          padding: 20px 26px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .panel-dark h2 {
+          color: #ffffff;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 1.18;
+          margin: 0;
+        }
+      </style>
+
+      <div class="frame">
+        <h1>Unidades y tarjetas adaptadoras</h1>
+
+        <div class="cards">
+          <section class="card card-blue">
+            <h3>SATA drive</h3>
+            <div class="visual">
+              <div>
+                <div class="drive-sata"></div>
+                <div class="sata-lines">
+                  <div class="line-gold"></div>
+                  <div class="line-coral"></div>
+                </div>
+              </div>
+            </div>
+            <div class="meta">
+              <p class="body">Uso tipico: HDD o SSD SATA instalado en bahia interna.</p>
+              <p class="body">Requiere energia y cable de datos SATA.</p>
+            </div>
+          </section>
+
+          <section class="card card-green">
+            <h3>M.2 / NVMe</h3>
+            <div class="visual">
+              <div class="m2-wrap">
+                <div class="m2-stick">
+                  <div class="nand"></div>
+                  <div class="nand"></div>
+                  <div class="nand"></div>
+                  <div class="m2-hole"></div>
+                </div>
+              </div>
+            </div>
+            <div class="meta">
+              <p class="body">Uso tipico: almacenamiento rapido y compacto.</p>
+              <p class="body">Se instala en ranura M.2 sin cable de datos.</p>
+            </div>
+          </section>
+
+          <section class="card card-cream">
+            <h3>PCIe adapter card</h3>
+            <div class="visual">
+              <div class="pcie-wrap">
+                <div class="pcie-bracket"></div>
+                <div class="pcie-card">
+                  <div class="pcie-top"></div>
+                  <div class="pcie-bottom"></div>
+                </div>
+              </div>
+            </div>
+            <div class="meta">
+              <p class="body">Uso tipico: red, video o expansion adicional.</p>
+              <p class="body">Depende de la generacion PCIe y de las ranuras libres.</p>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel-dark">
+          <h2>Criterio de seleccion</h2>
+          <p class="body-inverse">Elige segun ancho de banda, espacio fisico, consumo y puertos libres del sistema.</p>
+        </section>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

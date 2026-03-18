@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Estandares Wi-Fi IEEE 802.11</title>
+  <desc id="desc">Comparativa de estandares Wi-Fi 802.11n, 802.11ac y 802.11ax para explicar frecuencia, capacidad y escenario de uso.</desc>
+  <foreignObject x="0" y="0" width="1200" height="900">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        .page {
+          width: 1200px;
+          height: 900px;
+          padding: 36px;
+          background: linear-gradient(135deg, #eef7ff 0%, #f6fbf2 100%);
+          font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        .frame {
+          height: 828px;
+          padding: 34px 42px 34px;
+          border: 4px solid #c8d9e2;
+          border-radius: 28px;
+          background: #ffffff;
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+        }
+
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+          margin: 0;
+          padding: 0;
+        }
+
+        h1 {
+          color: #1d2f55;
+          font-size: 42px;
+          font-weight: 800;
+          line-height: 1.08;
+        }
+
+        .subtitle {
+          color: #5f6f87;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.35;
+        }
+
+        h3 {
+          font-size: 22px;
+          font-weight: 800;
+          line-height: 1.18;
+        }
+
+        .cards {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 18px;
+          align-items: stretch;
+        }
+
+        .card {
+          border: 4px solid;
+          border-radius: 22px;
+          padding: 18px 18px 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          min-width: 0;
+        }
+
+        .card-blue {
+          background: #edf3ff;
+          border-color: #3562dd;
+        }
+
+        .card-blue h3 {
+          color: #3562dd;
+        }
+
+        .card-green {
+          background: #edf8ef;
+          border-color: #29934f;
+        }
+
+        .card-green h3 {
+          color: #29934f;
+        }
+
+        .card-gold {
+          background: #faf2cd;
+          border-color: #b27705;
+        }
+
+        .card-gold h3 {
+          color: #b27705;
+        }
+
+        .feature-list {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          color: #33455f;
+          font-size: 17px;
+          font-weight: 600;
+          line-height: 1.35;
+        }
+
+        .feature-list li {
+          display: flex;
+          gap: 10px;
+          align-items: flex-start;
+        }
+
+        .dash {
+          color: inherit;
+          flex: 0 0 auto;
+        }
+
+        .hint {
+          margin-top: auto;
+          padding-top: 2px;
+          color: #5f6f87;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 1.3;
+        }
+
+        .panel-note {
+          margin-top: 6px;
+          border: 3px solid #bfcde0;
+          border-radius: 18px;
+          background: #f3f7fc;
+          padding: 16px 18px;
+          color: #5c6c84;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1.35;
+        }
+      </style>
+
+      <div class="frame">
+        <div>
+          <h1>Estandares Wi-Fi (IEEE 802.11)</h1>
+          <p class="subtitle">Compatibilidad, frecuencia y seguridad para redes domesticas.</p>
+        </div>
+
+        <div class="cards">
+          <section class="card card-blue">
+            <h3>802.11n</h3>
+            <ul class="feature-list">
+              <li><span class="dash">-</span><span>2.4 / 5 GHz</span></li>
+              <li><span class="dash">-</span><span>Cobertura amplia</span></li>
+              <li><span class="dash">-</span><span>Velocidad media</span></li>
+            </ul>
+            <p class="hint">Suele convivir con equipos domesticos antiguos y mixtos.</p>
+          </section>
+
+          <section class="card card-green">
+            <h3>802.11ac</h3>
+            <ul class="feature-list">
+              <li><span class="dash">-</span><span>Principalmente 5 GHz</span></li>
+              <li><span class="dash">-</span><span>Mayor capacidad</span></li>
+              <li><span class="dash">-</span><span>Ideal para streaming</span></li>
+            </ul>
+            <p class="hint">Conviene cuando importa mas el rendimiento que el alcance largo.</p>
+          </section>
+
+          <section class="card card-gold">
+            <h3>802.11ax</h3>
+            <ul class="feature-list">
+              <li><span class="dash">-</span><span>2.4 / 5 / 6 GHz</span></li>
+              <li><span class="dash">-</span><span>Mejor en alta densidad</span></li>
+              <li><span class="dash">-</span><span>Mejor eficiencia</span></li>
+            </ul>
+            <p class="hint">Aporta mejor reparto del canal cuando hay muchos clientes conectados.</p>
+          </section>
+        </div>
+
+        <section class="panel-note">
+          Checklist: modo mixto cuando haya equipos antiguos, SSID claro, canal no saturado y WPA2/WPA3 segun compatibilidad.
+        </section>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
