@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 980" role="img" aria-labelledby="title desc">
+  <title id="title">Usos cotidianos de la IA moderna</title>
+  <desc id="desc">Infografía sobre reconocimiento de voz, visión artificial, traducción automática y chatbots como ejemplos cotidianos de inteligencia artificial.</desc>
+  <foreignObject x="0" y="0" width="1200" height="980">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+      <style>
+        * { box-sizing: border-box; }
+        .page {
+          width: 1200px;
+          height: 980px;
+          padding: 36px;
+          background: linear-gradient(135deg, #edf1ff 0%, #f6fbff 48%, #fff6ea 100%);
+          font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+        .frame {
+          height: 100%;
+          padding: 34px 38px;
+          border-radius: 28px;
+          border: 3px solid #d6def4;
+          background: rgba(255, 255, 255, 0.95);
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+        }
+        h1, h2, p { margin: 0; }
+        h1 {
+          color: #1d2b4f;
+          font-size: 42px;
+          line-height: 1.05;
+        }
+        .lead {
+          color: #53637e;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 1.35;
+          max-width: 960px;
+        }
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 18px;
+        }
+        .card {
+          min-height: 168px;
+          padding: 22px;
+          border-radius: 22px;
+          border: 2px solid;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+        }
+        .card h2 {
+          font-size: 25px;
+          color: #203052;
+        }
+        .card p {
+          color: #4e627b;
+          font-size: 18px;
+          line-height: 1.35;
+          font-weight: 600;
+        }
+        .voice { background: #eef2ff; border-color: #cbd3f3; }
+        .vision { background: #eef8f9; border-color: #bfdcde; }
+        .translation { background: #fff4e8; border-color: #e5c8a3; }
+        .chat { background: #f3f0ff; border-color: #d5cbf2; }
+        .icon {
+          width: 54px;
+          height: 54px;
+          border-radius: 16px;
+          display: grid;
+          place-items: center;
+          color: #fff;
+          font-size: 22px;
+          font-weight: 800;
+        }
+        .voice .icon { background: #5c6bc0; }
+        .vision .icon { background: #1d8a9c; }
+        .translation .icon { background: #d07a28; }
+        .chat .icon { background: #7a57c2; }
+        .route {
+          margin-top: auto;
+          padding: 22px 24px;
+          border-radius: 24px;
+          background: linear-gradient(135deg, #203052 0%, #374873 100%);
+          color: #fff;
+        }
+        .route h2 {
+          font-size: 26px;
+          margin-bottom: 16px;
+        }
+        .steps {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 16px;
+        }
+        .step {
+          padding: 16px 18px;
+          border-radius: 18px;
+          background: rgba(255, 255, 255, 0.08);
+        }
+        .step strong {
+          display: block;
+          margin-bottom: 8px;
+          font-size: 18px;
+        }
+        .step span {
+          display: block;
+          color: #e6eef9;
+          font-size: 16px;
+          line-height: 1.35;
+          font-weight: 600;
+        }
+      </style>
+      <div class="frame">
+        <h1>IA moderna en la vida diaria</h1>
+        <p class="lead">La IA ya forma parte de tareas cotidianas. Convierte voz en texto, interpreta imágenes, traduce lenguaje y sostiene conversaciones útiles en herramientas que millones de personas usan a diario.</p>
+        <div class="grid">
+          <div class="card voice">
+            <div class="icon">VOZ</div>
+            <h2>Reconocimiento de voz</h2>
+            <p>Permite dictar mensajes, subtitular contenido y convertir audio en texto de forma inmediata.</p>
+          </div>
+          <div class="card vision">
+            <div class="icon">VIS</div>
+            <h2>Visión artificial</h2>
+            <p>Detecta objetos, copia texto desde fotos y modifica imágenes con apoyo de modelos entrenados.</p>
+          </div>
+          <div class="card translation">
+            <div class="icon">TRAD</div>
+            <h2>Traducción automática</h2>
+            <p>Convierte frases entre idiomas teniendo en cuenta contexto, orden de palabras y significado.</p>
+          </div>
+          <div class="card chat">
+            <div class="icon">CHAT</div>
+            <h2>Chatbots</h2>
+            <p>Van más allá de conversar: ayudan a aprender, escribir, resumir, comparar ideas y colaborar.</p>
+          </div>
+        </div>
+        <div class="route">
+          <h2>Tres formas de aprovecharla</h2>
+          <div class="steps">
+            <div class="step">
+              <strong>1. Entender</strong>
+              <span>Relacionar la IA con aprendizaje automático, modelos y tipos de tareas.</span>
+            </div>
+            <div class="step">
+              <strong>2. Probar</strong>
+              <span>Usar herramientas reales para ver cómo responde en tareas concretas.</span>
+            </div>
+            <div class="step">
+              <strong>3. Aplicar</strong>
+              <span>Llevar esas capacidades a actividades cotidianas con criterio y menos ruido técnico.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

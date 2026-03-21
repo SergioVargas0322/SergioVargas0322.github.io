@@ -1,0 +1,67 @@
+[
+  {
+    "index": 1,
+    "scrollHeight": 925,
+    "clientHeight": 925,
+    "contentHeight": 924.71875,
+    "viewportHeight": 1600,
+    "imgNaturalWidth": 1200,
+    "imgNaturalHeight": 980,
+    "imgClientWidth": 956,
+    "imgClientHeight": 781,
+    "captionHeight": 18,
+    "pageYOffset": 1886
+  },
+  {
+    "index": 2,
+    "scrollHeight": 877,
+    "clientHeight": 877,
+    "contentHeight": 876.921875,
+    "viewportHeight": 1600,
+    "imgNaturalWidth": 1200,
+    "imgNaturalHeight": 920,
+    "imgClientWidth": 956,
+    "imgClientHeight": 733,
+    "captionHeight": 18,
+    "pageYOffset": 1886
+  },
+  {
+    "index": 3,
+    "scrollHeight": 909,
+    "clientHeight": 909,
+    "contentHeight": 908.796875,
+    "viewportHeight": 1600,
+    "imgNaturalWidth": 1200,
+    "imgNaturalHeight": 960,
+    "imgClientWidth": 956,
+    "imgClientHeight": 765,
+    "captionHeight": 18,
+    "pageYOffset": 1886
+  },
+  {
+    "index": 4,
+    "scrollHeight": 877,
+    "clientHeight": 877,
+    "contentHeight": 876.921875,
+    "viewportHeight": 1600,
+    "imgNaturalWidth": 1200,
+    "imgNaturalHeight": 920,
+    "imgClientWidth": 956,
+    "imgClientHeight": 733,
+    "captionHeight": 18,
+    "pageYOffset": 1886
+  },
+  {
+    "index": 5,
+    "scrollHeight": 861,
+    "clientHeight": 861,
+    "contentHeight": 861,
+    "viewportHeight": 1600,
+    "imgNaturalWidth": 1200,
+    "imgNaturalHeight": 900,
+    "imgClientWidth": 956,
+    "imgClientHeight": 717,
+    "captionHeight": 18,
+    "pageYOffset": 1886
+  }
+]

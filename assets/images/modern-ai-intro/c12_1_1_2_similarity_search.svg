@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 960" role="img" aria-labelledby="title desc">
+  <title id="title">Embeddings y búsqueda de similitud</title>
+  <desc id="desc">Explicación visual de cómo una imagen se representa con embeddings y se compara por distancia con otras imágenes.</desc>
+  <foreignObject x="0" y="0" width="1200" height="960">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+      <style>
+        * { box-sizing: border-box; }
+        .page {
+          width: 1200px;
+          height: 960px;
+          padding: 36px;
+          background: linear-gradient(135deg, #eef2ff 0%, #f7fbff 50%, #fff6eb 100%);
+          font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+        .frame {
+          height: 100%;
+          padding: 32px 36px;
+          border-radius: 30px;
+          border: 3px solid #d8dff0;
+          background: rgba(255, 255, 255, 0.96);
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+        }
+        h1, h2, p { margin: 0; }
+        h1 {
+          color: #1d2c52;
+          font-size: 42px;
+          line-height: 1.05;
+        }
+        .lead {
+          color: #55657f;
+          font-size: 19px;
+          line-height: 1.36;
+          font-weight: 600;
+          max-width: 1030px;
+        }
+        .grid {
+          display: grid;
+          grid-template-columns: 0.85fr 1.2fr;
+          gap: 18px;
+          align-items: stretch;
+        }
+        .panel {
+          padding: 20px;
+          border-radius: 24px;
+          border: 2px solid;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+        }
+        .left { background: #eef9fa; border-color: #c3dde0; }
+        .right { background: #f7f9ff; border-color: #d7def2; }
+        .panel h2 {
+          color: #203253;
+          font-size: 27px;
+        }
+        .panel p {
+          color: #52637c;
+          font-size: 17px;
+          line-height: 1.38;
+          font-weight: 600;
+        }
+        .chips {
+          display: grid;
+          gap: 10px;
+        }
+        .chip {
+          padding: 12px 14px;
+          border-radius: 18px;
+          background: #fff;
+          border: 2px solid rgba(32, 50, 83, 0.1);
+          color: #304465;
+          font-size: 17px;
+          font-weight: 700;
+        }
+        .helper {
+          margin-top: auto;
+          padding: 14px 16px;
+          border-radius: 18px;
+          background: rgba(255, 255, 255, 0.82);
+          border: 2px solid rgba(31, 48, 78, 0.08);
+          color: #40526c;
+          font-size: 16px;
+          line-height: 1.35;
+          font-weight: 700;
+        }
+        .chart {
+          position: relative;
+          min-height: 338px;
+          border-radius: 22px;
+          background: #fff;
+          border: 2px solid rgba(31, 48, 78, 0.1);
+          overflow: hidden;
+        }
+        .axis {
+          position: absolute;
+          background: #5f7098;
+        }
+        .x { left: 64px; right: 30px; bottom: 48px; height: 4px; }
+        .y { top: 24px; bottom: 48px; left: 64px; width: 4px; }
+        .label {
+          position: absolute;
+          color: #5f7098;
+          font-size: 15px;
+          font-weight: 700;
+        }
+        .lx { bottom: 18px; right: 34px; }
+        .ly { left: 14px; top: 30px; writing-mode: vertical-rl; transform: rotate(180deg); }
+        .point {
+          position: absolute;
+          width: 26px;
+          height: 26px;
+          border-radius: 999px;
+          border: 4px solid #fff;
+          box-shadow: 0 0 0 2px rgba(30, 49, 82, 0.12);
+        }
+        .query { background: #d07a28; left: 190px; top: 164px; }
+        .near1 { background: #d7a049; left: 244px; top: 142px; }
+        .near2 { background: #d7a049; left: 222px; top: 222px; }
+        .far1 { background: #5c6bc0; left: 430px; top: 102px; }
+        .far2 { background: #2f8a67; left: 502px; top: 274px; }
+        .far3 { background: #7a57c2; left: 380px; top: 302px; }
+        .line {
+          position: absolute;
+          height: 3px;
+          transform-origin: left center;
+          border-radius: 999px;
+        }
+        .short1 {
+          left: 203px; top: 177px; width: 62px;
+          background: #d7a049; transform: rotate(-20deg);
+        }
+        .short2 {
+          left: 203px; top: 177px; width: 58px;
+          background: #d7a049; transform: rotate(48deg);
+        }
+        .long1 {
+          left: 203px; top: 177px; width: 240px;
+          background: rgba(92, 107, 192, 0.35); transform: rotate(-15deg);
+        }
+        .long2 {
+          left: 203px; top: 177px; width: 316px;
+          background: rgba(47, 138, 103, 0.35); transform: rotate(18deg);
+        }
+        .legend {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 10px;
+          margin-top: 12px;
+        }
+        .legend div {
+          padding: 10px 12px;
+          border-radius: 16px;
+          background: #fff;
+          border: 2px solid rgba(31, 48, 78, 0.1);
+          color: #40546f;
+          font-size: 15px;
+          font-weight: 700;
+        }
+        .footer {
+          padding: 18px 22px;
+          border-radius: 24px;
+          background: #203052;
+          color: #fff;
+        }
+        .footer h2 {
+          font-size: 24px;
+          margin-bottom: 8px;
+        }
+        .footer p {
+          color: #edf2ff;
+          font-size: 17px;
+          line-height: 1.36;
+          font-weight: 600;
+        }
+      </style>
+      <div class="frame">
+        <h1>Lo parecido se busca por distancia, no por nombre</h1>
+        <p class="lead">La búsqueda de similitud no pregunta primero “¿qué objeto es?”, sino “¿qué tan cerca está esta imagen de otras imágenes dentro de un espacio numérico?”. Esa cercanía se calcula con embeddings.</p>
+        <div class="grid">
+          <div class="panel left">
+            <h2>Qué es un embedding</h2>
+            <p>Es una lista compacta de números que resume rasgos relevantes de una imagen. En lugar de comparar millones de píxeles, el sistema compara una representación mucho más manejable.</p>
+            <div class="chips">
+              <div class="chip">[ 0.18, 0.74, 0.33, 0.61, ... ]</div>
+              <div class="chip">más compacto que la imagen original</div>
+              <div class="chip">útil también para texto y audio</div>
+            </div>
+            <div class="helper">flujo básico: imagen de consulta → embedding → cálculo de distancia → resultados más cercanos</div>
+          </div>
+          <div class="panel right">
+            <h2>Cómo aparece la similitud</h2>
+            <div class="chart">
+              <div class="axis x"></div>
+              <div class="axis y"></div>
+              <div class="label lx">rasgo 2</div>
+              <div class="label ly">rasgo 1</div>
+              <div class="line short1"></div>
+              <div class="line short2"></div>
+              <div class="line long1"></div>
+              <div class="line long2"></div>
+              <div class="point query"></div>
+              <div class="point near1"></div>
+              <div class="point near2"></div>
+              <div class="point far1"></div>
+              <div class="point far2"></div>
+              <div class="point far3"></div>
+            </div>
+            <div class="legend">
+              <div>punto naranja: imagen de búsqueda</div>
+              <div>puntos cercanos: resultados parecidos</div>
+              <div>puntos lejanos: resultados menos similares</div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <h2>Idea central</h2>
+          <p>Una base de similitud recupera resultados con la distancia más corta respecto a la imagen consultada. Por eso puede encontrar contenido parecido aunque no tenga exactamente la misma etiqueta o la misma composición visual.</p>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

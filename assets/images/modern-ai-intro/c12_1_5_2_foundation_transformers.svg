@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Transformadores y modelos fundamentales</title>
+  <desc id="desc">Infografía sobre transformadores, modelos fundamentales, preentrenamiento y ajuste por instrucciones en modelos GPT.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#fff8ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="32" fill="url(#bg)"/>
+  <style>
+    .fo-root, .fo-root * { box-sizing: border-box; }
+    .fo-root {
+      width: 100%;
+      height: 100%;
+      font-family: Aptos, "Segoe UI", Arial, sans-serif;
+      color: #273a69;
+    }
+    .canvas { width: 100%; height: 100%; padding: 28px; }
+    .shell {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border: 3px solid #cbd6f6;
+      border-radius: 28px;
+      padding: 28px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .heading { display: flex; flex-direction: column; gap: 10px; }
+    .heading h1 { margin: 0; font-size: 34px; line-height: 1.08; font-weight: 800; }
+    .heading p { margin: 0; max-width: 960px; font-size: 18px; line-height: 1.34; font-weight: 600; color: #5b6f95; }
+    .top-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .panel {
+      border-radius: 24px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-height: 146px;
+    }
+    .p1 { background: #eef8ff; border: 2px solid #b7dce8; }
+    .p2 { background: #fff5ea; border: 2px solid #efc89b; }
+    .panel h2 { margin: 0; font-size: 22px; line-height: 1.14; font-weight: 800; }
+    .panel p { margin: 0; font-size: 15px; line-height: 1.32; font-weight: 600; color: #42557c; }
+    .flow {
+      background: #f3f0ff;
+      border: 2px solid #d9cef8;
+      border-radius: 24px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .flow h2 { margin: 0; font-size: 22px; line-height: 1.14; font-weight: 800; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .step {
+      background: #fff;
+      border: 2px solid #e1dbfa;
+      border-radius: 18px;
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 106px;
+    }
+    .step strong { font-size: 18px; line-height: 1.12; font-weight: 800; color: #7e63d9; }
+    .step span { font-size: 15px; line-height: 1.3; font-weight: 600; color: #42557c; }
+    .takeaway {
+      background: #283a66;
+      border-radius: 22px;
+      padding: 18px 22px;
+      color: #fff;
+      text-align: center;
+    }
+    .takeaway p { margin: 0; font-size: 20px; line-height: 1.28; font-weight: 800; }
+  </style>
+  <foreignObject x="0" y="0" width="1200" height="720">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo-root">
+      <div class="canvas">
+        <div class="shell">
+          <div class="heading">
+            <h1>Transformador no es sinónimo de chatbot</h1>
+            <p>Los transformadores son una arquitectura. Los modelos fundamentales son modelos amplios que, tras entrenarse, pueden generalizar a muchas tareas.</p>
+          </div>
+
+          <div class="top-grid">
+            <section class="panel p1">
+              <h2>Transformador</h2>
+              <p>Es un modelo de secuencia capaz de procesar muchos tokens en paralelo, lo que mejora velocidad y manejo de contextos largos frente a enfoques secuenciales más antiguos.</p>
+            </section>
+            <section class="panel p2">
+              <h2>Modelo fundamental</h2>
+              <p>Aprende algo amplio sobre un dominio, como lenguaje, y luego puede realizar muchas tareas distintas si recibe buenas instrucciones.</p>
+            </section>
+          </div>
+
+          <section class="flow">
+            <h2>Camino típico de un GPT</h2>
+            <div class="steps">
+              <div class="step">
+                <strong>Preentrenamiento</strong>
+                <span>Aprende con mucho texto a predecir la siguiente palabra.</span>
+              </div>
+              <div class="step">
+                <strong>Modelo base</strong>
+                <span>Todavía tiende a completar secuencias y no a obedecer instrucciones humanas de forma cómoda.</span>
+              </div>
+              <div class="step">
+                <strong>Ajuste por instrucciones</strong>
+                <span>Aprende a responder tareas formuladas como órdenes o preguntas, que es el comportamiento típico de un chatbot.</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="takeaway">
+            <p>GPT resume esa historia en tres palabras: Generative Pre-trained Transformer.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

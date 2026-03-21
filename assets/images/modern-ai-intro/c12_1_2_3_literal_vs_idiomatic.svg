@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Traducción automática: literal frente a idiomática</title>
+  <desc id="desc">Infografía sobre la expresión piece of cake y cómo el contexto inclina la traducción hacia un sentido literal o idiomático.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#fff8ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="32" fill="url(#bg)"/>
+  <style>
+    .fo-root, .fo-root * { box-sizing: border-box; }
+    .fo-root { width: 100%; height: 100%; font-family: "Segoe UI", Arial, sans-serif; color: #273a69; }
+    .canvas { width: 100%; height: 100%; padding: 34px; }
+    .shell {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border: 3px solid #cbd6f6;
+      border-radius: 28px;
+      padding: 30px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .heading { display: flex; flex-direction: column; gap: 12px; }
+    .heading h1 { margin: 0; font-size: 34px; line-height: 1.12; font-weight: 800; }
+    .heading p { margin: 0; max-width: 860px; font-size: 18px; line-height: 1.34; font-weight: 600; color: #5b6f95; }
+    .top-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .mode {
+      border-radius: 24px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .mode.literal { background: #eef8ff; border: 2px solid #b7dce8; }
+    .mode.idiom { background: #f3f0ff; border: 2px solid #d9cef8; }
+    .mode h2 { margin: 0; font-size: 24px; line-height: 1.14; font-weight: 800; }
+    .mode p { margin: 0; font-size: 17px; line-height: 1.32; font-weight: 600; color: #42557c; }
+    .stack { display: flex; flex-direction: column; gap: 12px; }
+    .example {
+      background: #fff;
+      border-radius: 16px;
+      padding: 14px 16px;
+      border: 2px solid #d6e4f2;
+      font-size: 19px;
+      line-height: 1.16;
+      font-weight: 800;
+    }
+    .idiom .example { border-color: #e1dbfa; }
+    .insight {
+      background: #fff5ea;
+      border: 2px solid #efc89b;
+      border-radius: 24px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .insight h3 { margin: 0; font-size: 24px; line-height: 1.14; font-weight: 800; }
+    .insight-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .note {
+      background: #fff;
+      border-radius: 18px;
+      border: 2px solid #f1d3b0;
+      padding: 14px 16px;
+      font-size: 16px;
+      line-height: 1.32;
+      font-weight: 700;
+      color: #d88021;
+    }
+    .takeaway {
+      margin-top: auto;
+      background: #283a66;
+      border-radius: 22px;
+      padding: 20px 24px;
+      text-align: center;
+      color: #fff;
+    }
+    .takeaway p { margin: 0; font-size: 20px; line-height: 1.28; font-weight: 800; }
+  </style>
+  <foreignObject x="0" y="0" width="1200" height="800">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo-root">
+      <div class="canvas">
+        <div class="shell">
+          <div class="heading">
+            <h1>La misma frase puede hablar de pastel o de facilidad</h1>
+            <p>Una expresión idiomática conserva la intención, no la imagen exacta. Por eso la traducción cambia cuando cambia el contexto.</p>
+          </div>
+
+          <div class="top-grid">
+            <section class="mode literal">
+              <h2>Lectura literal</h2>
+              <p>Si no hay suficiente contexto, la frase puede entenderse como comida real.</p>
+              <div class="stack">
+                <div class="example">Italiano: un pezzo di torta</div>
+                <div class="example">Francés: une part de gâteau</div>
+                <div class="example">Español: un pedazo de pastel</div>
+              </div>
+            </section>
+
+            <section class="mode idiom">
+              <h2>Lectura idiomática</h2>
+              <p>Si la frase se interpreta como “fue muy fácil”, aparece un equivalente natural.</p>
+              <div class="stack">
+                <div class="example">Italiano: un gioco da ragazzi</div>
+                <div class="example">Japonés: antes del desayuno</div>
+                <div class="example">Español: pan comido</div>
+              </div>
+            </section>
+          </div>
+
+          <section class="insight">
+            <h3>Qué hace cambiar la salida</h3>
+            <div class="insight-grid">
+              <div class="note">“A piece of cake” solo tiende a sonar más literal</div>
+              <div class="note">“It was a piece of cake” empuja hacia la idea de facilidad</div>
+            </div>
+          </section>
+
+          <section class="takeaway">
+            <p>Traducir bien una expresión idiomática es preservar la intención, no la foto exacta de las palabras.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Traducción automática: contexto y registro</title>
+  <desc id="desc">Infografía sobre cómo el contexto social e informativo cambia la elección entre formas informales y formales.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef8ff"/>
+      <stop offset="100%" stop-color="#fff7ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="820" rx="32" fill="url(#bg)"/>
+  <style>
+    .fo-root, .fo-root * { box-sizing: border-box; }
+    .fo-root { width: 100%; height: 100%; font-family: "Segoe UI", Arial, sans-serif; color: #273a69; }
+    .canvas { width: 100%; height: 100%; padding: 34px; }
+    .shell {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border: 3px solid #cbd6f6;
+      border-radius: 28px;
+      padding: 30px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .heading { display: flex; flex-direction: column; gap: 12px; }
+    .heading h1 { margin: 0; font-size: 34px; line-height: 1.12; font-weight: 800; }
+    .heading p { margin: 0; max-width: 860px; font-size: 18px; line-height: 1.34; font-weight: 600; color: #5b6f95; }
+    .top-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .persona {
+      border-radius: 24px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      min-height: 0;
+    }
+    .persona.informal { background: #eef8ff; border: 2px solid #b7dce8; }
+    .persona.formal { background: #f3f0ff; border: 2px solid #d9cef8; }
+    .persona-head { display: grid; grid-template-columns: 52px 1fr; gap: 14px; align-items: center; }
+    .bubble { width: 52px; height: 52px; border-radius: 50%; }
+    .bubble.informal { background: #1f93a8; }
+    .bubble.formal { background: #7e63d9; }
+    .persona h2 { margin: 0; font-size: 23px; line-height: 1.16; font-weight: 800; }
+    .persona .meta { margin: 6px 0 0; font-size: 17px; line-height: 1.28; font-weight: 600; color: #42557c; }
+    .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+    .chip {
+      min-width: 96px;
+      padding: 12px 18px;
+      border-radius: 16px;
+      background: #fff;
+      border: 2px solid #d6e4f2;
+      font-size: 21px;
+      line-height: 1;
+      font-weight: 800;
+      text-align: center;
+    }
+    .formal .chip { border-color: #e1dbfa; color: #7e63d9; }
+    .informal .chip { color: #1f93a8; }
+    .persona p.note { margin: 0; font-size: 16px; line-height: 1.34; font-weight: 600; color: #42557c; }
+    .insight {
+      background: #fff5ea;
+      border: 2px solid #efc89b;
+      border-radius: 24px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .insight h3 { margin: 0; font-size: 24px; line-height: 1.14; font-weight: 800; }
+    .insight-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .insight-card {
+      background: #fff;
+      border: 2px solid #f1d3b0;
+      border-radius: 18px;
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .insight-card strong { font-size: 18px; line-height: 1.1; font-weight: 800; color: #d88021; }
+    .insight-card p { margin: 0; font-size: 15px; line-height: 1.32; font-weight: 600; color: #42557c; }
+    .takeaway {
+      margin-top: auto;
+      background: #283a66;
+      border-radius: 22px;
+      padding: 20px 24px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .takeaway p { margin: 0; max-width: 860px; font-size: 20px; line-height: 1.28; font-weight: 800; }
+  </style>
+  <foreignObject x="0" y="0" width="1200" height="820">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo-root">
+      <div class="canvas">
+        <div class="shell">
+          <div class="heading">
+            <h1>El contexto decide cómo tratar a la otra persona</h1>
+            <p>La misma idea puede pedir un registro informal o formal según quién habla, a quién se dirige y qué pistas hay alrededor.</p>
+          </div>
+
+          <div class="top-grid">
+            <section class="persona informal">
+              <div class="persona-head">
+                <span class="bubble informal"></span>
+                <div>
+                  <h2>Contexto informal</h2>
+                  <p class="meta">amistad, cercanía, trato cotidiano</p>
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">tu</span>
+                <span class="chip">t'</span>
+                <span class="chip">ton</span>
+              </div>
+              <p class="note">El entorno de amistad vuelve natural usar formas cercanas para “tú” y “tu”.</p>
+            </section>
+
+            <section class="persona formal">
+              <div class="persona-head">
+                <span class="bubble formal"></span>
+                <div>
+                  <h2>Contexto formal</h2>
+                  <p class="meta">autoridad, cargo, distancia social</p>
+                </div>
+              </div>
+              <div class="chips">
+                <span class="chip">vous</span>
+                <span class="chip">votre</span>
+              </div>
+              <p class="note">El trato cambia cuando la frase alude a una persona con jerarquía o distancia.</p>
+            </section>
+          </div>
+
+          <section class="insight">
+            <h3>Qué pistas ayudan</h3>
+            <div class="insight-grid">
+              <article class="insight-card">
+                <strong>Pistas del entorno</strong>
+                <p>la palabra clave, el rol de la persona y la capitalización inclinan la salida</p>
+              </article>
+              <article class="insight-card">
+                <strong>Pistas explícitas</strong>
+                <p>una sola pista puede no bastar; varias juntas dejan una señal más clara</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="takeaway">
+            <p>El modelo no aplica reglas fijas; elige la forma más plausible con la evidencia disponible.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

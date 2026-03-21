@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">Chatbots: prompt y verificación</title>
+  <desc id="desc">Infografía sobre cómo escribir mejores prompts y probar una tarea sencilla antes de confiar en una más compleja.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#fff8ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="860" rx="32" fill="url(#bg)"/>
+  <style>
+    .fo-root, .fo-root * { box-sizing: border-box; }
+    .fo-root {
+      width: 100%;
+      height: 100%;
+      font-family: Aptos, "Segoe UI", Arial, sans-serif;
+      color: #273a69;
+    }
+    .canvas { width: 100%; height: 100%; padding: 34px; }
+    .shell {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border: 3px solid #cbd6f6;
+      border-radius: 28px;
+      padding: 30px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .heading { display: flex; flex-direction: column; gap: 10px; }
+    .heading h1 { margin: 0; font-size: 34px; line-height: 1.1; font-weight: 800; }
+    .heading p { margin: 0; max-width: 940px; font-size: 18px; line-height: 1.34; font-weight: 600; color: #5b6f95; }
+    .tips { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .tip {
+      border-radius: 22px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 118px;
+    }
+    .tip h2 { margin: 0; font-size: 20px; line-height: 1.12; font-weight: 800; }
+    .tip p { margin: 0; font-size: 15px; line-height: 1.32; font-weight: 600; color: #42557c; }
+    .t1 { background: #eef8ff; border: 2px solid #b7dce8; }
+    .t2 { background: #f3f0ff; border: 2px solid #d9cef8; }
+    .t3 { background: #fff5ea; border: 2px solid #efc89b; }
+    .t4 { background: #eef9f1; border: 2px solid #b8dfc3; }
+    .t5 { background: #f6f8fb; border: 2px solid #d9dfeb; }
+    .t6 { background: #fef4f2; border: 2px solid #f2c8bf; }
+    .verify {
+      background: #fff5ea;
+      border: 2px solid #efc89b;
+      border-radius: 24px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .verify h2 { margin: 0; font-size: 24px; line-height: 1.14; font-weight: 800; }
+    .verify-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .step {
+      background: #fff;
+      border: 2px solid #f1d3b0;
+      border-radius: 18px;
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .step strong { font-size: 18px; line-height: 1.12; font-weight: 800; color: #d88021; }
+    .step span { font-size: 15px; line-height: 1.32; font-weight: 600; color: #42557c; }
+    .takeaway {
+      margin-top: auto;
+      background: #283a66;
+      border-radius: 22px;
+      padding: 20px 24px;
+      color: #fff;
+      text-align: center;
+    }
+    .takeaway p { margin: 0; font-size: 20px; line-height: 1.28; font-weight: 800; }
+  </style>
+  <foreignObject x="0" y="0" width="1200" height="860">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo-root">
+      <div class="canvas">
+        <div class="shell">
+          <div class="heading">
+            <h1>Un buen prompt da contexto, formato y criterio</h1>
+            <p>Pedir mejor no es adornar la frase: es especificar qué información usar, qué pasos seguir y qué salida sirve de verdad.</p>
+          </div>
+
+          <div class="tips">
+            <article class="tip t1">
+              <h2>Da más contexto</h2>
+              <p>Escribe más de lo que pondrías en una búsqueda web y aclara para qué usarás la respuesta.</p>
+            </article>
+            <article class="tip t2">
+              <h2>Divide en subtareas</h2>
+              <p>Pide primero recopilar, luego comparar y al final concluir o redactar.</p>
+            </article>
+            <article class="tip t3">
+              <h2>Pide el formato</h2>
+              <p>Tabla, lista, viñetas, columnas o estructura concreta si no quieres párrafos genéricos.</p>
+            </article>
+            <article class="tip t4">
+              <h2>Fija expectativas</h2>
+              <p>Si no estás seguro, dilo. A veces la mejor respuesta es admitir que falta evidencia.</p>
+            </article>
+            <article class="tip t5">
+              <h2>Estructura la entrada</h2>
+              <p>Usa subtítulos, numeración, delimitadores y roles temporales para separar partes del prompt.</p>
+            </article>
+            <article class="tip t6">
+              <h2>Da ejemplos y pide revisión</h2>
+              <p>Los ejemplos orientan el estilo deseado y una revisión final ayuda a detectar fallos obvios.</p>
+            </article>
+          </div>
+
+          <section class="verify">
+            <h2>Prueba antes de confiar</h2>
+            <div class="verify-grid">
+              <div class="step">
+                <strong>1. Empieza por algo auditable</strong>
+                <span>Antes de pedir una tarea compleja, prueba una versión pequeña cuyo resultado puedas revisar rápido.</span>
+              </div>
+              <div class="step">
+                <strong>2. Compáralo con la fuente</strong>
+                <span>Si promete citar, resume o extraer texto, comprueba que las palabras realmente existan en el original.</span>
+              </div>
+              <div class="step">
+                <strong>3. Luego escala la tarea</strong>
+                <span>Cuando ves que el patrón funciona, recién ahí conviene delegar algo más grande o más delicado.</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="takeaway">
+            <p>Confiar no es asumir que el chatbot hizo lo pedido, sino verificar primero que de verdad sabe hacerlo.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

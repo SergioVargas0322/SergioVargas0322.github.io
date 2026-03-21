@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Capacidades prácticas de la IA</title>
+  <desc id="desc">Resumen visual de capacidades prácticas, desde comprensión conceptual hasta entrevistas simuladas, colaboración entre chatbots y mini proyectos.</desc>
+  <foreignObject x="0" y="0" width="1200" height="900">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+      <style>
+        * { box-sizing: border-box; }
+        .page {
+          width: 1200px;
+          height: 900px;
+          padding: 36px;
+          background: linear-gradient(135deg, #f2f4ff 0%, #f7fbff 55%, #fef5e8 100%);
+          font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+        .frame {
+          height: 100%;
+          padding: 34px 38px;
+          border-radius: 28px;
+          border: 3px solid #d8dff0;
+          background: rgba(255, 255, 255, 0.96);
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+        }
+        h1, h2, p, ul { margin: 0; padding: 0; }
+        h1 {
+          color: #1d2b4f;
+          font-size: 42px;
+          line-height: 1.05;
+        }
+        .lead {
+          color: #52627d;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 1.35;
+          max-width: 980px;
+        }
+        .columns {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 18px;
+        }
+        .panel {
+          padding: 22px;
+          border-radius: 22px;
+          border: 2px solid;
+          min-height: 360px;
+        }
+        .panel h2 {
+          margin-bottom: 14px;
+          color: #203052;
+          font-size: 28px;
+        }
+        .panel ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+        }
+        .panel li {
+          color: #50627a;
+          font-size: 18px;
+          line-height: 1.35;
+          font-weight: 600;
+        }
+        .panel li strong {
+          display: block;
+          margin-bottom: 4px;
+          color: #213354;
+        }
+        .understand { background: #eef2ff; border-color: #cad3f2; }
+        .practice { background: #eef9fa; border-color: #bfdddf; }
+        .integrate { background: #fff5ea; border-color: #e5cfb4; }
+        .footer {
+          margin-top: auto;
+          padding: 20px 24px;
+          border-radius: 24px;
+          background: linear-gradient(135deg, #4f5d91 0%, #2f3d66 100%);
+          color: #fff;
+        }
+        .footer h2 {
+          color: #fff;
+          font-size: 25px;
+          margin-bottom: 10px;
+        }
+        .footer p {
+          font-size: 18px;
+          line-height: 1.4;
+          font-weight: 600;
+          color: #ebf1ff;
+        }
+      </style>
+      <div class="frame">
+        <h1>Lo que permite hacer la IA</h1>
+        <p class="lead">La utilidad de la IA no se limita a entender conceptos. También permite traducir, practicar, escribir, comparar respuestas y combinar herramientas con un propósito claro.</p>
+        <div class="columns">
+          <div class="panel understand">
+            <h2>Comprender</h2>
+            <ul>
+              <li><strong>Contexto y ambigüedad</strong>Distinguir por qué una misma frase puede traducirse de formas diferentes.</li>
+              <li><strong>Calidad del prompt</strong>Ver cómo un pequeño cambio en la indicación puede mejorar o empeorar una respuesta.</li>
+              <li><strong>Casos de uso reales</strong>Explicar con criterio cuándo una herramienta de IA sí aporta valor y cuándo no.</li>
+            </ul>
+          </div>
+          <div class="panel practice">
+            <h2>Practicar</h2>
+            <ul>
+              <li><strong>Entrevistas simuladas</strong>Usar un chatbot como entrevistador para ensayar respuestas y ganar fluidez.</li>
+              <li><strong>Colaboración entre modelos</strong>Separar roles como redactor y editor para mejorar un trabajo iterativamente.</li>
+              <li><strong>Exploración guiada</strong>Probar distintos chatbots y herramientas, incluso algunas que funcionan en equipos personales.</li>
+            </ul>
+          </div>
+          <div class="panel integrate">
+            <h2>Integrar</h2>
+            <ul>
+              <li><strong>Mini proyecto</strong>Combinar varias herramientas de IA en una tarea abierta y útil.</li>
+              <li><strong>Evidencia del trabajo</strong>Documentar el proceso para mostrar criterio, no solo resultado final.</li>
+              <li><strong>Transferencia al día a día</strong>Aplicar lo aprendido en estudio, trabajo, escritura y análisis básico.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          <h2>Punto de partida</h2>
+          <p>Contar con una caja de herramientas inicial para usar IA de forma crítica, práctica y replicable, no solo como una demostración puntual.</p>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

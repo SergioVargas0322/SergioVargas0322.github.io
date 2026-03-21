@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Traducción automática: dependencias largas</title>
+  <desc id="desc">Infografía sobre la pérdida de referencia cuando un sustantivo y su pronombre quedan muy separados dentro del texto.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef8ff"/>
+      <stop offset="100%" stop-color="#fff7ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="32" fill="url(#bg)"/>
+  <style>
+    .fo-root, .fo-root * { box-sizing: border-box; }
+    .fo-root { width: 100%; height: 100%; font-family: "Segoe UI", Arial, sans-serif; color: #273a69; }
+    .canvas { width: 100%; height: 100%; padding: 34px; }
+    .shell {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border: 3px solid #cbd6f6;
+      border-radius: 28px;
+      padding: 30px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .heading { display: flex; flex-direction: column; gap: 12px; }
+    .heading h1 { margin: 0; font-size: 34px; line-height: 1.12; font-weight: 800; }
+    .heading p { margin: 0; max-width: 860px; font-size: 18px; line-height: 1.34; font-weight: 600; color: #5b6f95; }
+    .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .box {
+      border-radius: 24px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .box.short { background: #eef8ff; border: 2px solid #b7dce8; }
+    .box.long { background: #fff5ea; border: 2px solid #efc89b; }
+    .box h2 { margin: 0; font-size: 24px; line-height: 1.14; font-weight: 800; }
+    .box p { margin: 0; font-size: 17px; line-height: 1.32; font-weight: 600; color: #42557c; }
+    .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+    .chip {
+      min-width: 150px;
+      padding: 14px 18px;
+      border-radius: 16px;
+      background: #fff;
+      font-size: 20px;
+      line-height: 1;
+      font-weight: 800;
+      text-align: center;
+    }
+    .short .chip { border: 2px solid #d6e4f2; color: #178ca7; }
+    .long .chip { border: 2px solid #f1d3b0; color: #d88021; }
+    .resolve {
+      background: #f3f0ff;
+      border: 2px solid #d9cef8;
+      border-radius: 24px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .resolve h3 { margin: 0; font-size: 24px; line-height: 1.14; font-weight: 800; }
+    .resolve-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .resolve-pill {
+      background: #fff;
+      border: 2px solid #e1dbfa;
+      border-radius: 18px;
+      padding: 14px 16px;
+      font-size: 16px;
+      line-height: 1.32;
+      font-weight: 700;
+      color: #7e63d9;
+    }
+    .takeaway {
+      margin-top: auto;
+      background: #283a66;
+      border-radius: 22px;
+      padding: 20px 24px;
+      text-align: center;
+      color: #fff;
+    }
+    .takeaway p { margin: 0; font-size: 20px; line-height: 1.28; font-weight: 800; }
+  </style>
+  <foreignObject x="0" y="0" width="1200" height="800">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo-root">
+      <div class="canvas">
+        <div class="shell">
+          <div class="heading">
+            <h1>Cuando las palabras se alejan, la referencia se debilita</h1>
+            <p>La concordancia depende de que el modelo siga conectando un pronombre con el nombre correcto, incluso cuando hay mucho texto en medio.</p>
+          </div>
+
+          <div class="compare">
+            <section class="box short">
+              <h2>Distancia corta</h2>
+              <p>She asked who ate the salad. I ate it.</p>
+              <div class="chips">
+                <span class="chip">salad → la</span>
+                <span class="chip">deliciosa</span>
+              </div>
+              <p>El sustantivo femenino sigue cerca, por eso se conserva la concordancia.</p>
+            </section>
+
+            <section class="box long">
+              <h2>Distancia larga</h2>
+              <p>La oración añade más texto antes de volver al pronombre.</p>
+              <div class="chips">
+                <span class="chip">salad → lo</span>
+                <span class="chip">delicioso</span>
+              </div>
+              <p>Al perder la pista, el modelo puede caer en una forma masculina por defecto.</p>
+            </section>
+          </div>
+
+          <section class="resolve">
+            <h3>Qué se está resolviendo</h3>
+            <div class="resolve-grid">
+              <div class="resolve-pill">decidir cuándo dos partes hablan de la misma cosa</div>
+              <div class="resolve-pill">mantener alineados pronombres, adjetivos y concordancia</div>
+            </div>
+          </section>
+
+          <section class="takeaway">
+            <p>Conviene revisar pronombres y adjetivos cada vez que la frase separa mucho la referencia de su antecedente.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

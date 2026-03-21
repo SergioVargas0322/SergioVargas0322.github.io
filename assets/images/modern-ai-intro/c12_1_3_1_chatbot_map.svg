@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="840" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
+  <title id="title">Chatbots: mapa de capacidades</title>
+  <desc id="desc">Infografía sobre prompt, respuesta y familias principales de tareas de un chatbot moderno.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#fff8ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="840" rx="32" fill="url(#bg)"/>
+  <style>
+    .fo-root, .fo-root * { box-sizing: border-box; }
+    .fo-root {
+      width: 100%;
+      height: 100%;
+      font-family: Aptos, "Segoe UI", Arial, sans-serif;
+      color: #273a69;
+    }
+    .canvas { width: 100%; height: 100%; padding: 34px; }
+    .shell {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border: 3px solid #cbd6f6;
+      border-radius: 28px;
+      padding: 30px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .heading { display: flex; flex-direction: column; gap: 10px; }
+    .heading h1 { margin: 0; font-size: 34px; line-height: 1.1; font-weight: 800; }
+    .heading p { margin: 0; max-width: 920px; font-size: 18px; line-height: 1.34; font-weight: 600; color: #5b6f95; }
+    .flow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .stage {
+      border-radius: 22px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-height: 118px;
+    }
+    .stage h2 { margin: 0; font-size: 22px; line-height: 1.12; font-weight: 800; }
+    .stage p { margin: 0; font-size: 16px; line-height: 1.32; font-weight: 600; color: #42557c; }
+    .s1 { background: #eef8ff; border: 2px solid #b7dce8; }
+    .s2 { background: #f4f6ff; border: 2px solid #d7ddfb; }
+    .s3 { background: #fff5ea; border: 2px solid #efc89b; }
+    .families-3, .families-4 { display: grid; gap: 16px; }
+    .families-3 { grid-template-columns: repeat(3, 1fr); }
+    .families-4 { grid-template-columns: repeat(4, 1fr); }
+    .family {
+      border-radius: 20px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 106px;
+    }
+    .family h3 { margin: 0; font-size: 20px; line-height: 1.12; font-weight: 800; }
+    .family p { margin: 0; font-size: 15px; line-height: 1.34; font-weight: 600; color: #42557c; }
+    .f1 { background: #eef8ff; border: 2px solid #b7dce8; }
+    .f2 { background: #eef9f1; border: 2px solid #b8dfc3; }
+    .f3 { background: #fff5ea; border: 2px solid #efc89b; }
+    .f4 { background: #f3f0ff; border: 2px solid #d9cef8; }
+    .f5 { background: #f6f8fb; border: 2px solid #d9dfeb; }
+    .f6 { background: #eef8ff; border: 2px solid #b7dce8; }
+    .f7 { background: #fef4f2; border: 2px solid #f2c8bf; }
+    .takeaway {
+      margin-top: auto;
+      background: #283a66;
+      border-radius: 22px;
+      padding: 20px 24px;
+      color: #fff;
+      text-align: center;
+    }
+    .takeaway p { margin: 0; font-size: 20px; line-height: 1.28; font-weight: 800; }
+  </style>
+  <foreignObject x="0" y="0" width="1200" height="840">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo-root">
+      <div class="canvas">
+        <div class="shell">
+          <div class="heading">
+            <h1>Un chatbot no hace una sola cosa</h1>
+            <p>Prompt es la entrada. Completion o respuesta es la salida. Entre ambos aparece una familia amplia de tareas que no conviene mezclar como si fueran iguales.</p>
+          </div>
+
+          <div class="flow">
+            <section class="stage s1">
+              <h2>Prompt</h2>
+              <p>Pregunta, instrucciones, contexto, ejemplos, archivos o enlaces que describen la tarea.</p>
+            </section>
+            <section class="stage s2">
+              <h2>Chatbot</h2>
+              <p>Lee el prompt, usa el contexto reciente y genera la salida paso a paso.</p>
+            </section>
+            <section class="stage s3">
+              <h2>Completion / respuesta</h2>
+              <p>Texto, seguimiento, tabla, clasificación o acción ejecutada con ayuda de otra herramienta.</p>
+            </section>
+          </div>
+
+          <div class="families-3">
+            <article class="family f1">
+              <h3>Expandir</h3>
+              <p>Responder preguntas y generar ideas a partir de un prompt corto.</p>
+            </article>
+            <article class="family f2">
+              <h3>Sintetizar</h3>
+              <p>Resumir, etiquetar o condensar mucho texto en algo más breve.</p>
+            </article>
+            <article class="family f3">
+              <h3>Transformar</h3>
+              <p>Traducir, reformular, simplificar o revisar un texto existente.</p>
+            </article>
+          </div>
+
+          <div class="families-4">
+            <article class="family f4">
+              <h3>Evaluar</h3>
+              <p>Comprobar hechos, puntuar, comparar o justificar una valoración.</p>
+            </article>
+            <article class="family f5">
+              <h3>Conversar</h3>
+              <p>Seguir una charla, repreguntar y sostener un hilo con varios turnos.</p>
+            </article>
+            <article class="family f6">
+              <h3>Tomar acciones</h3>
+              <p>Buscar en la web, usar un calendario o llamar herramientas externas.</p>
+            </article>
+            <article class="family f7">
+              <h3>Multimodal</h3>
+              <p>Combinar imagen y texto para describir, comparar o preguntar sobre una escena.</p>
+            </article>
+          </div>
+
+          <section class="takeaway">
+            <p>La utilidad real aparece cuando el tipo de tarea, el modelo y el criterio humano están alineados.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

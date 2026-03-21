@@ -417,6 +417,18 @@ button {
   --course-accent-ink: #415c2f;
 }
 
+[data-course-tone="ai"] {
+  --course-accent: #4f5d91;
+  --course-accent-soft: rgba(79, 93, 145, 0.16);
+  --course-accent-ink: #303d69;
+}
+
+[data-course-tone="data"] {
+  --course-accent: #2c7c8f;
+  --course-accent-soft: rgba(44, 124, 143, 0.16);
+  --course-accent-ink: #1d5562;
+}
+
 .course-card {
   width: 100%;
   text-align: left;
@@ -803,6 +815,11 @@ button {
   object-fit: contain;
   display: block;
   background: #f6f8fa;
+}
+
+.topic-image-button img[src$=".svg"] {
+  height: auto;
+  aspect-ratio: auto;
 }
 
 .topic-carousel-toolbar {
