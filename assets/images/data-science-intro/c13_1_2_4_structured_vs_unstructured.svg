@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Estructurados y no estructurados</title>
+  <desc id="desc">Comparación entre datos estructurados y no estructurados, con ejemplos y almacenamiento típico.</desc>
+  <rect width="1200" height="720" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="664">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:664px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">Estructurados y no estructurados no se almacenan igual</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">La estructura define qué tan fácil es buscar, ordenar y analizar. Por eso no se gestiona igual un registro de ventas que una imagen o una publicación social.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:18px;background:#edf6f3;display:flex;flex-direction:column;gap:10px;min-height:330px;">
+          <h2 style="margin:0;font-size:25px;line-height:1.1;font-weight:700;">Estructurados</h2>
+          <p style="margin:0;font-size:15px;line-height:1.36;color:#425653;font-weight:600;">Tienen campos y patrones definidos. Encajan bien en filas y columnas.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span style="padding:8px 10px;border-radius:999px;background:#ffffff;border:1px solid #cfe0db;font-size:14px;font-weight:700;">ventas</span>
+            <span style="padding:8px 10px;border-radius:999px;background:#ffffff;border:1px solid #cfe0db;font-size:14px;font-weight:700;">inventario</span>
+            <span style="padding:8px 10px;border-radius:999px;background:#ffffff;border:1px solid #cfe0db;font-size:14px;font-weight:700;">reservas</span>
+          </div>
+          <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.4;color:#304441;font-weight:600;">
+            <li>fáciles de consultar y ordenar</li>
+            <li>encajan en SQL o hojas de cálculo</li>
+            <li>representan una fracción menor del volumen total</li>
+          </ul>
+          <div style="padding:12px 14px;border-radius:12px;background:#ffffff;border:1px solid #cfe0db;font-size:15px;font-weight:700;">Aproximadamente 10 % a 20 % del total generado</div>
+        </section>
+
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:18px;background:#fbf4e8;display:flex;flex-direction:column;gap:10px;min-height:330px;">
+          <h2 style="margin:0;font-size:25px;line-height:1.1;font-weight:700;">No estructurados</h2>
+          <p style="margin:0;font-size:15px;line-height:1.36;color:#425653;font-weight:600;">No caben naturalmente en una tabla porque no comparten un patrón rígido de columnas y filas.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span style="padding:8px 10px;border-radius:999px;background:#ffffff;border:1px solid #ead8bc;font-size:14px;font-weight:700;">imágenes</span>
+            <span style="padding:8px 10px;border-radius:999px;background:#ffffff;border:1px solid #ead8bc;font-size:14px;font-weight:700;">PDF</span>
+            <span style="padding:8px 10px;border-radius:999px;background:#ffffff;border:1px solid #ead8bc;font-size:14px;font-weight:700;">sensores</span>
+            <span style="padding:8px 10px;border-radius:999px;background:#ffffff;border:1px solid #ead8bc;font-size:14px;font-weight:700;">redes sociales</span>
+          </div>
+          <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.4;color:#304441;font-weight:600;">
+            <li>más difíciles de buscar, limpiar y administrar</li>
+            <li>suelen requerir NoSQL o flujos especializados</li>
+            <li>constituyen la mayor parte del volumen actual</li>
+          </ul>
+          <div style="padding:12px 14px;border-radius:12px;background:#ffffff;border:1px solid #ead8bc;font-size:15px;font-weight:700;">Aproximadamente 80 % del total generado</div>
+        </section>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:16px 18px;background:#f7f9fa;">
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">La diferencia no es solo técnica: cambia cómo buscas, almacenas, transformas y conviertes el dato en evidencia útil.</p>
+        </section>
+        <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;display:flex;align-items:center;justify-content:center;">
+          <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">Antes de analizar, conviene saber si el dato ya tiene estructura o si primero hay que imponérsela.</p>
+        </section>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

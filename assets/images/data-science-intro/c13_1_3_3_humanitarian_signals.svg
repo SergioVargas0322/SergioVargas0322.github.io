@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">Señales para ayuda humanitaria</title>
+  <desc id="desc">Uso de satélites, sensores, cámaras, IoT y redes sociales para anticipar crisis y priorizar respuesta.</desc>
+  <rect width="1200" height="660" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="604">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:604px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">La analítica humanitaria combina muchas señales débiles</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">Una crisis rara vez se entiende con una sola fuente. La imagen útil aparece cuando varias señales apuntan al mismo problema y ayudan a decidir dónde intervenir primero.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;">
+        <section style="border:1px solid #b7d2cb;border-radius:14px;padding:14px;background:#edf6f3;display:flex;flex-direction:column;gap:8px;min-height:180px;">
+          <h2 style="margin:0;font-size:20px;line-height:1.1;font-weight:700;">Satélites</h2>
+          <p style="margin:0;font-size:14px;line-height:1.36;color:#425653;font-weight:600;">sequías, inundaciones, extensión del daño</p>
+        </section>
+        <section style="border:1px solid #d8c8b1;border-radius:14px;padding:14px;background:#fbf4e8;display:flex;flex-direction:column;gap:8px;min-height:180px;">
+          <h2 style="margin:0;font-size:20px;line-height:1.1;font-weight:700;">Sensores</h2>
+          <p style="margin:0;font-size:14px;line-height:1.36;color:#425653;font-weight:600;">clima, agua, calidad del aire, infraestructura</p>
+        </section>
+        <section style="border:1px solid #c9c8de;border-radius:14px;padding:14px;background:#f2f2fb;display:flex;flex-direction:column;gap:8px;min-height:180px;">
+          <h2 style="margin:0;font-size:20px;line-height:1.1;font-weight:700;">Cámaras</h2>
+          <p style="margin:0;font-size:14px;line-height:1.36;color:#425653;font-weight:600;">estado físico de zonas afectadas y flujo de personas</p>
+        </section>
+        <section style="border:1px solid #eef6ee;border-radius:14px;padding:14px;background:#eef6ee;display:flex;flex-direction:column;gap:8px;min-height:180px;">
+          <h2 style="margin:0;font-size:20px;line-height:1.1;font-weight:700;">IoT</h2>
+          <p style="margin:0;font-size:14px;line-height:1.36;color:#425653;font-weight:600;">bombas de agua, alertas, operación de activos críticos</p>
+        </section>
+        <section style="border:1px solid #d7dee3;border-radius:14px;padding:14px;background:#f7f9fa;display:flex;flex-direction:column;gap:8px;min-height:180px;">
+          <h2 style="margin:0;font-size:20px;line-height:1.1;font-weight:700;">Redes sociales</h2>
+          <p style="margin:0;font-size:14px;line-height:1.36;color:#425653;font-weight:600;">ubicación de personas desplazadas y señales tempranas de necesidad</p>
+        </section>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:16px 18px;background:#f7f9fa;">
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Estas fuentes ayudan a anticipar sequías, seguir desplazamientos, preparar recursos médicos y detectar fallas antes de que afecten a poblaciones vulnerables.</p>
+        </section>
+        <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;display:flex;align-items:center;justify-content:center;">
+          <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">La prioridad no es tener más señales, sino combinarlas para decidir dónde actuar primero.</p>
+        </section>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

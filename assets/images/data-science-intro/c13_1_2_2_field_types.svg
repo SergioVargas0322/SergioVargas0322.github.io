@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-labelledby="title desc">
+  <title id="title">Tipos de dato por campo</title>
+  <desc id="desc">Ejemplo de campos de una tabla con sus tipos y operaciones habilitadas por cada uno.</desc>
+  <rect width="1200" height="740" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="684">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:684px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">El tipo de dato cambia lo que puedes hacer</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">Una tabla no es solo una lista de columnas: cada campo necesita un tipo correcto para poder validarse, agruparse, ordenarse o calcularse bien.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1.15fr 1fr;gap:14px;align-items:stretch;">
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:18px;background:#f7f9fa;display:flex;flex-direction:column;gap:10px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Ejemplo de campos</h2>
+          <div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:10px;">
+            <div style="padding:12px 14px;border-radius:12px;background:#ffffff;border:1px solid #dbe3e6;font-size:15px;font-weight:700;">Título del puesto</div>
+            <div style="padding:12px 14px;border-radius:12px;background:#edf6f3;border:1px solid #b7d2cb;font-size:15px;font-weight:700;">cadena</div>
+            <div style="padding:12px 14px;border-radius:12px;background:#ffffff;border:1px solid #dbe3e6;font-size:15px;font-weight:700;">Fecha de contratación</div>
+            <div style="padding:12px 14px;border-radius:12px;background:#fbf4e8;border:1px solid #d8c8b1;font-size:15px;font-weight:700;">fecha</div>
+            <div style="padding:12px 14px;border-radius:12px;background:#ffffff;border:1px solid #dbe3e6;font-size:15px;font-weight:700;">Promedio de horas semanales</div>
+            <div style="padding:12px 14px;border-radius:12px;background:#f2f2fb;border:1px solid #c9c8de;font-size:15px;font-weight:700;">número</div>
+            <div style="padding:12px 14px;border-radius:12px;background:#ffffff;border:1px solid #dbe3e6;font-size:15px;font-weight:700;">Empleado activo</div>
+            <div style="padding:12px 14px;border-radius:12px;background:#eef6ee;border:1px solid #c8dfc8;font-size:15px;font-weight:700;">booleano</div>
+          </div>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Si marcas mal el tipo, una aplicación puede tratar como texto algo que debería ordenarse por fecha, o intentar sumar valores que en realidad son categorías.</p>
+        </section>
+
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:18px;background:#f7f9fa;display:flex;flex-direction:column;gap:10px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Qué habilita el tipo correcto</h2>
+          <div style="display:grid;grid-template-columns:1fr;gap:10px;">
+            <div style="padding:14px;border-radius:12px;background:#edf6f3;border:1px solid #b7d2cb;">
+              <strong style="font-size:16px;">Validar</strong>
+              <p style="margin:6px 0 0;font-size:15px;line-height:1.35;color:#425653;font-weight:600;">Detectar formatos inválidos antes de analizarlos.</p>
+            </div>
+            <div style="padding:14px;border-radius:12px;background:#fbf4e8;border:1px solid #d8c8b1;">
+              <strong style="font-size:16px;">Ordenar y filtrar</strong>
+              <p style="margin:6px 0 0;font-size:15px;line-height:1.35;color:#425653;font-weight:600;">Comparar fechas, rangos, etiquetas o estados sin ambigüedad.</p>
+            </div>
+            <div style="padding:14px;border-radius:12px;background:#f2f2fb;border:1px solid #c9c8de;">
+              <strong style="font-size:16px;">Agrupar</strong>
+              <p style="margin:6px 0 0;font-size:15px;line-height:1.35;color:#425653;font-weight:600;">Construir categorías, resúmenes y conteos consistentes.</p>
+            </div>
+            <div style="padding:14px;border-radius:12px;background:#eef6ee;border:1px solid #c8dfc8;">
+              <strong style="font-size:16px;">Calcular</strong>
+              <p style="margin:6px 0 0;font-size:15px;line-height:1.35;color:#425653;font-weight:600;">Aplicar promedios, sumas o métricas solo donde tiene sentido matemático.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;">
+        <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">La calidad del análisis empieza antes del gráfico: empieza en cómo nombras y tipas cada campo.</p>
+      </section>
+    </div>
+  </foreignObject>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Uso diario de datos</title>
+  <desc id="desc">Ejemplos de cómo los datos se usan a diario para recomendaciones, mejoras, seguimiento y visibilidad de comportamientos.</desc>
+  <rect width="1200" height="650" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="594">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:594px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:14px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">Los datos ya cambian decisiones cotidianas</h1>
+        <p style="margin:0;max-width:960px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">Se usan para recomendar, corregir productos, seguir eventos y entender comportamientos antes de que el usuario siquiera lo note.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:18px;background:#edf6f3;display:flex;flex-direction:column;gap:8px;min-height:132px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Recomendaciones</h2>
+          <p style="margin:0;font-size:15px;line-height:1.36;color:#425653;font-weight:600;">Compras, videos, rutas o contactos sugeridos nacen de comparar tu actividad con la de otros usuarios y con tu historial reciente.</p>
+        </section>
+
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:18px;background:#fbf4e8;display:flex;flex-direction:column;gap:8px;min-height:132px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Mejora de productos</h2>
+          <p style="margin:0;font-size:15px;line-height:1.36;color:#425653;font-weight:600;">Reseñas, calificaciones y métricas de uso permiten detectar fallos, priorizar cambios y rediseñar procesos con evidencia.</p>
+        </section>
+
+        <section style="border:1px solid #c9c8de;border-radius:16px;padding:18px;background:#f2f2fb;display:flex;flex-direction:column;gap:8px;min-height:132px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Seguimiento de eventos</h2>
+          <p style="margin:0;font-size:15px;line-height:1.36;color:#425653;font-weight:600;">Tableros, sensores y registros ayudan a rastrear incidentes, anticipar fallas y actuar antes de que el problema escale.</p>
+        </section>
+
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:18px;background:#f7f9fa;display:flex;flex-direction:column;gap:8px;min-height:132px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Visibilidad de comportamiento</h2>
+          <p style="margin:0;font-size:15px;line-height:1.36;color:#425653;font-weight:600;">El análisis revela cómo se usan productos, qué patrones se repiten y dónde hay fricción en la experiencia real.</p>
+        </section>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:16px 18px;background:#f7f9fa;">
+          <p style="margin:0;font-size:16px;line-height:1.4;color:#425653;font-weight:600;">La diferencia entre tener datos y usarlos bien está en convertir registros dispersos en una respuesta accionable.</p>
+        </section>
+        <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;display:flex;align-items:center;justify-content:center;">
+          <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">La analítica da contexto: explica qué pasó, qué está pasando y qué probablemente ocurra después.</p>
+        </section>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

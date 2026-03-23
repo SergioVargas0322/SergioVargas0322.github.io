@@ -12458,82 +12458,210 @@
       },
       {
         id: "data-science-intro",
-        title: "Introducci\u00f3n a la Ciencia de Datos",
+        title: "Introducción a la Ciencia de Datos",
         provider: "Cisco Networking Academy",
         level: "Fundamentos",
         status: "En curso",
         estimatedHours: 12,
         summary:
-          "Curso introductorio para comprender fuentes de datos, visualizaci\u00f3n, big data, inteligencia artificial, aprendizaje autom\u00e1tico y rutas profesionales en an\u00e1lisis de datos.",
+          "Curso introductorio para entender cómo se producen, clasifican, visualizan y aprovechan los datos, además de big data, inteligencia artificial, aprendizaje automático y rutas profesionales en análisis de datos.",
         tags: [
           "ciencia-de-datos",
-          "an\u00e1lisis-de-datos",
-          "visualizaci\u00f3n",
+          "análisis-de-datos",
+          "visualización",
           "big-data",
-          "aprendizaje-autom\u00e1tico",
+          "aprendizaje-automático",
           "carreras"
         ],
         modules: [
           {
             key: "M1",
-            title: "\u00bfQu\u00e9 son los Datos?",
+            title: "Módulo 1: Análisis de la Experiencia",
             topics: [
               {
-                code: "1.1.1",
-                title: "V\u00eddeo - \u00bfQu\u00e9 son los Datos y de D\u00f3nde Provienen?",
+                code: "1.1",
+                title: "¿Qué son los datos?",
                 summary:
-                  "Explica c\u00f3mo generamos datos voluntarios, observados e inferidos y por qu\u00e9 el an\u00e1lisis les da valor.",
+                  "Explica cómo se generan datos voluntarios, observados e inferidos, cómo ya influyen en decisiones cotidianas y por qué visualizar bien cambia la forma de entenderlos.",
+                images: [
+                  {
+                    src: "./assets/images/data-science-intro/c13_1_1_1_data_sources.svg",
+                    alt: "Mapa de datos voluntarios, observados e inferidos con ejemplos cotidianos."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_1_1_2_daily_data_use.svg",
+                    alt: "Ejemplos de uso diario de datos para recomendaciones, mejora de productos, seguimiento y visibilidad de comportamientos."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_1_1_3_visualization_value.svg",
+                    alt: "Comparación entre datos crudos, visualización e interpretación para facilitar decisiones."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_1_1_4_chart_selection.svg",
+                    alt: "Guía para elegir visualizaciones según tendencia, comparación, composición o correlación."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_1_1_5_chart_families.svg",
+                    alt: "Resumen de gráficos de líneas, barras, circulares y dispersión con usos y buenas prácticas."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Claves del tema",
+                    title: "De dónde salen los datos",
                     items: [
-                      "Las personas producen datos al llenar formularios, usar servicios, desplazarse o interactuar en l\u00ednea.",
-                      "El an\u00e1lisis convierte registros aislados en informaci\u00f3n accionable para personalizar servicios y entender comportamientos."
+                      "Los datos voluntarios aparecen cuando una persona entrega información de forma explícita, por ejemplo al llenar formularios, responder encuestas o publicar contenido.",
+                      "Los datos observados se generan mientras alguien usa servicios o dispositivos: ubicación, compras, navegación web, sensores, registros de red o actividad en aplicaciones.",
+                      "Los datos inferidos no se capturan directamente; se deducen al relacionar patrones, preferencias y contexto para estimar gustos, riesgos o necesidades."
+                    ]
+                  },
+                  {
+                    title: "Dónde ya se usan",
+                    items: [
+                      "Las recomendaciones de productos, rutas, contenidos o contactos dependen de analizar grandes volúmenes de interacciones previas para personalizar experiencias.",
+                      "Las reseñas, calificaciones y métricas de uso ayudan a detectar fallas, rediseñar productos y corregir procesos con evidencia.",
+                      "Tableros, alertas y modelos de seguimiento permiten rastrear eventos, anticipar fallas y entender cómo se comportan usuarios, clientes o sistemas."
+                    ]
+                  },
+                  {
+                    title: "Por qué visualizar importa",
+                    items: [
+                      "Una tabla extensa puede contener la respuesta y aun así seguir siendo difícil de leer; una visualización adecuada vuelve visibles patrones, tendencias y anomalías con mucha menos fricción.",
+                      "Visualizar no es adornar datos: es traducirlos a una forma que facilite comparar, contar una historia y sostener una decisión con evidencia.",
+                      "No todos los gráficos sirven para cualquier situación; la utilidad depende del patrón o la pregunta que se quiere destacar."
+                    ]
+                  },
+                  {
+                    title: "Elegir un gráfico con criterio",
+                    items: [
+                      "Primero conviene definir la pregunta: si se quiere mostrar evolución en el tiempo, comparación entre categorías, partes de un total o relación entre dos variables.",
+                      "La cantidad de variables, el número de puntos y la necesidad de comparar o correlacionar cambian por completo cuál gráfico resulta más útil.",
+                      "Las líneas funcionan bien para tendencias, las barras y columnas para comparaciones, los circulares solo para composiciones simples y los dispersogramas para correlación o distribución.",
+                      "A menudo conviene probar más de una visualización antes de quedarse con la que ofrece la lectura más clara.",
+                      "Buenas prácticas básicas: rotular ejes, usar títulos claros, limitar el número de series o categorías y evitar formas que distorsionen la escala real."
                     ]
                   }
                 ]
               },
               {
-                code: "1.1.3",
-                title: "V\u00eddeo - Uso de Datos en la Vida Diaria",
+                code: "1.2",
+                title: "Los datos nos rodean",
                 summary:
-                  "Muestra c\u00f3mo la recopilaci\u00f3n y el an\u00e1lisis de datos ya influyen en decisiones, recomendaciones y mejoras de productos.",
+                  "Ordena las familias y formatos de datos más comunes y muestra por qué la naturaleza del dato, su estructura y la pregunta de análisis cambian por completo cómo conviene tratarlo.",
+                images: [
+                  {
+                    src: "./assets/images/data-science-intro/c13_1_2_1_data_families.svg",
+                    alt: "Comparación entre datos cualitativos, cuantitativos, discretos y continuos con ejemplos de uso."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_1_2_2_field_types.svg",
+                    alt: "Ejemplo de campos de una tabla con sus tipos y operaciones habilitadas por cada uno."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_1_2_3_data_variety.svg",
+                    alt: "Panorama de la variedad de formatos de datos modernos y su expansión desde dispositivos móviles."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_1_2_4_structured_vs_unstructured.svg",
+                    alt: "Comparación entre datos estructurados y no estructurados, con ejemplos y almacenamiento típico."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_1_2_5_relevant_selection.svg",
+                    alt: "Selección de datos relevantes a partir de una pregunta concreta sobre bienestar laboral."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Claves del tema",
+                    title: "Medir, describir y contar",
                     items: [
-                      "Los datos provienen de sensores, dispositivos, aplicaciones, registros, redes sociales y servicios web.",
-                      "Su uso permite recomendar productos, mejorar procesos, seguir eventos y entender mejor el comportamiento de los usuarios."
+                      "Los datos cualitativos describen atributos o categorías; suelen expresarse como texto, etiquetas u observaciones.",
+                      "Los datos cuantitativos expresan cantidades. Dentro de ellos, los discretos cuentan eventos enteros y los continuos representan mediciones dentro de un rango.",
+                      "Distinguir estas familias evita mezclar preguntas distintas y ayuda a escoger operaciones, gráficos y métricas apropiadas."
+                    ]
+                  },
+                  {
+                    title: "El tipo de dato condiciona el análisis",
+                    items: [
+                      "Cada campo tiene un tipo de dato que le indica a una aplicación cómo almacenarlo, validarlo y operar con él.",
+                      "Texto, números, fechas, identificadores y categorías no se manipulan igual; elegir mal el tipo introduce errores de análisis desde el origen.",
+                      "La consistencia de tipos facilita limpieza, ordenamiento, agrupación, cálculo y modelado posterior."
+                    ]
+                  },
+                  {
+                    title: "Formato, variedad y estructura",
+                    items: [
+                      "Los datos modernos llegan desde teléfonos, sensores, audio, video, documentos, redes sociales, logs y sistemas transaccionales, así que la variedad es parte normal del trabajo.",
+                      "Los datos estructurados encajan bien en filas y columnas con reglas claras; los no estructurados ocupan gran parte del volumen actual y exigen procesos más complejos.",
+                      "Entender si un dato está estructurado o no cambia cómo se almacena, busca, transforma y aprovecha."
+                    ]
+                  },
+                  {
+                    title: "Elegir datos relevantes",
+                    items: [
+                      "La selección de datos relevantes empieza con una pregunta bien formulada, no con la idea de recolectarlo todo.",
+                      "Un campo solo es útil si ayuda a responder el problema planteado; si no aporta, añade ruido, costo y confusión.",
+                      "La mejor selección es la que conecta de forma directa con el contexto, la decisión y la evidencia que se quiere obtener."
                     ]
                   }
                 ]
               },
               {
-                code: "1.1.5",
-                title: "La Importancia de la Visualizaci\u00f3n",
+                code: "1.3",
+                title: "Comprensión del negocio",
                 summary:
-                  "Introduce la visualizaci\u00f3n como herramienta esencial para comunicar patrones, tendencias y hallazgos de manera comprensible.",
-                sections: [
+                  "Conecta el análisis de datos con decisiones reales en empresas, organizaciones humanitarias y problemas ambientales, mostrando que el valor aparece cuando una pregunta concreta guía qué señales observar y qué acción tomar.",
+                images: [
                   {
-                    title: "Claves del tema",
-                    items: [
-                      "No basta con analizar datos: tambi\u00e9n hay que presentarlos de forma clara para apoyar decisiones.",
-                      "Elegir bien una visualizaci\u00f3n depende del tipo de variables, la cantidad de datos y la historia que se quiere contar."
-                    ]
+                    src: "./assets/images/data-science-intro/c13_1_3_1_business_questions.svg",
+                    alt: "Del problema de negocio a los KPI, tendencias y decisiones concretas."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_1_3_2_bike_shop_trends.svg",
+                    alt: "Ejemplo de tienda de bicicletas que analiza compras de nuevos clientes por temporada y producto."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_1_3_3_humanitarian_signals.svg",
+                    alt: "Uso de datos de satélites, sensores, cámaras y redes sociales para ayuda humanitaria."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_1_3_4_social_examples.svg",
+                    alt: "Ejemplos sociales con OCHA, HDX y retos de predicción de daño por terremotos."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_1_3_5_climate_dashboards.svg",
+                    alt: "Observación del cambio climático con sensores, series históricas y tableros públicos."
                   }
-                ]
-              },
-              {
-                code: "1.1.6",
-                title: "Formas de Visualizar los Datos",
-                summary:
-                  "Repasa distintos tipos de gr\u00e1ficos y sus casos de uso para representar comparaciones, tendencias y distribuciones.",
+                ],
                 sections: [
                   {
-                    title: "Claves del tema",
+                    title: "Del problema a la decisión",
                     items: [
-                      "Cada gr\u00e1fico sirve mejor para ciertos escenarios, como l\u00edneas para tendencias o barras para comparaciones.",
-                      "La visualizaci\u00f3n correcta hace m\u00e1s intuitivos datos complejos y evita interpretaciones enga\u00f1osas."
+                      "El análisis útil parte de una necesidad concreta: mejorar eficiencia, reducir riesgo, entender comportamiento o detectar una oportunidad.",
+                      "Indicadores, tendencias y comparaciones convierten grandes volúmenes de registros en acciones mejor orientadas.",
+                      "El tipo de analítica depende de la pregunta que se quiere responder y de la calidad de los datos disponibles."
+                    ]
+                  },
+                  {
+                    title: "Casos empresariales",
+                    items: [
+                      "Las empresas usan analítica para entender cómo rinden sus productos y servicios, cuándo cambian los patrones de compra y qué ajustes conviene hacer.",
+                      "El análisis de tendencias sobre KPI revela temporadas, cambios de demanda y momentos donde conviene invertir en marketing, inventario u operación.",
+                      "Además de describir lo que pasó, la analítica puede apoyar predicción de comportamiento, medición de satisfacción y mitigación de riesgo."
+                    ]
+                  },
+                  {
+                    title: "Usos humanitarios y sociales",
+                    items: [
+                      "La analítica también apoya a organizaciones humanitarias al anticipar sequías, desplazamientos, necesidades médicas o fallas en infraestructura crítica.",
+                      "Satélites, sensores, cámaras, IoT y publicaciones en redes sociales aportan señales valiosas para decidir dónde actuar primero.",
+                      "Ejemplos como OCHA, HDX o los retos de DrivenData muestran que el análisis de datos también orienta ayuda, políticas públicas y prevención."
+                    ]
+                  },
+                  {
+                    title: "Ejemplos ambientales",
+                    items: [
+                      "Problemas como el cambio climático y el aumento del nivel del mar dependen de observación continua, series históricas y modelos predictivos.",
+                      "Los tableros públicos y las fuentes abiertas permiten seguir fenómenos complejos y comunicar impacto de forma más clara.",
+                      "Los datos ayudan a priorizar y a prever escenarios, pero el valor real sigue dependiendo de la pregunta y de la decisión humana que los interpreta."
                     ]
                   }
                 ]
@@ -12542,79 +12670,84 @@
           },
           {
             key: "M2",
-            title: "Los Datos nos Rodean",
+            title: "Módulo 2: Recopilación y Almacenamiento de Datos",
             topics: [
               {
-                code: "1.2.1",
-                title: "Datos Discretos vs Continuos",
+                code: "2.1",
+                title: "Comprendiendo los datos masivos",
                 summary:
-                  "Diferencia entre datos cualitativos y cuantitativos, y dentro de estos \u00faltimos entre discretos y continuos.",
+                  "Presenta qué vuelve masivos a ciertos conjuntos de datos, por qué son difíciles de manejar y qué beneficios ofrecen cuando se administran bien.",
                 sections: [
                   {
-                    title: "Claves del tema",
+                    title: "Qué cambia con el big data",
                     items: [
-                      "Los datos cualitativos describen atributos, mientras que los cuantitativos expresan cantidades medibles.",
-                      "Los discretos toman valores contables y los continuos pueden asumir valores dentro de un rango."
+                      "Big data aparece cuando el volumen, la velocidad o la diversidad de los datos supera lo que una gestión convencional puede manejar cómodamente.",
+                      "No se trata solo de tener muchos registros; también importa qué tan rápido llegan y en cuántos formatos distintos deben integrarse.",
+                      "Ese cambio obliga a pensar en infraestructura, procesamiento y calidad desde el inicio."
+                    ]
+                  },
+                  {
+                    title: "Características que complican el manejo",
+                    items: [
+                      "A más volumen, más difícil resulta almacenar, mover y consultar sin retrasos.",
+                      "A más velocidad, menos tiempo queda para capturar, limpiar y reaccionar antes de que el dato pierda valor.",
+                      "A más variedad, más costoso se vuelve unir texto, imágenes, logs, sensores y tablas en una vista coherente."
+                    ]
+                  },
+                  {
+                    title: "Beneficios potenciales",
+                    items: [
+                      "Cuando se explotan bien, los datos masivos permiten detectar patrones ocultos, mejorar predicción y sostener decisiones con evidencia más rica.",
+                      "También habilitan servicios más personalizados, monitoreo continuo y automatización basada en señales reales.",
+                      "El beneficio no viene del tamaño por sí solo, sino de convertir ese tamaño en mejor contexto para actuar."
+                    ]
+                  },
+                  {
+                    title: "Condiciones para aprovecharlos",
+                    items: [
+                      "Hace falta una arquitectura capaz de capturar, almacenar y procesar sin perder trazabilidad.",
+                      "La calidad y la gobernanza siguen siendo tan importantes como la escala; más datos malos solo amplifican el problema.",
+                      "El valor aparece cuando ingeniería, análisis y objetivos del negocio están alineados."
                     ]
                   }
                 ]
               },
               {
-                code: "1.2.3",
-                title: "Tipos de Datos",
+                code: "2.2",
+                title: "Comprendiendo la administración de los datos masivos",
                 summary:
-                  "Explica c\u00f3mo los tipos de datos determinan qu\u00e9 operaciones, validaciones y an\u00e1lisis son posibles en una tabla o sistema.",
+                  "Explica cómo las canalizaciones de datos convierten fuentes dispersas en conjuntos utilizables para análisis, productos y automatización.",
                 sections: [
                   {
-                    title: "Claves del tema",
+                    title: "Qué es una canalización de datos",
                     items: [
-                      "Identificar el tipo correcto de cada campo mejora la calidad del modelado, el almacenamiento y el an\u00e1lisis.",
-                      "Texto, fechas, n\u00fameros y otros tipos se tratan de manera distinta dentro de las aplicaciones."
+                      "Una canalización organiza el flujo desde la captura hasta la entrega del dato ya preparado para consumo.",
+                      "Su trabajo no es solo mover datos; también debe limpiar, transformar, validar y dejar trazabilidad del proceso.",
+                      "Sin canalización, los equipos terminan usando copias sueltas, definiciones inconsistentes y resultados difíciles de reproducir."
                     ]
-                  }
-                ]
-              },
-              {
-                code: "1.2.5",
-                title: "Variedad de Datos",
-                summary:
-                  "Describe la creciente diversidad de formatos de datos generados por dispositivos, plataformas y servicios digitales.",
-                sections: [
+                  },
                   {
-                    title: "Claves del tema",
+                    title: "Rol del ingeniero de datos",
                     items: [
-                      "La expansi\u00f3n tecnol\u00f3gica ha multiplicado la variedad de datos disponibles, desde texto hasta audio, video y telemetr\u00eda.",
-                      "Analizar datos modernos exige reconocer que no todos comparten la misma estructura ni el mismo nivel de preparaci\u00f3n."
+                      "La ingeniería de datos diseña la infraestructura y los procesos que sostienen ingestión, almacenamiento, transformación y acceso.",
+                      "Esto incluye elegir herramientas, automatizar flujos y asegurar que los datos correctos lleguen al lugar correcto en el momento adecuado.",
+                      "Su trabajo conecta sistemas fuente con analistas, modelos y aplicaciones."
                     ]
-                  }
-                ]
-              },
-              {
-                code: "1.2.6",
-                title: "Datos Estructurados y No Estructurados",
-                summary:
-                  "Compara datos organizados en filas y columnas con informaci\u00f3n libre que requiere m\u00e9todos distintos de gesti\u00f3n.",
-                sections: [
+                  },
                   {
-                    title: "Claves del tema",
+                    title: "Etapas del flujo",
                     items: [
-                      "Los datos estructurados son m\u00e1s f\u00e1ciles de almacenar y consultar mediante esquemas claros.",
-                      "Los datos no estructurados representan la mayor parte del volumen actual y requieren procesos m\u00e1s complejos para explotarse."
+                      "La ingestión captura datos desde aplicaciones, sensores, APIs, logs o bases existentes.",
+                      "La transformación corrige formatos, unifica campos y prepara estructuras útiles para consulta o modelado.",
+                      "El almacenamiento y la entrega definen dónde vive el dato final y cómo se expone a análisis, tableros o modelos."
                     ]
-                  }
-                ]
-              },
-              {
-                code: "1.2.8",
-                title: "Selecci\u00f3n de Datos Relevantes",
-                summary:
-                  "Plantea la importancia de definir primero la pregunta del negocio para elegir solo los datos que aportan valor.",
-                sections: [
+                  },
                   {
-                    title: "Claves del tema",
+                    title: "Calidad y gobierno",
                     items: [
-                      "Seleccionar datos relevantes evita ruido, reduce esfuerzo y mejora la utilidad del an\u00e1lisis.",
-                      "La pertinencia de una variable siempre depende del problema que se desea resolver."
+                      "Una canalización confiable incorpora validaciones, manejo de errores, control de versiones y monitoreo de frescura.",
+                      "La documentación y la gobernanza evitan que distintos equipos usen definiciones incompatibles para una misma métrica.",
+                      "La administración madura de datos masivos busca repetibilidad, seguridad y claridad, no solo velocidad."
                     ]
                   }
                 ]
@@ -12623,79 +12756,84 @@
           },
           {
             key: "M3",
-            title: "Comprensi\u00f3n del Negocio",
+            title: "Módulo 3: Inteligencia Artificial y Aprendizaje Automático",
             topics: [
               {
-                code: "1.3.1",
-                title: "V\u00eddeo - An\u00e1lisis de Datos para Ideas de Negocios",
+                code: "3.1",
+                title: "IA: realidad y ficción",
                 summary:
-                  "Introduce c\u00f3mo la ciencia de datos impulsa innovaci\u00f3n, eficiencia y reducci\u00f3n de riesgo en empresas.",
+                  "Separa la narrativa exagerada de la inteligencia artificial de sus aplicaciones reales en agricultura, automatización y productos cotidianos.",
                 sections: [
                   {
-                    title: "Claves del tema",
+                    title: "IA fuera de la ficción",
                     items: [
-                      "El tipo de anal\u00edtica elegido depende del problema: no todo reto empresarial requiere la misma aproximaci\u00f3n.",
-                      "Analizar tendencias y KPI permite detectar oportunidades, ajustar procesos y tomar decisiones mejor informadas."
+                      "La inteligencia artificial ya está en procesos reales y no solo en robots futuristas o historias de ciencia ficción.",
+                      "Muchas aplicaciones actuales son específicas: reconocer patrones, automatizar decisiones repetitivas o detectar anomalías.",
+                      "Entender ese alcance evita tanto el miedo exagerado como las expectativas irreales."
+                    ]
+                  },
+                  {
+                    title: "IA a nuestro alrededor",
+                    items: [
+                      "Sistemas de recomendación, asistentes, visión artificial, clasificación automática y optimización operativa son ejemplos cotidianos.",
+                      "La mayoría de estas soluciones dependen de datos históricos y objetivos bien definidos, no de una inteligencia general.",
+                      "La IA suele integrarse en servicios ya existentes más que aparecer como una herramienta aislada."
+                    ]
+                  },
+                  {
+                    title: "Ejemplos concretos",
+                    items: [
+                      "Los casos del módulo muestran cómo la IA puede ayudar a agricultura, monitoreo y toma de decisiones basada en señales de campo.",
+                      "Cuando se aplica bien, acelera detección de problemas, priorización y respuesta sobre grandes volúmenes de información.",
+                      "Lo importante no es el nombre de la técnica sino qué tarea concreta se está resolviendo."
+                    ]
+                  },
+                  {
+                    title: "Límites y criterio humano",
+                    items: [
+                      "La IA necesita datos, contexto y supervisión; no reemplaza el juicio humano en decisiones complejas o sensibles.",
+                      "Los resultados deben verificarse porque pueden heredar sesgos, errores de entrenamiento o supuestos incorrectos.",
+                      "La mejor forma de usar IA es como sistema de apoyo con objetivos y límites claros."
                     ]
                   }
                 ]
               },
               {
-                code: "1.3.3",
-                title: "V\u00eddeo - Perspectivas Humanitarias a partir de An\u00e1lisis de Datos",
+                code: "3.2",
+                title: "Datos masivos y aprendizaje automático",
                 summary:
-                  "Muestra c\u00f3mo el an\u00e1lisis de datos tambi\u00e9n ayuda a organizaciones humanitarias a anticipar y coordinar respuestas.",
+                  "Explica qué es el aprendizaje automático, qué tipos de análisis existen y cómo se entrena una máquina para reconocer patrones útiles.",
                 sections: [
                   {
-                    title: "Claves del tema",
+                    title: "Qué es el aprendizaje automático",
                     items: [
-                      "Los datos permiten prever sequ\u00edas, desplazamientos y necesidades de ayuda en comunidades vulnerables.",
-                      "Sat\u00e9lites, sensores, c\u00e1maras y redes sociales aportan evidencias para decidir mejor d\u00f3nde actuar."
+                      "El aprendizaje automático usa datos para ajustar modelos que luego detectan patrones, hacen predicciones o clasifican casos nuevos.",
+                      "Su valor aparece cuando la tarea es demasiado variable o extensa para codificarla solo con reglas fijas.",
+                      "No todo problema requiere ML; conviene usarlo cuando aporta mejor capacidad de generalización."
                     ]
-                  }
-                ]
-              },
-              {
-                code: "1.3.4",
-                title: "Ejemplos Sociales",
-                summary:
-                  "Presenta casos donde organizaciones y comunidades usan datos para responder a crisis y resolver problemas reales.",
-                sections: [
+                  },
                   {
-                    title: "Claves del tema",
+                    title: "Tipos de análisis",
                     items: [
-                      "La disponibilidad de datos compartidos mejora la coordinaci\u00f3n de la ayuda y la capacidad de prevenci\u00f3n.",
-                      "Competencias y proyectos colaborativos demuestran que la ciencia de datos tambi\u00e9n tiene un fuerte impacto social."
+                      "Según el problema, un modelo puede clasificar, predecir valores, agrupar comportamientos o detectar anomalías.",
+                      "Cada tipo de análisis exige datos distintos, métricas distintas y una forma distinta de validar resultados.",
+                      "Elegir mal la formulación del problema suele ser más grave que elegir mal un algoritmo."
                     ]
-                  }
-                ]
-              },
-              {
-                code: "1.3.5",
-                title: "Elemento de Pr\u00e1ctica - Ejemplos Sociales",
-                summary:
-                  "Ejercicio aplicado para interpretar gr\u00e1ficos y estimar consecuencias sociales a partir de indicadores de cambio.",
-                sections: [
+                  },
                   {
-                    title: "Claves del tema",
+                    title: "Proceso de trabajo",
                     items: [
-                      "La pr\u00e1ctica obliga a pasar de la lectura de datos a la formulaci\u00f3n de conclusiones con impacto humano.",
-                      "Predecir afectaciones futuras requiere observar tendencias y relacionarlas con poblaciones o contextos concretos."
+                      "El flujo típico pasa por recolección, preparación, entrenamiento, evaluación y ajuste del modelo.",
+                      "La calidad de datos, el balance entre clases y la claridad de la etiqueta influyen directamente en el resultado.",
+                      "Entrenar no basta: también hay que comprobar si el modelo funciona bien sobre datos que no vio antes."
                     ]
-                  }
-                ]
-              },
-              {
-                code: "1.3.6",
-                title: "Ejemplo Ambiental - Cambio Clim\u00e1tico",
-                summary:
-                  "Relaciona la ciencia de datos con la observaci\u00f3n clim\u00e1tica y el uso de tableros p\u00fablicos para entender impactos globales.",
-                sections: [
+                  },
                   {
-                    title: "Claves del tema",
+                    title: "Reconocimiento de patrones",
                     items: [
-                      "Los tableros interactivos ayudan a traducir datos ambientales complejos en patrones visibles y comparables.",
-                      "El an\u00e1lisis de datos es clave para monitorear el cambio clim\u00e1tico y orientar respuestas basadas en evidencia."
+                      "El entrenamiento busca que la máquina identifique regularidades útiles y las use en casos nuevos.",
+                      "Eso permite detectar relaciones que serían difíciles de encontrar manualmente en conjuntos de datos grandes.",
+                      "Un patrón útil no es solo una coincidencia matemática; debe ser estable, interpretable y relevante para la decisión."
                     ]
                   }
                 ]
@@ -12704,289 +12842,84 @@
           },
           {
             key: "M4",
-            title: "Comprendiendo los Datos Masivos",
+            title: "Módulo 4: Embarcarse en su Carrera en Análisis de Datos",
             topics: [
               {
-                code: "2.1.1",
-                title: "Definici\u00f3n de Datos Masivos",
+                code: "4.1",
+                title: "Preparándose para una carrera en análisis de datos",
                 summary:
-                  "Define el concepto de big data como datos demasiado grandes, r\u00e1pidos o diversos para abordarse con m\u00e9todos tradicionales.",
+                  "Resume los roles principales del campo, la demanda laboral y las habilidades técnicas y comunicativas que conviene desarrollar.",
                 sections: [
                   {
-                    title: "Claves del tema",
+                    title: "Roles del campo",
                     items: [
-                      "El tama\u00f1o es importante, pero no es el \u00fanico rasgo: tambi\u00e9n influyen velocidad y variedad.",
-                      "Los datos masivos obligan a repensar c\u00f3mo se recopilan, almacenan y procesan los flujos digitales."
+                      "El ecosistema incluye perfiles como analista de datos, científico de datos, ingeniero de datos y especialistas cercanos al negocio.",
+                      "Cada rol comparte fundamentos, pero cambia el foco entre exploración, modelado, infraestructura y comunicación de resultados.",
+                      "Entender esas diferencias ayuda a elegir una ruta de aprendizaje más realista."
+                    ]
+                  },
+                  {
+                    title: "Mercado laboral",
+                    items: [
+                      "La demanda crece porque cada vez más organizaciones necesitan convertir datos en decisiones repetibles y medibles.",
+                      "La oportunidad no depende solo del título del cargo, sino de la capacidad de resolver problemas con evidencia.",
+                      "Los roles se cruzan con muchas industrias, lo que amplía opciones de entrada."
+                    ]
+                  },
+                  {
+                    title: "Herramientas y habilidades",
+                    items: [
+                      "Hace falta combinar manejo de datos, hojas de cálculo, SQL, visualización, pensamiento analítico y comunicación clara.",
+                      "También cuentan la curiosidad, la capacidad de formular preguntas y la disciplina para documentar hallazgos.",
+                      "Las herramientas cambian; los fundamentos para estructurar, revisar y explicar datos permanecen."
+                    ]
+                  },
+                  {
+                    title: "Cómo prepararse",
+                    items: [
+                      "Conviene practicar con problemas reales, datasets conocidos y ejercicios donde se pueda explicar cada decisión tomada.",
+                      "Aprender a contar una historia con datos es tan importante como obtener una respuesta correcta.",
+                      "La preparación más sólida mezcla técnica, criterio y evidencia práctica del trabajo realizado."
                     ]
                   }
                 ]
               },
               {
-                code: "2.1.2",
-                title: "Caracter\u00edsticas de los Datos Masivos",
+                code: "4.2",
+                title: "Tomando los próximos pasos",
                 summary:
-                  "Presenta las caracter\u00edsticas m\u00e1s conocidas del big data y c\u00f3mo afectan su administraci\u00f3n.",
+                  "Orienta la construcción de un portafolio, la selección de proyectos y las acciones concretas para abrirse camino en el área.",
                 sections: [
                   {
-                    title: "Claves del tema",
+                    title: "Por qué importa el portafolio",
                     items: [
-                      "Las cuatro V ayudan a entender la complejidad del big data: volumen, velocidad, variedad y calidad o valor.",
-                      "Cada caracter\u00edstica introduce retos espec\u00edficos para captura, transporte, acceso y an\u00e1lisis."
+                      "Un portafolio demuestra cómo piensas, qué sabes construir y cómo presentas resultados, no solo qué cursos completaste.",
+                      "Sirve como evidencia práctica frente a entrevistas, postulaciones o colaboraciones.",
+                      "Un buen portafolio deja ver problema, datos, proceso, hallazgos y aprendizaje."
                     ]
-                  }
-                ]
-              },
-              {
-                code: "2.1.4",
-                title: "Los Beneficios Potenciales del Crecimiento de Datos",
-                summary:
-                  "Explica por qu\u00e9 el crecimiento de datos abre oportunidades de optimizaci\u00f3n, personalizaci\u00f3n y predicci\u00f3n.",
-                sections: [
+                  },
                   {
-                    title: "Claves del tema",
+                    title: "Cómo empezar",
                     items: [
-                      "IoT, smartphones, redes sociales y mejor conectividad son motores claros del crecimiento de datos.",
-                      "Ese crecimiento puede traducirse en nuevos servicios, mejores decisiones y m\u00e1s capacidad de anticipaci\u00f3n."
+                      "No hace falta esperar un proyecto perfecto; conviene iniciar con ejercicios bien documentados y de alcance manejable.",
+                      "Los proyectos deben mostrar limpieza de datos, análisis, visualización y una conclusión clara para el lector.",
+                      "La consistencia pesa más que la cantidad: pocos trabajos sólidos valen más que muchos inconclusos."
                     ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            key: "M5",
-            title: "Comprendiendo la Administraci\u00f3n de los Datos Masivos",
-            topics: [
-              {
-                code: "2.2.1",
-                title: "Canalizaciones de Datos",
-                summary:
-                  "Introduce las canalizaciones de datos y el papel de los ingenieros de datos en la ingesti\u00f3n, transformaci\u00f3n y carga.",
-                sections: [
+                  },
                   {
-                    title: "Claves del tema",
+                    title: "Evidencia y visibilidad",
                     items: [
-                      "Una canalizaci\u00f3n organiza el recorrido de los datos desde su captura hasta su almacenamiento y uso anal\u00edtico.",
-                      "Conceptos como ETL ayudan a dividir ese flujo en etapas comprensibles y repetibles."
+                      "Publicar notebooks, dashboards, reportes o resúmenes técnicos aumenta credibilidad y facilita retroalimentación.",
+                      "La documentación del proceso importa porque permite ver criterio, no solo resultado final.",
+                      "Participar en comunidades o retos prácticos acelera aprendizaje y crea contexto profesional."
                     ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            key: "M6",
-            title: "IA Realidad y Ficci\u00f3n",
-            topics: [
-              {
-                code: "3.1.1",
-                title: "V\u00eddeo - \"Data Crunchers\": Uso de la Inteligencia Artificial en la Agricultura",
-                summary:
-                  "Caso aplicado de IA en agricultura usando im\u00e1genes y datos de GPS para entrenar sistemas de reconocimiento.",
-                sections: [
+                  },
                   {
-                    title: "Claves del tema",
+                    title: "Ruta de crecimiento",
                     items: [
-                      "La IA necesita grandes vol\u00famenes de datos, especialmente no estructurados, para aprender tareas visuales.",
-                      "Aplicaciones como la detecci\u00f3n de maleza muestran c\u00f3mo la IA resuelve problemas concretos del mundo f\u00edsico."
-                    ]
-                  }
-                ]
-              },
-              {
-                code: "3.1.2",
-                title: "IA a Nuestro Alrededor",
-                summary:
-                  "Recorre ejemplos cotidianos de inteligencia artificial en entretenimiento, agricultura y otros sectores.",
-                sections: [
-                  {
-                    title: "Claves del tema",
-                    items: [
-                      "La IA ya aparece en recomendaciones, clasificaci\u00f3n de contenido, diagn\u00f3stico visual y automatizaci\u00f3n.",
-                      "Reconocer esos casos cotidianos ayuda a separar la realidad del discurso exagerado sobre la tecnolog\u00eda."
-                    ]
-                  }
-                ]
-              },
-              {
-                code: "3.1.4",
-                title: "V\u00eddeo - IA en Acci\u00f3n",
-                summary:
-                  "Ejemplo de herramientas de IA generativa para redactar contenido, adaptar estilo y acelerar tareas creativas.",
-                sections: [
-                  {
-                    title: "Claves del tema",
-                    items: [
-                      "Las plataformas de generaci\u00f3n de texto permiten producir borradores r\u00e1pidos a partir de objetivos y palabras clave.",
-                      "El valor real sigue estando en seleccionar, revisar y personalizar la salida generada."
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            key: "M7",
-            title: "Datos Masivos y Aprendizaje Autom\u00e1tico",
-            topics: [
-              {
-                code: "3.2.1",
-                title: "V\u00eddeo - \u00bfQu\u00e9 es el Aprendizaje Autom\u00e1tico?",
-                summary:
-                  "Introduce el aprendizaje autom\u00e1tico como una forma de resolver problemas a partir de datos en vez de reglas detalladas.",
-                sections: [
-                  {
-                    title: "Claves del tema",
-                    items: [
-                      "Los clasificadores y algoritmos permiten que la m\u00e1quina aprenda patrones a partir de ejemplos de entrenamiento.",
-                      "El aprendizaje autom\u00e1tico difiere del software tradicional porque no depende solo de instrucciones escritas paso a paso."
-                    ]
-                  }
-                ]
-              },
-              {
-                code: "3.2.3",
-                title: "Tipos de An\u00e1lisis de Aprendizaje Autom\u00e1tico",
-                summary:
-                  "Describe los principales enfoques del aprendizaje autom\u00e1tico y los problemas que cada uno resuelve mejor.",
-                sections: [
-                  {
-                    title: "Claves del tema",
-                    items: [
-                      "El aprendizaje supervisado se usa mucho en predicci\u00f3n, clasificaci\u00f3n y regresi\u00f3n.",
-                      "Distinguir entre enfoques ayuda a elegir mejor el modelo seg\u00fan el tipo de dato y el objetivo del an\u00e1lisis."
-                    ]
-                  }
-                ]
-              },
-              {
-                code: "3.2.5",
-                title: "El Proceso de Aprendizaje Autom\u00e1tico",
-                summary:
-                  "Resume el ciclo de preparaci\u00f3n, entrenamiento, prueba y ajuste que siguen los proyectos de aprendizaje autom\u00e1tico.",
-                sections: [
-                  {
-                    title: "Claves del tema",
-                    items: [
-                      "La limpieza de datos y la separaci\u00f3n entre conjuntos de aprendizaje y prueba son pasos esenciales.",
-                      "El proceso es iterativo y requiere prueba y error para ajustar el modelo y mejorar su desempe\u00f1o."
-                    ]
-                  }
-                ]
-              },
-              {
-                code: "3.2.7",
-                title: "Entrenando M\u00e1quinas para Reconocer Patrones",
-                summary:
-                  "Explica c\u00f3mo los algoritmos aprenden patrones en im\u00e1genes, texto o video para automatizar decisiones.",
-                sections: [
-                  {
-                    title: "Claves del tema",
-                    items: [
-                      "El reconocimiento de patrones usa regularidades estad\u00edsticas para clasificar o identificar elementos similares.",
-                      "Aplicaciones como biometr\u00eda y an\u00e1lisis visual muestran su utilidad en problemas reales."
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            key: "M8",
-            title: "Prepar\u00e1ndose para una Carrera en An\u00e1lisis de Datos",
-            topics: [
-              {
-                code: "4.1.1",
-                title: "Roles en las Profesiones de An\u00e1lisis de Datos",
-                summary:
-                  "Presenta los perfiles m\u00e1s comunes del ecosistema de datos y sus responsabilidades principales.",
-                sections: [
-                  {
-                    title: "Claves del tema",
-                    items: [
-                      "Analistas, ingenieros y otros perfiles de datos trabajan sobre etapas distintas del flujo de informaci\u00f3n.",
-                      "Entender esas funciones ayuda a identificar qu\u00e9 rol se ajusta mejor a tus intereses y habilidades."
-                    ]
-                  }
-                ]
-              },
-              {
-                code: "4.1.3",
-                title: "El Mercado Laboral",
-                summary:
-                  "Muestra la alta demanda de perfiles de datos e IA y el crecimiento esperado del sector laboral.",
-                sections: [
-                  {
-                    title: "Claves del tema",
-                    items: [
-                      "Los informes del mercado destacan an\u00e1lisis de datos e inteligencia artificial como campos con fuerte crecimiento.",
-                      "Conocer la demanda ayuda a planificar una transici\u00f3n profesional con expectativas m\u00e1s realistas."
-                    ]
-                  }
-                ]
-              },
-              {
-                code: "4.1.4",
-                title: "Herramientas y Habilidades",
-                summary:
-                  "Resume las competencias t\u00e9cnicas y blandas necesarias para iniciar una carrera en an\u00e1lisis de datos.",
-                sections: [
-                  {
-                    title: "Claves del tema",
-                    items: [
-                      "SQL, administraci\u00f3n de datos, estad\u00edstica y visualizaci\u00f3n son bases muy valoradas en roles de entrada.",
-                      "La comunicaci\u00f3n, el trabajo en equipo y la atenci\u00f3n al detalle tambi\u00e9n son decisivos."
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            key: "M9",
-            title: "Tomando los Pr\u00f3ximos Pasos",
-            topics: [
-              {
-                code: "4.2.1",
-                title: "V\u00eddeo - La Importancia de los Portafolios de Proyectos",
-                summary:
-                  "Explica por qu\u00e9 un portafolio es una evidencia clave para demostrar habilidades anal\u00edticas a futuros empleadores.",
-                sections: [
-                  {
-                    title: "Claves del tema",
-                    items: [
-                      "El portafolio complementa curr\u00edculum y carta de presentaci\u00f3n con muestras reales de trabajo.",
-                      "Incluir proyectos y reflexiones personales ayuda a mostrar intereses, criterio y crecimiento profesional."
-                    ]
-                  }
-                ]
-              },
-              {
-                code: "4.2.3",
-                title: "Iniciando su Portafolio de Proyectos",
-                summary:
-                  "Ofrece una gu\u00eda inicial para documentar proyectos y construir una marca personal a partir del trabajo realizado.",
-                sections: [
-                  {
-                    title: "Claves del tema",
-                    items: [
-                      "Cada proyecto deber\u00eda dejar claro el problema, los datos usados, el m\u00e9todo aplicado y las conclusiones.",
-                      "La constancia en documentar lo que haces fortalece tu portafolio y facilita futuras postulaciones."
-                    ]
-                  }
-                ]
-              },
-              {
-                code: "4.2.4",
-                title: "Su Camino hacia una Nueva Carrera",
-                summary:
-                  "Cierra el curso ubic\u00e1ndolo como primer paso dentro de una ruta formativa m\u00e1s amplia en datos.",
-                sections: [
-                  {
-                    title: "Claves del tema",
-                    items: [
-                      "El aprendizaje en datos es progresivo y se fortalece al continuar con cursos, proyectos y pr\u00e1ctica constante.",
-                      "El objetivo es transformar la curiosidad inicial en una trayectoria profesional sostenible."
+                      "Los siguientes pasos deben combinar estudio, práctica y exposición progresiva a problemas más complejos.",
+                      "Elegir una dirección inicial ayuda a priorizar herramientas, datasets y proyectos relevantes para el rol que te interesa.",
+                      "La carrera se fortalece cuando cada proyecto nuevo amplía una habilidad técnica y también una capacidad de comunicación."
                     ]
                   }
                 ]

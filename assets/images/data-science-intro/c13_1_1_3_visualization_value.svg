@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Valor de la visualización</title>
+  <desc id="desc">Comparación entre datos crudos, visualización e interpretación para entender por qué una gráfica acelera la comprensión.</desc>
+  <rect width="1200" height="700" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="644">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:644px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:14px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">Visualizar reduce fricción cognitiva</h1>
+        <p style="margin:0;max-width:940px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">El dato crudo puede contener la respuesta, pero una visualización adecuada la vuelve más rápida de detectar y más fácil de explicar.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:18px;background:#f7f9fa;display:flex;flex-direction:column;gap:10px;min-height:300px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">1. Datos crudos</h2>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;">
+            <div style="background:#ffffff;border:1px solid #dbe3e6;border-radius:10px;padding:8px;font-size:13px;font-weight:600;">Ene 42</div>
+            <div style="background:#ffffff;border:1px solid #dbe3e6;border-radius:10px;padding:8px;font-size:13px;font-weight:600;">Feb 39</div>
+            <div style="background:#ffffff;border:1px solid #dbe3e6;border-radius:10px;padding:8px;font-size:13px;font-weight:600;">Mar 54</div>
+            <div style="background:#ffffff;border:1px solid #dbe3e6;border-radius:10px;padding:8px;font-size:13px;font-weight:600;">Abr 63</div>
+            <div style="background:#ffffff;border:1px solid #dbe3e6;border-radius:10px;padding:8px;font-size:13px;font-weight:600;">May 66</div>
+            <div style="background:#ffffff;border:1px solid #dbe3e6;border-radius:10px;padding:8px;font-size:13px;font-weight:600;">Jun 71</div>
+          </div>
+          <p style="margin:0;font-size:15px;line-height:1.36;color:#425653;font-weight:600;">Una tabla puede ser correcta y aun así exigir demasiado esfuerzo para ver el patrón principal.</p>
+        </section>
+
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:18px;background:#edf6f3;display:flex;flex-direction:column;gap:10px;min-height:300px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">2. Visualización</h2>
+          <div style="height:170px;border:1px solid #cfe0db;border-radius:12px;background:#ffffff;padding:14px;display:flex;align-items:flex-end;gap:10px;">
+            <div style="width:14%;height:42%;background:#4f7f76;border-radius:8px 8px 0 0;"></div>
+            <div style="width:14%;height:39%;background:#4f7f76;border-radius:8px 8px 0 0;"></div>
+            <div style="width:14%;height:54%;background:#4f7f76;border-radius:8px 8px 0 0;"></div>
+            <div style="width:14%;height:63%;background:#4f7f76;border-radius:8px 8px 0 0;"></div>
+            <div style="width:14%;height:66%;background:#4f7f76;border-radius:8px 8px 0 0;"></div>
+            <div style="width:14%;height:71%;background:#4f7f76;border-radius:8px 8px 0 0;"></div>
+          </div>
+          <p style="margin:0;font-size:15px;line-height:1.36;color:#425653;font-weight:600;">La gráfica organiza la atención y muestra crecimiento, rupturas o comparaciones sin leer fila por fila.</p>
+        </section>
+
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:18px;background:#fbf4e8;display:flex;flex-direction:column;gap:10px;min-height:300px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">3. Interpretación</h2>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="border:1px solid #ead8bc;border-radius:12px;background:#ffffff;padding:12px;font-size:15px;line-height:1.35;color:#304441;font-weight:600;">La tendencia es ascendente.</div>
+            <div style="border:1px solid #ead8bc;border-radius:12px;background:#ffffff;padding:12px;font-size:15px;line-height:1.35;color:#304441;font-weight:600;">El cambio fuerte empieza en marzo.</div>
+            <div style="border:1px solid #ead8bc;border-radius:12px;background:#ffffff;padding:12px;font-size:15px;line-height:1.35;color:#304441;font-weight:600;">La decisión ahora puede apoyarse en evidencia visible.</div>
+          </div>
+        </section>
+      </div>
+
+      <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;">
+        <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">Una buena visualización no adorna el dato: elimina esfuerzo innecesario para ver lo que importa.</p>
+      </section>
+    </div>
+  </foreignObject>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">Fuentes de datos</title>
+  <desc id="desc">Comparación entre datos voluntarios, observados e inferidos con ejemplos de uso cotidiano.</desc>
+  <rect width="1200" height="640" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="584">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:584px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:14px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">Tres formas de obtener datos</h1>
+        <p style="margin:0;max-width:920px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">La diferencia no está solo en qué se captura, sino en si la persona lo entrega, el sistema lo observa o el análisis lo deduce.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:18px;background:#edf6f3;display:flex;flex-direction:column;gap:10px;min-height:236px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Voluntarios</h2>
+          <p style="margin:0;font-size:15px;line-height:1.34;color:#425653;font-weight:600;">La persona entrega la información de forma explícita.</p>
+          <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.4;color:#304441;font-weight:600;">
+            <li>Formularios y registros</li>
+            <li>Encuestas y cuestionarios</li>
+            <li>Publicaciones, fotos o videos</li>
+            <li>Preferencias marcadas en una app</li>
+          </ul>
+        </section>
+
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:18px;background:#fbf4e8;display:flex;flex-direction:column;gap:10px;min-height:236px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Observados</h2>
+          <p style="margin:0;font-size:15px;line-height:1.34;color:#425653;font-weight:600;">Aparecen mientras una persona usa servicios, dispositivos o redes.</p>
+          <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.4;color:#304441;font-weight:600;">
+            <li>Ubicación y desplazamientos</li>
+            <li>Sitios visitados y clics</li>
+            <li>Compras y tiempos de uso</li>
+            <li>Lecturas de sensores y logs</li>
+          </ul>
+        </section>
+
+        <section style="border:1px solid #c9c8de;border-radius:16px;padding:18px;background:#f2f2fb;display:flex;flex-direction:column;gap:10px;min-height:236px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Inferidos</h2>
+          <p style="margin:0;font-size:15px;line-height:1.34;color:#425653;font-weight:600;">No se capturan directamente; se concluyen a partir de patrones y contexto.</p>
+          <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.4;color:#304441;font-weight:600;">
+            <li>Intereses o gustos probables</li>
+            <li>Riesgo de abandono o fraude</li>
+            <li>Segmentos de comportamiento</li>
+            <li>Necesidades futuras estimadas</li>
+          </ul>
+        </section>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:14px;">
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:16px 18px;background:#f7f9fa;display:flex;flex-direction:column;gap:8px;">
+          <h2 style="margin:0;font-size:22px;line-height:1.1;font-weight:700;">Lo importante no es solo capturar</h2>
+          <p style="margin:0;font-size:15px;line-height:1.36;color:#425653;font-weight:600;">Los datos aislados dicen poco. Empiezan a tener valor cuando se relacionan, se filtran y se usan para responder una pregunta concreta.</p>
+        </section>
+        <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;display:flex;align-items:center;justify-content:center;text-align:center;">
+          <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">Un mismo usuario puede dejar datos voluntarios, observados e inferidos al mismo tiempo.</p>
+        </section>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

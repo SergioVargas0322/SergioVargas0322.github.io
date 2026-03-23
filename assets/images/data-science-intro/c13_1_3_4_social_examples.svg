@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">Ejemplos sociales</title>
+  <desc id="desc">Ejemplos con OCHA, HDX y retos abiertos para predecir daños y orientar recursos.</desc>
+  <rect width="1200" height="660" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="604">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:604px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">Compartir datos también cambia la calidad de la respuesta</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">Cuando los datos y el análisis se comparten, más organizaciones pueden coordinar recursos, tomar decisiones y construir soluciones reutilizables.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:18px;background:#edf6f3;display:flex;flex-direction:column;gap:10px;min-height:210px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">OCHA</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Administra y comparte información humanitaria para coordinar recursos, decisiones y financiación.</p>
+        </section>
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:18px;background:#fbf4e8;display:flex;flex-direction:column;gap:10px;min-height:210px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">HDX</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Ofrece herramientas y datasets para ONU, ONG, gobiernos y universidades durante crisis y emergencias.</p>
+        </section>
+        <section style="border:1px solid #c9c8de;border-radius:16px;padding:18px;background:#f2f2fb;display:flex;flex-direction:column;gap:10px;min-height:210px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">DrivenData</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Propone retos abiertos para que especialistas encuentren soluciones de impacto social y humanitario con datos.</p>
+        </section>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1.05fr 0.95fr;gap:14px;">
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:18px;background:#f7f9fa;display:flex;flex-direction:column;gap:10px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Ejemplo de reto útil</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Predecir el nivel de daño que sufriría un edificio ante un terremoto a partir de su ubicación y construcción. Esa predicción ayuda a priorizar prevención y refuerzo antes de una crisis.</p>
+        </section>
+        <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;display:flex;align-items:center;justify-content:center;">
+          <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">Cuando el análisis se vuelve abierto y reutilizable, también se vuelve más útil para otros problemas reales.</p>
+        </section>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

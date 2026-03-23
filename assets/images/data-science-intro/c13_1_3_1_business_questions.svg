@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+  <title id="title">Del problema a la decisión</title>
+  <desc id="desc">Relación entre una pregunta de negocio, los indicadores observados, el análisis y la decisión resultante.</desc>
+  <rect width="1200" height="690" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="634">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:634px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">Una pregunta concreta ordena todo el análisis</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">La analítica no empieza con un gráfico ni con un algoritmo. Empieza cuando alguien necesita entender qué está pasando y qué conviene hacer.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:16px;background:#edf6f3;display:flex;flex-direction:column;gap:10px;min-height:220px;">
+          <h2 style="margin:0;font-size:22px;line-height:1.1;font-weight:700;">1. Problema</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">¿Por qué cuesta atraer nuevos clientes? ¿Dónde se pierde eficiencia? ¿Qué riesgo está creciendo?</p>
+        </section>
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:16px;background:#fbf4e8;display:flex;flex-direction:column;gap:10px;min-height:220px;">
+          <h2 style="margin:0;font-size:22px;line-height:1.1;font-weight:700;">2. Señales</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">KPI, ventas, temporadas, satisfacción, tiempos, reclamos o eventos operativos.</p>
+        </section>
+        <section style="border:1px solid #c9c8de;border-radius:16px;padding:16px;background:#f2f2fb;display:flex;flex-direction:column;gap:10px;min-height:220px;">
+          <h2 style="margin:0;font-size:22px;line-height:1.1;font-weight:700;">3. Análisis</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Comparar, detectar tendencias, estimar comportamiento futuro o encontrar patrones repetidos.</p>
+        </section>
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:16px;background:#f7f9fa;display:flex;flex-direction:column;gap:10px;min-height:220px;">
+          <h2 style="margin:0;font-size:22px;line-height:1.1;font-weight:700;">4. Acción</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Ajustar campañas, mejorar procesos, asignar recursos o intervenir antes de que el problema crezca.</p>
+        </section>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:16px 18px;background:#f7f9fa;">
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">No todos los problemas requieren la misma analítica. La técnica útil es la que responde bien a la pregunta planteada.</p>
+        </section>
+        <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;display:flex;align-items:center;justify-content:center;">
+          <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">El valor no está en tener muchos datos, sino en convertirlos en una decisión defendible.</p>
+        </section>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

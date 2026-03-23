@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">Familias de gráficos</title>
+  <desc id="desc">Resumen de gráficos de líneas, barras, circulares y dispersión con usos y buenas prácticas.</desc>
+  <rect width="1200" height="660" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="604">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:604px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:14px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">Cuatro familias de gráficos que conviene dominar</h1>
+        <p style="margin:0;max-width:960px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">No cubren todos los casos, pero resuelven gran parte de las preguntas iniciales en análisis de datos.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:18px;background:#edf6f3;display:flex;flex-direction:column;gap:8px;min-height:132px;">
+          <h2 style="margin:0;font-size:22px;line-height:1.1;font-weight:700;">Líneas</h2>
+          <p style="margin:0;font-size:15px;line-height:1.36;color:#425653;font-weight:600;">Sirven para seguir tendencias en el tiempo. Etiqueta ejes, limita el número de series y deja claro qué representa cada línea.</p>
+        </section>
+
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:18px;background:#fbf4e8;display:flex;flex-direction:column;gap:8px;min-height:132px;">
+          <h2 style="margin:0;font-size:22px;line-height:1.1;font-weight:700;">Barras y columnas</h2>
+          <p style="margin:0;font-size:15px;line-height:1.36;color:#425653;font-weight:600;">Funcionan para comparar categorías. Ordena cuando ayude a leer mejor y empieza la escala en cero cuando represente magnitud total.</p>
+        </section>
+
+        <section style="border:1px solid #c9c8de;border-radius:16px;padding:18px;background:#f2f2fb;display:flex;flex-direction:column;gap:8px;min-height:132px;">
+          <h2 style="margin:0;font-size:22px;line-height:1.1;font-weight:700;">Circulares</h2>
+          <p style="margin:0;font-size:15px;line-height:1.36;color:#425653;font-weight:600;">Muestran partes de un todo. Úsalos con pocas categorías y solo cuando la suma completa tenga sentido para el lector.</p>
+        </section>
+
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:18px;background:#f7f9fa;display:flex;flex-direction:column;gap:8px;min-height:132px;">
+          <h2 style="margin:0;font-size:22px;line-height:1.1;font-weight:700;">Dispersión</h2>
+          <p style="margin:0;font-size:15px;line-height:1.36;color:#425653;font-weight:600;">Sirven para ver correlación, distribución y valores atípicos. Son útiles cuando interesa cómo se mueven dos variables a la vez.</p>
+        </section>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:14px;">
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:16px 18px;background:#f7f9fa;display:flex;flex-direction:column;gap:8px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">Buenas prácticas que casi siempre aplican</h2>
+          <p style="margin:0;font-size:15px;line-height:1.36;color:#425653;font-weight:600;">Rotula ejes, limita categorías, usa títulos claros, evita saturar con series innecesarias y revisa que la escala no distorsione la lectura.</p>
+        </section>
+        <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;display:flex;align-items:center;justify-content:center;">
+          <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">Elegir bien un gráfico es parte del análisis, no una decisión estética tomada al final.</p>
+        </section>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

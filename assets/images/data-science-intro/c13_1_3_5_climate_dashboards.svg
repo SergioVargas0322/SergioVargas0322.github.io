@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Cambio climático y tableros públicos</title>
+  <desc id="desc">Fuentes de datos climáticos, observación continua y tableros públicos para visualizar cambios a lo largo del tiempo.</desc>
+  <rect width="1200" height="700" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="644">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:644px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">El cambio climático solo se entiende con observación continua</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">Series históricas, sensores y fuentes abiertas permiten ver tendencias que no aparecen en observaciones aisladas y ayudan a comunicar impacto al público.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:18px;background:#f7f9fa;display:flex;flex-direction:column;gap:10px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Fuentes que alimentan el análisis</h2>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span style="padding:8px 10px;border-radius:999px;background:#edf6f3;border:1px solid #b7d2cb;font-size:14px;font-weight:700;">satélites</span>
+            <span style="padding:8px 10px;border-radius:999px;background:#fbf4e8;border:1px solid #d8c8b1;font-size:14px;font-weight:700;">temperatura oceánica</span>
+            <span style="padding:8px 10px;border-radius:999px;background:#f2f2fb;border:1px solid #c9c8de;font-size:14px;font-weight:700;">calidad del aire</span>
+            <span style="padding:8px 10px;border-radius:999px;background:#eef6ee;border:1px solid #c8dfc8;font-size:14px;font-weight:700;">rendimiento de cultivos</span>
+            <span style="padding:8px 10px;border-radius:999px;background:#f7f9fa;border:1px solid #d7dee3;font-size:14px;font-weight:700;">datos meteorológicos</span>
+          </div>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">La combinación de estas fuentes permite observar cambios lentos, anticipar escenarios y coordinar mitigación con más evidencia.</p>
+        </section>
+
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:18px;background:#f7f9fa;display:flex;flex-direction:column;gap:10px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Por qué sirven los tableros públicos</h2>
+          <div style="display:grid;grid-template-columns:1fr;gap:10px;">
+            <div style="padding:14px;border-radius:12px;background:#edf6f3;border:1px solid #b7d2cb;font-size:15px;font-weight:700;">muestran evolución a lo largo del tiempo</div>
+            <div style="padding:14px;border-radius:12px;background:#fbf4e8;border:1px solid #d8c8b1;font-size:15px;font-weight:700;">vuelven visible un fenómeno complejo</div>
+            <div style="padding:14px;border-radius:12px;background:#f2f2fb;border:1px solid #c9c8de;font-size:15px;font-weight:700;">permiten comunicar impacto con evidencia abierta</div>
+          </div>
+        </section>
+      </div>
+
+      <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;">
+        <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">Sin recolección continua ni análisis compartido, sería mucho más difícil prever cambios y coordinar respuestas a escala.</p>
+      </section>
+    </div>
+  </foreignObject>
+</svg>
