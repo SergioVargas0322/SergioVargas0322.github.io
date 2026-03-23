@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Entrar al campo exige una mezcla de herramientas y criterio</title>
+  <desc id="desc">Mapa de habilidades técnicas y comunicativas para comenzar en análisis de datos.</desc>
+  <style>
+    .bg{fill:#eef6fb}.frame{fill:#fff;stroke:#d6e4f2;stroke-width:2.5}.sheet{font-family:"Segoe UI",Arial,sans-serif;color:#23395b}
+    .title{font-size:28px;font-weight:800;line-height:1.15;margin:0}.lead{font-size:15px;line-height:1.45;color:#516b8c;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{border:2px solid #d7e4f2;border-radius:22px;padding:18px 20px;background:#fff;display:flex;flex-direction:column;gap:12px;min-height:135px}
+    .a{background:#eef9f9;border-color:#cfe8e8}.b{background:#fff6ea;border-color:#ecd4b0}.c{background:#f5f1ff;border-color:#d9cff7}.d{background:#eef5ff;border-color:#cedcf4}
+    .e{background:#f7fdf4;border-color:#d3e8c5}.f{background:#fff0f0;border-color:#f0c8c8}
+    h2{margin:0;font-size:18px;line-height:1.2} p,li{margin:0;font-size:15px;line-height:1.45;color:#39516f} ul{margin:0;padding-left:20px;display:grid;gap:8px}
+    .footer{background:#54867f;color:#fff;border-radius:18px;padding:16px 22px;font-size:17px;font-weight:700;line-height:1.35}
+  </style>
+  <rect class="bg" width="1200" height="820" rx="24"/>
+  <rect class="frame" x="24" y="22" width="1152" height="776" rx="28"/>
+  <foreignObject x="44" y="42" width="1112" height="736">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sheet" style="height:100%;display:flex;flex-direction:column;justify-content:space-between;gap:22px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 class="title">Entrar al campo exige una mezcla de herramientas y criterio</h1>
+        <p class="lead">Los avisos de trabajo suelen pedir habilidades técnicas básicas, pero también señales de orden, claridad y capacidad para trabajar con otras personas.</p>
+      </div>
+      <div class="grid">
+        <section class="card a"><h2>Hojas de cálculo y manejo de datos</h2><p>Excel o equivalentes siguen siendo base para explorar, limpiar y resumir información.</p></section>
+        <section class="card b"><h2>SQL y bases de datos</h2><p>consultar, filtrar y unir datos es una habilidad mínima para casi cualquier rol de entrada.</p></section>
+        <section class="card c"><h2>Visualización y estadística</h2><p>no basta con graficar: hace falta elegir bien la métrica, el gráfico y la lectura del resultado.</p></section>
+        <section class="card d"><h2>Programación inicial</h2><p>cierta familiaridad con Python, Java u otro lenguaje ayuda a automatizar y ampliar alcance.</p></section>
+        <section class="card e"><h2>Comunicación y detalle</h2><p>explicar hallazgos con claridad y detectar errores pequeños cambia la calidad del análisis.</p></section>
+        <section class="card f"><h2>Trabajo en equipo</h2><p>muchos problemas se resuelven con analistas, negocio, ingeniería y producto colaborando a la vez.</p></section>
+      </div>
+      <div class="footer">Las herramientas cambian rápido; la combinación de limpieza, análisis, explicación y criterio es lo que realmente sostiene la carrera.</div>
+    </div>
+  </foreignObject>
+</svg>

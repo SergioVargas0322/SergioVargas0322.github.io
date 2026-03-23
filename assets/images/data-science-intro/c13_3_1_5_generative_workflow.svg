@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Flujo generativo con revisión</title>
+  <desc id="desc">Flujo de una herramienta generativa que recibe propósito y palabras clave, propone borradores y requiere selección y ajuste humano.</desc>
+  <rect width="1200" height="700" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="644">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:644px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">Generar texto rápido no elimina la revisión humana</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">Una herramienta generativa puede ahorrar tiempo proponiendo borradores, pero el usuario todavía debe elegir, ajustar tono, corregir errores y decidir qué realmente sirve.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:16px;background:#edf6f3;display:flex;flex-direction:column;gap:8px;min-height:240px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">1. Indicar</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">propósito, palabras clave y estilo deseado</p>
+        </section>
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:16px;background:#fbf4e8;display:flex;flex-direction:column;gap:8px;min-height:240px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">2. Proponer</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">varias opciones de contenido basadas en el contexto dado</p>
+        </section>
+        <section style="border:1px solid #c9c8de;border-radius:16px;padding:16px;background:#f2f2fb;display:flex;flex-direction:column;gap:8px;min-height:240px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">3. Elegir</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">seleccionar la variante más útil según tono, duración y claridad</p>
+        </section>
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:16px;background:#f7f9fa;display:flex;flex-direction:column;gap:8px;min-height:240px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">4. Ajustar</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">editar, corregir y personalizar antes de publicar o usar</p>
+        </section>
+      </div>
+
+      <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;">
+        <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">La IA generativa acelera el primer borrador; el criterio humano sigue definiendo la versión final.</p>
+      </section>
+    </div>
+  </foreignObject>
+</svg>

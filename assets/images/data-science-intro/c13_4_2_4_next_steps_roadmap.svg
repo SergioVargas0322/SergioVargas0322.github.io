@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Los siguientes pasos deben convertir aprendizaje en evidencia</title>
+  <desc id="desc">Ruta de siguientes pasos para convertir formación y proyectos en avance profesional.</desc>
+  <style>
+    .bg{fill:#eef6fb}.frame{fill:#fff;stroke:#d6e4f2;stroke-width:2.5}.sheet{font-family:"Segoe UI",Arial,sans-serif;color:#23395b}
+    .title{font-size:28px;font-weight:800;line-height:1.15;margin:0}.lead{font-size:15px;line-height:1.45;color:#516b8c;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{border:2px solid #d7e4f2;border-radius:22px;padding:18px 18px;background:#fff;display:flex;flex-direction:column;gap:10px;min-height:220px}
+    .a{background:#eef9f9;border-color:#cfe8e8}.b{background:#fff6ea;border-color:#ecd4b0}.c{background:#f5f1ff;border-color:#d9cff7}.d{background:#eef5ff;border-color:#cedcf4}
+    h2{margin:0;font-size:18px;line-height:1.2} p{margin:0;font-size:15px;line-height:1.45;color:#39516f}
+    .footer{background:#54867f;color:#fff;border-radius:18px;padding:16px 22px;font-size:17px;font-weight:700;line-height:1.35}
+  </style>
+  <rect class="bg" width="1200" height="760" rx="24"/>
+  <rect class="frame" x="24" y="22" width="1152" height="716" rx="28"/>
+  <foreignObject x="44" y="42" width="1112" height="676">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sheet" style="height:100%;display:flex;flex-direction:column;justify-content:space-between;gap:22px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 class="title">Los siguientes pasos deben convertir aprendizaje en evidencia</h1>
+        <p class="lead">La progresión más útil combina práctica, visibilidad y una dirección clara para no acumular cursos o proyectos sin relación entre sí.</p>
+      </div>
+      <div class="grid">
+        <section class="card a"><h2>1. Elegir dirección</h2><p>definir qué tipo de rol o problemas te interesan para priorizar herramientas y datasets.</p></section>
+        <section class="card b"><h2>2. Convertir proyectos en pruebas</h2><p>transformar ejercicios de formación o proyectos personales en piezas visibles de portafolio.</p></section>
+        <section class="card c"><h2>3. Publicar y pedir retroalimentación</h2><p>mostrar el trabajo, recibir comentarios y mejorar la documentación y la presentación.</p></section>
+        <section class="card d"><h2>4. Subir complejidad</h2><p>usar cada proyecto nuevo para ampliar una habilidad técnica y una capacidad de comunicación.</p></section>
+      </div>
+      <div class="footer">La carrera despega cuando cada proyecto nuevo no solo enseña algo, sino que también deja evidencia concreta de lo que ya sabes hacer.</div>
+    </div>
+  </foreignObject>
+</svg>

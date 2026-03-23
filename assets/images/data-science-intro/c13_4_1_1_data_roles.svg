@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Tres roles cubren etapas distintas del trabajo con datos</title>
+  <desc id="desc">Comparación entre analista de datos, ingeniero de datos y científico de datos.</desc>
+  <style>
+    .bg{fill:#eef6fb}.frame{fill:#fff;stroke:#d6e4f2;stroke-width:2.5}
+    .sheet{font-family:"Segoe UI",Arial,sans-serif;color:#23395b}
+    .title{font-size:28px;font-weight:800;line-height:1.15;margin:0}.lead{font-size:15px;line-height:1.45;color:#516b8c;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{border:2px solid #d7e4f2;border-radius:22px;padding:18px 20px;background:#fff;display:flex;flex-direction:column;gap:12px;min-height:320px}
+    .a{background:#eef9f9;border-color:#cfe8e8}.b{background:#fff6ea;border-color:#ecd4b0}.c{background:#f5f1ff;border-color:#d9cff7}
+    h2{margin:0;font-size:20px;line-height:1.2}.tag{align-self:flex-start;padding:6px 10px;border-radius:999px;border:1px solid rgba(35,57,91,.1);background:#fff;font-size:13px;font-weight:700;color:#55728f}
+    p,li{margin:0;font-size:15px;line-height:1.45;color:#39516f} ul{margin:0;padding-left:20px;display:grid;gap:8px}
+    .footer{background:#54867f;color:#fff;border-radius:18px;padding:16px 22px;font-size:17px;font-weight:700;line-height:1.35}
+  </style>
+  <rect class="bg" width="1200" height="760" rx="24"/>
+  <rect class="frame" x="24" y="22" width="1152" height="716" rx="28"/>
+  <foreignObject x="44" y="42" width="1112" height="676">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sheet" style="height:100%;display:flex;flex-direction:column;justify-content:space-between;gap:22px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 class="title">Tres roles cubren etapas distintas del trabajo con datos</h1>
+        <p class="lead">Aunque comparten fundamentos, cada perfil aporta valor en un tramo diferente: responder preguntas, preparar infraestructura o construir análisis y modelos más complejos.</p>
+      </div>
+      <div class="grid">
+        <section class="card a">
+          <span class="tag">preguntas concretas</span>
+          <h2>Analista de datos</h2>
+          <ul>
+            <li>consulta, limpia, resume y visualiza datos</li>
+            <li>responde preguntas ad hoc con reportes y gráficos</li>
+            <li>necesita estadística básica, análisis exploratorio y claridad para comunicar</li>
+          </ul>
+        </section>
+        <section class="card b">
+          <span class="tag">infraestructura y flujo</span>
+          <h2>Ingeniero de datos</h2>
+          <ul>
+            <li>crea canalizaciones para ingerir, transformar y almacenar datos</li>
+            <li>integra fuentes dispares y cuida calidad, acceso y disponibilidad</li>
+            <li>trabaja más cerca de arquitectura, automatización y programación</li>
+          </ul>
+        </section>
+        <section class="card c">
+          <span class="tag">modelado y valor</span>
+          <h2>Científico de datos</h2>
+          <ul>
+            <li>combina estadística, programación y aprendizaje automático</li>
+            <li>trabaja con conjuntos de distintos tamaños para responder preguntas esenciales</li>
+            <li>entrega visualizaciones, aplicaciones o historias basadas en evidencia</li>
+          </ul>
+        </section>
+      </div>
+      <div class="footer">Elegir una ruta inicial no significa cerrar las demás: el campo comparte fundamentos y luego se especializa según el tipo de problema que quieras resolver.</div>
+    </div>
+  </foreignObject>
+</svg>

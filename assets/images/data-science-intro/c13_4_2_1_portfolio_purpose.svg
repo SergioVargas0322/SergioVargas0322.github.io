@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Un portafolio muestra lo que un currículum no alcanza a contar</title>
+  <desc id="desc">Propósito de un portafolio de proyectos y qué aporta frente a un currículum.</desc>
+  <style>
+    .bg{fill:#eef6fb}.frame{fill:#fff;stroke:#d6e4f2;stroke-width:2.5}.sheet{font-family:"Segoe UI",Arial,sans-serif;color:#23395b}
+    .title{font-size:28px;font-weight:800;line-height:1.15;margin:0}.lead{font-size:15px;line-height:1.45;color:#516b8c;margin:0}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{border:2px solid #d7e4f2;border-radius:22px;padding:18px 20px;background:#fff;min-height:220px;display:flex;flex-direction:column;gap:12px}
+    .a{background:#fff6ea;border-color:#ecd4b0}.b{background:#eef9f9;border-color:#cfe8e8}
+    h2{margin:0;font-size:20px;line-height:1.2} p,li{margin:0;font-size:15px;line-height:1.45;color:#39516f} ul{margin:0;padding-left:20px;display:grid;gap:8px}
+    .footer{background:#54867f;color:#fff;border-radius:18px;padding:16px 22px;font-size:17px;font-weight:700;line-height:1.35}
+  </style>
+  <rect class="bg" width="1200" height="680" rx="24"/>
+  <rect class="frame" x="24" y="22" width="1152" height="636" rx="28"/>
+  <foreignObject x="44" y="42" width="1112" height="596">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sheet" style="height:100%;display:flex;flex-direction:column;justify-content:space-between;gap:22px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 class="title">Un portafolio muestra lo que un currículum no alcanza a contar</h1>
+        <p class="lead">No solo enumera cursos o herramientas: enseña cómo piensas, qué problemas te interesan y qué tan bien conviertes datos en resultados visibles.</p>
+      </div>
+      <div class="grid">
+        <section class="card a">
+          <h2>Currículum</h2>
+          <ul>
+            <li>resume experiencia, formación y habilidades en poco espacio</li>
+            <li>sirve para abrir la conversación inicial</li>
+            <li>muestra menos detalle sobre cómo resuelves problemas</li>
+          </ul>
+        </section>
+        <section class="card b">
+          <h2>Portafolio</h2>
+          <ul>
+            <li>enseña proyectos reales, decisiones y resultados</li>
+            <li>deja ver intereses, estilo de trabajo y capacidad de comunicación</li>
+            <li>ayuda a que un empleador evalúe evidencia, no solo promesas</li>
+          </ul>
+        </section>
+      </div>
+      <div class="footer">Un buen portafolio no intenta impresionar con cantidad: convence mostrando problema, proceso, criterio y aprendizaje.</div>
+    </div>
+  </foreignObject>
+</svg>

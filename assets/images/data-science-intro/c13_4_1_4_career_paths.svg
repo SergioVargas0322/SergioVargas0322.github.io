@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Una base común abre varias rutas de crecimiento</title>
+  <desc id="desc">Ruta de crecimiento profesional desde roles iniciales hacia ciencia de datos, consultoría o especialización.</desc>
+  <style>
+    .bg{fill:#eef6fb}.frame{fill:#fff;stroke:#d6e4f2;stroke-width:2.5}.sheet{font-family:"Segoe UI",Arial,sans-serif;color:#23395b}
+    .title{font-size:28px;font-weight:800;line-height:1.15;margin:0}.lead{font-size:15px;line-height:1.45;color:#516b8c;margin:0}
+    .base,.card{border:2px solid #d7e4f2;border-radius:22px;padding:18px 20px;background:#fff}.base{background:#eef9f9;border-color:#cfe8e8}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{min-height:190px;display:flex;flex-direction:column;gap:10px}
+    h2,h3{margin:0;line-height:1.2} h2{font-size:20px} h3{font-size:18px} p{margin:0;font-size:15px;line-height:1.45;color:#39516f}
+    .footer{background:#54867f;color:#fff;border-radius:18px;padding:16px 22px;font-size:17px;font-weight:700;line-height:1.35}
+  </style>
+  <rect class="bg" width="1200" height="760" rx="24"/>
+  <rect class="frame" x="24" y="22" width="1152" height="716" rx="28"/>
+  <foreignObject x="44" y="42" width="1112" height="676">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sheet" style="height:100%;display:flex;flex-direction:column;justify-content:space-between;gap:22px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 class="title">Una base común abre varias rutas de crecimiento</h1>
+        <p class="lead">Los primeros proyectos y roles suelen compartir fundamentos. Luego la carrera se ramifica según el tipo de problemas, herramientas e industrias que más te interesen.</p>
+      </div>
+      <section class="base">
+        <h2>Base común</h2>
+        <p>limpieza de datos, análisis, visualización, documentación, SQL, comunicación clara y práctica con problemas reales.</p>
+      </section>
+      <div class="grid">
+        <section class="card"><h3>Ciencia de datos</h3><p>más estadística, programación, modelado y aprendizaje automático.</p></section>
+        <section class="card"><h3>Ingeniería</h3><p>más infraestructura, automatización, canalizaciones y trabajo con datos a escala.</p></section>
+        <section class="card"><h3>Consultoría o gestión</h3><p>más traducción entre negocio, análisis y toma de decisiones.</p></section>
+        <section class="card"><h3>Especialización sectorial</h3><p>más profundidad en salud, finanzas, retail, manufactura u otro dominio.</p></section>
+      </div>
+      <div class="footer">La trayectoria mejora cuando cada proyecto nuevo añade una habilidad técnica y también una historia clara sobre cómo resolviste el problema.</div>
+    </div>
+  </foreignObject>
+</svg>

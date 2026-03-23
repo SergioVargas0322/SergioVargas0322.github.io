@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Trabajo de transformación</title>
+  <desc id="desc">Resume limpieza, corrección de formatos y creación de variables para alinear los datos con el análisis.</desc>
+  <rect width="1200" height="700" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="644">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:644px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">Transformar es volver analizable lo que aún no sirve</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">Después de ingerir, el dato casi siempre necesita trabajo: corregir vacíos, alinear formatos y crear estructuras que respondan a la pregunta real.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:18px;background:#edf6f3;display:flex;flex-direction:column;gap:10px;min-height:250px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Limpiar</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Resolver valores faltantes, errores de captura, datos obsoletos y formatos inconsistentes.</p>
+        </section>
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:18px;background:#fbf4e8;display:flex;flex-direction:column;gap:10px;min-height:250px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Alinear</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Convertir estructuras para que encajen con el sistema o con la consulta que se necesita ejecutar.</p>
+        </section>
+        <section style="border:1px solid #c9c8de;border-radius:16px;padding:18px;background:#f2f2fb;display:flex;flex-direction:column;gap:10px;min-height:250px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Crear variables</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Ejemplo: pasar de fecha exacta de venta a ventas por mes para responder una pregunta comercial concreta.</p>
+        </section>
+      </div>
+
+      <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;">
+        <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">Transformar no es adornar el dato: es quitar fricción entre la realidad capturada y el análisis que necesitas hacer.</p>
+      </section>
+    </div>
+  </foreignObject>
+</svg>

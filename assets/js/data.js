@@ -12676,38 +12676,61 @@
                 code: "2.1",
                 title: "Comprendiendo los datos masivos",
                 summary:
-                  "Presenta qué vuelve masivos a ciertos conjuntos de datos, por qué son difíciles de manejar y qué beneficios ofrecen cuando se administran bien.",
+                  "Explica qué vuelve masivos a ciertos conjuntos de datos, por qué tamaño, velocidad, variedad y veracidad cambian por completo la infraestructura necesaria y qué beneficios aparecen cuando ese crecimiento se aprovecha bien.",
+                images: [
+                  {
+                    src: "./assets/images/data-science-intro/c13_2_1_1_big_data_threshold.svg",
+                    alt: "Qué hace que un conjunto de datos se vuelva masivo por volumen, velocidad y complejidad."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_2_1_2_four_vs.svg",
+                    alt: "Las cuatro V de los datos masivos: volumen, variedad, velocidad y veracidad."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_2_1_3_growth_drivers.svg",
+                    alt: "Factores que impulsan el crecimiento de datos como IoT, internet, smartphones y redes sociales."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_2_1_4_sector_examples.svg",
+                    alt: "Ejemplos de beneficios de los datos masivos en salud, comercio minorista y educación."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_2_1_5_from_scale_to_value.svg",
+                    alt: "Condiciones para transformar escala de datos en decisiones, recomendaciones y predicciones útiles."
+                  }
+                ],
                 sections: [
                   {
                     title: "Qué cambia con el big data",
                     items: [
-                      "Big data aparece cuando el volumen, la velocidad o la diversidad de los datos supera lo que una gestión convencional puede manejar cómodamente.",
+                      "Big data aparece cuando el volumen, la velocidad o la complejidad de los datos supera lo que una gestión convencional puede manejar cómodamente.",
                       "No se trata solo de tener muchos registros; también importa qué tan rápido llegan y en cuántos formatos distintos deben integrarse.",
                       "Ese cambio obliga a pensar en infraestructura, procesamiento y calidad desde el inicio."
                     ]
                   },
                   {
-                    title: "Características que complican el manejo",
+                    title: "Las cuatro V y sus desafíos",
                     items: [
-                      "A más volumen, más difícil resulta almacenar, mover y consultar sin retrasos.",
-                      "A más velocidad, menos tiempo queda para capturar, limpiar y reaccionar antes de que el dato pierda valor.",
-                      "A más variedad, más costoso se vuelve unir texto, imágenes, logs, sensores y tablas en una vista coherente."
+                      "El volumen obliga a escalar almacenamiento y procesamiento; la velocidad exige reaccionar casi en tiempo real.",
+                      "La variedad complica integrar texto, imágenes, sensores, logs y documentos; la veracidad obliga a limpiar datos inexactos antes de analizarlos.",
+                      "Cada V cambia la forma de recopilar, transmitir, almacenar y acceder a la información."
                     ]
                   },
                   {
-                    title: "Beneficios potenciales",
+                    title: "Por qué siguen creciendo",
                     items: [
-                      "Cuando se explotan bien, los datos masivos permiten detectar patrones ocultos, mejorar predicción y sostener decisiones con evidencia más rica.",
-                      "También habilitan servicios más personalizados, monitoreo continuo y automatización basada en señales reales.",
-                      "El beneficio no viene del tamaño por sí solo, sino de convertir ese tamaño en mejor contexto para actuar."
+                      "La proliferación de IoT, el acceso más amplio a internet y banda ancha, el uso intensivo de smartphones y la popularidad de redes sociales empujan el crecimiento de datos.",
+                      "Cada nueva interacción digital crea más eventos medibles, más trazas de comportamiento y más oportunidades para comparar patrones.",
+                      "Ese crecimiento hace viable recomendar, predecir y automatizar con mayor contexto que antes."
                     ]
                   },
                   {
-                    title: "Condiciones para aprovecharlos",
+                    title: "Dónde se ve el beneficio",
                     items: [
-                      "Hace falta una arquitectura capaz de capturar, almacenar y procesar sin perder trazabilidad.",
-                      "La calidad y la gobernanza siguen siendo tan importantes como la escala; más datos malos solo amplifican el problema.",
-                      "El valor aparece cuando ingeniería, análisis y objetivos del negocio están alineados."
+                      "En salud, los sistemas basados en datos ayudan a detectar enfermedades, coordinar atención y mejorar tratamientos a partir de grandes volúmenes de evidencia clínica.",
+                      "En comercio minorista, permiten personalizar contenido, entender comportamiento en tienda y afinar recomendaciones y resultados económicos.",
+                      "En educación, ayudan a detectar dónde los estudiantes prosperan o se atascan y permiten diseñar experiencias más personalizadas.",
+                      "El valor no viene del tamaño por sí solo: aparece cuando una arquitectura adecuada convierte escala en decisiones, recomendaciones y predicciones útiles."
                     ]
                   }
                 ]
@@ -12716,37 +12739,67 @@
                 code: "2.2",
                 title: "Comprendiendo la administración de los datos masivos",
                 summary:
-                  "Explica cómo las canalizaciones de datos convierten fuentes dispersas en conjuntos utilizables para análisis, productos y automatización.",
+                  "Explica cómo una canalización de datos convierte fuentes dispersas en conjuntos utilizables para análisis, productos y automatización, y por qué ingestión, transformación y almacenamiento exigen decisiones técnicas distintas.",
+                images: [
+                  {
+                    src: "./assets/images/data-science-intro/c13_2_2_1_pipeline_overview.svg",
+                    alt: "Visión general de una canalización de datos desde la fuente hasta el consumo analítico."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_2_2_2_batch_vs_streaming.svg",
+                    alt: "Comparación entre ingestión por lotes e ingestión en transmisión con ejemplos reales."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_2_2_3_transformation_work.svg",
+                    alt: "Trabajo de transformación: limpieza, cambio de formato y alineación con el análisis necesario."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_2_2_4_storage_choices.svg",
+                    alt: "Comparación entre almacenamiento en las instalaciones, nube y enfoque híbrido."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_2_2_5_engineering_role.svg",
+                    alt: "Rol del ingeniero de datos conectando fuentes, canalización, seguridad y acceso para analistas y modelos."
+                  }
+                ],
                 sections: [
                   {
                     title: "Qué es una canalización de datos",
                     items: [
-                      "Una canalización organiza el flujo desde la captura hasta la entrega del dato ya preparado para consumo.",
+                      "Una canalización organiza el flujo desde la captura hasta la entrega del dato ya preparado para consumo analítico o operativo.",
                       "Su trabajo no es solo mover datos; también debe limpiar, transformar, validar y dejar trazabilidad del proceso.",
-                      "Sin canalización, los equipos terminan usando copias sueltas, definiciones inconsistentes y resultados difíciles de reproducir."
+                      "La idea de ETL ayuda a leer ese recorrido: extraer o ingerir, transformar y luego cargar o almacenar."
                     ]
                   },
                   {
-                    title: "Rol del ingeniero de datos",
+                    title: "Ingestión por lotes y en transmisión",
                     items: [
-                      "La ingeniería de datos diseña la infraestructura y los procesos que sostienen ingestión, almacenamiento, transformación y acceso.",
-                      "Esto incluye elegir herramientas, automatizar flujos y asegurar que los datos correctos lleguen al lugar correcto en el momento adecuado.",
-                      "Su trabajo conecta sistemas fuente con analistas, modelos y aplicaciones."
+                      "La ingestión por lotes recoge datos en bloques periódicos, como tickets de soporte o renovaciones de suscripción que se analizan cada día o cada semana.",
+                      "La ingestión en transmisión captura eventos que deben responderse casi de inmediato, como ubicación, tráfico o disponibilidad en un servicio de viaje compartido.",
+                      "La elección depende de cuánto tiempo puede esperar la decisión antes de que el dato pierda valor."
                     ]
                   },
                   {
-                    title: "Etapas del flujo",
+                    title: "Transformar para volver útil el dato",
                     items: [
-                      "La ingestión captura datos desde aplicaciones, sensores, APIs, logs o bases existentes.",
-                      "La transformación corrige formatos, unifica campos y prepara estructuras útiles para consulta o modelado.",
-                      "El almacenamiento y la entrega definen dónde vive el dato final y cómo se expone a análisis, tableros o modelos."
+                      "Los datos casi nunca llegan listos para analizar: hay que corregir valores faltantes, formatos de fecha, registros obsoletos y estructuras inconsistentes.",
+                      "También hace falta crear variables nuevas cuando el análisis lo requiere, por ejemplo pasar de fecha exacta de venta a ventas agrupadas por mes.",
+                      "Transformar no es maquillaje; es alinear el dato con la pregunta que realmente se quiere responder."
                     ]
                   },
                   {
-                    title: "Calidad y gobierno",
+                    title: "Dónde almacenar y quién accede",
                     items: [
-                      "Una canalización confiable incorpora validaciones, manejo de errores, control de versiones y monitoreo de frescura.",
-                      "La documentación y la gobernanza evitan que distintos equipos usen definiciones incompatibles para una misma métrica.",
+                      "Después de transformar, los datos deben almacenarse de forma que analistas y científicos de datos puedan consultarlos con seguridad y eficiencia.",
+                      "El almacenamiento puede ser en las instalaciones, en la nube o híbrido, según costo, escala, operación y necesidades de seguridad.",
+                      "La administración de acceso importa tanto como el almacenamiento: el objetivo es que las personas correctas accedan con rapidez y las incorrectas no accedan."
+                    ]
+                  },
+                  {
+                    title: "Rol de la ingeniería de datos",
+                    items: [
+                      "La ingeniería de datos diseña la infraestructura y los procesos que sostienen ingestión, transformación, almacenamiento y acceso.",
+                      "Eso incluye elegir herramientas, automatizar flujos y mantener la canalización disponible y confiable.",
                       "La administración madura de datos masivos busca repetibilidad, seguridad y claridad, no solo velocidad."
                     ]
                   }
@@ -12762,38 +12815,60 @@
                 code: "3.1",
                 title: "IA: realidad y ficción",
                 summary:
-                  "Separa la narrativa exagerada de la inteligencia artificial de sus aplicaciones reales en agricultura, automatización y productos cotidianos.",
+                  "Separa la narrativa exagerada de la inteligencia artificial de sus aplicaciones reales en agricultura, recomendaciones, medicina, retail y herramientas generativas, mostrando que la IA útil suele resolver tareas específicas con muchos datos y revisión humana.",
+                images: [
+                  {
+                    src: "./assets/images/data-science-intro/c13_3_1_1_fiction_vs_real.svg",
+                    alt: "Comparación entre la idea ficticia de IA general y las tareas específicas que hoy sí resuelve."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_3_1_2_agriculture_ai.svg",
+                    alt: "Proyecto agrícola que usa imágenes y GPS para distinguir maleza y cultivo."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_3_1_3_everyday_ai_examples.svg",
+                    alt: "Ejemplos cotidianos de IA en entretenimiento, medicina, retail y estado físico."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_3_1_4_chatbots_and_support.svg",
+                    alt: "Uso de IA en chatbots y atención al cliente con respuesta frecuente, recomendación y desvío a humano."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_3_1_5_generative_workflow.svg",
+                    alt: "Flujo de una herramienta generativa que propone borradores y luego requiere selección y ajuste humano."
+                  }
+                ],
                 sections: [
                   {
                     title: "IA fuera de la ficción",
                     items: [
                       "La inteligencia artificial ya está en procesos reales y no solo en robots futuristas o historias de ciencia ficción.",
-                      "Muchas aplicaciones actuales son específicas: reconocer patrones, automatizar decisiones repetitivas o detectar anomalías.",
+                      "La mayoría de las aplicaciones actuales son específicas: reconocer patrones, automatizar decisiones repetitivas, clasificar casos o detectar anomalías.",
                       "Entender ese alcance evita tanto el miedo exagerado como las expectativas irreales."
                     ]
                   },
                   {
                     title: "IA a nuestro alrededor",
                     items: [
-                      "Sistemas de recomendación, asistentes, visión artificial, clasificación automática y optimización operativa son ejemplos cotidianos.",
-                      "La mayoría de estas soluciones dependen de datos históricos y objetivos bien definidos, no de una inteligencia general.",
-                      "La IA suele integrarse en servicios ya existentes más que aparecer como una herramienta aislada."
+                      "Sistemas de recomendación, visión artificial, clasificación automática, chatbots y aplicaciones de salud o estado físico ya aparecen en servicios cotidianos.",
+                      "La mayoría de estas soluciones dependen de datos históricos, tareas bien definidas y modelos entrenados para un propósito concreto.",
+                      "La IA suele integrarse en productos ya existentes más que aparecer como una herramienta aislada."
                     ]
                   },
                   {
                     title: "Ejemplos concretos",
                     items: [
-                      "Los casos del módulo muestran cómo la IA puede ayudar a agricultura, monitoreo y toma de decisiones basada en señales de campo.",
-                      "Cuando se aplica bien, acelera detección de problemas, priorización y respuesta sobre grandes volúmenes de información.",
-                      "Lo importante no es el nombre de la técnica sino qué tarea concreta se está resolviendo."
+                      "En agricultura, la IA puede usar imágenes y GPS para distinguir maleza y cultivo y reducir el uso de herbicidas químicos.",
+                      "En medicina puede clasificar imágenes para apoyar detección de cáncer; en retail puede personalizar atención y recomendaciones mediante chatbots.",
+                      "Lo importante no es el nombre de la técnica sino qué tarea concreta se está resolviendo y con qué calidad de datos."
                     ]
                   },
                   {
                     title: "Límites y criterio humano",
                     items: [
-                      "La IA necesita datos, contexto y supervisión; no reemplaza el juicio humano en decisiones complejas o sensibles.",
+                      "Las herramientas generativas pueden ahorrar tiempo produciendo borradores o variantes, pero siguen necesitando selección, edición y juicio humano.",
                       "Los resultados deben verificarse porque pueden heredar sesgos, errores de entrenamiento o supuestos incorrectos.",
-                      "La mejor forma de usar IA es como sistema de apoyo con objetivos y límites claros."
+                      "La mejor forma de usar IA es como sistema de apoyo con objetivos, límites y revisión clara."
                     ]
                   }
                 ]
@@ -12802,38 +12877,68 @@
                 code: "3.2",
                 title: "Datos masivos y aprendizaje automático",
                 summary:
-                  "Explica qué es el aprendizaje automático, qué tipos de análisis existen y cómo se entrena una máquina para reconocer patrones útiles.",
+                  "Explica cómo el aprendizaje automático usa datos masivos para clasificar, predecir y descubrir patrones, y por qué separar entrenamiento, prueba e implementación cambia por completo la calidad del resultado.",
+                images: [
+                  {
+                    src: "./assets/images/data-science-intro/c13_3_2_1_ml_basics.svg",
+                    alt: "Comparación entre programación tradicional y aprendizaje automático, con el papel de clasificadores y algoritmos."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_3_2_2_learning_modes.svg",
+                    alt: "Resumen visual de aprendizaje supervisado, no supervisado y por refuerzo con ejemplos."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_3_2_3_analysis_types.svg",
+                    alt: "Comparación entre regresión, clasificación, agrupación y asociación en aprendizaje automático."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_3_2_4_ml_process.svg",
+                    alt: "Flujo de preparación, entrenamiento, evaluación, control de sobreajuste e implementación de un modelo."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_3_2_5_pattern_recognition.svg",
+                    alt: "Esquema de reconocimiento de patrones con división entre entrenamiento y prueba, y aplicaciones en varios campos."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Qué es el aprendizaje automático",
+                    title: "Qué cambia con el aprendizaje automático",
                     items: [
-                      "El aprendizaje automático usa datos para ajustar modelos que luego detectan patrones, hacen predicciones o clasifican casos nuevos.",
-                      "Su valor aparece cuando la tarea es demasiado variable o extensa para codificarla solo con reglas fijas.",
-                      "No todo problema requiere ML; conviene usarlo cuando aporta mejor capacidad de generalización."
+                      "En vez de programar cada regla a mano, el sistema observa datos, ajusta un modelo y aprende a responder casos nuevos a partir de patrones.",
+                      "Los clasificadores toman observaciones y las asignan a una salida; los algoritmos son las técnicas que organizan y entrenan ese proceso.",
+                      "Su valor aparece cuando la cantidad de datos, la variabilidad del problema o la velocidad requerida superan lo que una lista fija de reglas puede cubrir."
                     ]
                   },
                   {
-                    title: "Tipos de análisis",
+                    title: "Tres formas de aprender",
                     items: [
-                      "Según el problema, un modelo puede clasificar, predecir valores, agrupar comportamientos o detectar anomalías.",
-                      "Cada tipo de análisis exige datos distintos, métricas distintas y una forma distinta de validar resultados.",
-                      "Elegir mal la formulación del problema suele ser más grave que elegir mal un algoritmo."
+                      "El aprendizaje supervisado usa ejemplos etiquetados por personas y suele emplearse para clasificación y regresión.",
+                      "El aprendizaje no supervisado trabaja con datos sin etiquetar para descubrir clústeres, asociaciones o estructuras ocultas.",
+                      "El aprendizaje por refuerzo mejora por prueba y error: recompensa resultados deseados y penaliza decisiones que empeoran el desempeño."
                     ]
                   },
                   {
-                    title: "Proceso de trabajo",
+                    title: "Tipos de análisis y preguntas que responden",
                     items: [
-                      "El flujo típico pasa por recolección, preparación, entrenamiento, evaluación y ajuste del modelo.",
-                      "La calidad de datos, el balance entre clases y la claridad de la etiqueta influyen directamente en el resultado.",
-                      "Entrenar no basta: también hay que comprobar si el modelo funciona bien sobre datos que no vio antes."
+                      "La regresión estima valores continuos, como posición, velocidad, trayectorias o precios futuros.",
+                      "La clasificación decide a qué clase pertenece un caso, como spam/no spam, una patología o una especie de planta.",
+                      "Los métodos de agrupación y asociación sirven para segmentar comportamientos y detectar elementos que suelen aparecer juntos."
                     ]
                   },
                   {
-                    title: "Reconocimiento de patrones",
+                    title: "Del dato al modelo desplegado",
                     items: [
-                      "El entrenamiento busca que la máquina identifique regularidades útiles y las use en casos nuevos.",
-                      "Eso permite detectar relaciones que serían difíciles de encontrar manualmente en conjuntos de datos grandes.",
-                      "Un patrón útil no es solo una coincidencia matemática; debe ser estable, interpretable y relevante para la decisión."
+                      "El flujo real empieza limpiando datos, llevándolos a un formato útil y separando conjuntos de entrenamiento y de prueba.",
+                      "Luego se elige un algoritmo, se evalúa su desempeño y se repite el ciclo hasta encontrar un modelo que generalice bien.",
+                      "Si el modelo memoriza demasiado el entrenamiento aparece el sobreajuste; por eso probar con datos no vistos es obligatorio antes de implementarlo."
+                    ]
+                  },
+                  {
+                    title: "Reconocer patrones y medir precisión",
+                    items: [
+                      "El reconocimiento de patrones aplica el aprendizaje automático sobre texto, imágenes o video para detectar señales repetibles en datos nuevos.",
+                      "Una división típica usa cerca del 80 % de los datos para entrenar y el 20 % para probar si el modelo realmente acierta fuera del conjunto original.",
+                      "Esa lógica ya se usa en seguridad móvil, reconocimiento de voz, geología y análisis biomédico, donde la precisión importa más que una explicación futurista."
                     ]
                   }
                 ]
@@ -12848,38 +12953,56 @@
                 code: "4.1",
                 title: "Preparándose para una carrera en análisis de datos",
                 summary:
-                  "Resume los roles principales del campo, la demanda laboral y las habilidades técnicas y comunicativas que conviene desarrollar.",
+                  "Distingue los roles principales del campo, explica por qué la demanda laboral sigue creciendo y resume las herramientas y habilidades que más pesan al entrar y avanzar.",
+                images: [
+                  {
+                    src: "./assets/images/data-science-intro/c13_4_1_1_data_roles.svg",
+                    alt: "Comparación entre analista de datos, ingeniero de datos y científico de datos."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_4_1_2_market_growth.svg",
+                    alt: "Resumen visual del crecimiento del mercado laboral en análisis de datos y sectores con mayor expansión."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_4_1_3_entry_skills.svg",
+                    alt: "Mapa de habilidades y herramientas de entrada para roles de análisis de datos."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_4_1_4_career_paths.svg",
+                    alt: "Ruta de crecimiento profesional desde roles iniciales hacia ciencia de datos, consultoría o especialización."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Roles del campo",
+                    title: "Qué hace cada rol",
                     items: [
-                      "El ecosistema incluye perfiles como analista de datos, científico de datos, ingeniero de datos y especialistas cercanos al negocio.",
-                      "Cada rol comparte fundamentos, pero cambia el foco entre exploración, modelado, infraestructura y comunicación de resultados.",
-                      "Entender esas diferencias ayuda a elegir una ruta de aprendizaje más realista."
+                      "El analista de datos consulta, limpia, resume y visualiza información para responder preguntas concretas del negocio.",
+                      "El ingeniero de datos construye canalizaciones, integra fuentes y mantiene disponible la infraestructura que hace usable el dato.",
+                      "El científico de datos combina estadística, programación y aprendizaje automático para responder preguntas más complejas y entregar modelos o hallazgos con mayor profundidad."
                     ]
                   },
                   {
-                    title: "Mercado laboral",
+                    title: "Por qué la demanda sigue creciendo",
                     items: [
-                      "La demanda crece porque cada vez más organizaciones necesitan convertir datos en decisiones repetibles y medibles.",
-                      "La oportunidad no depende solo del título del cargo, sino de la capacidad de resolver problemas con evidencia.",
-                      "Los roles se cruzan con muchas industrias, lo que amplía opciones de entrada."
+                      "Cada vez más organizaciones convierten análisis y predicción en parte central de sus operaciones, lo que amplía la necesidad de perfiles de datos.",
+                      "Las proyecciones laborales citadas en el módulo muestran un crecimiento sostenido y especialmente fuerte en salud, retail en línea y manufactura.",
+                      "La oportunidad real no depende solo del nombre del cargo, sino de demostrar que puedes transformar datos en decisiones útiles."
                     ]
                   },
                   {
-                    title: "Herramientas y habilidades",
+                    title: "Herramientas y habilidades de entrada",
                     items: [
-                      "Hace falta combinar manejo de datos, hojas de cálculo, SQL, visualización, pensamiento analítico y comunicación clara.",
-                      "También cuentan la curiosidad, la capacidad de formular preguntas y la disciplina para documentar hallazgos.",
-                      "Las herramientas cambian; los fundamentos para estructurar, revisar y explicar datos permanecen."
+                      "En roles iniciales suelen aparecer hojas de cálculo, SQL, visualización, estadística básica y manejo de datos como base técnica mínima.",
+                      "También cuentan la atención al detalle, la comunicación oral y escrita, el trabajo en equipo y cierta familiaridad con programación como Python o Java.",
+                      "Las herramientas cambian con el tiempo, pero los fundamentos de limpiar, analizar, explicar y documentar siguen siendo el núcleo del trabajo."
                     ]
                   },
                   {
-                    title: "Cómo prepararse",
+                    title: "Cómo crecer desde un rol inicial",
                     items: [
-                      "Conviene practicar con problemas reales, datasets conocidos y ejercicios donde se pueda explicar cada decisión tomada.",
-                      "Aprender a contar una historia con datos es tan importante como obtener una respuesta correcta.",
-                      "La preparación más sólida mezcla técnica, criterio y evidencia práctica del trabajo realizado."
+                      "Un rol de entrada puede empezar sin experiencia profunda, pero exige demostrar criterio con proyectos, ejercicios bien documentados y práctica consistente.",
+                      "Con experiencia aparecen rutas hacia ciencia de datos, consultoría, gestión o especialización en sectores como salud, finanzas o aprendizaje automático.",
+                      "La mejor preparación combina fundamentos técnicos, capacidad de narrar hallazgos y evidencia visible del trabajo realizado."
                     ]
                   }
                 ]
@@ -12888,38 +13011,56 @@
                 code: "4.2",
                 title: "Tomando los próximos pasos",
                 summary:
-                  "Orienta la construcción de un portafolio, la selección de proyectos y las acciones concretas para abrirse camino en el área.",
+                  "Explica cómo construir un portafolio que demuestre criterio, documentar cada proyecto y usarlo como puente entre aprendizaje, visibilidad profesional y siguientes pasos de carrera.",
+                images: [
+                  {
+                    src: "./assets/images/data-science-intro/c13_4_2_1_portfolio_purpose.svg",
+                    alt: "Propósito de un portafolio de proyectos y qué aporta frente a un currículum."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_4_2_2_project_documentation.svg",
+                    alt: "Checklist de lo que conviene documentar en cada proyecto de análisis de datos."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_4_2_3_publish_and_share.svg",
+                    alt: "Formas de publicar un portafolio en sitio web, GitHub y blog con contexto profesional."
+                  },
+                  {
+                    src: "./assets/images/data-science-intro/c13_4_2_4_next_steps_roadmap.svg",
+                    alt: "Ruta de siguientes pasos para convertir formación y proyectos en avance profesional."
+                  }
+                ],
                 sections: [
                   {
-                    title: "Por qué importa el portafolio",
+                    title: "Para qué sirve un portafolio",
                     items: [
-                      "Un portafolio demuestra cómo piensas, qué sabes construir y cómo presentas resultados, no solo qué cursos completaste.",
-                      "Sirve como evidencia práctica frente a entrevistas, postulaciones o colaboraciones.",
-                      "Un buen portafolio deja ver problema, datos, proceso, hallazgos y aprendizaje."
+                      "Amplía lo que un currículum no alcanza a mostrar: intereses, criterio, capacidad técnica y forma de comunicar resultados.",
+                      "Sirve como evidencia práctica frente a entrevistas, postulaciones o colaboraciones, porque deja ver trabajo real en lugar de solo promesas.",
+                      "Un portafolio sólido muestra problema, datos, proceso, conclusiones y aprendizajes, no solo capturas bonitas."
                     ]
                   },
                   {
-                    title: "Cómo empezar",
+                    title: "Qué debe mostrar cada proyecto",
                     items: [
-                      "No hace falta esperar un proyecto perfecto; conviene iniciar con ejercicios bien documentados y de alcance manejable.",
-                      "Los proyectos deben mostrar limpieza de datos, análisis, visualización y una conclusión clara para el lector.",
-                      "La consistencia pesa más que la cantidad: pocos trabajos sólidos valen más que muchos inconclusos."
+                      "Conviene documentar la pregunta que quieres responder, cómo elegiste los datos, qué método aplicaste y qué observaste al analizarlos.",
+                      "También importa mostrar informes, presentaciones o salidas finales, porque ayudan a evaluar cómo conviertes análisis en comunicación útil.",
+                      "No hace falta esperar un proyecto perfecto: pocos trabajos bien cerrados y bien explicados valen más que muchos borradores inconclusos."
                     ]
                   },
                   {
-                    title: "Evidencia y visibilidad",
+                    title: "Dónde publicarlo y cómo dar contexto",
                     items: [
-                      "Publicar notebooks, dashboards, reportes o resúmenes técnicos aumenta credibilidad y facilita retroalimentación.",
-                      "La documentación del proceso importa porque permite ver criterio, no solo resultado final.",
-                      "Participar en comunidades o retos prácticos acelera aprendizaje y crea contexto profesional."
+                      "Un sitio web simple, un repositorio público o un blog técnico son formas válidas de reunir proyectos, datos de contacto y contexto profesional.",
+                      "Agregar notas sobre cómo surgió tu interés, qué preguntas te importan y qué aprendiste en cada ejercicio vuelve el portafolio más humano y más memorable.",
+                      "Publicar procesos, no solo entregables, facilita recibir retroalimentación y mostrar criterio frente a posibles empleadores."
                     ]
                   },
                   {
-                    title: "Ruta de crecimiento",
+                    title: "Cómo convertirlo en siguientes pasos",
                     items: [
-                      "Los siguientes pasos deben combinar estudio, práctica y exposición progresiva a problemas más complejos.",
-                      "Elegir una dirección inicial ayuda a priorizar herramientas, datasets y proyectos relevantes para el rol que te interesa.",
-                      "La carrera se fortalece cuando cada proyecto nuevo amplía una habilidad técnica y también una capacidad de comunicación."
+                      "El siguiente avance no depende solo de estudiar más, sino de convertir cada proyecto en evidencia visible de una habilidad concreta.",
+                      "Elegir una dirección inicial ayuda a priorizar datasets, herramientas y prácticas que sí sumen al rol que buscas.",
+                      "La trayectoria mejora cuando cada proyecto nuevo amplía una capacidad técnica y también tu capacidad para explicar decisiones con claridad."
                     ]
                   }
                 ]

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Visión general de la canalización</title>
+  <desc id="desc">Recorrido desde fuentes de datos hasta consumo analítico mediante ingestión, transformación y almacenamiento.</desc>
+  <rect width="1200" height="700" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="644">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:644px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">Una canalización convierte datos sueltos en un recurso utilizable</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">El dato no pasa directamente de una fuente a un dashboard. Antes debe entrar, ordenarse, corregirse y quedar disponible con una estructura que otras personas puedan usar con confianza.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:16px;background:#edf6f3;display:flex;flex-direction:column;gap:8px;min-height:220px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">Fuentes</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">bases, apps, sensores, APIs, logs, documentos</p>
+        </section>
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:16px;background:#fbf4e8;display:flex;flex-direction:column;gap:8px;min-height:220px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">Ingestión</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">capturar y mover datos desde su origen hacia un punto de trabajo</p>
+        </section>
+        <section style="border:1px solid #c9c8de;border-radius:16px;padding:16px;background:#f2f2fb;display:flex;flex-direction:column;gap:8px;min-height:220px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">Transformación</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">limpiar, corregir, unificar y crear estructuras útiles</p>
+        </section>
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:16px;background:#f7f9fa;display:flex;flex-direction:column;gap:8px;min-height:220px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">Almacenamiento</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">guardar el dato final donde pueda consultarse con seguridad</p>
+        </section>
+        <section style="border:1px solid #eef6ee;border-radius:16px;padding:16px;background:#eef6ee;display:flex;flex-direction:column;gap:8px;min-height:220px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">Consumo</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">reportes, análisis, dashboards, modelos y automatización</p>
+        </section>
+      </div>
+
+      <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;">
+        <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">Sin canalización, los equipos terminan con copias sueltas, métricas inconsistentes y resultados difíciles de reproducir.</p>
+      </section>
+    </div>
+  </foreignObject>
+</svg>

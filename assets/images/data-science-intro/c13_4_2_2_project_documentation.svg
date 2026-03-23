@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Cada proyecto debería dejar un rastro claro de decisiones</title>
+  <desc id="desc">Checklist de lo que conviene documentar en cada proyecto de análisis de datos.</desc>
+  <style>
+    .bg{fill:#eef6fb}.frame{fill:#fff;stroke:#d6e4f2;stroke-width:2.5}.sheet{font-family:"Segoe UI",Arial,sans-serif;color:#23395b}
+    .title{font-size:28px;font-weight:800;line-height:1.15;margin:0}.lead{font-size:15px;line-height:1.45;color:#516b8c;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.card{border:2px solid #d7e4f2;border-radius:22px;padding:18px 16px;background:#fff;display:flex;flex-direction:column;gap:10px;min-height:190px}
+    .num{font-size:13px;font-weight:800;color:#55728f;text-transform:uppercase;letter-spacing:.04em} h2{margin:0;font-size:17px;line-height:1.2} p{margin:0;font-size:15px;line-height:1.45;color:#39516f}
+    .footer{background:#54867f;color:#fff;border-radius:18px;padding:16px 22px;font-size:17px;font-weight:700;line-height:1.35}
+  </style>
+  <rect class="bg" width="1200" height="760" rx="24"/>
+  <rect class="frame" x="24" y="22" width="1152" height="716" rx="28"/>
+  <foreignObject x="44" y="42" width="1112" height="676">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sheet" style="height:100%;display:flex;flex-direction:column;justify-content:space-between;gap:22px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 class="title">Cada proyecto debería dejar un rastro claro de decisiones</h1>
+        <p class="lead">La fuerza de un portafolio está en documentar cómo pensaste el proyecto, no solo en mostrar el resultado final.</p>
+      </div>
+      <div class="grid">
+        <section class="card"><div class="num">1</div><h2>Pregunta o problema</h2><p>qué querías responder y por qué esa pregunta importaba.</p></section>
+        <section class="card"><div class="num">2</div><h2>Selección de datos</h2><p>qué fuentes usaste y por qué eran útiles para informar el análisis.</p></section>
+        <section class="card"><div class="num">3</div><h2>Método</h2><p>qué técnicas aplicaste para limpiar, explorar o modelar la información.</p></section>
+        <section class="card"><div class="num">4</div><h2>Observaciones</h2><p>qué hallaste, qué patrones aparecieron y qué límites tenía el análisis.</p></section>
+        <section class="card"><div class="num">5</div><h2>Entregables</h2><p>qué reporte, tablero, presentación o conclusión terminaste produciendo.</p></section>
+      </div>
+      <div class="footer">Documentar bien un proyecto permite evaluar tu criterio, no solo tu resultado. Esa diferencia pesa mucho cuando todavía no tienes experiencia laboral extensa.</div>
+    </div>
+  </foreignObject>
+</svg>

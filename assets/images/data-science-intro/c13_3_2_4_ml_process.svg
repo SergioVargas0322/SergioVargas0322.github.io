@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
+  <title id="title">Entrenar un modelo es iterar, no avanzar en línea recta</title>
+  <desc id="desc">Proceso de aprendizaje automático desde la preparación de datos hasta la implementación, incluyendo evaluación y control del sobreajuste.</desc>
+  <style>
+    .bg { fill: #eef6fb; }
+    .frame { fill: #ffffff; stroke: #d6e4f2; stroke-width: 2.5; }
+    .sheet { font-family: "Segoe UI", Arial, sans-serif; color: #23395b; }
+    .title { font-size: 28px; font-weight: 800; line-height: 1.15; margin: 0; }
+    .lead { font-size: 15px; line-height: 1.45; color: #516b8c; margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { border: 2px solid #d7e4f2; border-radius: 22px; padding: 18px 20px; background: #fefefe; min-height: 180px; display:flex; flex-direction:column; gap:12px; }
+    .a { background: #eef9f9; border-color: #cfe8e8; }
+    .b { background: #fff6ea; border-color: #ecd4b0; }
+    .c { background: #f5f1ff; border-color: #d9cff7; }
+    .d { background: #eef5ff; border-color: #cedcf4; }
+    .e { background: #f7fdf4; border-color: #d3e8c5; }
+    .f { background: #fff0f0; border-color: #f0c8c8; }
+    .num { font-size: 13px; font-weight: 800; color:#55728f; text-transform: uppercase; letter-spacing: .04em; }
+    .card h2 { margin: 0; font-size: 18px; line-height: 1.2; }
+    .card p { margin: 0; font-size: 15px; line-height: 1.45; color: #39516f; }
+    .footer { background: #54867f; color: #fff; border-radius: 18px; padding: 16px 22px; font-size: 17px; font-weight: 700; line-height: 1.35; }
+  </style>
+  <rect class="bg" x="0" y="0" width="1200" height="840" rx="24"/>
+  <rect class="frame" x="24" y="22" width="1152" height="796" rx="28"/>
+  <foreignObject x="44" y="42" width="1112" height="756">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sheet" style="height:100%;display:flex;flex-direction:column;justify-content:space-between;gap:22px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 class="title">Entrenar un modelo es iterar, no avanzar en línea recta</h1>
+        <p class="lead">El proceso real exige limpieza, prueba y corrección continua. Un modelo útil no nace en el primer intento: se ajusta comparando rendimiento sobre datos vistos y no vistos.</p>
+      </div>
+      <div class="grid">
+        <section class="card a">
+          <div class="num">Paso 1</div>
+          <h2>Preparar datos</h2>
+          <p>limpiar valores faltantes, quitar ruido y transformar el conjunto a un formato estructurado.</p>
+        </section>
+        <section class="card b">
+          <div class="num">Paso 2</div>
+          <h2>Separar entrenamiento y prueba</h2>
+          <p>crear un conjunto para aprender y otro para comprobar si el modelo realmente generaliza.</p>
+        </section>
+        <section class="card c">
+          <div class="num">Paso 3</div>
+          <h2>Elegir algoritmo</h2>
+          <p>seleccionar la técnica según el problema, los datos disponibles y la salida esperada.</p>
+        </section>
+        <section class="card d">
+          <div class="num">Paso 4</div>
+          <h2>Evaluar y repetir</h2>
+          <p>medir el rendimiento, ajustar el modelo y volver a entrenar si todavía no alcanza el nivel esperado.</p>
+        </section>
+        <section class="card f">
+          <div class="num">Riesgo</div>
+          <h2>Detectar sobreajuste</h2>
+          <p>si el modelo funciona solo con los datos que ya vio, ha memorizado más de lo que aprendió.</p>
+        </section>
+        <section class="card e">
+          <div class="num">Paso 5</div>
+          <h2>Implementar a escala</h2>
+          <p>desplegar el modelo cuando ya mantiene buen rendimiento sobre datos nuevos y sobre volúmenes grandes.</p>
+        </section>
+      </div>
+      <div class="footer">La prueba final no es si el modelo impresiona durante el entrenamiento, sino si mantiene precisión cuando se enfrenta a datos que nunca había visto.</div>
+    </div>
+  </foreignObject>
+</svg>

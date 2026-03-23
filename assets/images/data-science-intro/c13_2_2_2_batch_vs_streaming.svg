@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Lotes y transmisión</title>
+  <desc id="desc">Comparación entre ingestión por lotes e ingestión en transmisión con ejemplos y criterio de uso.</desc>
+  <rect width="1200" height="720" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="664">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:664px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">No toda ingestión corre al mismo ritmo</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">La diferencia entre lotes y transmisión no es técnica por capricho: depende de cuánto tiempo puede esperar una decisión antes de que el dato pierda valor.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:18px;background:#edf6f3;display:flex;flex-direction:column;gap:10px;min-height:340px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Ingestión por lotes</h2>
+          <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.42;color:#304441;font-weight:600;">
+            <li>recoge datos en bloques diarios o semanales</li>
+            <li>sirve cuando el análisis no necesita respuesta inmediata</li>
+            <li>ejemplo: renovar suscripciones y tickets de soporte</li>
+          </ul>
+        </section>
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:18px;background:#fbf4e8;display:flex;flex-direction:column;gap:10px;min-height:340px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Ingestión en transmisión</h2>
+          <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.42;color:#304441;font-weight:600;">
+            <li>captura eventos casi en el momento en que ocurren</li>
+            <li>sirve cuando la decisión debe reaccionar al instante</li>
+            <li>ejemplo: ubicación y tráfico en un servicio de viaje compartido</li>
+          </ul>
+        </section>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:16px 18px;background:#f7f9fa;">
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">La pregunta útil es simple: ¿la organización puede esperar horas o días, o necesita responder en segundos?</p>
+        </section>
+        <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;display:flex;align-items:center;justify-content:center;">
+          <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">La mejor ingestión no es la más rápida: es la que coincide con el tiempo real de la decisión.</p>
+        </section>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

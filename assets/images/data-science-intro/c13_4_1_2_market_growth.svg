@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">La demanda crece porque los datos ya son parte del negocio</title>
+  <desc id="desc">Crecimiento del mercado laboral en análisis de datos y sectores con mayor expansión.</desc>
+  <style>
+    .bg{fill:#eef6fb}.frame{fill:#fff;stroke:#d6e4f2;stroke-width:2.5}.sheet{font-family:"Segoe UI",Arial,sans-serif;color:#23395b}
+    .title{font-size:28px;font-weight:800;line-height:1.15;margin:0}.lead{font-size:15px;line-height:1.45;color:#516b8c;margin:0}
+    .stats{display:grid;grid-template-columns:1fr 1fr;gap:18px}.stat,.sector{border:2px solid #d7e4f2;border-radius:22px;padding:18px 20px;background:#fff;display:flex;flex-direction:column;gap:10px}
+    .stat.a{background:#eef9f9;border-color:#cfe8e8}.stat.b{background:#fff6ea;border-color:#ecd4b0}
+    .num{font-size:42px;font-weight:800;line-height:1;color:#24486f}.label{font-size:15px;line-height:1.45;color:#39516f}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.sector{min-height:150px;background:#f8fbff}
+    h2{margin:0;font-size:19px;line-height:1.2} p{margin:0;font-size:15px;line-height:1.45;color:#39516f}
+    .footer{background:#54867f;color:#fff;border-radius:18px;padding:16px 22px;font-size:17px;font-weight:700;line-height:1.35}
+  </style>
+  <rect class="bg" width="1200" height="760" rx="24"/>
+  <rect class="frame" x="24" y="22" width="1152" height="716" rx="28"/>
+  <foreignObject x="44" y="42" width="1112" height="676">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sheet" style="height:100%;display:flex;flex-direction:column;justify-content:space-between;gap:22px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 class="title">La demanda crece porque los datos ya son parte del negocio</h1>
+        <p class="lead">Las organizaciones ya no usan análisis solo para reportar el pasado: también lo usan para predecir, optimizar y decidir con más rapidez.</p>
+      </div>
+      <div class="stats">
+        <section class="stat a">
+          <div class="num">52 %</div>
+          <div class="label">de las empresas citadas en el material ve el análisis y la predicción como componentes centrales de su operación.</div>
+        </section>
+        <section class="stat b">
+          <div class="num">22 %</div>
+          <div class="label">es el crecimiento laboral mínimo proyectado hasta 2030 para estos perfiles, con sectores que crecen mucho más rápido.</div>
+        </section>
+      </div>
+      <div class="grid">
+        <section class="sector">
+          <h2>Salud</h2>
+          <p>necesita convertir grandes volúmenes de información clínica y operativa en decisiones más precisas.</p>
+        </section>
+        <section class="sector">
+          <h2>Retail en línea</h2>
+          <p>depende de segmentación, recomendación, precios y analítica de comportamiento para competir.</p>
+        </section>
+        <section class="sector">
+          <h2>Manufactura</h2>
+          <p>usa datos para calidad, mantenimiento, eficiencia de procesos y predicción de fallas.</p>
+        </section>
+      </div>
+      <div class="footer">La oportunidad real aparece cuando sabes convertir datos en decisiones repetibles y medibles, no solo cuando conoces el nombre de un cargo.</div>
+    </div>
+  </foreignObject>
+</svg>

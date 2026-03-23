@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Reconocer patrones exige entrenar y medir</title>
+  <desc id="desc">División entre datos de entrenamiento y prueba, y aplicaciones del reconocimiento de patrones en distintos campos.</desc>
+  <style>
+    .bg { fill: #eef6fb; }
+    .frame { fill: #ffffff; stroke: #d6e4f2; stroke-width: 2.5; }
+    .sheet { font-family: "Segoe UI", Arial, sans-serif; color: #23395b; }
+    .title { font-size: 28px; font-weight: 800; line-height: 1.15; margin: 0; }
+    .lead { font-size: 15px; line-height: 1.45; color: #516b8c; margin: 0; }
+    .top { display:grid; grid-template-columns: 1.05fr .95fr; gap:18px; }
+    .left, .right { border:2px solid #d7e4f2; border-radius:22px; padding:18px 20px; background:#fefefe; }
+    .left { background:#eef9f9; border-color:#cfe8e8; display:flex; flex-direction:column; gap:16px; }
+    .right { background:#fffaf0; border-color:#ecd4b0; display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .bar { display:flex; width:100%; border-radius:999px; overflow:hidden; height:34px; border:1px solid rgba(35,57,91,.12); }
+    .train { width:80%; background:#4f877f; color:#fff; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; }
+    .test { width:20%; background:#dceaf8; color:#274061; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; }
+    .card { border:2px solid rgba(35,57,91,.10); border-radius:18px; padding:14px 16px; background:#fff; display:flex; flex-direction:column; gap:8px; min-height:144px; }
+    h1 { margin:0; }
+    h2, h3 { margin:0; font-size:18px; line-height:1.2; }
+    p, li { margin:0; font-size:15px; line-height:1.45; color:#39516f; }
+    ul { margin:0; padding-left:20px; display:grid; gap:8px; }
+    .footer { background: #54867f; color: #fff; border-radius: 18px; padding: 16px 22px; font-size: 17px; font-weight: 700; line-height: 1.35; }
+  </style>
+  <rect class="bg" x="0" y="0" width="1200" height="820" rx="24"/>
+  <rect class="frame" x="24" y="22" width="1152" height="776" rx="28"/>
+  <foreignObject x="44" y="42" width="1112" height="736">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sheet" style="height:100%;display:flex;flex-direction:column;justify-content:space-between;gap:22px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 class="title">Reconocer patrones exige entrenar y medir</h1>
+        <p class="lead">El reconocimiento de patrones usa aprendizaje automático para encontrar regularidades en imágenes, texto o video y aplicarlas después sobre datos nuevos.</p>
+      </div>
+      <div class="top">
+        <section class="left">
+          <h2>Cómo se divide el conjunto de datos</h2>
+          <div class="bar">
+            <div class="train">80 % entrenamiento</div>
+            <div class="test">20 % prueba</div>
+          </div>
+          <ul>
+            <li>el conjunto de entrenamiento se usa para construir el modelo</li>
+            <li>el conjunto de prueba verifica si la precisión se mantiene fuera de los ejemplos originales</li>
+            <li>si acierta siete de cada diez casos nuevos, la precisión observada es del 70 %</li>
+          </ul>
+        </section>
+        <section class="right">
+          <article class="card">
+            <h3>Seguridad móvil</h3>
+            <p>identificación por huella o rostro para permitir acceso a un teléfono inteligente.</p>
+          </article>
+          <article class="card">
+            <h3>Asistencia por voz</h3>
+            <p>reconocimiento de voz en Alexa, Siri o Google Assistant para interpretar comandos.</p>
+          </article>
+          <article class="card">
+            <h3>Geología</h3>
+            <p>detección de minerales y lectura de patrones temporales en registros sísmicos.</p>
+          </article>
+          <article class="card">
+            <h3>Biomedicina</h3>
+            <p>identificación de células tumorales y apoyo al análisis de imágenes médicas.</p>
+          </article>
+        </section>
+      </div>
+      <div class="footer">Un patrón útil no es una coincidencia vistosa: debe repetirse, medirse bien y seguir funcionando cuando aparecen datos nuevos.</div>
+    </div>
+  </foreignObject>
+</svg>

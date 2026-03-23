@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Beneficios en sectores reales</title>
+  <desc id="desc">Ejemplos de uso de datos masivos en salud, comercio minorista y educación.</desc>
+  <rect width="1200" height="720" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="664">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:664px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">El beneficio aparece cuando la escala resuelve un problema real</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">El crecimiento de datos importa porque habilita decisiones y servicios que antes eran demasiado lentos, caros o imprecisos.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:18px;background:#edf6f3;display:flex;flex-direction:column;gap:10px;min-height:310px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Salud</h2>
+          <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.42;color:#304441;font-weight:600;">
+            <li>detección de cáncer con millones de exámenes previos</li>
+            <li>dispositivos médicos inteligentes y monitoreo continuo</li>
+            <li>mejora progresiva de tratamientos a partir de nueva evidencia</li>
+          </ul>
+        </section>
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:18px;background:#fbf4e8;display:flex;flex-direction:column;gap:10px;min-height:310px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Comercio minorista</h2>
+          <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.42;color:#304441;font-weight:600;">
+            <li>contenido y promociones personalizadas</li>
+            <li>visibilidad del comportamiento del cliente en tienda</li>
+            <li>mejoras directas sobre resultados económicos</li>
+          </ul>
+        </section>
+        <section style="border:1px solid #c9c8de;border-radius:16px;padding:18px;background:#f2f2fb;display:flex;flex-direction:column;gap:10px;min-height:310px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Educación</h2>
+          <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.42;color:#304441;font-weight:600;">
+            <li>detectar dónde un estudiante prospera o se atasca</li>
+            <li>diseñar aprendizaje más personalizado</li>
+            <li>adaptar contenido y asistencia según necesidad real</li>
+          </ul>
+        </section>
+      </div>
+
+      <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;">
+        <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">El valor no está en acumular más datos, sino en usar esa escala para mejorar decisiones, atención y experiencias concretas.</p>
+      </section>
+    </div>
+  </foreignObject>
+</svg>

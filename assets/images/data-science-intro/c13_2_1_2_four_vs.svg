@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Las cuatro V de big data</title>
+  <desc id="desc">Resume volumen, variedad, velocidad y veracidad junto con el desafío principal que introduce cada una.</desc>
+  <rect width="1200" height="720" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="664">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:664px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">Las cuatro V cambian todo el diseño del sistema</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">Big data no solo crece. También obliga a mover, limpiar, integrar y validar datos con una presión muy distinta a la de un entorno tradicional.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:18px;background:#edf6f3;display:flex;flex-direction:column;gap:8px;min-height:170px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Volumen</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Más datos implican más presión sobre almacenamiento, cómputo, movimiento y consulta.</p>
+        </section>
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:18px;background:#fbf4e8;display:flex;flex-direction:column;gap:8px;min-height:170px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Variedad</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Video, imágenes, texto y documentos no entran con naturalidad en la misma estructura relacional.</p>
+        </section>
+        <section style="border:1px solid #c9c8de;border-radius:16px;padding:18px;background:#f2f2fb;display:flex;flex-direction:column;gap:8px;min-height:170px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Velocidad</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Algunos flujos deben procesarse al instante porque pierden valor si esperan análisis posterior.</p>
+        </section>
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:18px;background:#f7f9fa;display:flex;flex-direction:column;gap:8px;min-height:170px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Veracidad</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Datos falsos, incompletos o sucios dañan el análisis y aumentan el costo de limpieza.</p>
+        </section>
+      </div>
+
+      <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;">
+        <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">Cada V agrega un reto distinto, pero juntas explican por qué la infraestructura cambia por completo.</p>
+      </section>
+    </div>
+  </foreignObject>
+</svg>

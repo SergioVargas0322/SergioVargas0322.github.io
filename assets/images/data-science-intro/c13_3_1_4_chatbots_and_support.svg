@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Chatbots y atención</title>
+  <desc id="desc">Uso de IA en chatbots para responder preguntas, recomendar, recoger datos y escalar a un agente humano.</desc>
+  <rect width="1200" height="700" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="644">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:644px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">Un chatbot útil resuelve lo repetitivo y escala lo complejo</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">En retail y atención al cliente, la IA no tiene que hacerlo todo. Su valor suele estar en responder rápido, recoger contexto y pasar a una persona cuando hace falta.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:16px;background:#edf6f3;display:flex;flex-direction:column;gap:8px;min-height:240px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">Responder</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">preguntas frecuentes y orientación básica</p>
+        </section>
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:16px;background:#fbf4e8;display:flex;flex-direction:column;gap:8px;min-height:240px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">Recomendar</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">productos o siguientes pasos según el contexto del usuario</p>
+        </section>
+        <section style="border:1px solid #c9c8de;border-radius:16px;padding:16px;background:#f2f2fb;display:flex;flex-direction:column;gap:8px;min-height:240px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">Aprender</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">aprovechar datos previos para mejorar interacción futura</p>
+        </section>
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:16px;background:#f7f9fa;display:flex;flex-direction:column;gap:8px;min-height:240px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">Escalar</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">desviar a un ejecutivo humano si la situación ya lo requiere</p>
+        </section>
+      </div>
+
+      <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;">
+        <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">La IA en atención funciona mejor cuando sabe hasta dónde llegar y cuándo dejar el caso a una persona.</p>
+      </section>
+    </div>
+  </foreignObject>
+</svg>

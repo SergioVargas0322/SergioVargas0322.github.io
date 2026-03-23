@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">IA en la vida cotidiana</title>
+  <desc id="desc">Ejemplos de uso de IA en entretenimiento, medicina, comercio minorista y estado físico.</desc>
+  <rect width="1200" height="720" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="664">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:664px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">La IA útil ya está en productos cotidianos</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">No siempre se nota, pero muchos servicios ya usan clasificación, recomendación o reconocimiento de patrones para funcionar mejor.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:16px;background:#edf6f3;display:flex;flex-direction:column;gap:8px;min-height:260px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">Entretenimiento</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">recomendar videos o contenido según historial y comportamiento de usuarios similares</p>
+        </section>
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:16px;background:#fbf4e8;display:flex;flex-direction:column;gap:8px;min-height:260px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">Medicina</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">clasificar imágenes médicas y apoyar detección de subtipos de cáncer</p>
+        </section>
+        <section style="border:1px solid #c9c8de;border-radius:16px;padding:16px;background:#f2f2fb;display:flex;flex-direction:column;gap:8px;min-height:260px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">Retail</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">chatbots y asistentes que responden, recomiendan y recogen datos del cliente</p>
+        </section>
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:16px;background:#f7f9fa;display:flex;flex-direction:column;gap:8px;min-height:260px;">
+          <h2 style="margin:0;font-size:21px;line-height:1.1;font-weight:700;">Estado físico</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">apps que reconocen pasos, distancia y nuevas actividades a partir de patrones repetidos</p>
+        </section>
+      </div>
+
+      <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;">
+        <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">La IA suele aparecer incrustada en un servicio existente, no como una “máquina inteligente” aislada del resto del producto.</p>
+      </section>
+    </div>
+  </foreignObject>
+</svg>

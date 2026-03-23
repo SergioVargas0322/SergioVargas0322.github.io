@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+  <title id="title">De la escala al valor</title>
+  <desc id="desc">Condiciones necesarias para transformar crecimiento de datos en recomendaciones, predicciones y decisiones útiles.</desc>
+  <rect width="1200" height="690" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="634">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:634px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">Escala sin arquitectura no produce valor</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">Los datos masivos ayudan a recomendar, comparar y predecir solo cuando existe una base técnica capaz de capturarlos, limpiarlos y convertirlos en una señal confiable.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:16px;background:#edf6f3;display:flex;flex-direction:column;gap:8px;min-height:220px;">
+          <h2 style="margin:0;font-size:22px;line-height:1.1;font-weight:700;">Capturar</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Ingerir flujos grandes sin perder trazabilidad ni contexto.</p>
+        </section>
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:16px;background:#fbf4e8;display:flex;flex-direction:column;gap:8px;min-height:220px;">
+          <h2 style="margin:0;font-size:22px;line-height:1.1;font-weight:700;">Limpiar</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Quitar errores, duplicados e información falsa antes de analizar.</p>
+        </section>
+        <section style="border:1px solid #c9c8de;border-radius:16px;padding:16px;background:#f2f2fb;display:flex;flex-direction:column;gap:8px;min-height:220px;">
+          <h2 style="margin:0;font-size:22px;line-height:1.1;font-weight:700;">Procesar</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Transformar formatos y escalar consultas, comparaciones o predicciones.</p>
+        </section>
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:16px;background:#f7f9fa;display:flex;flex-direction:column;gap:8px;min-height:220px;">
+          <h2 style="margin:0;font-size:22px;line-height:1.1;font-weight:700;">Actuar</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Usar resultados para recomendaciones, decisiones y automatización confiable.</p>
+        </section>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+        <section style="border:1px solid #d7dee3;border-radius:16px;padding:16px 18px;background:#f7f9fa;">
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">La calidad y la gobernanza siguen siendo tan importantes como la escala; más datos malos solo amplifican el problema.</p>
+        </section>
+        <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;display:flex;align-items:center;justify-content:center;">
+          <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">Big data vale cuando convierte crecimiento caótico en mejor contexto para decidir.</p>
+        </section>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

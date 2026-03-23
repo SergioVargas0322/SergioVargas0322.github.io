@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Preguntas distintas piden análisis distintos</title>
+  <desc id="desc">Comparación entre regresión, clasificación, agrupación y asociación en aprendizaje automático.</desc>
+  <style>
+    .bg { fill: #eef6fb; }
+    .frame { fill: #ffffff; stroke: #d6e4f2; stroke-width: 2.5; }
+    .sheet { font-family: "Segoe UI", Arial, sans-serif; color: #23395b; }
+    .title { font-size: 28px; font-weight: 800; line-height: 1.15; margin: 0; }
+    .lead { font-size: 15px; line-height: 1.45; color: #516b8c; margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .card { border: 2px solid #d7e4f2; border-radius: 22px; padding: 18px 20px; background: #fefefe; min-height: 220px; display:flex; flex-direction:column; gap:12px; }
+    .a { background: #eef9f9; border-color: #cfe8e8; }
+    .b { background: #fff6ea; border-color: #ecd4b0; }
+    .c { background: #f5f1ff; border-color: #d9cff7; }
+    .d { background: #eef5ff; border-color: #cedcf4; }
+    .card h2 { margin: 0; font-size: 19px; line-height: 1.2; }
+    .label { font-size: 13px; font-weight: 700; color:#55728f; text-transform: uppercase; letter-spacing: .04em; }
+    .card p, .card li { margin: 0; font-size: 15px; line-height: 1.45; color: #39516f; }
+    ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
+    .footer { background: #54867f; color: #fff; border-radius: 18px; padding: 16px 22px; font-size: 17px; font-weight: 700; line-height: 1.35; }
+  </style>
+  <rect class="bg" x="0" y="0" width="1200" height="820" rx="24"/>
+  <rect class="frame" x="24" y="22" width="1152" height="776" rx="28"/>
+  <foreignObject x="44" y="42" width="1112" height="736">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sheet" style="height:100%;display:flex;flex-direction:column;justify-content:space-between;gap:22px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 class="title">Preguntas distintas piden análisis distintos</h1>
+        <p class="lead">Hablar de aprendizaje automático no basta. Antes hay que definir qué salida esperas: un número, una clase, un grupo o una relación frecuente entre elementos.</p>
+      </div>
+      <div class="grid">
+        <section class="card a">
+          <div class="label">salida continua</div>
+          <h2>Regresión</h2>
+          <p>estima valores numéricos que cambian dentro de un rango.</p>
+          <ul>
+            <li>posición y velocidad con GPS</li>
+            <li>trayectoria de un tornado con datos meteorológicos</li>
+            <li>valor futuro de una acción con datos históricos</li>
+          </ul>
+        </section>
+        <section class="card b">
+          <div class="label">salida discreta</div>
+          <h2>Clasificación</h2>
+          <p>decide a qué clase conocida pertenece cada caso.</p>
+          <ul>
+            <li>spam o no spam</li>
+            <li>patología presente o ausente</li>
+            <li>rostro o especie correcta en una imagen</li>
+          </ul>
+        </section>
+        <section class="card c">
+          <div class="label">grupos emergentes</div>
+          <h2>Agrupación en clústeres</h2>
+          <p>reúne datos con características parecidas sin pedir etiquetas previas.</p>
+          <ul>
+            <li>segmentación de usuarios por historial de compras</li>
+            <li>descubrimiento de perfiles con comportamiento parecido</li>
+          </ul>
+        </section>
+        <section class="card d">
+          <div class="label">coincidencias frecuentes</div>
+          <h2>Asociación</h2>
+          <p>encuentra elementos que suelen observarse juntos dentro de una misma transacción o contexto.</p>
+          <ul>
+            <li>productos que conviene sugerir de forma adicional</li>
+            <li>patrones repetidos en carritos o secuencias de consumo</li>
+          </ul>
+        </section>
+      </div>
+      <div class="footer">Formular bien la pregunta es tan importante como elegir el modelo: el error más costoso suele estar en pedir la salida equivocada.</div>
+    </div>
+  </foreignObject>
+</svg>

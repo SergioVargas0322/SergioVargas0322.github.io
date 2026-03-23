@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Opciones de almacenamiento</title>
+  <desc id="desc">Compara almacenamiento en las instalaciones, en la nube y en un enfoque híbrido.</desc>
+  <rect width="1200" height="720" fill="#f4f7f6"/>
+  <foreignObject x="28" y="28" width="1144" height="664">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:664px;box-sizing:border-box;border:1px solid #c8d7d3;border-radius:18px;background:#ffffff;padding:28px 30px;font-family:Arial,sans-serif;color:#203330;display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 style="margin:0;font-size:34px;line-height:1.08;font-weight:700;">Almacenar también es una decisión de costo, escala y operación</h1>
+        <p style="margin:0;max-width:980px;font-size:18px;line-height:1.35;color:#4c615d;font-weight:600;">Después de transformar, los datos deben quedar en un lugar donde puedan consultarse con seguridad y sin frenar al resto de la organización.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+        <section style="border:1px solid #b7d2cb;border-radius:16px;padding:18px;background:#edf6f3;display:flex;flex-direction:column;gap:10px;min-height:330px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">En las instalaciones</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Servidores y centros de datos propios. Da control directo, pero también implica hardware, licencias, energía, refrigeración y personal de TI.</p>
+        </section>
+        <section style="border:1px solid #d8c8b1;border-radius:16px;padding:18px;background:#fbf4e8;display:flex;flex-direction:column;gap:10px;min-height:330px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Nube</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">El proveedor compra y mantiene infraestructura. La organización evita grandes costos iniciales y paga según uso.</p>
+        </section>
+        <section style="border:1px solid #c9c8de;border-radius:16px;padding:18px;background:#f2f2fb;display:flex;flex-direction:column;gap:10px;min-height:330px;">
+          <h2 style="margin:0;font-size:24px;line-height:1.1;font-weight:700;">Híbrido</h2>
+          <p style="margin:0;font-size:15px;line-height:1.38;color:#425653;font-weight:600;">Combina recursos locales y en la nube para equilibrar control, escala, costo y necesidades regulatorias.</p>
+        </section>
+      </div>
+
+      <section style="border:1px solid #4f7f76;border-radius:16px;padding:18px;background:#4f7f76;color:#ffffff;text-align:center;">
+        <p style="margin:0;font-size:20px;line-height:1.28;font-weight:700;">La mejor opción no es universal: depende de cuánto necesitas escalar, cuánto puedes operar y qué nivel de control debes mantener.</p>
+      </section>
+    </div>
+  </foreignObject>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Tres formas de aprender</title>
+  <desc id="desc">Aprendizaje supervisado, no supervisado y por refuerzo con sus diferencias y ejemplos.</desc>
+  <style>
+    .bg { fill: #eef6fb; }
+    .frame { fill: #ffffff; stroke: #d6e4f2; stroke-width: 2.5; }
+    .sheet { font-family: "Segoe UI", Arial, sans-serif; color: #23395b; }
+    .title { font-size: 28px; font-weight: 800; line-height: 1.15; margin: 0; }
+    .lead { font-size: 15px; line-height: 1.45; color: #516b8c; margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { border: 2px solid #d7e4f2; border-radius: 22px; padding: 18px 20px; background: #fefefe; min-height: 360px; display:flex; flex-direction:column; gap:14px; }
+    .a { background: #eef9f9; border-color: #cfe8e8; }
+    .b { background: #fff6ea; border-color: #ecd4b0; }
+    .c { background: #f5f1ff; border-color: #d9cff7; }
+    .card h2 { margin: 0; font-size: 19px; line-height: 1.2; }
+    .pill { align-self:flex-start; padding: 6px 10px; border-radius: 999px; font-size: 13px; font-weight: 700; background:#ffffff; color:#36506e; border:1px solid rgba(53,80,110,.14); }
+    .card p, .card li { margin: 0; font-size: 15px; line-height: 1.45; color: #39516f; }
+    ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
+    .footer { background: #54867f; color: #fff; border-radius: 18px; padding: 16px 22px; font-size: 17px; font-weight: 700; line-height: 1.35; }
+  </style>
+  <rect class="bg" x="0" y="0" width="1200" height="800" rx="24"/>
+  <rect class="frame" x="24" y="22" width="1152" height="756" rx="28"/>
+  <foreignObject x="44" y="42" width="1112" height="716">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sheet" style="height:100%;display:flex;flex-direction:column;justify-content:space-between;gap:22px;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <h1 class="title">Tres formas de aprender cambian el tipo de problema que puedes resolver</h1>
+        <p class="lead">La diferencia principal no está en el nombre del algoritmo sino en qué datos tienes, cuánto sabe la persona que entrena el sistema y qué tipo de retroalimentación recibe el modelo.</p>
+      </div>
+      <div class="grid">
+        <section class="card a">
+          <span class="pill">con etiquetas</span>
+          <h2>Supervisado</h2>
+          <p>aprende con ejemplos donde la respuesta correcta ya está marcada por una persona o por una fuente confiable.</p>
+          <ul>
+            <li>útil para clasificación y regresión</li>
+            <li>depende de la calidad de la etiqueta</li>
+            <li>ejemplos: spam, especies de plantas, trayectorias y precios</li>
+          </ul>
+        </section>
+        <section class="card b">
+          <span class="pill">sin etiquetas</span>
+          <h2>No supervisado</h2>
+          <p>trabaja con datos sin respuesta previa y busca estructura interna por cuenta propia.</p>
+          <ul>
+            <li>segmenta grupos con rasgos parecidos</li>
+            <li>encuentra asociaciones frecuentes</li>
+            <li>ejemplos: clústeres de clientes y productos que se compran juntos</li>
+          </ul>
+        </section>
+        <section class="card c">
+          <span class="pill">con recompensa</span>
+          <h2>Refuerzo</h2>
+          <p>aprende por prueba y error: refuerza decisiones buenas y evita acciones que empeoran el resultado.</p>
+          <ul>
+            <li>optimiza secuencias de decisiones</li>
+            <li>necesita una señal clara de premio o castigo</li>
+            <li>ejemplos: videojuegos, robótica y automatización industrial</li>
+          </ul>
+        </section>
+      </div>
+      <div class="footer">Elegir bien el modo de aprendizaje evita errores de base: un problema mal formulado no se arregla cambiando de algoritmo al final.</div>
+    </div>
+  </foreignObject>
+</svg>
